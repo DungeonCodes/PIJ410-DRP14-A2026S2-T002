@@ -257,3 +257,13 @@ Resultado: atualizados o quadro inicial, os objetivos e a delimitação do relat
 acervo E11, as decisões e o contexto mestre. Definido que cálculos e inferências serão
 determinísticos e conferíveis; agentes apenas apoiarão cenários exploratórios, interpretação e
 revisão, sempre com dados fictícios ou sanitizados e revisão humana. Nenhum commit realizado.
+
+---
+
+Data: 2026-08-25
+Ação realizada: registro do uso de IA como apoio controlado à produção documental.
+Resultado: a metodologia do relatório parcial passou a registrar, de forma sucinta, que escopo,
+fontes, decisões e revisões serão mantidos em registros versionados; a IA poderá apoiar consulta,
+organização e revisão, enquanto seleção de conteúdo, validação de fontes e aprovação de versões
+permanecem sob responsabilidade do grupo. Diretriz também registrada no contexto mestre e nas
+decisões. Nenhum commit realizado.

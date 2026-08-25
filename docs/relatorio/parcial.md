@@ -217,7 +217,10 @@ citadas nas seções anteriores).
 
 ### 2.4 Metodologia
 
-⬜ Não iniciado.
+⬜ Em elaboração. Como apoio à organização da produção documental, serão mantidos registros
+versionados de escopo, fontes, decisões e revisões. Ferramentas de IA poderão apoiar a consulta,
+organização e revisão desses registros sob contexto controlado; a seleção do conteúdo, a validação
+das fontes e a aprovação das versões permanecerão sob responsabilidade do grupo.
 
 ### 2.5 Resultados preliminares: solução inicial
 

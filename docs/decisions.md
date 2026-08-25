@@ -145,4 +145,6 @@ Registradas aqui porque constaram como pendências e já não são.
   agêntica via CLI servirá de apoio controlado a cenários de simulação, interpretação e revisão.
   As saídas dos agentes não substituem cálculos, evidência empírica, decisão humana ou a validação
   com a comunidade externa. O eixo E11 integra a metodologia de desenvolvimento e permanece
-  distinto do ciclo de Design Thinking exigido pela rubrica.
+  distinto do ciclo de Design Thinking exigido pela rubrica. No trabalho escrito, os agentes podem
+  apoiar consulta, organização e revisão de registros versionados, mas a seleção do conteúdo, a
+  validação das fontes e a aprovação das versões pertencem ao grupo.

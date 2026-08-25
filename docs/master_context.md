@@ -128,7 +128,10 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
   simulação, mas não substituirá o cálculo determinístico, a revisão humana, a evidência empírica
   nem a validação junto à comunidade externa. Os modelos inicialmente previstos são Claude Fable 5
   e GPT-5.6 Sol com esforço de raciocínio `xhigh`, quando disponíveis nos ambientes licenciados.
-  Somente dados fictícios ou sanitizados poderão ser enviados a esses ambientes.
+  Somente dados fictícios ou sanitizados poderão ser enviados a esses ambientes. No processo de
+  produção documental, os agentes poderão apoiar consulta, organização e revisão sob contexto
+  controlado; seleção de conteúdo, validação de fontes e aprovação de versões permanecem sob
+  responsabilidade do grupo.
 * A UNIVESP utiliza metodologia própria para condução do PI, com indicação de uso de Design Thinking. Nenhuma interpretação definitiva dessa metodologia deve ser adotada agora; os materiais oficiais serão adicionados depois e terão precedência sobre interpretações preliminares.
 * Etapas, entregáveis, entrevistas, documentação, cronograma, validações e relatório só serão estruturados formalmente após a análise da documentação oficial.
 
