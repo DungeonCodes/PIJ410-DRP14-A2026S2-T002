@@ -122,7 +122,6 @@ Registradas para não se perderem; nenhuma foi decidida ainda.
 |---|---|---|
 | Segmento da instituição parceira (básica, superior ou técnica) | não consta no Plano de Ação | caracterização da comunidade externa; recorte do acervo bibliográfico (eixo E1 cobre apenas ensino superior) |
 | RA de uma integrante consta como "a informar" | Plano de Ação | ficha catalográfica e capa |
-| Eixo E11 (agentes e memória) entra no relatório? | ver `/docs/referencias.md` | Metodologia — não confundir com o Design Thinking exigido pela rubrica |
 
 
 ## Resolvidas pelo Plano de Ação
@@ -141,3 +140,9 @@ Registradas aqui porque constaram como pendências e já não são.
   e Engenharia da Computação. A Introdução relaciona as disciplinas informadas pelo grupo às
   ementas dos PPCs oficiais da UNIVESP, sem pressupor que todos os integrantes cursaram todas
   elas.
+* **Uso de algoritmos determinísticos e IA agêntica.** Confirmado pelo grupo em 25 ago. 2026:
+  inferências e indicadores serão produzidos por rotinas determinísticas e reprodutíveis; a IA
+  agêntica via CLI servirá de apoio controlado a cenários de simulação, interpretação e revisão.
+  As saídas dos agentes não substituem cálculos, evidência empírica, decisão humana ou a validação
+  com a comunidade externa. O eixo E11 integra a metodologia de desenvolvimento e permanece
+  distinto do ciclo de Design Thinking exigido pela rubrica.

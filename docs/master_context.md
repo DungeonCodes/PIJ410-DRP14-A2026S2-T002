@@ -122,6 +122,13 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
 
 * Existe um sistema real que servirá como principal referência técnica para a construção do ambiente acadêmico, com funcionalidades relacionadas a: indicadores gerenciais, investimentos em mídia digital, Google Ads, Meta Ads, captação, matrículas, retenção/evasão, conteúdo orgânico e análise estratégica.
 * O PI poderá aproveitar conceitos, arquitetura, componentes, regras de apresentação e experiências obtidas nesse sistema, mas o repositório acadêmico será **independente do ambiente operacional**.
+* Confirmado pelo grupo em 25 ago. 2026: o núcleo analítico previsto produzirá indicadores e
+  inferências por algoritmos determinísticos, com parâmetros e resultados conferíveis. IA agêntica
+  acionada via CLI poderá apoiar a organização, a execução e a interpretação de cenários de
+  simulação, mas não substituirá o cálculo determinístico, a revisão humana, a evidência empírica
+  nem a validação junto à comunidade externa. Os modelos inicialmente previstos são Claude Fable 5
+  e GPT-5.6 Sol com esforço de raciocínio `xhigh`, quando disponíveis nos ambientes licenciados.
+  Somente dados fictícios ou sanitizados poderão ser enviados a esses ambientes.
 * A UNIVESP utiliza metodologia própria para condução do PI, com indicação de uso de Design Thinking. Nenhuma interpretação definitiva dessa metodologia deve ser adotada agora; os materiais oficiais serão adicionados depois e terão precedência sobre interpretações preliminares.
 * Etapas, entregáveis, entrevistas, documentação, cronograma, validações e relatório só serão estruturados formalmente após a análise da documentação oficial.
 

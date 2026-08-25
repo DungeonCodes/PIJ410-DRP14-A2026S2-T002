@@ -50,7 +50,7 @@ grupo fechar o tema com a instituição parceira.
 | `E8` | Arquitetura front-end, React e renderização no servidor (Next.js) | 2.4 Aplicação das disciplinas / Resultados |
 | `E9` | Bancos de dados relacionais, modelagem e desempenho (PostgreSQL) | 2.4 Aplicação das disciplinas / Resultados |
 | `E10` | Análise de dados, pipelines e qualidade de dados | 2.4 Aplicação das disciplinas |
-| `E11` | Agentes de LLM, memória e engenharia de contexto | Metodologia (processo de desenvolvimento) |
+| `E11` | Agentes de LLM, memória, engenharia de contexto e apoio controlado a simulações | Metodologia (processo de desenvolvimento) |
 
 Os eixos `E7` a `E10` sustentam o item **"Relação com as disciplinas estudadas"**, que vale
 **2,0 pontos** no relatório final e exige conteúdo de *mais de três disciplinas com referência
@@ -70,8 +70,8 @@ redação: são camadas distintas e a banca avalia apenas a segunda.
 Rodada de buscas em **2026-08-24**, bases Crossref + OpenAlex + Semantic Scholar.
 Todos os DOIs abaixo foram testados e resolvem. Termos de busca em `/docs/run_log.md`.
 
-As obras de Lemes, Dias e Oliveira (2023) e Martins (2019) foram lidas e citadas na Introdução.
-As demais permanecem como `candidata`; **ler antes de citar**.
+As obras assinaladas como `citada` foram lidas e empregadas no relatório. As demais permanecem
+como `candidata`; **ler antes de citar**.
 
 ### E1 — Marketing digital e captação de alunos
 
@@ -169,6 +169,7 @@ A obra 27 é a que **justifica a escolha do relacional** frente ao NoSQL — dec
 | 29 | SIVARAJAH et al. — Critical analysis of Big Data challenges and analytical methods | 2016 | Journal of Business Research | 2036 | `candidata` |
 | 30 | TSAI et al. — Big data analytics: a survey | 2015 | Journal of Big Data | 807 | `candidata` |
 | 31 | FOIDL et al. — Data pipeline quality: influencing factors and root causes of data-related issues | 2023 | Journal of Systems and Software | 41 | `candidata` |
+| 32 | PENG — Reproducible research in computational science | 2011 | Science | — | `citada` |
 
 A obra 29 conecta análise de dados a **decisão gerencial**, que é a ponte entre o eixo técnico e o problema do projeto. A 31 é a mais aplicável na prática: trata de qualidade de dados em pipeline, exatamente o risco de integrar dados de plataformas de anúncio.
 
@@ -176,20 +177,24 @@ A obra 29 conecta análise de dados a **decisão gerencial**, que é a ponte ent
 
 | # | Obra | Ano | Veículo | Cit. | Revisão por pares | Status |
 |---|---|---|---|---|---|---|
-| 32 | PARK et al. — Generative Agents: Interactive Simulacra of Human Behavior | 2023 | ACM UIST | 1726 | sim | `candidata` |
-| 33 | WANG et al. — A survey on large language model based autonomous agents | 2024 | Frontiers of Computer Science | 1437 | sim | `candidata` |
-| 34 | LIU et al. — Lost in the Middle: How Language Models Use Long Contexts | 2024 | TACL | 1188 | sim | `candidata` |
-| 35 | GAO et al. — Retrieval-Augmented Generation for LLMs: A Survey | 2023 | arXiv | 707 | **não — preprint** | `candidata` |
-| 36 | SUMERS et al. — Cognitive Architectures for Language Agents | 2023 | arXiv | 65 | **não — preprint** | `candidata` |
+| 33 | PARK et al. — Generative Agents: Interactive Simulacra of Human Behavior | 2023 | ACM UIST | 1726 | sim | `candidata` |
+| 34 | WANG et al. — A survey on large language model based autonomous agents | 2024 | Frontiers of Computer Science | 1437 | sim | `citada` |
+| 35 | LIU et al. — Lost in the Middle: How Language Models Use Long Contexts | 2024 | TACL | 1188 | sim | `candidata` |
+| 36 | GAO et al. — Retrieval-Augmented Generation for LLMs: A Survey | 2023 | arXiv | 707 | **não — preprint** | `candidata` |
+| 37 | SUMERS et al. — Cognitive Architectures for Language Agents | 2023 | arXiv | 65 | **não — preprint** | `candidata` |
+| 38 | ANTHROPIC — Introducing Claude Fable 5 and Claude Mythos 5 | 2026 | documentação técnica oficial | — | não se aplica | `citada` |
+| 39 | OPENAI — GPT-5.6 Sol Model | 2026 | documentação técnica oficial | — | não se aplica | `citada` |
 
 **Atenção à rubrica.** A fundamentação teórica zera se as fontes não forem confiáveis, e preprint
-não passou por revisão por pares. As obras 32, 33 e 34 são publicadas e sustentam o eixo sozinhas;
-prefira-as. As obras 35 e 36 só devem ser citadas se não houver equivalente publicado — e a 36 é
+não passou por revisão por pares. As obras 33, 34 e 35 são publicadas e sustentam o eixo sozinhas;
+prefira-as. As obras 36 e 37 só devem ser citadas se não houver equivalente publicado — e a 37 é
 conhecida por ter versão em periódico, que precisa ser localizada antes de citar.
 
-A obra 34 é a mais diretamente aplicável ao que o grupo faz: demonstra que modelos degradam ao
-recuperar informação no meio de contextos longos, que é justamente o argumento para estruturar a
-memória em arquivos curtos e segmentados em vez de um documento único.
+A obra 34 foi lida e citada para delimitar o papel dos agentes como apoio sujeito a controle
+humano. As obras 38 e 39 registram, como fontes técnicas — e não como fundamentação teórica — as
+configurações de modelos previstas para uso via CLI. A obra 35 permanece candidata e poderá ser
+avaliada, antes de eventual citação, para a discussão sobre limites de contexto e organização da
+memória.
 
 ---
 
@@ -237,6 +242,8 @@ periódicos brasileiros publicam títulos em caixa alta e os metadados reproduze
 
 ARISTIZÁBAL, Catalina Ramírez. **Sucesso de sistemas de Business Intelligence**: uma abordagem multidimensional. 2016. Tese (Doutorado) – Universidade de São Paulo, São Paulo, 2016. DOI: 10.11606/t.3.2016.tde-18082016-101353. Disponível em: https://doi.org/10.11606/t.3.2016.tde-18082016-101353. Acesso em: 24 ago. 2026.
 
+ANTHROPIC. **Introducing Claude Fable 5 and Claude Mythos 5**. 2026. Disponível em: https://platform.claude.com/docs/es/models/fable-5/introducing-claude-fable-5-and-claude-mythos-5. Acesso em: 25 ago. 2026.
+
 BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 1-11, 2022. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 24 ago. 2026.
 
 BEZERRA, Maria Luana Gonçalves et al. Estratégias de marketing de relacionamento na captação de clientes de uma instituição de ensino superior à distância. **Ciências Sociais Aplicadas em Revista**, v. 26, n. 46, p. 157-174, 2023. DOI: 10.48075/csar.v26i46.31119. Disponível em: https://doi.org/10.48075/csar.v26i46.31119. Acesso em: 24 ago. 2026.
@@ -273,7 +280,11 @@ MATHEUS, Ricardo; JANSSEN, Marijn; MAHESHWARI, Devender. Data science empowering
 
 OLIVEIRA, Ronei dos Santos; MEDEIROS, Francisco. Modelo de Predição de Evasão Escolar com Base em Dados de Autoavaliação de Cursos de Graduação. **Revista Brasileira de Informática na Educação**, v. 32, p. 1-21, 2024. DOI: 10.5753/rbie.2024.3542. Disponível em: https://doi.org/10.5753/rbie.2024.3542. Acesso em: 24 ago. 2026.
 
+OPENAI. **GPT-5.6 Sol Model**. 2026. Disponível em: https://developers.openai.com/api/docs/models/gpt-5.6-sol. Acesso em: 25 ago. 2026.
+
 PARK, Joon Sung et al. Generative Agents: interactive simulacra of human behavior. In: ACM SYMPOSIUM ON USER INTERFACE SOFTWARE AND TECHNOLOGY, 36., 2023, San Francisco. **Proceedings** [...]. New York: ACM, 2023. p. 1-22. DOI: 10.1145/3586183.3606763. Disponível em: https://doi.org/10.1145/3586183.3606763. Acesso em: 24 ago. 2026.
+
+PENG, Roger D. Reproducible research in computational science. **Science**, v. 334, n. 6060, p. 1226-1227, 2011. DOI: 10.1126/science.1213847. Disponível em: https://doi.org/10.1126/science.1213847. Acesso em: 25 ago. 2026.
 
 PINHEIRO, Gabriela da Silva Santos; DIAS, Célia da Consolação. Técnicas e métodos de pesquisa de experiência do usuário (UX) para avaliação de estudo de usuários da informação. **Perspectivas em Gestão & Conhecimento**, v. 13, n. 2, p. 133-148, 2023. DOI: 10.22478/ufpb.2236-417x.2023v13n2.63290. Disponível em: https://doi.org/10.22478/ufpb.2236-417x.2023v13n2.63290. Acesso em: 24 ago. 2026.
 

@@ -233,3 +233,27 @@ Ação realizada: ajuste estrutural de 2.1 Objetivos.
 Decisão aplicada: a justificativa científica dos objetivos permanece integrada ao texto corrido da
 própria seção, entre o objetivo geral e os objetivos específicos; não foi criado capítulo ou
 subseção adicional. Nenhum commit realizado.
+
+---
+
+Data: 2026-08-25
+Ação realizada: redação inicial de 2.2 Justificativa e delimitação do problema.
+Fontes: contexto e contribuição à comunidade documentados no Plano de Ação; relevância de
+indicadores, ciência de dados e marketing digital sustentada por SAURA; PALOS-SÁNCHEZ; SUÁREZ
+(2017) e SAURA (2021).
+Resultado: seção estruturada com problema, pergunta de pesquisa, relação com o tema norteador,
+relevância acadêmica/social/cultural e escopo explícito. Nenhum resultado ou validação foi
+antecipado. Nenhum commit realizado.
+
+---
+
+Data: 2026-08-25
+Ação realizada: revisão do escopo técnico para incorporar inferência determinística e apoio de IA
+agêntica via CLI às simulações.
+Fontes verificadas: WANG et al. (2024), sobre agentes autônomos baseados em modelos de linguagem;
+PENG (2011), sobre reprodutibilidade em ciência computacional; documentação oficial de ANTHROPIC
+(2026), para Claude Fable 5; e OPENAI (2026), para GPT-5.6 Sol e o esforço de raciocínio `xhigh`.
+Resultado: atualizados o quadro inicial, os objetivos e a delimitação do relatório parcial; o
+acervo E11, as decisões e o contexto mestre. Definido que cálculos e inferências serão
+determinísticos e conferíveis; agentes apenas apoiarão cenários exploratórios, interpretação e
+revisão, sempre com dados fictícios ou sanitizados e revisão humana. Nenhum commit realizado.
