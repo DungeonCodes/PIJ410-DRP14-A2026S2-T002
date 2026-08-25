@@ -187,3 +187,49 @@ Arquivos alterados:
 Resultado: afirmações sobre métricas de campanhas são apoiadas por Martins (2019); dados
 fragmentados e seus efeitos no contexto da instituição parceira são apoiados pelo Plano de Ação
 (GRUPO DO PROJETO INTEGRADOR, 2026). Nenhum commit realizado.
+
+---
+
+Data: 2026-08-25
+Ação realizada: confirmação dos cursos do grupo e inserção da relação interdisciplinar na
+Introdução.
+Fonte de composição: informação declarada pelo grupo — Bacharelado em Ciência de Dados e
+Engenharia da Computação. Fontes curriculares verificadas: PPC 2020 dos cursos de Bacharelado
+em Tecnologia da Informação, Ciência de Dados e Engenharia da Computação; PPC 2026 de Ciência
+de Dados, ambos publicados pela UNIVESP.
+Resultado: removido o marcador pendente da Introdução. Aplicações em Aprendizado de Máquina,
+Redes Neurais, Aprendizado Profundo, Visão Computacional e Impactos da Computação na Sociedade
+foram relacionados ao projeto com citações aos PPCs oficiais. A redação declara apenas a
+formação mobilizada pelo grupo e não atribui todas as disciplinas a todos os integrantes. Nenhum
+commit realizado.
+
+---
+
+Data: 2026-08-25
+Ação realizada: início da seção Desenvolvimento, com redação de 2.1 Objetivos.
+Fonte: objetivo, problema e tema específico registrados no Plano de Ação do grupo.
+Resultado: definido um objetivo geral idêntico em escopo ao Plano de Ação e cinco objetivos
+específicos, todos no infinitivo. A seção explicita a relação com o tema norteador e prevê a
+avaliação futura do protótipo, sem registrá-la como atividade já realizada. Nenhum commit
+realizado.
+
+---
+
+Data: 2026-08-25
+Ação realizada: fundamentação científica dos objetivos do relatório parcial.
+Fontes lidas e utilizadas: SAURA; PALOS-SÁNCHEZ; SUÁREZ (2017), sobre KPIs e web analytics;
+SAURA (2021), sobre ciência de dados e informações acionáveis em marketing digital; LEMES; DIAS;
+OLIVEIRA (2023), sobre dashboards em instituições de ensino; e PINHEIRO; DIAS (2023), sobre
+métodos de experiência do usuário.
+Resultado: incluída a subseção "Fundamentação dos objetivos", relacionando cada conjunto de
+objetivos à evidência correspondente. As três obras foram marcadas como `citada` no acervo. A
+referência de Saura foi corrigida de 2020 para 2021 após conferência da edição publicada pelo
+periódico. Nenhum commit realizado.
+
+---
+
+Data: 2026-08-25
+Ação realizada: ajuste estrutural de 2.1 Objetivos.
+Decisão aplicada: a justificativa científica dos objetivos permanece integrada ao texto corrido da
+própria seção, entre o objetivo geral e os objetivos específicos; não foi criado capítulo ou
+subseção adicional. Nenhum commit realizado.

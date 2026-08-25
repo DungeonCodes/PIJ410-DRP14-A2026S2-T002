@@ -88,8 +88,8 @@ A obra 1 é a mais próxima do recorte: captação discente por meio digital, em
 
 | # | Obra | Ano | Veículo | Cit. | Status |
 |---|---|---|---|---|---|
-| 5 | SAURA — Using Data Sciences in Digital Marketing: framework, methods, and performance metrics | 2020 | Journal of Innovation & Knowledge | 470 | `candidata` |
-| 6 | SAURA; PALOS-SÁNCHEZ; SUÁREZ — Understanding the Digital Marketing Environment with KPIs and Web Analytics | 2017 | Future Internet | 220 | `candidata` |
+| 5 | SAURA — Using Data Sciences in Digital Marketing: framework, methods, and performance metrics | 2021 | Journal of Innovation & Knowledge | 470 | `citada` |
+| 6 | SAURA; PALOS-SÁNCHEZ; SUÁREZ — Understanding the Digital Marketing Environment with KPIs and Web Analytics | 2017 | Future Internet | 220 | `citada` |
 | 7 | SRIRAM et al. — Return on investment and return on ad spend at the action level of AIDA | 2022 | Int. Journal of Internet Marketing and Advertising | 4 | `candidata` |
 | 8 | MARTINS — Otimização de campanha publicitária na rede de pesquisa do Google Ads (dissertação, USP) | 2019 | Biblioteca Digital USP | 1 | `citada` |
 
@@ -136,7 +136,7 @@ A obra 17 é a mais útil para justificar metodologicamente o uso de Design Thin
 
 | # | Obra | Ano | Veículo | Status |
 |---|---|---|---|---|
-| 20 | PINHEIRO; DIAS — Técnicas e métodos de pesquisa de experiência do usuário (UX) | 2023 | Perspectivas em Gestão & Conhecimento | `candidata` |
+| 20 | PINHEIRO; DIAS — Técnicas e métodos de pesquisa de experiência do usuário (UX) | 2023 | Perspectivas em Gestão & Conhecimento | `citada` |
 | 21 | RESENDE JÚNIOR; LEITE — Problemas de usabilidade em software de processos administrativos do Governo Federal | 2024 | iSys (SBC) | `candidata` |
 | 22 | SILVA; GOMES — Usabilidade para Democracia: avaliação heurística do Portal da Transparência | 2019 | Design Proceedings | `candidata` |
 
@@ -285,7 +285,7 @@ SALUNKE, Sanket Vilas; OUDA, Abdelkader. A Performance Benchmark for the Postgre
 
 SANTOS, Pedro Vieira Souza et al. A metodologia Design Thinking: estratégia gerencial para empreendimentos. **Revista Latino-Americana de Inovação e Engenharia de Produção**, v. 5, n. 8, p. 25, 2017. DOI: 10.5380/relainep.v5i7.55490. Disponível em: https://doi.org/10.5380/relainep.v5i7.55490. Acesso em: 24 ago. 2026.
 
-SAURA, José Ramón. Using Data Sciences in Digital Marketing: framework, methods, and performance metrics. **Journal of Innovation & Knowledge**, v. 6, n. 2, p. 92-102, 2020. DOI: 10.1016/j.jik.2020.08.001. Disponível em: https://doi.org/10.1016/j.jik.2020.08.001. Acesso em: 24 ago. 2026.
+SAURA, José Ramón. Using Data Sciences in Digital Marketing: framework, methods, and performance metrics. **Journal of Innovation & Knowledge**, v. 6, n. 2, p. 92-102, 2021. DOI: 10.1016/j.jik.2020.08.001. Disponível em: https://doi.org/10.1016/j.jik.2020.08.001. Acesso em: 25 ago. 2026.
 
 SAURA, José Ramón; PALOS-SÁNCHEZ, Pedro; SUÁREZ, Luis Manuel Cerdá. Understanding the Digital Marketing Environment with KPIs and Web Analytics. **Future Internet**, v. 9, n. 4, p. 76, 2017. DOI: 10.3390/fi9040076. Disponível em: https://doi.org/10.3390/fi9040076. Acesso em: 24 ago. 2026.
 
@@ -304,6 +304,10 @@ SUMERS, Theodore R. et al. **Cognitive Architectures for Language Agents**. arXi
 THAKKAR, Mohit. **Building React Apps with Server-Side Rendering**. Berkeley: Apress, 2020. DOI: 10.1007/978-1-4842-5869-9. Disponível em: https://doi.org/10.1007/978-1-4842-5869-9. Acesso em: 24 ago. 2026.
 
 TSAI, Chun-Wei et al. Big data analytics: a survey. **Journal of Big Data**, v. 2, n. 1, 2015. DOI: 10.1186/s40537-015-0030-3. Disponível em: https://doi.org/10.1186/s40537-015-0030-3. Acesso em: 24 ago. 2026.
+
+UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico dos cursos de Bacharelado em Tecnologia da Informação, Ciência de Dados e Engenharia de Computação**. São Paulo: UNIVESP, 2020. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BTI.pdf. Acesso em: 25 ago. 2026.
+
+UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico do curso de Bacharelado em Ciência de Dados**. São Paulo: UNIVESP, 2026. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BCD-2026.pdf. Acesso em: 25 ago. 2026.
 
 VYAS, Rishi. Comparative Analysis on Front-End Frameworks for Web Applications. **International Journal for Research in Applied Science and Engineering Technology**, v. 10, n. 7, p. 298-307, 2022. DOI: 10.22214/ijraset.2022.45260. Disponível em: https://doi.org/10.22214/ijraset.2022.45260. Acesso em: 24 ago. 2026.
 

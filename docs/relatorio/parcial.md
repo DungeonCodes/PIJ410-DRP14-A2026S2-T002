@@ -11,7 +11,7 @@
 |---|---|---|
 | Pré-textuais (capa, folha de rosto, ficha, resumo, sumário) | 2,0 (Linguagem e Referências) | ⬜ |
 | 1 Introdução | 1,0 | ⬜ em revisão |
-| 2.1 Objetivos | 1,0 | ⬜ |
+| 2.1 Objetivos | 1,0 | ⬜ em revisão |
 | 2.2 Justificativa e delimitação do problema | 1,0 | ⬜ |
 | 2.3 Fundamentação teórica | 2,0 | ⬜ |
 | 2.4 Metodologia | 1,5 | ⬜ |
@@ -86,11 +86,15 @@ investimentos realizados e seus resultados ao longo do tempo. A receptividade da
 acesso direto aos profissionais envolvidos indicaram condições favoráveis para desenvolver a
 solução e submetê-la à validação da própria comunidade participante.
 
-Soma-se a essa demanda o interesse do grupo em aplicar, sobre um problema concreto, os
-conteúdos desenvolvidos ao longo do curso. «PENDENTE: nome do curso e listagem das disciplinas
-cursadas, com os conteúdos e materiais específicos mobilizados — a rubrica exige referência a
-material específico, não apenas o nome da disciplina. O Plano de Ação não traz essa
-informação.»
+Soma-se a essa demanda a composição interdisciplinar do grupo, que reúne estudantes dos cursos
+de Bacharelado em Ciência de Dados e Engenharia da Computação. Aplicações em Aprendizado de
+Máquina, Redes Neurais e Aprendizado Profundo fornecem o repertório de algoritmos, frameworks e
+modelos neurais pertinente à análise e à interpretação dos dados do projeto (UNIVESP, 2020).
+Visão Computacional amplia o repertório de aquisição, processamento e análise de dados visuais,
+enquanto Impactos da Computação na Sociedade orienta a reflexão sobre os aspectos éticos,
+sociais, legais e de governança de dados relacionados ao uso de inteligência artificial
+(UNIVESP, 2020; UNIVESP, 2026). Esses conteúdos são mobilizados como base de formação; o projeto não
+prevê o uso de imagens nem de dados sensíveis da instituição parceira.
 
 <!-- FORMATAÇÃO (aplicada na conversão para .docx):
      título "1 Introdução" → estilo 1ttulonivel1
@@ -104,7 +108,52 @@ informação.»
 
 ### 2.1 Objetivos
 
-⬜ Não iniciado.
+O projeto busca transformar dados históricos de investimentos em mídia digital em informações
+organizadas para apoiar decisões da gestão de uma instituição de ensino. Essa finalidade articula
+o tema norteador da UNIVESP — análise de dados existentes, métodos analíticos, recursos de
+inteligência artificial e interface web — ao problema identificado junto à comunidade parceira
+(GRUPO DO PROJETO INTEGRADOR, 2026).
+
+#### Objetivo geral
+
+Desenvolver uma plataforma web para consolidar e analisar dados de investimentos em mídia digital
+de uma instituição de ensino, utilizando métodos analíticos e recursos de inteligência artificial
+para apoiar a interpretação dos resultados e a tomada de decisão sobre a distribuição do
+orçamento de marketing.
+
+A consolidação dos dados e a organização de indicadores respondem à necessidade de tornar a
+avaliação de campanhas comparável e útil à gestão. No marketing digital, métricas e indicadores
+de desempenho apoiam a formulação de estratégias e permitem verificar se os resultados estão
+alinhados aos objetivos organizacionais (SAURA; PALOS-SÁNCHEZ; SUÁREZ, 2017). Por essa razão, os
+dois primeiros objetivos específicos concentram-se em reunir os registros dispersos e estruturar
+indicadores que permitam analisar canais e campanhas.
+
+O objetivo de aplicar métodos analíticos e recursos de inteligência artificial não pressupõe que
+esses recursos substituam a decisão humana. Ele decorre do potencial da ciência de dados para
+extrair informações acionáveis de conjuntos extensos de dados no contexto do marketing digital e
+apoiar a tomada de decisão (SAURA, 2021). Assim, esses recursos serão empregados para auxiliar a
+interpretação dos indicadores consolidados.
+
+O desenvolvimento da interface e a avaliação do protótipo decorrem da necessidade de converter a
+análise em informação compreensível para quem decide. No contexto educacional, dashboards podem
+apoiar gestores na compreensão de informações oriundas de diferentes sistemas e nos processos de
+tomada de decisão (LEMES; DIAS; OLIVEIRA, 2023). A avaliação com profissionais da instituição
+parceira será orientada por métodos de experiência do usuário, cuja literatura sistematiza técnicas
+para compreender necessidades e avaliar serviços de informação (PINHEIRO; DIAS, 2023).
+
+Em decorrência dessas necessidades, foram definidos os seguintes objetivos específicos:
+
+#### Objetivos específicos
+
+* Consolidar dados históricos de investimento e desempenho de campanhas provenientes de fontes
+  distintas em uma estrutura adequada à análise.
+* Identificar e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
+* Aplicar métodos analíticos e recursos de inteligência artificial para apoiar a interpretação dos
+  indicadores.
+* Desenvolver uma interface web que apresente os indicadores de forma compreensível para a
+  gestão.
+* Avaliar a versão inicial do protótipo com profissionais da instituição parceira, registrando as
+  contribuições recebidas para sua evolução.
 
 ### 2.2 Justificativa e delimitação do problema
 

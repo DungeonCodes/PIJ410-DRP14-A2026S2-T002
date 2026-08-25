@@ -120,7 +120,6 @@ Registradas para não se perderem; nenhuma foi decidida ainda.
 
 | Pendência | Origem | Bloqueia |
 |---|---|---|
-| Curso e disciplinas cursadas a indicar | não consta no Plano de Ação | Introdução (parcial) e item "Relação com as disciplinas" (final, 2,0 pontos) |
 | Segmento da instituição parceira (básica, superior ou técnica) | não consta no Plano de Ação | caracterização da comunidade externa; recorte do acervo bibliográfico (eixo E1 cobre apenas ensino superior) |
 | RA de uma integrante consta como "a informar" | Plano de Ação | ficha catalográfica e capa |
 | Eixo E11 (agentes e memória) entra no relatório? | ver `/docs/referencias.md` | Metodologia — não confundir com o Design Thinking exigido pela rubrica |
@@ -138,3 +137,7 @@ Registradas aqui porque constaram como pendências e já não são.
   está em conformidade. As Orientações para Avaliação mencionam "até 7", mas o Regulamento é a
   norma superior e prevalece. Vale mencionar à orientadora na primeira orientação.
 * **Motivação e escolha do local.** Descritas no Plano de Ação e incorporadas à Introdução.
+* **Cursos e disciplinas do grupo.** O grupo reúne estudantes de Bacharelado em Ciência de Dados
+  e Engenharia da Computação. A Introdução relaciona as disciplinas informadas pelo grupo às
+  ementas dos PPCs oficiais da UNIVESP, sem pressupor que todos os integrantes cursaram todas
+  elas.
