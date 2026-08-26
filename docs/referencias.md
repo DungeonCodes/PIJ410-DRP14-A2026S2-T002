@@ -51,6 +51,7 @@ grupo fechar o tema com a instituição parceira.
 | `E9` | Bancos de dados relacionais, modelagem e desempenho (PostgreSQL) | 2.4 Aplicação das disciplinas / Resultados |
 | `E10` | Análise de dados, pipelines e qualidade de dados | 2.4 Aplicação das disciplinas |
 | `E11` | Agentes de LLM, memória, engenharia de contexto e apoio controlado a simulações | Metodologia (processo de desenvolvimento) |
+| `E12` | Aprendizagem de máquina aplicada à análise preditiva e à tomada de decisão em marketing | 2.3 Fundamentação teórica / 2.5 Resultados |
 
 Os eixos `E7` a `E10` sustentam o item **"Relação com as disciplinas estudadas"**, que vale
 **2,0 pontos** no relatório final e exige conteúdo de *mais de três disciplinas com referência
@@ -196,6 +197,21 @@ configurações de modelos previstas para uso via CLI. A obra 35 permanece candi
 avaliada, antes de eventual citação, para a discussão sobre limites de contexto e organização da
 memória.
 
+### E12 — Aprendizagem de máquina aplicada ao marketing
+
+| # | Obra | Ano | Veículo | Revisão por pares | Status |
+|---|---|---|---|---|---|
+| 40 | JORDAN; MITCHELL — Machine learning: trends, perspectives, and prospects | 2015 | Science | sim | `citada` |
+| 41 | DE MAURO; SESTINO; BACCONI — Machine learning and artificial intelligence use in marketing: a general taxonomy | 2022 | Italian Journal of Marketing | sim | `citada` |
+
+As obras deste eixo fundamentam a separação conceitual adotada no projeto: algoritmos
+determinísticos calculam indicadores por regras previamente definidas; aprendizagem de máquina
+treina e avalia um modelo a partir de exemplos históricos; e IA agêntica/generativa atua somente
+como apoio à organização e à interpretação. Jordan e Mitchell (2015) caracterizam a aprendizagem
+de máquina como sistemas que melhoram seu desempenho a partir da experiência; De Mauro, Sestino e
+Bacconi (2022) a tratam como subárea da IA e sistematizam casos de uso em marketing, inclusive
+apoio à decisão e impacto financeiro.
+
 ---
 
 ## Lacunas do acervo
@@ -250,6 +266,8 @@ BEZERRA, Maria Luana Gonçalves et al. Estratégias de marketing de relacionamen
 
 CAMPELO, Arandi et al. Marketing digital na captação e fidelização de clientes: a visão de alunos do curso de Administração de uma instituição de ensino superior. **Revista Vox Metropolitana**, n. 5, p. 199-213, 2021. DOI: 10.48097/2674-8673.2021n5p14. Disponível em: https://doi.org/10.48097/2674-8673.2021n5p14. Acesso em: 24 ago. 2026.
 
+DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
+
 FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2023. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 24 ago. 2026.
 
 GAO, Yunfan et al. **Retrieval-Augmented Generation for Large Language Models**: a survey. arXiv, 2023. Preprint, não revisado por pares. DOI: 10.48550/arXiv.2312.10997. Disponível em: https://doi.org/10.48550/arXiv.2312.10997. Acesso em: 24 ago. 2026.
@@ -257,6 +275,8 @@ GAO, Yunfan et al. **Retrieval-Augmented Generation for Large Language Models**:
 GOMES, Robson Ferreira et al. Dashboard para Gestão Acadêmica. **Congresso de Computação e Tecnologias da Informação**, v. 1, n. 21, p. 64-72, 2019. DOI: 10.33911/encoinfo.21.2019.v1.6. Disponível em: https://doi.org/10.33911/encoinfo.21.2019.v1.6. Acesso em: 24 ago. 2026.
 
 GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação III**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
+
+JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
 
 KALUŽA, Marin; VUKELIĆ, Bernard. Comparison of front-end frameworks for web applications development. **Zbornik Veleučilišta u Rijeci**, v. 6, n. 1, p. 261-282, 2018. DOI: 10.31784/zvr.6.1.19. Disponível em: https://doi.org/10.31784/zvr.6.1.19. Acesso em: 24 ago. 2026.
 

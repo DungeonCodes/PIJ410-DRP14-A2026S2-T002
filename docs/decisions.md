@@ -140,11 +140,14 @@ Registradas aqui porque constaram como pendências e já não são.
   e Engenharia da Computação. A Introdução relaciona as disciplinas informadas pelo grupo às
   ementas dos PPCs oficiais da UNIVESP, sem pressupor que todos os integrantes cursaram todas
   elas.
-* **Uso de algoritmos determinísticos e IA agêntica.** Confirmado pelo grupo em 25 ago. 2026:
-  inferências e indicadores serão produzidos por rotinas determinísticas e reprodutíveis; a IA
-  agêntica via CLI servirá de apoio controlado a cenários de simulação, interpretação e revisão.
-  As saídas dos agentes não substituem cálculos, evidência empírica, decisão humana ou a validação
-  com a comunidade externa. O eixo E11 integra a metodologia de desenvolvimento e permanece
-  distinto do ciclo de Design Thinking exigido pela rubrica. No trabalho escrito, os agentes podem
-  apoiar consulta, organização e revisão de registros versionados, mas a seleção do conteúdo, a
-  validação das fontes e a aprovação das versões pertencem ao grupo.
+* **Uso de indicadores determinísticos, aprendizagem de máquina e IA agêntica.** Atualizado pelo
+  grupo em 26 ago. 2026: indicadores serão calculados por rotinas determinísticas e reprodutíveis;
+  em paralelo, o projeto treinará e avaliará ao menos um modelo supervisionado de aprendizagem de
+  máquina sobre dados históricos para estimar uma variável de desempenho de campanhas. A IA
+  agêntica via CLI servirá de apoio controlado a cenários de simulação, interpretação e revisão,
+  sem ser apresentada como o modelo de aprendizagem de máquina. As saídas dos agentes não
+  substituem cálculos, resultados do modelo, evidência empírica, decisão humana ou a validação com
+  a comunidade externa. O eixo E11 integra a metodologia de desenvolvimento e permanece distinto
+  do ciclo de Design Thinking exigido pela rubrica. No trabalho escrito, os agentes podem apoiar
+  consulta, organização e revisão de registros versionados, mas a seleção do conteúdo, a validação
+  das fontes e a aprovação das versões pertencem ao grupo.

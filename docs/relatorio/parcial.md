@@ -31,9 +31,9 @@ pena de o item "Adequações" do relatório final registrar inconsistência.
 | Polos | Aricanduva, São Rafael, Rosa da China, Jaçanã |
 | Integrantes | 8 (ver Plano de Ação; um RA ainda a informar) |
 | Título provisório | Plataforma Analítica para Apoio à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional |
-| Tema específico | Análise de dados de investimentos em mídia digital para apoio à tomada de decisão em uma instituição de ensino, com dados históricos, inferências analíticas por algoritmos determinísticos, simulações apoiadas por IA agêntica e visualização em interface web |
+| Tema específico | Desenvolvimento de análise de dados em escala sobre dados históricos de investimentos em mídia digital, com indicadores determinísticos, aprendizagem de máquina para análise preditiva, IA agêntica como apoio controlado e interface web para visualização dos resultados |
 | Problema | Dados de investimento e desempenho de mídia digital encontram-se dispersos em diferentes fontes, dificultando a análise do retorno das campanhas e a tomada de decisão sobre a distribuição do orçamento de marketing |
-| Objetivo | Desenvolver uma plataforma web para consolidar e analisar dados de investimentos em mídia digital de uma instituição de ensino, utilizando métodos analíticos, inferências determinísticas e IA agêntica como apoio controlado a simulações e à interpretação dos resultados, para apoiar a tomada de decisão sobre a distribuição do orçamento de marketing |
+| Objetivo | Desenvolver e aplicar métodos de análise de dados e aprendizagem de máquina sobre dados históricos de investimentos em mídia digital de uma instituição de ensino, a fim de produzir indicadores e análises que apoiem a interpretação dos resultados e a tomada de decisão sobre a distribuição do orçamento de marketing. A plataforma web será o meio de apresentação desses resultados. |
 | Comunidade externa | Instituição de ensino privada da região metropolitana de São Paulo; acesso por intermédio de um integrante; interlocutoras: gestora de marketing e direção/mantenedora |
 | Entrega do parcial | Quinzena 4 — até 04/10/2026 |
 
@@ -68,13 +68,13 @@ PROJETO INTEGRADOR, 2026). O problema que este trabalho enfrenta é, portanto, d
 analítica antes de ser tecnológica: os dados existem, mas não se apresentam em forma que sustente
 a decisão.
 
-A ideia básica que orienta o trabalho é que esse conjunto disperso pode ser consolidado,
-submetido a métodos analíticos e a recursos de inteligência artificial que auxiliem a
-interpretação dos resultados, e apresentado em uma interface web capaz de tornar os
-indicadores acompanháveis pela gestão. O objeto deste trabalho é, assim, o desenvolvimento e a
-validação de uma plataforma analítica para apoio à tomada de decisão sobre investimentos em
-mídia digital no contexto educacional, construída a partir de dados históricos de campanhas de
-uma instituição de ensino e avaliada junto aos profissionais que respondem por essas decisões.
+A ideia básica que orienta o trabalho é que esse conjunto disperso pode ser consolidado e
+submetido à análise de dados em escala. Indicadores calculados por regras determinísticas serão
+complementados por um modelo de aprendizagem de máquina treinado e avaliado a partir dos dados
+históricos; a interface web apresentará esses resultados de modo acompanhável pela gestão. O
+objeto deste trabalho é, assim, o desenvolvimento e a validação de uma análise de dados aplicada
+a investimentos em mídia digital no contexto educacional, comunicada por uma plataforma web e
+avaliada junto aos profissionais que respondem por essas decisões.
 
 A escolha do tema decorre de uma necessidade real, manifestada por uma instituição de ensino
 privada da região metropolitana de São Paulo à qual o grupo teve acesso por intermédio de um de
@@ -108,18 +108,18 @@ prevê o uso de imagens nem de dados sensíveis da instituição parceira.
 
 ### 2.1 Objetivos
 
-O projeto busca transformar dados históricos de investimentos em mídia digital em informações
-organizadas para apoiar decisões da gestão de uma instituição de ensino. Essa finalidade articula
-o tema norteador da UNIVESP — análise de dados existentes, métodos analíticos, recursos de
-inteligência artificial e interface web — ao problema identificado junto à comunidade parceira
-(GRUPO DO PROJETO INTEGRADOR, 2026).
+O projeto busca desenvolver análise de dados em escala a partir de um conjunto de dados históricos
+existentes de investimentos em mídia digital, aplicando aprendizagem de máquina e preparando uma
+interface para visualização dos resultados. Essa finalidade corresponde explicitamente ao tema
+norteador da UNIVESP e articula o problema identificado junto à comunidade parceira (GRUPO DO
+PROJETO INTEGRADOR, 2026).
 
 #### Objetivo geral
 
-Desenvolver uma plataforma web para consolidar e analisar dados de investimentos em mídia digital
-de uma instituição de ensino, utilizando métodos analíticos, algoritmos determinísticos para as
-inferências sobre os dados e IA agêntica como apoio controlado a simulações e à interpretação dos
-resultados, para apoiar a tomada de decisão sobre a distribuição do orçamento de marketing.
+Desenvolver e aplicar métodos de análise de dados e aprendizagem de máquina sobre dados históricos
+de investimentos em mídia digital de uma instituição de ensino, a fim de produzir indicadores e
+análises que apoiem a interpretação dos resultados e a tomada de decisão sobre a distribuição do
+orçamento de marketing. A plataforma web será o meio de apresentação desses resultados.
 
 A consolidação dos dados e a organização de indicadores respondem à necessidade de tornar a
 avaliação de campanhas comparável e útil à gestão. No marketing digital, métricas e indicadores
@@ -128,22 +128,30 @@ alinhados aos objetivos organizacionais (SAURA; PALOS-SÁNCHEZ; SUÁREZ, 2017). 
 dois primeiros objetivos específicos concentram-se em reunir os registros dispersos e estruturar
 indicadores que permitam analisar canais e campanhas.
 
-O objetivo de aplicar métodos analíticos e recursos de inteligência artificial não pressupõe que
-esses recursos substituam a decisão humana. Ele decorre do potencial da ciência de dados para
-extrair informações acionáveis de conjuntos extensos de dados no contexto do marketing digital e
-apoiar a tomada de decisão (SAURA, 2021). As inferências numéricas da plataforma serão produzidas
-por rotinas determinísticas, com entradas, parâmetros e resultados registráveis, para que uma mesma
-base e uma mesma regra produzam o mesmo resultado e possam ser conferidas. Essa escolha traduz,
-para o protótipo, o requisito de reprodutibilidade de resultados computacionais (PENG, 2011).
+O objetivo de aplicar análise de dados e aprendizagem de máquina não pressupõe que esses recursos
+substituam a decisão humana. Ele decorre do potencial da ciência de dados para extrair informações
+acionáveis de conjuntos extensos de dados no contexto do marketing digital e apoiar a tomada de
+decisão (SAURA, 2021). No projeto, aprendizagem de máquina não será sinônimo de usar uma ferramenta
+de IA generativa: consistirá no treinamento e na avaliação de pelo menos um modelo supervisionado
+com exemplos históricos, para estimar uma variável de desempenho definida na etapa de preparação
+dos dados. A aprendizagem de máquina se caracteriza justamente pela melhoria do desempenho em uma
+tarefa a partir da experiência representada pelos dados (JORDAN; MITCHELL, 2015).
 
-A IA agêntica será empregada via linha de comando como camada auxiliar: poderá organizar a
-execução de cenários de simulação, propor explicações para os indicadores e apoiar a revisão dos
-artefatos produzidos. Agentes baseados em modelos de linguagem constituem uma arquitetura que
-combina o modelo a planejamento, memória e uso de ferramentas, mas o campo ainda apresenta
-desafios que exigem controles e avaliação humana (WANG et al., 2024). Portanto, as respostas dos
-agentes não serão tratadas como cálculo, evidência empírica ou decisão autônoma; cada cenário será
-calculado pelas rotinas determinísticas e apresentado como simulação exploratória, sujeita à revisão
-do grupo e dos profissionais participantes.
+Os indicadores como investimento, impressões, cliques, custo por clique, taxa de conversão e
+retorno serão calculados por rotinas determinísticas, com entradas, parâmetros e resultados
+registráveis. Essa camada não será apresentada como aprendizagem de máquina; ela servirá de base
+comparável e reprodutível para a análise e para a avaliação do modelo preditivo (PENG, 2011). Na
+literatura de marketing, a aprendizagem de máquina é uma subárea da IA aplicada a grandes volumes
+de dados e a casos como apoio à decisão e impacto financeiro (DE MAURO; SESTINO; BACCONI, 2022).
+
+A IA agêntica será empregada via linha de comando somente como camada auxiliar: poderá organizar
+a execução de cenários de simulação, propor explicações para indicadores e apoiar a revisão dos
+artefatos produzidos. Ela não treinará nem substituirá o modelo de aprendizagem de máquina. Agentes
+baseados em modelos de linguagem constituem uma arquitetura que combina o modelo a planejamento,
+memória e uso de ferramentas, mas o campo ainda apresenta desafios que exigem controles e avaliação
+humana (WANG et al., 2024). Portanto, as respostas dos agentes não serão tratadas como cálculo,
+evidência empírica ou decisão autônoma; cada cenário será calculado ou estimado pelas rotinas e
+modelos definidos pelo grupo e ficará sujeito à revisão humana.
 
 O desenvolvimento da interface e a avaliação do protótipo decorrem da necessidade de converter a
 análise em informação compreensível para quem decide. No contexto educacional, dashboards podem
@@ -159,11 +167,14 @@ Em decorrência dessas necessidades, foram definidos os seguintes objetivos espe
 * Consolidar dados históricos de investimento e desempenho de campanhas provenientes de fontes
   distintas em uma estrutura adequada à análise.
 * Identificar e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
-* Implementar rotinas determinísticas para calcular indicadores e inferências analíticas a partir
-  dos dados consolidados, com parâmetros e resultados passíveis de conferência.
+* Implementar rotinas determinísticas para calcular indicadores a partir dos dados consolidados,
+  com parâmetros e resultados passíveis de conferência.
+* Preparar dados históricos, treinar e avaliar ao menos um modelo supervisionado de aprendizagem
+  de máquina para estimar uma variável de desempenho de campanhas, comparando-o a uma referência
+  determinística e registrando suas métricas de avaliação.
 * Empregar IA agêntica via linha de comando como apoio controlado à formulação, execução e
-  interpretação de cenários de simulação, sem substituir os cálculos determinísticos ou a revisão
-  humana.
+  interpretação de cenários de simulação, sem substituir os cálculos determinísticos, o modelo de
+  aprendizagem de máquina ou a revisão humana.
 * Desenvolver uma interface web que apresente os indicadores de forma compreensível para a
   gestão.
 * Avaliar a versão inicial do protótipo com profissionais da instituição parceira, registrando as
@@ -179,9 +190,9 @@ INTEGRADOR, 2026). Diante desse contexto, a pesquisa é orientada pela seguinte 
 organizar e apresentar os dados históricos de investimentos em mídia digital de modo a apoiar a
 tomada de decisão da gestão de uma instituição de ensino?
 
-O problema vincula-se ao tema norteador da UNIVESP porque parte de um conjunto de dados já
-existente, demanda métodos analíticos para interpretá-lo e prevê uma interface web para tornar os
-resultados acompanháveis. A escolha de indicadores e métricas é necessária para avaliar a
+O problema vincula-se ao tema norteador da UNIVESP porque parte de um conjunto de dados existente,
+demanda análise de dados em escala e aprendizagem de máquina para interpretá-lo e prevê uma
+interface web para tornar os resultados acompanháveis. A escolha de indicadores e métricas é necessária para avaliar a
 efetividade das estratégias de marketing digital e verificar sua aderência aos objetivos
 organizacionais (SAURA; PALOS-SÁNCHEZ; SUÁREZ, 2017). A proposta, portanto, não se limita à
 criação de uma interface: busca converter dados dispersos em informação que possa sustentar uma
@@ -212,12 +223,27 @@ como exploratórios e dependerão de cálculo determinístico e revisão humana.
 
 ### 2.3 Fundamentação teórica
 
-⬜ Em elaboração. Acervo levantado em `/docs/referencias.md` (39 obras, com fontes já lidas e
-citadas nas seções anteriores).
+Em elaboração. Para evitar a confusão entre os termos centrais do projeto, a fundamentação adotará
+três camadas distintas. A primeira é a análise determinística, formada por métricas e indicadores
+obtidos por regras explícitas. A segunda é a aprendizagem de máquina, entendida como treinamento e
+avaliação de modelos que aprendem padrões a partir de exemplos históricos e produzem estimativas
+para novas observações (JORDAN; MITCHELL, 2015). A terceira é a IA agêntica/generativa, utilizada
+somente como apoio controlado à organização e interpretação, sem ser apresentada como o método que
+aprende com os dados.
+
+Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
+Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
+marketing ligadas a apoio à decisão e impacto financeiro. Assim, a contribuição técnica prevista
+não é apenas uma interface nem uma explicação gerada por IA: inclui o desenvolvimento, treinamento
+e avaliação de um modelo de aprendizagem de máquina sobre a base histórica preparada para o estudo.
+O modelo, a variável-alvo, as variáveis de entrada, o particionamento dos dados e as métricas de
+avaliação serão documentados na metodologia e nos resultados.
 
 ### 2.4 Metodologia
 
-⬜ Em elaboração. Como apoio à organização da produção documental, serão mantidos registros
+⬜ Em elaboração. A metodologia detalhará a preparação da base, a definição da variável-alvo, a
+separação entre treinamento e teste, o treinamento do modelo supervisionado e o registro de suas
+métricas de avaliação, além das rotinas determinísticas de indicadores. Como apoio à organização da produção documental, serão mantidos registros
 versionados de escopo, fontes, decisões e revisões. Ferramentas de IA poderão apoiar a consulta,
 organização e revisão desses registros sob contexto controlado; a seleção do conteúdo, a validação
 das fontes e a aprovação das versões permanecerão sob responsabilidade do grupo.

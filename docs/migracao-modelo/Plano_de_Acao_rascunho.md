@@ -1,30 +1,53 @@
-# Plano de Ação — rascunho de migração para o modelo novo
+# PLANO DE AÇÃO
 
 > Baseado no modelo novo "modelo-novo/Modelo-Plano_de_Acao.docx" e no plano anterior preenchido.
 > Este arquivo é a fonte de revisão do conteúdo. Os nomes e RAs dos integrantes não são reproduzidos aqui; devem ser inseridos somente na cópia de trabalho local do DOCX.
 >
-> **Status:** em atualização. As metas das quinzenas precisam ser redefinidas conforme as orientações da orientadora; por isso, as atividades herdadas estão preservadas como referência, mas não devem ser consideradas aprovadas para o novo cronograma.
+> Status: em atualização. As metas das quinzenas precisam ser redefinidas conforme as orientações da orientadora; por isso, as atividades herdadas estão preservadas como referência, mas não devem ser consideradas aprovadas para o novo cronograma.
 
-## Identificação
+## Integrantes
 
-| Campo do modelo novo | Conteúdo a inserir |
-|---|---|
-| Integrantes | Inserir os 8 integrantes e respectivos RAs a partir do plano antigo. Um RA continua pendente de informação. |
-| Disciplina | PIJ410-DRP14-A2026S2-T002 |
-| Tema escolhido pelo grupo | Análise de dados de investimentos em mídia digital e aprendizagem de máquina para apoio à tomada de decisão em uma instituição de ensino. |
-| Título provisório | Plataforma Analítica para Apoio à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional |
-| Problema | Dados de investimento e desempenho de mídia digital encontram-se dispersos em diferentes fontes, dificultando a análise do retorno das campanhas e a tomada de decisão sobre a distribuição do orçamento de marketing. |
-| Objetivo | Desenvolver e aplicar métodos de análise de dados e aprendizagem de máquina sobre dados históricos de investimentos em mídia digital de uma instituição de ensino, a fim de produzir indicadores e análises que apoiem a interpretação dos resultados e a tomada de decisão sobre a distribuição do orçamento de marketing. Como meio de apresentação desses resultados, será desenvolvida uma plataforma web. |
-| Polos | Aricanduva, São Rafael, Rosa da China e Jaçanã |
-| Orientadora do PI | Letícia Vieira Santos |
+Inserir os 8 integrantes e respectivos RAs a partir do plano antigo. Um RA continua pendente de informação.
 
-## Processo de escolha do local de realização do PI
+## Disciplina
+
+PIJ410-DRP14-A2026S2-T002
+
+## Tema escolhido pelo grupo com base no tema norteador da Univesp
+
+Análise de dados de investimentos em mídia digital e aprendizagem de máquina para apoio à tomada de decisão em uma instituição de ensino.
+
+## Título provisório do trabalho
+
+Plataforma Analítica para Apoio à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional
+
+## Problema
+
+Dados de investimento e desempenho de mídia digital encontram-se dispersos em diferentes fontes, dificultando a análise do retorno das campanhas e a tomada de decisão sobre a distribuição do orçamento de marketing.
+
+## Objetivo
+
+Desenvolver e aplicar métodos de análise de dados e aprendizagem de máquina sobre dados históricos de investimentos em mídia digital de uma instituição de ensino, a fim de produzir indicadores e análises que apoiem a interpretação dos resultados e a tomada de decisão sobre a distribuição do orçamento de marketing. Como meio de apresentação desses resultados, será desenvolvida uma plataforma web.
+
+## Polo(s)
+
+Aricanduva, São Rafael, Rosa da China e Jaçanã
+
+## Orientador do PI
+
+Letícia Vieira Santos
+
+## Descreva o processo de escolha do local de realização do PI.
+
+> Orientação para o preenchimento: É esperado que o grupo descreva o processo de escolha do local, identificando as seguintes ações: quais outras opções de comunidades externas existiam ou se existiam; como chegaram até essas comunidades; quais ações e decisões tomaram em grupo para a escolha da comunidade participante do projeto.
 
 O grupo optou pela realização do Projeto Integrador em uma instituição de ensino parceira, à qual já havia possibilidade de acesso por meio de um dos integrantes. Não houve outra comunidade externa formalmente definida como alternativa nesta etapa. A escolha foi discutida pelo grupo considerando a existência de uma demanda real relacionada à análise de dados, à aprendizagem de máquina e aos investimentos em mídia digital, a possibilidade de contato direto com a direção e com a equipe de marketing e a viabilidade de realizar entrevistas, levantamento de necessidades, testes e validação da solução.
 
 Dessa forma, o grupo considerou que a instituição apresentava condições adequadas para o desenvolvimento do projeto, permitindo aplicar a metodologia proposta pela UNIVESP em um contexto real e obter posteriormente o retorno dos participantes sobre as análises e a interface desenvolvidas.
 
-## Conversa com a comunidade externa
+## Descreva como foi a conversa com a comunidade externa que participará do projeto e que acolheu o grupo.
+
+> Orientação para o preenchimento: É esperado que o grupo descreva a primeira visita à comunidade externa, identificando as seguintes ações: com qual(is) pessoa(s) conversou(ram) e sua posição na empresa/escola/etc.; descrição do local da visita; percepções do grupo quanto ao seu primeiro contato.
 
 O primeiro contato do grupo com a comunidade externa ocorreu por meio de uma conversa com a gestora de marketing da instituição de ensino. Nesse momento, foi apresentada a necessidade de compreender melhor quanto deveria ser investido em tráfego pago e avaliar se os valores destinados às campanhas eram adequados aos objetivos da instituição.
 
@@ -32,7 +55,9 @@ A partir dessa demanda inicial, o grupo também conversou com a direção/manten
 
 Nesse primeiro contato, o grupo percebeu a necessidade de reunir, analisar e apresentar os dados de maneira mais clara e integrada, permitindo que a instituição acompanhe os principais indicadores e tenha maior suporte para tomar decisões relacionadas aos investimentos em mídia digital. A receptividade da equipe e o acesso aos profissionais diretamente envolvidos no processo demonstraram a viabilidade de desenvolver e posteriormente validar a solução junto à comunidade participante.
 
-## Problemas pesquisáveis e relação com o tema norteador
+## Descreva, a partir da conversa com a comunidade externa, quais problemas podem ser pesquisados e que se relacionam com o tema norteador definido pela Univesp.
+
+> Orientação para o preenchimento: É esperado que o grupo descreva ao menos um problema e sua relação com o tema norteador definido pela Univesp.
 
 A partir das conversas com a gestora de marketing e com a direção/mantenedora da instituição, o grupo identificou como problema principal a dificuldade de avaliar se os valores investidos em tráfego pago são adequados aos objetivos da instituição e quais canais ou campanhas apresentam melhor desempenho.
 
@@ -40,124 +65,274 @@ Também foi identificada a necessidade de reunir, organizar e analisar de forma 
 
 O problema relaciona-se ao tema norteador da UNIVESP porque envolve a análise de um conjunto de dados existentes, a aplicação de métodos de análise de dados e aprendizagem de máquina para obter informações relevantes e o uso de uma interface web para visualização e acompanhamento dos resultados. O foco do projeto está no desenvolvimento das análises; a interface será o meio de comunicar seus resultados à gestão.
 
-## Tema específico do grupo
+## Frente ao tema norteador e aos problemas levantados junto à comunidade externa, descreva qual o tema específico a ser trabalho pelo grupo no PI.
+
+> Orientação para o preenchimento: É esperado que o grupo descreva o tema que será trabalhado no Projeto Integrador e sua relação com o tema norteador definido pela Univesp.
 
 O tema específico definido pelo grupo é a análise de dados de investimentos em mídia digital e a aplicação de métodos de aprendizagem de máquina para apoio à tomada de decisão em uma instituição de ensino. O projeto terá como foco a consolidação e a análise de dados históricos relacionados às campanhas de tráfego pago, permitindo comparar investimentos, desempenho dos canais e os principais indicadores utilizados pela gestão.
 
 A proposta relaciona-se diretamente ao tema norteador da UNIVESP ao utilizar conjuntos de dados já existentes e métodos de análise de dados e de aprendizagem de máquina para produzir indicadores e interpretações dos resultados. A plataforma web terá caráter instrumental: apresentará essas análises de forma organizada e relevante para apoiar a definição e o acompanhamento dos investimentos em mídia da instituição.
 
-## Plano de ação por quinzena
+## Plano de Ação
 
-> **Pendência crítica:** os objetivos das quinzenas mudaram. Preencher cada campo “Objetivo novo” com a definição aprovada pelo grupo/orientadora e revisar as atividades correspondentes antes de migrar este conteúdo para o DOCX novo.
+> Orientação para o preenchimento: É esperado que o grupo identifique em todas as quinzenas: as atividades de maneira detalhada; os integrantes do grupo responsáveis por elas (todos os integrantes precisam ser listados); as datas de início e de finalização (conclusão da atividade) para cada uma delas. Além disso, ao descrever a atividade, note se há relação com o objetivo proposto para cada quinzena.
 
-### Quinzena 1 — 10/08/2026 a 23/08/2026
+> As atividades abaixo foram reajustadas para aderirem aos objetivos das quinzenas previstos no modelo novo. Os responsáveis permanecem anonimizados neste Markdown; os nomes devem ser inseridos na cópia local do DOCX.
 
-**Objetivo novo:** PENDENTE — redefinir conforme a nova orientação.
+### Quinzena 1
 
-| Atividade herdada do plano anterior | Responsável (anonimizado) | Início | Finalização | Observação |
-|---|---|---|---|---|
-| Analisar a viabilidade técnica inicial | Integrante 6 | 10/08 | 23/08 | Frente técnica |
-| Organizar o cronograma inicial | Integrante 4 | 10/08 | 23/08 | Gestão |
-| Organizar os registros iniciais | Integrante 5 | 10/08 | 23/08 | Escrita |
-| Levantar critérios de avaliação | Integrante 8 | 10/08 | 23/08 | Validação |
-| Realizar levantamento bibliográfico | Integrante 3 | 10/08 | 23/08 | Pesquisa |
-| Levantar contexto da comunidade | Integrante 2 | 10/08 | 23/08 | Comunidade |
-| Identificar necessidades e requisitos | Integrante 1 | 10/08 | 23/08 | Requisitos |
-| Levantar indicadores de investimento | Integrante 7 | 10/08 | 23/08 | Análise |
+Objetivo: Analisar o cenário do projeto e iniciar o levantamento bibliográfico para abordar o problema.
 
-### Quinzena 2 — 24/08/2026 a 06/09/2026
+#### Atividades planejadas
 
-**Objetivo novo:** PENDENTE — redefinir conforme a nova orientação.
+##### 1. Analisar o tema norteador, o contexto da comunidade e o problema inicial
 
-| Atividade herdada do plano anterior | Responsável (anonimizado) | Início | Finalização | Observação |
-|---|---|---|---|---|
-| Planejar arquitetura técnica | Integrante 6 | 24/08 | 06/09 | Desenvolvimento |
-| Controlar prazos e entrega | Integrante 4 | 24/08 | 01/09 | Responsável pela entrega |
-| Consolidar redação do Plano | Integrante 5 | 24/08 | 31/08 | Escrita |
-| Definir critérios de teste | Integrante 8 | 24/08 | 06/09 | Validação |
-| Selecionar referências bibliográficas | Integrante 3 | 24/08 | 06/09 | Pesquisa |
-| Organizar informações da comunidade | Integrante 2 | 24/08 | 06/09 | Design Thinking |
-| Consolidar requisitos iniciais | Integrante 1 | 24/08 | 06/09 | Requisitos |
-| Definir indicadores principais | Integrante 7 | 24/08 | 06/09 | Análise |
+Responsáveis: Ademário e Alexsander
+Período: 10/08 a 23/08
+Foco: Requisitos e comunidade
 
-### Quinzena 3 — 07/09/2026 a 20/09/2026
+##### 2. Realizar levantamento bibliográfico sobre análise de dados em escala, aprendizagem de máquina e marketing digital
 
-**Objetivo novo:** PENDENTE — redefinir conforme a nova orientação.
+Responsáveis: Lucas e Michele
+Período: 10/08 a 23/08
+Foco: Pesquisa e escrita
 
-| Atividade herdada do plano anterior | Responsável (anonimizado) | Início | Finalização | Observação |
-|---|---|---|---|---|
-| Desenvolver arquitetura Next.js | Integrante 6 | 07/09 | 20/09 | Desenvolvimento |
-| Acompanhar atividades e Relatório | Integrante 4 | 07/09 | 20/09 | Gestão |
-| Iniciar redação do Relatório Parcial | Integrante 5 | 07/09 | 20/09 | Escrita |
-| Preparar roteiro de testes | Integrante 8 | 07/09 | 20/09 | Testes |
-| Desenvolver fundamentação teórica | Integrante 3 | 07/09 | 20/09 | Pesquisa |
-| Documentar empatia e definição | Integrante 2 | 07/09 | 20/09 | Design Thinking |
-| Formalizar requisitos funcionais | Integrante 1 | 07/09 | 20/09 | Requisitos |
-| Estruturar metodologia de análise | Integrante 7 | 07/09 | 20/09 | Análise |
+##### 3. Avaliar a viabilidade técnica, o acesso controlado aos dados e a estratégia de sanitização para o ambiente acadêmico
 
-### Quinzena 4 — 21/09/2026 a 04/10/2026
+Responsáveis: Rafael Martins
+Período: 10/08 a 23/08
+Foco: Frente técnica e proteção de dados
 
-**Objetivo novo:** PENDENTE — redefinir conforme a nova orientação.
+##### 4. Definir critérios iniciais de avaliação e organizar registros de evidências
 
-| Atividade herdada do plano anterior | Responsável (anonimizado) | Início | Finalização | Observação |
-|---|---|---|---|---|
-| Evoluir protótipo funcional | Integrante 6 | 21/09 | 30/09 | Desenvolvimento |
-| Acompanhar entrega do Relatório Parcial | Integrante 4 | 21/09 | 30/09 | Responsável pela entrega |
-| Consolidar texto do Relatório Parcial | Integrante 5 | 21/09 | 29/09 | Escrita |
-| Executar testes internos | Integrante 8 | 21/09 | 04/10 | Testes |
-| Revisar fundamentação e referências | Integrante 3 | 21/09 | 29/09 | Bibliografia |
-| Consolidar etapas de Design Thinking | Integrante 2 | 21/09 | 29/09 | Comunidade |
-| Conferir aderência aos requisitos | Integrante 1 | 21/09 | 04/10 | Requisitos |
-| Analisar indicadores e resultados | Integrante 7 | 21/09 | 04/10 | Resultados |
+Responsáveis: Rodrigo
+Período: 10/08 a 23/08
+Foco: Validação
 
-### Quinzena 5 — 05/10/2026 a 18/10/2026
+##### 5. Consolidar o cronograma inicial, responsabilidades e a estratégia de apresentação dos resultados
 
-**Objetivo novo:** PENDENTE — redefinir conforme a nova orientação.
+Responsáveis: Marcos e Raul
+Período: 10/08 a 23/08
+Foco: Gestão e vídeo
 
-| Atividade herdada do plano anterior | Responsável (anonimizado) | Início | Finalização | Observação |
-|---|---|---|---|---|
-| Disponibilizar protótipo para avaliação | Integrante 6 | 05/10 | 18/10 | Desenvolvimento |
-| Acompanhar cronograma e pendências | Integrante 4 | 05/10 | 18/10 | Gestão |
-| Organizar resultados da validação | Integrante 5 | 05/10 | 18/10 | Escrita |
-| Aplicar testes e organizar feedback | Integrante 8 | 05/10 | 18/10 | Validação |
-| Complementar pesquisa bibliográfica | Integrante 3 | 05/10 | 18/10 | Pesquisa |
-| Organizar contato com a comunidade | Integrante 2 | 05/10 | 18/10 | Comunidade |
-| Verificar requisitos com usuários | Integrante 1 | 05/10 | 18/10 | Requisitos |
-| Elaborar roteiro inicial do vídeo | Integrante 7 | 05/10 | 18/10 | Resultados e vídeo |
 
-### Quinzena 6 — 19/10/2026 a 01/11/2026
+### Quinzena 2
 
-**Objetivo novo:** PENDENTE — redefinir conforme a nova orientação.
+Objetivo: Interagir com a comunidade externa, definir o problema e organizar o plano de ação.
 
-| Atividade herdada do plano anterior | Responsável (anonimizado) | Início | Finalização | Observação |
-|---|---|---|---|---|
-| Implementar ajustes de feedback | Integrante 6 | 19/10 | 01/11 | Desenvolvimento |
-| Controlar checklist de entregas finais | Integrante 4 | 19/10 | 01/11 | Gestão |
-| Desenvolver Relatório Final | Integrante 5 | 19/10 | 01/11 | Escrita |
-| Executar testes finais | Integrante 8 | 19/10 | 01/11 | Testes |
-| Revisar fundamentação | Integrante 3 | 19/10 | 01/11 | Bibliografia |
-| Documentar retorno da comunidade | Integrante 2 | 19/10 | 01/11 | Design Thinking |
-| Verificar requisitos após ajustes | Integrante 1 | 19/10 | 01/11 | Requisitos |
-| Coordenar roteiro e gravações do vídeo | Integrante 7 | 19/10 | 01/11 | Vídeo |
+#### Atividades planejadas
 
-### Quinzena 7 — 02/11/2026 a 15/11/2026
+##### 1. Preparar o roteiro de conversa e levantar informações com a comunidade externa
 
-**Objetivo novo:** PENDENTE — redefinir conforme a nova orientação.
+Responsáveis: Ademário e Alexsander
+Período: 24/08 a 06/09
+Foco: Ouvir e interpretar o contexto
 
-| Atividade herdada do plano anterior | Responsável (anonimizado) | Início | Finalização | Observação |
-|---|---|---|---|---|
-| Finalizar protótipo e demonstração | Integrante 6 | 02/11 | 05/11 | Desenvolvimento/demonstração |
-| Conferir checklist e realizar entregas | Integrante 4 | 02/11 | 06/11 | Responsável pelas entregas |
-| Revisar e finalizar Relatório Final | Integrante 5 | 02/11 | 05/11 | Escrita |
-| Consolidar evidências de validação | Integrante 8 | 02/11 | 05/11 | Validação |
-| Conferir referências e fundamentação | Integrante 3 | 02/11 | 05/11 | Bibliografia |
-| Revisar relato da comunidade | Integrante 2 | 02/11 | 05/11 | Comunidade |
-| Conferência final de requisitos | Integrante 1 | 02/11 | 05/11 | Requisitos |
-| Finalização do vídeo de apresentação | Integrante 7 | 02/11 | 05/11 | Vídeo |
+##### 2. Consolidar as necessidades, os dados relevantes e os indicadores apontados pela comunidade
 
-## Próximo passo
+Responsáveis: Ademário
+Período: 24/08 a 06/09
+Foco: Requisitos
 
-1. Inserir as metas atualizadas de cada quinzena a partir das orientações da orientadora.
-2. Revisar, redistribuir ou remover as atividades herdadas para que correspondam a essas metas.
-3. Depois da aprovação do conteúdo, preencher uma cópia do modelo novo em docs/migracao-modelo/trabalho/.
+##### 3. Definir o procedimento técnico de extração, sanitização e preparação da base local
 
+Responsáveis: Rafael Martins
+Período: 24/08 a 06/09
+Foco: Frente técnica e proteção de dados
+
+##### 4. Delimitar o problema, a pergunta de pesquisa e o objetivo do projeto
+
+Responsáveis: Lucas e Michele
+Período: 24/08 a 06/09
+Foco: Pesquisa e escrita
+
+##### 5. Definir critérios de validação, registrar decisões e organizar o Plano de Ação
+
+Responsáveis: Marcos, Raul e Rodrigo
+Período: 24/08 a 06/09
+Foco: Gestão, vídeo e validação
+
+
+### Quinzena 3
+
+Objetivo: Definir título do trabalho, visitar o local de pesquisa, dar continuidade ao desenvolvimento do trabalho.
+
+#### Atividades planejadas
+
+##### 1. Confirmar título, recorte e objetivos do trabalho; realizar ou documentar a visita e as evidências da etapa de escuta
+
+Responsáveis: Ademário, Alexsander e Rodrigo
+Período: 07/09 a 20/09
+Foco: Definição, comunidade e validação
+
+##### 2. Preparar a base local sanitizada, definir a estrutura dos dados, os indicadores e o método de aprendizagem de máquina
+
+Responsáveis: Rafael Martins
+Período: 07/09 a 20/09
+Foco: Frente técnica
+
+##### 3. Desenvolver a fundamentação teórica e iniciar a redação do Relatório Parcial
+
+Responsáveis: Lucas e Michele
+Período: 07/09 a 20/09
+Foco: Pesquisa e escrita
+
+##### 4. Preparar o roteiro de testes e os critérios de validação da solução inicial
+
+Responsáveis: Rodrigo
+Período: 07/09 a 20/09
+Foco: Validação
+
+##### 5. Acompanhar o cronograma, organizar a apresentação dos resultados e registrar pendências
+
+Responsáveis: Marcos e Raul
+Período: 07/09 a 20/09
+Foco: Gestão e vídeo
+
+
+### Quinzena 4
+
+Objetivo: Construir e apresentar a solução inicial (Relatório Parcial); coletar sugestões com a comunidade externa; entregar o Relatório Parcial (conforme modelos disponíveis no AVA).
+
+#### Atividades planejadas
+
+##### 1. Preparar dados fictícios ou sanitizados, implementar indicadores, treinar o modelo supervisionado e desenvolver a interface inicial
+
+Responsáveis: Rafael Martins
+Período: 21/09 a 30/09
+Foco: Solução técnica inicial
+
+##### 2. Demonstrar a solução inicial à comunidade, coletar sugestões e registrar evidências
+
+Responsáveis: Ademário, Alexsander e Rodrigo
+Período: 21/09 a 04/10
+Foco: Implementar e testar
+
+##### 3. Consolidar, revisar e entregar o Relatório Parcial
+
+Responsáveis: Lucas, Marcos e Michele
+Período: 21/09 a 04/10
+Foco: Entrega acadêmica
+
+##### 4. Organizar a apresentação dos resultados iniciais e apoiar o registro da demonstração
+
+Responsáveis: Raul
+Período: 21/09 a 04/10
+Foco: Comunicação dos resultados
+
+##### 5. Acompanhar o cronograma e o checklist da entrega parcial
+
+Responsáveis: Marcos
+Período: 21/09 a 04/10
+Foco: Gestão
+
+
+### Quinzena 5
+
+Objetivo: Construir a solução final, com base nas sugestões do Relatório Parcial.
+
+#### Atividades planejadas
+
+##### 1. Analisar as sugestões recebidas e priorizar melhorias da solução
+
+Responsáveis: Ademário, Alexsander e Rodrigo
+Período: 05/10 a 18/10
+Foco: Retorno da comunidade
+
+##### 2. Aperfeiçoar a preparação dos dados, os indicadores, o modelo de aprendizagem de máquina e a interface
+
+Responsáveis: Rafael Martins
+Período: 05/10 a 18/10
+Foco: Solução técnica
+
+##### 3. Atualizar a fundamentação, a documentação técnica e o registro das decisões
+
+Responsáveis: Lucas e Michele
+Período: 05/10 a 18/10
+Foco: Pesquisa e escrita
+
+##### 4. Acompanhar prazos, requisitos e a evolução da solução final
+
+Responsáveis: Marcos
+Período: 05/10 a 18/10
+Foco: Gestão
+
+##### 5. Planejar a apresentação dos resultados e atualizar o roteiro do vídeo
+
+Responsáveis: Raul
+Período: 05/10 a 18/10
+Foco: Vídeo
+
+
+### Quinzena 6
+
+Objetivo: Analisar os resultados, finalizar o protótipo e preparar o Vídeo de apresentação.
+
+#### Atividades planejadas
+
+##### 1. Executar a avaliação final dos indicadores e do modelo de aprendizagem de máquina, finalizar a interface e analisar os resultados técnicos
+
+Responsáveis: Rafael Martins
+Período: 19/10 a 01/11
+Foco: Solução técnica e resultados
+
+##### 2. Verificar a aderência aos requisitos, registrar os testes finais e organizar as evidências da comunidade
+
+Responsáveis: Ademário, Alexsander e Rodrigo
+Período: 19/10 a 01/11
+Foco: Requisitos, validação e Design Thinking
+
+##### 3. Redigir os resultados, a metodologia e as conclusões do Relatório Final
+
+Responsáveis: Lucas e Michele
+Período: 19/10 a 01/11
+Foco: Escrita acadêmica
+
+##### 4. Elaborar o roteiro e preparar o Vídeo de apresentação
+
+Responsáveis: Raul
+Período: 19/10 a 01/11
+Foco: Vídeo
+
+##### 5. Controlar o checklist de entregas e o cronograma de finalização
+
+Responsáveis: Marcos
+Período: 19/10 a 01/11
+Foco: Gestão
+
+
+### Quinzena 7
+
+Objetivo: Concluir e entregar o Relatório Final e o Vídeo de apresentação.
+
+#### Atividades planejadas
+
+##### 1. Consolidar a versão final da solução técnica e preparar a demonstração do protótipo
+
+Responsáveis: Rafael Martins
+Período: 02/11 a 05/11
+Foco: Desenvolvimento
+
+##### 2. Revisar requisitos, evidências de validação e o relato da participação da comunidade
+
+Responsáveis: Ademário, Alexsander e Rodrigo
+Período: 02/11 a 05/11
+Foco: Conferência final
+
+##### 3. Revisar referências, fundamentação e redação do Relatório Final
+
+Responsáveis: Lucas e Michele
+Período: 02/11 a 05/11
+Foco: Entrega acadêmica
+
+##### 4. Conferir checklist, prazos e realizar a entrega do Relatório Final
+
+Responsáveis: Marcos
+Período: 02/11 a 06/11
+Foco: Gestão da entrega
+
+##### 5. Finalizar e entregar o Vídeo de apresentação
+
+Responsáveis: Raul
+Período: 02/11 a 05/11
+Foco: Vídeo

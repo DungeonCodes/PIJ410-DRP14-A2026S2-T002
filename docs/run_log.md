@@ -267,3 +267,26 @@ fontes, decisões e revisões serão mantidos em registros versionados; a IA pod
 organização e revisão, enquanto seleção de conteúdo, validação de fontes e aprovação de versões
 permanecem sob responsabilidade do grupo. Diretriz também registrada no contexto mestre e nas
 decisões. Nenhum commit realizado.
+
+---
+
+Data: 2026-08-26
+Ação realizada: inclusão explícita de aprendizagem de máquina no escopo analítico do PI e revisão
+do relatório parcial para distinguir indicadores determinísticos, modelo supervisionado de
+aprendizagem de máquina e IA agêntica/generativa.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+- `docs/referencias.md`
+- `docs/master_context.md`
+- `docs/decisions.md`
+Fontes verificadas: JORDAN; MITCHELL (2015), sobre aprendizagem de máquina como melhoria de
+desempenho a partir de experiência/dados; DE MAURO; SESTINO; BACCONI (2022), sobre aprendizagem
+de máquina como subárea da IA e seus casos de uso em marketing.
+Resultado: o relatório prevê preparar dados históricos, treinar e avaliar ao menos um modelo
+supervisionado para estimar uma variável de desempenho de campanhas, com comparação a uma camada
+de indicadores determinísticos. A IA agêntica permanece apenas como apoio controlado e não é
+apresentada como o método de aprendizagem de máquina. Nenhum resultado preditivo foi antecipado.
+Pendências: definir a variável-alvo, as variáveis de entrada, o modelo a comparar e as métricas de
+avaliação após o levantamento e a preparação dos dados.
+Próximo passo: incorporar as orientações da orientadora às metas das quinzenas e detalhar o método
+de avaliação do modelo no relatório.
