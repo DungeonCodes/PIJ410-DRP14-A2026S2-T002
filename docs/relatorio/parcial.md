@@ -133,8 +133,10 @@ substituam a decisão humana. Ele decorre do potencial da ciência de dados para
 acionáveis de conjuntos extensos de dados no contexto do marketing digital e apoiar a tomada de
 decisão (Saura, 2021). No projeto, aprendizagem de máquina não será sinônimo de usar uma ferramenta
 de IA generativa: consistirá no treinamento e na avaliação de pelo menos um modelo supervisionado
-com exemplos históricos, para estimar uma variável de desempenho definida na etapa de preparação
-dos dados. A aprendizagem de máquina se caracteriza justamente pela melhoria do desempenho em uma
+com exemplos históricos. Como recorte experimental proposto, o modelo poderá analisar relatórios de
+conteúdo orgânico da Meta para estimar ou classificar uma medida de desempenho previamente definida,
+desde que a base histórica tenha volume e variáveis adequados. A aprendizagem de máquina se
+caracteriza justamente pela melhoria do desempenho em uma
 tarefa a partir da experiência representada pelos dados (Jordan; Mitchell, 2015).
 
 Os indicadores como investimento, impressões, cliques, custo por clique, taxa de conversão e
@@ -169,9 +171,10 @@ Em decorrência dessas necessidades, foram definidos os seguintes objetivos espe
 * Identificar e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
 * Implementar rotinas determinísticas para calcular indicadores a partir dos dados consolidados,
   com parâmetros e resultados passíveis de conferência.
-* Preparar dados históricos, treinar e avaliar ao menos um modelo supervisionado de aprendizagem
-  de máquina para estimar uma variável de desempenho de campanhas, comparando-o a uma referência
-  determinística e registrando suas métricas de avaliação.
+* Avaliar a viabilidade de preparar dados históricos de conteúdo orgânico da Meta, treinar e
+  avaliar ao menos um modelo supervisionado de aprendizagem de máquina para estimar ou classificar
+  uma medida de desempenho definida, comparando-o a uma referência determinística e registrando
+  suas métricas de avaliação.
 * Empregar IA agêntica via linha de comando como apoio controlado à formulação, execução e
   interpretação de cenários de simulação, sem substituir os cálculos determinísticos, o modelo de
   aprendizagem de máquina ou a revisão humana.
@@ -234,10 +237,10 @@ aprende com os dados.
 Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
 Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
 marketing ligadas a apoio à decisão e impacto financeiro. Assim, a contribuição técnica prevista
-não é apenas uma interface nem uma explicação gerada por IA: inclui o desenvolvimento, treinamento
-e avaliação de um modelo de aprendizagem de máquina sobre a base histórica preparada para o estudo.
-O modelo, a variável-alvo, as variáveis de entrada, o particionamento dos dados e as métricas de
-avaliação serão documentados na metodologia e nos resultados.
+não é apenas uma interface nem uma explicação gerada por IA: inclui o planejamento e, caso a base
+histórica de conteúdo orgânico da Meta se mostre adequada, o treinamento e a avaliação de um modelo
+de aprendizagem de máquina. O modelo, a variável-alvo, as variáveis de entrada, o particionamento
+dos dados e as métricas de avaliação serão documentados na metodologia e nos resultados.
 
 #### 2.3.1 Marketing digital e decisão orientada por dados
 
@@ -260,8 +263,8 @@ exposição, interações e conversões registradas — em insumos para acompanh
 (2021) associa a aplicação de ciência de dados no marketing digital à análise de desempenho e à
 utilização de métricas para orientar ações. No escopo deste projeto, a interface web será o meio
 de visualização desses resultados; a contribuição central será a análise dos dados históricos e,
-posteriormente, o emprego de aprendizagem de máquina para estimar uma variável de desempenho
-definida e avaliada metodologicamente.
+em módulo experimental separado, a avaliação de aprendizagem de máquina sobre relatórios de
+conteúdo orgânico da Meta, se a base permitir uma avaliação metodologicamente válida.
 
 Assim, a decisão orientada por dados será tratada como processo de apoio, e não como substituição
 do julgamento dos responsáveis da instituição. Os indicadores e as estimativas analíticas devem
@@ -293,11 +296,12 @@ elementos que antecedem a ação do usuário (Li et al., 2016). Por isso, a regr
 registrada pela plataforma, quando disponível, será tratada como parte do contexto analítico e não
 como um detalhe técnico dispensável.
 
-Desse modo, o tráfego pago constitui o domínio de aplicação da análise de dados em escala do PI.
-Os dados de campanhas serão consolidados, submetidos às rotinas de indicadores e, em etapa
-posterior, utilizados no treinamento e na avaliação de um modelo de aprendizagem de máquina. A
-interface web terá a função de apresentar as evidências produzidas; ela não substitui a análise
-nem determina autonomamente as decisões de investimento.
+Desse modo, o tráfego pago constitui o domínio de aplicação da análise de dados em escala do PI e
+do motor determinístico de apoio a decisões de investimento. O experimento de aprendizagem de
+máquina será mantido como módulo separado, com possível recorte em relatórios de conteúdo orgânico
+da Meta, para não confundir estimativas preditivas com os cenários determinísticos de orçamento. A
+interface web terá a função de apresentar as evidências produzidas; ela não substitui a análise nem
+determina autonomamente as decisões de investimento.
 
 #### 2.3.3 Indicadores de Ads e tomada de decisão
 
@@ -339,7 +343,8 @@ Após a preparação, a análise explorará os dados em seus níveis de agregaç
 identificar distribuição de investimento, variações temporais, diferenças de desempenho e possíveis
 inconsistências a investigar. Esses achados não serão automaticamente convertidos em relações de
 causa e efeito. Eles funcionarão como evidências para a interpretação conjunta com a instituição e
-como base para as rotinas de indicadores e para a etapa posterior de aprendizagem de máquina.
+como base para as rotinas de indicadores. O eventual modelo de aprendizagem de máquina será
+avaliado em módulo próprio, com dados orgânicos da Meta e protocolo separado.
 
 #### 2.3.5 Aprendizagem de máquina aplicada ao marketing digital
 
@@ -351,10 +356,10 @@ campo pela melhoria do desempenho em uma tarefa a partir da experiência represe
 
 No contexto do marketing, De Mauro, Sestino e Bacconi (2022) situam a aprendizagem de máquina como
 subárea da inteligência artificial e identificam aplicações ligadas ao apoio à decisão e ao impacto
-financeiro. Neste PI, a sua aplicação dependerá da definição posterior de uma variável-alvo que
-possa ser medida na base disponibilizada. Exemplos possíveis incluem estimar uma medida de
-desempenho futura ou classificar registros segundo uma regra definida pelo grupo; a escolha não
-será antecipada antes da inspeção e preparação dos dados.
+financeiro. Neste PI, o recorte experimental proposto é usar relatórios históricos de conteúdo
+orgânico da Meta, caso contenham volume e variáveis suficientes. A variável-alvo poderá ser uma
+medida de engajamento observada após a publicação ou uma classe de desempenho definida a partir
+dessa medida; a escolha dependerá da inspeção da base e será registrada antes do treinamento.
 
 O método exigirá a descrição das variáveis de entrada, da variável-alvo, do particionamento entre
 treinamento e teste, do modelo ou modelos comparados e das métricas de avaliação. A qualidade de um
@@ -408,23 +413,147 @@ em diálogo com a instituição parceira.
 
 ### 2.4 Metodologia
 
-⬜ Em elaboração. A metodologia detalhará a preparação da base, a definição da variável-alvo, a
-separação entre treinamento e teste, o treinamento do modelo supervisionado e o registro de suas
-métricas de avaliação, além das rotinas determinísticas de indicadores. Para a análise de tráfego
-pago, também registrará o nível de agregação dos dados, o período, a regra de atribuição disponível
-e as fórmulas dos indicadores empregados, de modo que as recomendações de orçamento possam ser
-rastreáveis. O código, os dados autorizados, o treinamento, os testes e o relatório técnico
-detalhado de aprendizagem de máquina serão mantidos no repositório real da solução. Este
-repositório acadêmico registrará somente o método, os resultados sanitizados ou fictícios que forem
-necessários à demonstração e, posteriormente, a interface web independente de visualização. Como
-apoio à organização da produção documental, serão mantidos registros
-versionados de escopo, fontes, decisões e revisões. Ferramentas de IA poderão apoiar a consulta,
-organização e revisão desses registros sob contexto controlado; a seleção do conteúdo, a validação
-das fontes e a aprovação das versões permanecerão sob responsabilidade do grupo. Para a camada de
-interpretação assistida, o contexto do agente será composto apenas por registros versionados,
-indicadores com fórmulas documentadas, resultados calculados ou estimados e referências
-verificadas. Cada explicação ou recomendação deverá registrar os elementos que a fundamentam;
-saídas sem evidência verificável não serão utilizadas.
+Esta seção será desenvolvida a partir da estrutura e da metodologia documentadas no sistema
+original, preservando a separação entre cálculos determinísticos, limitações de atribuição,
+aprendizagem de máquina experimental e interpretação assistida por IA.
+
+#### 2.4.1 Delineamento do projeto e participação da comunidade externa
+
+O projeto possui caráter aplicado: parte de uma demanda apresentada pela instituição parceira e
+busca produzir uma solução analítica passível de ser discutida no contexto em que o problema foi
+identificado. O percurso combinará levantamento de necessidades, análise de dados históricos,
+construção de uma visualização e validação progressiva com os profissionais que participam das
+decisões de marketing. Essa aproximação é compatível com o uso de Design Thinking em pesquisas que
+articulam compreensão do problema, ideação e experimentação de soluções (Rosado; Dias, 2024).
+
+A participação da comunidade externa ocorrerá por meio de conversas, apresentação das leituras
+analíticas e coleta de sugestões sobre a utilidade e a compreensibilidade da solução. Somente
+atividades efetivamente realizadas serão registradas como evidências do processo. Enquanto uma
+conversa, visita ou validação não tiver ocorrido, ela será apresentada como etapa planejada, e não
+como resultado alcançado.
+
+#### 2.4.2 Arquitetura analítica de três camadas
+
+O motor analítico adotará três camadas com escopos distintos. A primeira será a camada de
+conformidade, formada por regras de negócio e indicadores determinísticos que comparam valores
+observados a requisitos previamente declarados. A segunda realizará leituras agregadas do funil de
+captação e das matrículas, quando os períodos e os campos permitirem esse cruzamento. A terceira
+registrará os limites de atribuição individual, isto é, os casos em que as fontes disponíveis não
+permitem ligar uma ação de mídia, um contato e uma matrícula específica.
+
+Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma
+correlação agregada seja tratada como atribuição por canal. Quando uma informação necessária não
+estiver disponível, o resultado será sinalizado como não verificável. A ausência de dado não será
+preenchida por estimativa silenciosa nem convertida em certeza analítica.
+
+#### 2.4.3 Fontes de dados, recortes temporais e confidencialidade
+
+As análises utilizarão, conforme a disponibilidade autorizada, dados históricos de busca paga,
+mídia social, funil de captação, matrículas e conteúdo orgânico. Cada fonte terá seu período de
+referência e sua unidade de análise identificados antes de qualquer comparação. Métricas de fontes
+ou janelas temporais distintas não serão somadas ou comparadas como se representassem o mesmo
+fenômeno; por exemplo, conversão de busca, conversa iniciada, lead e matrícula permanecerão
+indicadores distintos.
+
+Os dados autorizados, o código operacional e os relatórios técnicos detalhados permanecerão no
+repositório real da solução. No ambiente acadêmico, serão usados apenas dados fictícios ou
+sanitizados, sem identificadores pessoais, credenciais, nomes de contas ou informações comerciais
+sensíveis. Essa delimitação permite discutir o método e demonstrar a interface sem expor a
+instituição parceira.
+
+#### 2.4.4 Preparação, governança e rastreabilidade dos dados
+
+Os dados passarão por ingestão local, identificação da origem, normalização de nomes e formatos,
+verificação de tipos, tratamento explícito de valores ausentes e consolidação em artefatos
+versionados. Cada indicador deverá preservar a informação sobre fonte, período, unidade de análise
+e fórmula utilizada. Problemas de qualidade em pipelines podem ocorrer em etapas de ingestão,
+integração, limpeza e transformação, o que reforça a necessidade de documentar as regras aplicadas
+(Foidl et al., 2024).
+
+Valores ausentes, incompatibilidades de período e falhas estruturais serão sinalizados no resultado;
+não serão convertidos silenciosamente em zero nem em estimativas. Essa regra permite distinguir um
+indicador efetivamente medido de um dado indisponível e possibilita a auditoria posterior das
+transformações realizadas.
+
+#### 2.4.5 Indicadores, regras de negócio e cenários determinísticos de investimento
+
+Os indicadores serão calculados por rotinas determinísticas, com fórmulas e parâmetros registrados.
+Entre eles poderão estar investimento, impressões, alcance, frequência, cliques, CTR, CPC,
+conversões, taxa de conversão, CPA, CPM e indicadores de participação de impressões, conforme os
+campos efetivamente disponibilizados. A interpretação ocorrerá no contexto do objetivo da campanha:
+métricas de campanhas com finalidades diferentes não serão tratadas como diretamente equivalentes.
+
+Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento serão
+explicitados antes da construção de cenários. Os cenários mínimo, ideal e agressivo, quando
+aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados e valores
+observados. Eles não projetarão matrícula, não garantirão retorno e não ocultarão conflitos entre
+regras ou limitações dos dados.
+
+#### 2.4.6 Auditoria, reprodutibilidade e limites de atribuição
+
+Cada resultado exibido deverá poder ser reconstituído a partir de sua fonte, período, regra de
+transformação e fórmula. Os arquivos de entrada processados, as constantes de cálculo e os
+resultados intermediários serão versionados no repositório real, permitindo revisão do caminho que
+levou a cada indicador ou cenário. A reprodutibilidade é parte do procedimento analítico, pois
+permite conferir os resultados computacionais e suas condições de produção (Peng, 2011).
+
+O método declarará limites de atribuição. Impressão, clique, conversão de plataforma, conversa,
+lead e matrícula não serão tratados como sinônimos. Quando houver apenas dados agregados, a análise
+poderá descrever associação entre etapas do funil, mas não atribuir uma matrícula a uma campanha ou
+a um canal específico. Essa ressalva será exibida junto às interpretações que dependam desses dados.
+
+#### 2.4.7 Protocolo experimental de aprendizagem de máquina sobre conteúdo orgânico da Meta
+
+⬜ Avaliará a disponibilidade de relatórios históricos de conteúdo orgânico da Meta. Havendo
+volume e variáveis adequados, definirá variável-alvo, atributos disponíveis antes da publicação,
+divisão temporal entre treino e teste, referência determinística, modelos comparados e métricas de
+avaliação. O código, os dados autorizados, o treinamento, os testes e o relatório técnico detalhado
+serão mantidos no repositório real da solução; este repositório acadêmico registrará apenas o
+método e resultados sanitizados ou fictícios necessários à demonstração.
+
+#### 2.4.8 Interpretação assistida por IA e engenharia de memória/contexto
+
+Modelos de linguagem de alta capacidade serão utilizados somente como camada de interpretação
+assistida. Poderão organizar evidências, comparar cenários e formular explicações preliminares a
+partir de indicadores e resultados já calculados. Essa atividade não será apresentada como
+aprendizagem de máquina nem como evidência empírica independente. Agentes baseados em modelos de
+linguagem combinam recursos como planejamento, memória e uso de ferramentas, mas requerem cuidados
+de avaliação e confiabilidade (Wang et al., 2024).
+
+A engenharia de memória/contexto restringirá o material disponível ao agente a documentos
+versionados, dados sanitizados, fórmulas, resultados calculados ou estimados e referências
+verificadas. Cada explicação ou recomendação deverá apontar o dado, período, cálculo, estimativa ou
+fonte que a fundamenta. Saídas sem base rastreável, que inventem métricas ou que ultrapassem os
+limites de atribuição declarados, não serão utilizadas.
+
+#### 2.4.9 Construção do protótipo e arquitetura da interface
+
+A construção do protótipo separará a preparação local dos dados, os artefatos sanitizados usados na
+demonstração e a camada de apresentação web. Essa separação evita que a interface acadêmica dependa
+de contas de anúncios, credenciais ou integrações operacionais em tempo de execução. A escolha
+final de tecnologias será registrada antes da implementação; como referência técnica, a arquitetura
+web poderá adotar componentes React e recursos de renderização no servidor com Next.js, abordagem
+descrita por Thakkar (2020) para aplicações web baseadas em React.
+
+O desenho do dashboard será orientado pela finalidade analítica de cada visão, com indicadores,
+filtros, comparações e avisos de limitação apresentados de maneira coerente. Padrões de design de
+dashboards auxiliam a discutir escolhas de organização visual, interação e informação exibida
+(Bach et al., 2023). A implementação deverá manter a origem e o período dos dados visíveis, além
+de diferenciar valores observados, cálculos determinísticos e estimativas.
+
+#### 2.4.10 Interface web e validação da solução
+
+A interface web será desenvolvida como meio de apresentação dos resultados analíticos, e não como
+substituta do processo de análise. Ela deverá mostrar indicadores, cenários, período de referência,
+fonte, limitações de atribuição e, quando existir modelo validado, diferenciar explicitamente
+valores observados de estimativas. Essa apresentação permitirá que os participantes compreendam o
+que está sendo medido antes de discutir possíveis decisões.
+
+A validação ocorrerá com profissionais da instituição parceira, por meio de apresentação orientada
+do protótipo e registro das observações recebidas sobre compreensão, utilidade e pontos de melhoria.
+Técnicas de pesquisa de experiência do usuário apoiam a identificação de necessidades e a avaliação
+de serviços de informação (Pinheiro; Dias, 2023). O relatório registrará as contribuições efetivamente
+recebidas, sem antecipar aceitação, melhoria de desempenho ou alteração de decisões pela instituição.
 
 ### 2.5 Resultados preliminares: solução inicial
 
@@ -435,6 +564,8 @@ saídas sem evidência verificável não serão utilizadas.
 ## Referências
 
 ANTHROPIC. **Introducing Claude Fable 5 and Claude Mythos 5**. 2026. Disponível em: https://platform.claude.com/docs/es/models/fable-5/introducing-claude-fable-5-and-claude-mythos-5. Acesso em: 25 ago. 2026.
+
+BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
 
 DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
 
@@ -458,9 +589,13 @@ PENG, Roger D. Reproducible research in computational science. **Science**, v. 3
 
 PINHEIRO, Gabriela da Silva Santos; DIAS, Célia da Consolação. Técnicas e métodos de pesquisa de experiência do usuário (UX) para avaliação de estudo de usuários da informação. **Perspectivas em Gestão & Conhecimento**, v. 13, n. 2, p. 133-148, 2023. DOI: 10.22478/ufpb.2236-417x.2023v13n2.63290. Disponível em: https://doi.org/10.22478/ufpb.2236-417x.2023v13n2.63290. Acesso em: 24 ago. 2026.
 
+ROSADO, Keila Mara Lara; DIAS, Célia da Consolação. A metodologia Design Thinking nas pesquisas científicas e a pertinência de sua apropriação pela Ciência da Informação. **Encontros Bibli: Revista Eletrônica de Biblioteconomia e Ciência da Informação**, v. 29, e96222, 2024. DOI: 10.5007/1518-2924.2024.e96222. Disponível em: https://doi.org/10.5007/1518-2924.2024.e96222. Acesso em: 26 ago. 2026.
+
 SAURA, José Ramón. Using Data Sciences in Digital Marketing: framework, methods, and performance metrics. **Journal of Innovation & Knowledge**, v. 6, n. 2, p. 92-102, 2021. DOI: 10.1016/j.jik.2020.08.001. Disponível em: https://doi.org/10.1016/j.jik.2020.08.001. Acesso em: 25 ago. 2026.
 
 SAURA, José Ramón; PALOS-SÁNCHEZ, Pedro; SUÁREZ, Luis Manuel Cerdá. Understanding the Digital Marketing Environment with KPIs and Web Analytics. **Future Internet**, v. 9, n. 4, p. 76, 2017. DOI: 10.3390/fi9040076. Disponível em: https://doi.org/10.3390/fi9040076. Acesso em: 24 ago. 2026.
+
+THAKKAR, Mohit. **Building React Apps with Server-Side Rendering**: use React, Redux, and Next to build full server-side rendering applications. Berkeley: Apress, 2020. DOI: 10.1007/978-1-4842-5869-9. Disponível em: https://doi.org/10.1007/978-1-4842-5869-9. Acesso em: 26 ago. 2026.
 
 UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico dos cursos de Bacharelado em Tecnologia da Informação, Ciência de Dados e Engenharia de Computação**. São Paulo: UNIVESP, 2020. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BTI.pdf. Acesso em: 25 ago. 2026.
 

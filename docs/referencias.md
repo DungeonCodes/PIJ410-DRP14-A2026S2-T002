@@ -112,7 +112,7 @@ A obra 9 é revisão sistemática sobre exatamente o cruzamento dashboard × ins
 | # | Obra | Ano | Veículo | Cit. | Status |
 |---|---|---|---|---|---|
 | 12 | MATHEUS; JANSSEN; MAHESHWARI — Data science empowering the public: data-driven dashboards | 2018 | Government Information Quarterly | 373 | `candidata` |
-| 13 | BACH et al. — Dashboard Design Patterns | 2022 | IEEE Transactions on Visualization and Computer Graphics | 143 | `candidata` |
+| 13 | BACH et al. — Dashboard Design Patterns | 2023 | IEEE Transactions on Visualization and Computer Graphics | 143 | `citada` |
 | 14 | SEDRAKYAN; MANNENS; VERBERT — Guiding the choice of learning dashboard visualizations | 2018 | Journal of Computer Languages | 114 | `candidata` |
 
 A obra 13 sustenta decisões de projeto do protótipo; a 14 liga design de dashboard a contexto educacional.
@@ -128,7 +128,7 @@ A obra 13 sustenta decisões de projeto do protótipo; a 14 liga design de dashb
 
 | # | Obra | Ano | Veículo | Status |
 |---|---|---|---|---|
-| 17 | ROSADO; DIAS — A Metodologia Design Thinking nas pesquisas científicas | 2024 | Encontros Bibli | `candidata` |
+| 17 | ROSADO; DIAS — A Metodologia Design Thinking nas pesquisas científicas | 2024 | Encontros Bibli | `citada` |
 | 18 | SILVA-NETO; LEITE — Design Thinking aplicado como metodologia para solução de problemas no ensino | 2023 | Ciência & Educação (Bauru) | `candidata` |
 | 19 | SANTOS et al. — A metodologia Design Thinking: estratégia gerencial para empreendimentos | 2017 | Revista Latino-Americana de Inovação e Engenharia de Produção | `candidata` |
 
@@ -149,7 +149,7 @@ A obra 20 dá o repertório de **métodos de avaliação de UX** — é o que fu
 | # | Obra | Ano | Veículo | Cit. | Status |
 |---|---|---|---|---|---|
 | 23 | KALUŽA; VUKELIĆ — Comparison of front-end frameworks for web applications development | 2018 | Zbornik Veleučilišta u Rijeci | 45 | `candidata` |
-| 24 | THAKKAR — Building React Apps with Server-Side Rendering (livro; contém capítulo sobre Next.js) | 2020 | Apress | 6 | `candidata` |
+| 24 | THAKKAR — Building React Apps with Server-Side Rendering (livro; contém capítulo sobre Next.js) | 2020 | Apress | 6 | `citada` |
 | 25 | VYAS — Comparative Analysis on Front-End Frameworks for Web Applications | 2022 | IJRASET | 23 | `candidata` |
 
 A obra 24 é a única do acervo que trata **Next.js** nominalmente, e é livro — fonte confiável pela rubrica. As obras 23 e 25 servem para **justificar a escolha do framework**, que é o tipo de argumentação que a banca espera na seção de resultados.
@@ -275,7 +275,7 @@ ARISTIZÁBAL, Catalina Ramírez. **Sucesso de sistemas de Business Intelligence*
 
 ANTHROPIC. **Introducing Claude Fable 5 and Claude Mythos 5**. 2026. Disponível em: https://platform.claude.com/docs/es/models/fable-5/introducing-claude-fable-5-and-claude-mythos-5. Acesso em: 25 ago. 2026.
 
-BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 1-11, 2022. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 24 ago. 2026.
+BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
 
 BEZERRA, Maria Luana Gonçalves et al. Estratégias de marketing de relacionamento na captação de clientes de uma instituição de ensino superior à distância. **Ciências Sociais Aplicadas em Revista**, v. 26, n. 46, p. 157-174, 2023. DOI: 10.48075/csar.v26i46.31119. Disponível em: https://doi.org/10.48075/csar.v26i46.31119. Acesso em: 24 ago. 2026.
 

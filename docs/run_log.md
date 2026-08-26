@@ -394,3 +394,48 @@ Resultado: a IA agêntica pode organizar evidências, comparar cenários e gerar
 preliminares sobre resultados já calculados, mas não substitui o modelo de aprendizagem de máquina.
 Cada explicação ou recomendação deve apontar dados, período, cálculos, resultados estimados ou
 referências que a sustentam; saídas sem base verificável não serão utilizadas.
+
+---
+
+Data: 2026-08-26
+Ação realizada: revisão do relatório parcial a partir do relatório anonimizado da estrutura do
+sistema original e reorganização planejada da metodologia.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+Referência interna analisada:
+- `docs/migracao-modelo/referencias/RELATORIO-ESTRUTURA-E-METODOLOGIA-ADS.md`
+Resultado: a metodologia foi estruturada em nove subcapítulos. O motor de Ads será apresentado
+como análise determinística auditável de três camadas, com limites explícitos de atribuição. A
+aprendizagem de máquina passou a ser um experimento separado e condicionado à disponibilidade de
+histórico suficiente de conteúdo orgânico da Meta; não há resultado, variável-alvo ou modelo
+antecipado.
+
+---
+
+Data: 2026-08-26
+Ação realizada: redação dos conteúdos metodológicos 2.4.1 a 2.4.6 e 2.4.8 a 2.4.9.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+- `docs/referencias.md`
+Fontes verificadas: ROSADO; DIAS (2024), sobre a aplicabilidade de Design Thinking em pesquisa;
+FOIDL et al. (2024), sobre qualidade de pipelines; PENG (2011), sobre reprodutibilidade; PINHEIRO;
+DIAS (2023), sobre técnicas de pesquisa de experiência do usuário; WANG et al. (2024), sobre
+agentes baseados em modelos de linguagem.
+Resultado: a metodologia distingue o motor determinístico de Ads, o experimento de aprendizagem de
+máquina ainda condicionado à base orgânica da Meta, a interpretação assistida por IA e a validação
+da interface. A referência de Rosado e Dias foi marcada como citada e incluída no relatório.
+
+---
+
+Data: 2026-08-26
+Ação realizada: inclusão da justificativa bibliográfica para a construção do protótipo e da
+arquitetura da interface web na metodologia.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+- `docs/referencias.md`
+Fontes verificadas: THAKKAR (2020), sobre aplicações React com renderização no servidor e Next.js;
+BACH et al. (2023), sobre padrões de design de dashboards e suas decisões de visualização.
+Resultado: foi criado o item 2.4.9, "Construção do protótipo e arquitetura da interface", e a
+validação foi renumerada para 2.4.10. A escolha final de tecnologias permanece pendente e será
+registrada antes da implementação; as fontes sustentam a direção técnica, não uma implementação já
+concluída.
