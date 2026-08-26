@@ -439,3 +439,17 @@ Resultado: foi criado o item 2.4.9, "Construção do protótipo e arquitetura da
 validação foi renumerada para 2.4.10. A escolha final de tecnologias permanece pendente e será
 registrada antes da implementação; as fontes sustentam a direção técnica, não uma implementação já
 concluída.
+
+---
+
+Data: 2026-08-26
+Ação realizada: reforço das citações científicas na metodologia do relatório parcial.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+Fontes mobilizadas no texto: SAURA (2021); SAURA; PALOS-SÁNCHEZ; SUÁREZ (2017); LI et al. (2016);
+MARTINS (2019); JORDAN; MITCHELL (2015); DE MAURO; SESTINO; BACCONI (2022), além das fontes já
+cadastradas para Design Thinking, pipelines, reprodutibilidade, IA agêntica, arquitetura web,
+dashboards e UX.
+Resultado: os procedimentos de métricas, atribuição, cenários, auditoria e protocolo de ML agora
+possuem citações próximas às afirmações metodológicas correspondentes. As regras internas do
+projeto permanecem explicitamente identificadas como decisões e limites do próprio método.

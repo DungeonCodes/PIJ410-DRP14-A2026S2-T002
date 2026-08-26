@@ -444,7 +444,9 @@ permitem ligar uma ação de mídia, um contato e uma matrícula específica.
 Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma
 correlação agregada seja tratada como atribuição por canal. Quando uma informação necessária não
 estiver disponível, o resultado será sinalizado como não verificável. A ausência de dado não será
-preenchida por estimativa silenciosa nem convertida em certeza analítica.
+preenchida por estimativa silenciosa nem convertida em certeza analítica. A distinção entre métricas
+de desempenho, decisões de investimento e regras de atribuição é necessária porque a atribuição
+adotada altera a leitura de retorno e as decisões de orçamento (Saura, 2021; Li et al., 2016).
 
 #### 2.4.3 Fontes de dados, recortes temporais e confidencialidade
 
@@ -453,7 +455,9 @@ mídia social, funil de captação, matrículas e conteúdo orgânico. Cada font
 referência e sua unidade de análise identificados antes de qualquer comparação. Métricas de fontes
 ou janelas temporais distintas não serão somadas ou comparadas como se representassem o mesmo
 fenômeno; por exemplo, conversão de busca, conversa iniciada, lead e matrícula permanecerão
-indicadores distintos.
+indicadores distintos. Essa precaução é coerente com a literatura de busca paga, na qual o crédito
+de conversão depende da estratégia de atribuição e pode alterar a interpretação do retorno
+(Li et al., 2016).
 
 Os dados autorizados, o código operacional e os relatórios técnicos detalhados permanecerão no
 repositório real da solução. No ambiente acadêmico, serão usados apenas dados fictícios ou
@@ -487,7 +491,10 @@ Regras de negócio, sazonalidade, capacidade de atendimento e limites de variaç
 explicitados antes da construção de cenários. Os cenários mínimo, ideal e agressivo, quando
 aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados e valores
 observados. Eles não projetarão matrícula, não garantirão retorno e não ocultarão conflitos entre
-regras ou limitações dos dados.
+regras ou limitações dos dados. Indicadores e métricas de desempenho devem ser interpretados de
+acordo com os objetivos organizacionais e com o contexto de cada ação de marketing digital
+(Saura; Palos-Sánchez; Suárez, 2017); em campanhas de busca, a multiplicidade de configurações
+também torna inadequada uma decisão apoiada em uma única métrica (Martins, 2019).
 
 #### 2.4.6 Auditoria, reprodutibilidade e limites de atribuição
 
@@ -500,7 +507,9 @@ permite conferir os resultados computacionais e suas condições de produção (
 O método declarará limites de atribuição. Impressão, clique, conversão de plataforma, conversa,
 lead e matrícula não serão tratados como sinônimos. Quando houver apenas dados agregados, a análise
 poderá descrever associação entre etapas do funil, mas não atribuir uma matrícula a uma campanha ou
-a um canal específico. Essa ressalva será exibida junto às interpretações que dependam desses dados.
+a um canal específico. Essa ressalva será exibida junto às interpretações que dependam desses dados,
+pois escolhas de atribuição alteram a leitura do retorno de investimentos em busca paga
+(Li et al., 2016).
 
 #### 2.4.7 Protocolo experimental de aprendizagem de máquina sobre conteúdo orgânico da Meta
 
@@ -509,7 +518,11 @@ volume e variáveis adequados, definirá variável-alvo, atributos disponíveis 
 divisão temporal entre treino e teste, referência determinística, modelos comparados e métricas de
 avaliação. O código, os dados autorizados, o treinamento, os testes e o relatório técnico detalhado
 serão mantidos no repositório real da solução; este repositório acadêmico registrará apenas o
-método e resultados sanitizados ou fictícios necessários à demonstração.
+método e resultados sanitizados ou fictícios necessários à demonstração. O protocolo distinguirá
+explicitamente cálculos por fórmula de modelos treinados com exemplos históricos, conforme a
+caracterização de aprendizagem de máquina apresentada por Jordan e Mitchell (2015), e registrará
+o emprego do modelo como aplicação de IA em marketing, nos termos discutidos por De Mauro, Sestino
+e Bacconi (2022).
 
 #### 2.4.8 Interpretação assistida por IA e engenharia de memória/contexto
 
