@@ -157,3 +157,10 @@ Registradas aqui porque constaram como pendências e já não são.
   do ciclo de Design Thinking exigido pela rubrica. No trabalho escrito, os agentes podem apoiar
   consulta, organização e revisão de registros versionados, mas a seleção do conteúdo, a validação
   das fontes e a aprovação das versões pertencem ao grupo.
+  O treinamento, os testes e o relatório técnico do modelo ocorrerão no repositório real da
+  solução; neste repositório acadêmico serão mantidos apenas o relato metodológico e resultados
+  sanitizados ou fictícios necessários à apresentação posterior.
+  Modelos de linguagem de alta capacidade poderão gerar interpretação assistida dos resultados,
+  desde que recebam somente contexto versionado e sanitizado. Cada explicação ou recomendação deve
+  apontar os fatos, cálculos, resultados estimados ou referências que a sustentam; saídas sem base
+  verificável não serão usadas.

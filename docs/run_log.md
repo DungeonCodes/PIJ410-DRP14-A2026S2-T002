@@ -365,3 +365,32 @@ Resultado: a fundamentação passa a abordar preparação e rastreabilidade dos 
 avaliação de aprendizagem de máquina, visualização por dashboard e uso controlado de IA agêntica.
 A referência de Foidl et al. foi conferida e corrigida para o ano do volume publicado, 2024, sendo
 incluída nas referências do relatório e marcada como citada no acervo.
+
+---
+
+Data: 2026-08-26
+Ação realizada: delimitação dos repositórios para a etapa de aprendizagem de máquina.
+Arquivos alterados:
+- `docs/master_context.md`
+- `docs/decisions.md`
+- `docs/relatorio/parcial.md`
+Resultado: o treinamento, os testes, os dados autorizados e o relatório técnico detalhado do modelo
+ficam no repositório real da solução. Este repositório do PI permanece destinado à documentação
+acadêmica e, posteriormente, a uma interface web independente com resultados sanitizados ou
+fictícios. Nenhum dado real, modelo, credencial ou código operacional deve ser copiado para cá.
+
+---
+
+Data: 2026-08-26
+Ação realizada: formalização da camada de interpretação assistida por modelos de linguagem de alta
+capacidade e das regras de engenharia de memória/contexto.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+- `docs/master_context.md`
+- `docs/decisions.md`
+Fonte mantida: WANG et al. (2024), já registrada e citada, para a caracterização de agentes
+baseados em modelos de linguagem e seus desafios de avaliação e confiabilidade.
+Resultado: a IA agêntica pode organizar evidências, comparar cenários e gerar explicações
+preliminares sobre resultados já calculados, mas não substitui o modelo de aprendizagem de máquina.
+Cada explicação ou recomendação deve apontar dados, período, cálculos, resultados estimados ou
+referências que a sustentam; saídas sem base verificável não serão utilizadas.

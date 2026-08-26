@@ -122,6 +122,11 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
 
 * Existe um sistema real que servirá como principal referência técnica para a construção do ambiente acadêmico, com funcionalidades relacionadas a: indicadores gerenciais, investimentos em mídia digital, Google Ads, Meta Ads, captação, matrículas, retenção/evasão, conteúdo orgânico e análise estratégica.
 * O PI poderá aproveitar conceitos, arquitetura, componentes, regras de apresentação e experiências obtidas nesse sistema, mas o repositório acadêmico será **independente do ambiente operacional**.
+* Confirmado pelo grupo em 26 ago. 2026: o código, os dados autorizados, o treinamento, os testes e
+  o relatório técnico detalhado de aprendizagem de máquina serão mantidos no repositório real da
+  solução. Este repositório do PI guardará a documentação acadêmica e, em momento posterior, uma
+  interface web independente para demonstrar resultados sanitizados ou fictícios. Não serão
+  copiados para cá dados reais, artefatos de modelo, credenciais nem código operacional.
 * Confirmado pelo grupo em 26 ago. 2026: o núcleo analítico terá três camadas distintas. A
   primeira produzirá indicadores por algoritmos determinísticos, com parâmetros e resultados
   conferíveis. A segunda preparará dados históricos e treinará e avaliará ao menos um modelo
@@ -130,9 +135,12 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
   interpretação de cenários de simulação, mas não substituirá o cálculo determinístico, o modelo
   de aprendizagem de máquina, a revisão humana, a evidência empírica nem a validação junto à
   comunidade externa. Somente dados fictícios ou sanitizados poderão ser enviados aos ambientes de
-  IA agêntica. No processo de produção documental, os agentes poderão apoiar consulta, organização
-  e revisão sob contexto controlado; seleção de conteúdo, validação de fontes e aprovação de
-  versões permanecem sob responsabilidade do grupo.
+  IA agêntica. A engenharia de memória/contexto reunirá apenas documentos versionados, fórmulas,
+  resultados calculados ou estimados e referências verificadas. Toda interpretação assistida deverá
+  apontar sua base factual e calculável; respostas que não possam ser rastreadas até esses elementos
+  não devem ser utilizadas. No processo de produção documental, os agentes poderão apoiar consulta,
+  organização e revisão sob contexto controlado; seleção de conteúdo, validação de fontes e
+  aprovação de versões permanecem sob responsabilidade do grupo.
 * A UNIVESP utiliza metodologia própria para condução do PI, com indicação de uso de Design Thinking. Nenhuma interpretação definitiva dessa metodologia deve ser adotada agora; os materiais oficiais serão adicionados depois e terão precedência sobre interpretações preliminares.
 * Etapas, entregáveis, entrevistas, documentação, cronograma, validações e relatório só serão estruturados formalmente após a análise da documentação oficial.
 

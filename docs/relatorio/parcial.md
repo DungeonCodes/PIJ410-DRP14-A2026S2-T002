@@ -391,17 +391,20 @@ a área permanece em desenvolvimento e apresenta desafios de avaliação e confi
 al., 2024). Essa característica impede que suas respostas sejam aceitas como evidência sem
 verificação.
 
-No projeto, o uso permitido será apoiar a organização de cenários, a consulta a registros
-sanitizados e a formulação de explicações preliminares sobre indicadores já calculados. A ferramenta
-não terá acesso a contas reais de anúncios, não executará alterações de orçamento e não definirá o
-modelo de aprendizagem de máquina sem validação do grupo. Dados sensíveis ou identificáveis não
-serão enviados a essa camada.
+No projeto, modelos de linguagem de alta capacidade poderão atuar como camada de interpretação
+assistida: organizar evidências, comparar cenários e formular explicações preliminares sobre
+indicadores e resultados já calculados. Essa atividade não será confundida com a inferência do
+modelo de aprendizagem de máquina. O agente não terá acesso a contas reais de anúncios, não
+executará alterações de orçamento e não definirá o modelo de aprendizagem de máquina sem validação
+do grupo. Dados sensíveis ou identificáveis não serão enviados a essa camada.
 
-Toda sugestão produzida por IA agêntica deverá ser conferida contra os dados locais, as fórmulas
-documentadas e as referências bibliográficas pertinentes. A decisão final sobre a interpretação dos
-resultados, as recomendações e a evolução do protótipo permanecerá sob responsabilidade humana, em
-diálogo com a instituição parceira. Essa delimitação preserva a rastreabilidade do processo e evita
-atribuir à IA uma capacidade decisória que não faz parte do escopo do PI.
+Para garantir rastreabilidade, a engenharia de memória/contexto do agente reunirá somente
+documentos versionados, dados locais sanitizados, fórmulas de indicadores, resultados do modelo e
+decisões já registradas. Toda explicação ou recomendação deverá indicar a evidência que a sustenta
+— dado, período, cálculo, resultado estimado ou referência bibliográfica — e será rejeitada quando
+criar métricas, resultados ou conclusões sem base verificável. A decisão final sobre a interpretação
+dos resultados, as recomendações e a evolução do protótipo permanecerá sob responsabilidade humana,
+em diálogo com a instituição parceira.
 
 ### 2.4 Metodologia
 
@@ -410,10 +413,18 @@ separação entre treinamento e teste, o treinamento do modelo supervisionado e 
 métricas de avaliação, além das rotinas determinísticas de indicadores. Para a análise de tráfego
 pago, também registrará o nível de agregação dos dados, o período, a regra de atribuição disponível
 e as fórmulas dos indicadores empregados, de modo que as recomendações de orçamento possam ser
-rastreáveis. Como apoio à organização da produção documental, serão mantidos registros
+rastreáveis. O código, os dados autorizados, o treinamento, os testes e o relatório técnico
+detalhado de aprendizagem de máquina serão mantidos no repositório real da solução. Este
+repositório acadêmico registrará somente o método, os resultados sanitizados ou fictícios que forem
+necessários à demonstração e, posteriormente, a interface web independente de visualização. Como
+apoio à organização da produção documental, serão mantidos registros
 versionados de escopo, fontes, decisões e revisões. Ferramentas de IA poderão apoiar a consulta,
 organização e revisão desses registros sob contexto controlado; a seleção do conteúdo, a validação
-das fontes e a aprovação das versões permanecerão sob responsabilidade do grupo.
+das fontes e a aprovação das versões permanecerão sob responsabilidade do grupo. Para a camada de
+interpretação assistida, o contexto do agente será composto apenas por registros versionados,
+indicadores com fórmulas documentadas, resultados calculados ou estimados e referências
+verificadas. Cada explicação ou recomendação deverá registrar os elementos que a fundamentam;
+saídas sem evidência verificável não serão utilizadas.
 
 ### 2.5 Resultados preliminares: solução inicial
 
