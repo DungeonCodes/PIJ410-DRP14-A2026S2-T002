@@ -453,3 +453,15 @@ dashboards e UX.
 Resultado: os procedimentos de métricas, atribuição, cenários, auditoria e protocolo de ML agora
 possuem citações próximas às afirmações metodológicas correspondentes. As regras internas do
 projeto permanecem explicitamente identificadas como decisões e limites do próprio método.
+
+---
+
+Data: 2026-08-26
+Ação realizada: criação de questionário estruturado para conversa com a coordenação de marketing e
+a direção da instituição parceira.
+Arquivo criado:
+- `docs/questionario_comunidade_externa.md`
+Resultado: o questionário reúne núcleo comum, perguntas específicas por função e quadro de síntese
+para o grupo. As perguntas cobrem demanda, fontes de dados, indicadores, limites de atribuição,
+regras de decisão, confidencialidade, requisitos da interface e validação, sem solicitar dados
+pessoais ou credenciais.
