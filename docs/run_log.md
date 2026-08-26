@@ -290,3 +290,78 @@ Pendências: definir a variável-alvo, as variáveis de entrada, o modelo a comp
 avaliação após o levantamento e a preparação dos dados.
 Próximo passo: incorporar as orientações da orientadora às metas das quinzenas e detalhar o método
 de avaliação do modelo no relatório.
+
+---
+
+Data: 2026-08-26
+Ação realizada: ampliação da estrutura de fundamentação teórica para explicitar marketing digital,
+tráfego pago, indicadores de Ads e a relação entre métricas e decisões de investimento.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+- `docs/referencias.md`
+Fontes verificadas: KANNAN; LI (2017), sobre o enquadramento do marketing digital; LI; KANNAN;
+VISWANATHAN; PANI (2016), sobre atribuição, decisão de lance, alocação de orçamento e retorno em
+busca paga.
+Resultado: foram incluídos os subcapítulos 2.3.1 a 2.3.3, uma matriz inicial de indicadores e
+perguntas de decisão e a exigência metodológica de declarar regra de atribuição, período, nível de
+agregação e fórmulas. ROAS só será calculado caso a base contenha receita ou valor de conversão
+confiável; caso contrário, a análise usará conversões, taxa de conversão e CPA.
+Próximo passo: confirmar com a instituição quais campos e qual regra de atribuição estarão
+disponíveis na base histórica antes de definir os indicadores finais.
+
+---
+
+Data: 2026-08-26
+Ação realizada: desenvolvimento do texto-base do subcapítulo 2.3.1, "Marketing digital e decisão
+orientada por dados", para revisão do grupo.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+Fontes utilizadas: KANNAN; LI (2017) e SAURA (2021), ambas já registradas em
+`docs/referencias.md`.
+Resultado: o texto delimita marketing digital como processo integrado, separa evidência analítica
+de causalidade não demonstrada e mantém a análise de dados e a aprendizagem de máquina como
+contribuição central do PI. A interface web é caracterizada como meio de visualização.
+
+---
+
+Data: 2026-08-26
+Ação realizada: revisão das citações do relatório parcial conforme o sistema autor-data da ABNT
+NBR 10520:2023 e o manual de normalização da UNIVESP.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+- `docs/decisions.md`
+Fonte verificada: manual "Normas ABNT 2023", publicado pela UNIVESP, que exemplifica a autoria de
+pessoa física em maiúsculas e minúsculas dentro dos parênteses, seguida de vírgula e ano.
+Resultado: as citações parentéticas passaram a usar formas como `(Saura, 2021)` e
+`(Lemes; Dias; Oliveira, 2023)`; citações narrativas, como `Saura (2021)`, foram preservadas.
+As referências bibliográficas continuam com sobrenomes em maiúsculas, como determina a sua
+estrutura própria.
+
+---
+
+Data: 2026-08-26
+Ação realizada: desenvolvimento do texto-base do subcapítulo 2.3.2, "Tráfego pago e campanhas de
+Ads", para revisão do grupo.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+Fontes verificadas: MARTINS (2019), sobre configurações e otimização em campanhas de busca do
+Google Ads; LI et al. (2016), sobre atribuição, lances e orçamento em publicidade de busca paga.
+Resultado: o texto delimita o tráfego pago como domínio de aplicação dos dados históricos,
+condiciona as unidades de análise aos campos realmente disponíveis e preserva a análise de dados,
+a aprendizagem de máquina e a revisão humana como elementos centrais do projeto.
+
+---
+
+Data: 2026-08-26
+Ação realizada: desenvolvimento dos subcapítulos 2.3.4 a 2.3.7 da fundamentação teórica.
+Arquivos alterados:
+- `docs/relatorio/parcial.md`
+- `docs/referencias.md`
+Fontes verificadas: FOIDL et al. (2024), sobre qualidade e etapas de pipelines de dados; JORDAN;
+MITCHELL (2015) e DE MAURO; SESTINO; BACCONI (2022), sobre aprendizagem de máquina; LEMES; DIAS;
+OLIVEIRA (2023), sobre dashboards em instituições de ensino; WANG et al. (2024), sobre agentes
+baseados em modelos de linguagem.
+Resultado: a fundamentação passa a abordar preparação e rastreabilidade dos dados, delimitação e
+avaliação de aprendizagem de máquina, visualização por dashboard e uso controlado de IA agêntica.
+A referência de Foidl et al. foi conferida e corrigida para o ano do volume publicado, 2024, sendo
+incluída nas referências do relatório e marcada como citada no acervo.

@@ -66,6 +66,12 @@ NBR 6023 trata de *referências*, não de citações — citações são objeto 
 vigente da 6023 é a de 2018. Seguir a norma atual é tecnicamente correto e o resultado permanece
 compatível com o que o modelo exemplifica.
 
+**Aplicação confirmada em 2026-08-26:** no sistema autor-data, a autoria de pessoa física dentro
+dos parênteses deve ser grafada em maiúsculas e minúsculas, seguida de vírgula e ano — por exemplo,
+`(Saura, 2021)` e `(Saura; Palos-Sánchez; Suárez, 2017)`. A forma toda em maiúsculas, como
+`(SAURA, 2021)`, corresponde à orientação anterior à NBR 10520:2023. Siglas institucionais podem
+permanecer em maiúsculas, como em `(UNIVESP, 2026)`.
+
 **Alternativas consideradas:**
 
 * *Seguir o modelo ao pé da letra (6023:2002).* Descartada: reproduz um erro de referência

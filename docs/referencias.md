@@ -52,6 +52,7 @@ grupo fechar o tema com a instituição parceira.
 | `E10` | Análise de dados, pipelines e qualidade de dados | 2.4 Aplicação das disciplinas |
 | `E11` | Agentes de LLM, memória, engenharia de contexto e apoio controlado a simulações | Metodologia (processo de desenvolvimento) |
 | `E12` | Aprendizagem de máquina aplicada à análise preditiva e à tomada de decisão em marketing | 2.3 Fundamentação teórica / 2.5 Resultados |
+| `E13` | Estratégia de marketing digital, tráfego pago e atribuição de resultados | 2.3 Fundamentação teórica |
 
 Os eixos `E7` a `E10` sustentam o item **"Relação com as disciplinas estudadas"**, que vale
 **2,0 pontos** no relatório final e exige conteúdo de *mais de três disciplinas com referência
@@ -169,7 +170,7 @@ A obra 27 é a que **justifica a escolha do relacional** frente ao NoSQL — dec
 |---|---|---|---|---|---|
 | 29 | SIVARAJAH et al. — Critical analysis of Big Data challenges and analytical methods | 2016 | Journal of Business Research | 2036 | `candidata` |
 | 30 | TSAI et al. — Big data analytics: a survey | 2015 | Journal of Big Data | 807 | `candidata` |
-| 31 | FOIDL et al. — Data pipeline quality: influencing factors and root causes of data-related issues | 2023 | Journal of Systems and Software | 41 | `candidata` |
+| 31 | FOIDL et al. — Data pipeline quality: influencing factors and root causes of data-related issues | 2024 | Journal of Systems and Software | 41 | `citada` |
 | 32 | PENG — Reproducible research in computational science | 2011 | Science | — | `citada` |
 
 A obra 29 conecta análise de dados a **decisão gerencial**, que é a ponte entre o eixo técnico e o problema do projeto. A 31 é a mais aplicável na prática: trata de qualidade de dados em pipeline, exatamente o risco de integrar dados de plataformas de anúncio.
@@ -211,6 +212,20 @@ como apoio à organização e à interpretação. Jordan e Mitchell (2015) carac
 de máquina como sistemas que melhoram seu desempenho a partir da experiência; De Mauro, Sestino e
 Bacconi (2022) a tratam como subárea da IA e sistematizam casos de uso em marketing, inclusive
 apoio à decisão e impacto financeiro.
+
+### E13 — Estratégia de marketing digital, tráfego pago e atribuição
+
+| # | Obra | Ano | Veículo | Revisão por pares | Status |
+|---|---|---|---|---|---|
+| 42 | KANNAN; LI — Digital marketing: a framework, review and research agenda | 2017 | International Journal of Research in Marketing | sim | `citada` |
+| 43 | LI; KANNAN; VISWANATHAN; PANI — Attribution Strategies and Return on Keyword Investment in Paid Search Advertising | 2016 | Marketing Science | sim | `citada` |
+
+Kannan e Li (2017) oferecem o enquadramento do marketing digital como processo integrado, útil
+para situar as campanhas de mídia paga no contexto de captação e relacionamento. Li et al. (2016)
+demonstram que a regra de atribuição das conversões altera decisões de lance e de alocação de
+orçamento entre palavras-chave e, consequentemente, o retorno de campanhas de busca paga. No
+projeto, essas fontes sustentam a separação entre a leitura descritiva das métricas e a decisão
+gerencial que será tomada a partir delas.
 
 ---
 
@@ -268,7 +283,7 @@ CAMPELO, Arandi et al. Marketing digital na captação e fidelização de client
 
 DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
 
-FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2023. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 24 ago. 2026.
+FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
 
 GAO, Yunfan et al. **Retrieval-Augmented Generation for Large Language Models**: a survey. arXiv, 2023. Preprint, não revisado por pares. DOI: 10.48550/arXiv.2312.10997. Disponível em: https://doi.org/10.48550/arXiv.2312.10997. Acesso em: 24 ago. 2026.
 
@@ -280,11 +295,15 @@ JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and
 
 KALUŽA, Marin; VUKELIĆ, Bernard. Comparison of front-end frameworks for web applications development. **Zbornik Veleučilišta u Rijeci**, v. 6, n. 1, p. 261-282, 2018. DOI: 10.31784/zvr.6.1.19. Disponível em: https://doi.org/10.31784/zvr.6.1.19. Acesso em: 24 ago. 2026.
 
+KANNAN, P. K.; LI, Hongshuang "Alice". Digital marketing: a framework, review and research agenda. **International Journal of Research in Marketing**, v. 34, n. 1, p. 22-45, 2017. DOI: 10.1016/j.ijresmar.2016.11.006. Disponível em: https://doi.org/10.1016/j.ijresmar.2016.11.006. Acesso em: 26 ago. 2026.
+
 LEAL, Janayna Souto; NASCIMENTO, Kelvys Wlysses Sousa do; SOARES NETO, João Batista. O marketing digital no processo de captação discente de uma instituição de ensino superior. **Cadernos de Gestão e Empreendedorismo**, v. 7, n. 3, p. 52-67, 2019. DOI: 10.32888/cge.v7i3.32200. Disponível em: https://doi.org/10.32888/cge.v7i3.32200. Acesso em: 24 ago. 2026.
 
 LEIS, Viktor et al. How good are query optimizers, really? **Proceedings of the VLDB Endowment**, v. 9, n. 3, p. 204-215, 2015. DOI: 10.14778/2850583.2850594. Disponível em: https://doi.org/10.14778/2850583.2850594. Acesso em: 24 ago. 2026.
 
 LEMES, Thieny de Cássio; DIAS, Marina Oliveira de Souza; OLIVEIRA, Tiago de. Análise do uso de dashboard como ferramenta de apoio a tomada de decisão em instituições de ensino: uma revisão sistemática da literatura. **RENOTE**, v. 21, n. 1, p. 281-290, 2023. DOI: 10.22456/1679-1916.134356. Disponível em: https://doi.org/10.22456/1679-1916.134356. Acesso em: 24 ago. 2026.
+
+LI, Hongshuang "Alice"; KANNAN, P. K.; VISWANATHAN, Siva; PANI, Abhishek. Attribution strategies and return on keyword investment in paid search advertising. **Marketing Science**, v. 35, n. 6, p. 831-848, 2016. DOI: 10.1287/mksc.2016.0987. Disponível em: https://doi.org/10.1287/mksc.2016.0987. Acesso em: 26 ago. 2026.
 
 LIU, Nelson F. et al. Lost in the Middle: how language models use long contexts. **Transactions of the Association for Computational Linguistics**, v. 12, p. 157-173, 2024. DOI: 10.1162/tacl_a_00638. Disponível em: https://doi.org/10.1162/tacl_a_00638. Acesso em: 24 ago. 2026.
 
