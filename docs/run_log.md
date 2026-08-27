@@ -484,3 +484,19 @@ Arquivos alterados: `docs/relatorio/parcial.md`, `docs/referencias.md`,
 `docs/fichamentos_bibliograficos.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum commit realizado.
 
 ---
+
+Data: 2026-08-27
+Ação realizada: criação de uma síntese de triagem das obras completas do acervo bibliográfico.
+Buscas complementares: páginas dos periódicos, repositórios institucionais, DOI e versões abertas
+dos textos dos eixos E1, E3 a E11; foram verificados objetivos, métodos, resultados e limitações
+disponíveis. Consultas específicas incluíram captação e marketing de serviços em IES, dashboards e
+BI, Design Thinking, avaliação de usabilidade, frameworks front-end, benchmarks de PostgreSQL,
+Big Data, agentes generativos, contexto longo, RAG e arquiteturas cognitivas para agentes.
+Resultado: `docs/resumos_obras_bibliograficas.md` reúne as 43 obras e três fontes institucionais,
+separa leitura registrada, abstract/trechos e metadados, e atribui uma decisão preliminar de
+prioridade sem promover candidatas nem autorizar citações. A ADR-004 e os documentos do acervo foram
+atualizados para exigir, em futuras inclusões, catálogo ABNT, síntese geral e fichamento do recorte.
+Arquivos alterados: `docs/resumos_obras_bibliograficas.md`, `docs/referencias.md`,
+`docs/fichamentos_bibliograficos.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum commit realizado.
+
+---

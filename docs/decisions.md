@@ -124,32 +124,38 @@ caracterização da comunidade externa exigida pela Metodologia passa a ser feit
 
 **Data:** 2026-08-27
 
-**Decisão:** Toda obra adicionada a `docs/referencias.md` deverá receber, na mesma alteração, uma
-entrada em `docs/fichamentos_bibliograficos.md`. A entrada deve conter a identificação da obra,
-link persistente de acesso, situação de leitura e, quando a obra estiver lida, resumo próprio,
-recorte adotado pelo PI, localização verificável do recorte e seção do relatório em que será usada.
+**Decisão:** Toda obra adicionada a `docs/referencias.md` deverá receber, na mesma alteração, duas
+entradas complementares: uma síntese de triagem em `docs/resumos_obras_bibliograficas.md` e um
+registro em `docs/fichamentos_bibliograficos.md`. A síntese deve declarar sua base documental,
+apresentar o objetivo e a contribuição geral da obra, limites, decisão preliminar e link de acesso.
+O fichamento deve conter a identificação da obra, link persistente, situação de leitura e, quando a
+obra estiver lida, resumo próprio, recorte adotado pelo PI, localização verificável do recorte e
+seção do relatório em que será usada.
 
-Uma obra recém-localizada pode entrar como `candidata`, mas seu fichamento deverá registrar
-explicitamente `leitura pendente`, sem resumo ou recorte inferidos. A obra só poderá ser citada no
-relatório depois de passar para `fichada` ou `usada no relatório`. Citação direta exige a página
-verificada no fichamento; citações indiretas devem apontar a seção, capítulo ou outro localizador
-útil quando houver.
+Uma obra recém-localizada pode entrar como `candidata`. Sua síntese de triagem pode ser baseada em
+abstract ou metadados, desde que essa limitação esteja explícita e não seja apresentada como leitura
+integral. O fichamento deverá registrar `leitura pendente`, sem resumo ou recorte inferidos. A obra
+só poderá ser citada no relatório depois de passar para `fichada` ou `usada no relatório`. Citação
+direta exige a página verificada no fichamento; citações indiretas devem apontar a seção, capítulo
+ou outro localizador útil quando houver.
 
-**Motivo:** a lista ABNT informa a existência e os metadados da fonte, mas não torna transparente
-qual parte dela sustenta o projeto. O fichamento permite que todos os integrantes confiram o texto,
-evita extrapolações a partir de título ou resumo e preserva a rastreabilidade entre fonte, recorte,
-decisão e redação do relatório.
+**Motivo:** a lista ABNT informa a existência e os metadados da fonte, mas não permite comparar a
+proposta geral das obras nem torna transparente qual parte sustenta o projeto. A síntese separada
+facilita a decisão coletiva sobre o que ler e incorporar; o fichamento permite conferir o recorte,
+evita extrapolações e preserva a rastreabilidade entre fonte, decisão e redação do relatório.
 
 **Alternativas consideradas:**
 
-* *Manter apenas `docs/referencias.md`.* Descartada: não registra leitura, recorte nem ponto de
-  conferência da obra.
+* *Manter apenas `docs/referencias.md`.* Descartada: não registra proposta geral, leitura, recorte
+  nem ponto de conferência da obra.
+* *Misturar resumo integral e recorte em uma única tabela.* Descartada: dificulta distinguir o que
+  a obra discute do que o PI efetivamente adotou.
 * *Criar fichamento somente para fontes já citadas.* Descartada: deixaria candidatas sem responsável,
   acesso ou histórico de triagem e tornaria a regra difícil de aplicar nas próximas inclusões.
 
-**Impacto esperado:** o acervo passa a ter uma porta de entrada única e verificável. A inclusão de
-uma fonte exige um pequeno trabalho adicional, compensado por revisão coletiva mais simples e menor
-risco de citação sem aderência ao recorte do PI.
+**Impacto esperado:** o acervo passa a ter uma trilha verificável de catálogo, triagem e uso. A
+inclusão de uma fonte exige um pequeno trabalho adicional, compensado por decisão coletiva mais
+simples e menor risco de citação sem aderência ao recorte do PI.
 
 ---
 

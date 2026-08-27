@@ -4,6 +4,8 @@
 > [catálogo de referências](referencias.md), que permanece como fonte única das entradas em ABNT.
 > Pela [ADR-004](decisions.md#adr-004--fichamento-obrigatório-para-cada-obra-do-acervo-bibliográfico),
 > toda obra adicionada ao catálogo deve ter uma linha correspondente aqui.
+> Para decidir quais obras merecem leitura e incorporação, consulte também os
+> [resumos das obras completas](resumos_obras_bibliograficas.md).
 
 ## Regra de uso
 
@@ -132,7 +134,9 @@
 ## Como registrar uma nova obra
 
 1. Adicionar a entrada ABNT e a classificação por eixo em [referencias.md](referencias.md).
-2. Na mesma alteração, criar a linha deste arquivo com situação e link de acesso.
+2. Na mesma alteração, criar uma síntese de triagem em
+   [resumos_obras_bibliograficas.md](resumos_obras_bibliograficas.md) e a linha deste arquivo com
+   situação e link de acesso.
 3. Após leitura integral, substituir a pendência por resumo próprio, recorte adotado, localização
    verificável (página, seção ou capítulo) e ponto de uso no relatório.
 4. Antes de citar, confirmar que o recorte sustenta exatamente a afirmação pretendida.
