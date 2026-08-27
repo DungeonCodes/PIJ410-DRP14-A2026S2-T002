@@ -500,3 +500,22 @@ Arquivos alterados: `docs/resumos_obras_bibliograficas.md`, `docs/referencias.md
 `docs/fichamentos_bibliograficos.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum commit realizado.
 
 ---
+
+Data: 2026-08-27
+Ação realizada: reconhecimento formal da baseline técnica da aplicação acadêmica na governança do
+projeto.
+Evidências verificadas no próprio repositório: aplicação Next.js + TypeScript; feature gate central
+em `src/lib/fases.ts`; Fase 1 ativa com Captação e Matrículas; módulos de Ads, Reels orgânicos,
+Objetivo da Gestão e Arquitetura & Algoritmos bloqueados; datasets locais sintéticos com metadados e
+geração determinística; testes de fases, determinismo e não vazamento.
+Validações executadas antes da atualização documental: integridade da zona científica protegida
+confirmada; 54 verificações do feature gate, 46 verificações de determinismo e 35 verificações de
+não vazamento aprovadas. Nenhum gerador de dados, build ou integração externa foi executado.
+Resultado: criada a ADR-006 canônica, com referência ao ADR-A001 técnico já existente, e atualizado
+o contexto mestre. A baseline é 27/08/2026; datas anteriores exibidas nos datasets representam
+cronologia sintética, não coleta acadêmica. Nenhuma fase foi liberada e não houve alteração em
+aplicação, dados, scripts, configurações, documentação científica protegida ou outputs. Nenhum
+commit ou push realizado.
+Arquivos alterados: `docs/decisions.md`, `docs/run_log.md` e `docs/master_context.md`.
+
+---
