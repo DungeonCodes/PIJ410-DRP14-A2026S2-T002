@@ -4,6 +4,9 @@
 > referências do projeto: toda obra citada nos relatórios deve constar aqui, e toda obra
 > aqui listada deve ter sido efetivamente localizada — nada é adicionado por inferência.
 
+Os resumos de leitura, os recortes efetivamente usados e os links para conferência pelo grupo são
+registrados em [`docs/fichamentos_bibliograficos.md`](fichamentos_bibliograficos.md).
+
 Norma adotada: **ABNT NBR 6023:2018** (referências) e **NBR 10520:2023** (citações).
 Ver `/docs/decisions.md` e `.claude/skills/pesquisa-bibliografica/references/abnt.md`.
 
