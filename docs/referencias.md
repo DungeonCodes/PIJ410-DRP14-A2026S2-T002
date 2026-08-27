@@ -5,7 +5,8 @@
 > aqui listada deve ter sido efetivamente localizada — nada é adicionado por inferência.
 
 Os resumos de leitura, os recortes efetivamente usados e os links para conferência pelo grupo são
-registrados em [`docs/fichamentos_bibliograficos.md`](fichamentos_bibliograficos.md).
+registrados em [`docs/fichamentos_bibliograficos.md`](fichamentos_bibliograficos.md). Pela
+ADR-004, toda inclusão neste catálogo exige a entrada correspondente no fichamento.
 
 Norma adotada: **ABNT NBR 6023:2018** (referências) e **NBR 10520:2023** (citações).
 Ver `/docs/decisions.md` e `.claude/skills/pesquisa-bibliografica/references/abnt.md`.

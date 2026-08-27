@@ -120,6 +120,39 @@ caracterização da comunidade externa exigida pela Metodologia passa a ser feit
 
 ---
 
+## ADR-004 — Fichamento obrigatório para cada obra do acervo bibliográfico
+
+**Data:** 2026-08-27
+
+**Decisão:** Toda obra adicionada a `docs/referencias.md` deverá receber, na mesma alteração, uma
+entrada em `docs/fichamentos_bibliograficos.md`. A entrada deve conter a identificação da obra,
+link persistente de acesso, situação de leitura e, quando a obra estiver lida, resumo próprio,
+recorte adotado pelo PI, localização verificável do recorte e seção do relatório em que será usada.
+
+Uma obra recém-localizada pode entrar como `candidata`, mas seu fichamento deverá registrar
+explicitamente `leitura pendente`, sem resumo ou recorte inferidos. A obra só poderá ser citada no
+relatório depois de passar para `fichada` ou `usada no relatório`. Citação direta exige a página
+verificada no fichamento; citações indiretas devem apontar a seção, capítulo ou outro localizador
+útil quando houver.
+
+**Motivo:** a lista ABNT informa a existência e os metadados da fonte, mas não torna transparente
+qual parte dela sustenta o projeto. O fichamento permite que todos os integrantes confiram o texto,
+evita extrapolações a partir de título ou resumo e preserva a rastreabilidade entre fonte, recorte,
+decisão e redação do relatório.
+
+**Alternativas consideradas:**
+
+* *Manter apenas `docs/referencias.md`.* Descartada: não registra leitura, recorte nem ponto de
+  conferência da obra.
+* *Criar fichamento somente para fontes já citadas.* Descartada: deixaria candidatas sem responsável,
+  acesso ou histórico de triagem e tornaria a regra difícil de aplicar nas próximas inclusões.
+
+**Impacto esperado:** o acervo passa a ter uma porta de entrada única e verificável. A inclusão de
+uma fonte exige um pequeno trabalho adicional, compensado por revisão coletiva mais simples e menor
+risco de citação sem aderência ao recorte do PI.
+
+---
+
 ## Pendências aguardando decisão
 
 Registradas para não se perderem; nenhuma foi decidida ainda.
