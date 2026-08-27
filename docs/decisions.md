@@ -200,6 +200,10 @@ disponibiliza exclusivamente os módulos Captação e Matrículas. Ads, Reels or
 Gestão e Arquitetura & Algoritmos permanecem planejados e bloqueados, ainda que possam ter estrutura
 preparada no código.
 
+O ambiente acadêmico sanitizado correspondente à Fase 1 está funcional e publicado na Vercel. Essa
+publicação não amplia o escopo disponível: somente Captação e Matrículas estão acessíveis, com dados
+sintéticos e sem conexão com APIs, sistemas operacionais ou bases reais da instituição parceira.
+
 A aplicação pode utilizar uma arquitetura externa de referência apenas no nível conceitual e
 estrutural. Ela não tem dependência de runtime, importação entre repositórios, caminho local,
 arquivo, API privada, credencial ou dado proveniente dessa referência. A abertura de uma fase exige

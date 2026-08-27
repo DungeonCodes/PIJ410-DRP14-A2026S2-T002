@@ -519,3 +519,28 @@ commit ou push realizado.
 Arquivos alterados: `docs/decisions.md`, `docs/run_log.md` e `docs/master_context.md`.
 
 ---
+
+Data: 2026-08-27
+Ação realizada: revisão de sincronização entre a documentação científica/acadêmica e o rollout
+funcional da aplicação.
+Documentos inspecionados: contexto mestre, decisões, relatório parcial, Plano de Ação oficial,
+rascunho do Plano de Ação, planejamento por fases, documentação de migração e referência, registros
+de execução, requisitos metodológicos e materiais de Design Thinking. O Plano de Ação foi mantido
+como registro histórico e planejado, sem reescrita de atividades ou evidências.
+Inconsistências corrigidas: o relatório parcial ainda registrava a primeira versão executável e a
+aplicação com dados fictícios como pendentes; a documentação geral ainda continha formulações de
+protótipo futuro; e os materiais de referência não estavam explicitamente separados do estado
+funcional acadêmico. Foi registrada a confirmação do grupo de que o ambiente sanitizado da Fase 1
+está funcional e publicado na Vercel, exclusivamente com Captação e Matrículas e dados sintéticos.
+Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos permanecem planejados e
+bloqueados. A aplicação e a validação com a comunidade externa continuam pendentes e não foram
+apresentadas como realizadas.
+Validação: 54 verificações do feature gate e 35 verificações de não vazamento aprovadas. Nenhum
+código, configuração, dataset, modelo ou documento normativo da UNIVESP foi alterado; nenhuma fase
+foi habilitada.
+Arquivos alterados nesta revisão: `docs/master_context.md`, `docs/decisions.md`,
+`docs/relatorio/parcial.md`, `docs/migracao-modelo/README.md`,
+`docs/migracao-modelo/arquitetura/plano-de-fases.md` e `docs/run_log.md`. Nenhum commit ou push
+realizado.
+
+---

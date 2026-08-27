@@ -19,6 +19,8 @@ O trabalho usa como contexto uma necessidade real observada em uma instituição
 Desde **27/08/2026**, o repositório inclui uma aplicação acadêmica própria em **Next.js +
 TypeScript**, independente e baseada em dados sintéticos. A disponibilização é incremental: a
 Fase 1 contém Captação e Matrículas; fases posteriores permanecem bloqueadas por feature gate.
+O ambiente acadêmico sanitizado da Fase 1 está funcional e publicado na Vercel; a publicação
+disponibiliza somente esses dois módulos e não implica ativação das fases posteriores.
 Uma arquitetura externa pode ser referência apenas conceitual e estrutural; a aplicação acadêmica
 não depende dela em runtime nem recebe seus dados, arquivos, integrações ou credenciais. Ver
 `docs/decisions.md` (ADR-006) e `docs/migracao-modelo/arquitetura/ADR-A001-espelhamento-dados-sinteticos-rollout.md`.
@@ -60,7 +62,8 @@ Confirmado para o estado atual do projeto:
 * Fabricar entrevistas, respostas, avaliações ou evidências.
 * Expor dados sensíveis da instituição parceira (ver Restrições e Guardrails).
 
-Confirmado para o protótipo acadêmico futuro — o protótipo **não** deverá usar conexões reais com:
+Confirmado para a aplicação acadêmica — a Fase 1 não usa, e as fases futuras **não deverão usar**,
+conexões reais com:
 
 * APIs de anúncios;
 * Google Sheets;
@@ -71,24 +74,29 @@ Confirmado para o protótipo acadêmico futuro — o protótipo **não** deverá
 
 ## Entradas
 
-Serão adicionadas ao repositório progressivamente e ainda **não estão disponíveis**:
+Já estão disponíveis no repositório:
 
-* documentos oficiais da UNIVESP e orientações da disciplina (fonte normativa quando forem analisados);
+* documentos oficiais da UNIVESP e orientações da disciplina, como fontes normativas;
 * Plano de Ação;
-* definição do tema, problema e objetivo;
-* entrevistas e informações dos stakeholders;
 * decisões do grupo e planejamento;
-* materiais do sistema de referência;
-* estratégia de sanitização;
-* evidências de validação.
+* governança da arquitetura acadêmica e estratégia de sanitização;
+* baseline funcional da Fase 1 com dados sintéticos.
 
-Dados do protótipo (quando a etapa for autorizada): JSONs locais, fixtures, mocks, dados sintéticos ou dados fictícios coerentes com os cenários demonstrados.
+Continuam pendentes de produção ou confirmação: definição final do problema e dos objetivos,
+registros adicionais das interações com stakeholders e evidências de aplicação e validação.
+
+Dados da aplicação acadêmica: a Fase 1 usa JSONs locais inteiramente sintéticos. Fases futuras
+deverão manter a mesma política, com fixtures, mocks ou dados fictícios coerentes com os cenários
+demonstrados, sem derivação de valores operacionais.
 
 ## Saídas Esperadas
 
-**Pendente.** Entregáveis, formato do relatório e artefatos acadêmicos serão definidos após a análise dos documentos oficiais da UNIVESP.
+O formato dos relatórios e o fluxo de geração dos artefatos acadêmicos seguem os documentos oficiais
+da UNIVESP e a ADR-001. O conteúdo definitivo das entregas permanece condicionado às decisões do
+grupo e às atividades efetivamente realizadas.
 
-Intenção registrada (não executar agora): uma versão sanitizada do sistema de referência, destinada exclusivamente ao PI e independente do ambiente operacional.
+Saída técnica existente desde 27/08/2026: ambiente acadêmico sanitizado e independente, com a Fase
+1 funcional. A definição dos demais entregáveis acadêmicos permanece pendente.
 
 ## Restrições e Guardrails
 
@@ -128,11 +136,11 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
 
 * Existe um sistema real que servirá como principal referência técnica para a construção do ambiente acadêmico, com funcionalidades relacionadas a: indicadores gerenciais, investimentos em mídia digital, Google Ads, Meta Ads, captação, matrículas, retenção/evasão, conteúdo orgânico e análise estratégica.
 * O PI poderá aproveitar conceitos, arquitetura, componentes, regras de apresentação e experiências obtidas nesse sistema, mas o repositório acadêmico será **independente do ambiente operacional**.
-* Confirmado pelo grupo em 26 ago. 2026: o código, os dados autorizados, o treinamento, os testes e
-  o relatório técnico detalhado de aprendizagem de máquina serão mantidos no repositório real da
-  solução. Este repositório do PI guardará a documentação acadêmica e, em momento posterior, uma
-  interface web independente para demonstrar resultados sanitizados ou fictícios. Não serão
-  copiados para cá dados reais, artefatos de modelo, credenciais nem código operacional.
+* Confirmado pelo grupo em 26 ago. 2026 e atualizado pela baseline de 27 ago. 2026: código, dados
+  autorizados, treinamento, testes e relatório técnico detalhado de aprendizagem de máquina
+  permanecerão fora do ambiente acadêmico. Este repositório mantém a documentação e uma interface
+  web acadêmica independente, cuja Fase 1 demonstra Captação e Matrículas com dados sintéticos. Não
+  serão copiados para cá dados reais, artefatos de modelo, credenciais nem código operacional.
 * Confirmado pelo grupo em 26 ago. 2026: o núcleo analítico terá três camadas distintas. A
   primeira produzirá indicadores por algoritmos determinísticos, com parâmetros e resultados
   conferíveis. A segunda preparará dados históricos e treinará e avaliará ao menos um modelo
@@ -147,10 +155,14 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
   não devem ser utilizadas. No processo de produção documental, os agentes poderão apoiar consulta,
   organização e revisão sob contexto controlado; seleção de conteúdo, validação de fontes e
   aprovação de versões permanecem sob responsabilidade do grupo.
-* A UNIVESP utiliza metodologia própria para condução do PI, com indicação de uso de Design Thinking. Nenhuma interpretação definitiva dessa metodologia deve ser adotada agora; os materiais oficiais serão adicionados depois e terão precedência sobre interpretações preliminares.
-* Etapas, entregáveis, entrevistas, documentação, cronograma, validações e relatório só serão estruturados formalmente após a análise da documentação oficial.
+* A UNIVESP utiliza metodologia própria para condução do PI, com indicação de uso de Design
+  Thinking. Os materiais oficiais presentes no repositório têm precedência sobre interpretações
+  preliminares.
+* O planejamento de etapas, entregáveis, cronograma e relatório está documentado. Entrevistas,
+  aplicações, feedbacks e validações só podem ser registrados como resultados depois de ocorrerem.
 
-Processo planejado para o ambiente acadêmico (registro de intenção — **não executar agora**):
+Processo permanente para qualquer adaptação acadêmica adicional; a Fase 1 já disponível não
+autoriza a abertura automática das etapas seguintes:
 
 ```text
 SISTEMA DE REFERÊNCIA

@@ -20,3 +20,8 @@ modelos originais mantidos em `docs/univesp/`.
 5. O texto-fonte do relatório continua em `docs/relatorio/parcial.md`; a migração para `.docx` deve preservar os estilos do modelo novo.
 
 Não inclua dados pessoais, credenciais ou dados operacionais da instituição parceira.
+
+Os documentos em `referencias/` descrevem materiais usados como insumo e **não representam o
+estado funcional atual da aplicação acadêmica**. Para disponibilidade dos módulos, consulte o
+[plano de fases](arquitetura/plano-de-fases.md): somente Captação e Matrículas estão ativas; Ads,
+Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos permanecem planejados.

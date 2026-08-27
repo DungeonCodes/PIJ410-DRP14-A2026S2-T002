@@ -15,7 +15,7 @@
 | 2.2 Justificativa e delimitação do problema | 1,0 | ⬜ em revisão |
 | 2.3 Fundamentação teórica | 2,0 | ⬜ |
 | 2.4 Metodologia | 1,5 | ⬜ |
-| 2.5 Resultados preliminares: solução inicial | 1,5 | ⬜ ideia documentada; aplicação pendente |
+| 2.5 Resultados preliminares: solução inicial | 1,5 | ⬜ protótipo funcional; aplicação com a comunidade pendente |
 | Referências | — | ⬜ |
 
 ## Dados do projeto
@@ -214,11 +214,15 @@ O escopo está limitado à consolidação, análise e visualização de dados hi
 campanhas de mídia paga e aos indicadores definidos com a instituição parceira. Não fazem parte
 do estudo a integração com contas reais de anúncios, CRM, sistemas acadêmicos ou outras bases
 operacionais, nem o tratamento de dados pessoais ou informações comerciais sensíveis. A solução
-será desenvolvida em ambiente acadêmico independente, com dados locais fictícios ou sanitizados,
-preservando a confidencialidade da comunidade participante. A camada de IA agêntica receberá apenas
-esses dados locais e será acionada pela linha de comando do grupo. A escolha do modelo de linguagem
-será instrumental e poderá ser alterada sem modificar o método: resultados de simulações continuarão
-identificados como exploratórios e dependerão de cálculo determinístico e revisão humana.
+possui, desde 27/08/2026, um ambiente acadêmico independente e sanitizado. Sua Fase 1, com os módulos
+Captação e Matrículas, utiliza somente dados sintéticos locais e está funcional e publicada na
+Vercel. Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos integram o plano
+completo, mas permanecem indisponíveis enquanto suas fases não forem explicitamente abertas pelo
+grupo. O ambiente acadêmico não mantém conexão com contas de anúncios, CRM, sistemas acadêmicos ou
+outras bases operacionais. A camada de IA agêntica receberá apenas contexto fictício ou sanitizado
+e será acionada pela linha de comando do grupo. A escolha do modelo de linguagem será instrumental
+e poderá ser alterada sem modificar o método: resultados de simulações continuarão identificados
+como exploratórios e dependerão de cálculo determinístico e revisão humana.
 
 ### 2.3 Fundamentação teórica
 
@@ -426,7 +430,8 @@ registros históricos, com uma etapa qualitativa, destinada a compreender as nec
 profissionais e avaliar a utilidade e a compreensão do protótipo. As duas etapas permanecerão
 articuladas: os dados delimitarão o que pode ser calculado ou estimado, enquanto a participação da
 comunidade indicará quais perguntas de gestão e formas de apresentação são relevantes. A descrição
-abaixo registra o procedimento planejado; atividades ainda não realizadas não são apresentadas como
+abaixo distingue a baseline técnica já construída dos procedimentos acadêmicos ainda planejados;
+atividades de escuta, aplicação ou validação ainda não realizadas não são apresentadas como
 resultado.
 
 #### 2.4.1 Delineamento do projeto e participação da comunidade externa
@@ -571,26 +576,27 @@ limites de atribuição declarados, não serão utilizadas.
 
 #### 2.4.9 Construção do protótipo e arquitetura da interface
 
-A construção do protótipo separará a preparação local dos dados, os artefatos sanitizados usados na
-demonstração e a camada de apresentação web. Essa separação evita que a interface acadêmica dependa
-de contas de anúncios, credenciais ou integrações operacionais em tempo de execução. A escolha
-final de tecnologias será registrada antes da implementação; como referência técnica, a arquitetura
-web poderá adotar componentes React e recursos de renderização no servidor com Next.js, abordagem
-descrita por Thakkar (2020) para aplicações web baseadas em React.
+A baseline do protótipo foi construída em Next.js e TypeScript, separando os dados sintéticos locais
+da camada de apresentação web. Essa separação evita que a interface acadêmica dependa de contas de
+anúncios, credenciais ou integrações operacionais em tempo de execução. Em 27/08/2026, a Fase 1 foi
+disponibilizada com os módulos Captação e Matrículas; as estruturas preparatórias das fases 2 a 4
+permanecem bloqueadas e não constituem entrega funcional. Como referência técnica, Thakkar (2020)
+descreve componentes React e recursos de renderização no servidor com Next.js.
 
-O desenho do dashboard será orientado pela finalidade analítica de cada visão, com indicadores,
-filtros, comparações e avisos de limitação apresentados de maneira coerente. Padrões de design de
+O desenho das visões da Fase 1 é orientado pela finalidade analítica, com indicadores, filtros,
+comparações e avisos de limitação apresentados de maneira coerente. Padrões de design de
 dashboards auxiliam a discutir escolhas de organização visual, interação e informação exibida
-(Bach et al., 2023). A implementação deverá manter a origem e o período dos dados visíveis, além
-de diferenciar valores observados, cálculos determinísticos e estimativas.
+(Bach et al., 2023). As evoluções deverão manter a origem e o período dos dados visíveis, além de
+diferenciar valores sintéticos, cálculos determinísticos e futuras estimativas.
 
 #### 2.4.10 Interface web e validação da solução
 
-A interface web será desenvolvida como meio de apresentação dos resultados analíticos, e não como
-substituta do processo de análise. Ela deverá mostrar indicadores, cenários, período de referência,
-fonte, limitações de atribuição e, quando existir modelo validado, diferenciar explicitamente
-valores observados de estimativas. Essa apresentação permitirá que os participantes compreendam o
-que está sendo medido antes de discutir possíveis decisões.
+A interface web da Fase 1 está funcional e publicada na Vercel como meio de apresentação da
+estrutura analítica de Captação e Matrículas, sem substituir o processo de análise. Os valores
+exibidos pertencem a um cenário histórico inteiramente sintético e não representam coleta realizada
+nas datas simuladas. As fases futuras deverão mostrar indicadores, cenários, período de referência,
+fonte e limitações compatíveis com seu escopo e, quando existir modelo validado, diferenciar
+explicitamente valores calculados de estimativas.
 
 A validação ocorrerá com profissionais da instituição parceira, por meio de apresentação orientada
 do protótipo e registro das observações recebidas sobre compreensão, utilidade e pontos de melhoria.
@@ -600,40 +606,40 @@ recebidas, sem antecipar aceitação, melhoria de desempenho ou alteração de d
 
 ### 2.5 Resultados preliminares: solução inicial
 
-Nesta fase, a solução inicial é concebida como uma plataforma analítica independente do ambiente
-operacional da instituição. Seu objetivo não é automatizar decisões de orçamento, mas reunir uma
-cadeia verificável que parte dos dados autorizados, aplica regras explícitas e apresenta resultados
-com contexto suficiente para discussão pela gestão. A primeira versão deverá operar apenas com
-dados fictícios ou sanitizados e não manterá conexão com contas de anúncios, CRM ou sistema
-acadêmico.
+Nesta fase, a solução inicial possui uma aplicação web acadêmica independente do ambiente
+operacional da instituição. Em 27/08/2026, o ambiente sanitizado da Fase 1 tornou-se funcional e
+foi publicado na Vercel, disponibilizando somente Captação e Matrículas. Os módulos apresentam
+relatórios, indicadores e visualizações baseados em dados sintéticos e não mantêm conexão com
+contas de anúncios, CRM, sistema acadêmico ou qualquer base real da instituição parceira.
 
-A solução proposta organiza-se em quatro componentes. O primeiro prepara e padroniza os registros,
-preservando origem, período e granularidade. O segundo calcula indicadores determinísticos e
-classifica resultados como medidos, indisponíveis ou não verificáveis. O terceiro, condicionado à
-qualidade da base de conteúdo orgânico, treina e avalia separadamente um modelo supervisionado. O
-quarto apresenta indicadores, cenários, estimativas e limitações em uma interface web, mantendo
-distintas as informações observadas, calculadas e estimadas.
+O plano completo da solução organiza-se em quatro componentes. O primeiro prepara e padroniza os
+registros, preservando origem, período e granularidade. O segundo calcula indicadores
+determinísticos e classifica resultados como disponíveis, indisponíveis ou não verificáveis. O
+terceiro, ainda planejado e condicionado à qualidade da base de conteúdo orgânico, deverá treinar e
+avaliar separadamente um modelo supervisionado. O quarto apresenta indicadores, cenários,
+estimativas e limitações em uma interface web. Na entrega atual, somente a parcela correspondente
+aos módulos sintéticos de Captação e Matrículas está disponível.
 
 ```text
-dados autorizados
+dados sintéticos da Fase 1
         ↓
 inventário, limpeza e padronização
         ↓
-indicadores determinísticos ── modelo supervisionado experimental
+indicadores determinísticos
         ↓
-interface web com origem, período, fórmulas e limitações
+Captação e Matrículas na interface web
         ↓
-interpretação e avaliação pela comunidade externa
+aplicação e avaliação pela comunidade externa (pendentes)
 ```
 
-Como resultado preliminar de concepção, já estão definidos o problema que a plataforma deve apoiar,
-os limites de confidencialidade, a separação entre indicadores e aprendizagem de máquina e os
-requisitos de rastreabilidade da interface. Permanecem pendentes a construção da primeira versão
-executável, sua aplicação com dados fictícios ou sanitizados e a avaliação com profissionais da
-instituição. Antes da entrega do relatório parcial, esta seção deverá ser complementada com imagens
-da solução, descrição das funções implementadas, procedimento da primeira aplicação e observações
-efetivamente recebidas. Enquanto essas atividades não ocorrerem, o texto registra apenas a ideia da
-solução inicial, condição que a rubrica distingue de um protótipo já aplicado.
+Como resultado preliminar, estão disponíveis uma primeira versão executável, os módulos Captação e
+Matrículas, os dados sintéticos determinísticos e os controles que mantêm as fases posteriores
+bloqueadas. A existência desse protótipo técnico não constitui aplicação ou validação com a
+comunidade externa. Permanecem pendentes a apresentação orientada aos profissionais da instituição,
+o registro das tarefas realizadas, a coleta de observações e a eventual priorização de melhorias.
+Antes da entrega do relatório parcial, esta seção deverá ser complementada com imagens da solução e
+com evidências de aplicação que tenham sido efetivamente produzidas; até lá, não se atribuem à
+comunidade aceitação, feedback ou impacto.
 
 ---
 
