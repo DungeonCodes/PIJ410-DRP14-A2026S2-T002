@@ -1,0 +1,1020 @@
+{
+ "meta": {
+  "schema_version": 1,
+  "scenario_version": "cenario-alfa-1",
+  "seed": "pij410-alfa-2026",
+  "project_started_at": "2026-08-27",
+  "generated_at": "2026-08-27",
+  "reference_date": "2026-08-15",
+  "synthetic": true,
+  "nota": "Dados inteiramente sintéticos, gerados por algoritmo determinístico. Não derivam de nenhuma base operacional. As datas representam uma cronologia fictícia; o projeto acadêmico começou em 2026-08-27."
+ },
+ "safras": [
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "ciclos": [
+  "EI",
+  "EF-I",
+  "EF-II",
+  "EM"
+ ],
+ "safrasIndeterminadas": [
+  2022
+ ],
+ "grupos": [
+  {
+   "safra": 2022,
+   "ciclo": "EI",
+   "total": 233,
+   "rematriculas": 0,
+   "novas": 233,
+   "retencaoPct": null,
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "total": 50,
+     "rematriculas": 0,
+     "novas": 50
+    },
+    {
+     "turma": "Infantil 2",
+     "total": 56,
+     "rematriculas": 0,
+     "novas": 56
+    },
+    {
+     "turma": "Infantil 3",
+     "total": 46,
+     "rematriculas": 0,
+     "novas": 46
+    },
+    {
+     "turma": "Infantil 4",
+     "total": 42,
+     "rematriculas": 0,
+     "novas": 42
+    },
+    {
+     "turma": "Infantil 5",
+     "total": 39,
+     "rematriculas": 0,
+     "novas": 39
+    }
+   ],
+   "mensal": [
+    28,
+    20,
+    11,
+    8,
+    7,
+    8,
+    12,
+    24,
+    24,
+    35,
+    34,
+    22
+   ]
+  },
+  {
+   "safra": 2022,
+   "ciclo": "EF-I",
+   "total": 184,
+   "rematriculas": 0,
+   "novas": 184,
+   "retencaoPct": null,
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "total": 33,
+     "rematriculas": 0,
+     "novas": 33
+    },
+    {
+     "turma": "2º Ano",
+     "total": 36,
+     "rematriculas": 0,
+     "novas": 36
+    },
+    {
+     "turma": "3º Ano",
+     "total": 33,
+     "rematriculas": 0,
+     "novas": 33
+    },
+    {
+     "turma": "4º Ano",
+     "total": 42,
+     "rematriculas": 0,
+     "novas": 42
+    },
+    {
+     "turma": "5º Ano",
+     "total": 40,
+     "rematriculas": 0,
+     "novas": 40
+    }
+   ],
+   "mensal": [
+    24,
+    15,
+    10,
+    6,
+    5,
+    5,
+    9,
+    16,
+    21,
+    27,
+    26,
+    20
+   ]
+  },
+  {
+   "safra": 2022,
+   "ciclo": "EF-II",
+   "total": 116,
+   "rematriculas": 0,
+   "novas": 116,
+   "retencaoPct": null,
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "total": 28,
+     "rematriculas": 0,
+     "novas": 28
+    },
+    {
+     "turma": "7º Ano",
+     "total": 26,
+     "rematriculas": 0,
+     "novas": 26
+    },
+    {
+     "turma": "8º Ano",
+     "total": 36,
+     "rematriculas": 0,
+     "novas": 36
+    },
+    {
+     "turma": "9º Ano",
+     "total": 26,
+     "rematriculas": 0,
+     "novas": 26
+    }
+   ],
+   "mensal": [
+    13,
+    10,
+    6,
+    3,
+    4,
+    3,
+    6,
+    9,
+    13,
+    19,
+    17,
+    13
+   ]
+  },
+  {
+   "safra": 2022,
+   "ciclo": "EM",
+   "total": 79,
+   "rematriculas": 0,
+   "novas": 79,
+   "retencaoPct": null,
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "total": 27,
+     "rematriculas": 0,
+     "novas": 27
+    },
+    {
+     "turma": "2ª Série EM",
+     "total": 26,
+     "rematriculas": 0,
+     "novas": 26
+    },
+    {
+     "turma": "3ª Série EM",
+     "total": 26,
+     "rematriculas": 0,
+     "novas": 26
+    }
+   ],
+   "mensal": [
+    9,
+    7,
+    4,
+    3,
+    2,
+    2,
+    4,
+    8,
+    8,
+    13,
+    11,
+    8
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EI",
+   "total": 250,
+   "rematriculas": 218,
+   "novas": 32,
+   "retencaoPct": 87.2,
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "total": 62,
+     "rematriculas": 54,
+     "novas": 8
+    },
+    {
+     "turma": "Infantil 2",
+     "total": 46,
+     "rematriculas": 40,
+     "novas": 6
+    },
+    {
+     "turma": "Infantil 3",
+     "total": 55,
+     "rematriculas": 48,
+     "novas": 7
+    },
+    {
+     "turma": "Infantil 4",
+     "total": 42,
+     "rematriculas": 37,
+     "novas": 5
+    },
+    {
+     "turma": "Infantil 5",
+     "total": 45,
+     "rematriculas": 39,
+     "novas": 6
+    }
+   ],
+   "mensal": [
+    31,
+    25,
+    13,
+    8,
+    7,
+    9,
+    12,
+    22,
+    31,
+    33,
+    33,
+    26
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EF-I",
+   "total": 197,
+   "rematriculas": 177,
+   "novas": 20,
+   "retencaoPct": 89.8,
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "total": 37,
+     "rematriculas": 33,
+     "novas": 4
+    },
+    {
+     "turma": "2º Ano",
+     "total": 41,
+     "rematriculas": 37,
+     "novas": 4
+    },
+    {
+     "turma": "3º Ano",
+     "total": 51,
+     "rematriculas": 45,
+     "novas": 6
+    },
+    {
+     "turma": "4º Ano",
+     "total": 33,
+     "rematriculas": 30,
+     "novas": 3
+    },
+    {
+     "turma": "5º Ano",
+     "total": 35,
+     "rematriculas": 32,
+     "novas": 3
+    }
+   ],
+   "mensal": [
+    26,
+    19,
+    10,
+    6,
+    7,
+    5,
+    9,
+    16,
+    21,
+    32,
+    28,
+    18
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EF-II",
+   "total": 125,
+   "rematriculas": 112,
+   "novas": 13,
+   "retencaoPct": 89.6,
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "total": 28,
+     "rematriculas": 25,
+     "novas": 3
+    },
+    {
+     "turma": "7º Ano",
+     "total": 29,
+     "rematriculas": 26,
+     "novas": 3
+    },
+    {
+     "turma": "8º Ano",
+     "total": 37,
+     "rematriculas": 33,
+     "novas": 4
+    },
+    {
+     "turma": "9º Ano",
+     "total": 31,
+     "rematriculas": 28,
+     "novas": 3
+    }
+   ],
+   "mensal": [
+    19,
+    12,
+    6,
+    4,
+    4,
+    3,
+    6,
+    11,
+    14,
+    18,
+    17,
+    11
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EM",
+   "total": 86,
+   "rematriculas": 76,
+   "novas": 10,
+   "retencaoPct": 88.4,
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "total": 34,
+     "rematriculas": 30,
+     "novas": 4
+    },
+    {
+     "turma": "2ª Série EM",
+     "total": 28,
+     "rematriculas": 25,
+     "novas": 3
+    },
+    {
+     "turma": "3ª Série EM",
+     "total": 24,
+     "rematriculas": 21,
+     "novas": 3
+    }
+   ],
+   "mensal": [
+    11,
+    9,
+    5,
+    3,
+    2,
+    2,
+    4,
+    8,
+    9,
+    13,
+    12,
+    8
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EI",
+   "total": 267,
+   "rematriculas": 243,
+   "novas": 24,
+   "retencaoPct": 91,
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "total": 56,
+     "rematriculas": 51,
+     "novas": 5
+    },
+    {
+     "turma": "Infantil 2",
+     "total": 60,
+     "rematriculas": 55,
+     "novas": 5
+    },
+    {
+     "turma": "Infantil 3",
+     "total": 45,
+     "rematriculas": 41,
+     "novas": 4
+    },
+    {
+     "turma": "Infantil 4",
+     "total": 53,
+     "rematriculas": 48,
+     "novas": 5
+    },
+    {
+     "turma": "Infantil 5",
+     "total": 53,
+     "rematriculas": 48,
+     "novas": 5
+    }
+   ],
+   "mensal": [
+    34,
+    22,
+    13,
+    7,
+    10,
+    8,
+    12,
+    26,
+    29,
+    44,
+    38,
+    24
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EF-I",
+   "total": 211,
+   "rematriculas": 186,
+   "novas": 25,
+   "retencaoPct": 88.2,
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "total": 41,
+     "rematriculas": 36,
+     "novas": 5
+    },
+    {
+     "turma": "2º Ano",
+     "total": 44,
+     "rematriculas": 39,
+     "novas": 5
+    },
+    {
+     "turma": "3º Ano",
+     "total": 42,
+     "rematriculas": 37,
+     "novas": 5
+    },
+    {
+     "turma": "4º Ano",
+     "total": 50,
+     "rematriculas": 44,
+     "novas": 6
+    },
+    {
+     "turma": "5º Ano",
+     "total": 34,
+     "rematriculas": 30,
+     "novas": 4
+    }
+   ],
+   "mensal": [
+    29,
+    18,
+    12,
+    5,
+    6,
+    6,
+    10,
+    19,
+    26,
+    28,
+    31,
+    21
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EF-II",
+   "total": 134,
+   "rematriculas": 114,
+   "novas": 20,
+   "retencaoPct": 85.1,
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "total": 29,
+     "rematriculas": 25,
+     "novas": 4
+    },
+    {
+     "turma": "7º Ano",
+     "total": 42,
+     "rematriculas": 36,
+     "novas": 6
+    },
+    {
+     "turma": "8º Ano",
+     "total": 30,
+     "rematriculas": 25,
+     "novas": 5
+    },
+    {
+     "turma": "9º Ano",
+     "total": 33,
+     "rematriculas": 28,
+     "novas": 5
+    }
+   ],
+   "mensal": [
+    20,
+    11,
+    7,
+    4,
+    4,
+    4,
+    7,
+    13,
+    16,
+    19,
+    17,
+    12
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EM",
+   "total": 92,
+   "rematriculas": 79,
+   "novas": 13,
+   "retencaoPct": 85.9,
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "total": 24,
+     "rematriculas": 20,
+     "novas": 4
+    },
+    {
+     "turma": "2ª Série EM",
+     "total": 32,
+     "rematriculas": 28,
+     "novas": 4
+    },
+    {
+     "turma": "3ª Série EM",
+     "total": 36,
+     "rematriculas": 31,
+     "novas": 5
+    }
+   ],
+   "mensal": [
+    13,
+    9,
+    4,
+    3,
+    3,
+    3,
+    4,
+    9,
+    11,
+    12,
+    13,
+    8
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EI",
+   "total": 278,
+   "rematriculas": 241,
+   "novas": 37,
+   "retencaoPct": 86.7,
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "total": 63,
+     "rematriculas": 55,
+     "novas": 8
+    },
+    {
+     "turma": "Infantil 2",
+     "total": 63,
+     "rematriculas": 54,
+     "novas": 9
+    },
+    {
+     "turma": "Infantil 3",
+     "total": 54,
+     "rematriculas": 47,
+     "novas": 7
+    },
+    {
+     "turma": "Infantil 4",
+     "total": 54,
+     "rematriculas": 47,
+     "novas": 7
+    },
+    {
+     "turma": "Infantil 5",
+     "total": 44,
+     "rematriculas": 38,
+     "novas": 6
+    }
+   ],
+   "mensal": [
+    40,
+    23,
+    16,
+    10,
+    8,
+    9,
+    13,
+    22,
+    28,
+    44,
+    39,
+    26
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EF-I",
+   "total": 219,
+   "rematriculas": 185,
+   "novas": 34,
+   "retencaoPct": 84.5,
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "total": 37,
+     "rematriculas": 31,
+     "novas": 6
+    },
+    {
+     "turma": "2º Ano",
+     "total": 51,
+     "rematriculas": 44,
+     "novas": 7
+    },
+    {
+     "turma": "3º Ano",
+     "total": 38,
+     "rematriculas": 32,
+     "novas": 6
+    },
+    {
+     "turma": "4º Ano",
+     "total": 52,
+     "rematriculas": 44,
+     "novas": 8
+    },
+    {
+     "turma": "5º Ano",
+     "total": 41,
+     "rematriculas": 34,
+     "novas": 7
+    }
+   ],
+   "mensal": [
+    31,
+    18,
+    11,
+    6,
+    6,
+    7,
+    10,
+    21,
+    27,
+    30,
+    33,
+    19
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EF-II",
+   "total": 139,
+   "rematriculas": 120,
+   "novas": 19,
+   "retencaoPct": 86.3,
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "total": 35,
+     "rematriculas": 31,
+     "novas": 4
+    },
+    {
+     "turma": "7º Ano",
+     "total": 39,
+     "rematriculas": 33,
+     "novas": 6
+    },
+    {
+     "turma": "8º Ano",
+     "total": 33,
+     "rematriculas": 28,
+     "novas": 5
+    },
+    {
+     "turma": "9º Ano",
+     "total": 32,
+     "rematriculas": 28,
+     "novas": 4
+    }
+   ],
+   "mensal": [
+    20,
+    13,
+    7,
+    4,
+    5,
+    4,
+    8,
+    11,
+    14,
+    20,
+    21,
+    12
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EM",
+   "total": 95,
+   "rematriculas": 80,
+   "novas": 15,
+   "retencaoPct": 84.2,
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "total": 32,
+     "rematriculas": 27,
+     "novas": 5
+    },
+    {
+     "turma": "2ª Série EM",
+     "total": 31,
+     "rematriculas": 26,
+     "novas": 5
+    },
+    {
+     "turma": "3ª Série EM",
+     "total": 32,
+     "rematriculas": 27,
+     "novas": 5
+    }
+   ],
+   "mensal": [
+    13,
+    10,
+    5,
+    3,
+    3,
+    2,
+    4,
+    9,
+    10,
+    14,
+    13,
+    9
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EI",
+   "total": 285,
+   "rematriculas": 245,
+   "novas": 40,
+   "retencaoPct": 86,
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "total": 53,
+     "rematriculas": 46,
+     "novas": 7
+    },
+    {
+     "turma": "Infantil 2",
+     "total": 66,
+     "rematriculas": 57,
+     "novas": 9
+    },
+    {
+     "turma": "Infantil 3",
+     "total": 54,
+     "rematriculas": 46,
+     "novas": 8
+    },
+    {
+     "turma": "Infantil 4",
+     "total": 56,
+     "rematriculas": 48,
+     "novas": 8
+    },
+    {
+     "turma": "Infantil 5",
+     "total": 56,
+     "rematriculas": 48,
+     "novas": 8
+    }
+   ],
+   "mensal": [
+    75,
+    46,
+    31,
+    17,
+    17,
+    18,
+    27,
+    54,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EF-I",
+   "total": 225,
+   "rematriculas": 206,
+   "novas": 19,
+   "retencaoPct": 91.6,
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "total": 39,
+     "rematriculas": 35,
+     "novas": 4
+    },
+    {
+     "turma": "2º Ano",
+     "total": 50,
+     "rematriculas": 46,
+     "novas": 4
+    },
+    {
+     "turma": "3º Ano",
+     "total": 39,
+     "rematriculas": 36,
+     "novas": 3
+    },
+    {
+     "turma": "4º Ano",
+     "total": 48,
+     "rematriculas": 44,
+     "novas": 4
+    },
+    {
+     "turma": "5º Ano",
+     "total": 49,
+     "rematriculas": 45,
+     "novas": 4
+    }
+   ],
+   "mensal": [
+    62,
+    38,
+    21,
+    14,
+    16,
+    14,
+    23,
+    37,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EF-II",
+   "total": 142,
+   "rematriculas": 124,
+   "novas": 18,
+   "retencaoPct": 87.3,
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "total": 38,
+     "rematriculas": 33,
+     "novas": 5
+    },
+    {
+     "turma": "7º Ano",
+     "total": 31,
+     "rematriculas": 27,
+     "novas": 4
+    },
+    {
+     "turma": "8º Ano",
+     "total": 36,
+     "rematriculas": 31,
+     "novas": 5
+    },
+    {
+     "turma": "9º Ano",
+     "total": 37,
+     "rematriculas": 33,
+     "novas": 4
+    }
+   ],
+   "mensal": [
+    39,
+    25,
+    14,
+    9,
+    8,
+    8,
+    12,
+    27,
+    null,
+    null,
+    null,
+    null
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EM",
+   "total": 97,
+   "rematriculas": 87,
+   "novas": 10,
+   "retencaoPct": 89.7,
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "total": 28,
+     "rematriculas": 25,
+     "novas": 3
+    },
+    {
+     "turma": "2ª Série EM",
+     "total": 40,
+     "rematriculas": 36,
+     "novas": 4
+    },
+    {
+     "turma": "3ª Série EM",
+     "total": 29,
+     "rematriculas": 26,
+     "novas": 3
+    }
+   ],
+   "mensal": [
+    23,
+    19,
+    10,
+    7,
+    6,
+    6,
+    9,
+    17,
+    null,
+    null,
+    null,
+    null
+   ]
+  }
+ ]
+}

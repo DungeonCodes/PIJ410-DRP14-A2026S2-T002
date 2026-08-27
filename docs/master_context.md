@@ -16,7 +16,12 @@ Projeto acadêmico: **PIJ410 — Projeto Integrador em Computação III — UNIV
 
 O trabalho usa como contexto uma necessidade real observada em uma instituição de ensino e segue as orientações metodológicas e acadêmicas da UNIVESP.
 
-Tipo de entrega, tecnologia e arquitetura: **Pendente.**
+Desde **27/08/2026**, o repositório inclui uma aplicação acadêmica própria em **Next.js +
+TypeScript**, independente e baseada em dados sintéticos. A disponibilização é incremental: a
+Fase 1 contém Captação e Matrículas; fases posteriores permanecem bloqueadas por feature gate.
+Uma arquitetura externa pode ser referência apenas conceitual e estrutural; a aplicação acadêmica
+não depende dela em runtime nem recebe seus dados, arquivos, integrações ou credenciais. Ver
+`docs/decisions.md` (ADR-006) e `docs/migracao-modelo/arquitetura/ADR-A001-espelhamento-dados-sinteticos-rollout.md`.
 
 ## Público, Usuários ou Stakeholders
 
@@ -38,15 +43,16 @@ Problema, objetivo, título, requisitos e escopo definitivos serão refinados pe
 
 ## Escopo Inicial
 
-**Pendente.**
-
-Nesta fase, o escopo se limita ao registro progressivo do contexto acadêmico no repositório. Nenhuma funcionalidade deve ser implementada e o scaffolding existente deve ser preservado.
+O escopo substantivo do PI continua **pendente** de validação com a comunidade externa. Como
+baseline técnico, a aplicação acadêmica demonstra somente Captação e Matrículas por meio de
+visualizações e relatórios de dados sintéticos; sua finalidade é demonstrativa e analítica, não
+operacional. O scaffolding científico existente permanece preservado.
 
 ## Fora de Escopo
 
 Confirmado para o estado atual do projeto:
 
-* Implementar funcionalidades, arquitetura ou código.
+* Implementar funcionalidades, arquitetura ou código fora do rollout autorizado e versionado.
 * Reorganizar o scaffolding existente ou criar uma nova arquitetura documental.
 * Definir prematuramente decisões de projeto ou preencher lacunas por inferência.
 * Criar ADRs para informações ainda preliminares.
@@ -186,12 +192,14 @@ O objetivo do protótipo é reproduzir a experiência analítica da solução se
 
 ## Ponto de Partida
 
-O projeto encontra-se em fase inicial de contextualização acadêmica. O repositório contém o scaffolding padrão da equipe e este registro de contexto.
-
-Nada além de documentação de contexto foi produzido até aqui.
+O projeto preserva o scaffolding científico e, desde 27/08/2026, possui uma baseline técnica de
+aplicação acadêmica independente. A Fase 1 disponibiliza Captação e Matrículas com dados
+sintéticos; módulos posteriores podem estar preparados no código, mas não estão disponíveis até
+liberação humana explícita e versionada.
 
 ## Próxima Instrução para o Agente
 
-Aguardar o envio dos documentos oficiais da UNIVESP e das orientações da disciplina. Analisá-los como fonte normativa antes de estruturar tema, problema, objetivo, metodologia, etapas, entregáveis ou cronograma.
-
-Até lá: não implementar, não inferir decisões pendentes, não commitar e apresentar qualquer alteração para revisão humana.
+Aguardar e analisar materiais normativos e evidências da comunidade externa antes de fechar tema,
+problema, objetivo, metodologia, etapas, entregáveis ou cronograma. Não inferir decisões pendentes,
+não abrir fases automaticamente, não introduzir dados reais e apresentar toda alteração para revisão
+humana antes de commit.

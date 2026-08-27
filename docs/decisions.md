@@ -190,6 +190,49 @@ critérios explícitos para promover candidatas em revisões futuras.
 
 ---
 
+## ADR-006 — Baseline da aplicação acadêmica independente e rollout por fases
+
+**Data:** 2026-08-27
+
+**Decisão:** A partir de 27/08/2026, o PIJ410 possui uma aplicação web acadêmica própria em
+Next.js + TypeScript, independente e construída incrementalmente com dados sintéticos. A Fase 1
+disponibiliza exclusivamente os módulos Captação e Matrículas. Ads, Reels orgânicos, Objetivo da
+Gestão e Arquitetura & Algoritmos permanecem planejados e bloqueados, ainda que possam ter estrutura
+preparada no código.
+
+A aplicação pode utilizar uma arquitetura externa de referência apenas no nível conceitual e
+estrutural. Ela não tem dependência de runtime, importação entre repositórios, caminho local,
+arquivo, API privada, credencial ou dado proveniente dessa referência. A abertura de uma fase exige
+alteração humana explícita e versionada; nenhuma fase é liberada por data.
+
+**Motivo:** a baseline torna verificável o que foi efetivamente disponibilizado no início da
+aplicação, preserva a cronologia do PI e impede que demonstrações sintéticas sejam confundidas com
+dados ou operação da instituição parceira. As datas históricas exibidas pelos datasets representam
+um cenário histórico sintético, e não coleta acadêmica anterior a 27/08/2026.
+
+**Documentação detalhada:** [ADR-A001 — Espelhamento estrutural, dados sintéticos e rollout
+acadêmico por fases](migracao-modelo/arquitetura/ADR-A001-espelhamento-dados-sinteticos-rollout.md),
+[plano de fases](migracao-modelo/arquitetura/plano-de-fases.md) e [matriz de classificação]
+(migracao-modelo/arquitetura/matriz-classificacao.md). O ADR-A001 é a decisão técnica local da
+subpasta; esta ADR é o registro canônico resumido para a governança do projeto e não o duplica.
+
+**Alternativas consideradas:**
+
+* *Tratar a aplicação como ambiente operacional, staging, produção ou backup.* Descartada: o
+  repositório contém uma aplicação acadêmica independente, sem integração externa e com dados
+  sintéticos.
+* *Marcar rotas preparadas como entrega funcional.* Descartada: presença de scaffold não constitui
+  disponibilidade; o feature gate deve continuar a falhar fechado.
+* *Converter ou perturbar dados externos para demonstrar os módulos.* Descartada: valores reais com
+  ruído, escala ou troca de rótulos continuam sendo dados externos. O cenário deve ser gerado do
+  zero e preservar somente relações analíticas plausíveis.
+
+**Impacto esperado:** o grupo dispõe de uma referência única para distinguir baseline técnico,
+cronologia sintética, módulos disponíveis e planejamento futuro. A independência da aplicação e a
+sanitização dos dados passam a ser requisitos permanentes da evolução do protótipo.
+
+---
+
 ## Pendências aguardando decisão
 
 Registradas para não se perderem; nenhuma foi decidida ainda.
