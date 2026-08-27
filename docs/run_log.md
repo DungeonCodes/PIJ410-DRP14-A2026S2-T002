@@ -465,3 +465,22 @@ Resultado: o questionário reúne núcleo comum, perguntas específicas por fun�
 para o grupo. As perguntas cobrem demanda, fontes de dados, indicadores, limites de atribuição,
 regras de decisão, confidencialidade, requisitos da interface e validação, sem solicitar dados
 pessoais ou credenciais.
+
+---
+
+Data: 2026-08-27
+Ação realizada: revisão integral do relatório parcial contra a rubrica da UNIVESP e o acervo
+bibliográfico do projeto.
+Fontes candidatas avaliadas para possível ampliação: Leal, Nascimento e Soares Neto (2019),
+Sedrakyan, Mannens e Verbert (2018) e Sivarajah et al. (2016), consultadas nos periódicos de origem.
+Resultado: as candidatas permaneceram fora do relatório por incompatibilidade de segmento,
+especificidade de domínio ou risco de enquadrar o conjunto como Big Data sem evidência suficiente.
+O texto foi ampliado com fontes já lidas para fortalecer a introdução, a reprodutibilidade, o design
+de dashboards, a abordagem quantitativa/qualitativa e o ciclo ouvir–criar–prototipar. A seção 2.5
+passou a registrar a concepção da solução inicial e a distinguir explicitamente a ideia documentada
+da aplicação ainda pendente. As referências comerciais da Anthropic e da OpenAI foram retiradas do
+relatório parcial e mantidas no acervo como documentação técnica lida, sem uso acadêmico atual.
+Arquivos alterados: `docs/relatorio/parcial.md`, `docs/referencias.md`,
+`docs/fichamentos_bibliograficos.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum commit realizado.
+
+---

@@ -15,7 +15,7 @@
 | 2.2 Justificativa e delimitação do problema | 1,0 | ⬜ em revisão |
 | 2.3 Fundamentação teórica | 2,0 | ⬜ |
 | 2.4 Metodologia | 1,5 | ⬜ |
-| 2.5 Resultados preliminares: solução inicial | 1,5 | ⬜ |
+| 2.5 Resultados preliminares: solução inicial | 1,5 | ⬜ ideia documentada; aplicação pendente |
 | Referências | — | ⬜ |
 
 ## Dados do projeto
@@ -47,20 +47,20 @@ pena de o item "Adequações" do relatório final registrar inconsistência.
      As Orientações para Avaliação acrescentam: indicar quais disciplinas cursadas
      auxiliaram no desenvolvimento do projeto. -->
 
-A divulgação de instituições de ensino privadas passou a depender, de forma crescente, de
-campanhas veiculadas em plataformas de anúncios digitais. Além de consumirem parcela
-significativa do orçamento de marketing dessas instituições, tais plataformas produzem, como
-subproduto da veiculação, um registro contínuo e volumoso de informações sobre investimento,
-alcance, cliques e conversões. Constitui-se assim um conjunto de dados históricos cuja análise
-pode orientar decisões de gestão — objeto de estudo que se situa no campo da análise de dados
-aplicada ao apoio à tomada de decisão. No contexto educacional, painéis de indicadores podem
-apoiar gestores na compreensão de informações oriundas de diferentes sistemas e nos processos de
-tomada de decisão (Lemes; Dias; Oliveira, 2023).
+O marketing digital articula canais, pontos de contato e interações que precisam ser examinados
+em conjunto ao longo da relação entre a organização e seus públicos (Kannan; Li, 2017). Quando
+campanhas são veiculadas em plataformas de anúncios, essas interações produzem registros de
+investimento, alcance, cliques e conversões. A aplicação de métodos de ciência de dados permite
+organizar tais registros e relacionar métricas de desempenho às decisões de marketing (Saura,
+2021). No contexto educacional, painéis de indicadores podem apoiar gestores na compreensão de
+informações oriundas de diferentes sistemas e nos processos de tomada de decisão (Lemes; Dias;
+Oliveira, 2023).
 
-Em campanhas digitais, métricas como retorno sobre investimento e taxa de conversão subsidiam a
-avaliação das campanhas; entretanto, a multiplicidade de configurações possíveis torna essa
-análise não trivial e influencia as escolhas de investimento (Martins, 2019). Na instituição
-parceira, os registros de investimento e desempenho permanecem dispersos entre fontes distintas,
+Em campanhas digitais, métricas como investimento, conversão e retorno precisam ser interpretadas
+em relação aos objetivos organizacionais e às configurações de cada ação (Saura; Palos-Sánchez;
+Suárez, 2017). Na publicidade de busca, a possibilidade de combinar palavras-chave, lances,
+dispositivos e períodos torna insuficiente uma leitura baseada em um único total (Martins, 2019).
+Na instituição parceira, os registros de investimento e desempenho permanecem dispersos entre fontes distintas,
 com indicadores, unidades de medida e recortes temporais próprios (Grupo do Projeto Integrador,
 2026). Essa fragmentação dificulta a comparação dos resultados entre canais e campanhas, a
 avaliação do retorno obtido e a decisão sobre como distribuir o orçamento de marketing (Grupo do
@@ -216,13 +216,9 @@ do estudo a integração com contas reais de anúncios, CRM, sistemas acadêmico
 operacionais, nem o tratamento de dados pessoais ou informações comerciais sensíveis. A solução
 será desenvolvida em ambiente acadêmico independente, com dados locais fictícios ou sanitizados,
 preservando a confidencialidade da comunidade participante. A camada de IA agêntica receberá apenas
-esses dados locais e será acionada pela CLI do grupo. As configurações inicialmente previstas são
-Claude Fable 5 e GPT-5.6 Sol com esforço de raciocínio *xhigh*, quando estiverem disponíveis nos
-ambientes licenciados; as documentações técnicas apresentam o primeiro para trabalho agêntico de
-longa duração e o segundo para tarefas profissionais complexas com configuração de esforço
-*xhigh* (Anthropic, 2026; OpenAI, 2026). Essa escolha é instrumental e pode ser substituída por
-configuração equivalente, sem alterar o método: resultados de simulações continuarão identificados
-como exploratórios e dependerão de cálculo determinístico e revisão humana.
+esses dados locais e será acionada pela linha de comando do grupo. A escolha do modelo de linguagem
+será instrumental e poderá ser alterada sem modificar o método: resultados de simulações continuarão
+identificados como exploratórios e dependerão de cálculo determinístico e revisão humana.
 
 ### 2.3 Fundamentação teórica
 
@@ -339,6 +335,12 @@ associam problemas de qualidade a aspectos como tipos de dados, compatibilidade 
 No projeto, cada transformação relevante deverá ser documentada, de modo que um indicador ou uma
 estimativa possa ser relacionado à sua origem, ao período analisado e às regras aplicadas.
 
+Essa documentação também permite distinguir mera repetição de uma análise verdadeiramente
+reprodutível. A reprodutibilidade exige que outro integrante consiga reconstruir o resultado a
+partir das mesmas entradas e condições de processamento (Peng, 2011). Por isso, o histórico de
+transformações, as fórmulas e os parâmetros comporão a evidência do resultado, e não apenas uma
+descrição auxiliar do desenvolvimento.
+
 Após a preparação, a análise explorará os dados em seus níveis de agregação disponíveis para
 identificar distribuição de investimento, variações temporais, diferenças de desempenho e possíveis
 inconsistências a investigar. Esses achados não serão automaticamente convertidos em relações de
@@ -375,6 +377,12 @@ apresentar indicadores, comparações e recortes temporais de forma que o usuár
 o que está sendo medido e formular perguntas sobre o desempenho das campanhas. Em instituições de
 ensino, Lemes, Dias e Oliveira (2023) identificam o uso de dashboards como recurso de apoio à
 tomada de decisão e à integração de informações provenientes de sistemas distintos.
+
+Além da integração, a organização visual precisa corresponder à pergunta analítica apresentada.
+Padrões de design de dashboards ajudam a relacionar estrutura, interação e conteúdo, permitindo
+justificar por que determinada visão emprega comparação temporal, detalhamento, agrupamento ou
+destaque de exceções (Bach et al., 2023). O protótipo deverá, portanto, selecionar cada recurso
+visual por sua função na interpretação, e não apenas por disponibilidade técnica.
 
 No protótipo, a interface web deverá apresentar os indicadores calculados, os filtros compatíveis
 com a base e, quando houver modelo validado, suas estimativas claramente diferenciadas de valores
@@ -413,9 +421,13 @@ em diálogo com a instituição parceira.
 
 ### 2.4 Metodologia
 
-Esta seção será desenvolvida a partir da estrutura e da metodologia documentadas no sistema
-original, preservando a separação entre cálculos determinísticos, limitações de atribuição,
-aprendizagem de máquina experimental e interpretação assistida por IA.
+O percurso metodológico combinará uma etapa quantitativa, voltada à preparação e à análise dos
+registros históricos, com uma etapa qualitativa, destinada a compreender as necessidades dos
+profissionais e avaliar a utilidade e a compreensão do protótipo. As duas etapas permanecerão
+articuladas: os dados delimitarão o que pode ser calculado ou estimado, enquanto a participação da
+comunidade indicará quais perguntas de gestão e formas de apresentação são relevantes. A descrição
+abaixo registra o procedimento planejado; atividades ainda não realizadas não são apresentadas como
+resultado.
 
 #### 2.4.1 Delineamento do projeto e participação da comunidade externa
 
@@ -425,6 +437,15 @@ identificado. O percurso combinará levantamento de necessidades, análise de da
 construção de uma visualização e validação progressiva com os profissionais que participam das
 decisões de marketing. Essa aproximação é compatível com o uso de Design Thinking em pesquisas que
 articulam compreensão do problema, ideação e experimentação de soluções (Rosado; Dias, 2024).
+
+Na etapa de **ouvir**, serão consolidados os registros das conversas já realizadas e levantadas as
+perguntas, restrições e prioridades dos profissionais envolvidos. Na etapa de **criar**, essas
+necessidades serão relacionadas aos campos disponíveis, às regras de cálculo e às alternativas de
+visualização, produzindo uma versão inicial da solução. Na etapa de **prototipar e implementar**, a
+interface será apresentada à comunidade para execução de tarefas de interpretação e coleta de
+observações. Cada passagem entre etapas deverá deixar evidências — registro da necessidade,
+decisão de projeto, versão do protótipo e contribuição recebida — para demonstrar como a escuta
+afetou a solução.
 
 A participação da comunidade externa ocorrerá por meio de conversas, apresentação das leituras
 analíticas e coleta de sugestões sobre a utilidade e a compreensibilidade da solução. Somente
@@ -458,6 +479,15 @@ fenômeno; por exemplo, conversão de busca, conversa iniciada, lead e matrícul
 indicadores distintos. Essa precaução é coerente com a literatura de busca paga, na qual o crédito
 de conversão depende da estratégia de atribuição e pode alterar a interpretação do retorno
 (Li et al., 2016).
+
+A coleta quantitativa será realizada a partir de arquivos ou exportações fornecidos de forma
+autorizada, mantidos no ambiente operacional e descritos por fonte, período, granularidade e campos
+disponíveis. Antes do cálculo dos indicadores, será produzido um inventário das fontes e um registro
+das transformações necessárias. A coleta qualitativa utilizará os registros das conversas e da
+avaliação orientada do protótipo, sem atribuir aos participantes afirmações que não tenham sido
+efetivamente registradas. A análise quantitativa descreverá distribuições, variações temporais e
+diferenças de desempenho; a análise qualitativa organizará necessidades e observações por temas
+relacionados à compreensão, utilidade e melhoria da solução.
 
 Os dados autorizados, o código operacional e os relatórios técnicos detalhados permanecerão no
 repositório real da solução. No ambiente acadêmico, serão usados apenas dados fictícios ou
@@ -570,13 +600,44 @@ recebidas, sem antecipar aceitação, melhoria de desempenho ou alteração de d
 
 ### 2.5 Resultados preliminares: solução inicial
 
-⬜ Não iniciado.
+Nesta fase, a solução inicial é concebida como uma plataforma analítica independente do ambiente
+operacional da instituição. Seu objetivo não é automatizar decisões de orçamento, mas reunir uma
+cadeia verificável que parte dos dados autorizados, aplica regras explícitas e apresenta resultados
+com contexto suficiente para discussão pela gestão. A primeira versão deverá operar apenas com
+dados fictícios ou sanitizados e não manterá conexão com contas de anúncios, CRM ou sistema
+acadêmico.
+
+A solução proposta organiza-se em quatro componentes. O primeiro prepara e padroniza os registros,
+preservando origem, período e granularidade. O segundo calcula indicadores determinísticos e
+classifica resultados como medidos, indisponíveis ou não verificáveis. O terceiro, condicionado à
+qualidade da base de conteúdo orgânico, treina e avalia separadamente um modelo supervisionado. O
+quarto apresenta indicadores, cenários, estimativas e limitações em uma interface web, mantendo
+distintas as informações observadas, calculadas e estimadas.
+
+```text
+dados autorizados
+        ↓
+inventário, limpeza e padronização
+        ↓
+indicadores determinísticos ── modelo supervisionado experimental
+        ↓
+interface web com origem, período, fórmulas e limitações
+        ↓
+interpretação e avaliação pela comunidade externa
+```
+
+Como resultado preliminar de concepção, já estão definidos o problema que a plataforma deve apoiar,
+os limites de confidencialidade, a separação entre indicadores e aprendizagem de máquina e os
+requisitos de rastreabilidade da interface. Permanecem pendentes a construção da primeira versão
+executável, sua aplicação com dados fictícios ou sanitizados e a avaliação com profissionais da
+instituição. Antes da entrega do relatório parcial, esta seção deverá ser complementada com imagens
+da solução, descrição das funções implementadas, procedimento da primeira aplicação e observações
+efetivamente recebidas. Enquanto essas atividades não ocorrerem, o texto registra apenas a ideia da
+solução inicial, condição que a rubrica distingue de um protótipo já aplicado.
 
 ---
 
 ## Referências
-
-ANTHROPIC. **Introducing Claude Fable 5 and Claude Mythos 5**. 2026. Disponível em: https://platform.claude.com/docs/es/models/fable-5/introducing-claude-fable-5-and-claude-mythos-5. Acesso em: 25 ago. 2026.
 
 BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
 
@@ -595,8 +656,6 @@ LEMES, Thieny de Cássio; DIAS, Marina Oliveira de Souza; OLIVEIRA, Tiago de. An
 LI, Hongshuang "Alice"; KANNAN, P. K.; VISWANATHAN, Siva; PANI, Abhishek. Attribution strategies and return on keyword investment in paid search advertising. **Marketing Science**, v. 35, n. 6, p. 831-848, 2016. DOI: 10.1287/mksc.2016.0987. Disponível em: https://doi.org/10.1287/mksc.2016.0987. Acesso em: 26 ago. 2026.
 
 MARTINS, Felipe. **Otimização de uma campanha publicitária na rede de pesquisa do Google Ads utilizando Teoria da Decisão Bayesiana**. 2019. Dissertação (Mestrado) – Universidade de São Paulo, São Paulo, 2019. DOI: 10.11606/d.45.2019.tde-22102019-115749. Disponível em: https://doi.org/10.11606/d.45.2019.tde-22102019-115749. Acesso em: 24 ago. 2026.
-
-OPENAI. **GPT-5.6 Sol Model**. 2026. Disponível em: https://developers.openai.com/api/docs/models/gpt-5.6-sol. Acesso em: 25 ago. 2026.
 
 PENG, Roger D. Reproducible research in computational science. **Science**, v. 334, n. 6060, p. 1226-1227, 2011. DOI: 10.1126/science.1213847. Disponível em: https://doi.org/10.1126/science.1213847. Acesso em: 25 ago. 2026.
 

@@ -153,6 +153,37 @@ risco de citação sem aderência ao recorte do PI.
 
 ---
 
+## ADR-005 — Bibliografia selecionada por função argumentativa, não por volume
+
+**Data:** 2026-08-27
+
+**Decisão:** O relatório parcial utilizará somente obras lidas que sustentem uma afirmação necessária
+e não redundante. Fontes candidatas não serão promovidas apenas para aumentar o número de citações.
+Na revisão atual, foram mantidas as bases já adotadas para marketing digital, métricas, atribuição,
+pipelines, reprodutibilidade, aprendizagem de máquina, dashboards, UX, Design Thinking e agentes.
+
+As candidatas do eixo E1 permanecem sem uso até a confirmação do segmento da instituição parceira,
+pois tratam de ensino superior. A obra de Sedrakyan, Mannens e Verbert permanece candidata porque
+seu objeto são dashboards de aprendizagem, e não painéis gerenciais de campanhas. Sivarajah et al.
+permanece candidata para evitar classificar o conjunto do PI como Big Data sem evidência de volume,
+velocidade ou variedade que exija esse enquadramento. Documentações comerciais de modelos foram
+retiradas do relatório: o fornecedor e a configuração são instrumentais e não fundamentam o método.
+
+**Motivo:** a rubrica avalia suficiência, confiabilidade e síntese das teorias. Acumular referências
+laterais enfraquece o encadeamento e pode criar afirmações mais amplas que o recorte empírico.
+
+**Alternativas consideradas:**
+
+* *Citar todas as obras catalogadas.* Descartada: parte do acervo ainda não foi lida e vários textos
+  pertencem a domínios ou decisões técnicas que não aparecem no relatório parcial.
+* *Manter nomes de modelos comerciais na justificativa.* Descartada: a informação é volátil e não
+  modifica o protocolo de controle, rastreabilidade ou revisão humana.
+
+**Impacto esperado:** fundamentação mais coesa, lista de referências correspondente ao texto e
+critérios explícitos para promover candidatas em revisões futuras.
+
+---
+
 ## Pendências aguardando decisão
 
 Registradas para não se perderem; nenhuma foi decidida ainda.

@@ -9,6 +9,7 @@
 
 - `candidata`: obra localizada e disponível para conferência, mas ainda não lida; não há resumo
   validado, recorte adotado ou autorização para citação.
+- `fichada`: obra lida e registrada, atualmente não empregada no relatório.
 - `usada no relatório`: obra com recorte já documentado. O texto abaixo não substitui a leitura
   integral nem autoriza citação direta sem página verificada.
 
@@ -25,7 +26,7 @@
 
 | Obra | Situação | Resumo e recorte no PI | Acesso |
 |---|---|---|---|
-| 5. Saura (2021) | `usada no relatório` | Relaciona ciência de dados no marketing digital à análise de desempenho e métricas. Recorte: indicadores orientam a análise de campanhas e o módulo experimental de aprendizagem de máquina, sem substituir a decisão humana. Usada em 2.1, 2.3.1, 2.3.3, 2.4.2 e 2.4.5. | [DOI](https://doi.org/10.1016/j.jik.2020.08.001) |
+| 5. Saura (2021) | `usada no relatório` | Relaciona ciência de dados no marketing digital à análise de desempenho e métricas. Recorte: indicadores orientam a análise de campanhas e o módulo experimental de aprendizagem de máquina, sem substituir a decisão humana. Usada na introdução, 2.1, 2.3.1, 2.3.3, 2.4.2 e 2.4.5. | [DOI](https://doi.org/10.1016/j.jik.2020.08.001) |
 | 6. Saura; Palos-Sánchez; Suárez (2017) | `usada no relatório` | Discute KPIs e web analytics no marketing digital. Recorte: métricas devem ser interpretadas conforme objetivos organizacionais e contexto da campanha. Usada em 2.1, 2.2, 2.3.3 e 2.4.5. | [DOI](https://doi.org/10.3390/fi9040076) |
 | 7. Sriram et al. (2022) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1504/ijima.2022.125145) |
 | 8. Martins (2019) | `usada no relatório` | Dissertação sobre campanha de pesquisa no Google Ads. Recorte: não decidir apenas pelo total investido ou de cliques; observar unidades e métricas que a base disponibiliza. Usada na introdução, 2.3.2 e 2.4.5. | [DOI](https://doi.org/10.11606/d.45.2019.tde-22102019-115749) |
@@ -43,7 +44,7 @@
 | Obra | Situação | Resumo e recorte no PI | Acesso |
 |---|---|---|---|
 | 12. Matheus; Janssen; Maheshwari (2018) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1016/j.giq.2018.01.006) |
-| 13. Bach et al. (2023) | `usada no relatório` | Apresenta padrões de design para dashboards. Recorte: escolhas de organização visual, interação e informação exibida devem obedecer à finalidade analítica da visão. Usada em 2.4.9. | [DOI](https://doi.org/10.1109/tvcg.2022.3209448) |
+| 13. Bach et al. (2023) | `usada no relatório` | Apresenta padrões de design para dashboards. Recorte: escolhas de organização visual, interação e informação exibida devem obedecer à finalidade analítica da visão. Usada em 2.3.6 e 2.4.9. | [DOI](https://doi.org/10.1109/tvcg.2022.3209448) |
 | 14. Sedrakyan; Mannens; Verbert (2018) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1016/j.jvlc.2018.11.002) |
 
 ## E5 — Gestão educacional baseada em dados
@@ -92,7 +93,7 @@
 | 29. Sivarajah et al. (2016) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1016/j.jbusres.2016.08.001) |
 | 30. Tsai et al. (2015) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1186/s40537-015-0030-3) |
 | 31. Foidl et al. (2024) | `usada no relatório` | Examina qualidade em pipelines de dados. Recorte: ingestão, integração, limpeza e transformação exigem regras documentadas, compatibilidade e rastreabilidade. Usada em 2.3.4 e 2.4.4. | [DOI](https://doi.org/10.1016/j.jss.2023.111855) |
-| 32. Peng (2011) | `usada no relatório` | Discute pesquisa computacional reprodutível. Recorte: resultados devem ser reconstituíveis a partir de fonte, período, transformação e fórmula. Usada em 2.1 e 2.4.6. | [DOI](https://doi.org/10.1126/science.1213847) |
+| 32. Peng (2011) | `usada no relatório` | Discute pesquisa computacional reprodutível. Recorte: resultados devem ser reconstituíveis a partir de fonte, período, transformação e fórmula. Usada em 2.1, 2.3.4 e 2.4.6. | [DOI](https://doi.org/10.1126/science.1213847) |
 
 ## E11 — Agentes de LLM, memória e contexto
 
@@ -103,8 +104,8 @@
 | 35. Liu et al. (2024) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1162/tacl_a_00638) |
 | 36. Gao et al. (2023) | `candidata` | Leitura pendente; preprint sem revisão por pares; não há recorte adotado. | [DOI](https://doi.org/10.48550/arXiv.2312.10997) |
 | 37. Sumers et al. (2023) | `candidata` | Leitura pendente; preprint sem revisão por pares; não há recorte adotado. | [DOI](https://doi.org/10.48550/arXiv.2309.02427) |
-| 38. Anthropic (2026) | `usada no relatório` | Documentação técnica, não fundamentação teórica. Recorte: configuração instrumental para trabalho agêntico via CLI, substituível por equivalente sem alterar o método. Usada na introdução. | [documentação](https://platform.claude.com/docs/es/models/fable-5/introducing-claude-fable-5-and-claude-mythos-5) |
-| 39. OpenAI (2026) | `usada no relatório` | Documentação técnica, não fundamentação teórica. Recorte: configuração instrumental para tarefas complexas via CLI, sujeita ao mesmo controle humano e às restrições de dados. Usada na introdução. | [documentação](https://developers.openai.com/api/docs/models/gpt-5.6-sol) |
+| 38. Anthropic (2026) | `fichada` | Documentação técnica, não fundamentação teórica. A menção ao modelo comercial foi retirada do parcial porque a configuração é instrumental, substituível e não altera o método. | [documentação](https://platform.claude.com/docs/es/models/fable-5/introducing-claude-fable-5-and-claude-mythos-5) |
+| 39. OpenAI (2026) | `fichada` | Documentação técnica, não fundamentação teórica. A menção ao modelo comercial foi retirada do parcial porque a configuração é instrumental, substituível e não altera o método. | [documentação](https://developers.openai.com/api/docs/models/gpt-5.6-sol) |
 
 ## E12 — Aprendizagem de máquina aplicada ao marketing
 
@@ -117,7 +118,7 @@
 
 | Obra | Situação | Resumo e recorte no PI | Acesso |
 |---|---|---|---|
-| 42. Kannan; Li (2017) | `usada no relatório` | Enquadra o marketing digital como processo integrado de canais, pontos de contato e jornadas. Recorte: situar mídia paga no contexto de captação e relacionamento, não como publicação isolada. Usada em 2.3.1. | [DOI](https://doi.org/10.1016/j.ijresmar.2016.11.006) |
+| 42. Kannan; Li (2017) | `usada no relatório` | Enquadra o marketing digital como processo integrado de canais, pontos de contato e jornadas. Recorte: situar mídia paga no contexto de captação e relacionamento, não como publicação isolada. Usada na introdução e em 2.3.1. | [DOI](https://doi.org/10.1016/j.ijresmar.2016.11.006) |
 | 43. Li; Kannan; Viswanathan; Pani (2016) | `usada no relatório` | Analisa como atribuição influencia decisões em busca paga. Recorte: a regra de atribuição altera leitura de retorno, lances e orçamento; associação agregada não prova atribuição individual. Usada em 2.3.2, 2.3.3, 2.4.2, 2.4.3 e 2.4.6. | [DOI](https://doi.org/10.1287/mksc.2016.0987) |
 
 ## Fontes institucionais e internas usadas no relatório
