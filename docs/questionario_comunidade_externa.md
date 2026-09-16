@@ -29,21 +29,21 @@
 1. Quais são hoje os principais objetivos da instituição relacionados à captação e à comunicação
    digital?
 
-   Resposta: Segmentar e atrair maisn nosos público que é pertinete.
+   Resposta: Segmentar e atrair mais o nosso público pertinente.
 
 2. Quais decisões sobre investimentos em marketing são mais difíceis de tomar atualmente?
 
-   Resposta: Planejar para não desperdiçar o dinheiro, investir onde vai dar retorno (matriculas)
+   Resposta: Planejar para não desperdiçar o dinheiro; investir onde vai dar retorno (matrículas).
 
 3. Em quais períodos do ano a demanda por matrículas, visitas ou contatos costuma ser mais relevante?
    Existem limitações de capacidade que precisam ser consideradas?
 
-   Resposta: O marketing é continuo, con alguns periodos de mais investimento.
+   Resposta: O marketing é contínuo, com alguns períodos de mais investimento.
 
 4. Quais públicos, ciclos/modalidades ou serviços são prioritários? Há públicos ou frentes que não
    devem ser priorizados neste momento?
 
-   Resposta: A nossa necessidade hoje é fundamental 1 e infantil.
+   Resposta: A nossa necessidade hoje é Ensino Fundamental I e Infantil.
 
 ### 2.2 Dados e informações disponíveis
 
@@ -51,7 +51,7 @@
 
    ☐ Google Ads  
    ☐ Meta Ads  
-   X Instagram/Facebook orgânico  
+   ☒ Instagram/Facebook orgânico  
    ☐ Planilha de contatos ou funil  
    ☐ Sistema acadêmico/matrículas  
    ☐ CRM  
@@ -61,7 +61,7 @@
 6. Quais informações dessas fontes são mais confiáveis para a tomada de decisão? Quais apresentam
    lacunas, atrasos ou dificuldades de interpretação?
 
-   Resposta: Relatório do instagram
+   Resposta: Relatório do Instagram.
 
 7. Há dados que não podem ser compartilhados, mesmo de forma sanitizada, no contexto acadêmico?
 
@@ -73,7 +73,7 @@
    ☐ Sim  
    ☐ Sim, mediante validação prévia  
    ☐ Não neste momento  
-   X Não sei informar  
+   ☒ Não sei informar  
 
    Observações:
 
@@ -90,7 +90,7 @@
    ☐ Conversões  
    ☐ Custo por conversão/CPA  
    ☐ Conversas iniciadas  
-   X Visitas  
+   ☒ Visitas  
    ☐ Matrículas  
    ☐ Outro: 
 
@@ -99,11 +99,11 @@
    Exemplos: teto de orçamento, período de matrícula, capacidade de atendimento, público
    prioritário, campanha que não deve ser alterada.
 
-   Resposta: Teto de orçamento. e mostrar o quanto vai ter de retorno
+   Resposta: Teto de orçamento e mostrar quanto vai ter de retorno.
 
 11. Quais conclusões seriam inadequadas ou arriscadas de tirar apenas a partir dos dados atuais?
 
-   Resposta: Falar q o instagram não traz retorno, 
+   Resposta: Falar que o Instagram não traz retorno.
 
 ---
 
@@ -111,7 +111,7 @@
 
 12. Como as campanhas de mídia paga são planejadas, acompanhadas e revisadas atualmente?
 
-    Resposta: Ver o manifesto e desenvolver as palavras chave.
+    Resposta: Ver o manifesto e desenvolver as palavras-chave.
 
 13. Quais plataformas e formatos de campanha são usados? Para cada um, qual é o objetivo esperado?
 
@@ -119,36 +119,36 @@
 
 14. Quais métricas são vistas com maior frequência? Quais são difíceis de calcular ou comparar?
 
-    Resposta: Visita
+    Resposta: Visitas.
 
 15. As campanhas possuem recortes de período, público, região, ciclo ou objetivo que devem ser
     preservados na análise?
 
-    Resposta: nao temos, só olhavamos no meta ads
+    Resposta: Não temos; só olhávamos no Meta Ads.
 
 16. Como é registrada uma conversão em cada plataforma? Há alguma regra de atribuição conhecida
     (por exemplo, último clique, primeiro clique ou outra)?
 
-    Resposta: nao   
+    Resposta: Não.
 
 17. Sobre conteúdo orgânico da Meta, existem relatórios históricos de publicações e métricas de
     alcance, interações, salvamentos, compartilhamentos, reproduções ou seguidores?
 
     ☐ Sim, com histórico suficiente  
     ☐ Sim, mas com histórico limitado  
-    x Não  
+    ☒ Não  
     ☐ Não sei informar  
 
     Observações sobre formato, período e possibilidade de uso sanitizado:
 
 18. Que perguntas um painel deveria responder rapidamente para facilitar seu trabalho?
 
-    Resposta: Comaprar os anos, ver o quanto gastamos e o quanto retornou
+    Resposta: Comparar os anos, ver quanto gastamos e quanto retornou.
 
 19. Que tipo de alerta, comparação ou explicação seria útil — e qual poderia gerar interpretação
     equivocada?
 
-    Resposta: acho q nao
+    Resposta: Acho que não.
 
 ---
 
@@ -156,21 +156,21 @@
 
 20. Que tipo de decisão estratégica a direção espera apoiar com uma análise de marketing digital?
 
-    Resposta: O que gasta mais e retorna mais
+    Resposta: O que gasta mais e retorna mais.
 
 21. Quais resultados institucionais devem ser considerados além das métricas de mídia?
 
     ☐ Capacidade de atendimento  
-    x Visitas/agendamentos  
-    x Novas matrículas  
-    x Retenção/rematrículas  
+    ☒ Visitas/agendamentos  
+    ☒ Novas matrículas  
+    ☒ Retenção/rematrículas  
     ☐ Posicionamento institucional  
     ☐ Outro: 
 
 22. Quais restrições institucionais devem aparecer antes de qualquer sugestão de distribuição de
     orçamento?
 
-    Resposta: que a direção quer é resultados, ou seja, que o dinheiro gasto retorne
+    Resposta: O que a direção quer são resultados, ou seja, que o dinheiro gasto retorne.
 
 23. Como a direção prefere receber uma análise: painel resumido, comparativo por período, cenários
     de investimento, relatório textual ou combinação desses formatos?
@@ -180,11 +180,11 @@
 24. Quais elementos tornariam a análise suficientemente confiável para apoiar uma discussão de
     gestão? E quais exigiriam confirmação adicional?
 
-    Resposta: ter comparativos, e mostrar que oq foi investido teve retorno
+    Resposta: Ter comparativos e mostrar que o que foi investido teve retorno.
 
 25. Que riscos éticos, reputacionais, operacionais ou de confidencialidade precisam ser evitados?
 
-    Resposta: nao pode expor dados pessoais dos alunos enm da escola
+    Resposta: Não pode expor dados pessoais dos alunos nem da escola.
 
 ---
 
@@ -192,35 +192,35 @@
 
 26. Qual conjunto mínimo de informações a interface deve mostrar para ser útil?
 
-    Resposta: os necessarios para mostrar resultado
+    Resposta: Os necessários para mostrar resultado.
 
 27. Quais filtros seriam indispensáveis?
 
-    x Período  
+    ☒ Período  
     ☐ Canal/plataforma  
     ☐ Campanha  
     ☐ Objetivo da campanha  
-    x Público/segmento agregado  
+    ☒ Público/segmento agregado  
     ☐ Ciclo/modalidade  
     ☐ Outro: 
 
 28. Como deve ficar explícita a diferença entre dado observado, cálculo determinístico e estimativa?
 
-    Resposta: nao sei
+    Resposta: Não sei.
 
 29. Uma interpretação assistida por IA, sempre acompanhada dos dados, cálculos e fontes que a
     sustentam, seria útil? Que limites ela deveria respeitar?
 
-    Resposta: nao compartilhar dados
+    Resposta: Não compartilhar dados.
 
 30. A instituição teria disponibilidade para avaliar uma versão inicial do protótipo e registrar
     sugestões de melhoria?
 
-    x Sim  
+    ☒ Sim  
     ☐ Talvez, dependendo do período  
     ☐ Não neste momento  
 
-    Observações: como gestão o foco é observar os resultados e aumentar a captação de alunos novos. asism podemos tomar decisao de inverstir mais
+    Observações: Como gestão, o foco é observar os resultados e aumentar a captação de novos alunos. Assim, podemos tomar a decisão de investir mais.
 
 ---
 
