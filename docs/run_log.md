@@ -495,3 +495,13 @@ Arquivo alterado:
 Resultado: conforme o ADR-004, a lista anterior de sete objetivos foi preservada em `(Exclusão v1:
 ...)` e a proposta de cinco objetivos em `(Inclusão v2: ...)`. A alteração agrupa dados e
 indicadores, retira a IA agêntica como objetivo específico e preserva-a como apoio metodológico.
+
+---
+
+Data: 2026-09-23
+Ação realizada: explicitação da correspondência entre objetivos específicos e metodologia planejada.
+Arquivo alterado:
+- `docs/relatorio/relatorio_parcial.md`
+Resultado: foi inserido, conforme o ADR-004, um bloco `(Inclusão v1: ...)` que vincula os cinco
+objetivos específicos aos itens metodológicos correspondentes e afirma que a relação descreve
+procedimentos planejados, não resultados.

@@ -433,6 +433,16 @@ Esta seção será desenvolvida a partir da estrutura e da metodologia documenta
 original, preservando a separação entre cálculos determinísticos, limitações de atribuição,
 aprendizagem de máquina experimental e interpretação assistida por IA.
 
+(Inclusão v1:
+Os objetivos específicos serão atendidos pelos seguintes procedimentos: a consolidação dos dados e
+a organização dos indicadores serão realizadas nas etapas de fontes, preparação e definição de
+indicadores (itens 2.4.3 a 2.4.5); os cálculos determinísticos seguirão as rotinas e regras dos
+itens 2.4.5 e 2.4.6; o experimento de aprendizagem de máquina seguirá o protocolo do item 2.4.7;
+a interface será construída conforme os itens 2.4.9 e 2.4.10; e sua avaliação com a comunidade
+seguirá o delineamento participativo dos itens 2.4.1, 2.4.3 e 2.4.10. Essa correspondência
+descreve os meios planejados para alcançar os objetivos, não resultados já obtidos.
+)
+
 #### 2.4.1 Delineamento do projeto e participação da comunidade externa
 
 O projeto possui caráter aplicado: parte de uma demanda apresentada pela instituição parceira e
