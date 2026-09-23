@@ -652,6 +652,36 @@ interface web com origem, período, fórmulas e limitações
 interpretação e avaliação pela comunidade externa
 ```
 
+(Inclusão v1:
+#### 2.5.1 Correspondência preliminar com os objetivos específicos
+
+Quanto ao primeiro objetivo — consolidar os dados históricos e organizar indicadores comparáveis
+— o resultado preliminar é a definição da estrutura de preparação que preservará origem, período,
+granularidade e campos dos registros. A consolidação efetiva das fontes e a organização dos
+indicadores ainda dependem dos dados autorizados ou sanitizados que serão disponibilizados.
+
+Quanto ao segundo objetivo — implementar rotinas determinísticas — foram definidos os requisitos
+de cálculo por fórmulas e parâmetros registráveis, bem como as categorias de resultado medido,
+indisponível ou não verificável. A implementação das rotinas e a conferência de seus resultados
+permanecem pendentes da primeira versão executável e dos dados de demonstração.
+
+Quanto ao terceiro objetivo — avaliar a viabilidade e, se possível, treinar e avaliar um modelo
+supervisionado — foi delimitado um protocolo experimental condicionado à existência de histórico
+adequado de conteúdo orgânico da Meta. Ainda não há base avaliada, variável-alvo definida, modelo
+treinado ou métrica produzida; esses elementos somente serão registrados quando o experimento puder
+ser realizado.
+
+Quanto ao quarto objetivo — desenvolver uma interface web compreensível para a gestão — a solução
+inicial já define que a interface deverá apresentar indicadores, cenários, estimativas e limitações
+com origem, período e distinção entre valores observados, calculados e estimados. A interface
+executável e suas telas permanecem em construção e serão apresentadas quando houver protótipo.
+
+Quanto ao quinto objetivo — avaliar a versão inicial com profissionais da instituição parceira —
+foi previsto o procedimento de apresentação orientada e registro de observações sobre compreensão,
+utilidade e melhorias. A avaliação do protótipo ainda não ocorreu; portanto, não há contribuições
+de participantes a relatar nesta etapa.
+)
+
 Como resultado preliminar de concepção, já estão definidos o problema que a plataforma deve apoiar,
 os limites de confidencialidade, a separação entre indicadores e aprendizagem de máquina e os
 requisitos de rastreabilidade da interface. Permanecem pendentes a construção da primeira versão

@@ -505,3 +505,12 @@ Arquivo alterado:
 Resultado: foi inserido, conforme o ADR-007, um bloco `(Inclusão v1: ...)` que vincula os cinco
 objetivos específicos aos itens metodológicos correspondentes e afirma que a relação descreve
 procedimentos planejados, não resultados.
+
+---
+
+Data: 2026-09-23
+Ação realizada: explicitação dos resultados preliminares por objetivo específico.
+Arquivo alterado:
+- `docs/relatorio/relatorio_parcial.md`
+Resultado: o item 2.5 passou a relacionar cada um dos cinco objetivos ao resultado de concepção já
+existente e às etapas ainda pendentes, sem apresentar planejamento como resultado alcançado.
