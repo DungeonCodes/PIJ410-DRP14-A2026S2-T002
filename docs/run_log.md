@@ -465,3 +465,33 @@ Resultado: o questionário reúne núcleo comum, perguntas específicas por fun�
 para o grupo. As perguntas cobrem demanda, fontes de dados, indicadores, limites de atribuição,
 regras de decisão, confidencialidade, requisitos da interface e validação, sem solicitar dados
 pessoais ou credenciais.
+
+---
+
+Data: 2026-09-23
+Ação realizada: registro do ADR-004 para revisão de alterações propostas nos relatórios.
+Arquivo alterado:
+- `docs/decisions.md`
+Resultado: propostas passam a usar, no ponto exato da alteração, os blocos `(Exclusão vN: ...)` e
+`(Inclusão vN: ...)`. Após aprovação, o texto é consolidado sem marcadores; o Git preserva as
+versões anteriores e arquivos com marcações não são convertidos em entregas.
+
+---
+
+Data: 2026-09-23
+Ação realizada: renomeação da fonte do Relatório Parcial para explicitar seu escopo no nome do arquivo.
+Arquivos alterados:
+- `docs/relatorio/parcial.md` → `docs/relatorio/relatorio_parcial.md`
+- `docs/decisions.md`
+- `docs/migracao-modelo/README.md`
+Resultado: o ADR-004 passa a apontar nominalmente para `docs/relatorio/relatorio_parcial.md`.
+
+---
+
+Data: 2026-09-23
+Ação realizada: proposta de revisão dos objetivos específicos do Relatório Parcial.
+Arquivo alterado:
+- `docs/relatorio/relatorio_parcial.md`
+Resultado: conforme o ADR-004, a lista anterior de sete objetivos foi preservada em `(Exclusão v1:
+...)` e a proposta de cinco objetivos em `(Inclusão v2: ...)`. A alteração agrupa dados e
+indicadores, retira a IA agêntica como objetivo específico e preserva-a como apoio metodológico.

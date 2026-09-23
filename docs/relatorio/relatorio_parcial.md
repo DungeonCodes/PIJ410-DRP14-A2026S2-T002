@@ -166,6 +166,7 @@ Em decorrência dessas necessidades, foram definidos os seguintes objetivos espe
 
 #### Objetivos específicos
 
+(Exclusão v1:
 * Consolidar dados históricos de investimento e desempenho de campanhas provenientes de fontes
   distintas em uma estrutura adequada à análise.
 * Identificar e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
@@ -182,6 +183,21 @@ Em decorrência dessas necessidades, foram definidos os seguintes objetivos espe
   gestão.
 * Avaliar a versão inicial do protótipo com profissionais da instituição parceira, registrando as
   contribuições recebidas para sua evolução.
+)
+
+(Inclusão v2:
+* Consolidar dados históricos de investimento e desempenho de campanhas provenientes de fontes
+  distintas e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
+* Implementar rotinas determinísticas para calcular indicadores a partir dos dados consolidados,
+  com parâmetros e resultados passíveis de conferência.
+* Avaliar a viabilidade de preparar dados históricos de conteúdo orgânico da Meta, treinar e
+  avaliar ao menos um modelo supervisionado de aprendizagem de máquina para estimar ou classificar
+  uma medida de desempenho definida, comparando-o a uma referência determinística e registrando
+  suas métricas de avaliação.
+* Desenvolver uma interface web que apresente os indicadores de forma compreensível para a gestão.
+* Avaliar a versão inicial do protótipo com profissionais da instituição parceira, registrando as
+  contribuições recebidas para sua evolução.
+)
 
 ### 2.2 Justificativa e delimitação do problema
 

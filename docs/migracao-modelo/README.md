@@ -17,6 +17,6 @@ modelos originais mantidos em `docs/univesp/`.
 2. Coloque o modelo novo em `modelo-novo/`.
 3. Não edite os arquivos nas duas pastas acima.
 4. A versão editável será criada em `trabalho/`, a partir do modelo novo.
-5. O texto-fonte do relatório continua em `docs/relatorio/parcial.md`; a migração para `.docx` deve preservar os estilos do modelo novo.
+5. O texto-fonte do relatório continua em `docs/relatorio/relatorio_parcial.md`; a migração para `.docx` deve preservar os estilos do modelo novo.
 
 Não inclua dados pessoais, credenciais ou dados operacionais da instituição parceira.
