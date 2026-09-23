@@ -1,0 +1,2548 @@
+{
+ "meta": {
+  "schema_version": 1,
+  "scenario_version": "cenario-alfa-1",
+  "seed": "pij410-alfa-2026",
+  "project_started_at": "2026-08-27",
+  "generated_at": "2026-08-27",
+  "reference_date": "2026-08-15",
+  "synthetic": true,
+  "nota": "Dados inteiramente sintéticos, gerados por algoritmo determinístico. Não derivam de nenhuma base operacional. As datas representam uma cronologia fictícia; o projeto acadêmico começou em 2026-08-27."
+ },
+ "safras": [
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "ciclos": [
+  "EI",
+  "EF-I",
+  "EF-II",
+  "EM"
+ ],
+ "ultimaObservacao": "2026-08-15",
+ "grupos": [
+  {
+   "safra": 2022,
+   "ciclo": "EI",
+   "contatos": 129,
+   "visitas": 25,
+   "matriculas": 10,
+   "perdidos": 59,
+   "quentes": 28,
+   "frios": 26,
+   "semClassificacao": 6,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 34
+    },
+    {
+     "canal": "Telefone",
+     "valor": 26
+    },
+    {
+     "canal": "Indicação",
+     "valor": 14
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 21
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 34
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "valor": 2
+    },
+    {
+     "turma": "Infantil 2",
+     "valor": 2
+    },
+    {
+     "turma": "Infantil 3",
+     "valor": 2
+    },
+    {
+     "turma": "Infantil 4",
+     "valor": 2
+    },
+    {
+     "turma": "Infantil 5",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 13,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 7,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 7,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 11,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 13,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 21,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 11,
+     "contatos": 18,
+     "visitas": 4,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 13,
+     "visitas": 2,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2022,
+   "ciclo": "EF-I",
+   "contatos": 102,
+   "visitas": 20,
+   "matriculas": 10,
+   "perdidos": 38,
+   "quentes": 21,
+   "frios": 28,
+   "semClassificacao": 5,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 20
+    },
+    {
+     "canal": "Telefone",
+     "valor": 25
+    },
+    {
+     "canal": "Indicação",
+     "valor": 16
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 19
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 22
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "2º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "3º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "4º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "5º Ano",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 8,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 11,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 16,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 11,
+     "contatos": 15,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 12,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2022,
+   "ciclo": "EF-II",
+   "contatos": 65,
+   "visitas": 13,
+   "matriculas": 5,
+   "perdidos": 27,
+   "quentes": 10,
+   "frios": 19,
+   "semClassificacao": 4,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 13
+    },
+    {
+     "canal": "Telefone",
+     "valor": 9
+    },
+    {
+     "canal": "Indicação",
+     "valor": 13
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 17
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 13
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "7º Ano",
+     "valor": 1
+    },
+    {
+     "turma": "8º Ano",
+     "valor": 1
+    },
+    {
+     "turma": "9º Ano",
+     "valor": 1
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 3,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 8,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 9,
+     "contatos": 7,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 11,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 7,
+     "visitas": 1,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2022,
+   "ciclo": "EM",
+   "contatos": 44,
+   "visitas": 8,
+   "matriculas": 3,
+   "perdidos": 19,
+   "quentes": 8,
+   "frios": 10,
+   "semClassificacao": 4,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 8
+    },
+    {
+     "canal": "Telefone",
+     "valor": 11
+    },
+    {
+     "canal": "Indicação",
+     "valor": 7
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 11
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 7
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "valor": 1
+    },
+    {
+     "turma": "2ª Série EM",
+     "valor": 1
+    },
+    {
+     "turma": "3ª Série EM",
+     "valor": 1
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 3,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 8,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 9,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 10,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 11,
+     "contatos": 7,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    }
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EI",
+   "contatos": 157,
+   "visitas": 33,
+   "matriculas": 16,
+   "perdidos": 65,
+   "quentes": 23,
+   "frios": 42,
+   "semClassificacao": 11,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 33
+    },
+    {
+     "canal": "Telefone",
+     "valor": 24
+    },
+    {
+     "canal": "Indicação",
+     "valor": 43
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 41
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 16
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "valor": 2
+    },
+    {
+     "turma": "Infantil 2",
+     "valor": 4
+    },
+    {
+     "turma": "Infantil 3",
+     "valor": 3
+    },
+    {
+     "turma": "Infantil 4",
+     "valor": 3
+    },
+    {
+     "turma": "Infantil 5",
+     "valor": 4
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 16,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 2,
+     "contatos": 12,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 7,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 5,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 7,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 12,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 17,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 10,
+     "contatos": 23,
+     "visitas": 5,
+     "matriculas": 2
+    },
+    {
+     "mes": 11,
+     "contatos": 20,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 12,
+     "contatos": 19,
+     "visitas": 4,
+     "matriculas": 2
+    }
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EF-I",
+   "contatos": 124,
+   "visitas": 28,
+   "matriculas": 14,
+   "perdidos": 56,
+   "quentes": 19,
+   "frios": 30,
+   "semClassificacao": 5,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 15
+    },
+    {
+     "canal": "Telefone",
+     "valor": 25
+    },
+    {
+     "canal": "Indicação",
+     "valor": 27
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 27
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 30
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "valor": 3
+    },
+    {
+     "turma": "2º Ano",
+     "valor": 3
+    },
+    {
+     "turma": "3º Ano",
+     "valor": 3
+    },
+    {
+     "turma": "4º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "5º Ano",
+     "valor": 3
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 13,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 7,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 15,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 10,
+     "contatos": 16,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 11,
+     "contatos": 18,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 12,
+     "contatos": 15,
+     "visitas": 3,
+     "matriculas": 2
+    }
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EF-II",
+   "contatos": 78,
+   "visitas": 16,
+   "matriculas": 7,
+   "perdidos": 33,
+   "quentes": 13,
+   "frios": 21,
+   "semClassificacao": 4,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 17
+    },
+    {
+     "canal": "Telefone",
+     "valor": 15
+    },
+    {
+     "canal": "Indicação",
+     "valor": 19
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 9
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 18
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "7º Ano",
+     "valor": 1
+    },
+    {
+     "turma": "8º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "9º Ano",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 3,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 8,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 11,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 11,
+     "contatos": 11,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2023,
+   "ciclo": "EM",
+   "contatos": 53,
+   "visitas": 13,
+   "matriculas": 6,
+   "perdidos": 24,
+   "quentes": 8,
+   "frios": 11,
+   "semClassificacao": 4,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 8
+    },
+    {
+     "canal": "Telefone",
+     "valor": 12
+    },
+    {
+     "canal": "Indicação",
+     "valor": 9
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 15
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 9
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "valor": 3
+    },
+    {
+     "turma": "2ª Série EM",
+     "valor": 2
+    },
+    {
+     "turma": "3ª Série EM",
+     "valor": 1
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 3,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 2,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 2,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 8,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 11,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EI",
+   "contatos": 192,
+   "visitas": 52,
+   "matriculas": 24,
+   "perdidos": 77,
+   "quentes": 37,
+   "frios": 44,
+   "semClassificacao": 10,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 42
+    },
+    {
+     "canal": "Telefone",
+     "valor": 37
+    },
+    {
+     "canal": "Indicação",
+     "valor": 52
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 39
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 22
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "valor": 4
+    },
+    {
+     "turma": "Infantil 2",
+     "valor": 6
+    },
+    {
+     "turma": "Infantil 3",
+     "valor": 5
+    },
+    {
+     "turma": "Infantil 4",
+     "valor": 4
+    },
+    {
+     "turma": "Infantil 5",
+     "valor": 5
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 23,
+     "visitas": 6,
+     "matriculas": 3
+    },
+    {
+     "mes": 2,
+     "contatos": 13,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 3,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 5,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 6,
+     "contatos": 9,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 7,
+     "contatos": 13,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 8,
+     "contatos": 14,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 9,
+     "contatos": 20,
+     "visitas": 5,
+     "matriculas": 2
+    },
+    {
+     "mes": 10,
+     "contatos": 28,
+     "visitas": 8,
+     "matriculas": 4
+    },
+    {
+     "mes": 11,
+     "contatos": 28,
+     "visitas": 7,
+     "matriculas": 3
+    },
+    {
+     "mes": 12,
+     "contatos": 19,
+     "visitas": 5,
+     "matriculas": 2
+    }
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EF-I",
+   "contatos": 151,
+   "visitas": 42,
+   "matriculas": 22,
+   "perdidos": 59,
+   "quentes": 19,
+   "frios": 39,
+   "semClassificacao": 12,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 32
+    },
+    {
+     "canal": "Telefone",
+     "valor": 32
+    },
+    {
+     "canal": "Indicação",
+     "valor": 26
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 32
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 29
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "valor": 4
+    },
+    {
+     "turma": "2º Ano",
+     "valor": 5
+    },
+    {
+     "turma": "3º Ano",
+     "valor": 5
+    },
+    {
+     "turma": "4º Ano",
+     "valor": 4
+    },
+    {
+     "turma": "5º Ano",
+     "valor": 4
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 16,
+     "visitas": 5,
+     "matriculas": 2
+    },
+    {
+     "mes": 2,
+     "contatos": 11,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 3,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 5,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 6,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 7,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 12,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 9,
+     "contatos": 15,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 10,
+     "contatos": 23,
+     "visitas": 6,
+     "matriculas": 3
+    },
+    {
+     "mes": 11,
+     "contatos": 23,
+     "visitas": 7,
+     "matriculas": 4
+    },
+    {
+     "mes": 12,
+     "contatos": 15,
+     "visitas": 4,
+     "matriculas": 2
+    }
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EF-II",
+   "contatos": 96,
+   "visitas": 26,
+   "matriculas": 12,
+   "perdidos": 35,
+   "quentes": 19,
+   "frios": 24,
+   "semClassificacao": 6,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 11
+    },
+    {
+     "canal": "Telefone",
+     "valor": 19
+    },
+    {
+     "canal": "Indicação",
+     "valor": 20
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 24
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 22
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "valor": 3
+    },
+    {
+     "turma": "7º Ano",
+     "valor": 3
+    },
+    {
+     "turma": "8º Ano",
+     "valor": 3
+    },
+    {
+     "turma": "9º Ano",
+     "valor": 3
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 12,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 6,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 10,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 15,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 11,
+     "contatos": 14,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 12,
+     "contatos": 9,
+     "visitas": 3,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2024,
+   "ciclo": "EM",
+   "contatos": 66,
+   "visitas": 19,
+   "matriculas": 9,
+   "perdidos": 26,
+   "quentes": 11,
+   "frios": 17,
+   "semClassificacao": 3,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 18
+    },
+    {
+     "canal": "Telefone",
+     "valor": 16
+    },
+    {
+     "canal": "Indicação",
+     "valor": 10
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 14
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 8
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "valor": 3
+    },
+    {
+     "turma": "2ª Série EM",
+     "valor": 3
+    },
+    {
+     "turma": "3ª Série EM",
+     "valor": 3
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 6,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 5,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 11,
+     "contatos": 10,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EI",
+   "contatos": 178,
+   "visitas": 49,
+   "matriculas": 21,
+   "perdidos": 71,
+   "quentes": 32,
+   "frios": 43,
+   "semClassificacao": 11,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 32
+    },
+    {
+     "canal": "Telefone",
+     "valor": 40
+    },
+    {
+     "canal": "Indicação",
+     "valor": 27
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 31
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 48
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "valor": 5
+    },
+    {
+     "turma": "Infantil 2",
+     "valor": 4
+    },
+    {
+     "turma": "Infantil 3",
+     "valor": 3
+    },
+    {
+     "turma": "Infantil 4",
+     "valor": 4
+    },
+    {
+     "turma": "Infantil 5",
+     "valor": 5
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 20,
+     "visitas": 5,
+     "matriculas": 2
+    },
+    {
+     "mes": 2,
+     "contatos": 13,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 3,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 5,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 6,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 7,
+     "contatos": 10,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 16,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 9,
+     "contatos": 19,
+     "visitas": 5,
+     "matriculas": 2
+    },
+    {
+     "mes": 10,
+     "contatos": 28,
+     "visitas": 8,
+     "matriculas": 3
+    },
+    {
+     "mes": 11,
+     "contatos": 25,
+     "visitas": 7,
+     "matriculas": 3
+    },
+    {
+     "mes": 12,
+     "contatos": 17,
+     "visitas": 5,
+     "matriculas": 2
+    }
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EF-I",
+   "contatos": 140,
+   "visitas": 39,
+   "matriculas": 19,
+   "perdidos": 57,
+   "quentes": 22,
+   "frios": 33,
+   "semClassificacao": 9,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 32
+    },
+    {
+     "canal": "Telefone",
+     "valor": 39
+    },
+    {
+     "canal": "Indicação",
+     "valor": 20
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 20
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 29
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "valor": 4
+    },
+    {
+     "turma": "2º Ano",
+     "valor": 4
+    },
+    {
+     "turma": "3º Ano",
+     "valor": 4
+    },
+    {
+     "turma": "4º Ano",
+     "valor": 4
+    },
+    {
+     "turma": "5º Ano",
+     "valor": 3
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 17,
+     "visitas": 5,
+     "matriculas": 3
+    },
+    {
+     "mes": 2,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 5,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 6,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 7,
+     "contatos": 9,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 10,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 12,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 10,
+     "contatos": 17,
+     "visitas": 5,
+     "matriculas": 2
+    },
+    {
+     "mes": 11,
+     "contatos": 23,
+     "visitas": 6,
+     "matriculas": 3
+    },
+    {
+     "mes": 12,
+     "contatos": 17,
+     "visitas": 5,
+     "matriculas": 2
+    }
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EF-II",
+   "contatos": 89,
+   "visitas": 20,
+   "matriculas": 9,
+   "perdidos": 40,
+   "quentes": 16,
+   "frios": 18,
+   "semClassificacao": 6,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 16
+    },
+    {
+     "canal": "Telefone",
+     "valor": 24
+    },
+    {
+     "canal": "Indicação",
+     "valor": 12
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 16
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 21
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "7º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "8º Ano",
+     "valor": 3
+    },
+    {
+     "turma": "9º Ano",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 4,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 14,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 11,
+     "contatos": 13,
+     "visitas": 3,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 11,
+     "visitas": 3,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2025,
+   "ciclo": "EM",
+   "contatos": 61,
+   "visitas": 14,
+   "matriculas": 7,
+   "perdidos": 25,
+   "quentes": 12,
+   "frios": 12,
+   "semClassificacao": 5,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 6
+    },
+    {
+     "canal": "Telefone",
+     "valor": 17
+    },
+    {
+     "canal": "Indicação",
+     "valor": 11
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 10
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 17
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "valor": 2
+    },
+    {
+     "turma": "2ª Série EM",
+     "valor": 2
+    },
+    {
+     "turma": "3ª Série EM",
+     "valor": 3
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 2,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 2,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 3,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 8,
+     "contatos": 5,
+     "visitas": 1,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": 7,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 10,
+     "contatos": 9,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 11,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 12,
+     "contatos": 6,
+     "visitas": 1,
+     "matriculas": 1
+    }
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EI",
+   "contatos": 113,
+   "visitas": 29,
+   "matriculas": 12,
+   "perdidos": 48,
+   "quentes": 18,
+   "frios": 29,
+   "semClassificacao": 6,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 24
+    },
+    {
+     "canal": "Telefone",
+     "valor": 25
+    },
+    {
+     "canal": "Indicação",
+     "valor": 14
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 29
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 21
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "Infantil 1",
+     "valor": 3
+    },
+    {
+     "turma": "Infantil 2",
+     "valor": 2
+    },
+    {
+     "turma": "Infantil 3",
+     "valor": 2
+    },
+    {
+     "turma": "Infantil 4",
+     "valor": 3
+    },
+    {
+     "turma": "Infantil 5",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 24,
+     "visitas": 6,
+     "matriculas": 2
+    },
+    {
+     "mes": 2,
+     "contatos": 19,
+     "visitas": 5,
+     "matriculas": 2
+    },
+    {
+     "mes": 3,
+     "contatos": 11,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 4,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 2
+    },
+    {
+     "mes": 7,
+     "contatos": 14,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 8,
+     "contatos": 17,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 9,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 10,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 11,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 12,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    }
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EF-I",
+   "contatos": 89,
+   "visitas": 25,
+   "matriculas": 10,
+   "perdidos": 36,
+   "quentes": 18,
+   "frios": 20,
+   "semClassificacao": 5,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 17
+    },
+    {
+     "canal": "Telefone",
+     "valor": 16
+    },
+    {
+     "canal": "Indicação",
+     "valor": 23
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 22
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 11
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "2º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "3º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "4º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "5º Ano",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 21,
+     "visitas": 6,
+     "matriculas": 2
+    },
+    {
+     "mes": 2,
+     "contatos": 14,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 3,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 2
+    },
+    {
+     "mes": 7,
+     "contatos": 10,
+     "visitas": 3,
+     "matriculas": 2
+    },
+    {
+     "mes": 8,
+     "contatos": 14,
+     "visitas": 4,
+     "matriculas": 2
+    },
+    {
+     "mes": 9,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 10,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 11,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 12,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    }
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EF-II",
+   "contatos": 56,
+   "visitas": 14,
+   "matriculas": 6,
+   "perdidos": 22,
+   "quentes": 11,
+   "frios": 13,
+   "semClassificacao": 4,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 11
+    },
+    {
+     "canal": "Telefone",
+     "valor": 14
+    },
+    {
+     "canal": "Indicação",
+     "valor": 9
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 12
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 10
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "6º Ano",
+     "valor": 1
+    },
+    {
+     "turma": "7º Ano",
+     "valor": 2
+    },
+    {
+     "turma": "8º Ano",
+     "valor": 1
+    },
+    {
+     "turma": "9º Ano",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 12,
+     "visitas": 2,
+     "matriculas": 2
+    },
+    {
+     "mes": 2,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 4,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 10,
+     "visitas": 2,
+     "matriculas": 2
+    },
+    {
+     "mes": 9,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 10,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 11,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 12,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    }
+   ]
+  },
+  {
+   "safra": 2026,
+   "ciclo": "EM",
+   "contatos": 38,
+   "visitas": 11,
+   "matriculas": 5,
+   "perdidos": 15,
+   "quentes": 8,
+   "frios": 8,
+   "semClassificacao": 2,
+   "canais": [
+    {
+     "canal": "Site",
+     "valor": 8
+    },
+    {
+     "canal": "Telefone",
+     "valor": 9
+    },
+    {
+     "canal": "Indicação",
+     "valor": 5
+    },
+    {
+     "canal": "Redes sociais",
+     "valor": 10
+    },
+    {
+     "canal": "Visita espontânea",
+     "valor": 6
+    }
+   ],
+   "turmas": [
+    {
+     "turma": "1ª Série EM",
+     "valor": 2
+    },
+    {
+     "turma": "2ª Série EM",
+     "valor": 1
+    },
+    {
+     "turma": "3ª Série EM",
+     "valor": 2
+    }
+   ],
+   "mensal": [
+    {
+     "mes": 1,
+     "contatos": 8,
+     "visitas": 2,
+     "matriculas": 2
+    },
+    {
+     "mes": 2,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 3,
+     "contatos": 4,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 4,
+     "contatos": 4,
+     "visitas": 1,
+     "matriculas": 0
+    },
+    {
+     "mes": 5,
+     "contatos": 2,
+     "visitas": 0,
+     "matriculas": 0
+    },
+    {
+     "mes": 6,
+     "contatos": 4,
+     "visitas": 2,
+     "matriculas": 0
+    },
+    {
+     "mes": 7,
+     "contatos": 4,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 8,
+     "contatos": 6,
+     "visitas": 2,
+     "matriculas": 1
+    },
+    {
+     "mes": 9,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 10,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 11,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    },
+    {
+     "mes": 12,
+     "contatos": null,
+     "visitas": null,
+     "matriculas": null
+    }
+   ]
+  }
+ ]
+}

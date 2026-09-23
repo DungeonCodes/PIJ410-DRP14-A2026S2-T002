@@ -469,7 +469,7 @@ pessoais ou credenciais.
 ---
 
 Data: 2026-09-23
-Ação realizada: registro do ADR-004 para revisão de alterações propostas nos relatórios.
+Ação realizada: registro do ADR-007 para revisão de alterações propostas nos relatórios.
 Arquivo alterado:
 - `docs/decisions.md`
 Resultado: propostas passam a usar, no ponto exato da alteração, os blocos `(Exclusão vN: ...)` e
@@ -484,7 +484,7 @@ Arquivos alterados:
 - `docs/relatorio/parcial.md` → `docs/relatorio/relatorio_parcial.md`
 - `docs/decisions.md`
 - `docs/migracao-modelo/README.md`
-Resultado: o ADR-004 passa a apontar nominalmente para `docs/relatorio/relatorio_parcial.md`.
+Resultado: o ADR-007 passa a apontar nominalmente para `docs/relatorio/relatorio_parcial.md`.
 
 ---
 
@@ -492,7 +492,7 @@ Data: 2026-09-23
 Ação realizada: proposta de revisão dos objetivos específicos do Relatório Parcial.
 Arquivo alterado:
 - `docs/relatorio/relatorio_parcial.md`
-Resultado: conforme o ADR-004, a lista anterior de sete objetivos foi preservada em `(Exclusão v1:
+Resultado: conforme o ADR-007, a lista anterior de sete objetivos foi preservada em `(Exclusão v1:
 ...)` e a proposta de cinco objetivos em `(Inclusão v2: ...)`. A alteração agrupa dados e
 indicadores, retira a IA agêntica como objetivo específico e preserva-a como apoio metodológico.
 
@@ -502,6 +502,6 @@ Data: 2026-09-23
 Ação realizada: explicitação da correspondência entre objetivos específicos e metodologia planejada.
 Arquivo alterado:
 - `docs/relatorio/relatorio_parcial.md`
-Resultado: foi inserido, conforme o ADR-004, um bloco `(Inclusão v1: ...)` que vincula os cinco
+Resultado: foi inserido, conforme o ADR-007, um bloco `(Inclusão v1: ...)` que vincula os cinco
 objetivos específicos aos itens metodológicos correspondentes e afirma que a relação descreve
 procedimentos planejados, não resultados.

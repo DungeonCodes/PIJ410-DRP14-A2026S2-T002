@@ -1,0 +1,35 @@
+{
+  "name": "pij410-painel-academico",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Aplicação acadêmica do PIJ410 (UNIVESP). Espelha a estrutura de uma arquitetura de referência com dados inteiramente sintéticos. Nenhuma integração real.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint",
+    "dados:gerar": "node scripts/gerar-dados-sinteticos.mjs",
+    "verificar:integridade-docs": "node scripts/verificar-integridade-docs.mjs --verificar",
+    "test:fases": "node scripts/test-fases.mjs",
+    "test:determinismo": "node scripts/test-determinismo.mjs",
+    "test:nao-vazamento": "node scripts/test-nao-vazamento.mjs",
+    "test": "npm run test:fases && npm run test:determinismo && npm run test:nao-vazamento"
+  },
+  "dependencies": {
+    "lucide-react": "^1.16.0",
+    "next": "16.2.4",
+    "react": "19.2.4",
+    "react-dom": "19.2.4",
+    "recharts": "^3.8.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^24",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.2.4",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}

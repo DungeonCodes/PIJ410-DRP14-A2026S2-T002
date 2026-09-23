@@ -120,6 +120,119 @@ caracterização da comunidade externa exigida pela Metodologia passa a ser feit
 
 ---
 
+## ADR-004 — Fichamento obrigatório para cada obra do acervo bibliográfico
+
+**Data:** 2026-08-27
+
+**Decisão:** Toda obra adicionada a `docs/referencias.md` deverá receber, na mesma alteração, duas
+entradas complementares: uma síntese de triagem em `docs/resumos_obras_bibliograficas.md` e um
+registro em `docs/fichamentos_bibliograficos.md`. A síntese deve declarar sua base documental,
+apresentar o objetivo e a contribuição geral da obra, limites, decisão preliminar e link de acesso.
+O fichamento deve conter a identificação da obra, link persistente, situação de leitura e, quando a
+obra estiver lida, resumo próprio, recorte adotado pelo PI, localização verificável do recorte e
+seção do relatório em que será usada.
+
+Uma obra recém-localizada pode entrar como `candidata`. Sua síntese de triagem pode ser baseada em
+abstract ou metadados, desde que essa limitação esteja explícita e não seja apresentada como leitura
+integral. O fichamento deverá registrar `leitura pendente`, sem resumo ou recorte inferidos. A obra
+só poderá ser citada no relatório depois de passar para `fichada` ou `usada no relatório`. Citação
+direta exige a página verificada no fichamento; citações indiretas devem apontar a seção, capítulo
+ou outro localizador útil quando houver.
+
+**Motivo:** a lista ABNT informa a existência e os metadados da fonte, mas não permite comparar a
+proposta geral das obras nem torna transparente qual parte sustenta o projeto. A síntese separada
+facilita a decisão coletiva sobre o que ler e incorporar; o fichamento permite conferir o recorte,
+evita extrapolações e preserva a rastreabilidade entre fonte, decisão e redação do relatório.
+
+**Alternativas consideradas:**
+
+* *Manter apenas `docs/referencias.md`.* Descartada: não registra proposta geral, leitura, recorte
+  nem ponto de conferência da obra.
+* *Misturar resumo integral e recorte em uma única tabela.* Descartada: dificulta distinguir o que
+  a obra discute do que o PI efetivamente adotou.
+* *Criar fichamento somente para fontes já citadas.* Descartada: deixaria candidatas sem responsável,
+  acesso ou histórico de triagem e tornaria a regra difícil de aplicar nas próximas inclusões.
+
+**Impacto esperado:** o acervo passa a ter uma trilha verificável de catálogo, triagem e uso. A
+inclusão de uma fonte exige um pequeno trabalho adicional, compensado por decisão coletiva mais
+simples e menor risco de citação sem aderência ao recorte do PI.
+
+---
+
+## ADR-005 — Bibliografia selecionada por função argumentativa, não por volume
+
+**Data:** 2026-08-27
+
+**Decisão:** O relatório parcial utilizará somente obras lidas que sustentem uma afirmação necessária
+e não redundante. Fontes candidatas não serão promovidas apenas para aumentar o número de citações.
+Na revisão atual, foram mantidas as bases já adotadas para marketing digital, métricas, atribuição,
+pipelines, reprodutibilidade, aprendizagem de máquina, dashboards, UX, Design Thinking e agentes.
+
+As candidatas do eixo E1 permanecem sem uso até a confirmação do segmento da instituição parceira,
+pois tratam de ensino superior. A obra de Sedrakyan, Mannens e Verbert permanece candidata porque
+seu objeto são dashboards de aprendizagem, e não painéis gerenciais de campanhas. Sivarajah et al.
+permanece candidata para evitar classificar o conjunto do PI como Big Data sem evidência de volume,
+velocidade ou variedade que exija esse enquadramento. Documentações comerciais de modelos foram
+retiradas do relatório: o fornecedor e a configuração são instrumentais e não fundamentam o método.
+
+**Motivo:** a rubrica avalia suficiência, confiabilidade e síntese das teorias. Acumular referências
+laterais enfraquece o encadeamento e pode criar afirmações mais amplas que o recorte empírico.
+
+**Alternativas consideradas:**
+
+* *Citar todas as obras catalogadas.* Descartada: parte do acervo ainda não foi lida e vários textos
+  pertencem a domínios ou decisões técnicas que não aparecem no relatório parcial.
+* *Manter nomes de modelos comerciais na justificativa.* Descartada: a informação é volátil e não
+  modifica o protocolo de controle, rastreabilidade ou revisão humana.
+
+**Impacto esperado:** fundamentação mais coesa, lista de referências correspondente ao texto e
+critérios explícitos para promover candidatas em revisões futuras.
+
+---
+
+## ADR-006 — Baseline da aplicação acadêmica independente e rollout por fases
+
+**Data:** 2026-08-27
+
+**Decisão:** A partir de 27/08/2026, o PIJ410 possui uma aplicação web acadêmica própria em
+Next.js + TypeScript, independente e construída incrementalmente com dados sintéticos. A Fase 1
+disponibiliza exclusivamente os módulos Captação e Matrículas. Ads, Reels orgânicos, Objetivo da
+Gestão e Arquitetura & Algoritmos permanecem planejados e bloqueados, ainda que possam ter estrutura
+preparada no código.
+
+A aplicação pode utilizar uma arquitetura externa de referência apenas no nível conceitual e
+estrutural. Ela não tem dependência de runtime, importação entre repositórios, caminho local,
+arquivo, API privada, credencial ou dado proveniente dessa referência. A abertura de uma fase exige
+alteração humana explícita e versionada; nenhuma fase é liberada por data.
+
+**Motivo:** a baseline torna verificável o que foi efetivamente disponibilizado no início da
+aplicação, preserva a cronologia do PI e impede que demonstrações sintéticas sejam confundidas com
+dados ou operação da instituição parceira. As datas históricas exibidas pelos datasets representam
+um cenário histórico sintético, e não coleta acadêmica anterior a 27/08/2026.
+
+**Documentação detalhada:** [ADR-A001 — Espelhamento estrutural, dados sintéticos e rollout
+acadêmico por fases](migracao-modelo/arquitetura/ADR-A001-espelhamento-dados-sinteticos-rollout.md),
+[plano de fases](migracao-modelo/arquitetura/plano-de-fases.md) e [matriz de classificação]
+(migracao-modelo/arquitetura/matriz-classificacao.md). O ADR-A001 é a decisão técnica local da
+subpasta; esta ADR é o registro canônico resumido para a governança do projeto e não o duplica.
+
+**Alternativas consideradas:**
+
+* *Tratar a aplicação como ambiente operacional, staging, produção ou backup.* Descartada: o
+  repositório contém uma aplicação acadêmica independente, sem integração externa e com dados
+  sintéticos.
+* *Marcar rotas preparadas como entrega funcional.* Descartada: presença de scaffold não constitui
+  disponibilidade; o feature gate deve continuar a falhar fechado.
+* *Converter ou perturbar dados externos para demonstrar os módulos.* Descartada: valores reais com
+  ruído, escala ou troca de rótulos continuam sendo dados externos. O cenário deve ser gerado do
+  zero e preservar somente relações analíticas plausíveis.
+
+**Impacto esperado:** o grupo dispõe de uma referência única para distinguir baseline técnico,
+cronologia sintética, módulos disponíveis e planejamento futuro. A independência da aplicação e a
+sanitização dos dados passam a ser requisitos permanentes da evolução do protótipo.
+
+---
+
 ## Pendências aguardando decisão
 
 Registradas para não se perderem; nenhuma foi decidida ainda.
@@ -167,7 +280,7 @@ Registradas aqui porque constaram como pendências e já não são.
 
 ---
 
-## ADR-004 — Marcação temporária de alterações propostas no relatório
+## ADR-007 — Marcação temporária de alterações propostas no relatório
 
 **Data:** 2026-09-23
 

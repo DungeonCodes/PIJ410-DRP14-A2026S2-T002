@@ -4,6 +4,11 @@
 > referências do projeto: toda obra citada nos relatórios deve constar aqui, e toda obra
 > aqui listada deve ter sido efetivamente localizada — nada é adicionado por inferência.
 
+Os [resumos das obras](resumos_obras_bibliograficas.md) apoiam a triagem do acervo. Os recortes
+efetivamente usados e os links para conferência pelo grupo são registrados em
+[`docs/fichamentos_bibliograficos.md`](fichamentos_bibliograficos.md). Pela ADR-004, toda inclusão
+neste catálogo exige entradas correspondentes nos dois documentos.
+
 Norma adotada: **ABNT NBR 6023:2018** (referências) e **NBR 10520:2023** (citações).
 Ver `/docs/decisions.md` e `.claude/skills/pesquisa-bibliografica/references/abnt.md`.
 
@@ -184,8 +189,8 @@ A obra 29 conecta análise de dados a **decisão gerencial**, que é a ponte ent
 | 35 | LIU et al. — Lost in the Middle: How Language Models Use Long Contexts | 2024 | TACL | 1188 | sim | `candidata` |
 | 36 | GAO et al. — Retrieval-Augmented Generation for LLMs: A Survey | 2023 | arXiv | 707 | **não — preprint** | `candidata` |
 | 37 | SUMERS et al. — Cognitive Architectures for Language Agents | 2023 | arXiv | 65 | **não — preprint** | `candidata` |
-| 38 | ANTHROPIC — Introducing Claude Fable 5 and Claude Mythos 5 | 2026 | documentação técnica oficial | — | não se aplica | `citada` |
-| 39 | OPENAI — GPT-5.6 Sol Model | 2026 | documentação técnica oficial | — | não se aplica | `citada` |
+| 38 | ANTHROPIC — Introducing Claude Fable 5 and Claude Mythos 5 | 2026 | documentação técnica oficial | — | não se aplica | `lida` |
+| 39 | OPENAI — GPT-5.6 Sol Model | 2026 | documentação técnica oficial | — | não se aplica | `lida` |
 
 **Atenção à rubrica.** A fundamentação teórica zera se as fontes não forem confiáveis, e preprint
 não passou por revisão por pares. As obras 33, 34 e 35 são publicadas e sustentam o eixo sozinhas;
@@ -193,8 +198,9 @@ prefira-as. As obras 36 e 37 só devem ser citadas se não houver equivalente pu
 conhecida por ter versão em periódico, que precisa ser localizada antes de citar.
 
 A obra 34 foi lida e citada para delimitar o papel dos agentes como apoio sujeito a controle
-humano. As obras 38 e 39 registram, como fontes técnicas — e não como fundamentação teórica — as
-configurações de modelos previstas para uso via CLI. A obra 35 permanece candidata e poderá ser
+humano. As obras 38 e 39 foram lidas como documentação técnica, mas deixaram de ser citadas no
+relatório parcial após a revisão de 27 ago. 2026: nomes e configurações comerciais específicos não
+alteram o método e envelhecem rapidamente. A obra 35 permanece candidata e poderá ser
 avaliada, antes de eventual citação, para a discussão sobre limites de contexto e organização da
 memória.
 
