@@ -608,3 +608,10 @@ Resultado: confirmadas as páginas ativas `/captacao` e `/matriculas` e a págin
 Arquivos alterados: `docs/relatorio/parcial.md` e `docs/run_log.md`. Nenhum commit ou push realizado.
 
 ---
+
+Data: 2026-09-29
+Ação realizada: revisão final dos cinco placeholders de figuras da seção 2.5 e criação do snapshot `docs/relatorio/Relatorio_Parcial_V2.md`.
+Resultado: os placeholders foram tornados mais prescritivos para a captura manual; V2 foi criada como cópia fiel de `docs/relatorio/parcial.md`, e V1 foi preservada. Nenhuma imagem, alteração funcional, DOCX ou PDF foi inserido ou gerado.
+Arquivos alterados/criados: `docs/relatorio/parcial.md`, `docs/relatorio/Relatorio_Parcial_V2.md` e `docs/run_log.md`. Nenhum commit ou push realizado.
+
+---
