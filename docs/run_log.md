@@ -545,6 +545,48 @@ realizado.
 
 ---
 
+Data: 2026-09-23
+Ação realizada: registro do ADR-007 para revisão de alterações propostas nos relatórios.
+Arquivo alterado:
+- `docs/decisions.md`
+Resultado: propostas passam a usar, no ponto exato da alteração, os blocos `(Exclusão vN: ...)` e `(Inclusão vN: ...)`. Após aprovação, o texto é consolidado sem marcadores; o Git preserva as versões anteriores e arquivos com marcações não são convertidos em entregas.
+
+---
+
+Data: 2026-09-23
+Ação realizada: renomeação da fonte do Relatório Parcial para explicitar seu escopo no nome do arquivo.
+Arquivos alterados:
+- `docs/relatorio/parcial.md` → `docs/relatorio/relatorio_parcial.md`
+- `docs/decisions.md`
+- `docs/migracao-modelo/README.md`
+Resultado: o ADR-007 passa a apontar nominalmente para `docs/relatorio/relatorio_parcial.md`.
+
+---
+
+Data: 2026-09-23
+Ação realizada: proposta de revisão dos objetivos específicos do Relatório Parcial.
+Arquivo alterado:
+- `docs/relatorio/relatorio_parcial.md`
+Resultado: conforme o ADR-007, a lista anterior de sete objetivos foi preservada em `(Exclusão v1: ...)` e a proposta de cinco objetivos em `(Inclusão v2: ...)`. A alteração agrupa dados e indicadores, retira a IA agêntica como objetivo específico e preserva-a como apoio metodológico.
+
+---
+
+Data: 2026-09-23
+Ação realizada: explicitação da correspondência entre objetivos específicos e metodologia planejada.
+Arquivo alterado:
+- `docs/relatorio/relatorio_parcial.md`
+Resultado: foi inserido, conforme o ADR-007, um bloco `(Inclusão v1: ...)` que vincula os cinco objetivos específicos aos itens metodológicos correspondentes e afirma que a relação descreve procedimentos planejados, não resultados.
+
+---
+
+Data: 2026-09-23
+Ação realizada: explicitação dos resultados preliminares por objetivo específico.
+Arquivo alterado:
+- `docs/relatorio/relatorio_parcial.md`
+Resultado: o item 2.5 passou a relacionar cada um dos cinco objetivos ao resultado de concepção já existente e às etapas ainda pendentes, sem apresentar planejamento como resultado alcançado.
+
+---
+
 Data: 2026-09-29
 Ação realizada: reconciliação do documento colaborativo `docs/relatorio/Relatório Parcial - Grupo 11.docx.pdf` com `docs/relatorio/parcial.md`.
 Diagnóstico: não havia arquivo `.docx` nem versões V1/V2/V3 em `docs/relatorio/`; o arquivo disponível, apesar do nome, é um PDF e foi preservado. A fonte de verdade permanece o Markdown. Foram encontradas aproximadamente dez diferenças relevantes, predominantemente pré-textuais, omissões e conteúdo desatualizado.
