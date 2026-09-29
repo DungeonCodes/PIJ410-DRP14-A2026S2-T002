@@ -30,6 +30,13 @@ docs/relatorio/*.md   →   outputs/*.docx   →   outputs/*.pdf
    (fonte, no git)        (gerado)            (entrega no AVA)
 ```
 
+Snapshots formais de revisão são cópias numeradas do Markdown-fonte, como
+`docs/relatorio/Relatorio_Parcial_V1.md`. Cada snapshot preserva o estado aprovado naquele
+momento e não é alterado retroativamente: correções futuras são feitas primeiro em
+`docs/relatorio/parcial.md` e geram a próxima versão numerada (V2, V3 e assim por diante).
+DOCX e PDF permanecem artefatos derivados ou referências de colaboração, nunca fontes
+principais.
+
 Os modelos em `/docs/univesp/` permanecem **intactos** como referência normativa; nunca são
 editados, apenas usados como origem dos estilos.
 
@@ -200,6 +207,10 @@ disponibiliza exclusivamente os módulos Captação e Matrículas. Ads, Reels or
 Gestão e Arquitetura & Algoritmos permanecem planejados e bloqueados, ainda que possam ter estrutura
 preparada no código.
 
+O ambiente acadêmico sanitizado correspondente à Fase 1 está funcional e publicado na Vercel. Essa
+publicação não amplia o escopo disponível: somente Captação e Matrículas estão acessíveis, com dados
+sintéticos e sem conexão com APIs, sistemas operacionais ou bases reais da instituição parceira.
+
 A aplicação pode utilizar uma arquitetura externa de referência apenas no nível conceitual e
 estrutural. Ela não tem dependência de runtime, importação entre repositórios, caminho local,
 arquivo, API privada, credencial ou dado proveniente dessa referência. A abertura de uma fase exige
@@ -277,51 +288,3 @@ Registradas aqui porque constaram como pendências e já não são.
   desde que recebam somente contexto versionado e sanitizado. Cada explicação ou recomendação deve
   apontar os fatos, cálculos, resultados estimados ou referências que a sustentam; saídas sem base
   verificável não serão usadas.
-
----
-
-## ADR-007 — Marcação temporária de alterações propostas no relatório
-
-**Data:** 2026-09-23
-
-**Decisão:** Quando uma alteração no texto de `docs/relatorio/relatorio_parcial.md` precisar ser
-preparada para revisão, ela será marcada no próprio arquivo Markdown, exatamente no ponto em que
-deve ocorrer, com os blocos
-`(Exclusão vN: ...)` e `(Inclusão vN: ...)`. O conteúdo anterior não será apagado durante a
-proposta: ficará no bloco de exclusão, seguido pelo conteúdo candidato à nova versão.
-
-Exemplo de proposta de substituição:
-
-```text
-Texto que permanece antes da alteração.
-(Exclusão v1: texto da versão anterior.)
-(Inclusão v2: texto proposto para a nova versão.)
-Texto que permanece depois da alteração.
-```
-
-O número da versão identifica a versão que sai e a versão que entra; cada bloco deve conter o
-trecho completo, sem reticências que impeçam sua revisão. Para uma inserção sem texto anterior,
-usar somente `(Inclusão vN: ...)`; para uma remoção sem substituto, somente `(Exclusão vN: ...)`.
-
-Após aprovação humana, a alteração será consolidada: o bloco de inclusão substituirá o trecho
-excluído, e todas as marcações temporárias serão removidas do texto final. O histórico permanente
-da redação será o histórico do Git; assim, versões anteriores continuam recuperáveis sem deixar
-anotações editoriais no `.docx` ou PDF de entrega. Nenhuma versão contendo esses marcadores será
-convertida em artefato de entrega.
-
-**Motivo:** a marcação mantém, no contexto exato do relatório, tanto o texto anterior quanto a
-proposta, evitando dúvida sobre o local e o conteúdo da alteração. A consolidação posterior
-preserva a leitura acadêmica do documento e usa o versionamento já adotado pelo projeto para o
-histórico completo.
-
-**Alternativas consideradas:**
-
-* *Apagar o texto anterior ao redigir a proposta.* Descartada: torna a revisão mais difícil e
-  perde a referência imediata do que deve ser substituído.
-* *Manter indefinidamente os marcadores no relatório entregue.* Descartada: o texto de entrega
-  ficaria com anotações editoriais e deixaria de ter apresentação acadêmica final.
-* *Registrar mudanças somente fora do relatório.* Descartada: separa a proposta do ponto exato
-  que ela altera e aumenta o risco de aplicação no lugar errado.
-
-**Impacto esperado:** propostas de edição passam a ser autoexplicativas e revisáveis no Markdown.
-O relatório consolidado continua limpo, e a versão anterior permanece disponível no Git.

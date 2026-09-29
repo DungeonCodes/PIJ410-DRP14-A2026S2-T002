@@ -1,0 +1,772 @@
+# Relatório Parcial — PIJ410
+
+> Fonte única do texto do relatório parcial (ADR-001). O `.docx` de entrega é gerado a partir
+> deste arquivo. Não editar o `.docx` diretamente.
+>
+> **Status:** em redação. Seções concluídas são marcadas com ✅; em aberto, com ⬜.
+> Marcadores `«PENDENTE: …»` indicam decisão do grupo ainda não tomada — nenhum documento vai
+> para conversão com marcador pendente.
+
+| Seção | Rubrica | Status |
+|---|---|---|
+| Pré-textuais (capa, folha de rosto, ficha, resumo, sumário) | 2,0 (Linguagem e Referências) | ⬜ |
+| 1 Introdução | 1,0 | ⬜ em revisão |
+| 2.1 Objetivos | 1,0 | ⬜ em revisão |
+| 2.2 Justificativa e delimitação do problema | 1,0 | ⬜ em revisão |
+| 2.3 Fundamentação teórica | 2,0 | ⬜ |
+| 2.4 Metodologia | 1,5 | ⬜ |
+| 2.5 Resultados preliminares: solução inicial | 1,5 | ⬜ protótipo funcional; aplicação com a comunidade pendente |
+| Referências | — | ⬜ |
+
+## Dados do projeto
+
+Consolidados a partir do Plano de Ação do grupo (`/docs/univesp/Plano_de_Acao_PIJ410_2026S2.docx`).
+Fonte de verdade para título, problema e objetivo — o relatório não pode divergir do Plano, sob
+pena de o item "Adequações" do relatório final registrar inconsistência.
+
+| Campo | Conteúdo |
+|---|---|
+| Turma | PIJ410-DRP14-A2026S2-T002 |
+| Orientadora | Letícia Vieira Santos |
+| Polos | Aricanduva, São Rafael, Rosa da China, Jaçanã |
+| Integrantes | 8 (ver Plano de Ação; um RA ainda a informar) |
+| Título provisório | Plataforma Analítica para Apoio à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional |
+| Tema específico | Desenvolvimento de análise de dados em escala sobre dados históricos de investimentos em mídia digital, com indicadores determinísticos, aprendizagem de máquina para análise preditiva, IA agêntica como apoio controlado e interface web para visualização dos resultados |
+| Problema | Dados de investimento e desempenho de mídia digital encontram-se dispersos em diferentes fontes, dificultando a análise do retorno das campanhas e a tomada de decisão sobre a distribuição do orçamento de marketing |
+| Objetivo | Desenvolver e aplicar métodos de análise de dados e aprendizagem de máquina sobre dados históricos de investimentos em mídia digital de uma instituição de ensino, a fim de produzir indicadores e análises que apoiem a interpretação dos resultados e a tomada de decisão sobre a distribuição do orçamento de marketing. A plataforma web será o meio de apresentação desses resultados. |
+| Comunidade externa | Instituição de ensino privada da região metropolitana de São Paulo; acesso por intermédio de um integrante; interlocutoras: gestora de marketing e direção/mantenedora |
+| Entrega do parcial | Quinzena 4 — até 04/10/2026 |
+
+---
+
+## 1 Introdução
+
+<!-- RUBRICA (1,0 pt) — nota máxima exige as cinco ações, com clareza:
+     desenvolve o tema · anuncia a ideia básica · situa o tema no contexto geral da área ·
+     descreve as motivações da escolha · indica o objeto do trabalho.
+     As Orientações para Avaliação acrescentam: indicar quais disciplinas cursadas
+     auxiliaram no desenvolvimento do projeto. -->
+
+O marketing digital articula canais, pontos de contato e interações que precisam ser examinados
+em conjunto ao longo da relação entre a organização e seus públicos (Kannan; Li, 2017). Quando
+campanhas são veiculadas em plataformas de anúncios, essas interações produzem registros de
+investimento, alcance, cliques e conversões. A aplicação de métodos de ciência de dados permite
+organizar tais registros e relacionar métricas de desempenho às decisões de marketing (Saura,
+2021). No contexto educacional, painéis de indicadores podem apoiar gestores na compreensão de
+informações oriundas de diferentes sistemas e nos processos de tomada de decisão (Lemes; Dias;
+Oliveira, 2023).
+
+Em campanhas digitais, métricas como investimento, conversão e retorno precisam ser interpretadas
+em relação aos objetivos organizacionais e às configurações de cada ação (Saura; Palos-Sánchez;
+Suárez, 2017). Na publicidade de busca, a possibilidade de combinar palavras-chave, lances,
+dispositivos e períodos torna insuficiente uma leitura baseada em um único total (Martins, 2019).
+Na instituição parceira, os registros de investimento e desempenho permanecem dispersos entre fontes distintas,
+com indicadores, unidades de medida e recortes temporais próprios (Grupo do Projeto Integrador,
+2026). Essa fragmentação dificulta a comparação dos resultados entre canais e campanhas, a
+avaliação do retorno obtido e a decisão sobre como distribuir o orçamento de marketing (Grupo do
+Projeto Integrador, 2026). O problema que este trabalho enfrenta é, portanto, de natureza
+analítica antes de ser tecnológica: os dados existem, mas não se apresentam em forma que sustente
+a decisão.
+
+A ideia básica que orienta o trabalho é que esse conjunto disperso pode ser consolidado e
+submetido à análise de dados em escala. Indicadores calculados por regras determinísticas serão
+complementados por um modelo de aprendizagem de máquina treinado e avaliado a partir dos dados
+históricos; a interface web apresentará esses resultados de modo acompanhável pela gestão. O
+objeto deste trabalho é, assim, o desenvolvimento e a validação de uma análise de dados aplicada
+a investimentos em mídia digital no contexto educacional, comunicada por uma plataforma web e
+avaliada junto aos profissionais que respondem por essas decisões.
+
+A escolha do tema decorre de uma necessidade real, manifestada por uma instituição de ensino
+privada da região metropolitana de São Paulo à qual o grupo teve acesso por intermédio de um de
+seus integrantes. Em conversa inicial, a gestora de marketing da instituição expôs a
+dificuldade de estabelecer quanto deveria ser investido em tráfego pago e de avaliar se os
+valores praticados eram adequados aos objetivos institucionais. Em contato posterior com a
+direção, o grupo buscou identificar quais indicadores seriam mais relevantes para acompanhar os
+investimentos realizados e seus resultados ao longo do tempo. A receptividade da equipe e o
+acesso direto aos profissionais envolvidos indicaram condições favoráveis para desenvolver a
+solução e submetê-la à validação da própria comunidade participante.
+
+Soma-se a essa demanda a composição interdisciplinar do grupo, que reúne estudantes dos cursos
+de Bacharelado em Ciência de Dados e Engenharia da Computação. Aplicações em Aprendizado de
+Máquina, Redes Neurais e Aprendizado Profundo fornecem o repertório de algoritmos, frameworks e
+modelos neurais pertinente à análise e à interpretação dos dados do projeto (UNIVESP, 2020).
+Visão Computacional amplia o repertório de aquisição, processamento e análise de dados visuais,
+enquanto Impactos da Computação na Sociedade orienta a reflexão sobre os aspectos éticos,
+sociais, legais e de governança de dados relacionados ao uso de inteligência artificial
+(UNIVESP, 2020; UNIVESP, 2026). Esses conteúdos são mobilizados como base de formação; o projeto não
+prevê o uso de imagens nem de dados sensíveis da instituição parceira.
+
+<!-- FORMATAÇÃO (aplicada na conversão para .docx):
+     título "1 Introdução" → estilo 1ttulonivel1
+     parágrafos            → estilo atexto-base
+     Este bloco de texto tem 5 parágrafos. O modelo da UNIVESP determina que o parágrafo em
+     branco entre parágrafos vem do próprio estilo (after=360); não inserir linha vazia. -->
+
+---
+
+## 2 Desenvolvimento
+
+### 2.1 Objetivos
+
+O projeto busca desenvolver análise de dados em escala a partir de um conjunto de dados históricos
+existentes de investimentos em mídia digital, aplicando aprendizagem de máquina e preparando uma
+interface para visualização dos resultados. Essa finalidade corresponde explicitamente ao tema
+norteador da UNIVESP e articula o problema identificado junto à comunidade parceira (Grupo do
+Projeto Integrador, 2026).
+
+#### Objetivo geral
+
+Desenvolver e aplicar métodos de análise de dados e aprendizagem de máquina sobre dados históricos
+de investimentos em mídia digital de uma instituição de ensino, a fim de produzir indicadores e
+análises que apoiem a interpretação dos resultados e a tomada de decisão sobre a distribuição do
+orçamento de marketing. A plataforma web será o meio de apresentação desses resultados.
+
+A consolidação dos dados e a organização de indicadores respondem à necessidade de tornar a
+avaliação de campanhas comparável e útil à gestão. No marketing digital, métricas e indicadores
+de desempenho apoiam a formulação de estratégias e permitem verificar se os resultados estão
+alinhados aos objetivos organizacionais (Saura; Palos-Sánchez; Suárez, 2017). Por essa razão, os
+dois primeiros objetivos específicos concentram-se em reunir os registros dispersos e estruturar
+indicadores que permitam analisar canais e campanhas.
+
+O objetivo de aplicar análise de dados e aprendizagem de máquina não pressupõe que esses recursos
+substituam a decisão humana. Ele decorre do potencial da ciência de dados para extrair informações
+acionáveis de conjuntos extensos de dados no contexto do marketing digital e apoiar a tomada de
+decisão (Saura, 2021). No projeto, aprendizagem de máquina não será sinônimo de usar uma ferramenta
+de IA generativa: consistirá no treinamento e na avaliação de pelo menos um modelo supervisionado
+com exemplos históricos. Como recorte experimental proposto, o modelo poderá analisar relatórios de
+conteúdo orgânico da Meta para estimar ou classificar uma medida de desempenho previamente definida,
+desde que a base histórica tenha volume e variáveis adequados. A aprendizagem de máquina se
+caracteriza justamente pela melhoria do desempenho em uma
+tarefa a partir da experiência representada pelos dados (Jordan; Mitchell, 2015).
+
+Os indicadores como investimento, impressões, cliques, custo por clique, taxa de conversão e
+retorno serão calculados por rotinas determinísticas, com entradas, parâmetros e resultados
+registráveis. Essa camada não será apresentada como aprendizagem de máquina; ela servirá de base
+comparável e reprodutível para a análise e para a avaliação do modelo preditivo (Peng, 2011). Na
+literatura de marketing, a aprendizagem de máquina é uma subárea da IA aplicada a grandes volumes
+de dados e a casos como apoio à decisão e impacto financeiro (De Mauro; Sestino; Bacconi, 2022).
+
+A IA agêntica será empregada via linha de comando somente como camada auxiliar: poderá organizar
+a execução de cenários de simulação, propor explicações para indicadores e apoiar a revisão dos
+artefatos produzidos. Ela não treinará nem substituirá o modelo de aprendizagem de máquina. Agentes
+baseados em modelos de linguagem constituem uma arquitetura que combina o modelo a planejamento,
+memória e uso de ferramentas, mas o campo ainda apresenta desafios que exigem controles e avaliação
+humana (Wang et al., 2024). Portanto, as respostas dos agentes não serão tratadas como cálculo,
+evidência empírica ou decisão autônoma; cada cenário será calculado ou estimado pelas rotinas e
+modelos definidos pelo grupo e ficará sujeito à revisão humana.
+
+O desenvolvimento da interface e a avaliação do protótipo decorrem da necessidade de converter a
+análise em informação compreensível para quem decide. No contexto educacional, dashboards podem
+apoiar gestores na compreensão de informações oriundas de diferentes sistemas e nos processos de
+tomada de decisão (Lemes; Dias; Oliveira, 2023). A avaliação com profissionais da instituição
+parceira será orientada por métodos de experiência do usuário, cuja literatura sistematiza técnicas
+para compreender necessidades e avaliar serviços de informação (Pinheiro; Dias, 2023).
+
+Em decorrência dessas necessidades, foram definidos os seguintes objetivos específicos:
+
+#### Objetivos específicos
+
+* Consolidar dados históricos de investimento e desempenho de campanhas provenientes de fontes
+  distintas em uma estrutura adequada à análise.
+* Identificar e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
+* Implementar rotinas determinísticas para calcular indicadores a partir dos dados consolidados,
+  com parâmetros e resultados passíveis de conferência.
+* Avaliar a viabilidade de preparar dados históricos de conteúdo orgânico da Meta, treinar e
+  avaliar ao menos um modelo supervisionado de aprendizagem de máquina para estimar ou classificar
+  uma medida de desempenho definida, comparando-o a uma referência determinística e registrando
+  suas métricas de avaliação.
+* Empregar IA agêntica via linha de comando como apoio controlado à formulação, execução e
+  interpretação de cenários de simulação, sem substituir os cálculos determinísticos, o modelo de
+  aprendizagem de máquina ou a revisão humana.
+* Desenvolver uma interface web que apresente os indicadores de forma compreensível para a
+  gestão.
+* Avaliar a versão inicial do protótipo com profissionais da instituição parceira, registrando as
+  contribuições recebidas para sua evolução.
+
+### 2.2 Justificativa e delimitação do problema
+
+O problema de pesquisa foi identificado nas conversas iniciais com a gestora de marketing e a
+direção da instituição parceira. Os dados de investimento e desempenho das campanhas de mídia
+digital permanecem distribuídos em fontes distintas, o que dificulta comparar canais, avaliar o
+retorno das campanhas e decidir sobre a distribuição do orçamento de marketing (Grupo do Projeto
+Integrador, 2026). Diante desse contexto, a pesquisa é orientada pela seguinte questão: como
+organizar e apresentar os dados históricos de investimentos em mídia digital de modo a apoiar a
+tomada de decisão da gestão de uma instituição de ensino?
+
+O problema vincula-se ao tema norteador da UNIVESP porque parte de um conjunto de dados existente,
+demanda análise de dados em escala e aprendizagem de máquina para interpretá-lo e prevê uma
+interface web para tornar os resultados acompanháveis. A escolha de indicadores e métricas é necessária para avaliar a
+efetividade das estratégias de marketing digital e verificar sua aderência aos objetivos
+organizacionais (Saura; Palos-Sánchez; Suárez, 2017). A proposta, portanto, não se limita à
+criação de uma interface: busca converter dados dispersos em informação que possa sustentar uma
+decisão de gestão.
+
+A relevância acadêmica decorre da aproximação entre ciência de dados, marketing digital e apoio à
+decisão. A literatura aponta que a ciência de dados pode extrair informações acionáveis de grandes
+conjuntos de dados nesse contexto, embora ainda existam lacunas sobre sua gestão e aplicação em
+estratégias de marketing (Saura, 2021). A relevância social e cultural está em desenvolver a
+solução a partir das necessidades expressas pelos profissionais da própria comunidade participante,
+preservando seu contexto de trabalho e submetendo a versão inicial à sua avaliação (Grupo do
+Projeto Integrador, 2026). Espera-se, assim, contribuir para que a gestão acompanhe informações
+relevantes às suas decisões sem impor um modelo desvinculado da realidade institucional.
+
+O escopo está limitado à consolidação, análise e visualização de dados históricos relacionados a
+campanhas de mídia paga e aos indicadores definidos com a instituição parceira. Não fazem parte
+do estudo a integração com contas reais de anúncios, CRM, sistemas acadêmicos ou outras bases
+operacionais, nem o tratamento de dados pessoais ou informações comerciais sensíveis. A solução
+possui, desde 27/08/2026, um ambiente acadêmico independente e sanitizado. Sua Fase 1, com os módulos
+Captação e Matrículas, utiliza somente dados sintéticos locais e está funcional e publicada na
+Vercel. Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos integram o plano
+completo, mas permanecem indisponíveis enquanto suas fases não forem explicitamente abertas pelo
+grupo. O ambiente acadêmico não mantém conexão com contas de anúncios, CRM, sistemas acadêmicos ou
+outras bases operacionais. A camada de IA agêntica receberá apenas contexto fictício ou sanitizado
+e será acionada pela linha de comando do grupo. A escolha do modelo de linguagem será instrumental
+e poderá ser alterada sem modificar o método: resultados de simulações continuarão identificados
+como exploratórios e dependerão de cálculo determinístico e revisão humana.
+
+### 2.3 Fundamentação teórica
+
+Para evitar a confusão entre os termos centrais do projeto, a fundamentação adota
+três camadas distintas. A primeira é a análise determinística, formada por métricas e indicadores
+obtidos por regras explícitas. A segunda é a aprendizagem de máquina, entendida como treinamento e
+avaliação de modelos que aprendem padrões a partir de exemplos históricos e produzem estimativas
+para novas observações (Jordan; Mitchell, 2015). A terceira é a IA agêntica/generativa, utilizada
+somente como apoio controlado à organização e interpretação, sem ser apresentada como o método que
+aprende com os dados.
+
+Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
+Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
+marketing ligadas a apoio à decisão e impacto financeiro. Assim, a contribuição técnica prevista
+não é apenas uma interface nem uma explicação gerada por IA: inclui o planejamento e, caso a base
+histórica de conteúdo orgânico da Meta se mostre adequada, o treinamento e a avaliação de um modelo
+de aprendizagem de máquina. O modelo, a variável-alvo, as variáveis de entrada, o particionamento
+dos dados e as métricas de avaliação serão documentados na metodologia e nos resultados.
+
+#### 2.3.1 Marketing digital e decisão orientada por dados
+
+O marketing digital pode ser compreendido como um conjunto integrado de atividades, canais e
+interações mediadas por tecnologias digitais, e não como a simples publicação de anúncios. Nessa
+perspectiva, a organização define objetivos, seleciona pontos de contato com seus públicos,
+acompanha as respostas obtidas e ajusta suas ações à luz dos resultados. Kannan e Li (2017)
+destacam justamente a necessidade de examinar o marketing digital de forma integrada, considerando
+os diferentes canais e as jornadas que conectam a organização aos seus públicos.
+
+Para uma instituição de ensino, esse enquadramento aproxima os dados de mídia de uma decisão
+gerencial concreta: avaliar como os recursos de comunicação contribuem para os objetivos de
+captação definidos pela organização. Isso não autoriza concluir, sem evidência, que uma campanha
+causou uma matrícula. O que a análise poderá fazer é organizar os registros históricos disponíveis,
+identificar padrões de desempenho e apresentar evidências comparáveis sobre canais, campanhas,
+públicos e períodos, sempre dentro dos limites dos dados recebidos.
+
+O uso de dados no marketing digital transforma registros operacionais — como investimento,
+exposição, interações e conversões registradas — em insumos para acompanhamento e decisão. Saura
+(2021) associa a aplicação de ciência de dados no marketing digital à análise de desempenho e à
+utilização de métricas para orientar ações. No escopo deste projeto, a interface web será o meio
+de visualização desses resultados; a contribuição central será a análise dos dados históricos e,
+em módulo experimental separado, a avaliação de aprendizagem de máquina sobre relatórios de
+conteúdo orgânico da Meta, se a base permitir uma avaliação metodologicamente válida.
+
+Assim, a decisão orientada por dados será tratada como processo de apoio, e não como substituição
+do julgamento dos responsáveis da instituição. Os indicadores e as estimativas analíticas devem
+oferecer evidências para priorizar investigações e discutir a distribuição do orçamento, enquanto
+as decisões finais permanecem condicionadas ao contexto institucional, às metas de captação e às
+restrições identificadas pela comunidade externa.
+
+#### 2.3.2 Tráfego pago e campanhas de Ads
+
+Tráfego pago, no escopo deste trabalho, corresponde às ações de comunicação em que a instituição
+investe recursos para veicular anúncios em plataformas digitais e direcionar usuários a um ponto de
+contato definido. A expressão não se confunde com todo o marketing digital: ela delimita a parcela
+das ações cuja veiculação produz registros de investimento e desempenho. O recorte empírico será
+formado exclusivamente pelos dados históricos de campanhas que a instituição parceira autorizar
+para uso acadêmico.
+
+As campanhas de Ads oferecem diferentes possibilidades de configuração. No caso da publicidade de
+busca, por exemplo, é possível associar anúncios a palavras-chave e ajustar lances segundo fatores
+como dispositivo e período de veiculação (Martins, 2019). Essa variedade torna inadequada uma
+leitura que considere somente o total investido ou o total de cliques. A análise deverá observar as
+unidades efetivamente presentes na base — como canal, campanha, grupo/conjunto de anúncios,
+anúncio, palavra-chave ou período — sem presumir que todos esses campos estarão disponíveis.
+
+O propósito da análise não será declarar, antecipadamente, qual campanha deve receber mais
+orçamento. Será organizar evidências para comparar exposição, interesse, conversão e custo em
+relação aos objetivos de captação definidos com a instituição. Em publicidade de busca paga, as
+decisões de lance e de orçamento são influenciadas pelo modo como as conversões são atribuídas aos
+elementos que antecedem a ação do usuário (Li et al., 2016). Por isso, a regra de atribuição
+registrada pela plataforma, quando disponível, será tratada como parte do contexto analítico e não
+como um detalhe técnico dispensável.
+
+Desse modo, o tráfego pago constitui o domínio de aplicação da análise de dados em escala do PI e
+do motor determinístico de apoio a decisões de investimento. O experimento de aprendizagem de
+máquina será mantido como módulo separado, com possível recorte em relatórios de conteúdo orgânico
+da Meta, para não confundir estimativas preditivas com os cenários determinísticos de orçamento. A
+interface web terá a função de apresentar as evidências produzidas; ela não substitui a análise nem
+determina autonomamente as decisões de investimento.
+
+#### 2.3.3 Indicadores de Ads e tomada de decisão
+
+Os indicadores serão calculados por regras determinísticas e usados em conjunto, evitando decisões
+baseadas em uma métrica isolada. Investimento, impressões e alcance descrevem a exposição;
+cliques e CTR avaliam a resposta inicial; CPC mostra o custo do tráfego; conversões e taxa de
+conversão aproximam o resultado de captação; CPA e retorno/ROAS apoiam a comparação entre o valor
+gerado e o recurso aplicado (Saura, 2021; Saura; Palos-Sánchez; Suárez, 2017).
+
+| Indicador ou combinação | Pergunta de decisão que orienta |
+|---|---|
+| Investimento, impressões e alcance | Onde houve entrega e exposição suficientes para justificar continuidade ou revisão da segmentação? |
+| Cliques, CTR e CPC | Quais anúncios, públicos ou palavras-chave atraem interesse com custo compatível? |
+| Conversões, taxa de conversão e CPA | Quais campanhas transformam interesse em ação desejada a um custo sustentável? |
+| Receita/valor atribuído, investimento e ROAS/retorno | Como priorizar a distribuição do orçamento entre campanhas e canais? |
+
+A atribuição de conversões será declarada antes das comparações, pois a regra escolhida altera o
+crédito atribuído aos elementos da jornada e pode modificar decisões de lance, orçamento e retorno
+estimado (Li et al., 2016). Quando não houver receita ou valor de conversão confiável na base, o
+relatório não calculará ROAS como se fosse dado observado; usará conversões, taxa de conversão e
+CPA como indicadores disponíveis, registrando essa limitação.
+
+#### 2.3.4 Análise de dados em escala e apoio à tomada de decisão
+
+A análise de dados em escala, neste projeto, começa pela organização de um conjunto histórico
+existente de registros de mídia paga. O objetivo não é acumular dados, mas estabelecer um processo
+reprodutível para receber, identificar, padronizar, integrar e transformar os registros em uma base
+adequada à análise. Essa preparação é necessária para que comparações entre campanhas e períodos
+não sejam afetadas por nomes inconsistentes, formatos incompatíveis, valores ausentes, duplicações
+ou unidades de medida diferentes.
+
+A qualidade desse processo é parte do resultado analítico. Foidl et al. (2024) identificam
+ingestão, integração, limpeza e transformação como etapas relevantes de pipelines de dados e
+associam problemas de qualidade a aspectos como tipos de dados, compatibilidade e rastreabilidade.
+No projeto, cada transformação relevante deverá ser documentada, de modo que um indicador ou uma
+estimativa possa ser relacionado à sua origem, ao período analisado e às regras aplicadas.
+
+Essa documentação também permite distinguir mera repetição de uma análise verdadeiramente
+reprodutível. A reprodutibilidade exige que outro integrante consiga reconstruir o resultado a
+partir das mesmas entradas e condições de processamento (Peng, 2011). Por isso, o histórico de
+transformações, as fórmulas e os parâmetros comporão a evidência do resultado, e não apenas uma
+descrição auxiliar do desenvolvimento.
+
+Após a preparação, a análise explorará os dados em seus níveis de agregação disponíveis para
+identificar distribuição de investimento, variações temporais, diferenças de desempenho e possíveis
+inconsistências a investigar. Esses achados não serão automaticamente convertidos em relações de
+causa e efeito. Eles funcionarão como evidências para a interpretação conjunta com a instituição e
+como base para as rotinas de indicadores. O eventual modelo de aprendizagem de máquina será
+avaliado em módulo próprio, com dados orgânicos da Meta e protocolo separado.
+
+#### 2.3.5 Aprendizagem de máquina aplicada ao marketing digital
+
+A aprendizagem de máquina será empregada como método analítico distinto do cálculo de indicadores.
+Enquanto CTR, CPC, taxa de conversão e CPA resultam de fórmulas previamente definidas, um modelo de
+aprendizagem de máquina é treinado com exemplos históricos para reconhecer padrões e produzir uma
+estimativa para observações não usadas no treinamento. Jordan e Mitchell (2015) caracterizam esse
+campo pela melhoria do desempenho em uma tarefa a partir da experiência representada pelos dados.
+
+No contexto do marketing, De Mauro, Sestino e Bacconi (2022) situam a aprendizagem de máquina como
+subárea da inteligência artificial e identificam aplicações ligadas ao apoio à decisão e ao impacto
+financeiro. Neste PI, o recorte experimental proposto é usar relatórios históricos de conteúdo
+orgânico da Meta, caso contenham volume e variáveis suficientes. A variável-alvo poderá ser uma
+medida de engajamento observada após a publicação ou uma classe de desempenho definida a partir
+dessa medida; a escolha dependerá da inspeção da base e será registrada antes do treinamento.
+
+O método exigirá a descrição das variáveis de entrada, da variável-alvo, do particionamento entre
+treinamento e teste, do modelo ou modelos comparados e das métricas de avaliação. A qualidade de um
+modelo não será inferida apenas por produzir uma previsão aparentemente plausível: deverá ser
+avaliada em dados separados e confrontada com uma referência simples e reprodutível. Dessa forma,
+a aprendizagem de máquina complementará os indicadores determinísticos, sem substituí-los.
+
+#### 2.3.6 Visualização de dados e dashboards para apoio à gestão educacional
+
+A visualização de dados é a camada pela qual os resultados analíticos se tornam acessíveis aos
+profissionais que participam da decisão. Um dashboard não deve apenas reunir gráficos: deve
+apresentar indicadores, comparações e recortes temporais de forma que o usuário possa compreender
+o que está sendo medido e formular perguntas sobre o desempenho das campanhas. Em instituições de
+ensino, Lemes, Dias e Oliveira (2023) identificam o uso de dashboards como recurso de apoio à
+tomada de decisão e à integração de informações provenientes de sistemas distintos.
+
+Além da integração, a organização visual precisa corresponder à pergunta analítica apresentada.
+Padrões de design de dashboards ajudam a relacionar estrutura, interação e conteúdo, permitindo
+justificar por que determinada visão emprega comparação temporal, detalhamento, agrupamento ou
+destaque de exceções (Bach et al., 2023). O protótipo deverá, portanto, selecionar cada recurso
+visual por sua função na interpretação, e não apenas por disponibilidade técnica.
+
+No protótipo, a interface web deverá apresentar os indicadores calculados, os filtros compatíveis
+com a base e, quando houver modelo validado, suas estimativas claramente diferenciadas de valores
+observados. O desenho da visualização deverá preservar contexto: período, canal, unidade de análise,
+fórmula do indicador e limitações dos dados precisam estar disponíveis para interpretação. Assim,
+a interface não transformará uma estimativa em certeza nem ocultará a regra que originou uma métrica.
+
+A avaliação com a comunidade externa verificará se as visualizações permitem compreender os
+resultados e discutir as decisões previstas. As sugestões recebidas serão registradas como
+evidências de adequação e melhoria do protótipo, sem afirmar que o dashboard, por si só, garante
+melhoria nas decisões ou nos resultados de captação.
+
+#### 2.3.7 Uso controlado de IA agêntica e supervisão humana
+
+A IA agêntica será tratada como recurso auxiliar de organização e interação com ferramentas, e não
+como sinônimo de aprendizagem de máquina aplicada à base de campanhas. Agentes baseados em modelos
+de linguagem podem combinar componentes como planejamento, memória e uso de ferramentas; contudo,
+a área permanece em desenvolvimento e apresenta desafios de avaliação e confiabilidade (Wang et
+al., 2024). Essa característica impede que suas respostas sejam aceitas como evidência sem
+verificação.
+
+No projeto, modelos de linguagem de alta capacidade poderão atuar como camada de interpretação
+assistida: organizar evidências, comparar cenários e formular explicações preliminares sobre
+indicadores e resultados já calculados. Essa atividade não será confundida com a inferência do
+modelo de aprendizagem de máquina. O agente não terá acesso a contas reais de anúncios, não
+executará alterações de orçamento e não definirá o modelo de aprendizagem de máquina sem validação
+do grupo. Dados sensíveis ou identificáveis não serão enviados a essa camada.
+
+Para garantir rastreabilidade, a engenharia de memória/contexto do agente reunirá somente
+documentos versionados, dados locais sanitizados, fórmulas de indicadores, resultados do modelo e
+decisões já registradas. Toda explicação ou recomendação deverá indicar a evidência que a sustenta
+— dado, período, cálculo, resultado estimado ou referência bibliográfica — e será rejeitada quando
+criar métricas, resultados ou conclusões sem base verificável. A decisão final sobre a interpretação
+dos resultados, as recomendações e a evolução do protótipo permanecerá sob responsabilidade humana,
+em diálogo com a instituição parceira.
+
+### 2.4 Metodologia
+
+O percurso metodológico combinará uma etapa quantitativa, voltada à preparação e à análise dos
+registros históricos, com uma etapa qualitativa, destinada a compreender as necessidades dos
+profissionais e avaliar a utilidade e a compreensão do protótipo. As duas etapas permanecerão
+articuladas: os dados delimitarão o que pode ser calculado ou estimado, enquanto a participação da
+comunidade indicará quais perguntas de gestão e formas de apresentação são relevantes. A descrição
+abaixo distingue a baseline técnica já construída dos procedimentos acadêmicos ainda planejados;
+atividades de escuta, aplicação ou validação ainda não realizadas não são apresentadas como
+resultado.
+
+#### 2.4.1 Delineamento do projeto e participação da comunidade externa
+
+O projeto possui caráter aplicado: parte de uma demanda apresentada pela instituição parceira e
+busca produzir uma solução analítica passível de ser discutida no contexto em que o problema foi
+identificado. O percurso combinará levantamento de necessidades, análise de dados históricos,
+construção de uma visualização e validação progressiva com os profissionais que participam das
+decisões de marketing. Essa aproximação é compatível com o uso de Design Thinking em pesquisas que
+articulam compreensão do problema, ideação e experimentação de soluções (Rosado; Dias, 2024).
+
+Na etapa de **ouvir**, serão consolidados os registros das conversas já realizadas e levantadas as
+perguntas, restrições e prioridades dos profissionais envolvidos. Na etapa de **criar**, essas
+necessidades serão relacionadas aos campos disponíveis, às regras de cálculo e às alternativas de
+visualização, produzindo uma versão inicial da solução. Na etapa de **prototipar e implementar**, a
+interface será apresentada à comunidade para execução de tarefas de interpretação e coleta de
+observações. Cada passagem entre etapas deverá deixar evidências — registro da necessidade,
+decisão de projeto, versão do protótipo e contribuição recebida — para demonstrar como a escuta
+afetou a solução.
+
+A participação da comunidade externa ocorrerá por meio de conversas, apresentação das leituras
+analíticas e coleta de sugestões sobre a utilidade e a compreensibilidade da solução. Somente
+atividades efetivamente realizadas serão registradas como evidências do processo. Enquanto uma
+conversa, visita ou validação não tiver ocorrido, ela será apresentada como etapa planejada, e não
+como resultado alcançado.
+
+#### 2.4.2 Arquitetura analítica de três camadas
+
+O motor analítico adotará três camadas com escopos distintos. A primeira será a camada de
+conformidade, formada por regras de negócio e indicadores determinísticos que comparam valores
+observados a requisitos previamente declarados. A segunda realizará leituras agregadas do funil de
+captação e das matrículas, quando os períodos e os campos permitirem esse cruzamento. A terceira
+registrará os limites de atribuição individual, isto é, os casos em que as fontes disponíveis não
+permitem ligar uma ação de mídia, um contato e uma matrícula específica.
+
+Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma
+correlação agregada seja tratada como atribuição por canal. Quando uma informação necessária não
+estiver disponível, o resultado será sinalizado como não verificável. A ausência de dado não será
+preenchida por estimativa silenciosa nem convertida em certeza analítica. A distinção entre métricas
+de desempenho, decisões de investimento e regras de atribuição é necessária porque a atribuição
+adotada altera a leitura de retorno e as decisões de orçamento (Saura, 2021; Li et al., 2016).
+
+#### 2.4.3 Fontes de dados, recortes temporais e confidencialidade
+
+As análises utilizarão, conforme a disponibilidade autorizada, dados históricos de busca paga,
+mídia social, funil de captação, matrículas e conteúdo orgânico. Cada fonte terá seu período de
+referência e sua unidade de análise identificados antes de qualquer comparação. Métricas de fontes
+ou janelas temporais distintas não serão somadas ou comparadas como se representassem o mesmo
+fenômeno; por exemplo, conversão de busca, conversa iniciada, lead e matrícula permanecerão
+indicadores distintos. Essa precaução é coerente com a literatura de busca paga, na qual o crédito
+de conversão depende da estratégia de atribuição e pode alterar a interpretação do retorno
+(Li et al., 2016).
+
+A coleta quantitativa será realizada a partir de arquivos ou exportações fornecidos de forma
+autorizada, mantidos no ambiente operacional e descritos por fonte, período, granularidade e campos
+disponíveis. Antes do cálculo dos indicadores, será produzido um inventário das fontes e um registro
+das transformações necessárias. A coleta qualitativa utilizará os registros das conversas e da
+avaliação orientada do protótipo, sem atribuir aos participantes afirmações que não tenham sido
+efetivamente registradas. A análise quantitativa descreverá distribuições, variações temporais e
+diferenças de desempenho; a análise qualitativa organizará necessidades e observações por temas
+relacionados à compreensão, utilidade e melhoria da solução.
+
+Os dados autorizados, o código operacional e os relatórios técnicos detalhados permanecerão no
+repositório real da solução. No ambiente acadêmico, serão usados apenas dados fictícios ou
+sanitizados, sem identificadores pessoais, credenciais, nomes de contas ou informações comerciais
+sensíveis. Essa delimitação permite discutir o método e demonstrar a interface sem expor a
+instituição parceira.
+
+#### 2.4.4 Preparação, governança e rastreabilidade dos dados
+
+Os dados passarão por ingestão local, identificação da origem, normalização de nomes e formatos,
+verificação de tipos, tratamento explícito de valores ausentes e consolidação em artefatos
+versionados. Cada indicador deverá preservar a informação sobre fonte, período, unidade de análise
+e fórmula utilizada. Problemas de qualidade em pipelines podem ocorrer em etapas de ingestão,
+integração, limpeza e transformação, o que reforça a necessidade de documentar as regras aplicadas
+(Foidl et al., 2024).
+
+Valores ausentes, incompatibilidades de período e falhas estruturais serão sinalizados no resultado;
+não serão convertidos silenciosamente em zero nem em estimativas. Essa regra permite distinguir um
+indicador efetivamente medido de um dado indisponível e possibilita a auditoria posterior das
+transformações realizadas.
+
+#### 2.4.5 Indicadores, regras de negócio e cenários determinísticos de investimento
+
+Os indicadores serão calculados por rotinas determinísticas, com fórmulas e parâmetros registrados.
+Entre eles poderão estar investimento, impressões, alcance, frequência, cliques, CTR, CPC,
+conversões, taxa de conversão, CPA, CPM e indicadores de participação de impressões, conforme os
+campos efetivamente disponibilizados. A interpretação ocorrerá no contexto do objetivo da campanha:
+métricas de campanhas com finalidades diferentes não serão tratadas como diretamente equivalentes.
+
+Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento serão
+explicitados antes da construção de cenários. Os cenários mínimo, ideal e agressivo, quando
+aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados e valores
+observados. Eles não projetarão matrícula, não garantirão retorno e não ocultarão conflitos entre
+regras ou limitações dos dados. Indicadores e métricas de desempenho devem ser interpretados de
+acordo com os objetivos organizacionais e com o contexto de cada ação de marketing digital
+(Saura; Palos-Sánchez; Suárez, 2017); em campanhas de busca, a multiplicidade de configurações
+também torna inadequada uma decisão apoiada em uma única métrica (Martins, 2019).
+
+#### 2.4.6 Auditoria, reprodutibilidade e limites de atribuição
+
+Cada resultado exibido deverá poder ser reconstituído a partir de sua fonte, período, regra de
+transformação e fórmula. Os arquivos de entrada processados, as constantes de cálculo e os
+resultados intermediários serão versionados no repositório real, permitindo revisão do caminho que
+levou a cada indicador ou cenário. A reprodutibilidade é parte do procedimento analítico, pois
+permite conferir os resultados computacionais e suas condições de produção (Peng, 2011).
+
+O método declarará limites de atribuição. Impressão, clique, conversão de plataforma, conversa,
+lead e matrícula não serão tratados como sinônimos. Quando houver apenas dados agregados, a análise
+poderá descrever associação entre etapas do funil, mas não atribuir uma matrícula a uma campanha ou
+a um canal específico. Essa ressalva será exibida junto às interpretações que dependam desses dados,
+pois escolhas de atribuição alteram a leitura do retorno de investimentos em busca paga
+(Li et al., 2016).
+
+#### 2.4.7 Protocolo experimental de aprendizagem de máquina sobre conteúdo orgânico da Meta
+
+⬜ Avaliará a disponibilidade de relatórios históricos de conteúdo orgânico da Meta. Havendo
+volume e variáveis adequados, definirá variável-alvo, atributos disponíveis antes da publicação,
+divisão temporal entre treino e teste, referência determinística, modelos comparados e métricas de
+avaliação. O código, os dados autorizados, o treinamento, os testes e o relatório técnico detalhado
+serão mantidos no repositório real da solução; este repositório acadêmico registrará apenas o
+método e resultados sanitizados ou fictícios necessários à demonstração. O protocolo distinguirá
+explicitamente cálculos por fórmula de modelos treinados com exemplos históricos, conforme a
+caracterização de aprendizagem de máquina apresentada por Jordan e Mitchell (2015), e registrará
+o emprego do modelo como aplicação de IA em marketing, nos termos discutidos por De Mauro, Sestino
+e Bacconi (2022).
+
+#### 2.4.8 Interpretação assistida por IA e engenharia de memória/contexto
+
+Modelos de linguagem de alta capacidade serão utilizados somente como camada de interpretação
+assistida. Poderão organizar evidências, comparar cenários e formular explicações preliminares a
+partir de indicadores e resultados já calculados. Essa atividade não será apresentada como
+aprendizagem de máquina nem como evidência empírica independente. Agentes baseados em modelos de
+linguagem combinam recursos como planejamento, memória e uso de ferramentas, mas requerem cuidados
+de avaliação e confiabilidade (Wang et al., 2024).
+
+A engenharia de memória/contexto restringirá o material disponível ao agente a documentos
+versionados, dados sanitizados, fórmulas, resultados calculados ou estimados e referências
+verificadas. Cada explicação ou recomendação deverá apontar o dado, período, cálculo, estimativa ou
+fonte que a fundamenta. Saídas sem base rastreável, que inventem métricas ou que ultrapassem os
+limites de atribuição declarados, não serão utilizadas.
+
+#### 2.4.9 Construção do protótipo e arquitetura da interface
+
+A baseline do protótipo foi construída em Next.js e TypeScript, separando os dados sintéticos locais
+da camada de apresentação web. Essa separação evita que a interface acadêmica dependa de contas de
+anúncios, credenciais ou integrações operacionais em tempo de execução. Em 27/08/2026, a Fase 1 foi
+disponibilizada com os módulos Captação e Matrículas; as estruturas preparatórias das fases 2 a 4
+permanecem bloqueadas e não constituem entrega funcional. Como referência técnica, Thakkar (2020)
+descreve componentes React e recursos de renderização no servidor com Next.js.
+
+O desenho das visões da Fase 1 é orientado pela finalidade analítica, com indicadores, filtros,
+comparações e avisos de limitação apresentados de maneira coerente. Padrões de design de
+dashboards auxiliam a discutir escolhas de organização visual, interação e informação exibida
+(Bach et al., 2023). As evoluções deverão manter a origem e o período dos dados visíveis, além de
+diferenciar valores sintéticos, cálculos determinísticos e futuras estimativas.
+
+#### 2.4.10 Interface web e validação da solução
+
+A interface web da Fase 1 está funcional e publicada na Vercel como meio de apresentação da
+estrutura analítica de Captação e Matrículas, sem substituir o processo de análise. Os valores
+exibidos pertencem a um cenário histórico inteiramente sintético e não representam coleta realizada
+nas datas simuladas. As fases futuras deverão mostrar indicadores, cenários, período de referência,
+fonte e limitações compatíveis com seu escopo e, quando existir modelo validado, diferenciar
+explicitamente valores calculados de estimativas.
+
+A validação ocorrerá com profissionais da instituição parceira, por meio de apresentação orientada
+do protótipo e registro das observações recebidas sobre compreensão, utilidade e pontos de melhoria.
+Técnicas de pesquisa de experiência do usuário apoiam a identificação de necessidades e a avaliação
+de serviços de informação (Pinheiro; Dias, 2023). O relatório registrará as contribuições efetivamente
+recebidas, sem antecipar aceitação, melhoria de desempenho ou alteração de decisões pela instituição.
+
+### 2.5 Resultados preliminares: solução inicial
+
+#### Protótipo acadêmico
+
+Nesta fase, a solução inicial possui uma aplicação web acadêmica independente do ambiente
+operacional da instituição. Em 27/08/2026, o ambiente sanitizado da Fase 1 tornou-se funcional e
+foi publicado na Vercel, disponibilizando somente Captação e Matrículas. Os módulos apresentam
+relatórios, indicadores e visualizações baseados em dados sintéticos e não mantêm conexão com
+contas de anúncios, CRM, sistema acadêmico ou qualquer base real da instituição parceira.
+
+O protótipo organiza a visualização de informações produzidas em cenário sintético e determinístico,
+preservando a identificação de recortes, a origem acadêmica dos dados e os limites de interpretação.
+O plano completo permanece incremental: os módulos de Ads, Reels orgânicos, Objetivo da Gestão e
+Arquitetura & Algoritmos estão previstos para fases posteriores e não constituem resultados
+funcionais desta entrega.
+
+```text
+dados sintéticos da Fase 1
+        ↓
+inventário, limpeza e padronização
+        ↓
+indicadores determinísticos
+        ↓
+Captação e Matrículas na interface web
+        ↓
+aplicação e avaliação pela comunidade externa (pendentes)
+```
+
+#### Módulo de Captação
+
+O módulo de Captação apresenta o funil sintético de contatos, visitas e matrículas. A página permite
+selecionar safras e ciclos, consultar indicadores do recorte e visualizar as taxas derivadas entre as
+etapas do funil. Os valores exibidos não representam resultados da instituição parceira: pertencem ao
+cenário acadêmico determinístico utilizado para demonstrar a organização das informações.
+
+Figura 1 – Visão geral do módulo de captação do protótipo acadêmico
+
+[INSERIR FIGURA 1 – VISÃO GERAL DO MÓDULO DE CAPTAÇÃO]
+
+(https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
+
+Fonte: Elaborado pelo grupo (2026).
+
+A figura deverá evidenciar o cabeçalho que identifica a Fase 1, os filtros de safra e ciclo, os
+indicadores principais e o funil de captação. Dessa forma, documentará que a interface reúne em uma
+mesma visão as etapas do cenário sintético, sem atribuir relações causais a dados institucionais reais.
+
+Além da visão agregada, o módulo disponibiliza séries mensais, distribuição da situação dos contatos,
+origem declarada e comparativo por safra. Esses recursos tornam visíveis diferentes recortes do
+cenário e preservam a distinção entre valores observados no conjunto sintético e dados ausentes.
+
+Figura 2 – Visualizações complementares do módulo de captação em cenário sintético
+
+[INSERIR FIGURA 2 – GRÁFICOS MENSAIS, ORIGEM DOS CONTATOS E COMPARATIVO POR SAFRA]
+
+(https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
+
+Fonte: Elaborado pelo grupo (2026).
+
+A figura deverá mostrar, em uma área complementar da página, pelo menos uma série mensal e o
+comparativo por safra ou a distribuição da origem declarada dos contatos. A interpretação limita-se à
+capacidade técnica de organizar e comparar o cenário sintético; não demonstra desempenho real de
+canais ou campanhas.
+
+#### Módulo de Matrículas
+
+O módulo de Matrículas apresenta um histórico sintético por safra, ciclo, turma e mês. A interface
+permite filtrar os recortes e distinguir total de matrículas, rematrículas, novas matrículas e retenção.
+Quando não há safra anterior para comparação, a retenção é identificada como indeterminada, em vez de
+ser inferida como resultado observado.
+
+Figura 3 – Visão geral do módulo de matrículas do protótipo acadêmico
+
+[INSERIR FIGURA 3 – VISÃO GERAL DO MÓDULO DE MATRÍCULAS]
+
+(https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
+
+Fonte: Elaborado pelo grupo (2026).
+
+A figura deverá evidenciar o cabeçalho da Fase 1, os filtros por safra e ciclo, os indicadores de
+matrículas e o gráfico de composição por safra. Ela documentará a apresentação das contagens
+sintéticas e das regras explícitas de cálculo, sem representar alunos ou registros operacionais.
+
+As visualizações complementares discriminam a composição por ciclo e turma, a efetivação mensal e a
+tabela de retenção por safra. A organização desses elementos permite demonstrar como a interface
+mantém separados os valores calculados, as contagens sintéticas e os casos em que não há base de
+comparação.
+
+Figura 4 – Visualizações complementares do módulo de matrículas em cenário sintético
+
+[INSERIR FIGURA 4 – COMPOSIÇÃO POR CICLO OU TURMA, SÉRIE MENSAL E TABELA DE RETENÇÃO]
+
+(https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
+
+Fonte: Elaborado pelo grupo (2026).
+
+A figura deverá mostrar, em uma área complementar da página, a composição por ciclo ou turma e a
+série mensal ou a tabela de retenção. O registro visual deverá deixar evidente que as turmas e os
+valores pertencem ao cenário fictício, não à operação da instituição parceira.
+
+#### Estado atual do protótipo
+
+A página inicial do ambiente acadêmico apresenta os módulos disponíveis e o plano de rollout por
+fases. Sua inclusão documenta a estratégia incremental adotada: Captação e Matrículas constituem a
+Fase 1 ativa, enquanto Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos aparecem
+expressamente como planejamento, sem serem apresentados como funcionalidades concluídas.
+
+Figura 5 – Plano de rollout por fases do protótipo acadêmico
+
+[INSERIR FIGURA 5 – FASE 1 ATIVA E FASES POSTERIORES PLANEJADAS]
+
+(https://pij-410-drp-14-a2026-s2-t002.vercel.app/)
+
+Fonte: Elaborado pelo grupo (2026).
+
+A figura deverá capturar a seção “Plano por fases”, incluindo a identificação da Fase 1 como ativa e
+das fases posteriores como planejadas. Ela comprovará a delimitação do resultado técnico atual, e não
+a disponibilidade das páginas bloqueadas.
+
+Como resultado preliminar, estão disponíveis a primeira versão executável do ambiente acadêmico, os
+módulos Captação e Matrículas, os dados sintéticos determinísticos e os controles que mantêm as fases
+posteriores bloqueadas. A existência desse protótipo técnico não constitui aplicação ou validação com
+a comunidade externa. Permanecem pendentes a apresentação orientada aos profissionais da instituição,
+o registro das tarefas realizadas, a coleta de observações e a eventual priorização de melhorias; até
+que essas atividades ocorram, não se atribuem à comunidade aceitação, feedback, impacto ou melhoria
+de decisão.
+
+---
+
+## Referências
+
+BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
+
+DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
+
+FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
+
+GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação III**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
+
+JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
+
+KANNAN, P. K.; LI, Hongshuang "Alice". Digital marketing: a framework, review and research agenda. **International Journal of Research in Marketing**, v. 34, n. 1, p. 22-45, 2017. DOI: 10.1016/j.ijresmar.2016.11.006. Disponível em: https://doi.org/10.1016/j.ijresmar.2016.11.006. Acesso em: 26 ago. 2026.
+
+LEMES, Thieny de Cássio; DIAS, Marina Oliveira de Souza; OLIVEIRA, Tiago de. Análise do uso de dashboard como ferramenta de apoio a tomada de decisão em instituições de ensino: uma revisão sistemática da literatura. **RENOTE**, v. 21, n. 1, p. 281-290, 2023. DOI: 10.22456/1679-1916.134356. Disponível em: https://doi.org/10.22456/1679-1916.134356. Acesso em: 24 ago. 2026.
+
+LI, Hongshuang "Alice"; KANNAN, P. K.; VISWANATHAN, Siva; PANI, Abhishek. Attribution strategies and return on keyword investment in paid search advertising. **Marketing Science**, v. 35, n. 6, p. 831-848, 2016. DOI: 10.1287/mksc.2016.0987. Disponível em: https://doi.org/10.1287/mksc.2016.0987. Acesso em: 26 ago. 2026.
+
+MARTINS, Felipe. **Otimização de uma campanha publicitária na rede de pesquisa do Google Ads utilizando Teoria da Decisão Bayesiana**. 2019. Dissertação (Mestrado) – Universidade de São Paulo, São Paulo, 2019. DOI: 10.11606/d.45.2019.tde-22102019-115749. Disponível em: https://doi.org/10.11606/d.45.2019.tde-22102019-115749. Acesso em: 24 ago. 2026.
+
+PENG, Roger D. Reproducible research in computational science. **Science**, v. 334, n. 6060, p. 1226-1227, 2011. DOI: 10.1126/science.1213847. Disponível em: https://doi.org/10.1126/science.1213847. Acesso em: 25 ago. 2026.
+
+PINHEIRO, Gabriela da Silva Santos; DIAS, Célia da Consolação. Técnicas e métodos de pesquisa de experiência do usuário (UX) para avaliação de estudo de usuários da informação. **Perspectivas em Gestão & Conhecimento**, v. 13, n. 2, p. 133-148, 2023. DOI: 10.22478/ufpb.2236-417x.2023v13n2.63290. Disponível em: https://doi.org/10.22478/ufpb.2236-417x.2023v13n2.63290. Acesso em: 24 ago. 2026.
+
+ROSADO, Keila Mara Lara; DIAS, Célia da Consolação. A metodologia Design Thinking nas pesquisas científicas e a pertinência de sua apropriação pela Ciência da Informação. **Encontros Bibli: Revista Eletrônica de Biblioteconomia e Ciência da Informação**, v. 29, e96222, 2024. DOI: 10.5007/1518-2924.2024.e96222. Disponível em: https://doi.org/10.5007/1518-2924.2024.e96222. Acesso em: 26 ago. 2026.
+
+SAURA, José Ramón. Using Data Sciences in Digital Marketing: framework, methods, and performance metrics. **Journal of Innovation & Knowledge**, v. 6, n. 2, p. 92-102, 2021. DOI: 10.1016/j.jik.2020.08.001. Disponível em: https://doi.org/10.1016/j.jik.2020.08.001. Acesso em: 25 ago. 2026.
+
+SAURA, José Ramón; PALOS-SÁNCHEZ, Pedro; SUÁREZ, Luis Manuel Cerdá. Understanding the Digital Marketing Environment with KPIs and Web Analytics. **Future Internet**, v. 9, n. 4, p. 76, 2017. DOI: 10.3390/fi9040076. Disponível em: https://doi.org/10.3390/fi9040076. Acesso em: 24 ago. 2026.
+
+THAKKAR, Mohit. **Building React Apps with Server-Side Rendering**: use React, Redux, and Next to build full server-side rendering applications. Berkeley: Apress, 2020. DOI: 10.1007/978-1-4842-5869-9. Disponível em: https://doi.org/10.1007/978-1-4842-5869-9. Acesso em: 26 ago. 2026.
+
+UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico dos cursos de Bacharelado em Tecnologia da Informação, Ciência de Dados e Engenharia de Computação**. São Paulo: UNIVESP, 2020. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BTI.pdf. Acesso em: 25 ago. 2026.
+
+UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico do curso de Bacharelado em Ciência de Dados**. São Paulo: UNIVESP, 2026. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BCD-2026.pdf. Acesso em: 25 ago. 2026.
+
+WANG, Lei et al. A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.

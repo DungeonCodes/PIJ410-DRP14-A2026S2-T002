@@ -468,13 +468,88 @@ pessoais ou credenciais.
 
 ---
 
+Data: 2026-08-27
+Ação realizada: revisão integral do relatório parcial contra a rubrica da UNIVESP e o acervo
+bibliográfico do projeto.
+Fontes candidatas avaliadas para possível ampliação: Leal, Nascimento e Soares Neto (2019),
+Sedrakyan, Mannens e Verbert (2018) e Sivarajah et al. (2016), consultadas nos periódicos de origem.
+Resultado: as candidatas permaneceram fora do relatório por incompatibilidade de segmento,
+especificidade de domínio ou risco de enquadrar o conjunto como Big Data sem evidência suficiente.
+O texto foi ampliado com fontes já lidas para fortalecer a introdução, a reprodutibilidade, o design
+de dashboards, a abordagem quantitativa/qualitativa e o ciclo ouvir–criar–prototipar. A seção 2.5
+passou a registrar a concepção da solução inicial e a distinguir explicitamente a ideia documentada
+da aplicação ainda pendente. As referências comerciais da Anthropic e da OpenAI foram retiradas do
+relatório parcial e mantidas no acervo como documentação técnica lida, sem uso acadêmico atual.
+Arquivos alterados: `docs/relatorio/parcial.md`, `docs/referencias.md`,
+`docs/fichamentos_bibliograficos.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum commit realizado.
+
+---
+
+Data: 2026-08-27
+Ação realizada: criação de uma síntese de triagem das obras completas do acervo bibliográfico.
+Buscas complementares: páginas dos periódicos, repositórios institucionais, DOI e versões abertas
+dos textos dos eixos E1, E3 a E11; foram verificados objetivos, métodos, resultados e limitações
+disponíveis. Consultas específicas incluíram captação e marketing de serviços em IES, dashboards e
+BI, Design Thinking, avaliação de usabilidade, frameworks front-end, benchmarks de PostgreSQL,
+Big Data, agentes generativos, contexto longo, RAG e arquiteturas cognitivas para agentes.
+Resultado: `docs/resumos_obras_bibliograficas.md` reúne as 43 obras e três fontes institucionais,
+separa leitura registrada, abstract/trechos e metadados, e atribui uma decisão preliminar de
+prioridade sem promover candidatas nem autorizar citações. A ADR-004 e os documentos do acervo foram
+atualizados para exigir, em futuras inclusões, catálogo ABNT, síntese geral e fichamento do recorte.
+Arquivos alterados: `docs/resumos_obras_bibliograficas.md`, `docs/referencias.md`,
+`docs/fichamentos_bibliograficos.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum commit realizado.
+
+---
+
+Data: 2026-08-27
+Ação realizada: reconhecimento formal da baseline técnica da aplicação acadêmica na governança do
+projeto.
+Evidências verificadas no próprio repositório: aplicação Next.js + TypeScript; feature gate central
+em `src/lib/fases.ts`; Fase 1 ativa com Captação e Matrículas; módulos de Ads, Reels orgânicos,
+Objetivo da Gestão e Arquitetura & Algoritmos bloqueados; datasets locais sintéticos com metadados e
+geração determinística; testes de fases, determinismo e não vazamento.
+Validações executadas antes da atualização documental: integridade da zona científica protegida
+confirmada; 54 verificações do feature gate, 46 verificações de determinismo e 35 verificações de
+não vazamento aprovadas. Nenhum gerador de dados, build ou integração externa foi executado.
+Resultado: criada a ADR-006 canônica, com referência ao ADR-A001 técnico já existente, e atualizado
+o contexto mestre. A baseline é 27/08/2026; datas anteriores exibidas nos datasets representam
+cronologia sintética, não coleta acadêmica. Nenhuma fase foi liberada e não houve alteração em
+aplicação, dados, scripts, configurações, documentação científica protegida ou outputs. Nenhum
+commit ou push realizado.
+Arquivos alterados: `docs/decisions.md`, `docs/run_log.md` e `docs/master_context.md`.
+
+---
+
+Data: 2026-08-27
+Ação realizada: revisão de sincronização entre a documentação científica/acadêmica e o rollout
+funcional da aplicação.
+Documentos inspecionados: contexto mestre, decisões, relatório parcial, Plano de Ação oficial,
+rascunho do Plano de Ação, planejamento por fases, documentação de migração e referência, registros
+de execução, requisitos metodológicos e materiais de Design Thinking. O Plano de Ação foi mantido
+como registro histórico e planejado, sem reescrita de atividades ou evidências.
+Inconsistências corrigidas: o relatório parcial ainda registrava a primeira versão executável e a
+aplicação com dados fictícios como pendentes; a documentação geral ainda continha formulações de
+protótipo futuro; e os materiais de referência não estavam explicitamente separados do estado
+funcional acadêmico. Foi registrada a confirmação do grupo de que o ambiente sanitizado da Fase 1
+está funcional e publicado na Vercel, exclusivamente com Captação e Matrículas e dados sintéticos.
+Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos permanecem planejados e
+bloqueados. A aplicação e a validação com a comunidade externa continuam pendentes e não foram
+apresentadas como realizadas.
+Validação: 54 verificações do feature gate e 35 verificações de não vazamento aprovadas. Nenhum
+código, configuração, dataset, modelo ou documento normativo da UNIVESP foi alterado; nenhuma fase
+foi habilitada.
+Arquivos alterados nesta revisão: `docs/master_context.md`, `docs/decisions.md`,
+`docs/relatorio/parcial.md`, `docs/migracao-modelo/README.md`,
+`docs/migracao-modelo/arquitetura/plano-de-fases.md` e `docs/run_log.md`. Nenhum commit ou push
+realizado.
+
+---
+
 Data: 2026-09-23
 Ação realizada: registro do ADR-007 para revisão de alterações propostas nos relatórios.
 Arquivo alterado:
 - `docs/decisions.md`
-Resultado: propostas passam a usar, no ponto exato da alteração, os blocos `(Exclusão vN: ...)` e
-`(Inclusão vN: ...)`. Após aprovação, o texto é consolidado sem marcadores; o Git preserva as
-versões anteriores e arquivos com marcações não são convertidos em entregas.
+Resultado: propostas passam a usar, no ponto exato da alteração, os blocos `(Exclusão vN: ...)` e `(Inclusão vN: ...)`. Após aprovação, o texto é consolidado sem marcadores; o Git preserva as versões anteriores e arquivos com marcações não são convertidos em entregas.
 
 ---
 
@@ -492,9 +567,7 @@ Data: 2026-09-23
 Ação realizada: proposta de revisão dos objetivos específicos do Relatório Parcial.
 Arquivo alterado:
 - `docs/relatorio/relatorio_parcial.md`
-Resultado: conforme o ADR-007, a lista anterior de sete objetivos foi preservada em `(Exclusão v1:
-...)` e a proposta de cinco objetivos em `(Inclusão v2: ...)`. A alteração agrupa dados e
-indicadores, retira a IA agêntica como objetivo específico e preserva-a como apoio metodológico.
+Resultado: conforme o ADR-007, a lista anterior de sete objetivos foi preservada em `(Exclusão v1: ...)` e a proposta de cinco objetivos em `(Inclusão v2: ...)`. A alteração agrupa dados e indicadores, retira a IA agêntica como objetivo específico e preserva-a como apoio metodológico.
 
 ---
 
@@ -502,9 +575,7 @@ Data: 2026-09-23
 Ação realizada: explicitação da correspondência entre objetivos específicos e metodologia planejada.
 Arquivo alterado:
 - `docs/relatorio/relatorio_parcial.md`
-Resultado: foi inserido, conforme o ADR-007, um bloco `(Inclusão v1: ...)` que vincula os cinco
-objetivos específicos aos itens metodológicos correspondentes e afirma que a relação descreve
-procedimentos planejados, não resultados.
+Resultado: foi inserido, conforme o ADR-007, um bloco `(Inclusão v1: ...)` que vincula os cinco objetivos específicos aos itens metodológicos correspondentes e afirma que a relação descreve procedimentos planejados, não resultados.
 
 ---
 
@@ -512,5 +583,28 @@ Data: 2026-09-23
 Ação realizada: explicitação dos resultados preliminares por objetivo específico.
 Arquivo alterado:
 - `docs/relatorio/relatorio_parcial.md`
-Resultado: o item 2.5 passou a relacionar cada um dos cinco objetivos ao resultado de concepção já
-existente e às etapas ainda pendentes, sem apresentar planejamento como resultado alcançado.
+Resultado: o item 2.5 passou a relacionar cada um dos cinco objetivos ao resultado de concepção já existente e às etapas ainda pendentes, sem apresentar planejamento como resultado alcançado.
+
+---
+
+Data: 2026-09-29
+Ação realizada: reconciliação do documento colaborativo `docs/relatorio/Relatório Parcial - Grupo 11.docx.pdf` com `docs/relatorio/parcial.md`.
+Diagnóstico: não havia arquivo `.docx` nem versões V1/V2/V3 em `docs/relatorio/`; o arquivo disponível, apesar do nome, é um PDF e foi preservado. A fonte de verdade permanece o Markdown. Foram encontradas aproximadamente dez diferenças relevantes, predominantemente pré-textuais, omissões e conteúdo desatualizado.
+Resultado: nenhuma alteração foi incorporada ao Markdown. O PDF mantém informação anterior à baseline de 27/08/2026, ao declarar a versão executável como pendente e omitir os módulos sintéticos funcionais de Captação e Matrículas. Também contém capa/ficha com nomes de integrantes, indicação incorreta de Projeto Integrador IV e lista de ilustrações sem relação com este relatório. Resumo e palavras-chave ficaram pendentes de revisão humana, pois refletem o estado anterior do protótipo. Não houve alteração em DOCX/PDF, modelos oficiais, código, dados, decisões ou deploy. Nenhum commit ou push realizado.
+Arquivos alterados: `docs/run_log.md`.
+
+---
+
+Data: 2026-09-29
+Ação realizada: criação do snapshot formal `docs/relatorio/Relatorio_Parcial_V1.md` a partir de `docs/relatorio/parcial.md`.
+Resultado: V1 criada como cópia fiel da fonte de verdade; o PDF colaborativo antigo foi preservado e nenhuma versão anterior foi sobrescrita. A ADR-001 passou a registrar que futuras correções ocorrem primeiro no Markdown-fonte e geram snapshots V2, V3 e seguintes.
+Arquivos alterados/criados: `docs/relatorio/Relatorio_Parcial_V1.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum DOCX/PDF foi gerado, modificado ou sobrescrito; nenhum commit ou push realizado.
+
+---
+
+Data: 2026-09-29
+Ação realizada: preparação exclusiva da seção 2.5, “Resultados preliminares: solução inicial”, para capturas do protótipo acadêmico.
+Resultado: confirmadas as páginas ativas `/captacao` e `/matriculas` e a página inicial com o plano de rollout; foram preparados cinco placeholders de figuras, sem inserção de imagem. Captação e Matrículas são apresentadas como Fase 1 funcional com dados sintéticos; fases posteriores e validação com a comunidade permanecem planejadas. Nenhuma alteração funcional foi realizada.
+Arquivos alterados: `docs/relatorio/parcial.md` e `docs/run_log.md`. Nenhum commit ou push realizado.
+
+---

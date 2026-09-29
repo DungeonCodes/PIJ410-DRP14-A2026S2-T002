@@ -35,6 +35,10 @@ Os dois módulos que não dependem de nenhuma plataforma externa — por isso vi
 os que se sustentam inteiramente com dados sintéticos, sem precisar simular a semântica de uma
 API de anúncios.
 
+O ambiente acadêmico sanitizado desta fase está funcional e publicado na Vercel. A publicação
+contém somente Captação e Matrículas, sem APIs reais, bases operacionais ou credenciais, e não
+altera a situação planejada das fases 2 a 4.
+
 | Entrega | Onde |
 |---|---|
 | Motor determinístico (PRNG com semente) | `src/lib/sintetico/prng.ts` |
