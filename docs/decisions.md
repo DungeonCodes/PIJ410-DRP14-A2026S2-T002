@@ -30,6 +30,13 @@ docs/relatorio/*.md   →   outputs/*.docx   →   outputs/*.pdf
    (fonte, no git)        (gerado)            (entrega no AVA)
 ```
 
+Snapshots formais de revisão são cópias numeradas do Markdown-fonte, como
+`docs/relatorio/Relatorio_Parcial_V1.md`. Cada snapshot preserva o estado aprovado naquele
+momento e não é alterado retroativamente: correções futuras são feitas primeiro em
+`docs/relatorio/parcial.md` e geram a próxima versão numerada (V2, V3 e assim por diante).
+DOCX e PDF permanecem artefatos derivados ou referências de colaboração, nunca fontes
+principais.
+
 Os modelos em `/docs/univesp/` permanecem **intactos** como referência normativa; nunca são
 editados, apenas usados como origem dos estilos.
 

@@ -606,19 +606,19 @@ recebidas, sem antecipar aceitação, melhoria de desempenho ou alteração de d
 
 ### 2.5 Resultados preliminares: solução inicial
 
-#### Protótipo acadêmico
-
 Nesta fase, a solução inicial possui uma aplicação web acadêmica independente do ambiente
 operacional da instituição. Em 27/08/2026, o ambiente sanitizado da Fase 1 tornou-se funcional e
 foi publicado na Vercel, disponibilizando somente Captação e Matrículas. Os módulos apresentam
 relatórios, indicadores e visualizações baseados em dados sintéticos e não mantêm conexão com
 contas de anúncios, CRM, sistema acadêmico ou qualquer base real da instituição parceira.
 
-O protótipo organiza a visualização de informações produzidas em cenário sintético e determinístico,
-preservando a identificação de recortes, a origem acadêmica dos dados e os limites de interpretação.
-O plano completo permanece incremental: os módulos de Ads, Reels orgânicos, Objetivo da Gestão e
-Arquitetura & Algoritmos estão previstos para fases posteriores e não constituem resultados
-funcionais desta entrega.
+O plano completo da solução organiza-se em quatro componentes. O primeiro prepara e padroniza os
+registros, preservando origem, período e granularidade. O segundo calcula indicadores
+determinísticos e classifica resultados como disponíveis, indisponíveis ou não verificáveis. O
+terceiro, ainda planejado e condicionado à qualidade da base de conteúdo orgânico, deverá treinar e
+avaliar separadamente um modelo supervisionado. O quarto apresenta indicadores, cenários,
+estimativas e limitações em uma interface web. Na entrega atual, somente a parcela correspondente
+aos módulos sintéticos de Captação e Matrículas está disponível.
 
 ```text
 dados sintéticos da Fase 1
@@ -632,104 +632,14 @@ Captação e Matrículas na interface web
 aplicação e avaliação pela comunidade externa (pendentes)
 ```
 
-#### Módulo de Captação
-
-O módulo de Captação apresenta o funil sintético de contatos, visitas e matrículas. A página permite
-selecionar safras e ciclos, consultar indicadores do recorte e visualizar as taxas derivadas entre as
-etapas do funil. Os valores exibidos não representam resultados da instituição parceira: pertencem ao
-cenário acadêmico determinístico utilizado para demonstrar a organização das informações.
-
-Figura 1 – Visão geral do módulo de captação do protótipo acadêmico
-
-[INSERIR FIGURA 1 – VISÃO GERAL DO MÓDULO DE CAPTAÇÃO]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
-
-Fonte: Elaborado pelo grupo (2026).
-
-A figura deverá evidenciar o cabeçalho que identifica a Fase 1, os filtros de safra e ciclo, os
-indicadores principais e o funil de captação. Dessa forma, documentará que a interface reúne em uma
-mesma visão as etapas do cenário sintético, sem atribuir relações causais a dados institucionais reais.
-
-Além da visão agregada, o módulo disponibiliza séries mensais, distribuição da situação dos contatos,
-origem declarada e comparativo por safra. Esses recursos tornam visíveis diferentes recortes do
-cenário e preservam a distinção entre valores observados no conjunto sintético e dados ausentes.
-
-Figura 2 – Visualizações complementares do módulo de captação em cenário sintético
-
-[INSERIR FIGURA 2 – GRÁFICOS MENSAIS, ORIGEM DOS CONTATOS E COMPARATIVO POR SAFRA]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
-
-Fonte: Elaborado pelo grupo (2026).
-
-A figura deverá mostrar, em uma área complementar da página, pelo menos uma série mensal e o
-comparativo por safra ou a distribuição da origem declarada dos contatos. A interpretação limita-se à
-capacidade técnica de organizar e comparar o cenário sintético; não demonstra desempenho real de
-canais ou campanhas.
-
-#### Módulo de Matrículas
-
-O módulo de Matrículas apresenta um histórico sintético por safra, ciclo, turma e mês. A interface
-permite filtrar os recortes e distinguir total de matrículas, rematrículas, novas matrículas e retenção.
-Quando não há safra anterior para comparação, a retenção é identificada como indeterminada, em vez de
-ser inferida como resultado observado.
-
-Figura 3 – Visão geral do módulo de matrículas do protótipo acadêmico
-
-[INSERIR FIGURA 3 – VISÃO GERAL DO MÓDULO DE MATRÍCULAS]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
-
-Fonte: Elaborado pelo grupo (2026).
-
-A figura deverá evidenciar o cabeçalho da Fase 1, os filtros por safra e ciclo, os indicadores de
-matrículas e o gráfico de composição por safra. Ela documentará a apresentação das contagens
-sintéticas e das regras explícitas de cálculo, sem representar alunos ou registros operacionais.
-
-As visualizações complementares discriminam a composição por ciclo e turma, a efetivação mensal e a
-tabela de retenção por safra. A organização desses elementos permite demonstrar como a interface
-mantém separados os valores calculados, as contagens sintéticas e os casos em que não há base de
-comparação.
-
-Figura 4 – Visualizações complementares do módulo de matrículas em cenário sintético
-
-[INSERIR FIGURA 4 – COMPOSIÇÃO POR CICLO OU TURMA, SÉRIE MENSAL E TABELA DE RETENÇÃO]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
-
-Fonte: Elaborado pelo grupo (2026).
-
-A figura deverá mostrar, em uma área complementar da página, a composição por ciclo ou turma e a
-série mensal ou a tabela de retenção. O registro visual deverá deixar evidente que as turmas e os
-valores pertencem ao cenário fictício, não à operação da instituição parceira.
-
-#### Estado atual do protótipo
-
-A página inicial do ambiente acadêmico apresenta os módulos disponíveis e o plano de rollout por
-fases. Sua inclusão documenta a estratégia incremental adotada: Captação e Matrículas constituem a
-Fase 1 ativa, enquanto Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos aparecem
-expressamente como planejamento, sem serem apresentados como funcionalidades concluídas.
-
-Figura 5 – Plano de rollout por fases do protótipo acadêmico
-
-[INSERIR FIGURA 5 – FASE 1 ATIVA E FASES POSTERIORES PLANEJADAS]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/)
-
-Fonte: Elaborado pelo grupo (2026).
-
-A figura deverá capturar a seção “Plano por fases”, incluindo a identificação da Fase 1 como ativa e
-das fases posteriores como planejadas. Ela comprovará a delimitação do resultado técnico atual, e não
-a disponibilidade das páginas bloqueadas.
-
-Como resultado preliminar, estão disponíveis a primeira versão executável do ambiente acadêmico, os
-módulos Captação e Matrículas, os dados sintéticos determinísticos e os controles que mantêm as fases
-posteriores bloqueadas. A existência desse protótipo técnico não constitui aplicação ou validação com
-a comunidade externa. Permanecem pendentes a apresentação orientada aos profissionais da instituição,
-o registro das tarefas realizadas, a coleta de observações e a eventual priorização de melhorias; até
-que essas atividades ocorram, não se atribuem à comunidade aceitação, feedback, impacto ou melhoria
-de decisão.
+Como resultado preliminar, estão disponíveis uma primeira versão executável, os módulos Captação e
+Matrículas, os dados sintéticos determinísticos e os controles que mantêm as fases posteriores
+bloqueadas. A existência desse protótipo técnico não constitui aplicação ou validação com a
+comunidade externa. Permanecem pendentes a apresentação orientada aos profissionais da instituição,
+o registro das tarefas realizadas, a coleta de observações e a eventual priorização de melhorias.
+Antes da entrega do relatório parcial, esta seção deverá ser complementada com imagens da solução e
+com evidências de aplicação que tenham sido efetivamente produzidas; até lá, não se atribuem à
+comunidade aceitação, feedback ou impacto.
 
 ---
 

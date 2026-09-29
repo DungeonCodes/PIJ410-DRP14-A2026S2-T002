@@ -544,3 +544,25 @@ Arquivos alterados nesta revisão: `docs/master_context.md`, `docs/decisions.md`
 realizado.
 
 ---
+
+Data: 2026-09-29
+Ação realizada: reconciliação do documento colaborativo `docs/relatorio/Relatório Parcial - Grupo 11.docx.pdf` com `docs/relatorio/parcial.md`.
+Diagnóstico: não havia arquivo `.docx` nem versões V1/V2/V3 em `docs/relatorio/`; o arquivo disponível, apesar do nome, é um PDF e foi preservado. A fonte de verdade permanece o Markdown. Foram encontradas aproximadamente dez diferenças relevantes, predominantemente pré-textuais, omissões e conteúdo desatualizado.
+Resultado: nenhuma alteração foi incorporada ao Markdown. O PDF mantém informação anterior à baseline de 27/08/2026, ao declarar a versão executável como pendente e omitir os módulos sintéticos funcionais de Captação e Matrículas. Também contém capa/ficha com nomes de integrantes, indicação incorreta de Projeto Integrador IV e lista de ilustrações sem relação com este relatório. Resumo e palavras-chave ficaram pendentes de revisão humana, pois refletem o estado anterior do protótipo. Não houve alteração em DOCX/PDF, modelos oficiais, código, dados, decisões ou deploy. Nenhum commit ou push realizado.
+Arquivos alterados: `docs/run_log.md`.
+
+---
+
+Data: 2026-09-29
+Ação realizada: criação do snapshot formal `docs/relatorio/Relatorio_Parcial_V1.md` a partir de `docs/relatorio/parcial.md`.
+Resultado: V1 criada como cópia fiel da fonte de verdade; o PDF colaborativo antigo foi preservado e nenhuma versão anterior foi sobrescrita. A ADR-001 passou a registrar que futuras correções ocorrem primeiro no Markdown-fonte e geram snapshots V2, V3 e seguintes.
+Arquivos alterados/criados: `docs/relatorio/Relatorio_Parcial_V1.md`, `docs/decisions.md` e `docs/run_log.md`. Nenhum DOCX/PDF foi gerado, modificado ou sobrescrito; nenhum commit ou push realizado.
+
+---
+
+Data: 2026-09-29
+Ação realizada: preparação exclusiva da seção 2.5, “Resultados preliminares: solução inicial”, para capturas do protótipo acadêmico.
+Resultado: confirmadas as páginas ativas `/captacao` e `/matriculas` e a página inicial com o plano de rollout; foram preparados cinco placeholders de figuras, sem inserção de imagem. Captação e Matrículas são apresentadas como Fase 1 funcional com dados sintéticos; fases posteriores e validação com a comunidade permanecem planejadas. Nenhuma alteração funcional foi realizada.
+Arquivos alterados: `docs/relatorio/parcial.md` e `docs/run_log.md`. Nenhum commit ou push realizado.
+
+---
