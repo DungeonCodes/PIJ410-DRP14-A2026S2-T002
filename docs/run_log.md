@@ -555,30 +555,9 @@ Captação e Matrículas, expansões de siglas na primeira ocorrência, fontes d
 para destacar filtros interativos nas Figuras 1 e 3. Os cinco placeholders de figuras foram
 preservados.
 
-### Mapa V2 → V3
-
-| ID | Local | V2 — SAI | V3 — ENTRA | Motivo |
-|---|---|---|---|---|
-| 01 | Título | `PIJ410` sem expansão | Projeto Integrador em Computação III (PIJ410) | apresentação de sigla |
-| 02 | Tabela de situação | tabela sem fonte | Fonte: Elaborado pelo grupo (2026). | fonte de tabela |
-| 03 | Dados do projeto | IA sem expansão; objetivo metodológico | inteligência artificial (IA); objetivo direto | sigla e Objetivo Geral |
-| 04 | Tabela de dados do projeto | tabela sem fonte | Fonte: Elaborado pelo grupo (2026). | fonte de tabela |
-| 05 | 2.1 Objetivo Geral | explicações sobre métodos, algoritmo, aprendizagem de máquina, IA e interface | objetivo breve sobre a solução e apoio à decisão | separar objetivo de método |
-| 06 | 2.3.2–2.3.3 | Ads, CTR, CPC, CPA e ROAS sem expansão inicial; tabela sem fonte | expansões na primeira ocorrência e fonte da tabela | siglas e fonte de tabela |
-| 07 | 2.4.3 | período histórico genérico | safras sintéticas de 2022 a 2026, última observação simulada em 15/08/2026; pendência para Ads e orgânico | período dos dados |
-| 08 | 2.4.5 | CPM sem expansão inicial | custo por mil impressões (CPM) | sigla |
-| 09 | 2.4.9 | ausência da estratégia de quatro fases | descrição curta das Fases 1 a 4 e seu estado | compatibilizar Metodologia e Resultados |
-| 10 | 2.5 Resultados | abertura pela descrição técnica | contato inicial, necessidades e requisitos antes da estratégia e da Fase 1 | Design Thinking e ordem dos resultados |
-| 11 | 2.5 Protótipo acadêmico | repetição da estratégia de fases | nenhuma; informação preservada na estratégia incremental anterior | remover repetição evidente |
-| 12 | 2.5 Protótipo acadêmico | CRM sem expansão inicial | gestão de relacionamento com clientes (CRM) | sigla |
-| 13 | Figuras 1 e 3 | instruções sem destaque dos filtros | instruções para destacar visualmente os filtros interativos | evidenciar interação real |
-
-### Movimentações V2 → V3
-
-| Conteúdo | Sai de | Entra em |
-|---|---|---|
-| Estratégia de fases repetida no protótipo | 2.5, parágrafo do Protótipo acadêmico | 2.5, subseção Estratégia incremental de prototipação; também explicitada em 2.4.9 |
-| Explicações metodológicas retiradas do Objetivo Geral | 2.1 Objetivo Geral | já estavam registradas, sem alteração de conteúdo, em 2.4.5, 2.4.7, 2.4.8, 2.4.9 e 2.4.10 |
+Atualização posterior: a comparação V2→V3 foi demarcada diretamente em `parcial.md`; V2 foi usada
+como baseline, V3 permanece a versão corrente de revisão e a ADR-001 foi emendada para registrar a
+política de marcações editoriais e a montagem manual posterior do DOCX. V1 e V2 foram preservadas.
 
 Pendência: não há período histórico autorizado para uso acadêmico de Google Ads, Meta Ads ou conteúdo
 orgânico; os respectivos recortes permanecem condicionados à disponibilidade e à autorização das
@@ -592,7 +571,7 @@ fontes. Não foram inventados períodos, entrevistas, feedbacks nem validação 
 - conferir figuras e legendas no PDF final.
 
 Resultado: `docs/relatorio/parcial.md` permanece a fonte de verdade. V1 e V2 foram preservadas,
-e `docs/relatorio/Relatorio_Parcial_V3.md` foi criada como snapshot idêntico após a revisão.
+e `docs/relatorio/Relatorio_Parcial_V3.md` permanece sincronizada como versão corrente de revisão.
 Nenhum DOCX/PDF, código, dado, documento oficial, commit ou push foi alterado/gerado.
 
 ---

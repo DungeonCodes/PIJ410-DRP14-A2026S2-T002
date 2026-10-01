@@ -60,6 +60,24 @@ fonte de artefato também evita a pergunta "qual versão do `.docx` é a atual".
 um passo mecânico e verificável — validação de esquema mais conferência visual das páginas
 renderizadas — em vez de trabalho manual sujeito a erro. Custo: é preciso manter o conversor.
 
+### Emenda de 2026-10-01 — Política dos arquivos Markdown do relatório
+
+`docs/relatorio/parcial.md` continua sendo a fonte de verdade editorial. Os arquivos
+`Relatorio_Parcial_V1.md`, `Relatorio_Parcial_V2.md`, `Relatorio_Parcial_V3.md` e futuras versões
+numeradas são artefatos de revisão, comparação e rastreabilidade; não são o documento acadêmico
+final entregue à UNIVESP.
+
+O DOCX será preparado manualmente, posteriormente, usando o Markdown como referência. Por serem
+artefatos de revisão, os Markdown podem conter marcações editoriais explícitas, como `(V2  SAI: ...)`,
+`(V3  ENTRA: ...)` e `(V2  V3  MOVE: ...)`; essas marcações servem exclusivamente à revisão humana e
+não devem ser copiadas para o DOCX final. O DOCX não é fonte de verdade e alterações manuais nele
+que precisem tornar-se oficiais devem primeiro ser reconciliadas em `parcial.md`.
+
+V1 e V2 são versões encerradas, imutáveis e históricas. A versão corrente de revisão, atualmente
+V3, pode receber anotações e correções enquanto permanecer sincronizada com `parcial.md`; ela só se
+torna encerrada mediante decisão explícita. Quando houver nova rodada após o encerramento, a fonte
+gerará a próxima versão numerada, como V4, sem modificar V3.
+
 ---
 
 ## ADR-002 — Norma ABNT vigente, não a citada no modelo
