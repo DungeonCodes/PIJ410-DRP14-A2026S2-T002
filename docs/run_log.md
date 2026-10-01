@@ -655,4 +655,10 @@ Meta Ads ou conteúdo orgânico; a pendência permaneceu explicitamente delimita
 inserção de datas. Nenhum outro conteúdo foi alterado; V1 e V2 foram preservadas e V3 permanece a
 versão corrente de revisão. Nenhum DOCX/PDF, código, dataset, decisão, commit ou push foi alterado.
 
+Data: 2026-10-01
+Ação realizada: V3 — preparação editorial para montagem manual do DOCX.
+Resultado: conteúdo vigente foi demarcado nos pontos de risco, notas históricas foram classificadas
+como não copiar, placeholders como ação manual e URLs de captura como não copiar. O checklist manual
+foi consolidado ao final do relatório; V3 permanece corrente.
+
 ---

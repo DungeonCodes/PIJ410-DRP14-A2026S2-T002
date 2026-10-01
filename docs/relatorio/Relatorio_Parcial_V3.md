@@ -1,5 +1,23 @@
 # Relatório Parcial — Projeto Integrador em Computação III (PIJ410)
 
+# GUIA EDITORIAL PARA MONTAGEM MANUAL DO DOCX
+
+(REVISÃO  NÃO COPIAR:
+Todos os blocos identificados como `V2  SAI`, `V2/V3 ANTERIOR  SAI`, `V2  V3  MOVE`, `V2: NÃO EXISTIA` ou `V3: REMOVIDO POR REPETIÇÃO` são histórico ou justificativa editorial e não devem ser copiados.
+)
+
+(DOCX  COPIAR:
+Todo conteúdo identificado como `V3  ENTRA`, assim como o texto acadêmico não marcado, é conteúdo vigente para o DOCX.
+)
+
+(DOCX  AÇÃO MANUAL:
+Executar somente instruções identificadas por este rótulo; elas não pertencem ao texto acadêmico final.
+)
+
+(DOCX  AÇÃO MANUAL:
+Nas Figuras 1 a 5, os parágrafos operacionais que começam por “A figura deverá” descrevem a captura e a conferência visual; usá-los como instrução de montagem e não copiá-los ao DOCX.
+)
+
 (V2  SAI:
 # Relatório Parcial — PIJ410
 )
@@ -128,11 +146,9 @@ sociais, legais e de governança de dados relacionados ao uso de inteligência a
 (UNIVESP, 2020; UNIVESP, 2026). Esses conteúdos são mobilizados como base de formação; o projeto não
 prevê o uso de imagens nem de dados sensíveis da instituição parceira.
 
-<!-- FORMATAÇÃO (aplicada na conversão para .docx):
-     título "1 Introdução" → estilo 1ttulonivel1
-     parágrafos            → estilo atexto-base
-     Este bloco de texto tem 5 parágrafos. O modelo da UNIVESP determina que o parágrafo em
-     branco entre parágrafos vem do próprio estilo (after=360); não inserir linha vazia. -->
+(REVISÃO  NÃO COPIAR:
+Instrução de formatação para conversão: título “1 Introdução” no estilo `1ttulonivel1`; parágrafos no estilo `atexto-base`; aplicar o espaçamento definido pelo estilo, sem inserir linha vazia manualmente.
+)
 
 ---
 
@@ -749,9 +765,17 @@ selecionar safras e ciclos, consultar indicadores do recorte e visualizar as tax
 etapas do funil. Os valores exibidos não representam resultados da instituição parceira: pertencem ao
 cenário acadêmico determinístico utilizado para demonstrar a organização das informações.
 
+(DOCX  COPIAR:
 Figura 1 – Visão geral do módulo de captação do protótipo acadêmico
+)
 
-[INSERIR FIGURA 1 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E FUNIL; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
+(DOCX  AÇÃO MANUAL:
+Inserir a captura correspondente e destacar/circular discretamente os filtros de safra e ciclo para evidenciar a interação disponível ao usuário.
+)
+
+(REVISÃO  NÃO COPIAR:
+Os blocos V2/V3 imediatamente abaixo registram a evolução da instrução de captura; ambos contêm placeholders e não devem ser copiados ao DOCX.
+)
 
 (V2  SAI:
 [INSERIR FIGURA 1 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E FUNIL]
@@ -760,9 +784,13 @@ Figura 1 – Visão geral do módulo de captação do protótipo acadêmico
 [INSERIR FIGURA 1 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E FUNIL; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
 )
 
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
+(REVISÃO  NÃO COPIAR:
+URL para captura: https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao
+)
 
+(DOCX  COPIAR:
 Fonte: Elaborado pelo grupo (2026).
+)
 
 A figura deverá evidenciar o cabeçalho que identifica a Fase 1, os filtros de safra e ciclo, os
 indicadores principais e o funil de captação. Dessa forma, documentará que a interface reúne em uma
@@ -772,13 +800,19 @@ Além da visão agregada, o módulo disponibiliza séries mensais, distribuiçã
 origem declarada e comparativo por safra. Esses recursos tornam visíveis diferentes recortes do
 cenário e preservam a distinção entre valores observados no conjunto sintético e dados ausentes.
 
+(DOCX  COPIAR:
 Figura 2 – Visualizações complementares do módulo de captação em cenário sintético
+)
 
-[INSERIR FIGURA 2 – CAPTURAR SÉRIE MENSAL E COMPARATIVO POR SAFRA OU ORIGEM DOS CONTATOS]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
-
+(DOCX  AÇÃO MANUAL:
+Inserir a captura de série mensal e comparativo por safra ou origem dos contatos.
+)
+(REVISÃO  NÃO COPIAR:
+URL para captura: https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao
+)
+(DOCX  COPIAR:
 Fonte: Elaborado pelo grupo (2026).
+)
 
 A figura deverá mostrar, em uma área complementar da página, pelo menos uma série mensal e o
 comparativo por safra ou a distribuição da origem declarada dos contatos. A interpretação limita-se à
@@ -792,9 +826,17 @@ permite filtrar os recortes e distinguir total de matrículas, rematrículas, no
 Quando não há safra anterior para comparação, a retenção é identificada como indeterminada, em vez de
 ser inferida como resultado observado.
 
+(DOCX  COPIAR:
 Figura 3 – Visão geral do módulo de matrículas do protótipo acadêmico
+)
 
-[INSERIR FIGURA 3 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E COMPOSIÇÃO POR SAFRA; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
+(DOCX  AÇÃO MANUAL:
+Inserir a captura correspondente e destacar/circular discretamente os filtros de safra e ciclo para evidenciar a interação disponível ao usuário.
+)
+
+(REVISÃO  NÃO COPIAR:
+Os blocos V2/V3 imediatamente abaixo registram a evolução da instrução de captura; ambos contêm placeholders e não devem ser copiados ao DOCX.
+)
 
 (V2  SAI:
 [INSERIR FIGURA 3 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E COMPOSIÇÃO POR SAFRA]
@@ -803,9 +845,13 @@ Figura 3 – Visão geral do módulo de matrículas do protótipo acadêmico
 [INSERIR FIGURA 3 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E COMPOSIÇÃO POR SAFRA; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
 )
 
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
+(REVISÃO  NÃO COPIAR:
+URL para captura: https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas
+)
 
+(DOCX  COPIAR:
 Fonte: Elaborado pelo grupo (2026).
+)
 
 A figura deverá evidenciar o cabeçalho da Fase 1, os filtros por safra e ciclo, os indicadores de
 matrículas e o gráfico de composição por safra. Ela documentará a apresentação das contagens
@@ -816,13 +862,18 @@ tabela de retenção por safra. A organização desses elementos permite demonst
 mantém separados os valores calculados, as contagens sintéticas e os casos em que não há base de
 comparação.
 
+(DOCX  COPIAR:
 Figura 4 – Visualizações complementares do módulo de matrículas em cenário sintético
-
-[INSERIR FIGURA 4 – CAPTURAR COMPOSIÇÃO POR CICLO OU TURMA E SÉRIE MENSAL OU TABELA DE RETENÇÃO]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
-
+)
+(DOCX  AÇÃO MANUAL:
+Inserir a captura de composição por ciclo ou turma e série mensal ou tabela de retenção.
+)
+(REVISÃO  NÃO COPIAR:
+URL para captura: https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas
+)
+(DOCX  COPIAR:
 Fonte: Elaborado pelo grupo (2026).
+)
 
 A figura deverá mostrar, em uma área complementar da página, a composição por ciclo ou turma e a
 série mensal ou a tabela de retenção. O registro visual deverá deixar evidente que as turmas e os
@@ -835,13 +886,18 @@ fases. Sua inclusão documenta a estratégia incremental adotada: Captação e M
 Fase 1 ativa, enquanto Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos aparecem
 expressamente como planejamento, sem serem apresentados como funcionalidades concluídas.
 
+(DOCX  COPIAR:
 Figura 5 – Plano de rollout por fases do protótipo acadêmico
-
-[INSERIR FIGURA 5 – CAPTURAR PLANO POR FASES, COM FASE 1 ATIVA E FASES 2 A 4 PLANEJADAS]
-
-(https://pij-410-drp-14-a2026-s2-t002.vercel.app/)
-
+)
+(DOCX  AÇÃO MANUAL:
+Inserir a captura do plano por fases com a Fase 1 ativa e as Fases 2 a 4 planejadas.
+)
+(REVISÃO  NÃO COPIAR:
+URL para captura: https://pij-410-drp-14-a2026-s2-t002.vercel.app/
+)
+(DOCX  COPIAR:
 Fonte: Elaborado pelo grupo (2026).
+)
 
 A figura deverá capturar a seção “Plano por fases”, incluindo a identificação da Fase 1 como ativa e
 das fases posteriores como planejadas. Ela comprovará a delimitação do resultado técnico atual, e não
@@ -894,3 +950,20 @@ UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico do
 UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico do curso de Bacharelado em Ciência de Dados**. São Paulo: UNIVESP, 2026. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BCD-2026.pdf. Acesso em: 25 ago. 2026.
 
 WANG, Lei et al. A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.
+
+# CHECKLIST MANUAL PARA MONTAGEM DO DOCX
+
+(REVISÃO  NÃO COPIAR PARA O TEXTO ACADÊMICO)
+
+- Remover todas as marcações V2/V3 e demais marcações editoriais.
+- Copiar somente o conteúdo vigente.
+- Inserir os cinco prints.
+- Destacar filtros/controles nas Figuras 1 e 3.
+- Conferir tamanho e legibilidade das figuras.
+- Manter título das figuras acima e fonte abaixo.
+- Inserir paginação.
+- Atualizar páginas da Lista de Ilustrações.
+- Revisar quebras de página e de parágrafo.
+- Conferir tabelas e respectivas fontes.
+- Conferir referências, sumário e cabeçalhos/rodapés, se aplicável.
+- Conferir que URLs temporárias, placeholders e nenhuma marcação editorial V2/V3 foram copiados.
