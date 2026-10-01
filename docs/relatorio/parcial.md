@@ -1,5 +1,12 @@
 # Relatório Parcial — Projeto Integrador em Computação III (PIJ410)
 
+(V2  SAI:
+# Relatório Parcial — PIJ410
+)
+(V3  ENTRA:
+# Relatório Parcial — Projeto Integrador em Computação III (PIJ410)
+)
+
 > Fonte única do texto do relatório parcial (ADR-001). O `.docx` de entrega é gerado a partir
 > deste arquivo. Não editar o `.docx` diretamente.
 >
@@ -19,6 +26,13 @@
 | Referências | — | ⬜ |
 
 Fonte: Elaborado pelo grupo (2026).
+
+(V2:
+Tabela sem indicação de fonte.
+)
+(V3  ENTRA:
+Fonte: Elaborado pelo grupo (2026).
+)
 
 ## Dados do projeto
 
@@ -40,6 +54,13 @@ pena de o item "Adequações" do relatório final registrar inconsistência.
 | Entrega do parcial | Quinzena 4 — até 04/10/2026 |
 
 Fonte: Elaborado pelo grupo (2026).
+
+(V2  SAI:
+Na tabela, “IA agêntica”; objetivo com métodos de análise, aprendizagem de máquina e plataforma web; tabela sem fonte.
+)
+(V3  ENTRA:
+Na tabela, “inteligência artificial (IA) agêntica”; objetivo direto sobre solução analítica; Fonte: Elaborado pelo grupo (2026).
+)
 
 ---
 
@@ -120,9 +141,19 @@ Projeto Integrador, 2026).
 
 #### Objetivo geral
 
+(V2  SAI:
+Desenvolver e aplicar métodos de análise de dados e aprendizagem de máquina sobre dados históricos de investimentos em mídia digital, incluindo a apresentação em plataforma web.
+)
+(V3  ENTRA:
 Desenvolver uma solução analítica para organizar dados históricos de investimentos em mídia digital
 e apoiar a tomada de decisão sobre a distribuição do orçamento de marketing em uma instituição de
 ensino.
+)
+(V2  V3  MOVE:
+Sai de: 2.1 Objetivo Geral.
+Entra em: 2.4.5, 2.4.7, 2.4.8, 2.4.9 e 2.4.10.
+Motivo: métodos, algoritmos, aprendizagem de máquina, IA agêntica e interface descrevem COMO o trabalho será realizado; permanecem nas subseções metodológicas.
+)
 
 Em decorrência dessas necessidades, foram definidos os seguintes objetivos específicos:
 
@@ -236,6 +267,13 @@ restrições identificadas pela comunidade externa.
 
 #### 2.3.2 Tráfego pago e campanhas de anúncios (Ads)
 
+(V2  SAI:
+#### 2.3.2 Tráfego pago e campanhas de Ads
+)
+(V3  ENTRA:
+#### 2.3.2 Tráfego pago e campanhas de anúncios (Ads)
+)
+
 Tráfego pago, no escopo deste trabalho, corresponde às ações de comunicação em que a instituição
 investe recursos para veicular anúncios em plataformas digitais e direcionar usuários a um ponto de
 contato definido. A expressão não se confunde com todo o marketing digital: ela delimita a parcela
@@ -273,6 +311,13 @@ cliques e taxa de cliques (CTR) avaliam a resposta inicial; custo por clique (CP
 conversão aproximam o resultado de captação; custo por aquisição (CPA) e retorno sobre o investimento em publicidade (ROAS) apoiam a comparação entre o valor
 gerado e o recurso aplicado (Saura, 2021; Saura; Palos-Sánchez; Suárez, 2017).
 
+(V2  SAI:
+cliques e CTR avaliam a resposta inicial; CPC mostra o custo do tráfego; conversões e taxa de conversão aproximam o resultado de captação; CPA e retorno/ROAS apoiam a comparação.
+)
+(V3  ENTRA:
+taxa de cliques (CTR); custo por clique (CPC); custo por aquisição (CPA); retorno sobre o investimento em publicidade (ROAS).
+)
+
 | Indicador ou combinação | Pergunta de decisão que orienta |
 |---|---|
 | Investimento, impressões e alcance | Onde houve entrega e exposição suficientes para justificar continuidade ou revisão da segmentação? |
@@ -281,6 +326,13 @@ gerado e o recurso aplicado (Saura, 2021; Saura; Palos-Sánchez; Suárez, 2017).
 | Receita/valor atribuído, investimento e ROAS/retorno | Como priorizar a distribuição do orçamento entre campanhas e canais? |
 
 Fonte: Elaborado pelo grupo (2026).
+
+(V2:
+Tabela sem indicação de fonte.
+)
+(V3  ENTRA:
+Fonte: Elaborado pelo grupo (2026).
+)
 
 A atribuição de conversões será declarada antes das comparações, pois a regra escolhida altera o
 crédito atribuído aos elementos da jornada e pode modificar decisões de lance, orçamento e retorno
@@ -449,10 +501,15 @@ indicadores distintos. Essa precaução é coerente com a literatura de busca pa
 de conversão depende da estratégia de atribuição e pode alterar a interpretação do retorno
 (Li et al., 2016).
 
+(V2:
+NÃO EXISTIA período histórico explicitado para o cenário acadêmico.
+)
+(V3  ENTRA:
 No ambiente acadêmico, o recorte atualmente demonstrado para captação e matrículas é inteiramente
 sintético: abrange as safras de 2022 a 2026, com última observação simulada em 15/08/2026. Para
 Google Ads, Meta Ads e conteúdo orgânico, não há, até o momento, período histórico autorizado para
 uso acadêmico; esses recortes serão definidos somente após disponibilidade e autorização das fontes.
+)
 
 A coleta quantitativa será realizada a partir de arquivos ou exportações fornecidos de forma
 autorizada, mantidos no ambiente operacional e descritos por fonte, período, granularidade e campos
@@ -489,6 +546,13 @@ Os indicadores serão calculados por rotinas determinísticas, com fórmulas e p
 Entre eles poderão estar investimento, impressões, alcance, frequência, cliques, CTR, CPC,
 conversões, taxa de conversão, CPA, custo por mil impressões (CPM) e indicadores de participação de impressões, conforme os
 campos efetivamente disponibilizados. A interpretação ocorrerá no contexto do objetivo da campanha:
+
+(V2  SAI:
+CPM
+)
+(V3  ENTRA:
+custo por mil impressões (CPM)
+)
 métricas de campanhas com finalidades diferentes não serão tratadas como diretamente equivalentes.
 
 Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento serão
@@ -552,11 +616,16 @@ disponibilizada com os módulos Captação e Matrículas; as estruturas preparat
 permanecem bloqueadas e não constituem entrega funcional. Como referência técnica, Thakkar (2020)
 descreve componentes React e recursos de renderização no servidor com Next.js.
 
+(V2:
+NÃO EXISTIA explicação prévia da estratégia incremental em quatro fases.
+)
+(V3  ENTRA:
 A construção e a prototipação seguem estratégia incremental em quatro fases: Fase 1, Captação e
 Matrículas; Fase 2, Ads (visão geral, Google Ads, Meta Ads e estratégia); Fase 3, Reels orgânicos;
 e Fase 4, Objetivo da Gestão e Arquitetura & Algoritmos. A abertura de cada fase é incremental e
 depende de sua implementação; somente a Fase 1 constitui resultado funcional atual, enquanto as
 demais permanecem planejamento.
+)
 
 O desenho das visões da Fase 1 é orientado pela finalidade analítica, com indicadores, filtros,
 comparações e avisos de limitação apresentados de maneira coerente. Padrões de design de
@@ -581,23 +650,45 @@ recebidas, sem antecipar aceitação, melhoria de desempenho ou alteração de d
 
 ### 2.5 Resultados preliminares: solução inicial
 
+(V2  SAI:
+Os Resultados preliminares iniciavam diretamente pela descrição técnica do protótipo acadêmico.
+)
+(V3  ENTRA:
+Os Resultados passam a iniciar pelo contato inicial, pelas necessidades identificadas e pela relação com os requisitos da solução.
+)
+
 #### Contato inicial com a comunidade externa
 
+(V2:
+NÃO EXISTIA resultado sobre o contato inicial com a gestora de marketing.
+)
+(V3  ENTRA:
 O contato inicial com a gestora de marketing evidenciou a necessidade de compreender quanto deveria
 ser investido em tráfego pago e de avaliar se os valores investidos até então eram adequados aos
 objetivos da instituição.
+)
 
+(V2:
+NÃO EXISTIA resultado sobre o contato inicial com a direção/mantenedora, as necessidades identificadas ou sua relação com requisitos.
+)
+(V3  ENTRA:
 No contato com a direção/mantenedora, buscou-se compreender quais informações, indicadores e
 insights seriam necessários para apresentar e acompanhar os investimentos e os resultados ao longo
 do tempo. Essas necessidades orientaram a organização inicial dos indicadores, das comparações, das
 visualizações e da estrutura da interface, sem constituir validação ou aprovação do protótipo.
+)
 
 #### Estratégia incremental de prototipação
 
+(V2:
+NÃO EXISTIA subseção que conectasse a estratégia de prototipação à ordem dos Resultados.
+)
+(V3  ENTRA:
 A solução foi organizada nas quatro fases descritas na metodologia. A Fase 1 reúne Captação e
 Matrículas; as fases posteriores correspondem a Ads, Reels orgânicos e Objetivo da Gestão com
 Arquitetura & Algoritmos. Assim, a apresentação dos resultados a seguir limita-se ao resultado
 funcional atual da Fase 1, preservando as demais fases como planejamento.
+)
 
 #### Protótipo acadêmico
 
@@ -607,8 +698,22 @@ foi publicado na Vercel, disponibilizando somente Captação e Matrículas. Os m
 relatórios, indicadores e visualizações baseados em dados sintéticos e não mantêm conexão com
 contas de anúncios, gestão de relacionamento com clientes (CRM), sistema acadêmico ou qualquer base real da instituição parceira.
 
+(V2  SAI:
+CRM
+)
+(V3  ENTRA:
+gestão de relacionamento com clientes (CRM)
+)
+
 O protótipo organiza a visualização de informações produzidas em cenário sintético e determinístico,
 preservando a identificação de recortes, a origem acadêmica dos dados e os limites de interpretação.
+
+(V2  SAI:
+O plano completo permanece incremental: os módulos de Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos estão previstos para fases posteriores e não constituem resultados funcionais desta entrega.
+)
+(V3:
+REMOVIDO POR REPETIÇÃO — conteúdo preservado em 2.5, Estratégia incremental de prototipação.
+)
 
 ```text
 dados sintéticos da Fase 1
@@ -632,6 +737,13 @@ cenário acadêmico determinístico utilizado para demonstrar a organização da
 Figura 1 – Visão geral do módulo de captação do protótipo acadêmico
 
 [INSERIR FIGURA 1 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E FUNIL; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
+
+(V2  SAI:
+[INSERIR FIGURA 1 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E FUNIL]
+)
+(V3  ENTRA:
+[INSERIR FIGURA 1 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E FUNIL; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
+)
 
 (https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
 
@@ -668,6 +780,13 @@ ser inferida como resultado observado.
 Figura 3 – Visão geral do módulo de matrículas do protótipo acadêmico
 
 [INSERIR FIGURA 3 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E COMPOSIÇÃO POR SAFRA; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
+
+(V2  SAI:
+[INSERIR FIGURA 3 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E COMPOSIÇÃO POR SAFRA]
+)
+(V3  ENTRA:
+[INSERIR FIGURA 3 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E COMPOSIÇÃO POR SAFRA; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
+)
 
 (https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
 
