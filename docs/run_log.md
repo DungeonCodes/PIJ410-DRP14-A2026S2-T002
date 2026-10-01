@@ -646,3 +646,13 @@ Resultado: os placeholders foram tornados mais prescritivos para a captura manua
 Arquivos alterados/criados: `docs/relatorio/parcial.md`, `docs/relatorio/Relatorio_Parcial_V2.md` e `docs/run_log.md`. Nenhum commit ou push realizado.
 
 ---
+
+Data: 2026-10-01
+Ação realizada: V3 — ajustes mínimos após auditoria do feedback da orientadora.
+Resultado: expandida a primeira ocorrência de CRM e esclarecida a ocorrência de RA como Registro
+Acadêmico. A busca documental não encontrou períodos históricos reais autorizados para Google Ads,
+Meta Ads ou conteúdo orgânico; a pendência permaneceu explicitamente delimitada no relatório, sem
+inserção de datas. Nenhum outro conteúdo foi alterado; V1 e V2 foram preservadas e V3 permanece a
+versão corrente de revisão. Nenhum DOCX/PDF, código, dataset, decisão, commit ou push foi alterado.
+
+---
