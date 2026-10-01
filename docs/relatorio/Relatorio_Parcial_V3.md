@@ -7,7 +7,6 @@
 > Marcadores `«PENDENTE: …»` indicam decisão do grupo ainda não tomada — nenhum documento vai
 > para conversão com marcador pendente.
 
-<!-- V3-ORIENTADORA-07: fontes das tabelas -->
 | Seção | Rubrica | Status |
 |---|---|---|
 | Pré-textuais (capa, folha de rosto, ficha, resumo, sumário) | 2,0 (Linguagem e Referências) | ⬜ |
@@ -21,7 +20,6 @@
 
 Fonte: Elaborado pelo grupo (2026).
 
-<!-- V3-ORIENTADORA-07: fontes das tabelas e siglas -->
 ## Dados do projeto
 
 Consolidados a partir do Plano de Ação do grupo (`/docs/univesp/Plano_de_Acao_PIJ410_2026S2.docx`).
@@ -122,7 +120,6 @@ Projeto Integrador, 2026).
 
 #### Objetivo geral
 
-<!-- V3-ORIENTADORA-03: objetivo geral -->
 Desenvolver uma solução analítica para organizar dados históricos de investimentos em mídia digital
 e apoiar a tomada de decisão sobre a distribuição do orçamento de marketing em uma instituição de
 ensino.
@@ -276,7 +273,6 @@ cliques e taxa de cliques (CTR) avaliam a resposta inicial; custo por clique (CP
 conversão aproximam o resultado de captação; custo por aquisição (CPA) e retorno sobre o investimento em publicidade (ROAS) apoiam a comparação entre o valor
 gerado e o recurso aplicado (Saura, 2021; Saura; Palos-Sánchez; Suárez, 2017).
 
-<!-- V3-ORIENTADORA-07: fontes das tabelas e siglas -->
 | Indicador ou combinação | Pergunta de decisão que orienta |
 |---|---|
 | Investimento, impressões e alcance | Onde houve entrega e exposição suficientes para justificar continuidade ou revisão da segmentação? |
@@ -453,7 +449,6 @@ indicadores distintos. Essa precaução é coerente com a literatura de busca pa
 de conversão depende da estratégia de atribuição e pode alterar a interpretação do retorno
 (Li et al., 2016).
 
-<!-- V3-ORIENTADORA-02: período histórico -->
 No ambiente acadêmico, o recorte atualmente demonstrado para captação e matrículas é inteiramente
 sintético: abrange as safras de 2022 a 2026, com última observação simulada em 15/08/2026. Para
 Google Ads, Meta Ads e conteúdo orgânico, não há, até o momento, período histórico autorizado para
@@ -557,7 +552,6 @@ disponibilizada com os módulos Captação e Matrículas; as estruturas preparat
 permanecem bloqueadas e não constituem entrega funcional. Como referência técnica, Thakkar (2020)
 descreve componentes React e recursos de renderização no servidor com Next.js.
 
-<!-- V3-ORIENTADORA-04: estratégia incremental em quatro fases -->
 A construção e a prototipação seguem estratégia incremental em quatro fases: Fase 1, Captação e
 Matrículas; Fase 2, Ads (visão geral, Google Ads, Meta Ads e estratégia); Fase 3, Reels orgânicos;
 e Fase 4, Objetivo da Gestão e Arquitetura & Algoritmos. A abertura de cada fase é incremental e
@@ -587,7 +581,6 @@ recebidas, sem antecipar aceitação, melhoria de desempenho ou alteração de d
 
 ### 2.5 Resultados preliminares: solução inicial
 
-<!-- V3-ORIENTADORA-01: contato inicial com a comunidade -->
 #### Contato inicial com a comunidade externa
 
 O contato inicial com a gestora de marketing evidenciou a necessidade de compreender quanto deveria
@@ -599,7 +592,6 @@ insights seriam necessários para apresentar e acompanhar os investimentos e os 
 do tempo. Essas necessidades orientaram a organização inicial dos indicadores, das comparações, das
 visualizações e da estrutura da interface, sem constituir validação ou aprovação do protótipo.
 
-<!-- V3-ORIENTADORA-05: estratégia de prototipação nos resultados -->
 #### Estratégia incremental de prototipação
 
 A solução foi organizada nas quatro fases descritas na metodologia. A Fase 1 reúne Captação e
@@ -639,7 +631,6 @@ cenário acadêmico determinístico utilizado para demonstrar a organização da
 
 Figura 1 – Visão geral do módulo de captação do protótipo acadêmico
 
-<!-- V3-ORIENTADORA-06: destaque de interação na figura -->
 [INSERIR FIGURA 1 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E FUNIL; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
 
 (https://pij-410-drp-14-a2026-s2-t002.vercel.app/captacao)
@@ -676,7 +667,6 @@ ser inferida como resultado observado.
 
 Figura 3 – Visão geral do módulo de matrículas do protótipo acadêmico
 
-<!-- V3-ORIENTADORA-06: destaque de interação na figura -->
 [INSERIR FIGURA 3 – CAPTURAR CABEÇALHO DA FASE 1, FILTROS, INDICADORES E COMPOSIÇÃO POR SAFRA; DESTACAR VISUALMENTE OS FILTROS INTERATIVOS]
 
 (https://pij-410-drp-14-a2026-s2-t002.vercel.app/matriculas)
