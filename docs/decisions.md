@@ -73,6 +73,11 @@ artefatos de revisão, os Markdown podem conter marcações editoriais explícit
 não devem ser copiadas para o DOCX final. O DOCX não é fonte de verdade e alterações manuais nele
 que precisem tornar-se oficiais devem primeiro ser reconciliadas em `parcial.md`.
 
+Para orientar a montagem manual, a convenção editorial usa `(DOCX  COPIAR: ...)` para conteúdo
+vigente selecionado, `(REVISÃO  NÃO COPIAR: ...)` para histórico e notas editoriais, e
+`(DOCX  AÇÃO MANUAL: ...)` para tarefas de montagem. Esses três marcadores também não pertencem ao
+DOCX final; apenas orientam a seleção humana.
+
 V1 e V2 são versões encerradas, imutáveis e históricas. A versão corrente de revisão, atualmente
 V3, pode receber anotações e correções enquanto permanecer sincronizada com `parcial.md`; ela só se
 torna encerrada mediante decisão explícita. Quando houver nova rodada após o encerramento, a fonte
