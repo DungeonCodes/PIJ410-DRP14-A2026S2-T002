@@ -45,7 +45,7 @@ pena de o item "Adequações" do relatório final registrar inconsistência.
 | Turma | PIJ410-DRP14-A2026S2-T002 |
 | Orientadora | Letícia Vieira Santos |
 | Polos | Aricanduva, São Rafael, Rosa da China, Jaçanã |
-| Integrantes | 8 (ver Plano de Ação; um RA ainda a informar) |
+| Integrantes | 8 (ver Plano de Ação; um Registro Acadêmico (RA) ainda a informar) |
 | Título provisório | Plataforma Analítica para Apoio à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional |
 | Tema específico | Desenvolvimento de análise de dados em escala sobre dados históricos de investimentos em mídia digital, com indicadores determinísticos, aprendizagem de máquina para análise preditiva, inteligência artificial (IA) agêntica como apoio controlado e interface web para visualização dos resultados |
 | Problema | Dados de investimento e desempenho de mídia digital encontram-se dispersos em diferentes fontes, dificultando a análise do retorno das campanhas e a tomada de decisão sobre a distribuição do orçamento de marketing |
@@ -60,6 +60,13 @@ Na tabela, “IA agêntica”; objetivo com métodos de análise, aprendizagem d
 )
 (V3  ENTRA:
 Na tabela, “inteligência artificial (IA) agêntica”; objetivo direto sobre solução analítica; Fonte: Elaborado pelo grupo (2026).
+)
+
+(V2/V3 ANTERIOR  SAI:
+Na linha “Integrantes”, 8 (ver Plano de Ação; um RA ainda a informar).
+)
+(V3  ENTRA:
+Na linha “Integrantes”, 8 (ver Plano de Ação; um Registro Acadêmico (RA) ainda a informar).
 )
 
 ---
@@ -205,8 +212,16 @@ relevantes às suas decisões sem impor um modelo desvinculado da realidade inst
 
 O escopo está limitado à consolidação, análise e visualização de dados históricos relacionados a
 campanhas de mídia paga e aos indicadores definidos com a instituição parceira. Não fazem parte
-do estudo a integração com contas reais de anúncios, CRM, sistemas acadêmicos ou outras bases
+do estudo a integração com contas reais de anúncios, gestão de relacionamento com clientes (CRM), sistemas acadêmicos ou outras bases
 operacionais, nem o tratamento de dados pessoais ou informações comerciais sensíveis. A solução
+
+(V2/V3 ANTERIOR  SAI:
+do estudo a integração com contas reais de anúncios, CRM, sistemas acadêmicos ou outras bases operacionais.
+)
+(V3  ENTRA:
+do estudo a integração com contas reais de anúncios, gestão de relacionamento com clientes (CRM), sistemas acadêmicos ou outras bases operacionais.
+)
+
 possui, desde 27/08/2026, um ambiente acadêmico independente e sanitizado. Sua Fase 1, com os módulos
 Captação e Matrículas, utiliza somente dados sintéticos locais e está funcional e publicada na
 Vercel. Ads, Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos integram o plano
