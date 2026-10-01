@@ -545,6 +545,32 @@ realizado.
 
 ---
 
+Data: 2026-10-01
+Ação realizada: Revisão V3 — feedback da orientadora.
+Feedback aplicado: foram inseridos, nos Resultados preliminares, o registro do contato inicial com a
+gestora de marketing e com a direção/mantenedora, sua relação com os requisitos iniciais e a
+estratégia incremental de prototipação; a divisão em quatro fases foi explicitada na Metodologia; o
+Objetivo Geral foi reduzido ao resultado pretendido; foram incluídos o recorte sintético atual de
+Captação e Matrículas, expansões de siglas na primeira ocorrência, fontes das tabelas e instruções
+para destacar filtros interativos nas Figuras 1 e 3. Os cinco placeholders de figuras foram
+preservados.
+Pendência: não há período histórico autorizado para uso acadêmico de Google Ads, Meta Ads ou conteúdo
+orgânico; os respectivos recortes permanecem condicionados à disponibilidade e à autorização das
+fontes. Não foram inventados períodos, entrevistas, feedbacks nem validação externa.
+
+### Checklist de exportação V3
+- inserir/verificar numeração de páginas;
+- atualizar páginas da Lista de Ilustrações;
+- verificar fonte das tabelas;
+- revisar quebras de página/texto;
+- conferir figuras e legendas no PDF final.
+
+Resultado: `docs/relatorio/parcial.md` permanece a fonte de verdade. V1 e V2 foram preservadas,
+e `docs/relatorio/Relatorio_Parcial_V3.md` foi criada como snapshot idêntico após a revisão.
+Nenhum DOCX/PDF, código, dado, documento oficial, commit ou push foi alterado/gerado.
+
+---
+
 Data: 2026-09-23
 Ação realizada: registro do ADR-007 para revisão de alterações propostas nos relatórios.
 Arquivo alterado:
