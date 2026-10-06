@@ -138,8 +138,9 @@ a decisão.
 
 A ideia básica que orienta o trabalho é que esse conjunto disperso pode ser consolidado e submetido
 à análise de dados em escala. Indicadores calculados por regras determinísticas poderão ser
-complementados por um modelo de aprendizagem de máquina, desde que existam dados históricos
-autorizados e adequados para treinamento e avaliação. A interface web apresenta os resultados
+complementados pela investigação experimental de padrões. Neste trabalho, foi executado um
+experimento separado de regressão para CPR no Google Ads, com dados integralmente sintéticos,
+sem integração à interface ativa. A interface web apresenta os resultados
 disponíveis de modo acompanhável pela gestão. O objeto deste trabalho é, assim, o desenvolvimento e
 a validação de uma análise de dados aplicada a investimentos em mídia digital no contexto
 educacional, comunicada por uma plataforma web e avaliada junto aos profissionais que respondem por
@@ -171,8 +172,8 @@ nem de dados sensíveis da instituição parceira.
 
 O projeto busca desenvolver análise de dados em escala a partir de um conjunto de dados históricos
 de investimentos em mídia digital, aplicando métodos analíticos e preparando uma interface para
-visualização dos resultados. A eventual aplicação de aprendizagem de máquina permanece condicionada
-à disponibilidade de dados adequados. Essa finalidade corresponde ao tema norteador da UNIVESP e
+visualização dos resultados. A aprendizagem de máquina foi delimitada a um experimento sintético
+de CPR no Google Ads, executado separadamente do protótipo. Essa finalidade corresponde ao tema norteador da UNIVESP e
 articula o problema identificado junto à comunidade parceira (Grupo do Projeto Integrador, 2026).
 
 ### 2.1.1 Objetivo geral
@@ -186,7 +187,7 @@ ensino.
 - Consolidar dados históricos de investimento e desempenho de campanhas provenientes de fontes distintas em uma estrutura adequada à análise.
 - Identificar e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
 - Implementar rotinas determinísticas para calcular indicadores a partir dos dados consolidados, com parâmetros e resultados passíveis de conferência.
-- Avaliar a viabilidade de preparar dados históricos de conteúdo orgânico da Meta, treinar e avaliar ao menos um modelo supervisionado de aprendizagem de máquina para estimar ou classificar uma medida de desempenho definida, comparando-o a uma referência determinística e registrando suas métricas de avaliação.
+- Avaliar, em dados históricos integralmente sintéticos de Google Ads, uma regressão supervisionada para estimar CPR, comparando-a à persistência do CPR histórico elegível e registrando métricas, controles de leakage e limitações.
 - Empregar IA agêntica via linha de comando como apoio controlado à formulação, execução e interpretação de cenários de simulação, sem substituir os cálculos determinísticos, o modelo de aprendizagem de máquina ou a revisão humana.
 - Desenvolver uma interface web que apresente os indicadores de forma compreensível para a gestão.
 - Avaliar a versão do protótipo com profissionais da instituição parceira, registrando as contribuições recebidas para sua evolução.
@@ -205,8 +206,8 @@ tomada de decisão da gestão de uma instituição de ensino?
 
 O problema vincula-se ao tema norteador da UNIVESP porque parte de um conjunto de dados existente,
 demanda análise de dados em escala e prevê uma interface web para tornar os resultados
-acompanháveis. A aprendizagem de máquina integra o tema como possibilidade experimental sujeita à
-disponibilidade e à adequação da base. A escolha de indicadores e métricas é necessária para
+acompanháveis. A aprendizagem de máquina integra o tema por meio do experimento sintético de
+CPR no Google Ads, sem inferência operacional ou decisão autônoma. A escolha de indicadores e métricas é necessária para
 avaliar a efetividade das estratégias de marketing digital e verificar sua aderência aos objetivos
 organizacionais (Saura; Palos-Sánchez; Suárez, 2017). A proposta, portanto, não se limita à criação
 de uma interface: busca converter dados dispersos em informação que possa sustentar uma decisão de
@@ -244,11 +245,10 @@ sem ser apresentada como o método que aprende com os dados.
 Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
 Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
 marketing ligadas a apoio à decisão e impacto financeiro. Assim, a contribuição técnica prevista
-não é apenas uma interface nem uma explicação gerada por IA. Caso a base histórica de conteúdo
-orgânico da Meta se mostre adequada, o método poderá incluir o treinamento e a avaliação de um
-modelo de aprendizagem de máquina. O modelo, a variável-alvo, as variáveis de entrada, o
-particionamento dos dados e as métricas de avaliação deverão ser documentados na metodologia e nos
-resultados.
+não é apenas uma interface nem uma explicação gerada por IA. O recorte de aprendizagem de máquina
+adotado é uma regressão supervisionada para CPR no Google Ads, com dados sintéticos. O modelo,
+a variável-alvo, as entradas, o particionamento e as métricas do experimento executado são
+documentados nas subseções 2.5.11 e 3.4.4.
 
 ### 2.3.1 Marketing digital e decisão orientada por dados
 
@@ -271,8 +271,9 @@ exposição, interações e conversões registradas, em insumos para acompanhame
 (2021) associa a aplicação de ciência de dados no marketing digital à análise de desempenho e à
 utilização de métricas para orientar ações. No escopo deste projeto, a interface web é o meio de
 visualização dos resultados; a contribuição central é a organização analítica dos dados e, em
-módulo experimental separado, a possível avaliação de aprendizagem de máquina sobre relatórios de
-conteúdo orgânico da Meta, se a base permitir uma avaliação metodologicamente válida.
+experimento separado, a avaliação de aprendizagem de máquina sobre o CPR sintético do Google Ads.
+Não há aprendizagem de máquina em Captação, Matrículas, Meta Ads, conteúdo orgânico ou gestão;
+esses módulos utilizam ou preveem análise determinística e descritiva.
 
 Assim, a decisão orientada por dados é tratada como processo de apoio, e não como substituição do
 julgamento dos responsáveis da instituição. Os indicadores e as estimativas analíticas devem
@@ -285,9 +286,9 @@ restrições identificadas pela comunidade externa.
 Tráfego pago, no escopo deste trabalho, corresponde às ações de comunicação em que a instituição
 investe recursos para veicular anúncios em plataformas digitais e direcionar usuários a um ponto de
 contato definido. A expressão não se confunde com todo o marketing digital: ela delimita a parcela
-das ações cuja veiculação produz registros de investimento e desempenho. O recorte empírico será
-formado exclusivamente pelos dados históricos que a instituição parceira autorizar para uso
-acadêmico.
+das ações cuja veiculação produz registros de investimento e desempenho. O recorte demonstrativo
+desta etapa utiliza exclusivamente dados sintéticos, sem importação de registros operacionais
+da instituição parceira.
 
 As campanhas de anúncios oferecem diferentes possibilidades de configuração. No caso da
 publicidade de busca, por exemplo, é possível associar anúncios a palavras-chave e ajustar lances
@@ -358,10 +359,10 @@ campo pela melhoria do desempenho em uma tarefa a partir da experiência represe
 
 No contexto do marketing, De Mauro, Sestino e Bacconi (2022) situam a aprendizagem de máquina como
 subárea da inteligência artificial e identificam aplicações ligadas ao apoio à decisão e ao impacto
-financeiro. Neste PI, o recorte experimental proposto é usar relatórios históricos de conteúdo
-orgânico da Meta, caso contenham volume e variáveis suficientes. A variável-alvo poderá ser uma
-medida de engajamento observada após a publicação ou uma classe de desempenho definida a partir
-dessa medida; a escolha depende da inspeção da base e deve ser registrada antes do treinamento.
+financeiro. Neste PI, o recorte experimental é uma regressão para CPR no Google Ads, com
+variáveis históricas elegíveis e calendário em cenário inteiramente sintético. O desenho
+exclui informação contemporânea que reconstruiria a fórmula do target ou não estaria disponível
+na emissão da estimativa; não propõe previsão de matrículas ou recomendação de orçamento.
 
 O método exige a descrição das variáveis de entrada, da variável-alvo, do particionamento entre
 treinamento e teste, dos modelos comparados e das métricas de avaliação. A qualidade de um modelo
@@ -519,11 +520,12 @@ Cada fonte deve ter período de referência e unidade de análise identificados 
 comparação. Métricas de fontes ou janelas temporais distintas não podem ser somadas ou comparadas
 como se representassem o mesmo fenômeno. No ambiente acadêmico, o recorte demonstrado para
 captação e matrículas é inteiramente sintético: abrange as safras de 2022 a 2026, com última
-observação simulada em 15/08/2026. Não há período histórico autorizado para Google Ads, Meta Ads ou
-conteúdo orgânico; esses recortes somente poderão ser definidos após disponibilidade e autorização.
+observação simulada em 15/08/2026. Não há período histórico real autorizado para Google Ads, Meta Ads ou
+conteúdo orgânico. O experimento de CPR utiliza uma cronologia fictícia independente, de 2017 a 2023,
+sem correspondência com campanhas ou períodos operacionais da instituição.
 
-Os dados autorizados, o código operacional e os relatórios técnicos detalhados permanecem fora
-deste repositório. No ambiente acadêmico, são usados somente dados fictícios ou sanitizados, sem
+Os dados reais, o código operacional e os relatórios operacionais detalhados permanecem fora
+deste repositório. No ambiente acadêmico, são usados somente dados sintéticos, sem
 identificadores pessoais, credenciais, nomes de contas ou informações comerciais sensíveis.
 
 ### 2.5.8 Preparação, governança e rastreabilidade dos dados
@@ -564,16 +566,48 @@ etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal espec�
 
 ### 2.5.11 Protocolo experimental de aprendizagem de máquina
 
-A execução do protocolo depende da disponibilidade de relatórios históricos de conteúdo orgânico
-da Meta com volume e variáveis adequados. Se essa condição for atendida, deverão ser definidos
-variável-alvo, atributos disponíveis antes da publicação, divisão temporal entre treino e teste,
-referência determinística, modelos comparados e métricas de avaliação. O protocolo distingue
-cálculos por fórmula de modelos treinados com exemplos históricos (Jordan; Mitchell, 2015; De
-Mauro; Sestino; Bacconi, 2022).
+Foi executado um experimento supervisionado, exploratório e reproduzível, restrito ao CPR do
+Google Ads. Neste recorte, CPR é o custo por conversão registrada na plataforma, calculado como
+investimento dividido pelas conversões registradas. Não representa custo por matrícula ou por
+lead único e não estabelece causalidade entre anúncio e matrícula. Denominador zero ou ausente
+produz valor indefinido, não zero artificial. O protocolo distingue indicadores calculados por
+fórmula de modelos treinados com exemplos históricos (Jordan; Mitchell, 2015; De Mauro;
+Sestino; Bacconi, 2022).
 
-[PENDENTE – confirmar se existe base autorizada e metodologicamente adequada]
+O conjunto é integralmente sintético, gerado de forma independente com a seed fixa
+`pij410-ads-cenario-independente-1`. A unidade de análise é campanha por mês-calendário, em
+cronologia fictícia de 2017 a 2023. A disponibilidade dos dados foi simulada como 14 dias após
+o encerramento do mês. Essa maturação é uma hipótese do cenário sintético, não uma regra da
+plataforma ou da instituição real. Para estimativas emitidas no início de t, o mês t−1 ainda
+não está disponível; por isso, utilizam-se métricas de t−2 cuja disponibilidade precede a emissão.
 
-[PENDENTE – somente se a condição anterior for atendida, registrar treinamento, teste, baseline, métricas e limitações do modelo]
+As entradas são CPR, CTR, CPC e logaritmo de um mais o número de cliques de t−2, além do seno e
+cosseno do mês de t. Os atributos históricos não recompõem o CPR contemporâneo. As exclusões
+metodológicas foram definidas antes da avaliação, para prevenir leakage, isto é, uso de
+informação do resultado ou do futuro no treinamento ou na emissão da estimativa.
+
+| Grupo | Decisão | Justificativa |
+|---|---|---|
+| Investimento e conversões em t | Excluir | Compõem diretamente o target e não estão disponíveis na emissão |
+| CPR em t | Excluir | É o próprio target |
+| Métricas contemporâneas e configurações posteriores | Excluir | Informação indisponível na emissão ou decidida posteriormente |
+| Métricas históricas t−2 | Utilizar | Disponibilidade verificada antes da observação-alvo |
+| Calendário | Utilizar | Conhecido antecipadamente |
+
+Fonte: Elaborado pelo grupo (2026).
+
+O particionamento é temporal, sem sorteio aleatório: 198 amostras de treino e 71 de teste, com
+corte na data fictícia de 01/07/2021. Targets ainda indisponíveis no corte foram retirados do
+treino; amostras sem histórico elegível ou CPR definido foram excluídas. A padronização foi
+ajustada exclusivamente no treino, sem usar estatísticas do teste. O modelo permanece fixo e
+a avaliação emite estimativas mensais sucessivas, podendo utilizar históricos do período de
+teste somente depois de sua maturação. Não se trata de prever todo o horizonte no dia do corte.
+
+A referência é a persistência do CPR elegível de t−2. Ela foi comparada a uma regressão linear
+com intercepto, treinada apenas nas amostras anteriores ao corte. Foram calculados MAE, RMSE e
+R² no conjunto de teste, mantendo registro de previsões e condições de execução, conforme o
+princípio de reprodutibilidade computacional (Peng, 2011). A execução ocorre localmente via CLI,
+sem API real e sem disponibilização do ML na interface da Fase 2. Os resultados estão em 3.4.4.
 
 ### 2.5.12 Interpretação assistida por IA e engenharia de contexto
 
@@ -590,7 +624,8 @@ verificadas. Saídas sem base rastreável não são utilizadas (Wang et al., 202
 Este capítulo distingue resultados comprovados, desenvolvimento em curso e itens planejados. Na
 data de estruturação desta fonte editorial, a Fase 1 está ativa e as Fases 2 a 4 permanecem
 planejadas e bloqueadas. A existência de páginas preparatórias no código não constitui
-funcionalidade concluída.
+funcionalidade concluída. Separadamente, foi executado via CLI o experimento sintético de CPR
+descrito em 3.4.4; ele não constitui funcionalidade ativa do protótipo nem validação comunitária.
 
 ## 3.1 Contato inicial e necessidades identificadas
 
@@ -607,8 +642,8 @@ da estrutura da interface, sem constituir validação ou aprovação do protóti
 
 | Fase | Escopo | Estado em 06/10/2026 | Evidência documental |
 |---|---|---|---|
-| Fase 1 | Captação e Matrículas | ATIVA/CONCLUÍDA | Módulos funcionais com dados sintéticos |
-| Fase 2 | Ads: visão geral, Google Ads, Meta Ads e estratégia | PLANEJADA/BLOQUEADA | Feature gate fechado; requisitos ainda não implementados |
+| Fase 1 | Captação e Matrículas | ATIVA/FUNCIONAL | Módulos funcionais com dados sintéticos |
+| Fase 2 | Ads: visão geral, Google Ads, Meta Ads e estratégia | PLANEJADA/BLOQUEADA | Interfaces e contratos sintéticos preparados; feature gate fechado |
 | Fase 3 | Conteúdo orgânico | PLANEJADA/BLOQUEADA | Feature gate fechado; conjunto sintético e algoritmos pendentes |
 | Fase 4 | Objetivo da Gestão, Arquitetura e Algoritmos | PLANEJADA/BLOQUEADA | Feature gate fechado; depende das fases anteriores |
 
@@ -671,11 +706,11 @@ Fonte: Elaborado pelo grupo (2026).
 
 O módulo de Matrículas apresenta histórico sintético por safra, ciclo, turma e mês. A interface
 permite filtrar os recortes e distinguir total de matrículas, rematrículas, novas matrículas e
-retenção. Quando não há safra anterior para comparação, a retenção é identificada como
-indeterminada, em vez de ser inferida como resultado observado.
+participação de rematrículas no total da safra atual. Essa participação não é retenção de coorte;
+o protótipo não dispõe da população elegível anterior necessária para calcular essa retenção.
 
 As visualizações complementares discriminam a composição por ciclo e turma, a efetivação mensal e
-a tabela de retenção por safra. A organização mantém separados os valores calculados, as contagens
+a tabela de participação de rematrículas por safra. A organização mantém separados os valores calculados, as contagens
 sintéticas e os casos em que não há base de comparação.
 
 Figura [numeração pendente] – Visão final do módulo de Matrículas
@@ -686,7 +721,7 @@ Fonte: Elaborado pelo grupo (2026).
 
 Figura [numeração pendente] – Visualizações complementares do módulo de Matrículas
 
-[INSERIR FIGURA – inserir composição por ciclo ou turma e série mensal ou retenção]
+[INSERIR FIGURA – inserir composição por ciclo ou turma e série mensal ou participação de rematrículas]
 
 Fonte: Elaborado pelo grupo (2026).
 
@@ -696,9 +731,31 @@ Fonte: Elaborado pelo grupo (2026).
 
 [PENDENTE – registrar funcionalidades, filtros, indicadores, algoritmos e visualizações efetivamente concluídos, sem converter scaffolding ou planejamento em resultado]
 
-### 3.4.4 Aprendizagem de máquina e uso de IA
+### 3.4.4 Experimento de aprendizagem de máquina para CPR
 
-[PENDENTE – inserir resultados de aprendizagem de máquina apenas se houver base autorizada, treinamento, conjunto de teste, baseline, métricas e limitações documentadas]
+O experimento descrito em 2.5.11 foi efetivamente executado e pode ser reproduzido localmente
+via CLI. Os artefatos sintéticos registram condições de execução, amostras e previsões.
+Esse resultado técnico é separado da interface: a Fase 2 permanece bloqueada e o ML não está
+disponibilizado como funcionalidade ativa. Não foram utilizados dados operacionais ou APIs reais.
+
+| Modelo | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
+|---|---:|---:|---:|
+| Persistência t−2 | 6,615678 | 8,363078 | −0,071903 |
+| Regressão linear | 5,853007 | 7,673297 | 0,097625 |
+
+Fonte: Elaborado pelo grupo, a partir da execução do experimento sintético (2026).
+
+A regressão linear apresentou erros menores que a persistência nas métricas observadas,
+mas o ganho foi modesto e o poder explicativo permaneceu baixo. Os resultados sustentam apenas
+a comparação experimental neste cenário sintético. Não demonstram desempenho em dados reais,
+eficácia institucional, atribuição causal ou capacidade de automatizar investimentos. A hipótese
+de maturação de 14 dias também é exclusivamente sintética.
+
+Figura [numeração pendente] – CPR sintético observado e previsto no conjunto de teste
+
+[INSERIR FIGURA – comparação entre CPR sintético observado e previsto; opcional, sem figura produzida nesta execução]
+
+Fonte: Elaborado pelo grupo (2026).
 
 [PENDENTE – descrever eventual uso efetivo de IA assistiva e a revisão humana correspondente]
 
@@ -749,7 +806,7 @@ permanece pendente até que exista evidência real.
 | Necessidade identificada | Elemento da solução | Evidência no protótipo | Resultado da validação |
 |---|---|---|---|
 | Compreender quanto investir em mídia | Indicadores e futura análise de cenários | Estrutura analítica documentada; cenário de Ads ainda planejado | [PENDENTE] |
-| Avaliar a adequação dos investimentos | Métricas determinísticas e limites explícitos | Fórmulas e regras metodológicas; dados de mídia ainda não autorizados | [PENDENTE] |
+| Avaliar a adequação dos investimentos | Métricas determinísticas e limites explícitos | Fórmulas e regras metodológicas; dados reais de mídia não autorizados; Fase 2 bloqueada | [PENDENTE] |
 | Acompanhar indicadores | Painéis de Captação e Matrículas | Indicadores, filtros e visualizações da Fase 1 | [PENDENTE] |
 | Comparar períodos e canais | Filtros temporais e visualizações comparativas | Comparação por safras na Fase 1; comparação por canais ainda planejada | [PENDENTE] |
 | Organizar informações dispersas | Interface web com dados e contexto padronizados | Módulos acadêmicos independentes com dados sintéticos | [PENDENTE] |
@@ -776,12 +833,14 @@ impacto institucional.
 As fontes disponíveis não permitem atribuir individualmente uma matrícula a uma ação de mídia.
 Associações agregadas devem ser interpretadas dentro do período, da unidade de análise e da regra de
 atribuição declarados. A ausência de períodos históricos autorizados para Google Ads, Meta Ads e
-conteúdo orgânico impede apresentar resultados desses componentes.
+conteúdo orgânico impede apresentar resultados operacionais desses componentes. Não impede
+o experimento separado de CPR, executado exclusivamente sobre dados sintéticos.
 
 Resultados obtidos em cenário sintético não podem ser generalizados para a operação da instituição
-ou para outras organizações. O componente de aprendizagem de máquina permanece condicionado à
-adequação da base, e a interpretação assistida por IA não substitui evidência, cálculo ou decisão
-humana.
+ou para outras organizações. O experimento de CPR apresentou baixo poder explicativo e depende
+do processo gerador e da hipótese sintética de maturação de 14 dias. Não demonstra disponibilidade
+histórica de métricas reais ou utilidade operacional. A interpretação assistida por IA não
+substitui evidência, cálculo ou decisão humana.
 
 [PENDENTE – registrar limitações observadas durante testes e validação com a comunidade]
 
@@ -793,6 +852,11 @@ o momento demonstra uma aplicação acadêmica independente, com dados sintétic
 determinísticas e módulos funcionais de Captação e Matrículas. Esse resultado sustenta apenas as
 afirmações técnicas correspondentes à Fase 1 e não comprova, por si só, impacto sobre decisões ou
 resultados da comunidade.
+
+Separadamente, o experimento demonstrou a viabilidade técnica de aplicar regressão supervisionada
+ao problema acadêmico de CPR definido. Entretanto, o baixo poder explicativo exige interpretar
+seus resultados apenas como exercício experimental sobre dados sintéticos. Essa constatação
+provisória não estabelece eficácia operacional nem atendimento integral aos objetivos do projeto.
 
 [PENDENTE – avaliar o atendimento do objetivo geral e de cada objetivo específico com base nos resultados finais]
 

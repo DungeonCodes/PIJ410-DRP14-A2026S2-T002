@@ -110,4 +110,4 @@ A regressão apresentou redução modesta de erro frente à persistência nesta 
 
 O experimento é executável localmente via CLI. As telas preparadas de Ads continuam atrás do gate da Fase 2. Meta, Captação, Matrículas, conteúdo orgânico e gestão não recebem ML. Não há API ou inferência operacional em runtime.
 
-O Relatório Final e o Parcial permanecem preservados nesta atualização. A incorporação científica desta decisão, método e resultados sintéticos será uma revisão posterior do Final, distinguindo experimento técnico, funcionalidades disponíveis e validação com a comunidade.
+Na migração inicial, o Relatório Final e o Parcial foram preservados. No gate técnico-documental de 06/10/2026, o método e os resultados sintéticos foram incorporados pontualmente ao Final, distinguindo experimento técnico executado, funcionalidades disponíveis e validação comunitária ainda pendente. O Parcial e suas versões históricas permanecem intactos.

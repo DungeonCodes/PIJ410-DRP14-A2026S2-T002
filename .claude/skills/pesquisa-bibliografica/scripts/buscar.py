@@ -31,8 +31,8 @@ import urllib.request
 from datetime import date
 
 TIMEOUT = 30
-# Crossref e OpenAlex pedem identificacao no User-Agent e priorizam quem envia.
-UA = "PIJ410-UNIVESP/1.0 (projeto academico; mailto:relacoespublicas@colegiosapucaia.com.br)"
+# Identificacao academica sem contato ou dominio da instituicao de referencia.
+UA = "PIJ410-UNIVESP/1.0 (projeto academico)"
 
 MESES_ABNT = {
     1: "jan.", 2: "fev.", 3: "mar.", 4: "abr.", 5: "maio", 6: "jun.",

@@ -72,12 +72,12 @@ histórico adotou-se como **comparador por data**, e não como origem comprovada
 `4e1fa6e08e489500cb5308d0ed254b7101eadb60` (26/08/2026, documento de estrutura).
 Essa lacuna de procedência não foi preenchida por suposição.
 
-**Pendência de legado:** o documento já existente em
-`docs/migracao-modelo/referencias/RELATORIO-ESTRUTURA-E-METODOLOGIA-ADS.md` declara ter mantido
-parâmetros financeiros e taxas operacionais. Ele foi preservado como referência histórica;
-nenhum desses valores foi reutilizado, perturbado ou calibrado nos novos datasets. A publicação
-desse documento legado deve passar por revisão específica da política atual de sanitização.
-Esta auditoria não afirma ter sanitizado retroativamente documentos ou histórico Git.
+**Legado revisado no gate de 06/10/2026:** o documento em
+`docs/migracao-modelo/referencias/RELATORIO-ESTRUTURA-E-METODOLOGIA-ADS.md` declarava manter
+parâmetros financeiros e taxas operacionais. Seu conteúdo atual foi substituído por síntese
+conceitual, sem valores, metas, limiares, calendários ou diagnósticos operacionais.
+Nenhum desses valores foi reutilizado, perturbado ou calibrado nos datasets sintéticos.
+A sanitização da árvore de trabalho não reescreve versões anteriores no histórico Git.
 
 Comparação de metadados entre o comparador e o HEAD consolidado: **454 caminhos alterados**,
 dos quais 231 de código/configuração, 75 documentos operacionais, 141 dados/artefatos operacionais
@@ -189,11 +189,29 @@ Não foram copiadas bibliotecas operacionais, registros, exports, assets, consta
 parâmetros financeiros reais ou configurações. Os novos datasets são gerados do zero com seed
 e contêm apenas métricas agregadas/códigos de cenário fictícios.
 
-A documentação científica permanece histórica: não foram alterados Parcial, suas versões, Final,
-modelos oficiais ou evidências de comunidade. A atualização do recorte do ML no Final e a revisão
-de qualquer menção à retenção ficam pendentes de revisão editorial, sem resultados empíricos presumidos.
+A documentação científica permaneceu preservada na migração inicial: não foram alterados Parcial, suas versões, Final,
+modelos oficiais ou evidências de comunidade. Naquele momento, a atualização do recorte do ML no Final e a revisão
+de qualquer menção à retenção ficaram pendentes de revisão editorial, sem resultados empíricos presumidos.
+No gate posterior de 06/10/2026, o Final recebeu somente a integração técnico-metodológica do
+experimento de CPR e correções de consistência, inclusive participação de rematrículas em vez
+de retenção de coorte. A validação com a comunidade continua pendente.
 
 Método, leakage e resultados: [experimento-google-cpr.md](experimento-google-cpr.md).
+
+## Gate técnico-documental pós-migração e ML CPR
+
+O conteúdo atual do legado foi sanitizado e o Final recebeu método, resultados sintéticos e
+limitações, sem abrir fases ou preencher validação comunitária. A varredura ampliada encontrou
+também um contato institucional real no User-Agent do script bibliográfico em
+`.claude/skills/pesquisa-bibliografica/scripts/buscar.py`; ele foi removido, sem mudança da pesquisa.
+O teste automático de não vazamento cobre runtime, não essa pasta nem a documentação científica.
+
+**Bloqueador de sanitização no histórico:** o commit `6095a9b` ainda contém a versão operacional
+do legado, com parâmetros financeiros; o commit `9ef8af9` ainda contém o contato institucional
+do script. São exposições verificadas, não simples referências de procedência. A árvore de
+trabalho corrigida não apaga esses objetos Git. Não foi reescrito histórico, feito commit ou push.
+Antes de liberar o gate, é necessária decisão humana sobre tratamento seguro do histórico;
+essa operação não está autorizada nesta execução.
 
 ## Inventário completo de caminhos técnicos alterados
 

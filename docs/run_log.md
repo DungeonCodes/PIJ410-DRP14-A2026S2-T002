@@ -740,3 +740,24 @@ instrumentos de validação preservados. Sem dados reais, segredos ou PII nos no
 sem API operacional, deploy, DOCX/PDF, commit ou push feitos por esta execução.
 
 ---
+
+Data: 2026-10-06
+Ação realizada: Gate técnico-documental pós-migração e ML CPR.
+Arquivos alterados: legado técnico de Ads; final.md; auditoria da referência; documentação do
+experimento; User-Agent do script bibliográfico (remoção de contato institucional); este registro.
+Resultado: legado atual substituído por síntese conceitual sem parâmetros operacionais; método,
+CPR, controles de leakage e resultados sintéticos integrados pontualmente ao Final. Experimento
+CLI reproduzido com 198 amostras de treino e 71 de teste: persistência MAE 6,615678, RMSE 8,363078,
+R² −0,071903; regressão MAE 5,853007, RMSE 7,673297, R² 0,097625. Ganho modesto, sem eficácia real
+presumida. Fase 1 funcional, Fases 2–4 bloqueadas e validação comunitária ainda pendente.
+Verificação: ml:google-cpr, ml:google-cpr:verificar, npm test (inclui 37 verificações de não
+vazamento), lint, TypeScript e build passaram. Busca ampliada em texto, nove DOCX e seis PDFs
+não encontrou credenciais ou identificadores operacionais no conteúdo atual; três páginas
+normativas sem texto extraível limitam a checagem textual. Modelos, Parcial e versões, instrumentos
+de validação, código da aplicação, gates e artefatos sintéticos preservados. ADR-007 consistente,
+sem alteração. Sem validação inventada, API operacional, DOCX/PDF novo, deploy, commit ou push.
+Decisão do gate: BLOQUEADO POR SANITIZAÇÃO. As versões antigas com parâmetros operacionais
+(6095a9b) e contato institucional (9ef8af9) continuam no histórico Git; a correção atual não os apaga.
+Próximo passo: revisão humana e decisão específica sobre tratamento do histórico antes da liberação.
+
+---
