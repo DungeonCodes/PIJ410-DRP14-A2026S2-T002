@@ -21,13 +21,18 @@ Nos registros versionados, utilizar somente identificadores como `P1` e `P2` e d
 
 ## Escopo da sessão atual
 
+**Primeira aplicação: versão apresentada V1.** Acessar `/v1` e não mostrar V2 como alternativa.
+Registrar versão da interface, dataset, período e filtros usados. Ver `versoes-interface.md`.
+
 A validação prática abrange somente o que está ativo e funcional na Fase 1:
 
 - página inicial;
 - Captação;
 - Matrículas.
 
-As funcionalidades de Ads (Fase 2), Reels/conteúdo orgânico (Fase 3), Objetivo da Gestão e Arquitetura & Algoritmos (Fase 4) estão planejadas ou bloqueadas. Podem ser priorizadas como funcionalidades futuras, mas não devem ser apresentadas nem avaliadas como recursos funcionais.
+Ads (Fase 2) está ativo academicamente em V1 e V2, mas permanece fora das tarefas deste instrumento.
+Conteúdo orgânico (Fase 3), Objetivo da Gestão e Arquitetura & Algoritmos (Fase 4) continuam bloqueados.
+Não ampliar a sessão automaticamente nem confundir prioridade para rodadas futuras com recurso inexistente.
 
 ## Documentos desta pasta
 
@@ -35,6 +40,7 @@ As funcionalidades de Ads (Fase 2), Reels/conteúdo orgânico (Fase 3), Objetivo
 - `instrumento_validacao.md`: perguntas breves e matriz de rastreabilidade;
 - `protocolo_evidencias.md`: regras para coleta, anonimização e guarda de evidências;
 - `modelo_registro_respostas.md`: modelo vazio para registrar cada sessão após sua realização.
+- `versoes-interface.md`: baseline V1, base equivalente V2, controles de comparação e changelog vazio.
 
 ## Fluxo de aplicação
 

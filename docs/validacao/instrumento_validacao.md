@@ -2,7 +2,12 @@
 
 **Aplicação:** após as tarefas previstas em `roteiro_validacao.md`.
 
-**Escopo avaliado:** página inicial, Captação e Matrículas. Funcionalidades de Ads, conteúdo orgânico, Objetivo da Gestão e Arquitetura & Algoritmos são planejadas ou bloqueadas e só podem ser abordadas como prioridades futuras.
+**Versão apresentada na primeira aplicação: V1.** Registrar a versão efetivamente utilizada;
+não mostrar V2 como alternativa nesta primeira sessão.
+
+**Escopo avaliado:** página inicial, Captação e Matrículas. Ads está ativo academicamente,
+mas fora das tarefas deste instrumento. Fases 3 e 4 estão bloqueadas. A priorização abaixo
+refere-se a próximas rodadas de avaliação/desenvolvimento, não presume ausência de Ads.
 
 ## Escalas
 
@@ -49,9 +54,11 @@ Nas perguntas de avaliação final, utilizar:
 10. O que ficou melhor do que você esperava? **(resposta aberta)**
 11. O que ainda precisa ser alterado ou incluído? **(resposta aberta)**
 
-## E. Priorização de funcionalidades futuras
+## E. Priorização de áreas para próximas rodadas
 
-12. Entre as funcionalidades futuras abaixo, qual considera prioritária? Justifique brevemente a escolha.
+12. Entre as áreas abaixo, qual considera prioritária para uma próxima rodada? Justifique brevemente.
+Google/Meta/visão consolidada/estratégia já existem academicamente, mas não foram avaliados nas
+tarefas desta sessão; conteúdo orgânico e Objetivo da Gestão continuam planejados/bloqueados.
 
 - Google Ads;
 - Meta Ads;
@@ -71,7 +78,7 @@ Nas perguntas de avaliação final, utilizar:
 | Necessidade inicial | Elemento avaliado | Perguntas e tarefas relacionadas |
 |---|---|---|
 | Acompanhamento de indicadores | Indicadores e visualizações de Captação e Matrículas | Tarefas A e D; perguntas 1, 2, 4 e 13 |
-| Compreensão dos investimentos | Apoio à análise e lacunas informacionais; priorização de funcionalidades futuras de Ads e estratégia | Perguntas 4, 5, 6, 11 e 12 |
+| Compreensão dos investimentos | Apoio à análise e lacunas informacionais; priorização de áreas fora das tarefas desta sessão | Perguntas 4, 5, 6, 11 e 12 |
 | Comparação de resultados | Filtros de safra/ciclo e comparação de períodos ou grupos | Tarefas B, C e E; perguntas 3 e 7 |
 | Clareza das informações | Legibilidade, navegação e interpretação da interface | Todas as tarefas; perguntas 1, 2, 7, 8 e 14 |
 | Apoio à tomada de decisão | Utilidade percebida, aderência à expectativa e necessidades remanescentes | Perguntas 4, 5, 9, 10, 11, 13 e 15 |

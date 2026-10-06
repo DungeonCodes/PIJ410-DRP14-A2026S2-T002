@@ -7,6 +7,9 @@
 | Campo | Registro |
 |---|---|
 | Identificador do participante | P[ ] |
+| Versão da interface (V1 / V2 / etc.) | [PREENCHER NA APLICAÇÃO — primeira sessão deve usar V1] |
+| Dataset/cenário e seed | [PREENCHER NA APLICAÇÃO] |
+| Período e filtros usados | [PREENCHER NA APLICAÇÃO] |
 | Data | [PREENCHER APÓS VALIDAÇÃO] |
 | Perfil genérico | [PREENCHER APÓS VALIDAÇÃO] |
 | Modalidade da sessão | [PREENCHER APÓS VALIDAÇÃO] |

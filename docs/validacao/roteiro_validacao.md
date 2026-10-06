@@ -2,7 +2,11 @@
 
 **Duração estimada:** 20 a 30 minutos por sessão.
 
-**Escopo funcional:** página inicial, Captação e Matrículas (Fase 1). As Fases 2, 3 e 4 devem ser apresentadas apenas como planejadas ou bloqueadas, quando pertinente à priorização futura.
+**Versão apresentada na primeira aplicação: V1.** Acessar `/v1`, `/v1/captacao` e
+`/v1/matriculas`. Não mostrar V2 como alternativa; ela ainda não contém ajustes de feedback.
+
+**Escopo funcional:** página inicial, Captação e Matrículas (Fase 1). Ads está ativo na Fase 2,
+mas fora das tarefas desta sessão. Fases 3 e 4 permanecem planejadas/bloqueadas.
 
 ## Etapa 1 — Contextualização (3 a 5 minutos)
 
@@ -24,7 +28,9 @@ Apresentar brevemente:
 2. o módulo de Captação;
 3. o módulo de Matrículas.
 
-Esclarecer que Ads, conteúdo orgânico, Objetivo da Gestão e Arquitetura & Algoritmos não fazem parte do escopo funcional desta sessão. Caso surjam, podem ser tratados como possibilidades futuras de priorização, e não como funcionalidades disponíveis.
+Esclarecer que Ads, conteúdo orgânico, Objetivo da Gestão e Arquitetura & Algoritmos não fazem
+parte do escopo avaliado nesta sessão. Distinguir Ads já disponível academicamente das Fases 3 e 4
+bloqueadas. Registrar versão, período e filtros; não trocar de versão durante as tarefas.
 
 ## Etapa 3 — Tarefas orientadas (10 a 14 minutos)
 

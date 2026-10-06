@@ -65,7 +65,7 @@ const arquivosRuntime = readdirSync(new URL('../src/', import.meta.url), { recur
 for (const arquivo of arquivosRuntime) {
   const fonte = readFileSync(new URL(`../src/${arquivo.replaceAll('\\', '/')}`, import.meta.url), 'utf8');
   if (fonte.includes('google-cpr-experimento.json')) assert.equal(arquivo.replaceAll('\\', '/'), 'components/google-cpr-resultados.tsx');
-  if (fonte.includes("from '@/components/google-cpr-resultados'")) assert.equal(arquivo.replaceAll('\\', '/'), 'app/(app)/ads/google/page.tsx');
+  if (fonte.includes("from '@/components/google-cpr-resultados'")) assert.equal(arquivo.replaceAll('\\', '/'), 'ui/v1/pages/google.tsx');
   if (fonte.includes('executarExperimento(') || fonte.includes('treinarLinear(')) assert.equal(arquivo.replaceAll('\\', '/'), 'lib/ads/google-ml.ts');
 }
 console.log('Google CPR: determinismo, métricas, QR, maturação, split, ausência e prevenção de leakage verificados.');

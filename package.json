@@ -16,7 +16,9 @@
     "ml:google-cpr": "node scripts/experimento-google-cpr.mjs",
     "ml:google-cpr:verificar": "node scripts/experimento-google-cpr.mjs --verificar",
     "test:google-cpr": "node scripts/test-google-cpr.mjs",
-    "test": "npm run test:fases && npm run test:determinismo && npm run test:google-cpr && npm run ml:google-cpr:verificar && npm run test:nao-vazamento"
+    "test:interface": "node scripts/test-interface.mjs",
+    "test:interface:http": "node scripts/test-interface-http.mjs",
+    "test": "npm run test:fases && npm run test:interface && npm run test:determinismo && npm run test:google-cpr && npm run ml:google-cpr:verificar && npm run test:nao-vazamento"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",

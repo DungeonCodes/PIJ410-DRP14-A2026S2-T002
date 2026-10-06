@@ -34,15 +34,15 @@ function t(nome, cond, detalhe = '') {
   console.log(`  ${ok ? '✓' : '✗'} ${String(n).padStart(2)}. ${nome}${ok || !detalhe ? '' : ` — ${detalhe}`}`);
 }
 
-const DISPONIVEIS = ['/captacao', '/matriculas'];
-const BLOQUEADAS = ['/ads', '/ads/google', '/ads/meta', '/ads/estrategia', '/organico', '/gestao', '/arquitetura'];
+const DISPONIVEIS = ['/captacao', '/matriculas', '/ads', '/ads/google', '/ads/meta', '/ads/estrategia'];
+const BLOQUEADAS = ['/organico', '/gestao', '/arquitetura'];
 
 // --- 1. CATÁLOGO -------------------------------------------------------------
 console.log('\n1 · Catálogo de fases');
 
 t('data de início da adaptação acadêmica é 27/08/2026', PROJETO_INICIADO_EM === '2026-08-27');
-t('a Fase 1 é a única ativa',
-  Object.entries(FASES).filter(([, v]) => v.situacao === 'ativa').map(([k]) => k).join(',') === '1');
+t('somente as Fases 1 e 2 estão ativas',
+  Object.entries(FASES).filter(([, v]) => v.situacao === 'ativa').map(([k]) => k).join(',') === '1,2');
 t('Fase 1 = Captação + Matrículas',
   modulosDaFase(1).map((m) => m.chave).join(',') === 'captacao,matriculas');
 t('Fase 2 = os quatro módulos de Ads',
@@ -50,9 +50,11 @@ t('Fase 2 = os quatro módulos de Ads',
 t('Fase 3 = Reels orgânicos', modulosDaFase(3).map((m) => m.chave).join(',') === 'organico');
 t('Fase 4 = Gestão + Arquitetura',
   modulosDaFase(4).map((m) => m.chave).join(',') === 'gestao,arquitetura');
-t('exatamente 2 módulos habilitados', modulosHabilitados().length === 2);
-t('todo módulo de fase > 1 está bloqueado',
-  MODULOS.filter((m) => m.fase > 1).every((m) => m.habilitado === false));
+t('exatamente 6 módulos habilitados', modulosHabilitados().length === 6);
+t('todo módulo das Fases 1 e 2 está habilitado',
+  MODULOS.filter((m) => m.fase <= 2).every((m) => m.habilitado === true));
+t('todo módulo de fase > 2 está bloqueado',
+  MODULOS.filter((m) => m.fase > 2).every((m) => m.habilitado === false));
 t('nenhuma rota do catálogo se repete',
   new Set(MODULOS.map((m) => m.rota)).size === MODULOS.length);
 
@@ -66,9 +68,9 @@ for (const rota of BLOQUEADAS) {
   t(`${rota} → bloqueado`, rotaHabilitada(rota) === false);
 }
 
-t('sub-rota de módulo bloqueado herda o bloqueio (/ads/meta/<id>)',
-  rotaHabilitada('/ads/meta/12345') === false &&
-  moduloDaRota('/ads/meta/12345')?.chave === 'ads-meta');
+t('sub-rota de módulo bloqueado herda o bloqueio (/organico/<id>)',
+  rotaHabilitada('/organico/12345') === false &&
+  moduloDaRota('/organico/12345')?.chave === 'organico');
 
 t('match mais específico vence: /ads não ativa os filhos',
   moduloDaRota('/ads')?.chave === 'ads' && moduloDaRota('/ads/google')?.chave === 'ads-google');
@@ -76,7 +78,7 @@ t('match mais específico vence: /ads não ativa os filhos',
 t('barra final e query não mudam a decisão',
   rotaHabilitada('/captacao/') === true &&
   rotaHabilitada('/captacao?safras=2025') === true &&
-  rotaHabilitada('/ads/') === false);
+  rotaHabilitada('/ads/') === true && rotaHabilitada('/organico/') === false);
 
 t('fail closed: chave desconhecida NÃO é liberada',
   moduloHabilitado('inexistente') === false && moduloHabilitado('') === false);
@@ -104,11 +106,22 @@ for (const rota of BLOQUEADAS) {
 }
 
 for (const rota of DISPONIVEIS) {
-  const chave = rota.slice(1);
-  const src = ler('src', 'app', '(app)', chave, 'page.tsx');
-  t(`${rota} também passa pelo gate (não confia em estar na Fase 1)`,
+  const chave = MODULOS.find((m) => m.rota === rota).chave;
+  const src = ler('src', 'app', '(app)', ...rota.split('/').filter(Boolean), 'page.tsx');
+  t(`${rota} também passa pelo gate (não confia em estar numa fase ativa)`,
     src.includes(`exigirModuloHabilitado('${chave}')`));
+  t(`${rota} não conecta API nem lê credenciais`, !/fetch\(|process\.env/.test(src));
 }
+
+const googlePage = ler('src', 'ui', 'v1', 'pages', 'google.tsx');
+t('Google Ads apresenta o artefato do experimento CPR', googlePage.includes('<ResultadosGoogleCPR'));
+for (const segmento of ['ads', 'meta', 'estrategia']) {
+  const pagina = ler('src', 'ui', 'v1', 'pages', `${segmento}.tsx`);
+  t(`Ads ${segmento || 'visão geral'} não importa o componente de ML`, !pagina.includes('ResultadosGoogleCPR'));
+}
+t('ML visual consome apenas o artefato local, sem executar treinamento',
+  ler('src', 'components', 'google-cpr-resultados.tsx').includes("@/data/google-cpr-experimento.json") &&
+  !/executarExperimento|fetch\(|process\.env/.test(ler('src', 'components', 'google-cpr-resultados.tsx')));
 
 // --- 4. INVISIBILIDADE NAS SUPERFÍCIES DE NAVEGAÇÃO -------------------------
 console.log('\n4 · Módulos bloqueados somem da navegação');
@@ -154,7 +167,7 @@ for (const rota of BLOQUEADAS) {
 
 t('a home lista fases futuras sem transformá-las em link',
   (() => {
-    const home = ler('src', 'app', '(app)', 'page.tsx');
+    const home = ler('src', 'ui', 'v1', 'pages', 'home.tsx');
     // Os cards clicáveis vêm de modulosHabilitados(); as fases futuras saem
     // como <li>, não como <Link>.
     return home.includes('modulosHabilitados()') && home.includes('<li');

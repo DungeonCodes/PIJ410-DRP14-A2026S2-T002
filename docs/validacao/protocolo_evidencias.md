@@ -3,6 +3,8 @@
 ## Antes da sessão
 
 - Confirmar que a demonstração utiliza apenas o ambiente acadêmico e dados sintéticos.
+- Primeira sessão: apresentar somente V1; conferir o identificador visual e não alternar para V2.
+- Registrar versão, dataset/seed, período, filtros e módulos; manter os mesmos controles em comparações futuras.
 - Apresentar o TCLE antes da validação, quando aplicável.
 - Informar que a participação é voluntária e pode ser interrompida a qualquer momento.
 - Explicar que somente dados pertinentes ao estudo serão utilizados e que respostas serão consolidadas e anonimizadas no relatório.
@@ -13,6 +15,7 @@
 - perfil genérico do participante;
 - modalidade da sessão;
 - módulos apresentados;
+- versão da interface utilizada, cenário/seed e recortes, sem dados pessoais;
 - tarefas realizadas;
 - respostas consolidadas;
 - comentários anonimizados;
@@ -49,7 +52,7 @@ Registrar em campo separado a análise posterior da equipe sobre os dados coleta
 | Necessidade inicial | Evidência inicial | O que foi implementado | Avaliação após uso | Ajuste decorrente |
 |---|---|---|---|---|
 | Acompanhar indicadores | Necessidade de visualizar informações relevantes e indicadores com maior clareza | Indicadores e visualizações dos módulos de Captação e Matrículas | [PENDENTE] | [PENDENTE] |
-| Compreender investimentos em mídia | Necessidade de compreender quanto investir e avaliar a adequação dos valores aos objetivos | Estrutura inicial de indicadores; recursos de Ads e estratégia permanecem planejados/bloqueados | [PENDENTE] | [PENDENTE] |
+| Compreender investimentos em mídia | Necessidade de compreender quanto investir e avaliar a adequação dos valores aos objetivos | Ads sintéticos ativos nas versões; fora das tarefas do instrumento atual, sem avaliação presumida | [PENDENTE] | [PENDENTE] |
 | Comparar resultados | Necessidade de comparar resultados e acompanhar investimentos ao longo do tempo | Filtros de safra/ciclo e visualizações comparativas disponíveis na Fase 1 | [PENDENTE] | [PENDENTE] |
 | Organizar e tornar claras as informações | Informações percebidas como dispersas e necessidade de apoio à interpretação | Interface acadêmica dos módulos ativos, com dados sintéticos | [PENDENTE] | [PENDENTE] |
 | Apoiar a tomada de decisão | Direção/gestão solicitou acompanhamento e suporte à interpretação dos resultados | Módulos de Captação e Matrículas apresentados para avaliação; impacto não presumido | [PENDENTE] | [PENDENTE] |

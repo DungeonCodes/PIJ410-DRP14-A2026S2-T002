@@ -280,6 +280,20 @@ subpasta; esta ADR é o registro canônico resumido para a governança do projet
 cronologia sintética, módulos disponíveis e planejamento futuro. A independência da aplicação e a
 sanitização dos dados passam a ser requisitos permanentes da evolução do protótipo.
 
+### Emenda de 2026-10-06 — Ativação acadêmica local da Fase 2
+
+Por solicitação explícita, a Fase 2 passa a disponibilizar localmente Ads (visão geral),
+Google Ads, Meta Ads e Estratégia, exclusivamente sobre os contratos e datasets sintéticos
+existentes. A Fase 1 permanece ativa; Fases 3 e 4 continuam bloqueadas. O gate central,
+a navegação derivada e os guardas das rotas são preservados. Esta liberação não constitui
+deploy nem altera automaticamente o ambiente publicado.
+
+Google Ads exibe o artefato reproduzível do experimento de CPR da ADR-007, sem treinamento
+no navegador ou recomendação de investimento. Meta Ads preserva resultados separados por
+indicador; Estratégia permanece determinística com premissa fictícia declarada. Não há
+conexão com APIs, contas ou dados operacionais. A ativação técnica não é validação comunitária;
+os instrumentos existentes continuam destinados à Fase 1 até revisão humana específica.
+
 ---
 
 ## ADR-007 — Experimento sintético local de CPR restrito a Google Ads
@@ -304,8 +318,10 @@ treinamento e testes exclusivamente fora do repositório acadêmico. Dados, mode
 integrações e código operacional continuam excluídos. Captação, Matrículas, Meta Ads, conteúdo
 orgânico e gestão não recebem ML. Nenhuma inferência aciona investimento ou operação externa.
 
-O estado de rollout da ADR-006 é preservado: Fase 1 ativa; Fases 2–4 bloqueadas. As telas de Ads
-podem estar preparadas e o experimento pode ser executado via CLI sem abrir a fase na aplicação.
+Na decisão inicial, o rollout mantinha Fase 1 ativa e Fases 2–4 bloqueadas. A emenda da ADR-006
+de 06/10/2026 autoriza posteriormente a Fase 2 acadêmica local: a interface Google Ads exibe
+o artefato da CLI sem executar treinamento. Fases 3 e 4 permanecem bloqueadas; método, target
+e não objetivos desta ADR são preservados.
 A atualização editorial do Relatório Final será feita em rodada própria; relatórios históricos
 não são reescritos por esta decisão.
 
@@ -323,6 +339,42 @@ atribuição causal ou validação pela comunidade.
 
 **Documentação técnica:** [auditoria de seleção](migracao-modelo/arquitetura/auditoria-referencia-2026-10-06.md)
 e [protocolo do experimento](migracao-modelo/arquitetura/experimento-google-cpr.md).
+
+---
+
+## ADR-008 — Versões rastreáveis da interface e baseline pré-validação
+
+**Data:** 2026-10-06.
+
+**Decisão:** adotar `/v1` e `/v2`, não nomes relativos old/new/legacy. V1 congela o estado
+visual/funcional aprovado localmente, com Fases 1 e 2 ativas e Fases 3 e 4 bloqueadas. V2 nasce
+equivalente, por herança explícita das apresentações V1, com registro próprio para futuras
+substituições de páginas/layout/componentes. Dados, contratos, algoritmos e artefato CPR são
+únicos e compartilhados; não existe nova versão científica do ML nesta decisão.
+
+`CURRENT_UI_VERSION` em `src/lib/interface.ts` permanece `v1`. As canônicas redirecionam
+temporariamente para essa versão, preservando filtros. Navegação permanece dentro da versão
+acessada; identificação discreta é exibida no desktop/mobile, sem seletor para o participante.
+V2 só pode tornar-se corrente após feedback, alterações selecionadas, testes, comparação e
+decisão explícita. Os gates são independentes do versionamento da apresentação.
+
+V1 somente muda por bug crítico, erro factual, vulnerabilidade, vazamento ou falha de execução,
+com justificativa, testes e revisão humana dos hashes protegidos. Melhorias de UX são feitas
+inicialmente em V2. Não alterar componentes/CSS protegidos compartilhados pela baseline para
+melhorar V2: substituir a apresentação necessária em `src/ui/v2/`, com estilos escopados.
+
+Primeira validação usa V1, sem apresentar V2 como alternativa. Comparações exigem mesmo dataset,
+período/filtros, fórmulas, métricas, CPR e gates. Nenhum feedback ou benefício foi inventado.
+ADR-007 e seus resultados permanecem intactos; o histórico Git problemático não é tratado aqui.
+
+**Motivo:** preservar uma referência anterior ao feedback e permitir comparar mudanças de
+interface sem confundi-las com alterações de dados ou método científico.
+
+**Alternativas:** fork completo (duplicação desnecessária); versões com dados distintos
+(comparação confundida); edição contínua da baseline (perda da referência); promoção automática
+de V2 (descartada). O mínimo adotado é roteador comum, apresentações registradas e proteção V1.
+
+**Documentação:** `docs/validacao/versoes-interface.md`.
 
 ---
 

@@ -761,3 +761,56 @@ Decisão do gate: BLOQUEADO POR SANITIZAÇÃO. As versões antigas com parâmetr
 Próximo passo: revisão humana e decisão específica sobre tratamento do histórico antes da liberação.
 
 ---
+
+Data: 2026-10-06
+Ação realizada: Ativação acadêmica da Fase 2 — Ads.
+Resultado: gate central liberado explicitamente para /ads, /ads/google, /ads/meta e /ads/estrategia.
+Sidebar e navegação mobile derivam do catálogo existente, com agrupamento Ads no desktop;
+home ajustada para os seis módulos. Identidade acadêmica, tema e instituição fictícia preservados.
+Dados: contratos e datasets sintéticos existentes reutilizados sem alteração; nenhuma API real.
+Google apresenta indicadores, filtros de ano-calendário/campanha e artefato de CPR da CLI;
+Meta mantém conversas/interações separadas e ausência explícita. Estratégia é determinística,
+com premissa mensal fictícia de R$ 10.000, sem recomendação ou execução de campanhas.
+ML: métricas de persistência e regressão reproduzidas e exibidas somente em Google Ads;
+sem treinamento no navegador, com aviso de ganho modesto e baixo poder explicativo.
+Verificação: ml:google-cpr, ml:google-cpr:verificar, npm test (58 testes de fases, determinismo,
+CPR e 37 verificações de não vazamento), lint, TypeScript e build passaram. Build local iniciado
+em 127.0.0.1:3100; seis rotas ativas com HTTP 200, /organico, /gestao e /arquitetura com HTTP 404.
+Navegador: grupo Ads visível, filtros alteram indicadores e preservam métricas fixas de ML;
+sem erros de console observados. Prévia visual mantida fora do repositório.
+Documentação: Final atualizado somente tecnicamente após testes; emenda de estado na ADR-006
+e ADR-A001, com método e não objetivos da ADR-007 preservados. Contexto e protocolo alinhados.
+Integridade: instrumentos de validação, Parcial e versões históricas, modelos e dados preservados;
+nenhuma validação, resposta, feedback ou impacto inventado. Fases 3 e 4 permanecem bloqueadas.
+Gate: FASE 2 ACADÊMICA PRONTA PARA VALIDAÇÃO LOCAL. Instrumento atual cobre somente a Fase 1.
+O bloqueador anterior de sanitização do histórico Git não foi tratado nem revogado; esta liberação
+é exclusivamente local e não autoriza publicação do histórico. Sem deploy, commit ou push.
+Próximo passo: revisão humana da aplicação local; decidir separadamente se o instrumento será ampliado.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Versionamento da interface acadêmica — criação de V1 e base V2.
+Resultado: V1 congelada como baseline pré-validação; V2 criada por herança equivalente, sem
+melhoria ou feedback inventado. Roteador versionado comum, canônicas com redirect 307 para
+CURRENT_UI_VERSION=v1, filtros preservados, identificação discreta e navegação dentro da versão.
+Dados, contratos, algoritmos, métricas, seed e artefato CPR compartilhados, sem duplicação.
+Proteção: 17 fontes de apresentação V1 verificadas por hashes normalizados, sem atualização
+automática; mudanças de UX devem substituir apresentações em V2, sem editar a baseline.
+Verificação: ml:google-cpr, ml:google-cpr:verificar, npm test, lint, TypeScript, build e não
+vazamento passaram. Teste de interface incluído na suíte; 40 verificações HTTP aprovadas em
+127.0.0.1:3101, incluindo versões, aliases, filtros, links, paridade e bloqueios. Comparação
+adicional confirmou conteúdo principal da V1 igual ao estado anterior nos sete caminhos.
+Integridade: 29 arquivos científicos/de dados conferidos por hash permaneceram intactos;
+ADR-007 preservada integralmente. Ajustada somente a asserção de caminho do consumidor de ML
+após mover sua página para a baseline; treinamento, testes matemáticos e resultados não mudaram.
+Documentação: ADR-008 e versoes-interface.md criados; instrumentos registram versão, cenário,
+seed e recortes. Primeira sessão deve usar V1; instrumento mantém tarefas da Fase 1, sem avaliar
+Ads automaticamente. Final recebeu apenas nota metodológica, sem resultado comparativo.
+Fases 1 e 2 ativas em ambas; Fases 3 e 4 bloqueadas. Histórico Git problemático não tratado;
+alterações anteriores da working tree preservadas. Sem dados reais, APIs operacionais, PII,
+deploy, commit, push, DOCX/PDF ou versão numerada do Relatório Final.
+Gate: VERSIONAMENTO PRONTO — VALIDAR V1.
+Próximo passo: aplicar primeira sessão real com V1; consolidar feedback antes de alterar V2.
+
+---

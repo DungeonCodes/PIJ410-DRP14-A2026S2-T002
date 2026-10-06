@@ -25,6 +25,8 @@
  * Início da adaptação acadêmica. NÃO é a data de criação da arquitetura de
  * referência, que já existia. Ver `docs/migracao-modelo/arquitetura/`.
  */
+import { unversionedPath } from './interface.ts';
+
 export const PROJETO_INICIADO_EM = '2026-08-27';
 
 /** Fases do rollout acadêmico. */
@@ -51,19 +53,18 @@ export interface ModuloAcademico {
 /**
  * O catálogo. Ordem = ordem de exibição na navegação.
  *
- * PREPARADO NO CÓDIGO ≠ DISPONÍVEL AO USUÁRIO: os módulos das fases 2–4 têm
- * rota, página e estrutura no repositório para que o espelhamento com a
- * arquitetura de referência seja incremental e revisável. Todos permanecem
- * `habilitado: false` até que o grupo decida abri-los.
+ * Liberação acadêmica explícita da Fase 2: 06/10/2026.
+ * Fases 1 e 2 disponíveis com dados sintéticos; Fases 3 e 4 continuam bloqueadas.
+ * PREPARADO NO CÓDIGO ≠ DISPONÍVEL AO USUÁRIO: a existência da rota não abre gates.
  */
 export const MODULOS: readonly ModuloAcademico[] = [
   { chave: 'captacao', rota: '/captacao', rotulo: 'Captação', fase: 1, habilitado: true },
   { chave: 'matriculas', rota: '/matriculas', rotulo: 'Matrículas', fase: 1, habilitado: true },
 
-  { chave: 'ads', rota: '/ads', rotulo: 'Visão geral', fase: 2, habilitado: false, grupo: 'Ads' },
-  { chave: 'ads-google', rota: '/ads/google', rotulo: 'Google Ads', fase: 2, habilitado: false, grupo: 'Ads' },
-  { chave: 'ads-meta', rota: '/ads/meta', rotulo: 'Meta Ads', fase: 2, habilitado: false, grupo: 'Ads' },
-  { chave: 'ads-estrategia', rota: '/ads/estrategia', rotulo: 'Estratégia', fase: 2, habilitado: false, grupo: 'Ads' },
+  { chave: 'ads', rota: '/ads', rotulo: 'Visão geral', fase: 2, habilitado: true, grupo: 'Ads' },
+  { chave: 'ads-google', rota: '/ads/google', rotulo: 'Google Ads', fase: 2, habilitado: true, grupo: 'Ads' },
+  { chave: 'ads-meta', rota: '/ads/meta', rotulo: 'Meta Ads', fase: 2, habilitado: true, grupo: 'Ads' },
+  { chave: 'ads-estrategia', rota: '/ads/estrategia', rotulo: 'Estratégia', fase: 2, habilitado: true, grupo: 'Ads' },
 
   { chave: 'organico', rota: '/organico', rotulo: 'Reels orgânicos', fase: 3, habilitado: false },
 
@@ -74,7 +75,7 @@ export const MODULOS: readonly ModuloAcademico[] = [
 /** Descrição de cada fase, para documentação e para a tela de contexto. */
 export const FASES: Record<Fase, { nome: string; situacao: 'ativa' | 'planejada' }> = {
   1: { nome: 'Captação e Matrículas', situacao: 'ativa' },
-  2: { nome: 'Ads', situacao: 'planejada' },
+  2: { nome: 'Ads', situacao: 'ativa' },
   3: { nome: 'Reels orgânicos', situacao: 'planejada' },
   4: { nome: 'Objetivo da Gestão e Arquitetura', situacao: 'planejada' },
 };
@@ -101,7 +102,7 @@ function normalizar(rota: string): string {
  * bloqueada junto com `/ads/meta`, sem precisar ser listada.
  */
 export function moduloDaRota(pathname: string): ModuloAcademico | null {
-  const p = normalizar(pathname);
+  const p = unversionedPath(normalizar(pathname));
   let melhor: ModuloAcademico | null = null;
   for (const m of MODULOS) {
     if (p === m.rota || p.startsWith(`${m.rota}/`)) {

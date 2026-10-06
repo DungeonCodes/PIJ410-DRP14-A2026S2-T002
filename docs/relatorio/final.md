@@ -140,7 +140,8 @@ A ideia básica que orienta o trabalho é que esse conjunto disperso pode ser co
 à análise de dados em escala. Indicadores calculados por regras determinísticas poderão ser
 complementados pela investigação experimental de padrões. Neste trabalho, foi executado um
 experimento separado de regressão para CPR no Google Ads, com dados integralmente sintéticos,
-sem integração à interface ativa. A interface web apresenta os resultados
+com resultados da CLI exibidos no módulo Google Ads da Fase 2 acadêmica, sem treinamento
+no navegador. A interface web apresenta os resultados
 disponíveis de modo acompanhável pela gestão. O objeto deste trabalho é, assim, o desenvolvimento e
 a validação de uma análise de dados aplicada a investimentos em mídia digital no contexto
 educacional, comunicada por uma plataforma web e avaliada junto aos profissionais que respondem por
@@ -227,8 +228,9 @@ a campanhas de mídia e aos indicadores definidos com a instituição parceira. 
 estudo a integração com contas reais de anúncios, gestão de relacionamento com clientes (CRM),
 sistemas acadêmicos ou outras bases operacionais, nem o tratamento de dados pessoais ou
 informações comerciais sensíveis. O ambiente acadêmico independente e sanitizado utiliza somente
-dados sintéticos locais. A Fase 1, com os módulos Captação e Matrículas, está funcional; Ads, Reels
-orgânicos e Objetivo da Gestão com Arquitetura e Algoritmos permanecem planejados e bloqueados. A
+dados sintéticos locais. As Fases 1 e 2 estão funcionais localmente: Captação, Matrículas e Ads
+(visão geral, Google Ads, Meta Ads e Estratégia). Conteúdo orgânico e Objetivo da Gestão com
+Arquitetura e Algoritmos, das Fases 3 e 4, permanecem planejados e bloqueados. A
 camada de IA agêntica poderá receber apenas contexto fictício ou
 sanitizado e será acionada pelo grupo. Resultados de simulações deverão ser identificados como
 exploratórios e dependerão de cálculo determinístico e revisão humana.
@@ -484,9 +486,16 @@ Na etapa de criar, as necessidades foram relacionadas aos campos disponíveis, �
 e às alternativas de visualização. A baseline foi construída em Next.js e TypeScript, separando os
 dados sintéticos locais da camada de apresentação web. A construção segue estratégia incremental:
 Fase 1, Captação e Matrículas; Fase 2, Ads; Fase 3, conteúdo orgânico; Fase 4, Objetivo da Gestão e
-Arquitetura e Algoritmos. Somente a Fase 1 constitui resultado funcional atual.
+Arquitetura e Algoritmos. As Fases 1 e 2 constituem resultado funcional acadêmico local;
+as Fases 3 e 4 permanecem bloqueadas.
 
 ### 2.5.5 Implementar, testar, validar e ajustar
+
+Para tornar rastreáveis as futuras avaliações, a interface foi identificada por versões.
+V1 é a baseline pré-validação congelada em 06/10/2026; V2 inicia equivalente e poderá receber
+ajustes selecionados a partir de feedback real. Ambas utilizam os mesmos dados sintéticos,
+métricas, fórmulas e feature gates. A primeira aplicação deve registrar V1, período e filtros;
+nenhuma melhoria de V2 ou resultado de comparação foi obtido nesta etapa.
 
 A implementação disponível será apresentada à comunidade por meio de tarefas orientadas de
 interpretação. A avaliação deverá registrar compreensão dos indicadores, utilidade percebida,
@@ -607,7 +616,8 @@ A referência é a persistência do CPR elegível de t−2. Ela foi comparada a 
 com intercepto, treinada apenas nas amostras anteriores ao corte. Foram calculados MAE, RMSE e
 R² no conjunto de teste, mantendo registro de previsões e condições de execução, conforme o
 princípio de reprodutibilidade computacional (Peng, 2011). A execução ocorre localmente via CLI,
-sem API real e sem disponibilização do ML na interface da Fase 2. Os resultados estão em 3.4.4.
+sem API real. A interface Google Ads da Fase 2 exibe o artefato de resultados da CLI, sem
+executar treinamento no navegador ou recomendar investimento. Os resultados estão em 3.4.4.
 
 ### 2.5.12 Interpretação assistida por IA e engenharia de contexto
 
@@ -622,10 +632,11 @@ verificadas. Saídas sem base rastreável não são utilizadas (Wang et al., 202
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
 Este capítulo distingue resultados comprovados, desenvolvimento em curso e itens planejados. Na
-data de estruturação desta fonte editorial, a Fase 1 está ativa e as Fases 2 a 4 permanecem
-planejadas e bloqueadas. A existência de páginas preparatórias no código não constitui
-funcionalidade concluída. Separadamente, foi executado via CLI o experimento sintético de CPR
-descrito em 3.4.4; ele não constitui funcionalidade ativa do protótipo nem validação comunitária.
+estado local verificado em 06/10/2026, as Fases 1 e 2 estão ativas; Fases 3 e 4 permanecem
+planejadas e bloqueadas. A Fase 2 utiliza Google Ads e Meta Ads integralmente sintéticos,
+sem integração real. O experimento de CPR descrito em 3.4.4 continua executado pela CLI;
+a interface apenas apresenta seus resultados reproduzíveis, sem treinamento no navegador.
+A ativação técnica não constitui validação comunitária nem novo deploy.
 
 ## 3.1 Contato inicial e necessidades identificadas
 
@@ -643,7 +654,7 @@ da estrutura da interface, sem constituir validação ou aprovação do protóti
 | Fase | Escopo | Estado em 06/10/2026 | Evidência documental |
 |---|---|---|---|
 | Fase 1 | Captação e Matrículas | ATIVA/FUNCIONAL | Módulos funcionais com dados sintéticos |
-| Fase 2 | Ads: visão geral, Google Ads, Meta Ads e estratégia | PLANEJADA/BLOQUEADA | Interfaces e contratos sintéticos preparados; feature gate fechado |
+| Fase 2 | Ads: visão geral, Google Ads, Meta Ads e estratégia | ATIVA/FUNCIONAL NO AMBIENTE ACADÊMICO LOCAL | Gate liberado explicitamente; build, testes e quatro rotas HTTP 200; somente dados sintéticos |
 | Fase 3 | Conteúdo orgânico | PLANEJADA/BLOQUEADA | Feature gate fechado; conjunto sintético e algoritmos pendentes |
 | Fase 4 | Objetivo da Gestão, Arquitetura e Algoritmos | PLANEJADA/BLOQUEADA | Feature gate fechado; depende das fases anteriores |
 
@@ -654,18 +665,19 @@ Fonte: Elaborado pelo grupo com base no estado versionado do repositório (2026)
 ## 3.3 Estratégia incremental e arquitetura da solução
 
 A aplicação web acadêmica é independente do ambiente operacional da instituição. A Fase 1 tornou-se
-funcional em 27/08/2026 e disponibiliza somente Captação e Matrículas. Os módulos apresentam
+funcional em 27/08/2026 e disponibiliza Captação e Matrículas. Em 06/10/2026, a Fase 2 foi
+ativada e verificada localmente, acrescentando os quatro módulos de Ads. Os módulos apresentam
 relatórios, indicadores e visualizações baseados em dados sintéticos e não mantêm conexão com
 contas de anúncios, CRM, sistema acadêmico ou base real da instituição parceira.
 
 ```text
-dados sintéticos da Fase 1
+dados sintéticos das Fases 1 e 2
         ↓
 inventário, limpeza e padronização
         ↓
 indicadores determinísticos
         ↓
-Captação e Matrículas na interface web
+Captação, Matrículas e Ads na interface web
         ↓
 aplicação e avaliação pela comunidade externa [PENDENTE]
 ```
@@ -725,9 +737,20 @@ Figura [numeração pendente] – Visualizações complementares do módulo de M
 
 Fonte: Elaborado pelo grupo (2026).
 
-### 3.4.3 Componentes em desenvolvimento ou planejados
+### 3.4.3 Módulos de Ads e componentes ainda planejados
 
-[PENDENTE – atualizar somente após implementação comprovada dos módulos de Ads, conteúdo orgânico, Objetivo da Gestão ou Arquitetura e Algoritmos]
+A Fase 2 disponibiliza localmente visão geral, Google Ads, Meta Ads e Estratégia, mantendo a
+identidade acadêmica e os dados sintéticos. Google Ads apresenta investimento, impressões,
+cliques, conversões registradas, CTR, CPC, CPM e CPR, com filtros de ano-calendário fictício
+e campanha, além de série mensal de CPR. A granularidade é mensal, sem filtros diários artificiais.
+
+Na visão geral, a comparação entre canais se limita a investimentos em períodos compatíveis;
+resultados com denominadores distintos não são tratados como equivalentes. Meta Ads separa
+conversas e interações e seus custos por resultado, sem ML. Ausências tornam o agregado
+incompleto. Estratégia apresenta gastos por canal e comparação determinística com uma premissa
+mensal sintética de R$ 10.000, explicitamente fictícia e sem recomendação ou execução de campanhas.
+
+[PENDENTE – atualizar somente após implementação comprovada de conteúdo orgânico, Objetivo da Gestão ou Arquitetura e Algoritmos]
 
 [PENDENTE – registrar funcionalidades, filtros, indicadores, algoritmos e visualizações efetivamente concluídos, sem converter scaffolding ou planejamento em resultado]
 
@@ -735,8 +758,9 @@ Fonte: Elaborado pelo grupo (2026).
 
 O experimento descrito em 2.5.11 foi efetivamente executado e pode ser reproduzido localmente
 via CLI. Os artefatos sintéticos registram condições de execução, amostras e previsões.
-Esse resultado técnico é separado da interface: a Fase 2 permanece bloqueada e o ML não está
-disponibilizado como funcionalidade ativa. Não foram utilizados dados operacionais ou APIs reais.
+O treinamento permanece separado da interface: a Fase 2 acadêmica está ativa localmente e
+Google Ads exibe o artefato de resultados, independente dos filtros de consulta. Não há treinamento
+no navegador, inferência operacional ou recomendação automática. Não foram utilizados dados operacionais ou APIs reais.
 
 | Modelo | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -760,6 +784,12 @@ Fonte: Elaborado pelo grupo (2026).
 [PENDENTE – descrever eventual uso efetivo de IA assistiva e a revisão humana correspondente]
 
 ### 3.4.5 Testes técnicos
+
+Na ativação local da Fase 2, passaram os testes automatizados de fases, determinismo,
+CPR e reprodução dos artefatos, incluindo 37 verificações de não vazamento, além de lint,
+TypeScript e build. As rotas de Captação, Matrículas e dos quatro módulos de Ads responderam
+HTTP 200; conteúdo orgânico, gestão e arquitetura permaneceram em HTTP 404. Essas verificações
+técnicas não constituem avaliação pela comunidade ou evidência de impacto institucional.
 
 [PENDENTE – consolidar os testes funcionais, de integridade, determinismo, não vazamento, acessibilidade e demais verificações efetivamente executadas sobre a versão final]
 
@@ -805,10 +835,10 @@ permanece pendente até que exista evidência real.
 
 | Necessidade identificada | Elemento da solução | Evidência no protótipo | Resultado da validação |
 |---|---|---|---|
-| Compreender quanto investir em mídia | Indicadores e futura análise de cenários | Estrutura analítica documentada; cenário de Ads ainda planejado | [PENDENTE] |
-| Avaliar a adequação dos investimentos | Métricas determinísticas e limites explícitos | Fórmulas e regras metodológicas; dados reais de mídia não autorizados; Fase 2 bloqueada | [PENDENTE] |
+| Compreender quanto investir em mídia | Indicadores e comparação determinística de orçamento | Ads sintéticos ativos localmente; premissa fictícia, sem determinar orçamento ideal | [PENDENTE] |
+| Avaliar a adequação dos investimentos | Métricas determinísticas e limites explícitos | Indicadores de Ads sintéticos; dados reais de mídia não autorizados | [PENDENTE] |
 | Acompanhar indicadores | Painéis de Captação e Matrículas | Indicadores, filtros e visualizações da Fase 1 | [PENDENTE] |
-| Comparar períodos e canais | Filtros temporais e visualizações comparativas | Comparação por safras na Fase 1; comparação por canais ainda planejada | [PENDENTE] |
+| Comparar períodos e canais | Filtros temporais e visualizações comparativas | Safras na Fase 1; ano-calendário fictício e investimentos por canal na Fase 2 | [PENDENTE] |
 | Organizar informações dispersas | Interface web com dados e contexto padronizados | Módulos acadêmicos independentes com dados sintéticos | [PENDENTE] |
 
 Fonte: Elaborado pelo grupo (2026).
@@ -849,8 +879,8 @@ substitui evidência, cálculo ou decisão humana.
 O projeto parte do problema de organizar e apresentar dados históricos de investimentos em mídia
 digital para apoiar a tomada de decisão em uma instituição de ensino. A estrutura desenvolvida até
 o momento demonstra uma aplicação acadêmica independente, com dados sintéticos, regras
-determinísticas e módulos funcionais de Captação e Matrículas. Esse resultado sustenta apenas as
-afirmações técnicas correspondentes à Fase 1 e não comprova, por si só, impacto sobre decisões ou
+determinísticas e módulos funcionais de Captação, Matrículas e Ads no ambiente local. Esse resultado sustenta apenas as
+afirmações técnicas correspondentes às Fases 1 e 2 e não comprova, por si só, impacto sobre decisões ou
 resultados da comunidade.
 
 Separadamente, o experimento demonstrou a viabilidade técnica de aplicar regressão supervisionada
