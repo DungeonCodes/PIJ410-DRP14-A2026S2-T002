@@ -1,0 +1,570 @@
+{
+  "meta": {
+    "synthetic": true,
+    "schema_version": 1,
+    "scenario_version": "ads-academico-1",
+    "seed": "pij410-ads-cenario-independente-1",
+    "generated_at": "2026-10-06",
+    "reference_date": "2023-01-31",
+    "maturacao_dias": 14,
+    "nota": "Cronologia fictícia. Cenário independente; parâmetros não ajustados a dados operacionais. Conversões não representam leads únicos ou matrículas."
+  },
+  "escopo": "Experimento exploratório sintético restrito a Google Ads; sem evidência operacional ou validação da comunidade.",
+  "features": [
+    "cprAnterior",
+    "ctrAnterior",
+    "cpcAnterior",
+    "logCliquesAnterior",
+    "mesSeno",
+    "mesCosseno"
+  ],
+  "corteTreino": "2021-07-01",
+  "corteAvaliacao": "2023-04-01",
+  "treino": 198,
+  "teste": 71,
+  "excluidas": 19,
+  "purgadas": 4,
+  "primeiroTreino": "2017-03-01",
+  "ultimoTreino": "2021-05-01",
+  "primeiroTeste": "2021-07-01",
+  "ultimoTeste": "2022-12-01",
+  "metricas": {
+    "persistencia": {
+      "mae": 6.615678147959,
+      "rmse": 8.363077560426,
+      "r2": -0.071903199239
+    },
+    "linear": {
+      "mae": 5.853006967711,
+      "rmse": 7.673296548409,
+      "r2": 0.097624525177
+    }
+  },
+  "previsoesNegativas": 0,
+  "modelo": {
+    "medias": [
+      33.520512929112,
+      3.962140815705,
+      2.101754345162,
+      7.125686173617,
+      0.052172358681,
+      -0.035172230379
+    ],
+    "desvios": [
+      6.959310609145,
+      0.892599231713,
+      0.221534450652,
+      0.340905309083,
+      0.716723228592,
+      0.694513335218
+    ],
+    "coeficientes": [
+      33.101230526308,
+      2.215960026041,
+      -0.198666038409,
+      1.836121273906,
+      0.685222069948,
+      -0.521541001541,
+      0.798992487567
+    ]
+  },
+  "previsoes": [
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2021-07-01",
+      "observado": 28.149991662498,
+      "persistencia": 25.946426974331,
+      "linear": 27.846625557568
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2021-07-01",
+      "observado": 24.56526429342,
+      "persistencia": 30.787514103046,
+      "linear": 33.033515402468
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2021-07-01",
+      "observado": 39.91579984671,
+      "persistencia": 31.877009441184,
+      "linear": 32.681027349732
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2021-07-01",
+      "observado": 36.340041980491,
+      "persistencia": 29.694839083792,
+      "linear": 31.704982179371
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2021-08-01",
+      "observado": 26.423133959466,
+      "persistencia": 26.030847774502,
+      "linear": 29.020568474498
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2021-08-01",
+      "observado": 23.002496595552,
+      "persistencia": 26.238303896454,
+      "linear": 31.469515793199
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2021-08-01",
+      "observado": 40.618663268196,
+      "persistencia": 31.477275329136,
+      "linear": 34.893004179349
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2021-08-01",
+      "observado": 37.655449296283,
+      "persistencia": 29.428522454577,
+      "linear": 33.805358671075
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2021-09-01",
+      "observado": 28.777325581395,
+      "persistencia": 28.149991662498,
+      "linear": 31.232215719794
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2021-09-01",
+      "observado": 24.767179107242,
+      "persistencia": 24.56526429342,
+      "linear": 29.004985157602
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2021-09-01",
+      "observado": 36.564448441247,
+      "persistencia": 39.91579984671,
+      "linear": 39.248302245366
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2021-09-01",
+      "observado": 32.438669094521,
+      "persistencia": 36.340041980491,
+      "linear": 36.299980731425
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2021-10-01",
+      "observado": 31.872171496626,
+      "persistencia": 26.423133959466,
+      "linear": 29.680519521198
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2021-10-01",
+      "observado": 28.419740941138,
+      "persistencia": 23.002496595552,
+      "linear": 29.410480141393
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2021-10-01",
+      "observado": 43.802701043585,
+      "persistencia": 40.618663268196,
+      "linear": 40.167885536624
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2021-10-01",
+      "observado": 43.044067367355,
+      "persistencia": 37.655449296283,
+      "linear": 38.676082514317
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2021-11-01",
+      "observado": 34.808913023125,
+      "persistencia": 28.777325581395,
+      "linear": 31.123514886907
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2021-11-01",
+      "observado": 37.048456687687,
+      "persistencia": 24.767179107242,
+      "linear": 27.548158954939
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2021-11-01",
+      "observado": 40.338653897313,
+      "persistencia": 36.564448441247,
+      "linear": 37.273321746883
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2021-11-01",
+      "observado": 45.634298812253,
+      "persistencia": 32.438669094521,
+      "linear": 33.815121629599
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2021-12-01",
+      "observado": 36.286353467562,
+      "persistencia": 31.872171496626,
+      "linear": 32.404842952973
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2021-12-01",
+      "observado": 41.651203121613,
+      "persistencia": 28.419740941138,
+      "linear": 30.18006813239
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2021-12-01",
+      "observado": 40.167966280295,
+      "persistencia": 43.802701043585,
+      "linear": 39.067748777905
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2021-12-01",
+      "observado": 49.266546911704,
+      "persistencia": 43.044067367355,
+      "linear": 39.506654764057
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-01-01",
+      "observado": 32.03567085529,
+      "persistencia": 34.808913023125,
+      "linear": 33.884734667787
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-01-01",
+      "observado": 44.820671378092,
+      "persistencia": 37.048456687687,
+      "linear": 34.513677859513
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-01-01",
+      "observado": 53.38828584351,
+      "persistencia": 40.338653897313,
+      "linear": 35.284352213987
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-01-01",
+      "observado": 51.04693877551,
+      "persistencia": 45.634298812253,
+      "linear": 38.545089798297
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-02-01",
+      "observado": 29.191142527409,
+      "persistencia": 36.286353467562,
+      "linear": 30.409430873749
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-02-01",
+      "observado": 34.920137085886,
+      "persistencia": 41.651203121613,
+      "linear": 33.146351990788
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-02-01",
+      "observado": 40.628871908635,
+      "persistencia": 40.167966280295,
+      "linear": 33.654083613961
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-02-01",
+      "observado": 62.216848045143,
+      "persistencia": 49.266546911704,
+      "linear": 40.442311597068
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-03-01",
+      "observado": 27.956359102244,
+      "persistencia": 32.03567085529,
+      "linear": 28.157333994423
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-03-01",
+      "observado": 41.069624152803,
+      "persistencia": 44.820671378092,
+      "linear": 33.10665893413
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-03-01",
+      "observado": 37.887560235588,
+      "persistencia": 53.38828584351,
+      "linear": 39.235285611946
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-03-01",
+      "observado": 65.305555555556,
+      "persistencia": 51.04693877551,
+      "linear": 39.331698433304
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-04-01",
+      "observado": 33.953493222106,
+      "persistencia": 29.191142527409,
+      "linear": 27.381251693657
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-04-01",
+      "observado": 44.642698295033,
+      "persistencia": 34.920137085886,
+      "linear": 31.750533670688
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-04-01",
+      "observado": 36.493799603175,
+      "persistencia": 40.628871908635,
+      "linear": 36.751984446443
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-04-01",
+      "observado": 50.35797905114,
+      "persistencia": 62.216848045143,
+      "linear": 43.862659619706
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-05-01",
+      "observado": 31.082430602573,
+      "persistencia": 27.956359102244,
+      "linear": 25.807137688691
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-05-01",
+      "observado": 33.230672795654,
+      "persistencia": 41.069624152803,
+      "linear": 32.607960048121
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-05-01",
+      "observado": 33.462707396496,
+      "persistencia": 37.887560235588,
+      "linear": 36.558188005233
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-05-01",
+      "observado": 36.729481815256,
+      "persistencia": 65.305555555556,
+      "linear": 42.719383661936
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-06-01",
+      "observado": 38.039305768249,
+      "persistencia": 33.953493222106,
+      "linear": 29.660601114136
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-06-01",
+      "observado": 27.006520198441,
+      "persistencia": 44.642698295033,
+      "linear": 36.38544222477
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-06-01",
+      "observado": 31.659181922197,
+      "persistencia": 36.493799603175,
+      "linear": 35.67621353468
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-06-01",
+      "observado": 34.211004456634,
+      "persistencia": 50.35797905114,
+      "linear": 39.293866284834
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-07-01",
+      "observado": 36.557898531135,
+      "persistencia": 31.082430602573,
+      "linear": 31.030327541263
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-07-01",
+      "observado": 27.69372605364,
+      "persistencia": 33.230672795654,
+      "linear": 32.598533716527
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-07-01",
+      "observado": 35.386164896939,
+      "persistencia": 33.462707396496,
+      "linear": 36.643482227423
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-07-01",
+      "observado": 36.180633871281,
+      "persistencia": 36.729481815256,
+      "linear": 34.669049967019
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-08-01",
+      "observado": 39.967647596417,
+      "persistencia": 38.039305768249,
+      "linear": 36.739986073661
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-08-01",
+      "observado": 27.56089669517,
+      "persistencia": 27.006520198441,
+      "linear": 30.832666384521
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-08-01",
+      "observado": 34.71985645933,
+      "persistencia": 31.659181922197,
+      "linear": 34.846063986989
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-08-01",
+      "observado": 42.867551500069,
+      "persistencia": 34.211004456634,
+      "linear": 35.058432672957
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-09-01",
+      "observado": 40.195322580645,
+      "persistencia": 36.557898531135,
+      "linear": 38.128169878593
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-09-01",
+      "observado": 39.059528674568,
+      "persistencia": 27.69372605364,
+      "linear": 29.071057276632
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-09-01",
+      "observado": 32.479684418146,
+      "persistencia": 35.386164896939,
+      "linear": 36.041965992146
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-09-01",
+      "observado": 45.262155963303,
+      "persistencia": 36.180633871281,
+      "linear": 34.78937293366
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-10-01",
+      "observado": 43.073502722323,
+      "persistencia": 39.967647596417,
+      "linear": 36.85276211166
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-10-01",
+      "observado": 46.932319942092,
+      "persistencia": 27.56089669517,
+      "linear": 31.611943149779
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-10-01",
+      "observado": 34.363105556062,
+      "persistencia": 34.71985645933,
+      "linear": 36.320375345088
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-10-01",
+      "observado": 49.150656009652,
+      "persistencia": 42.867551500069,
+      "linear": 39.319588476715
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-11-01",
+      "observado": 38.092530423836,
+      "persistencia": 40.195322580645,
+      "linear": 38.241843248916
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-11-01",
+      "observado": 47.166230746876,
+      "persistencia": 39.059528674568,
+      "linear": 36.256435371569
+    },
+    {
+      "campanha": "Cenario-C",
+      "periodo": "2022-11-01",
+      "observado": 34.161496704149,
+      "persistencia": 32.479684418146,
+      "linear": 36.454770362024
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-11-01",
+      "observado": 36.632193635748,
+      "persistencia": 45.262155963303,
+      "linear": 40.448335365233
+    },
+    {
+      "campanha": "Cenario-A",
+      "periodo": "2022-12-01",
+      "observado": 33.91547545059,
+      "persistencia": 43.073502722323,
+      "linear": 37.91992808424
+    },
+    {
+      "campanha": "Cenario-B",
+      "periodo": "2022-12-01",
+      "observado": 40.133741989412,
+      "persistencia": 46.932319942092,
+      "linear": 36.712368957027
+    },
+    {
+      "campanha": "Cenario-D",
+      "periodo": "2022-12-01",
+      "observado": 45.104389524161,
+      "persistencia": 49.150656009652,
+      "linear": 39.226670810499
+    }
+  ]
+}

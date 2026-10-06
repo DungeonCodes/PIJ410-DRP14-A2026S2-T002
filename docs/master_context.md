@@ -18,7 +18,9 @@ O trabalho usa como contexto uma necessidade real observada em uma instituição
 
 Desde **27/08/2026**, o repositório inclui uma aplicação acadêmica própria em **Next.js +
 TypeScript**, independente e baseada em dados sintéticos. A disponibilização é incremental: a
-Fase 1 contém Captação e Matrículas; fases posteriores permanecem bloqueadas por feature gate.
+Fase 1 contém Captação e Matrículas. Pela liberação explícita de 06/10/2026, a Fase 2 também
+está ativa localmente com Ads sintéticos (visão geral, Google Ads, Meta Ads e Estratégia);
+Fases 3 e 4 permanecem bloqueadas por feature gate. Não houve novo deploy.
 O ambiente acadêmico sanitizado da Fase 1 está funcional e publicado na Vercel; a publicação
 disponibiliza somente esses dois módulos e não implica ativação das fases posteriores.
 Uma arquitetura externa pode ser referência apenas conceitual e estrutural; a aplicação acadêmica
@@ -46,7 +48,7 @@ Problema, objetivo, título, requisitos e escopo definitivos serão refinados pe
 ## Escopo Inicial
 
 O escopo substantivo do PI continua **pendente** de validação com a comunidade externa. Como
-baseline técnico, a aplicação acadêmica demonstra somente Captação e Matrículas por meio de
+baseline técnico, a aplicação acadêmica demonstra Captação, Matrículas e Ads por meio de
 visualizações e relatórios de dados sintéticos; sua finalidade é demonstrativa e analítica, não
 operacional. O scaffolding científico existente permanece preservado.
 
@@ -100,6 +102,11 @@ Saída técnica existente desde 27/08/2026: ambiente acadêmico sanitizado e ind
 
 ## Restrições e Guardrails
 
+Interface: ADR-008 estabelece V1 como baseline pré-validação de 06/10/2026 e V2 como base
+equivalente, sem feedback aplicado. `CURRENT_UI_VERSION` permanece V1; dados, algoritmos,
+experimento CPR e gates são compartilhados. Primeira sessão deve usar V1 e registrar a versão.
+Melhorias de UX pertencem à V2, sem alterar V1 ou promover uma versão automaticamente.
+
 Confidencialidade — o contexto é real e o repositório acadêmico não deve expor:
 
 * dados pessoais de alunos;
@@ -136,11 +143,15 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
 
 * Existe um sistema real que servirá como principal referência técnica para a construção do ambiente acadêmico, com funcionalidades relacionadas a: indicadores gerenciais, investimentos em mídia digital, Google Ads, Meta Ads, captação, matrículas, retenção/evasão, conteúdo orgânico e análise estratégica.
 * O PI poderá aproveitar conceitos, arquitetura, componentes, regras de apresentação e experiências obtidas nesse sistema, mas o repositório acadêmico será **independente do ambiente operacional**.
-* Confirmado pelo grupo em 26 ago. 2026 e atualizado pela baseline de 27 ago. 2026: código, dados
-  autorizados, treinamento, testes e relatório técnico detalhado de aprendizagem de máquina
-  permanecerão fora do ambiente acadêmico. Este repositório mantém a documentação e uma interface
-  web acadêmica independente, cuja Fase 1 demonstra Captação e Matrículas com dados sintéticos. Não
-  serão copiados para cá dados reais, artefatos de modelo, credenciais nem código operacional.
+* Atualizado pela solicitação de 06/10/2026 (ADR-007): o ambiente acadêmico contém um experimento
+  supervisionado sintético local, restrito a Google Ads, cujo target é CPR (custo por resultado,
+  definido como conversões registradas pela plataforma). Treinamento e testes usam dados gerados
+  do zero, features históricas elegíveis e split temporal. Esta decisão substitui a restrição
+  anterior de localizar todo treinamento fora do repositório, exclusivamente para esse experimento
+  sintético. Dados reais, credenciais, integrações, modelos reais e código operacional continuam
+  excluídos. Fases 1 e 2 estão ativas localmente, conforme emenda da ADR-006; Google Ads exibe
+  resultados fixos da CLI, sem treinamento no navegador. Fases 3 e 4 continuam bloqueadas.
+  Não há ML em Captação, Matrículas, Meta, conteúdo orgânico ou gestão.
 * Confirmado pelo grupo em 26 ago. 2026: o núcleo analítico terá três camadas distintas. A
   primeira produzirá indicadores por algoritmos determinísticos, com parâmetros e resultados
   conferíveis. A segunda preparará dados históricos e treinará e avaliará ao menos um modelo

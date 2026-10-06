@@ -62,7 +62,7 @@ export interface MetricasMatriculas {
   total: number;
   rematriculas: number;
   novas: number;
-  /** `null` quando o recorte só contém safras sem base N−1. */
+  /** Campo legado: participação de rematrículas no total atual; não retenção de coorte. */
   retencaoPct: number | null;
 }
 
@@ -82,8 +82,8 @@ function somar(grupos: GrupoMatriculas[]): MetricasMatriculas {
     total,
     rematriculas,
     novas: total - rematriculas,
-    // Retenção só é publicada sobre safras COM base anterior. Misturar a
-    // primeira safra no denominador inventaria uma queda que não existe.
+    // O campo legado retencaoPct mede PARTICIPAÇÃO na base atual, não retenção
+    // de coorte N−1. Só usa safras classificáveis; não infere evasão ou migração.
     retencaoPct: baseDet > 0 ? Math.round((remaDet / baseDet) * 1000) / 10 : null,
   };
 }

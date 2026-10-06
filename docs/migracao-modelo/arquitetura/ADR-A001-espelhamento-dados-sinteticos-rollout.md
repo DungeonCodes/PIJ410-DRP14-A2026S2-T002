@@ -31,6 +31,12 @@ Três problemas precisavam de decisão simultânea:
 
 ## Decisão
 
+**Atualização de estado — 06/10/2026:** conforme emenda da ADR-006 em `docs/decisions.md`,
+Fases 1 e 2 ativas localmente; Fases 3 e 4 bloqueadas. Ads usa somente os datasets sintéticos
+existentes. Google exibe resultados fixos do experimento CPR gerado via CLI; não há treinamento
+no navegador, integração real, decisão autônoma ou deploy. As descrições datadas abaixo
+preservam o estado da baseline de 27/08/2026.
+
 ### 1. Espelhar ESTRUTURA, reconstruir DADOS
 
 A aplicação acadêmica reproduz da referência: organização de rotas, hierarquia de navegação,

@@ -13,6 +13,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Fragment } from 'react';
 import { moduloDaRota, modulosHabilitados, type ModuloAcademico } from '@/lib/fases';
+import { versionedPath, type UIVersion } from '@/lib/interface';
 
 const BASE = 'block rounded-md px-3 py-2 text-sm font-medium transition-colors';
 const INATIVO = 'text-[var(--text-muted)] hover:bg-white/[0.04] hover:text-[var(--text)]';
@@ -34,7 +35,7 @@ function agrupar(modulos: ModuloAcademico[]) {
   return blocos;
 }
 
-export function SidebarNav() {
+export function SidebarNav({ version }: { version: UIVersion }) {
   const pathname = usePathname() ?? '';
   const blocos = agrupar(modulosHabilitados());
 
@@ -54,7 +55,7 @@ export function SidebarNav() {
                 {bloco.itens.map((m) => (
                   <Link
                     key={m.chave}
-                    href={m.rota}
+                    href={versionedPath(version, m.rota)}
                     aria-current={ativo(pathname, m) ? 'page' : undefined}
                     className={`${BASE} ${ativo(pathname, m) ? ATIVO : INATIVO}`}
                   >
@@ -67,7 +68,7 @@ export function SidebarNav() {
             bloco.itens.map((m) => (
               <Link
                 key={m.chave}
-                href={m.rota}
+                href={versionedPath(version, m.rota)}
                 aria-current={ativo(pathname, m) ? 'page' : undefined}
                 className={`${BASE} ${ativo(pathname, m) ? ATIVO : INATIVO}`}
               >
@@ -81,7 +82,7 @@ export function SidebarNav() {
   );
 }
 
-export function MobileNav() {
+export function MobileNav({ version }: { version: UIVersion }) {
   const pathname = usePathname() ?? '';
   const chip = 'shrink-0 rounded-md border border-[var(--border)] px-3 py-2 text-xs font-medium transition-colors';
 
@@ -90,7 +91,7 @@ export function MobileNav() {
       {modulosHabilitados().map((m) => (
         <Link
           key={m.chave}
-          href={m.rota}
+          href={versionedPath(version, m.rota)}
           aria-current={ativo(pathname, m) ? 'page' : undefined}
           className={`${chip} ${
             ativo(pathname, m) ? 'bg-white/[0.06] text-[var(--text)]' : 'text-[var(--text-muted)]'

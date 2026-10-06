@@ -10,7 +10,7 @@ commit humano, revisável, com o módulo pronto e testado.
 
 ---
 
-## FASE 0 — Governança  ✅ concluída em 27/08/2026
+## Governança inicial — concluída em 27/08/2026
 
 Estabelecer as regras antes de escrever a primeira página.
 
@@ -61,6 +61,11 @@ indeterminação declarada.
 
 Espelhar `Visão geral`, `Google Ads`, `Meta Ads` e `Estratégia`.
 
+**Atualização de 06/10/2026:** contratos de métricas, cenário sintético e interfaces reduzidas
+dos quatro módulos foram preparados; o experimento local de CPR do Google Ads foi executado.
+A fase permanece bloqueada no feature gate. Essa preparação não é abertura, publicação ou
+conclusão integral da Fase 2. Método e limites: [experimento-google-cpr.md](experimento-google-cpr.md).
+
 **O que precisa ser construído antes de abrir:**
 
 1. Cenário sintético de mídia paga com **relações analíticas preservadas** — não basta gerar
@@ -105,7 +110,7 @@ para descrever.
 
 ---
 
-## FASE 5 — Sincronização estrutural  ⏳ planejada
+## Processo transversal — Sincronização estrutural planejada
 
 Permitir que evoluções estruturais da arquitetura de referência cheguem ao projeto acadêmico
 **sem** transportar dado, segredo ou identidade.
@@ -113,7 +118,7 @@ Permitir que evoluções estruturais da arquitetura de referência cheguem ao pr
 Desenho em [`manifesto-sincronizacao.md`](manifesto-sincronizacao.md). Direção **unidirecional**
 `ORIGINAL → ACADÊMICO`, sempre com revisão humana, nunca como clone bruto.
 
-**Deliberadamente a última fase.** Um sincronizador construído antes da governança seria um
+**Processo técnico posterior, não uma quinta fase funcional.** Um sincronizador construído antes da governança seria um
 canal de transporte sem filtro — exatamente o risco que todo o resto do plano existe para
 evitar.
 
@@ -124,7 +129,7 @@ evitar.
 ```text
 27/08/2026
 
-FASE 0 GOVERNANÇA        ✅ concluída
+GOVERNANÇA INICIAL       ✅ concluída
 FASE 1 ATIVA
 ├─ Captação
 └─ Matrículas
@@ -139,6 +144,6 @@ FASE 4 PLANEJADA
 ├─ Objetivo da Gestão
 └─ Arquitetura & Algoritmos
 
-FASE 5 PLANEJADA
+PROCESSO TRANSVERSAL PLANEJADO
 └─ Sincronização estrutural segura
 ```

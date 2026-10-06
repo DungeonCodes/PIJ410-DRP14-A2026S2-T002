@@ -4,6 +4,7 @@ import type { ReactNode } from 'react';
 import { MobileNav, SidebarNav } from '@/components/sidebar-nav';
 import { APP, INSTITUICAO_FICTICIA, SELO_SINTETICO } from '@/lib/identidade';
 import { PROJETO_INICIADO_EM } from '@/lib/fases';
+import { versionedPath, type UIVersion } from '@/lib/interface';
 
 /**
  * Selo de dados sintéticos. Discreto, mas presente em TODA tela — a leitura
@@ -23,11 +24,11 @@ export function SeloSintetico({ compacto = false }: { compacto?: boolean }) {
   );
 }
 
-export function AppShell({ children }: { children: ReactNode }) {
+export function AppShell({ children, version }: { children: ReactNode; version: UIVersion }) {
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
+    <div data-ui-version={version} className="min-h-screen bg-[var(--bg)] text-[var(--text)]">
       <aside className="fixed inset-y-0 left-0 z-20 hidden w-72 flex-col border-r border-[var(--border)] bg-[var(--bg-elevated)] px-5 py-6 lg:flex">
-        <Link href="/" className="block">
+        <Link href={versionedPath(version)} className="block">
           <p className="text-[10px] font-semibold uppercase tracking-[0.22em] text-[var(--accent-blue)]">
             {APP.instituicaoDeEnsino} · {APP.semestre}
           </p>
@@ -37,9 +38,10 @@ export function AppShell({ children }: { children: ReactNode }) {
 
         <div className="mt-4">
           <SeloSintetico />
+          <p className="mt-2 text-[10px] text-[var(--text-dim)]">Versão de interface: {version.toUpperCase()}</p>
         </div>
 
-        <SidebarNav />
+        <SidebarNav version={version} />
 
         <div className="mt-auto space-y-3 pt-6">
           <div className="rounded-md border border-[var(--border)] bg-white/[0.02] px-3 py-2">
@@ -60,13 +62,14 @@ export function AppShell({ children }: { children: ReactNode }) {
 
       <header className="sticky top-0 z-30 border-b border-[var(--border)] bg-[var(--bg-elevated)]/90 px-4 py-3 backdrop-blur lg:hidden">
         <div className="flex items-center justify-between gap-3">
-          <Link href="/" className="min-w-0">
+          <Link href={versionedPath(version)} className="min-w-0">
             <p className="truncate text-sm font-semibold text-[var(--text)]">{APP.nome}</p>
             <p className="truncate text-[11px] text-[var(--text-muted)]">{APP.disciplina}</p>
+            <p className="text-[10px] text-[var(--text-dim)]">Versão de interface: {version.toUpperCase()}</p>
           </Link>
           <SeloSintetico compacto />
         </div>
-        <MobileNav />
+        <MobileNav version={version} />
       </header>
 
       <main className="lg:pl-72">

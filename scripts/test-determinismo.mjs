@@ -187,12 +187,12 @@ t('matrículas: nenhuma turma tem rematrícula > total',
 t('matrículas: soma dos meses = total do grupo',
   mat1.grupos.every((g) => g.mensal.reduce((a, v) => a + (v ?? 0), 0) === g.total));
 
-t('matrículas: retenção é null exatamente nas safras sem base N−1',
+t('matrículas: participação de rematrículas é null nas safras sem classificação',
   mat1.grupos.every((g) =>
     mat1.safrasIndeterminadas.includes(g.safra) ? g.retencaoPct === null : g.retencaoPct !== null,
   ));
 
-t('matrículas: retenção declarada = rematrículas/total',
+t('matrículas: campo legado retencaoPct = participação rematrículas/total atual',
   mat1.grupos
     .filter((g) => g.retencaoPct !== null)
     .every((g) => Math.abs(g.retencaoPct - Math.round((g.rematriculas / g.total) * 1000) / 10) < 1e-9));

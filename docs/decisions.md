@@ -83,6 +83,21 @@ V3, pode receber anotações e correções enquanto permanecer sincronizada com 
 torna encerrada mediante decisão explícita. Quando houver nova rodada após o encerramento, a fonte
 gerará a próxima versão numerada, como V4, sem modificar V3.
 
+### Emenda de 2026-10-06 — Fonte editorial do Relatório Final
+
+`docs/relatorio/parcial.md` permanece a fonte editorial do Relatório Parcial e não será
+sobrescrito ou convertido na fonte do Relatório Final. `docs/relatorio/final.md` passa a ser a
+fonte editorial própria do Relatório Final.
+
+O Relatório Final terá ciclo de versões independente, com snapshots numerados como
+`Relatorio_Final_V1.md`, `Relatorio_Final_V2.md` e seguintes. Esses snapshots serão criados
+somente após a revisão da fonte editorial e não serão alterados retroativamente. Nesta etapa,
+nenhum snapshot do Relatório Final foi criado.
+
+O DOCX continuará sendo montado manualmente a partir do Markdown aprovado. O arquivo
+`docs/migracao-modelo/referencias/Modelo_Relatorio_Final.docx` é referência estrutural e de
+formatação, permanece intacto e não constitui fonte editorial.
+
 ---
 
 ## ADR-002 — Norma ABNT vigente, não a citada no modelo
@@ -265,6 +280,102 @@ subpasta; esta ADR é o registro canônico resumido para a governança do projet
 cronologia sintética, módulos disponíveis e planejamento futuro. A independência da aplicação e a
 sanitização dos dados passam a ser requisitos permanentes da evolução do protótipo.
 
+### Emenda de 2026-10-06 — Ativação acadêmica local da Fase 2
+
+Por solicitação explícita, a Fase 2 passa a disponibilizar localmente Ads (visão geral),
+Google Ads, Meta Ads e Estratégia, exclusivamente sobre os contratos e datasets sintéticos
+existentes. A Fase 1 permanece ativa; Fases 3 e 4 continuam bloqueadas. O gate central,
+a navegação derivada e os guardas das rotas são preservados. Esta liberação não constitui
+deploy nem altera automaticamente o ambiente publicado.
+
+Google Ads exibe o artefato reproduzível do experimento de CPR da ADR-007, sem treinamento
+no navegador ou recomendação de investimento. Meta Ads preserva resultados separados por
+indicador; Estratégia permanece determinística com premissa fictícia declarada. Não há
+conexão com APIs, contas ou dados operacionais. A ativação técnica não é validação comunitária;
+os instrumentos existentes continuam destinados à Fase 1 até revisão humana específica.
+
+---
+
+## ADR-007 — Experimento sintético local de CPR restrito a Google Ads
+
+**Data:** 2026-10-06
+
+**Decisão:** Pela solicitação explícita de atualização acadêmica, este repositório passa a conter
+um experimento supervisionado exploratório, inteiramente sintético e reproduzível localmente,
+restrito ao Google Ads. O target CPR significa Custo por Resultado, com resultado definido como
+conversões registradas pelo Google Ads; no contrato de referência é equivalente a custo por
+conversão/CPA. A fórmula é custo/conversões, com `null` quando o denominador não é positivo.
+Não representa custo por matrícula nem por lead único.
+
+O experimento usa regressão linear OLS, comparada à persistência do último CPR histórico elegível,
+features históricas disponíveis no instante da emissão, calendário conhecido, split temporal e
+purga de targets ainda indisponíveis no corte de treino. Investimento, resultados, CPR e demais
+variáveis contemporâneas ao target não entram como features. A maturação de 14 dias é uma hipótese
+declarada do cenário acadêmico; não é uma regra presumida da conta real.
+
+Esta decisão substitui, **para o experimento sintético**, a orientação de 26/08/2026 de manter
+treinamento e testes exclusivamente fora do repositório acadêmico. Dados, modelos, credenciais,
+integrações e código operacional continuam excluídos. Captação, Matrículas, Meta Ads, conteúdo
+orgânico e gestão não recebem ML. Nenhuma inferência aciona investimento ou operação externa.
+
+Na decisão inicial, o rollout mantinha Fase 1 ativa e Fases 2–4 bloqueadas. A emenda da ADR-006
+de 06/10/2026 autoriza posteriormente a Fase 2 acadêmica local: a interface Google Ads exibe
+o artefato da CLI sem executar treinamento. Fases 3 e 4 permanecem bloqueadas; método, target
+e não objetivos desta ADR são preservados.
+A atualização editorial do Relatório Final será feita em rodada própria; relatórios históricos
+não são reescritos por esta decisão.
+
+**Motivo:** demonstrar método de análise de dados e aprendizagem de máquina com prevenção de
+leakage, independência e rastreabilidade, sem transformar o PI em réplica operacional.
+
+**Alternativas consideradas:** aprender a fórmula com custo/resultados contemporâneos
+(descartada); usar split aleatório (descartada neste cenário temporal); manter somente estatística
+descritiva (alternativa se não houver histórico elegível); acrescentar modelos complexos
+(não necessário para a pergunta mínima).
+
+**Impacto esperado:** método, seed, features, coeficientes, previsões e métricas ficam verificáveis.
+O resultado continua limitado ao gerador sintético, sem evidência de eficácia operacional,
+atribuição causal ou validação pela comunidade.
+
+**Documentação técnica:** [auditoria de seleção](migracao-modelo/arquitetura/auditoria-referencia-2026-10-06.md)
+e [protocolo do experimento](migracao-modelo/arquitetura/experimento-google-cpr.md).
+
+---
+
+## ADR-008 — Versões rastreáveis da interface e baseline pré-validação
+
+**Data:** 2026-10-06.
+
+**Decisão:** adotar `/v1` e `/v2`, não nomes relativos old/new/legacy. V1 congela o estado
+visual/funcional aprovado localmente, com Fases 1 e 2 ativas e Fases 3 e 4 bloqueadas. V2 nasce
+equivalente, por herança explícita das apresentações V1, com registro próprio para futuras
+substituições de páginas/layout/componentes. Dados, contratos, algoritmos e artefato CPR são
+únicos e compartilhados; não existe nova versão científica do ML nesta decisão.
+
+`CURRENT_UI_VERSION` em `src/lib/interface.ts` permanece `v1`. As canônicas redirecionam
+temporariamente para essa versão, preservando filtros. Navegação permanece dentro da versão
+acessada; identificação discreta é exibida no desktop/mobile, sem seletor para o participante.
+V2 só pode tornar-se corrente após feedback, alterações selecionadas, testes, comparação e
+decisão explícita. Os gates são independentes do versionamento da apresentação.
+
+V1 somente muda por bug crítico, erro factual, vulnerabilidade, vazamento ou falha de execução,
+com justificativa, testes e revisão humana dos hashes protegidos. Melhorias de UX são feitas
+inicialmente em V2. Não alterar componentes/CSS protegidos compartilhados pela baseline para
+melhorar V2: substituir a apresentação necessária em `src/ui/v2/`, com estilos escopados.
+
+Primeira validação usa V1, sem apresentar V2 como alternativa. Comparações exigem mesmo dataset,
+período/filtros, fórmulas, métricas, CPR e gates. Nenhum feedback ou benefício foi inventado.
+ADR-007 e seus resultados permanecem intactos; o histórico Git problemático não é tratado aqui.
+
+**Motivo:** preservar uma referência anterior ao feedback e permitir comparar mudanças de
+interface sem confundi-las com alterações de dados ou método científico.
+
+**Alternativas:** fork completo (duplicação desnecessária); versões com dados distintos
+(comparação confundida); edição contínua da baseline (perda da referência); promoção automática
+de V2 (descartada). O mínimo adotado é roteador comum, apresentações registradas e proteção V1.
+
+**Documentação:** `docs/validacao/versoes-interface.md`.
+
 ---
 
 ## Pendências aguardando decisão
@@ -307,6 +418,9 @@ Registradas aqui porque constaram como pendências e já não são.
   O treinamento, os testes e o relatório técnico do modelo ocorrerão no repositório real da
   solução; neste repositório acadêmico serão mantidos apenas o relato metodológico e resultados
   sanitizados ou fictícios necessários à apresentação posterior.
+  **Atualização de 06/10/2026:** a restrição de localização do treinamento/testes foi substituída
+  pela ADR-007 para o experimento sintético local de CPR no Google Ads. O ambiente operacional
+  e seus dados continuam fora do repositório acadêmico.
   Modelos de linguagem de alta capacidade poderão gerar interpretação assistida dos resultados,
   desde que recebam somente contexto versionado e sanitizado. Cada explicação ou recomendação deve
   apontar os fatos, cálculos, resultados estimados ou referências que a sustentam; saídas sem base

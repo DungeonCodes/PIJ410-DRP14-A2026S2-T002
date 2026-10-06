@@ -662,3 +662,172 @@ como não copiar, placeholders como ação manual e URLs de captura como não co
 foi consolidado ao final do relatório; V3 permanece corrente.
 
 ---
+
+Data: 2026-10-06
+Ação realizada: Início da estruturação do Relatório Final.
+Modelo final inspecionado: `docs/migracao-modelo/referencias/Modelo_Relatorio_Final.docx`,
+confirmado como idêntico ao modelo oficial preservado em `docs/univesp/Modelo_Relatorio_Final.docx`.
+Também foram verificadas as orientações oficiais em `docs/univesp/`, incluindo a estrutura e a
+rubrica específicas do Relatório Final e a exigência regulamentar de TCLE na versão final quando
+houver coleta de informações, opiniões ou imagens de terceiros.
+Resultado: criado `docs/relatorio/final.md` como nova fonte editorial do Relatório Final. Foram
+reaproveitados do Relatório Parcial o contexto, a introdução, os objetivos, a justificativa, a
+fundamentação teórica, a metodologia, o contato inicial com a comunidade e os resultados técnicos
+comprovados da Fase 1. Foram acrescentados placeholders explícitos para validação, feedback,
+comparação entre necessidades iniciais e avaliação final, ajustes, resultados técnicos ainda não
+obtidos, figuras, considerações finais, TCLE e apêndices.
+Integridade: nenhuma validação, entrevista, aprovação, satisfação, impacto, resultado de uso,
+resultado de aprendizagem de máquina ou período histórico foi inventado. O Relatório Parcial e
+suas versões V1, V2 e V3 foram preservados; o modelo DOCX foi preservado. Nenhum código, dataset,
+feature gate, deploy ou configuração da Vercel foi alterado. Nenhum DOCX/PDF foi gerado. Nenhum
+commit ou push foi realizado.
+Arquivos alterados nesta execução: `docs/relatorio/final.md`, `docs/decisions.md` e
+`docs/run_log.md`.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Auditoria inicial do Relatório Final.
+Consistência das fases: corrigida a regressão que apresentava Sincronização Estrutural como Fase 5;
+o relatório volta a representar quatro fases, mantendo Objetivo da Gestão e Arquitetura & Algoritmos
+como componentes da Fase 4. A Fase 1 permanece ativa/funcional e as Fases 2 a 4,
+planejadas/bloqueadas.
+Placeholders: revisados os sete placeholders existentes; os de testes finais e validação foram
+marcados explicitamente como dependentes de etapas futuras. Nenhum placeholder foi excluído.
+Resultados antecipados: não foram encontradas afirmações indevidas de validação, feedback, impacto,
+testes finais, aprendizagem de máquina, IA aplicada ou módulos planejados concluídos.
+Correções realizadas: somente numeração/descrição das fases e estado dos dois placeholders futuros.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Preparação da validação com a comunidade.
+Instrumentos criados: README, roteiro de validação, instrumento breve, protocolo de evidências e modelo de registro de respostas em `docs/validacao/`.
+Integridade: nenhuma resposta, feedback ou resultado foi preenchido ou inventado. A anonimização foi adotada; quando preenchido, o TCLE deve permanecer fora do Git em armazenamento restrito. Nenhuma alteração funcional foi realizada.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Atualização acadêmica por referência técnica e experimento Google Ads CPR.
+Preflight: HOST DESKTOP-VU6VMS6; ambos em dev; Node v24.14.1 e npm 11.11.0. HEAD acadêmico
+47e499e64eeaee2cca59bab793864c8b7571521f, com alterações documentais anteriores preservadas.
+A referência iniciou em a9c6c25ce234341fd8b5fdd7d33bb013b053e884 com alterações locais e passou,
+por commit externo durante a leitura, a edfa12451ccca19edf1d845960cf664bc153dee1 limpo. Os 304
+arquivos técnicos conferidos mantiveram os hashes iniciais até esse corte; esta execução não escreveu na referência.
+Na verificação final, foram observadas novas alterações externas de investimento por ciclo:
+309 arquivos técnicos, sete deltas de código (incluindo cinco arquivos novos). O núcleo e sua
+integração foram auditados e classificados separadamente, sem ingerir os artefatos operacionais;
+a implementação acadêmica permanece vinculada ao corte registrado, não a sincronização contínua.
+Auditoria: registrados preflight, comparação por data, 454 caminhos alterados, inventário de
+232 caminhos técnicos, matriz de relevância e seleção. A origem exata da baseline anterior não
+tinha SHA registrado; isso permanece explícito. Sinalizada revisão de parâmetros operacionais
+no documento técnico legado, sem transportar seus valores para a nova implementação.
+Implementação: contratos puros de métricas, cenário Ads gerado do zero, quatro interfaces
+reduzidas preparadas atrás do gate e experimento local de CPR. ML restrito ao Google Ads,
+registrado na ADR-007; features t−2 disponíveis na emissão, split temporal, purga de targets
+imaturos, scaler apenas no treino, OLS e baseline de persistência. Seed documentada.
+Resultados sintéticos executados: 198 amostras de treino e 71 de teste; regressão linear
+MAE 5,853007, RMSE 7,673297 e R² 0,097625; persistência MAE 6,615678, RMSE 8,363078 e
+R² −0,071903. Resultados não representam eficácia real ou feedback da comunidade.
+Fase 1: filtros deduplicados, limite de atribuição explícito e rótulo participação de
+rematrículas corrigido; safras indeterminadas não alimentam composição. Datasets existentes
+preservados. Governança e sincronização descritas como processos, mantendo quatro fases funcionais.
+Verificação: npm test (fases, determinismo, ML, reprodução e não vazamento), lint, TypeScript
+e build passaram. HTTP local confirmou Fase 1 com 200 e fases bloqueadas com 404; filtros
+repetidos conservam indicadores e a primeira safra não apresenta composição inventada.
+Integridade: feature gates, relatórios Parcial/Final, versões históricas, modelos oficiais e
+instrumentos de validação preservados. Sem dados reais, segredos ou PII nos novos artefatos;
+sem API operacional, deploy, DOCX/PDF, commit ou push feitos por esta execução.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Gate técnico-documental pós-migração e ML CPR.
+Arquivos alterados: legado técnico de Ads; final.md; auditoria da referência; documentação do
+experimento; User-Agent do script bibliográfico (remoção de contato institucional); este registro.
+Resultado: legado atual substituído por síntese conceitual sem parâmetros operacionais; método,
+CPR, controles de leakage e resultados sintéticos integrados pontualmente ao Final. Experimento
+CLI reproduzido com 198 amostras de treino e 71 de teste: persistência MAE 6,615678, RMSE 8,363078,
+R² −0,071903; regressão MAE 5,853007, RMSE 7,673297, R² 0,097625. Ganho modesto, sem eficácia real
+presumida. Fase 1 funcional, Fases 2–4 bloqueadas e validação comunitária ainda pendente.
+Verificação: ml:google-cpr, ml:google-cpr:verificar, npm test (inclui 37 verificações de não
+vazamento), lint, TypeScript e build passaram. Busca ampliada em texto, nove DOCX e seis PDFs
+não encontrou credenciais ou identificadores operacionais no conteúdo atual; três páginas
+normativas sem texto extraível limitam a checagem textual. Modelos, Parcial e versões, instrumentos
+de validação, código da aplicação, gates e artefatos sintéticos preservados. ADR-007 consistente,
+sem alteração. Sem validação inventada, API operacional, DOCX/PDF novo, deploy, commit ou push.
+Decisão do gate: BLOQUEADO POR SANITIZAÇÃO. As versões antigas com parâmetros operacionais
+(6095a9b) e contato institucional (9ef8af9) continuam no histórico Git; a correção atual não os apaga.
+Próximo passo: revisão humana e decisão específica sobre tratamento do histórico antes da liberação.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Ativação acadêmica da Fase 2 — Ads.
+Resultado: gate central liberado explicitamente para /ads, /ads/google, /ads/meta e /ads/estrategia.
+Sidebar e navegação mobile derivam do catálogo existente, com agrupamento Ads no desktop;
+home ajustada para os seis módulos. Identidade acadêmica, tema e instituição fictícia preservados.
+Dados: contratos e datasets sintéticos existentes reutilizados sem alteração; nenhuma API real.
+Google apresenta indicadores, filtros de ano-calendário/campanha e artefato de CPR da CLI;
+Meta mantém conversas/interações separadas e ausência explícita. Estratégia é determinística,
+com premissa mensal fictícia de R$ 10.000, sem recomendação ou execução de campanhas.
+ML: métricas de persistência e regressão reproduzidas e exibidas somente em Google Ads;
+sem treinamento no navegador, com aviso de ganho modesto e baixo poder explicativo.
+Verificação: ml:google-cpr, ml:google-cpr:verificar, npm test (58 testes de fases, determinismo,
+CPR e 37 verificações de não vazamento), lint, TypeScript e build passaram. Build local iniciado
+em 127.0.0.1:3100; seis rotas ativas com HTTP 200, /organico, /gestao e /arquitetura com HTTP 404.
+Navegador: grupo Ads visível, filtros alteram indicadores e preservam métricas fixas de ML;
+sem erros de console observados. Prévia visual mantida fora do repositório.
+Documentação: Final atualizado somente tecnicamente após testes; emenda de estado na ADR-006
+e ADR-A001, com método e não objetivos da ADR-007 preservados. Contexto e protocolo alinhados.
+Integridade: instrumentos de validação, Parcial e versões históricas, modelos e dados preservados;
+nenhuma validação, resposta, feedback ou impacto inventado. Fases 3 e 4 permanecem bloqueadas.
+Gate: FASE 2 ACADÊMICA PRONTA PARA VALIDAÇÃO LOCAL. Instrumento atual cobre somente a Fase 1.
+O bloqueador anterior de sanitização do histórico Git não foi tratado nem revogado; esta liberação
+é exclusivamente local e não autoriza publicação do histórico. Sem deploy, commit ou push.
+Próximo passo: revisão humana da aplicação local; decidir separadamente se o instrumento será ampliado.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Versionamento da interface acadêmica — criação de V1 e base V2.
+Resultado: V1 congelada como baseline pré-validação; V2 criada por herança equivalente, sem
+melhoria ou feedback inventado. Roteador versionado comum, canônicas com redirect 307 para
+CURRENT_UI_VERSION=v1, filtros preservados, identificação discreta e navegação dentro da versão.
+Dados, contratos, algoritmos, métricas, seed e artefato CPR compartilhados, sem duplicação.
+Proteção: 17 fontes de apresentação V1 verificadas por hashes normalizados, sem atualização
+automática; mudanças de UX devem substituir apresentações em V2, sem editar a baseline.
+Verificação: ml:google-cpr, ml:google-cpr:verificar, npm test, lint, TypeScript, build e não
+vazamento passaram. Teste de interface incluído na suíte; 40 verificações HTTP aprovadas em
+127.0.0.1:3101, incluindo versões, aliases, filtros, links, paridade e bloqueios. Comparação
+adicional confirmou conteúdo principal da V1 igual ao estado anterior nos sete caminhos.
+Integridade: 29 arquivos científicos/de dados conferidos por hash permaneceram intactos;
+ADR-007 preservada integralmente. Ajustada somente a asserção de caminho do consumidor de ML
+após mover sua página para a baseline; treinamento, testes matemáticos e resultados não mudaram.
+Documentação: ADR-008 e versoes-interface.md criados; instrumentos registram versão, cenário,
+seed e recortes. Primeira sessão deve usar V1; instrumento mantém tarefas da Fase 1, sem avaliar
+Ads automaticamente. Final recebeu apenas nota metodológica, sem resultado comparativo.
+Fases 1 e 2 ativas em ambas; Fases 3 e 4 bloqueadas. Histórico Git problemático não tratado;
+alterações anteriores da working tree preservadas. Sem dados reais, APIs operacionais, PII,
+deploy, commit, push, DOCX/PDF ou versão numerada do Relatório Final.
+Gate: VERSIONAMENTO PRONTO — VALIDAR V1.
+Próximo passo: aplicar primeira sessão real com V1; consolidar feedback antes de alterar V2.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Ampliação da validação V1 para Fase 2 acadêmica.
+Resultado: V1 permanece baseline e única versão da primeira sessão; tarefas A–E da Fase 1
+preservadas, F–K adicionadas para Ads/Google/Meta/Estratégia e comunicação do experimento CPR.
+Instrumento com 18 perguntas, sessão de 30–40 minutos, rastreabilidade e matriz antes/depois
+com evidências futuras pendentes; compreensão espontânea separada de esclarecimentos.
+Nenhuma resposta coletada, participante simulado ou feedback inventado; changelog vazio.
+V2 sem alterações, aplicação/dados/ML/CPR/final.md intactos. TCLE antes da coleta, preenchido
+fora do Git; registro anonimizado apenas após obtenção efetiva. Sem deploy, commit, push
+ou tratamento do histórico Git. Verificação documental: 18 perguntas, 11 tarefas, matrizes
+pendentes e changelog vazio; somente os sete arquivos autorizados mudaram entre 137 hashes.
+test:interface (17 fontes V1), test:nao-vazamento (37 verificações) e diff --check aprovados;
+busca complementar nos documentos alterados sem identificadores ou credenciais encontrados.
+Gate: INSTRUMENTO V1 PRONTO PARA VALIDAR FASES 1 E 2.
+
+---
