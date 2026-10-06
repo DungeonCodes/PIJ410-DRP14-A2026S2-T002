@@ -662,3 +662,81 @@ como não copiar, placeholders como ação manual e URLs de captura como não co
 foi consolidado ao final do relatório; V3 permanece corrente.
 
 ---
+
+Data: 2026-10-06
+Ação realizada: Início da estruturação do Relatório Final.
+Modelo final inspecionado: `docs/migracao-modelo/referencias/Modelo_Relatorio_Final.docx`,
+confirmado como idêntico ao modelo oficial preservado em `docs/univesp/Modelo_Relatorio_Final.docx`.
+Também foram verificadas as orientações oficiais em `docs/univesp/`, incluindo a estrutura e a
+rubrica específicas do Relatório Final e a exigência regulamentar de TCLE na versão final quando
+houver coleta de informações, opiniões ou imagens de terceiros.
+Resultado: criado `docs/relatorio/final.md` como nova fonte editorial do Relatório Final. Foram
+reaproveitados do Relatório Parcial o contexto, a introdução, os objetivos, a justificativa, a
+fundamentação teórica, a metodologia, o contato inicial com a comunidade e os resultados técnicos
+comprovados da Fase 1. Foram acrescentados placeholders explícitos para validação, feedback,
+comparação entre necessidades iniciais e avaliação final, ajustes, resultados técnicos ainda não
+obtidos, figuras, considerações finais, TCLE e apêndices.
+Integridade: nenhuma validação, entrevista, aprovação, satisfação, impacto, resultado de uso,
+resultado de aprendizagem de máquina ou período histórico foi inventado. O Relatório Parcial e
+suas versões V1, V2 e V3 foram preservados; o modelo DOCX foi preservado. Nenhum código, dataset,
+feature gate, deploy ou configuração da Vercel foi alterado. Nenhum DOCX/PDF foi gerado. Nenhum
+commit ou push foi realizado.
+Arquivos alterados nesta execução: `docs/relatorio/final.md`, `docs/decisions.md` e
+`docs/run_log.md`.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Auditoria inicial do Relatório Final.
+Consistência das fases: corrigida a regressão que apresentava Sincronização Estrutural como Fase 5;
+o relatório volta a representar quatro fases, mantendo Objetivo da Gestão e Arquitetura & Algoritmos
+como componentes da Fase 4. A Fase 1 permanece ativa/funcional e as Fases 2 a 4,
+planejadas/bloqueadas.
+Placeholders: revisados os sete placeholders existentes; os de testes finais e validação foram
+marcados explicitamente como dependentes de etapas futuras. Nenhum placeholder foi excluído.
+Resultados antecipados: não foram encontradas afirmações indevidas de validação, feedback, impacto,
+testes finais, aprendizagem de máquina, IA aplicada ou módulos planejados concluídos.
+Correções realizadas: somente numeração/descrição das fases e estado dos dois placeholders futuros.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Preparação da validação com a comunidade.
+Instrumentos criados: README, roteiro de validação, instrumento breve, protocolo de evidências e modelo de registro de respostas em `docs/validacao/`.
+Integridade: nenhuma resposta, feedback ou resultado foi preenchido ou inventado. A anonimização foi adotada; quando preenchido, o TCLE deve permanecer fora do Git em armazenamento restrito. Nenhuma alteração funcional foi realizada.
+
+---
+
+Data: 2026-10-06
+Ação realizada: Atualização acadêmica por referência técnica e experimento Google Ads CPR.
+Preflight: HOST DESKTOP-VU6VMS6; ambos em dev; Node v24.14.1 e npm 11.11.0. HEAD acadêmico
+47e499e64eeaee2cca59bab793864c8b7571521f, com alterações documentais anteriores preservadas.
+A referência iniciou em a9c6c25ce234341fd8b5fdd7d33bb013b053e884 com alterações locais e passou,
+por commit externo durante a leitura, a edfa12451ccca19edf1d845960cf664bc153dee1 limpo. Os 304
+arquivos técnicos conferidos mantiveram os hashes iniciais até esse corte; esta execução não escreveu na referência.
+Na verificação final, foram observadas novas alterações externas de investimento por ciclo:
+309 arquivos técnicos, sete deltas de código (incluindo cinco arquivos novos). O núcleo e sua
+integração foram auditados e classificados separadamente, sem ingerir os artefatos operacionais;
+a implementação acadêmica permanece vinculada ao corte registrado, não a sincronização contínua.
+Auditoria: registrados preflight, comparação por data, 454 caminhos alterados, inventário de
+232 caminhos técnicos, matriz de relevância e seleção. A origem exata da baseline anterior não
+tinha SHA registrado; isso permanece explícito. Sinalizada revisão de parâmetros operacionais
+no documento técnico legado, sem transportar seus valores para a nova implementação.
+Implementação: contratos puros de métricas, cenário Ads gerado do zero, quatro interfaces
+reduzidas preparadas atrás do gate e experimento local de CPR. ML restrito ao Google Ads,
+registrado na ADR-007; features t−2 disponíveis na emissão, split temporal, purga de targets
+imaturos, scaler apenas no treino, OLS e baseline de persistência. Seed documentada.
+Resultados sintéticos executados: 198 amostras de treino e 71 de teste; regressão linear
+MAE 5,853007, RMSE 7,673297 e R² 0,097625; persistência MAE 6,615678, RMSE 8,363078 e
+R² −0,071903. Resultados não representam eficácia real ou feedback da comunidade.
+Fase 1: filtros deduplicados, limite de atribuição explícito e rótulo participação de
+rematrículas corrigido; safras indeterminadas não alimentam composição. Datasets existentes
+preservados. Governança e sincronização descritas como processos, mantendo quatro fases funcionais.
+Verificação: npm test (fases, determinismo, ML, reprodução e não vazamento), lint, TypeScript
+e build passaram. HTTP local confirmou Fase 1 com 200 e fases bloqueadas com 404; filtros
+repetidos conservam indicadores e a primeira safra não apresenta composição inventada.
+Integridade: feature gates, relatórios Parcial/Final, versões históricas, modelos oficiais e
+instrumentos de validação preservados. Sem dados reais, segredos ou PII nos novos artefatos;
+sem API operacional, deploy, DOCX/PDF, commit ou push feitos por esta execução.
+
+---

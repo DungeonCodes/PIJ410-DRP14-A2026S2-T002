@@ -13,7 +13,10 @@
     "test:fases": "node scripts/test-fases.mjs",
     "test:determinismo": "node scripts/test-determinismo.mjs",
     "test:nao-vazamento": "node scripts/test-nao-vazamento.mjs",
-    "test": "npm run test:fases && npm run test:determinismo && npm run test:nao-vazamento"
+    "ml:google-cpr": "node scripts/experimento-google-cpr.mjs",
+    "ml:google-cpr:verificar": "node scripts/experimento-google-cpr.mjs --verificar",
+    "test:google-cpr": "node scripts/test-google-cpr.mjs",
+    "test": "npm run test:fases && npm run test:determinismo && npm run test:google-cpr && npm run ml:google-cpr:verificar && npm run test:nao-vazamento"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",

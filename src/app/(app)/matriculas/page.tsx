@@ -15,7 +15,7 @@ export const revalidate = false;
 
 function lerLista(raw: string | undefined, validos: string[]): string[] {
   if (!raw) return [];
-  return raw.split(',').map((s) => s.trim()).filter((p) => validos.includes(p));
+  return [...new Set(raw.split(',').map((s) => s.trim()).filter((p) => validos.includes(p)))];
 }
 
 export default async function MatriculasPage({
@@ -42,6 +42,10 @@ export default async function MatriculasPage({
   const m = dados.metricas;
   const periodo = `${todasSafras[0]}–${todasSafras[todasSafras.length - 1]}`;
   const indeterminadasNoRecorte = safras.filter((s) => dados.safrasIndeterminadas.includes(s));
+  // A primeira safra possui total observado, mas sua composição não é conhecida.
+  // Os zeros legados do JSON não constituem classificação de matrículas novas.
+  const composicao = obterMatriculas(safras.filter((s) => !dados.safrasIndeterminadas.includes(s)), ciclos);
+  const temComposicao = composicao.porSafra.length > 0;
 
   const rotulosCiclo = Object.fromEntries(
     todosCiclos.map((c) => [c, CICLO_ROTULO[c as Ciclo] ?? c]),
@@ -95,20 +99,20 @@ export default async function MatriculasPage({
         <MetricCard rotulo="Total" valor={m.total} acento="neutro" detalhe="Matrículas no recorte" />
         <MetricCard
           rotulo="Rematrículas"
-          valor={m.rematriculas}
+          valor={temComposicao ? composicao.metricas.rematriculas : null}
           acento="verde"
           detalhe="Continuidade da trajetória"
         />
-        <MetricCard rotulo="Novas" valor={m.novas} acento="azul" detalhe="Primeira matrícula" />
+        <MetricCard rotulo="Novas" valor={temComposicao ? composicao.metricas.novas : null} acento="azul" detalhe="Somente safras classificáveis" />
         <MetricCard
-          rotulo="Retenção"
+          rotulo="Participação de rematrículas"
           valor={m.retencaoPct}
           sufixo="%"
           acento="ambar"
           detalhe={
             m.retencaoPct === null
               ? 'Indeterminada: recorte sem safra anterior'
-              : 'Calculada só sobre safras com base N−1'
+              : 'Rematrículas / total atual nas safras classificáveis'
           }
         />
       </section>
@@ -125,26 +129,27 @@ export default async function MatriculasPage({
             A safra {indeterminadasNoRecorte.join(', ')} é a primeira do cenário e não tem safra
             anterior contra a qual cruzar. Rematrícula e nova são{' '}
             <strong>indeterminadas</strong> nela, e por isso ela fica fora do denominador da
-            retenção — em vez de entrar como se toda a base fosse nova, o que produziria uma queda
-            que não existe.
+            participação de rematrículas e dos gráficos de composição. Seus totais permanecem
+            nas séries de volume, sem serem classificados como matrículas novas.
           </p>
         </section>
       )}
 
+      {temComposicao && <>
       <GraficoEmpilhado
-        dados={dados.porSafra.map((s) => ({
+        dados={composicao.porSafra.map((s) => ({
           safra: String(s.safra),
           rematriculas: s.metricas.rematriculas,
           novas: s.metricas.novas,
         }))}
         chaveCategoria="safra"
         titulo="Composição por safra"
-        nota="Rematrículas + novas = total, por construção do gerador."
+        nota="Rematrículas + novas = total das safras classificáveis; safra sem base anterior não entra na composição."
       />
 
       <section className="grid gap-4 lg:grid-cols-2">
         <GraficoEmpilhado
-          dados={dados.porCiclo.map((c) => ({
+          dados={composicao.porCiclo.map((c) => ({
             ciclo: CICLO_ROTULO[c.ciclo as Ciclo] ?? c.ciclo,
             rematriculas: c.metricas.rematriculas,
             novas: c.metricas.novas,
@@ -153,7 +158,7 @@ export default async function MatriculasPage({
           titulo="Composição por ciclo"
         />
         <GraficoEmpilhado
-          dados={dados.turmas.map((t) => ({
+          dados={composicao.turmas.map((t) => ({
             turma: t.turma,
             rematriculas: t.rematriculas,
             novas: t.novas,
@@ -164,6 +169,8 @@ export default async function MatriculasPage({
         />
       </section>
 
+      </>}
+
       <GraficoMensal
         dados={dados.mensal}
         safras={safras}
@@ -171,9 +178,9 @@ export default async function MatriculasPage({
       />
 
       <section className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">
-        <h3 className="text-sm font-semibold text-[var(--text)]">Retenção por safra</h3>
+        <h3 className="text-sm font-semibold text-[var(--text)]">Participação de rematrículas por safra</h3>
         <p className="mb-3 mt-0.5 text-[11px] text-[var(--text-dim)]">
-          Percentual recalculado da própria linha; travessão onde é indeterminado.
+          Rematrículas / total atual; não representa retenção de coorte ou evasão. Travessão onde é indeterminado.
         </p>
         <div className="overflow-x-auto">
           <table className="w-full min-w-[480px] text-left text-sm">
@@ -183,7 +190,7 @@ export default async function MatriculasPage({
                 <th className="pb-3 text-right font-semibold">Total</th>
                 <th className="pb-3 text-right font-semibold">Rematrículas</th>
                 <th className="pb-3 text-right font-semibold">Novas</th>
-                <th className="pb-3 text-right font-semibold">Retenção</th>
+                <th className="pb-3 text-right font-semibold">Rematrículas / total</th>
               </tr>
             </thead>
             <tbody className="divide-y divide-[var(--border)]">
@@ -194,10 +201,10 @@ export default async function MatriculasPage({
                     {s.metricas.total.toLocaleString('pt-BR')}
                   </td>
                   <td className="py-2.5 text-right tabular-nums text-[var(--accent-green)]">
-                    {s.metricas.rematriculas.toLocaleString('pt-BR')}
+                    {dados.safrasIndeterminadas.includes(s.safra) ? '—' : s.metricas.rematriculas.toLocaleString('pt-BR')}
                   </td>
                   <td className="py-2.5 text-right tabular-nums text-[var(--accent-blue)]">
-                    {s.metricas.novas.toLocaleString('pt-BR')}
+                    {dados.safrasIndeterminadas.includes(s.safra) ? '—' : s.metricas.novas.toLocaleString('pt-BR')}
                   </td>
                   <td className="py-2.5 text-right tabular-nums text-[var(--text)]">
                     {s.metricas.retencaoPct === null ? (

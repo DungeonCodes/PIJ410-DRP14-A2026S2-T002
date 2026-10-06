@@ -141,6 +141,8 @@ const CAMPOS_PII = [
 for (const [rotulo, arquivo] of [
   ['matrículas', 'src/data/matriculas-sintetico.json'],
   ['captação', 'src/data/captacao-sintetico.json'],
+  ['Ads', 'src/data/ads-sintetico.json'],
+  ['experimento Google CPR', 'src/data/google-cpr-experimento.json'],
 ]) {
   const campos = camposDe(arquivo);
   const achados = CAMPOS_PII.filter((p) => campos.has(p));
@@ -212,14 +214,14 @@ const EXT_PROIBIDA = ['.csv', '.xlsx', '.xls', '.jsonl'];
 const encontrados = ARQUIVOS.filter((f) => EXT_PROIBIDA.includes(extname(f)));
 t('nenhum CSV/XLSX/JSONL no runtime acadêmico', encontrados.length === 0, encontrados.join(', '));
 
-t('os únicos JSON de dado são os dois datasets sintéticos',
+t('os únicos JSON de dado são os quatro artefatos sintéticos declarados',
   (() => {
     const jsons = ARQUIVOS.filter((f) => f.startsWith('src/data/') && f.endsWith('.json')).sort();
-    return jsons.join(',') === 'src/data/captacao-sintetico.json,src/data/matriculas-sintetico.json';
+    return jsons.join(',') === 'src/data/ads-sintetico.json,src/data/captacao-sintetico.json,src/data/google-cpr-experimento.json,src/data/matriculas-sintetico.json';
   })());
 
 t('todo dataset se declara sintético',
-  ['captacao-sintetico.json', 'matriculas-sintetico.json'].every((f) => {
+  ['captacao-sintetico.json', 'matriculas-sintetico.json', 'ads-sintetico.json', 'google-cpr-experimento.json'].every((f) => {
     const ds = JSON.parse(readFileSync(join(ROOT, 'src', 'data', f), 'utf8'));
     return ds.meta?.synthetic === true;
   }));

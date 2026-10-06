@@ -40,7 +40,7 @@ export interface GrupoMatriculas {
   total: number;
   rematriculas: number;
   novas: number;
-  /** `null` na primeira safra: sem base N−1, retenção é indeterminada. */
+  /** Campo legado: participação no total atual; null sem classificação na primeira safra. */
   retencaoPct: number | null;
   turmas: TurmaMatriculas[];
   /** Efetivações por mês (1–12). `null` = mês não observado. */

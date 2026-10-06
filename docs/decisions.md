@@ -83,6 +83,21 @@ V3, pode receber anotações e correções enquanto permanecer sincronizada com 
 torna encerrada mediante decisão explícita. Quando houver nova rodada após o encerramento, a fonte
 gerará a próxima versão numerada, como V4, sem modificar V3.
 
+### Emenda de 2026-10-06 — Fonte editorial do Relatório Final
+
+`docs/relatorio/parcial.md` permanece a fonte editorial do Relatório Parcial e não será
+sobrescrito ou convertido na fonte do Relatório Final. `docs/relatorio/final.md` passa a ser a
+fonte editorial própria do Relatório Final.
+
+O Relatório Final terá ciclo de versões independente, com snapshots numerados como
+`Relatorio_Final_V1.md`, `Relatorio_Final_V2.md` e seguintes. Esses snapshots serão criados
+somente após a revisão da fonte editorial e não serão alterados retroativamente. Nesta etapa,
+nenhum snapshot do Relatório Final foi criado.
+
+O DOCX continuará sendo montado manualmente a partir do Markdown aprovado. O arquivo
+`docs/migracao-modelo/referencias/Modelo_Relatorio_Final.docx` é referência estrutural e de
+formatação, permanece intacto e não constitui fonte editorial.
+
 ---
 
 ## ADR-002 — Norma ABNT vigente, não a citada no modelo
@@ -267,6 +282,50 @@ sanitização dos dados passam a ser requisitos permanentes da evolução do pro
 
 ---
 
+## ADR-007 — Experimento sintético local de CPR restrito a Google Ads
+
+**Data:** 2026-10-06
+
+**Decisão:** Pela solicitação explícita de atualização acadêmica, este repositório passa a conter
+um experimento supervisionado exploratório, inteiramente sintético e reproduzível localmente,
+restrito ao Google Ads. O target CPR significa Custo por Resultado, com resultado definido como
+conversões registradas pelo Google Ads; no contrato de referência é equivalente a custo por
+conversão/CPA. A fórmula é custo/conversões, com `null` quando o denominador não é positivo.
+Não representa custo por matrícula nem por lead único.
+
+O experimento usa regressão linear OLS, comparada à persistência do último CPR histórico elegível,
+features históricas disponíveis no instante da emissão, calendário conhecido, split temporal e
+purga de targets ainda indisponíveis no corte de treino. Investimento, resultados, CPR e demais
+variáveis contemporâneas ao target não entram como features. A maturação de 14 dias é uma hipótese
+declarada do cenário acadêmico; não é uma regra presumida da conta real.
+
+Esta decisão substitui, **para o experimento sintético**, a orientação de 26/08/2026 de manter
+treinamento e testes exclusivamente fora do repositório acadêmico. Dados, modelos, credenciais,
+integrações e código operacional continuam excluídos. Captação, Matrículas, Meta Ads, conteúdo
+orgânico e gestão não recebem ML. Nenhuma inferência aciona investimento ou operação externa.
+
+O estado de rollout da ADR-006 é preservado: Fase 1 ativa; Fases 2–4 bloqueadas. As telas de Ads
+podem estar preparadas e o experimento pode ser executado via CLI sem abrir a fase na aplicação.
+A atualização editorial do Relatório Final será feita em rodada própria; relatórios históricos
+não são reescritos por esta decisão.
+
+**Motivo:** demonstrar método de análise de dados e aprendizagem de máquina com prevenção de
+leakage, independência e rastreabilidade, sem transformar o PI em réplica operacional.
+
+**Alternativas consideradas:** aprender a fórmula com custo/resultados contemporâneos
+(descartada); usar split aleatório (descartada neste cenário temporal); manter somente estatística
+descritiva (alternativa se não houver histórico elegível); acrescentar modelos complexos
+(não necessário para a pergunta mínima).
+
+**Impacto esperado:** método, seed, features, coeficientes, previsões e métricas ficam verificáveis.
+O resultado continua limitado ao gerador sintético, sem evidência de eficácia operacional,
+atribuição causal ou validação pela comunidade.
+
+**Documentação técnica:** [auditoria de seleção](migracao-modelo/arquitetura/auditoria-referencia-2026-10-06.md)
+e [protocolo do experimento](migracao-modelo/arquitetura/experimento-google-cpr.md).
+
+---
+
 ## Pendências aguardando decisão
 
 Registradas para não se perderem; nenhuma foi decidida ainda.
@@ -307,6 +366,9 @@ Registradas aqui porque constaram como pendências e já não são.
   O treinamento, os testes e o relatório técnico do modelo ocorrerão no repositório real da
   solução; neste repositório acadêmico serão mantidos apenas o relato metodológico e resultados
   sanitizados ou fictícios necessários à apresentação posterior.
+  **Atualização de 06/10/2026:** a restrição de localização do treinamento/testes foi substituída
+  pela ADR-007 para o experimento sintético local de CPR no Google Ads. O ambiente operacional
+  e seus dados continuam fora do repositório acadêmico.
   Modelos de linguagem de alta capacidade poderão gerar interpretação assistida dos resultados,
   desde que recebam somente contexto versionado e sanitizado. Cada explicação ou recomendação deve
   apontar os fatos, cálculos, resultados estimados ou referências que a sustentam; saídas sem base

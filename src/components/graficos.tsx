@@ -48,16 +48,20 @@ export function GraficoMensal({
   dados,
   safras,
   titulo,
+  nota = 'Linha interrompida = mês ainda não observado no cenário (não é zero).',
+  rotulos,
 }: {
   dados: Record<string, number | string | null>[];
   safras: number[];
   titulo: string;
+  nota?: string;
+  rotulos?: Record<string, string>;
 }) {
   return (
     <div className="rounded-2xl border border-[var(--border)] bg-[var(--surface)] p-5">
       <h3 className="text-sm font-semibold text-[var(--text)]">{titulo}</h3>
       <p className="mb-3 mt-0.5 text-[11px] text-[var(--text-dim)]">
-        Linha interrompida = mês ainda não observado no cenário (não é zero).
+        {nota}
       </p>
       <ResponsiveContainer width="100%" height={260}>
         <LineChart data={dados} margin={{ top: 8, right: 8, left: -18, bottom: 0 }}>
@@ -71,7 +75,7 @@ export function GraficoMensal({
               key={s}
               type="monotone"
               dataKey={String(s)}
-              name={String(s)}
+              name={rotulos?.[String(s)] ?? String(s)}
               stroke={CORES_SAFRA[i % CORES_SAFRA.length]}
               strokeWidth={2}
               dot={false}

@@ -136,11 +136,14 @@ Regras complementares de trabalho estão em `/docs/agent_rules.md`.
 
 * Existe um sistema real que servirá como principal referência técnica para a construção do ambiente acadêmico, com funcionalidades relacionadas a: indicadores gerenciais, investimentos em mídia digital, Google Ads, Meta Ads, captação, matrículas, retenção/evasão, conteúdo orgânico e análise estratégica.
 * O PI poderá aproveitar conceitos, arquitetura, componentes, regras de apresentação e experiências obtidas nesse sistema, mas o repositório acadêmico será **independente do ambiente operacional**.
-* Confirmado pelo grupo em 26 ago. 2026 e atualizado pela baseline de 27 ago. 2026: código, dados
-  autorizados, treinamento, testes e relatório técnico detalhado de aprendizagem de máquina
-  permanecerão fora do ambiente acadêmico. Este repositório mantém a documentação e uma interface
-  web acadêmica independente, cuja Fase 1 demonstra Captação e Matrículas com dados sintéticos. Não
-  serão copiados para cá dados reais, artefatos de modelo, credenciais nem código operacional.
+* Atualizado pela solicitação de 06/10/2026 (ADR-007): o ambiente acadêmico contém um experimento
+  supervisionado sintético local, restrito a Google Ads, cujo target é CPR (custo por resultado,
+  definido como conversões registradas pela plataforma). Treinamento e testes usam dados gerados
+  do zero, features históricas elegíveis e split temporal. Esta decisão substitui a restrição
+  anterior de localizar todo treinamento fora do repositório, exclusivamente para esse experimento
+  sintético. Dados reais, credenciais, integrações, modelos reais e código operacional continuam
+  excluídos. A Fase 1 segue ativa; telas acadêmicas de Ads estão preparadas, mas a Fase 2 segue
+  bloqueada. Não há ML em Captação, Matrículas, Meta, conteúdo orgânico ou gestão.
 * Confirmado pelo grupo em 26 ago. 2026: o núcleo analítico terá três camadas distintas. A
   primeira produzirá indicadores por algoritmos determinísticos, com parâmetros e resultados
   conferíveis. A segunda preparará dados históricos e treinará e avaliará ao menos um modelo

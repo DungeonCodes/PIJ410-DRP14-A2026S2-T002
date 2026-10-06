@@ -99,7 +99,7 @@ for (const rota of BLOQUEADAS) {
   const chave = MODULOS.find((m) => m.rota === rota).chave;
   t(`${rota} chama exigirModuloHabilitado('${chave}')`,
     src.includes(`exigirModuloHabilitado('${chave}')`));
-  t(`${rota} não lê dado nem consome API`,
+  t(`${rota} não consulta módulos operacionais nem consome API`,
     !/captacao-data|matriculas-data|fetch\(|process\.env/.test(src));
 }
 

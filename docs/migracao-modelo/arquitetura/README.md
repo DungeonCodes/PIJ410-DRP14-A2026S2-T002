@@ -20,9 +20,11 @@ arquivos e o desenho da sincronização futura. Nada disso cabe no scaffolding c
 | Arquivo | O que registra |
 |---|---|
 | [`ADR-A001-espelhamento-dados-sinteticos-rollout.md`](ADR-A001-espelhamento-dados-sinteticos-rollout.md) | A decisão: espelhar estrutura, reconstruir dados, liberar por fases. |
-| [`plano-de-fases.md`](plano-de-fases.md) | Fases 0 a 5, com o que entra em cada uma. |
+| [`plano-de-fases.md`](plano-de-fases.md) | Governança, quatro fases funcionais e sincronização transversal. |
 | [`matriz-classificacao.md`](matriz-classificacao.md) | Como classificar cada arquivo do original: `COPY_AS_STRUCTURE`, `SANITIZE`, `SYNTHETIC_REBUILD`, `BLOCK`. |
 | [`manifesto-sincronizacao.md`](manifesto-sincronizacao.md) | Desenho da sincronização futura `ORIGINAL → ACADÊMICO`. **Planejada, não implementada.** |
+| [`auditoria-referencia-2026-10-06.md`](auditoria-referencia-2026-10-06.md) | Preflight, comparação, inventário e seleção por relevância acadêmica. |
+| [`experimento-google-cpr.md`](experimento-google-cpr.md) | Definição de CPR, leakage, protocolo e resultados do experimento sintético local. |
 
 ## Numeração
 

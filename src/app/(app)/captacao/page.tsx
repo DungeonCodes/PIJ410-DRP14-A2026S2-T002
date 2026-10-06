@@ -23,7 +23,7 @@ function safrasPadrao(): number[] {
 function lerLista(raw: string | undefined, validos: string[]): string[] {
   if (!raw) return [];
   const pedidos = raw.split(',').map((s) => s.trim()).filter(Boolean);
-  const filtrados = pedidos.filter((p) => validos.includes(p));
+  const filtrados = [...new Set(pedidos.filter((p) => validos.includes(p)))];
   return filtrados;
 }
 
@@ -150,7 +150,7 @@ export default async function CaptacaoPage({
         chaveCategoria="canal"
         chaveValor="valor"
         titulo="Origem declarada do contato"
-        nota="Categorias fictícias do cenário. Nenhuma ferramenta ou fornecedor real é representado."
+        nota="Categorias fictícias do cenário. Origem declarada não prova atribuição a anúncios ou causalidade."
       />
 
       {comparativo && (
