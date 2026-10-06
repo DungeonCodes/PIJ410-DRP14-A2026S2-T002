@@ -24,18 +24,19 @@ motivo documentado, testes e revisão humana da proteção de hashes.
 
 ## V2
 
-Status: **BASE INICIAL — AINDA SEM ALTERAÇÕES DE FEEDBACK**.
+Status: **EVOLUÇÃO TÉCNICA ACADÊMICA — SEM ALTERAÇÕES DE FEEDBACK**.
 
 Origem: V1.
 
 Objetivo: receber ajustes decorrentes de validação, preservando a V1 para comparação.
-As mesmas páginas existem sob `/v2`, inicialmente equivalentes. Nenhuma melhoria, feedback,
-aprovação, resultado comparativo ou benefício foi presumido.
+As mesmas páginas existem sob `/v2` e nasceram equivalentes. Por demanda técnica/acadêmica
+explícita de 06/10/2026, somente Google Ads acrescenta previsão sazonal experimental de CPR.
+Não é feedback P1/P2 nem melhoria validada pela comunidade. As demais páginas continuam herdadas.
 
 | Versão | Estado | Alterações em relação à anterior | Evidência |
 |---|---|---|---|
 | V1 | baseline | Não se aplica; estado atual aprovado localmente | Pré-validação; não é avaliação comunitária |
-| V2 | preparada | Nenhuma ainda, exceto identificação/roteamento | [PENDENTE — feedback e avaliação reais] |
+| V2 | evolução técnica acadêmica | Adição de previsão sazonal experimental de CPR em Google Ads | CLI e testes técnicos; avaliação comunitária [PENDENTE] |
 
 ## Arquitetura e proteção
 
@@ -52,7 +53,9 @@ aprovação, resultado comparativo ou benefício foi presumido.
   esses arquivos sem regenerar ou aprovar hashes automaticamente. Não é snapshot de dados.
 - Datasets em `src/data/`, contratos, tipos, utilitários analíticos e algoritmos em `src/lib/`
   são únicos e compartilhados. Não existem calcularMetricasV1/V2 nem cópias de datasets nas UIs.
-- O artefato CPR é o mesmo para ambas; treinamento permanece na CLI, nunca no navegador.
+- O artefato CPR anterior é o mesmo para ambas. O novo artefato sazonal é compartilhável
+  na camada científica, mas apresentado somente na V2; nenhum dataset de origem foi duplicado.
+  Treinamento permanece na CLI, nunca no navegador.
 
 Rotas canônicas apontam para `CURRENT_UI_VERSION`, atualmente `v1`, por redirect temporário 307.
 Filtros da URL são preservados. Navegação e página inicial mantêm o prefixo da versão acessada.
@@ -69,25 +72,31 @@ A primeira sessão real deve usar **V1**, sem apresentar V2 como alternativa. Re
 dataset/seed, período, filtros e módulos efetivamente apresentados. Pela ampliação documental explícita de 06/10/2026, o instrumento cobre Captação, Matrículas
 e Ads (Visão Geral, Google Ads, Meta Ads, Estratégia e comunicação do experimento CPR),
 com tarefas A–K e 18 perguntas em 30 a 40 minutos. Não se avalia a qualidade científica
-do modelo. Fases 3 e 4 continuam bloqueadas; V2 não recebe mudanças nem é apresentada.
+do modelo. Fases 3 e 4 continuam bloqueadas; V2 não é apresentada nesta primeira sessão.
+Sua alteração sazonal é técnica acadêmica, não resultado dessa sessão ainda futura.
 
 Comparações posteriores exigem mesmo dataset, métricas, período/filtros, fórmulas, gates e
-definição de CPR. Somente elementos deliberadamente modificados de apresentação podem variar.
-Alteração de algoritmo científico exige decisão própria, não apenas nova versão da interface.
+definição de CPR para os módulos e experimentos anteriores. A V2 agora adiciona um experimento
+científico separado, por demanda explícita; seus indicadores novos não são atribuídos a mudanças
+puramente visuais. Uma comparação futura deve controlar a exposição a esse novo conteúdo ou
+analisar seu efeito separadamente. Não há comparação comunitária já realizada.
 
 Ciclo: V1 → validação → feedback real → seleção de alterações → V2 → nova validação →
 comparação V1/V2 → eventual V3. Nenhuma dessas etapas futuras é declarada concluída.
 
-## Changelog de validação — template vazio
+## Changelog — distinguir evolução técnica de feedback
 
-| ID | Feedback/evidência | Alteração proposta | Versão | Status |
-|---|---|---|---|---|
+| ID | Origem | Feedback/evidência | Alteração proposta | Versão | Status |
+|---|---|---|---|---|---|
+| TEC-001 | DEMANDA TÉCNICA/ACADÊMICA DE DEMONSTRAÇÃO DE ML | Solicitação explícita; experimento-google-cpr-sazonal.md e artefato da CLI | Adição de previsão sazonal experimental de CPR | V2 | Implementação técnica; sem validação comunitária |
 
-Preencher somente após coleta e análise de evidências reais, distinguindo observação e interpretação.
+Não existem entradas de feedback comunitário. Novas linhas devem distinguir origem técnica
+acadêmica de feedback real, sem atribuir TEC-001 a P1/P2. Entradas de feedback somente após coleta
+real, separando observação e interpretação.
 
 ## Verificações
 
-`npm run test:interface` verifica configuração, gates, herança inicial e proteção de V1.
-`npm run test:interface:http -- --url=http://127.0.0.1:3101` verifica servidor local, paridade
-do conteúdo principal nas duas versões (incluindo filtros), identificadores, navegação,
+`npm run test:interface` verifica configuração, gates, herança das páginas e única extensão técnica V2, com proteção de V1.
+`npm run test:interface:http -- --url=http://127.0.0.1:3101` verifica servidor local, preservação
+do painel original nas duas versões (incluindo filtros), extensão exclusiva V2, identificadores, navegação,
 aliases e bloqueios. O teste HTTP não acessa ambientes publicados.

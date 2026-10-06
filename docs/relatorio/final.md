@@ -492,10 +492,11 @@ as Fases 3 e 4 permanecem bloqueadas.
 ### 2.5.5 Implementar, testar, validar e ajustar
 
 Para tornar rastreáveis as futuras avaliações, a interface foi identificada por versões.
-V1 é a baseline pré-validação congelada em 06/10/2026; V2 inicia equivalente e poderá receber
+V1 é a baseline pré-validação congelada em 06/10/2026; V2 nasceu equivalente e poderá receber
 ajustes selecionados a partir de feedback real. Ambas utilizam os mesmos dados sintéticos,
 métricas, fórmulas e feature gates. A primeira aplicação deve registrar V1, período e filtros;
-nenhuma melhoria de V2 ou resultado de comparação foi obtido nesta etapa.
+V2 recebeu posteriormente, por demanda técnica acadêmica e não por feedback, a demonstração
+sazonal de CPR descrita em 2.5.11. Não foi obtido resultado de comparação comunitária.
 
 A implementação disponível será apresentada à comunidade por meio de tarefas orientadas de
 interpretação. A avaliação deverá registrar compreensão dos indicadores, utilidade percebida,
@@ -618,6 +619,25 @@ R² no conjunto de teste, mantendo registro de previsões e condições de execu
 princípio de reprodutibilidade computacional (Peng, 2011). A execução ocorre localmente via CLI,
 sem API real. A interface Google Ads da Fase 2 exibe o artefato de resultados da CLI, sem
 executar treinamento no navegador ou recomendar investimento. Os resultados estão em 3.4.4.
+
+Como extensão técnica separada, foi executada regressão temporal para CPR mensal consolidado:
+soma dos investimentos dividida pela soma das conversões, com cobertura integral. Foram
+examinados todos os anos sintéticos disponíveis, de 2017 a janeiro/2023; 71 dos 73 meses
+possuem CPR consolidado válido. A análise sazonal descritiva calcula média, mediana, dispersão
+e índice por mês do calendário; não constitui aprendizagem de máquina. O modelo OLS utiliza
+seno/cosseno do mês, índice temporal e CPR t−2/t−12. t−1 foi excluído pela maturação sintética
+de 14 dias; t−24 não foi incluído para preservar a pequena amostra, sem escolha baseada no teste.
+
+O último ano completo foi detectado automaticamente: 2022. O treino possui 44 amostras,
+de janeiro/2018 a novembro/2021, com dezembro/2021 purgado pela disponibilidade no corte.
+O holdout recursivo prevê os 12 meses de 2022 na mesma origem, sem incorporar seus resultados,
+comparando OLS a persistência t−2 e sazonal t−12. A padronização usa somente treino. Também foi
+executado rolling origin mensal, incorporando apenas resultados já maduros. Após avaliação,
+o OLS pré-especificado foi reajustado em 57 amostras elegíveis até dezembro/2022 para projetar
+fevereiro/2023 a janeiro/2024. Janeiro/2023 provisório permaneceu ausente no histórico; uma
+ponte estimada foi identificada somente como lag auxiliar da recursão. Não foram calculados
+intervalos de confiança. O novo artefato é apresentado apenas em V2/Google Ads e sua origem
+é demanda técnica acadêmica, não feedback da comunidade.
 
 ### 2.5.12 Interpretação assistida por IA e engenharia de contexto
 
@@ -782,6 +802,32 @@ Figura [numeração pendente] – CPR sintético observado e previsto no conjunt
 Fonte: Elaborado pelo grupo (2026).
 
 [PENDENTE – descrever eventual uso efetivo de IA assistiva e a revisão humana correspondente]
+
+#### Previsão sazonal mensal — extensão técnica exclusiva V2
+
+O experimento sazonal separado foi efetivamente executado e reproduzido pela CLI sobre o
+dataset sintético existente. No holdout recursivo de 2022, foram obtidos:
+
+| Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
+|---|---:|---:|---:|
+| Persistência t−2 | 6,563180 | 13,132417 | -0,082082 |
+| Sazonal t−12 | 9,200559 | 15,375354 | -0,483273 |
+| Regressão linear | 7,575144 | 14,257769 | -0,275481 |
+
+Fonte: Elaborado pelo grupo a partir da execução sintética (2026).
+
+A regressão superou t−12, reduzindo MAE em 17,67% e RMSE em 7,27%, mas foi inferior à
+persistência t−2 e apresentou R² negativo. No rolling origin complementar de um passo, a
+regressão obteve MAE 6,335071, RMSE 12,541304 e R² 0,013138; o protocolo não é equivalente
+à projeção simultânea de 12 meses. Portanto, não há evidência de bom poder explicativo,
+eficácia real ou capacidade de automatizar investimentos.
+
+A V2 acrescenta histórico observado sintético, projeção tracejada de fevereiro/2023 a
+janeiro/2024, índice sazonal e comparação dos três métodos. A previsão apresenta altas e
+baixas, não crescimento obrigatório. Valores extremos e estimativas usadas como lags podem
+se propagar pela recursão. V1 e o experimento anterior permanecem preservados. Essa extensão
+não constitui melhoria solicitada pela comunidade, avaliação dos usuários ou impacto
+institucional; a primeira validação continua exclusivamente V1.
 
 ### 3.4.5 Testes técnicos
 

@@ -831,3 +831,40 @@ busca complementar nos documentos alterados sem identificadores ou credenciais e
 Gate: INSTRUMENTO V1 PRONTO PARA VALIDAR FASES 1 E 2.
 
 ---
+
+Data: 2026-10-06
+Ação realizada: Previsão sazonal experimental de CPR — evolução técnica acadêmica exclusiva V2.
+Origem: DEMANDA TÉCNICA/ACADÊMICA DE DEMONSTRAÇÃO DE ML, não feedback comunitário.
+Auditado ads-sintetico.json: 292 linhas Google, 73 meses de 2017-01 a 2023-01, 4 campanhas,
+284 CPRs individuais fechados, 71 CPRs mensais consolidados, sem duplicidades/mês totalmente
+ausente. Novembro/2018 incompleto e janeiro/2023 provisório preservados como ausência.
+Novo protocolo local: agregação soma(custo)/soma(conversões), análise descritiva Jan–Dez,
+OLS com calendário cíclico/tendência/CPR t−2 e t−12, scaler só no treino e maturação sintética.
+Treino inicial: 44 amostras até 2021-11; holdout recursivo de 12 meses em 2022, com origem fixa
+e ponte explícita para dezembro/2021 imaturo. Persistência: MAE 6,563180/RMSE 13,132417;
+sazonal: 9,200559/15,375354; OLS: 7,575144/14,257769/R² −0,275481.
+OLS supera t−12 (MAE −17,67%, RMSE −7,27%), mas não persistência t−2.
+Rolling origin complementar: OLS MAE 6,335071/RMSE 12,541304/R² 0,013138; sem eficácia real.
+Reajuste final em 57 meses elegíveis; previsão recursiva 2023-02 a 2024-01, com ponte de
+2023-01 apenas estimada, nunca observada. Sem crescimento imposto ou intervalo de confiança.
+Novo JSON determinístico: google-cpr-sazonal.json; SHA256
+81e3917fcba921f3fd4bc50324debd0063210193ca294e22e91132f43fd64bbf.
+Pipeline executado duas vezes por CLI, artefato byte a byte verificado; fonte e artefato antigos
+preservados por hash. Comandos anteriores continuam reproduzíveis, sem modificar gerador/seed.
+V2/Google acrescenta gráficos histórico/previsão e índice sazonal, métricas e avisos; V1 e seus
+17 hashes protegidos intactos. Testes de herança revisados para única extensão V2 autorizada,
+não removidos; inventário de não vazamento estendido ao quinto artefato com controle de PII.
+Passaram: ML anterior/novo e verificadores, npm test, lint, TypeScript, build e 38 checks de
+não vazamento. 40 checks HTTP locais aprovados, incluindo V1/V2 Google 200, extensão somente
+V2, painel original preservado com filtros, canônicas V1 e Fases 3/4 em 404.
+Navegador: dois gráficos renderizados e sem erros de console; captura técnica em outputs/
+cpr-sazonal-v2.png, ignorada no Git, sem atribuição comunitária.
+Metodologia e resultados técnicos incorporados pontualmente no Final; ADR-008/contexto e
+versões registram a origem técnica e o cuidado com novo conteúdo científico na comparação.
+ADR-007, Parcial e versões históricas intactos; primeira sessão segue V1 e instrumentos não
+receberam resultados. Nenhum repositório real acessado, API, dado real, PII ou credencial.
+Sem deploy, commit, push, DOCX/PDF ou tratamento do histórico Git. diff --check aprovado.
+Gate: PREVISÃO SAZONAL CPR PRONTA PARA DEMONSTRAÇÃO NA V2.
+Limite: demonstração válida frente a t−12, não superioridade geral nem previsão operacional.
+
+---

@@ -378,6 +378,19 @@ de V2 (descartada). O mínimo adotado é roteador comum, apresentações registr
 
 ---
 
+### Emenda de 2026-10-06 — Evolução técnica sazonal exclusiva V2
+
+Por nova demanda técnica/acadêmica explícita, V2 acrescenta previsão sazonal experimental
+de CPR somente em Google Ads, preservando a composição original e toda a baseline V1.
+Origem: demonstração acadêmica de ML, não feedback comunitário. Experimento separado, dados
+sintéticos existentes, OLS, t−2/t−12, maturação, holdout recursivo e rolling origin são descritos
+em `experimento-google-cpr-sazonal.md`. ADR-007 e seus resultados anteriores não são alterados.
+CURRENT_UI_VERSION permanece V1. Primeira validação usa exclusivamente V1.
+Comparações futuras devem separar novo conteúdo científico de mudanças apenas visuais.
+Não há promoção automática, avaliação comunitária inventada ou autorização de publicação.
+
+---
+
 ## Pendências aguardando decisão
 
 Registradas para não se perderem; nenhuma foi decidida ainda.

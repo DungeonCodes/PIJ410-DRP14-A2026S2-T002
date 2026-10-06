@@ -1,0 +1,1528 @@
+{
+  "meta": {
+    "synthetic": true,
+    "schema_version": 1,
+    "scenario_version": "ads-academico-1",
+    "seed": "pij410-ads-cenario-independente-1",
+    "generated_at": "2026-10-06",
+    "reference_date": "2023-01-31",
+    "maturacao_dias": 14,
+    "nota": "Cronologia fictícia. Cenário independente; parâmetros não ajustados a dados operacionais. Conversões não representam leads únicos ou matrículas.",
+    "experimento": "CPR mensal sazonal; somente demonstração acadêmica"
+  },
+  "generatedAt": "2023-01-31",
+  "generatedAtPolicy": "data fixa de referência sintética; não timestamp de execução",
+  "dataset": "src/data/ads-sintetico.json",
+  "period": {
+    "inicio": "2017-01-01",
+    "fim": "2023-01-01"
+  },
+  "years": [
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "audit": {
+    "linhas": 292,
+    "campanhas": [
+      "Cenario-A",
+      "Cenario-B",
+      "Cenario-C",
+      "Cenario-D"
+    ],
+    "categorias": [
+      "Pesquisa"
+    ],
+    "duplicidades": 0,
+    "mesesAusentes": [],
+    "cprValidosCampanha": 284,
+    "mesesValidos": 71,
+    "mesesExcluidos": [
+      {
+        "periodo": "2018-11-01",
+        "motivo": "cobertura_ou_denominador_invalido"
+      },
+      {
+        "periodo": "2023-01-01",
+        "motivo": "provisorio"
+      }
+    ]
+  },
+  "target": "CPR mensal = soma(investimento) / soma(conversões registradas), cobertura completa",
+  "features": [
+    "month_sin",
+    "month_cos",
+    "time_index",
+    "cpr_t2",
+    "cpr_t12"
+  ],
+  "lagAudit": [
+    {
+      "lag": 1,
+      "amostrasElegiveis": 0
+    },
+    {
+      "lag": 2,
+      "amostrasElegiveis": 68
+    },
+    {
+      "lag": 12,
+      "amostrasElegiveis": 58
+    },
+    {
+      "lag": 24,
+      "amostrasElegiveis": 47
+    }
+  ],
+  "forecastMethod": "recursiva; pontes estimadas explícitas, sem valores futuros reais",
+  "trainPeriod": {
+    "inicio": "2018-01-01",
+    "fim": "2021-11-01",
+    "amostras": 44,
+    "origem": "2022-01-01"
+  },
+  "testPeriod": {
+    "inicio": "2022-01-01",
+    "fim": "2022-12-01",
+    "amostras": 12,
+    "protocolo": "holdout de 12 meses, modelo e origem fixos; sem incorporar targets do teste"
+  },
+  "finalTrainPeriod": {
+    "inicio": "2018-01-01",
+    "fim": "2022-12-01",
+    "amostras": 57,
+    "origem": "2023-02-01"
+  },
+  "baselineMetrics": {
+    "persistencia": {
+      "mae": 6.563179962329,
+      "rmse": 13.132416888942,
+      "r2": -0.08208215181
+    },
+    "sazonal": {
+      "mae": 9.200559188327,
+      "rmse": 15.375354339548,
+      "r2": -0.483273297196
+    }
+  },
+  "modelMetrics": {
+    "mae": 7.575144054838,
+    "rmse": 14.257768618727,
+    "r2": -0.275481126912
+  },
+  "comparison": {
+    "mae": {
+      "diferencaAbsoluta": 1.625415133489,
+      "reducaoPercentual": 17.666482006351
+    },
+    "rmse": {
+      "diferencaAbsoluta": 1.117585720822,
+      "reducaoPercentual": 7.268682699215
+    },
+    "superaSazonal": true
+  },
+  "walkForward": {
+    "protocolo": "rolling origin mensal, reestimação somente com targets disponíveis na emissão",
+    "metricas": {
+      "linear": {
+        "mae": 6.335071186523,
+        "rmse": 12.541303901227,
+        "r2": 0.01313829767
+      },
+      "persistencia": {
+        "mae": 7.332366753318,
+        "rmse": 12.576527374131,
+        "r2": 0.007587118764
+      },
+      "sazonal": {
+        "mae": 8.321915241997,
+        "rmse": 12.633565265924,
+        "r2": -0.001435005788
+      }
+    },
+    "previsoes": [
+      {
+        "periodo": "2022-01-01",
+        "observado": 45.12168592794,
+        "linear": 34.793548751989,
+        "persistencia": 38.222046309123,
+        "sazonal": 36.378961152335,
+        "ultimoTargetTreino": "2021-11-01",
+        "ultimoDisponivelEm": "2021-12-14"
+      },
+      {
+        "periodo": "2022-02-01",
+        "observado": 39.82349973289,
+        "linear": 37.176352887206,
+        "persistencia": 43.237477185155,
+        "sazonal": 33.594207697598,
+        "ultimoTargetTreino": "2021-12-01",
+        "ultimoDisponivelEm": "2022-01-14"
+      },
+      {
+        "periodo": "2022-03-01",
+        "observado": 39.253592483419,
+        "linear": 39.694790758431,
+        "persistencia": 45.12168592794,
+        "sazonal": 28.864178805483,
+        "ultimoTargetTreino": "2022-01-01",
+        "ultimoDisponivelEm": "2022-02-14"
+      },
+      {
+        "periodo": "2022-04-01",
+        "observado": 40.362883704613,
+        "linear": 37.169279532357,
+        "persistencia": 39.82349973289,
+        "sazonal": 31.092797783934,
+        "ultimoTargetTreino": "2022-02-01",
+        "ultimoDisponivelEm": "2022-03-14"
+      },
+      {
+        "periodo": "2022-05-01",
+        "observado": 33.578804347826,
+        "linear": 36.767851624954,
+        "persistencia": 39.253592483419,
+        "sazonal": 29.22009795244,
+        "ultimoTargetTreino": "2022-03-01",
+        "ultimoDisponivelEm": "2022-04-14"
+      },
+      {
+        "periodo": "2022-06-01",
+        "observado": 31.637121822156,
+        "linear": 37.996457265749,
+        "persistencia": 40.362883704613,
+        "sazonal": 27.868223994791,
+        "ultimoTargetTreino": "2022-04-01",
+        "ultimoDisponivelEm": "2022-05-14"
+      },
+      {
+        "periodo": "2022-07-01",
+        "observado": 34.82557792692,
+        "linear": 35.0954871084,
+        "persistencia": 33.578804347826,
+        "sazonal": 32.167348943835,
+        "ultimoTargetTreino": "2022-05-01",
+        "ultimoDisponivelEm": "2022-06-14"
+      },
+      {
+        "periodo": "2022-08-01",
+        "observado": 34.542809308555,
+        "linear": 34.658230747144,
+        "persistencia": 31.637121822156,
+        "sazonal": 30.751440487958,
+        "ultimoTargetTreino": "2022-06-01",
+        "ultimoDisponivelEm": "2022-07-14"
+      },
+      {
+        "periodo": "2022-09-01",
+        "observado": 38.886978796951,
+        "linear": 36.705269605046,
+        "persistencia": 34.82557792692,
+        "sazonal": 31.029950154692,
+        "ultimoTargetTreino": "2022-07-01",
+        "ultimoDisponivelEm": "2022-08-14"
+      },
+      {
+        "periodo": "2022-10-01",
+        "observado": 41.422775985464,
+        "linear": 37.137906859276,
+        "persistencia": 34.542809308555,
+        "sazonal": 37.918834394201,
+        "ultimoTargetTreino": "2022-08-01",
+        "ultimoDisponivelEm": "2022-09-14"
+      },
+      {
+        "periodo": "2022-11-01",
+        "observado": 37.357496623143,
+        "linear": 39.310596098513,
+        "persistencia": 38.886978796951,
+        "sazonal": 38.222046309123,
+        "ultimoTargetTreino": "2022-09-01",
+        "ultimoDisponivelEm": "2022-10-14"
+      },
+      {
+        "periodo": "2022-12-01",
+        "observado": 81.666221733668,
+        "linear": 40.608845098545,
+        "persistencia": 41.422775985464,
+        "sazonal": 43.237477185155,
+        "ultimoTargetTreino": "2022-10-01",
+        "ultimoDisponivelEm": "2022-11-14"
+      }
+    ]
+  },
+  "seasonalIndex": [
+    {
+      "mes": 1,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 35.837290821493,
+      "mediana": 34.590335928178,
+      "minimo": 28.546700645768,
+      "maximo": 45.12168592794,
+      "desvioPadrao": 5.561314291906,
+      "indice": 1.025220542216
+    },
+    {
+      "mes": 2,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 34.714029633489,
+      "mediana": 33.434261664805,
+      "minimo": 30.328004281858,
+      "maximo": 39.82349973289,
+      "desvioPadrao": 3.541066346535,
+      "indice": 0.993086683383
+    },
+    {
+      "mes": 3,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 33.084936750018,
+      "mediana": 33.668175206924,
+      "minimo": 27.436506140003,
+      "maximo": 39.253592483419,
+      "desvioPadrao": 4.100335084524,
+      "indice": 0.94648217029
+    },
+    {
+      "mes": 4,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 33.080035162336,
+      "mediana": 32.77706523064,
+      "minimo": 27.119267900241,
+      "maximo": 40.362883704613,
+      "desvioPadrao": 4.254067436084,
+      "indice": 0.946341947403
+    },
+    {
+      "mes": 5,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 33.063296582704,
+      "mediana": 33.323392634359,
+      "minimo": 28.747317445646,
+      "maximo": 40.186774481595,
+      "desvioPadrao": 3.754812707198,
+      "indice": 0.945863096036
+    },
+    {
+      "mes": 6,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 31.210934097827,
+      "mediana": 32.396957680899,
+      "minimo": 27.726027100271,
+      "maximo": 33.471151624085,
+      "desvioPadrao": 2.490463411375,
+      "indice": 0.892871365144
+    },
+    {
+      "mes": 7,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 33.138858263648,
+      "mediana": 34.310599821604,
+      "minimo": 26.52813514346,
+      "maximo": 35.81271900611,
+      "desvioPadrao": 3.205465038849,
+      "indice": 0.948024737883
+    },
+    {
+      "mes": 8,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 32.950263636342,
+      "mediana": 34.185787191308,
+      "minimo": 28.236054999151,
+      "maximo": 35.799702639773,
+      "desvioPadrao": 2.607082745173,
+      "indice": 0.94262948948
+    },
+    {
+      "mes": 9,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 34.015870150098,
+      "mediana": 34.89062222931,
+      "minimo": 28.630397589438,
+      "maximo": 38.886978796951,
+      "desvioPadrao": 3.334129338524,
+      "indice": 0.973113983781
+    },
+    {
+      "mes": 10,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 39.525240901841,
+      "mediana": 36.785595207572,
+      "minimo": 28.738650863413,
+      "maximo": 58.763130401748,
+      "desvioPadrao": 9.410453285074,
+      "indice": 1.130724113897
+    },
+    {
+      "mes": 11,
+      "anos": [
+        2017,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 5,
+      "media": 36.707828241525,
+      "mediana": 37.357496623143,
+      "minimo": 34.675451331903,
+      "maximo": 38.222046309123,
+      "desvioPadrao": 1.530543027592,
+      "indice": 1.050124568869
+    },
+    {
+      "mes": 12,
+      "anos": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ],
+      "nAnos": 6,
+      "media": 42.431711483101,
+      "mediana": 33.880961930698,
+      "minimo": 29.375876500097,
+      "maximo": 81.666221733668,
+      "desvioPadrao": 18.060883149959,
+      "indice": 1.213871396433
+    }
+  ],
+  "historicalSeries": [
+    {
+      "periodo": "2017-01-01",
+      "indice": 0,
+      "cpr": 40.364222747796,
+      "disponivelEm": "2017-02-14",
+      "investimento": 7509.36,
+      "conversoes": 186.04,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-02-01",
+      "indice": 1,
+      "cpr": 39.159015059015,
+      "disponivelEm": "2017-03-14",
+      "investimento": 9621.37,
+      "conversoes": 245.7,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-03-01",
+      "indice": 2,
+      "cpr": 35.400634983629,
+      "disponivelEm": "2017-04-14",
+      "investimento": 10704.09,
+      "conversoes": 302.37,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-04-01",
+      "indice": 3,
+      "cpr": 34.461332677347,
+      "disponivelEm": "2017-05-14",
+      "investimento": 11207.169999999998,
+      "conversoes": 325.21,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-05-01",
+      "indice": 4,
+      "cpr": 33.47971542467,
+      "disponivelEm": "2017-06-14",
+      "investimento": 17553.08,
+      "conversoes": 524.29,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-06-01",
+      "indice": 5,
+      "cpr": 33.156793539643,
+      "disponivelEm": "2017-07-14",
+      "investimento": 11742.81,
+      "conversoes": 354.16,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-07-01",
+      "indice": 6,
+      "cpr": 35.703746845273,
+      "disponivelEm": "2017-08-14",
+      "investimento": 11034.599999999999,
+      "conversoes": 309.06,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-08-01",
+      "indice": 7,
+      "cpr": 35.799702639773,
+      "disponivelEm": "2017-09-14",
+      "investimento": 12761.52,
+      "conversoes": 356.47,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-09-01",
+      "indice": 8,
+      "cpr": 35.368202678066,
+      "disponivelEm": "2017-10-14",
+      "investimento": 11252.04,
+      "conversoes": 318.14,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-10-01",
+      "indice": 9,
+      "cpr": 58.763130401748,
+      "disponivelEm": "2017-11-14",
+      "investimento": 12374.34,
+      "conversoes": 210.58,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-11-01",
+      "indice": 10,
+      "cpr": 35.083439269617,
+      "disponivelEm": "2017-12-14",
+      "investimento": 9107.31,
+      "conversoes": 259.59,
+      "motivo": null
+    },
+    {
+      "periodo": "2017-12-01",
+      "indice": 11,
+      "cpr": 35.068174032203,
+      "disponivelEm": "2018-01-14",
+      "investimento": 11260.039999999999,
+      "conversoes": 321.09,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-01-01",
+      "indice": 12,
+      "cpr": 32.801710704021,
+      "disponivelEm": "2018-02-14",
+      "investimento": 9472.15,
+      "conversoes": 288.77,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-02-01",
+      "indice": 13,
+      "cpr": 33.274315632012,
+      "disponivelEm": "2018-03-14",
+      "investimento": 11121.94,
+      "conversoes": 334.25,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-03-01",
+      "indice": 14,
+      "cpr": 31.93571543022,
+      "disponivelEm": "2018-04-14",
+      "investimento": 9965.539999999999,
+      "conversoes": 312.05,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-04-01",
+      "indice": 15,
+      "cpr": 30.085832365599,
+      "disponivelEm": "2018-05-14",
+      "investimento": 8808.53,
+      "conversoes": 292.78,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-05-01",
+      "indice": 16,
+      "cpr": 28.747317445646,
+      "disponivelEm": "2018-06-14",
+      "investimento": 14306.390000000001,
+      "conversoes": 497.66,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-06-01",
+      "indice": 17,
+      "cpr": 27.726027100271,
+      "disponivelEm": "2018-07-14",
+      "investimento": 12788.630000000001,
+      "conversoes": 461.25,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-07-01",
+      "indice": 18,
+      "cpr": 26.52813514346,
+      "disponivelEm": "2018-08-14",
+      "investimento": 11196.73,
+      "conversoes": 422.07,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-08-01",
+      "indice": 19,
+      "cpr": 28.236054999151,
+      "disponivelEm": "2018-09-14",
+      "investimento": 8316.93,
+      "conversoes": 294.55,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-09-01",
+      "indice": 20,
+      "cpr": 28.630397589438,
+      "disponivelEm": "2018-10-14",
+      "investimento": 11211.95,
+      "conversoes": 391.61,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-10-01",
+      "indice": 21,
+      "cpr": 28.738650863413,
+      "disponivelEm": "2018-11-14",
+      "investimento": 10135.26,
+      "conversoes": 352.67,
+      "motivo": null
+    },
+    {
+      "periodo": "2018-11-01",
+      "indice": 22,
+      "cpr": null,
+      "disponivelEm": "2018-12-14",
+      "investimento": null,
+      "conversoes": null,
+      "motivo": "cobertura_ou_denominador_invalido"
+    },
+    {
+      "periodo": "2018-12-01",
+      "indice": 23,
+      "cpr": 32.548769618291,
+      "disponivelEm": "2019-01-14",
+      "investimento": 8399.21,
+      "conversoes": 258.05,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-01-01",
+      "indice": 24,
+      "cpr": 31.810463751101,
+      "disponivelEm": "2019-02-14",
+      "investimento": 8670.26,
+      "conversoes": 272.56,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-02-01",
+      "indice": 25,
+      "cpr": 32.105135397562,
+      "disponivelEm": "2019-03-14",
+      "investimento": 11903.300000000001,
+      "conversoes": 370.76,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-03-01",
+      "indice": 26,
+      "cpr": 35.618992657351,
+      "disponivelEm": "2019-04-14",
+      "investimento": 14504.410000000002,
+      "conversoes": 407.21,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-04-01",
+      "indice": 27,
+      "cpr": 35.35809654228,
+      "disponivelEm": "2019-05-14",
+      "investimento": 10328.1,
+      "conversoes": 292.1,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-05-01",
+      "indice": 28,
+      "cpr": 33.167069844048,
+      "disponivelEm": "2019-06-14",
+      "investimento": 12888.059999999998,
+      "conversoes": 388.58,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-06-01",
+      "indice": 29,
+      "cpr": 33.471151624085,
+      "disponivelEm": "2019-07-14",
+      "investimento": 13035.34,
+      "conversoes": 389.45,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-07-01",
+      "indice": 30,
+      "cpr": 35.81271900611,
+      "disponivelEm": "2019-08-14",
+      "investimento": 12366.490000000002,
+      "conversoes": 345.31,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-08-01",
+      "indice": 31,
+      "cpr": 34.269915266661,
+      "disponivelEm": "2019-09-14",
+      "investimento": 11688.439999999999,
+      "conversoes": 341.07,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-09-01",
+      "indice": 32,
+      "cpr": 34.413041780554,
+      "disponivelEm": "2019-10-14",
+      "investimento": 8813.18,
+      "conversoes": 256.1,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-10-01",
+      "indice": 33,
+      "cpr": 34.655697745277,
+      "disponivelEm": "2019-11-14",
+      "investimento": 10805.3,
+      "conversoes": 311.79,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-11-01",
+      "indice": 34,
+      "cpr": 34.675451331903,
+      "disponivelEm": "2019-12-14",
+      "investimento": 10986.570000000002,
+      "conversoes": 316.84,
+      "motivo": null
+    },
+    {
+      "periodo": "2019-12-01",
+      "indice": 35,
+      "cpr": 29.375876500097,
+      "disponivelEm": "2020-01-14",
+      "investimento": 10599.11,
+      "conversoes": 360.81,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-01-01",
+      "indice": 36,
+      "cpr": 28.546700645768,
+      "disponivelEm": "2020-02-14",
+      "investimento": 11537.72,
+      "conversoes": 404.17,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-02-01",
+      "indice": 37,
+      "cpr": 30.328004281858,
+      "disponivelEm": "2020-03-14",
+      "investimento": 13032.55,
+      "conversoes": 429.72,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-03-01",
+      "indice": 38,
+      "cpr": 27.436506140003,
+      "disponivelEm": "2020-04-14",
+      "investimento": 9696.61,
+      "conversoes": 353.42,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-04-01",
+      "indice": 39,
+      "cpr": 27.119267900241,
+      "disponivelEm": "2020-05-14",
+      "investimento": 12135.33,
+      "conversoes": 447.48,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-05-01",
+      "indice": 40,
+      "cpr": 40.186774481595,
+      "disponivelEm": "2020-06-14",
+      "investimento": 8100.85,
+      "conversoes": 201.58,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-06-01",
+      "indice": 41,
+      "cpr": 33.406286506018,
+      "disponivelEm": "2020-07-14",
+      "investimento": 12296.519999999999,
+      "conversoes": 368.09,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-07-01",
+      "indice": 42,
+      "cpr": 33.795621716287,
+      "disponivelEm": "2020-08-14",
+      "investimento": 11578.38,
+      "conversoes": 342.6,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-08-01",
+      "indice": 43,
+      "cpr": 34.101659115954,
+      "disponivelEm": "2020-09-14",
+      "investimento": 11140.33,
+      "conversoes": 326.68,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-09-01",
+      "indice": 44,
+      "cpr": 35.766649900885,
+      "disponivelEm": "2020-10-14",
+      "investimento": 12088.77,
+      "conversoes": 337.99,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-10-01",
+      "indice": 45,
+      "cpr": 35.652356020942,
+      "disponivelEm": "2020-11-14",
+      "investimento": 11576.32,
+      "conversoes": 324.7,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-11-01",
+      "indice": 46,
+      "cpr": 38.200707673838,
+      "disponivelEm": "2020-12-14",
+      "investimento": 12091.67,
+      "conversoes": 316.53,
+      "motivo": null
+    },
+    {
+      "periodo": "2020-12-01",
+      "indice": 47,
+      "cpr": 32.693749829193,
+      "disponivelEm": "2021-01-14",
+      "investimento": 11962.97,
+      "conversoes": 365.91,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-01-01",
+      "indice": 48,
+      "cpr": 36.378961152335,
+      "disponivelEm": "2021-02-14",
+      "investimento": 8334.420000000002,
+      "conversoes": 229.1,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-02-01",
+      "indice": 49,
+      "cpr": 33.594207697598,
+      "disponivelEm": "2021-03-14",
+      "investimento": 13188.750000000002,
+      "conversoes": 392.59,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-03-01",
+      "indice": 50,
+      "cpr": 28.864178805483,
+      "disponivelEm": "2021-04-14",
+      "investimento": 10086.009999999998,
+      "conversoes": 349.43,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-04-01",
+      "indice": 51,
+      "cpr": 31.092797783934,
+      "disponivelEm": "2021-05-14",
+      "investimento": 8530.62,
+      "conversoes": 274.36,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-05-01",
+      "indice": 52,
+      "cpr": 29.22009795244,
+      "disponivelEm": "2021-06-14",
+      "investimento": 9903.86,
+      "conversoes": 338.94,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-06-01",
+      "indice": 53,
+      "cpr": 27.868223994791,
+      "disponivelEm": "2021-07-14",
+      "investimento": 13695.56,
+      "conversoes": 491.44,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-07-01",
+      "indice": 54,
+      "cpr": 32.167348943835,
+      "disponivelEm": "2021-08-14",
+      "investimento": 11786.76,
+      "conversoes": 366.42,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-08-01",
+      "indice": 55,
+      "cpr": 30.751440487958,
+      "disponivelEm": "2021-09-14",
+      "investimento": 12755.39,
+      "conversoes": 414.79,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-09-01",
+      "indice": 56,
+      "cpr": 31.029950154692,
+      "disponivelEm": "2021-10-14",
+      "investimento": 7221.29,
+      "conversoes": 232.72,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-10-01",
+      "indice": 57,
+      "cpr": 37.918834394201,
+      "disponivelEm": "2021-11-14",
+      "investimento": 10305.960000000001,
+      "conversoes": 271.79,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-11-01",
+      "indice": 58,
+      "cpr": 38.222046309123,
+      "disponivelEm": "2021-12-14",
+      "investimento": 9656.8,
+      "conversoes": 252.65,
+      "motivo": null
+    },
+    {
+      "periodo": "2021-12-01",
+      "indice": 59,
+      "cpr": 43.237477185155,
+      "disponivelEm": "2022-01-14",
+      "investimento": 8528.16,
+      "conversoes": 197.24,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-01-01",
+      "indice": 60,
+      "cpr": 45.12168592794,
+      "disponivelEm": "2022-02-14",
+      "investimento": 7964.88,
+      "conversoes": 176.52,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-02-01",
+      "indice": 61,
+      "cpr": 39.82349973289,
+      "disponivelEm": "2022-03-14",
+      "investimento": 13418.130000000001,
+      "conversoes": 336.94,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-03-01",
+      "indice": 62,
+      "cpr": 39.253592483419,
+      "disponivelEm": "2022-04-14",
+      "investimento": 8522.74,
+      "conversoes": 217.12,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-04-01",
+      "indice": 63,
+      "cpr": 40.362883704613,
+      "disponivelEm": "2022-05-14",
+      "investimento": 11505.44,
+      "conversoes": 285.05,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-05-01",
+      "indice": 64,
+      "cpr": 33.578804347826,
+      "disponivelEm": "2022-06-14",
+      "investimento": 11615.580000000002,
+      "conversoes": 345.92,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-06-01",
+      "indice": 65,
+      "cpr": 31.637121822156,
+      "disponivelEm": "2022-07-14",
+      "investimento": 11000.86,
+      "conversoes": 347.72,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-07-01",
+      "indice": 66,
+      "cpr": 34.82557792692,
+      "disponivelEm": "2022-08-14",
+      "investimento": 9340.22,
+      "conversoes": 268.2,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-08-01",
+      "indice": 67,
+      "cpr": 34.542809308555,
+      "disponivelEm": "2022-09-14",
+      "investimento": 10316.21,
+      "conversoes": 298.65,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-09-01",
+      "indice": 68,
+      "cpr": 38.886978796951,
+      "disponivelEm": "2022-10-14",
+      "investimento": 12599.77,
+      "conversoes": 324.01,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-10-01",
+      "indice": 69,
+      "cpr": 41.422775985464,
+      "disponivelEm": "2022-11-14",
+      "investimento": 11170.48,
+      "conversoes": 269.67,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-11-01",
+      "indice": 70,
+      "cpr": 37.357496623143,
+      "disponivelEm": "2022-12-14",
+      "investimento": 9126.81,
+      "conversoes": 244.31,
+      "motivo": null
+    },
+    {
+      "periodo": "2022-12-01",
+      "indice": 71,
+      "cpr": 81.666221733668,
+      "disponivelEm": "2023-01-14",
+      "investimento": 10401.01,
+      "conversoes": 127.36,
+      "motivo": null
+    },
+    {
+      "periodo": "2023-01-01",
+      "indice": 72,
+      "cpr": null,
+      "disponivelEm": "2023-02-14",
+      "investimento": 15548.079999999998,
+      "conversoes": 390.58,
+      "motivo": "provisorio"
+    }
+  ],
+  "testPredictions": [
+    {
+      "periodo": "2022-01-01",
+      "observado": 45.12168592794,
+      "linear": 34.793548751989,
+      "persistencia": 38.222046309123,
+      "sazonal": 36.378961152335
+    },
+    {
+      "periodo": "2022-02-01",
+      "observado": 39.82349973289,
+      "linear": 33.92055056334,
+      "persistencia": 37.918834394201,
+      "sazonal": 33.594207697598
+    },
+    {
+      "periodo": "2022-03-01",
+      "observado": 39.253592483419,
+      "linear": 33.719646455698,
+      "persistencia": 38.222046309123,
+      "sazonal": 28.864178805483
+    },
+    {
+      "periodo": "2022-04-01",
+      "observado": 40.362883704613,
+      "linear": 32.972128193842,
+      "persistencia": 37.918834394201,
+      "sazonal": 31.092797783934
+    },
+    {
+      "periodo": "2022-05-01",
+      "observado": 33.578804347826,
+      "linear": 33.192518855291,
+      "persistencia": 38.222046309123,
+      "sazonal": 29.22009795244
+    },
+    {
+      "periodo": "2022-06-01",
+      "observado": 31.637121822156,
+      "linear": 33.574587554236,
+      "persistencia": 37.918834394201,
+      "sazonal": 27.868223994791
+    },
+    {
+      "periodo": "2022-07-01",
+      "observado": 34.82557792692,
+      "linear": 33.763074413597,
+      "persistencia": 38.222046309123,
+      "sazonal": 32.167348943835
+    },
+    {
+      "periodo": "2022-08-01",
+      "observado": 34.542809308555,
+      "linear": 34.740918048998,
+      "persistencia": 37.918834394201,
+      "sazonal": 30.751440487958
+    },
+    {
+      "periodo": "2022-09-01",
+      "observado": 38.886978796951,
+      "linear": 35.385454716279,
+      "persistencia": 38.222046309123,
+      "sazonal": 31.029950154692
+    },
+    {
+      "periodo": "2022-10-01",
+      "observado": 41.422775985464,
+      "linear": 35.18341837673,
+      "persistencia": 37.918834394201,
+      "sazonal": 37.918834394201
+    },
+    {
+      "periodo": "2022-11-01",
+      "observado": 37.357496623143,
+      "linear": 35.329363015757,
+      "persistencia": 38.222046309123,
+      "sazonal": 38.222046309123
+    },
+    {
+      "periodo": "2022-12-01",
+      "observado": 81.666221733668,
+      "linear": 35.273659734784,
+      "persistencia": 37.918834394201,
+      "sazonal": 32.693749829193
+    }
+  ],
+  "testBridges": {
+    "linear": [
+      {
+        "periodo": "2021-12-01",
+        "cprPrevisto": 35.707777327402,
+        "origem": "estimativa de lag indisponível; não observado"
+      }
+    ],
+    "persistencia": [
+      {
+        "periodo": "2021-12-01",
+        "cprPrevisto": 37.918834394201,
+        "origem": "estimativa de lag indisponível; não observado"
+      }
+    ],
+    "sazonal": [
+      {
+        "periodo": "2021-12-01",
+        "cprPrevisto": 32.693749829193,
+        "origem": "estimativa de lag indisponível; não observado"
+      }
+    ]
+  },
+  "futureForecast": [
+    {
+      "periodo": "2023-02-01",
+      "cprPrevisto": 73.752769530935,
+      "lags": [
+        {
+          "periodo": "2022-12-01",
+          "valor": 81.666221733668,
+          "fonte": "observado"
+        },
+        {
+          "periodo": "2022-02-01",
+          "valor": 39.82349973289,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.993086683383,
+      "baselineSazonal": 39.82349973289
+    },
+    {
+      "periodo": "2023-03-01",
+      "cprPrevisto": 48.868504924427,
+      "lags": [
+        {
+          "periodo": "2023-01-01",
+          "valor": 46.264904006345,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-03-01",
+          "valor": 39.253592483419,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.94648217029,
+      "baselineSazonal": 39.253592483419
+    },
+    {
+      "periodo": "2023-04-01",
+      "cprPrevisto": 67.154874311479,
+      "lags": [
+        {
+          "periodo": "2023-02-01",
+          "valor": 73.752769530935,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-04-01",
+          "valor": 40.362883704613,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.946341947403,
+      "baselineSazonal": 40.362883704613
+    },
+    {
+      "periodo": "2023-05-01",
+      "cprPrevisto": 47.64254733649,
+      "lags": [
+        {
+          "periodo": "2023-03-01",
+          "valor": 48.868504924427,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-05-01",
+          "valor": 33.578804347826,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.945863096036,
+      "baselineSazonal": 33.578804347826
+    },
+    {
+      "periodo": "2023-06-01",
+      "cprPrevisto": 59.415287697442,
+      "lags": [
+        {
+          "periodo": "2023-04-01",
+          "valor": 67.154874311479,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-06-01",
+          "valor": 31.637121822156,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.892871365144,
+      "baselineSazonal": 31.637121822156
+    },
+    {
+      "periodo": "2023-07-01",
+      "cprPrevisto": 47.87431653197,
+      "lags": [
+        {
+          "periodo": "2023-05-01",
+          "valor": 47.64254733649,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-07-01",
+          "valor": 34.82557792692,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.948024737883,
+      "baselineSazonal": 34.82557792692
+    },
+    {
+      "periodo": "2023-08-01",
+      "cprPrevisto": 56.621427639151,
+      "lags": [
+        {
+          "periodo": "2023-06-01",
+          "valor": 59.415287697442,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-08-01",
+          "valor": 34.542809308555,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.94262948948,
+      "baselineSazonal": 34.542809308555
+    },
+    {
+      "periodo": "2023-09-01",
+      "cprPrevisto": 51.356098094949,
+      "lags": [
+        {
+          "periodo": "2023-07-01",
+          "valor": 47.87431653197,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-09-01",
+          "valor": 38.886978796951,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 0.973113983781,
+      "baselineSazonal": 38.886978796951
+    },
+    {
+      "periodo": "2023-10-01",
+      "cprPrevisto": 59.078019606047,
+      "lags": [
+        {
+          "periodo": "2023-08-01",
+          "valor": 56.621427639151,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-10-01",
+          "valor": 41.422775985464,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 1.130724113897,
+      "baselineSazonal": 41.422775985464
+    },
+    {
+      "periodo": "2023-11-01",
+      "cprPrevisto": 54.741547335032,
+      "lags": [
+        {
+          "periodo": "2023-09-01",
+          "valor": 51.356098094949,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-11-01",
+          "valor": 37.357496623143,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 1.050124568869,
+      "baselineSazonal": 37.357496623143
+    },
+    {
+      "periodo": "2023-12-01",
+      "cprPrevisto": 75.42815646718,
+      "lags": [
+        {
+          "periodo": "2023-10-01",
+          "valor": 59.078019606047,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2022-12-01",
+          "valor": 81.666221733668,
+          "fonte": "observado"
+        }
+      ],
+      "indiceSazonal": 1.213871396433,
+      "baselineSazonal": 81.666221733668
+    },
+    {
+      "periodo": "2024-01-01",
+      "cprPrevisto": 60.006174192852,
+      "lags": [
+        {
+          "periodo": "2023-11-01",
+          "valor": 54.741547335032,
+          "fonte": "estimado"
+        },
+        {
+          "periodo": "2023-01-01",
+          "valor": 46.264904006345,
+          "fonte": "estimado"
+        }
+      ],
+      "indiceSazonal": 1.025220542216,
+      "baselineSazonal": 45.12168592794
+    }
+  ],
+  "forecastBridges": [
+    {
+      "periodo": "2023-01-01",
+      "cprPrevisto": 46.264904006345,
+      "origem": "estimativa de lag indisponível; não observado"
+    }
+  ],
+  "baselineForecastBridges": [
+    {
+      "periodo": "2023-01-01",
+      "cprPrevisto": 45.12168592794,
+      "origem": "estimativa de lag indisponível; não observado"
+    }
+  ],
+  "evaluationModel": {
+    "medias": [
+      0.011363636364,
+      -0.081774459349,
+      35.568181818182,
+      32.256731896728,
+      33.692046205616
+    ],
+    "desvios": [
+      0.726828699679,
+      0.681838578323,
+      13.769857936933,
+      3.150577994773,
+      5.131563694486
+    ],
+    "coeficientes": [
+      32.314613526012,
+      -0.685085440591,
+      0.635370482011,
+      0.594629154324,
+      0.693640077758,
+      -0.596034754015
+    ]
+  },
+  "finalModel": {
+    "medias": [
+      0.008771929825,
+      -0.04558028441,
+      42.280701754386,
+      33.651408620724,
+      33.605076276102
+    ],
+    "desvios": [
+      0.716296689916,
+      0.696250345017,
+      17.379918221967,
+      4.174823424095,
+      4.952377242934
+    ],
+    "coeficientes": [
+      34.448419661811,
+      -0.26015233859,
+      1.18618748222,
+      2.318021692306,
+      2.820907043042,
+      1.708839261975
+    ]
+  },
+  "model": "LinearRegression — OLS local com intercepto e padronização somente no treino; sem scikit-learn em runtime",
+  "selection": "OLS pré-especificado para demonstração, sem tuning no holdout; não substitui baseline quando pior",
+  "negativeForecasts": 0,
+  "limits": "Sem intervalos de confiança, imputação no treino, MAPE, causalidade, previsão de matrículas ou recomendação de investimento. Maturação de 14 dias é hipótese sintética.",
+  "datasetSha256": "56ca4d425431ad64e4669a59cec9cf1c20eb3f51c252f6f6596d669f99c5ef45"
+}
