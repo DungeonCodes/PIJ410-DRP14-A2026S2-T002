@@ -26,8 +26,10 @@ assert.equal(canonicalTarget('/ads/google', { anos: '2021,2022', campanhas: 'Cen
 assert.equal(canonicalTarget('/captacao', { safras: ['2025', '2026'] }),
   `${versionedPath(CURRENT_UI_VERSION, '/captacao')}?safras=2025&safras=2026`);
 assert.equal(canonicalTarget('/'), versionedPath(CURRENT_UI_VERSION));
-assert.match(read('src/ui/v2/index.ts'), /pages:\s*\{\s*\.\.\.UI_V1\.pages\s*\}/,
-  'V2 deve nascer equivalente, antes de feedback e revisão explícita deste teste');
+assert.match(read('src/ui/v2/index.ts'), /pages:\s*\{\s*\.\.\.UI_V1\.pages,\s*'\/ads\/google': GoogleV2\s*\}/,
+  'Única evolução técnica V2 autorizada: Google Ads sazonal; demais páginas herdadas');
+assert.match(read('src/ui/v2/pages/google.tsx'), /<GoogleV1 \{\.\.\.props\} \/>/, 'Baseline Google é preservada na composição V2');
+assert.match(read('src/ui/v2/pages/google.tsx'), /<PrevisaoCPRSazonal \/>/);
 assert.match(read('src/components/sidebar-nav.tsx'), /versionedPath\(version, m\.rota\)/);
 assert.match(read('src/ui/v1/pages/home.tsx'), /versionedPath\(version, m\.rota\)/);
 assert.match(read('src/components/filtros.tsx'), /usePathname\(\)/, 'Filtros conservam o prefixo da versão');
@@ -44,4 +46,4 @@ function checkUI(path) {
   }
 }
 checkUI('src/ui');
-console.log(`UI: versões, aliases, gates e herança inicial verificados; ${Object.keys(BASELINE_V1).length} arquivos V1 protegidos.`);
+console.log(`UI: versões, aliases, gates e única extensão técnica V2 verificados; ${Object.keys(BASELINE_V1).length} arquivos V1 protegidos.`);

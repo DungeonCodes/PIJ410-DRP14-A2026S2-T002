@@ -15,10 +15,11 @@ async function get(path, expected) {
   rows.push({ route: path, expected, result: response.status });
   return { html, location: response.headers.get('location') };
 }
-function mainText(html) {
+function mainText(html, semExtensao = false) {
   const main = html.match(/<main\b[^>]*>([\s\S]*?)<\/main>/)?.[1];
   assert.ok(main, 'Conteúdo principal ausente');
-  return main.replace(/<script\b[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
+  const conteudo = semExtensao ? main.replace(/<section data-experimento="cpr-sazonal-v2"[\s\S]*?<\/section>/g, '') : main;
+  return conteudo.replace(/<script\b[\s\S]*?<\/script>/g, '').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 for (const modulo of [{ rota: '/', habilitado: true }, ...MODULOS]) {
   let previous;
@@ -29,7 +30,9 @@ for (const modulo of [{ rota: '/', habilitado: true }, ...MODULOS]) {
     assert.ok(html.includes(`Versão de interface: <!-- -->${version.toUpperCase()}`) ||
       html.includes(`Versão de interface: ${version.toUpperCase()}`), `Identificador ausente em ${path}`);
     assert.ok(html.includes('Instituição Educacional Alfa') && html.includes('Ambiente acadêmico · dados sintéticos'));
-    const text = mainText(html);
+    const extensao = modulo.rota === '/ads/google';
+    if (extensao) assert.equal(html.includes('data-experimento="cpr-sazonal-v2"'), version === 'v2', 'Sazonal somente V2');
+    const text = mainText(html, extensao);
     if (previous !== undefined) assert.equal(text, previous, `Paridade inicial: ${modulo.rota}`);
     previous = text;
     const links = [...html.matchAll(/href="(\/(?!_next)[^"?#]*)[^" ]*"/g)].map((m) => m[1]);
@@ -44,8 +47,13 @@ for (const path of ['/captacao?safras=2025%2C2026&ciclos=EI', '/ads/google?anos=
   assert.equal(canonical.location, `/${CURRENT_UI_VERSION}${path}`);
   const first = await get(`/${UI_VERSIONS[0]}${path}`, 200);
   const second = await get(`/${UI_VERSIONS[1]}${path}`, 200);
-  assert.equal(mainText(first.html), mainText(second.html), `Paridade com filtros: ${path}`);
+  const extensao = path.startsWith('/ads/google');
+  if (extensao) {
+    assert.ok(!first.html.includes('data-experimento="cpr-sazonal-v2"'));
+    assert.ok(second.html.includes('data-experimento="cpr-sazonal-v2"'));
+  }
+  assert.equal(mainText(first.html, extensao), mainText(second.html, extensao), `Paridade do painel existente com filtros: ${path}`);
 }
 for (const path of ['/v3/captacao', '/old/captacao', '/v1/inexistente', '/v2/ads/inexistente']) await get(path, 404);
 console.table(rows);
-console.log('HTTP: versões, canônicas, filtros, bloqueios e paridade inicial aprovados.');
+console.log('HTTP: versões, canônicas, filtros, bloqueios, baseline e extensão sazonal exclusiva V2 aprovados.');

@@ -103,9 +103,12 @@ Saída técnica existente desde 27/08/2026: ambiente acadêmico sanitizado e ind
 ## Restrições e Guardrails
 
 Interface: ADR-008 estabelece V1 como baseline pré-validação de 06/10/2026 e V2 como base
-equivalente, sem feedback aplicado. `CURRENT_UI_VERSION` permanece V1; dados, algoritmos,
+inicialmente equivalente, sem feedback aplicado. Pela evolução técnica solicitada em
+06/10/2026, somente V2/Google Ads acrescenta um experimento sazonal separado de CPR sobre
+o dataset existente; essa origem acadêmica não é feedback comunitário. `CURRENT_UI_VERSION` permanece V1; dados, algoritmos,
 experimento CPR e gates são compartilhados. Primeira sessão deve usar V1 e registrar a versão.
 Melhorias de UX pertencem à V2, sem alterar V1 ou promover uma versão automaticamente.
+O protocolo sazonal e seus limites estão em docs/migracao-modelo/arquitetura/experimento-google-cpr-sazonal.md.
 
 Confidencialidade — o contexto é real e o repositório acadêmico não deve expor:
 

@@ -214,17 +214,20 @@ const EXT_PROIBIDA = ['.csv', '.xlsx', '.xls', '.jsonl'];
 const encontrados = ARQUIVOS.filter((f) => EXT_PROIBIDA.includes(extname(f)));
 t('nenhum CSV/XLSX/JSONL no runtime acadêmico', encontrados.length === 0, encontrados.join(', '));
 
-t('os únicos JSON de dado são os quatro artefatos sintéticos declarados',
+t('os únicos JSON de dado são os cinco artefatos sintéticos declarados',
   (() => {
     const jsons = ARQUIVOS.filter((f) => f.startsWith('src/data/') && f.endsWith('.json')).sort();
-    return jsons.join(',') === 'src/data/ads-sintetico.json,src/data/captacao-sintetico.json,src/data/google-cpr-experimento.json,src/data/matriculas-sintetico.json';
+    return jsons.join(',') === 'src/data/ads-sintetico.json,src/data/captacao-sintetico.json,src/data/google-cpr-experimento.json,src/data/google-cpr-sazonal.json,src/data/matriculas-sintetico.json';
   })());
 
 t('todo dataset se declara sintético',
-  ['captacao-sintetico.json', 'matriculas-sintetico.json', 'ads-sintetico.json', 'google-cpr-experimento.json'].every((f) => {
+  ['captacao-sintetico.json', 'matriculas-sintetico.json', 'ads-sintetico.json', 'google-cpr-experimento.json', 'google-cpr-sazonal.json'].every((f) => {
     const ds = JSON.parse(readFileSync(join(ROOT, 'src', 'data', f), 'utf8'));
     return ds.meta?.synthetic === true;
   }));
+
+t('o artefato sazonal também rejeita campos capazes de guardar PII',
+  !CAMPOS_PII.some((k) => camposDe('src/data/google-cpr-sazonal.json').has(k)));
 
 console.log(`\n${falhas === 0 ? 'TODAS AS ' + n + ' VERIFICAÇÕES PASSARAM ✓' : falhas + ' de ' + n + ' VERIFICAÇÕES FALHARAM ✗'}`);
 console.log('[nenhum segredo lido, impresso ou resumido durante a varredura]');
