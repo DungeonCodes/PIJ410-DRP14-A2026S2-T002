@@ -814,3 +814,20 @@ Gate: VERSIONAMENTO PRONTO — VALIDAR V1.
 Próximo passo: aplicar primeira sessão real com V1; consolidar feedback antes de alterar V2.
 
 ---
+
+Data: 2026-10-06
+Ação realizada: Ampliação da validação V1 para Fase 2 acadêmica.
+Resultado: V1 permanece baseline e única versão da primeira sessão; tarefas A–E da Fase 1
+preservadas, F–K adicionadas para Ads/Google/Meta/Estratégia e comunicação do experimento CPR.
+Instrumento com 18 perguntas, sessão de 30–40 minutos, rastreabilidade e matriz antes/depois
+com evidências futuras pendentes; compreensão espontânea separada de esclarecimentos.
+Nenhuma resposta coletada, participante simulado ou feedback inventado; changelog vazio.
+V2 sem alterações, aplicação/dados/ML/CPR/final.md intactos. TCLE antes da coleta, preenchido
+fora do Git; registro anonimizado apenas após obtenção efetiva. Sem deploy, commit, push
+ou tratamento do histórico Git. Verificação documental: 18 perguntas, 11 tarefas, matrizes
+pendentes e changelog vazio; somente os sete arquivos autorizados mudaram entre 137 hashes.
+test:interface (17 fontes V1), test:nao-vazamento (37 verificações) e diff --check aprovados;
+busca complementar nos documentos alterados sem identificadores ou credenciais encontrados.
+Gate: INSTRUMENTO V1 PRONTO PARA VALIDAR FASES 1 E 2.
+
+---

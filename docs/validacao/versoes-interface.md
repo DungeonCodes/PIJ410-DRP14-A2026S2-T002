@@ -66,8 +66,10 @@ permanece separado e não foi resolvido.
 ## Comparabilidade e primeira aplicação
 
 A primeira sessão real deve usar **V1**, sem apresentar V2 como alternativa. Registrar versão,
-dataset/seed, período, filtros e módulos efetivamente apresentados. O instrumento atual cobre
-Captação e Matrículas; o versionamento não o amplia automaticamente para Ads.
+dataset/seed, período, filtros e módulos efetivamente apresentados. Pela ampliação documental explícita de 06/10/2026, o instrumento cobre Captação, Matrículas
+e Ads (Visão Geral, Google Ads, Meta Ads, Estratégia e comunicação do experimento CPR),
+com tarefas A–K e 18 perguntas em 30 a 40 minutos. Não se avalia a qualidade científica
+do modelo. Fases 3 e 4 continuam bloqueadas; V2 não recebe mudanças nem é apresentada.
 
 Comparações posteriores exigem mesmo dataset, métricas, período/filtros, fórmulas, gates e
 definição de CPR. Somente elementos deliberadamente modificados de apresentação podem variar.

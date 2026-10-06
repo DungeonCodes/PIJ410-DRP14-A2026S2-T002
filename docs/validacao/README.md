@@ -24,19 +24,23 @@ Nos registros versionados, utilizar somente identificadores como `P1` e `P2` e d
 **Primeira aplicação: versão apresentada V1.** Acessar `/v1` e não mostrar V2 como alternativa.
 Registrar versão da interface, dataset, período e filtros usados. Ver `versoes-interface.md`.
 
-A validação prática abrange somente o que está ativo e funcional na Fase 1:
+A validação prática abrange os módulos ativos das Fases 1 e 2 na V1:
 
 - página inicial;
 - Captação;
-- Matrículas.
+- Matrículas;
+- Ads: Visão Geral, Google Ads, Meta Ads e Estratégia;
+- comunicação do experimento acadêmico de CPR, sem avaliar a qualidade científica do modelo.
 
-Ads (Fase 2) está ativo academicamente em V1 e V2, mas permanece fora das tarefas deste instrumento.
 Conteúdo orgânico (Fase 3), Objetivo da Gestão e Arquitetura & Algoritmos (Fase 4) continuam bloqueados.
-Não ampliar a sessão automaticamente nem confundir prioridade para rodadas futuras com recurso inexistente.
+São 18 perguntas e tarefas A–K em 30 a 40 minutos, com perguntas distribuídas durante o uso.
+Não avaliar módulos bloqueados como funcionais. Informar antes da demonstração que os valores
+são sintéticos, não representam operação real, não há Google Ads/Meta reais e orçamento é
+premissa acadêmica. Não explicar CPR antes da resposta espontânea na tarefa G.
 
 ## Documentos desta pasta
 
-- `roteiro_validacao.md`: condução da sessão de aproximadamente 20 a 30 minutos;
+- `roteiro_validacao.md`: condução da sessão de aproximadamente 30 a 40 minutos;
 - `instrumento_validacao.md`: perguntas breves e matriz de rastreabilidade;
 - `protocolo_evidencias.md`: regras para coleta, anonimização e guarda de evidências;
 - `modelo_registro_respostas.md`: modelo vazio para registrar cada sessão após sua realização.
@@ -45,10 +49,10 @@ Não ampliar a sessão automaticamente nem confundir prioridade para rodadas fut
 ## Fluxo de aplicação
 
 1. Confirmar que o ambiente acadêmico utiliza apenas dados sintéticos.
-2. Apresentar o TCLE antes de iniciar a sessão e obter o consentimento quando aplicável.
+2. Obter o TCLE antes da demonstração/coleta; não iniciar sem consentimento.
 3. Conduzir a contextualização e a apresentação previstas no roteiro.
 4. Solicitar as tarefas de uso nos módulos ativos.
-5. Aplicar o instrumento de validação sem induzir respostas.
+5. Aplicar perguntas 1–10 durante as tarefas e 11–18 no encerramento, sem repetição ou indução.
 6. Registrar evidências diretas e observações de forma anonimizada.
 7. Armazenar o TCLE preenchido e materiais identificáveis fora do Git, em local restrito.
 8. Consolidar as respostas reais antes de atualizar, em etapa posterior, o Relatório Final.
