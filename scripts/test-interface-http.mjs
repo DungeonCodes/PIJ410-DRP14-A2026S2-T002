@@ -38,6 +38,20 @@ for (const path of v2Ativas) {
   assert.ok(linksDaNavegacao(html).every((link) => link === '/v2' || link.startsWith('/v2/')));
 }
 
+const captacaoV1 = await get('/v1/captacao?safras=2025&ciclos=EI', 200);
+const captacaoV2 = await get('/v2/captacao?safras=2025&ciclos=EI', 200);
+assert.ok(!captacaoV1.html.includes('Evolução temporal'));
+assert.ok(captacaoV1.html.includes('Contatos por mês') && captacaoV1.html.includes('Visitas por mês'));
+assert.ok(captacaoV2.html.includes('Evolução temporal'));
+assert.ok(captacaoV2.html.includes('Séries exibidas na evolução temporal'));
+assert.ok(!captacaoV2.html.includes('Contatos por mês') && !captacaoV2.html.includes('Visitas por mês'));
+assert.ok(captacaoV2.html.includes('Matrículas do funil'));
+assert.ok(captacaoV2.html.includes('Funil de captação') && captacaoV2.html.includes('Situação dos contatos'));
+const captacaoV2OutroCiclo = await get('/v2/captacao?safras=2025&ciclos=EM', 200);
+assert.notEqual(captacaoV2.html, captacaoV2OutroCiclo.html, 'Filtro de ciclo altera o recorte V2');
+const matriculasV2 = await get('/v2/matriculas?safras=2025&ciclos=EI', 200);
+assert.ok(matriculasV2.html.includes('Efetivação de matrículas por mês'), 'Histórico próprio de Matrículas preservado');
+
 const googleV2 = await get('/v2/ads/google?anos=2022&campanhas=Cenario-A', 200);
 assert.ok(googleV2.html.includes('data-experimento="cpr-sazonal-v2"'), 'Previsão sazonal ausente na V2');
 

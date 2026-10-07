@@ -876,4 +876,13 @@ modalidade e condição do TCLE permanecem pendentes de confirmação. A interpr
 aguarda demais participantes. Nenhuma alteração funcional foi executada e nenhum resultado foi
 incorporado ao Relatório Final. Sem dados pessoais, commit, push ou deploy.
 
+## FB-V1-P1-001 — alteração comunitária aprovada para V2
+
+O grupo aprovou a sugestão registrada por P1 após a validação da V1. A V2 recebeu em
+`/v2/captacao` um gráfico mensal conjunto de contatos, visitas e matrículas do funil com
+seleção independente de séries. Os três gráficos mensais separados foram substituídos somente
+nessa página da V2; os gráficos categóricos e o histórico próprio de Matrículas permanecem.
+P1 utilizou V1, e o próximo participante utilizará V2. A alteração comunitária fica separada
+da evolução técnica de Ads/ML. A resposta original de P1 e o Relatório Final não foram editados.
+
 ---

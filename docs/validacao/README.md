@@ -22,5 +22,7 @@ atribuir resultados ainda inexistentes à comunidade.
 - `instrumento_validacao_v2.md`: instrumento extenso preservado para futura validação da V2;
 - `versoes-interface.md`: significado formal e composição das versões.
 
-O instrumento V2 inclui Ads e demonstrações de ML, mas não deve ser aplicado na primeira
-validação. Nenhum dos instrumentos contém respostas fictícias.
+P1 utilizou V1; sua resposta individual está em `respostas/v1-p1.md`. Após a aprovação do
+grupo, FB-V1-P1-001 foi implementado na V2. O próximo participante utilizará V2 e sua versão
+deve ser registrada. O instrumento V2 inclui Ads e demonstrações de ML; a aplicação deve
+documentar os módulos efetivamente apresentados. Nenhum instrumento contém respostas fictícias.

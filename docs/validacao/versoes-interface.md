@@ -6,7 +6,10 @@ técnica global do projeto e dos gates de implantação.
 | Versão | Conteúdo |
 |---|---|
 | V1 | Captação + Matrículas |
-| V2 | Captação + Matrículas + Ads + ML CPR |
+| V2 | Captação + Matrículas + Ads + ML CPR + evolução temporal consolidada (FB-V1-P1-001) |
+
+As origens são distintas: Ads e ML CPR constituem evolução técnica/acadêmica; a evolução
+temporal consolidada foi aprovada pelo grupo após o feedback real de P1.
 
 ## V1 — baseline inicial pré-Ads
 
@@ -27,8 +30,40 @@ Estado funcional:
 - demonstração acadêmica do experimento CPR;
 - previsão sazonal experimental de CPR.
 
-A V2 decorreu de evolução técnica/acadêmica, não de feedback comunitário. Não existem
+A incorporação de Ads e ML à V2 decorreu de evolução técnica/acadêmica. Não existem
 resultados de validação da V2 nem feedback fictício atribuído à comunidade.
+
+Após a validação individual de P1 na V1, o grupo aprovou FB-V1-P1-001. A V2 agora apresenta
+uma evolução temporal consolidada e selecionável em `/v2/captacao`. Essa alteração tem origem
+comunitária distinta da inclusão técnica de Ads e ML.
+
+### Granularidade e filtros da evolução temporal
+
+| Série | Fonte | Granularidade original | Granularidade utilizada |
+|---|---|---|---|
+| Contatos | Contagens mensais do funil de Captação | Mês por safra e ciclo | Mês/ano |
+| Visitas | Contagens mensais do funil de Captação | Mês por safra e ciclo | Mês/ano |
+| Matrículas do funil | Contagens mensais do funil de Captação | Mês por safra e ciclo | Mês/ano |
+
+Os filtros existentes de safra e ciclo recortam as três séries com os mesmos critérios.
+Não há filtro de período adicional; o eixo usa os meses das safras selecionadas em ordem
+cronológica. Meses sem observação permanecem `null`; zero é exibido somente quando há zero
+observado. Não há interpolação, normalização percentual ou segundo eixo Y.
+
+O módulo Matrículas usa outra base de contagens mensais, com totais próprios que não equivalem
+às matrículas do funil de Captação. Seu gráfico de efetivação por mês permanece complementar
+em `/v2/matriculas`; os filtros daquela página continuam independentes. A distinção é indicada
+na seção consolidada para evitar comparação enganosa entre bases diferentes.
+
+| Gráfico temporal anterior | Classificação na V2 | Decisão |
+|---|---|---|
+| Contatos por mês, em Captação | SUBSTITUÍDO PELO CONSOLIDADO | Removido apenas da apresentação V2 |
+| Visitas por mês, em Captação | SUBSTITUÍDO PELO CONSOLIDADO | Removido apenas da apresentação V2 |
+| Matrículas por mês, em Captação | SUBSTITUÍDO PELO CONSOLIDADO | Removido apenas da apresentação V2 |
+| Efetivação de matrículas por mês, no módulo Matrículas | COMPLEMENTAR | Mantido; outra base e outra finalidade |
+
+Funil, situação dos contatos, origem declarada e composição por safra/ciclo/turma são
+visualizações não temporais e permanecem.
 
 ## Capacidade técnica e composição histórica
 
@@ -53,9 +88,11 @@ de Ads, deve-se usar explicitamente `/v2/ads`, `/v2/ads/google`, `/v2/ads/meta` 
 
 ## Validação
 
-A primeira aplicação comunitária usa o questionário curto V1, somente com Captação e
-Matrículas, em 10–15 minutos. O instrumento mais extenso foi preservado separadamente em
-`instrumento_validacao_v2.md` para uso futuro. O TCLE segue o protocolo definido.
+P1 utilizou V1 com o questionário curto de Captação e Matrículas. O próximo participante
+utilizará V2; a versão apresentada deve ser registrada obrigatoriamente. Notas obtidas em
+versões diferentes não devem ser tratadas como avaliação da mesma interface. O instrumento
+mais extenso de V2 permanece separado em `instrumento_validacao_v2.md`; a condução da próxima
+sessão deve contemplar a mudança de versão e manter o TCLE conforme o protocolo definido.
 
 ## Registro cronológico
 
@@ -63,3 +100,9 @@ Matrículas, em 10–15 minutos. O instrumento mais extenso foi preservado separ
 |---|---|---|---|---|
 | HIST-001 | Correção factual da cronologia | V1 recomposta como baseline pré-Ads | V1 | Não se aplica |
 | TEC-001 | Evolução técnica/acadêmica | Ads, experimento CPR e previsão sazonal | V2 | Nenhuma; validação futura |
+
+### Alteração aprovada pelo grupo após feedback real
+
+| ID | Origem | V1 | Alteração | Destino |
+|---|---|---|---|---|
+| FB-V1-P1-001 | Feedback real P1; implementação aprovada pelo grupo | Gráficos temporais distribuídos | Consolidação de Contatos, Visitas e Matrículas do funil em gráfico temporal multissérie selecionável | V2 |

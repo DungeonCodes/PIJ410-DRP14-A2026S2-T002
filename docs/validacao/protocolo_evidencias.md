@@ -2,10 +2,12 @@
 
 ## Antes da sessão
 
-- Confirmar V1 e usar somente Captação e Matrículas.
+- Registrar obrigatoriamente a versão da interface apresentada. P1 utilizou V1; o próximo
+  participante utilizará V2. Não comparar as notas como se as interfaces fossem idênticas.
+- Na sessão V2, indicar que a evolução temporal consolidada de Captação é posterior à V1.
 - Confirmar que a demonstração contém exclusivamente dados sintéticos.
 - Obter o TCLE conforme o protocolo antes da demonstração e da coleta.
-- Não apresentar V2, Ads, CPR, ML, Estratégia ou módulos bloqueados.
+- Não apresentar módulos bloqueados. Registrar quais módulos da versão foram efetivamente vistos.
 - Informar que a participação é voluntária e pode ser interrompida.
 
 ## Evidências permitidas
