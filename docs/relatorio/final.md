@@ -646,7 +646,15 @@ independente nem aprendizagem de máquina aplicada à base. O contexto disponibi
 restrito a documentos versionados, dados sanitizados, fórmulas, resultados e referências
 verificadas. Saídas sem base rastreável não são utilizadas (Wang et al., 2024).
 
-[PENDENTE – registrar eventual uso efetivo de IA na solução final, incluindo tarefa, contexto autorizado, evidência de revisão humana e limites]
+Durante o desenvolvimento do protótipo e da documentação técnica, ferramentas de inteligência
+artificial generativa foram utilizadas como apoio à programação, revisão e organização textual,
+estruturação de documentação, elaboração e verificação de testes e análise de consistência técnica.
+As saídas foram revisadas por pessoas antes de qualquer incorporação. Arquitetura, metodologia,
+interpretação dos resultados, aprovação das alterações, validação comunitária e redação científica
+permaneceram sob responsabilidade dos integrantes do grupo. Essas ferramentas não foram usadas
+para gerar respostas de participantes, substituir entrevistas, criar evidência empírica, comprovar
+eficácia ou substituir decisões humanas. As respostas de P1 e P2 são registros reais preservados
+separadamente.
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
@@ -814,8 +822,6 @@ Figura [numeração pendente] – CPR sintético observado e previsto no conjunt
 [INSERIR FIGURA – comparação entre CPR sintético observado e previsto; opcional, sem figura produzida nesta execução]
 
 Fonte: Elaborado pelo grupo (2026).
-
-[PENDENTE – descrever eventual uso efetivo de IA assistiva e a revisão humana correspondente]
 
 #### Previsão sazonal mensal — extensão técnica exclusiva V2
 

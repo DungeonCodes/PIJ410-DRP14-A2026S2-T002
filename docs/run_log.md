@@ -914,4 +914,12 @@ módulos Ads e completa os resultados principal e complementar do experimento sa
 técnicos são apresentados como verificação de software/reprodutibilidade, separados da validação
 P1/V1 e P2/V2. Nenhum código, dataset ou resposta foi alterado; sem commit ou push.
 
+## Confirmação metodológica do uso de IA assistiva e revisão humana
+
+O Relatório Final registra o uso de IA generativa como apoio ao desenvolvimento e à documentação,
+com revisão humana antes da incorporação das saídas e responsabilidade humana pelas decisões,
+interpretações e validação. Também explicita que as ferramentas não geraram respostas ou evidências
+de participantes. As marcações pendentes sobre essa confirmação foram removidas; demais pendências
+permanecem. P1/P2, aplicação e dados não foram alterados; sem commit ou push.
+
 ---
