@@ -882,7 +882,17 @@ O grupo aprovou a sugestão registrada por P1 após a validação da V1. A V2 re
 `/v2/captacao` um gráfico mensal conjunto de contatos, visitas e matrículas do funil com
 seleção independente de séries. Os três gráficos mensais separados foram substituídos somente
 nessa página da V2; os gráficos categóricos e o histórico próprio de Matrículas permanecem.
-P1 utilizou V1, e o próximo participante utilizará V2. A alteração comunitária fica separada
-da evolução técnica de Ads/ML. A resposta original de P1 e o Relatório Final não foram editados.
+P1 utilizou V1; a validação seguinte foi realizada por P2 na V2 e está registrada em
+`docs/validacao/respostas/v2-p2.md`. A alteração comunitária fica separada da evolução técnica
+de Ads/ML. A resposta original de P1 e o Relatório Final não foram editados.
+
+## Validação V2 — P2 e verificação de FB-V1-P1-001
+
+Seis respostas reais de P2 registradas em `docs/validacao/respostas/v2-p2.md`: três notas 5/5;
+P2 relatou que a visualização consolidada facilitou a comparação; nenhuma dificuldade foi
+relatada e nenhuma nova alteração foi solicitada. A expressão “qualidade do lead” foi preservada
+como percepção de P2, sem tratá-la como métrica comprovada. Nenhuma implementação foi realizada
+nesta execução. Perfil, data, modalidade e TCLE permanecem pendentes de confirmação. O Relatório
+Final não foi alterado. Sem dados pessoais, commit, push ou deploy.
 
 ---

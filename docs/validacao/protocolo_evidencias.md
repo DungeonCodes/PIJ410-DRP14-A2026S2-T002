@@ -2,9 +2,11 @@
 
 ## Antes da sessão
 
-- Registrar obrigatoriamente a versão da interface apresentada. P1 utilizou V1; o próximo
-  participante utilizará V2. Não comparar as notas como se as interfaces fossem idênticas.
+- Registrar obrigatoriamente a versão da interface apresentada. Até aqui, P1 utilizou V1 e P2
+  utilizou V2. Não comparar as notas como se as interfaces fossem idênticas.
 - Na sessão V2, indicar que a evolução temporal consolidada de Captação é posterior à V1.
+- Registrar a fala sobre “qualidade do lead” como percepção do participante; a interface exibe
+  séries agregadas e não demonstra, por si, qualidade individual, causalidade ou atribuição.
 - Confirmar que a demonstração contém exclusivamente dados sintéticos.
 - Obter o TCLE conforme o protocolo antes da demonstração e da coleta.
 - Não apresentar módulos bloqueados. Registrar quais módulos da versão foram efetivamente vistos.
