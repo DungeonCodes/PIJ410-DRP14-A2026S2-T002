@@ -906,11 +906,15 @@ de implementar foi do grupo; P1 reavaliou a V2 somente após o ajuste.
 
 P1 utilizou a V2 após o ajuste, com foco em Captação, Matrículas e na visualização temporal
 consolidada. Atribuiu 5/5 à clareza de Captação, 5/5 à facilidade de seleção das séries e 5/5 à
-clareza de Matrículas. Declarou que a visualização conjunta facilitou a comparação ao longo do
-tempo, não relatou dificuldade adicional e respondeu “Por enquanto, tudo ok.” à pergunta sobre
-novas alterações. Sua referência à “qualidade do lead” descreve uma percepção de uso, não uma
+clareza de Matrículas. Relatou que a visualização conjunta facilitou a análise da relação entre
+contatos, visitas e matrículas ao longo do tempo, não relatou dificuldade adicional e respondeu
+“Por enquanto, tudo ok.” à pergunta sobre novas alterações. Sua referência à “qualidade do lead”
+descreve uma percepção de uso, não uma
 métrica comprovada da plataforma. As séries são agregadas e não sustentam rastreamento
 individual, causalidade ou atribuição entre contato e matrícula.
+
+O escopo observado foi Captação, Matrículas e o ajuste temporal da V2. Ads e ML integram a
+evolução técnica da V2, sem avaliação registrada por P1 neste ciclo.
 
 As respostas primárias dos dois momentos estão preservadas em
 `docs/validacao/respostas/v1-p1.md` e `docs/validacao/respostas/v2-p1-reavaliacao.md`.
@@ -923,24 +927,25 @@ Figura [numeração pendente] – Evidência anonimizada da validação da solu�
 
 Fonte: Elaborado pelo grupo (2026).
 
-## 3.6 Comparação entre necessidade inicial e avaliação final
+## 3.6 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
 
-[PENDENTE – concluir a comparação das necessidades da escuta inicial com a avaliação final do protótipo]
+Esta matriz distingue as necessidades iniciais do que foi efetivamente observado nos dois
+momentos da mesma participante. O ciclo não avaliou todas as dimensões do protótipo.
 
-| Dimensão | Antes: necessidade ou expectativa inicial | Depois: evidência da avaliação final |
+| Dimensão | Antes: necessidade ou expectativa inicial | Evidência deste ciclo (P1/V1 e P1/V2) |
 |---|---|---|
-| Investimento em mídia | Compreender quanto investir e avaliar a adequação dos valores | [PENDENTE] |
-| Indicadores | Acompanhar informações relevantes para a gestão | [PENDENTE] |
-| Comparações | Comparar períodos e, quando houver dados, canais ou campanhas | [PENDENTE] |
-| Organização | Reunir informações dispersas em uma visão compreensível | [PENDENTE] |
-| Interface | Apresentar resultados de modo sintético e acompanhável | [PENDENTE] |
+| Investimento em mídia | Compreender quanto investir e avaliar a adequação dos valores | Não avaliado neste ciclo; Ads e orçamento não integraram as tarefas registradas. |
+| Indicadores | Acompanhar informações relevantes para a gestão | P1 atribuiu 5/5 à clareza de Captação e Matrículas em cada versão; avaliação individual desses módulos. |
+| Comparações | Comparar períodos e, quando houver dados, canais ou campanhas | P1 destacou gráficos temporais na V1 e relatou comparação facilitada pelo gráfico conjunto na V2; canais e campanhas não foram avaliados. |
+| Organização | Reunir informações dispersas em uma visão compreensível | P1 apontou gráficos temporais em lugares diferentes na V1 e relatou facilidade de comparação após a consolidação na V2. |
+| Interface | Apresentar resultados de modo sintético e acompanhável | P1 atribuiu 5/5 aos filtros na V1 e à seleção das séries na V2; sem inferência para a interface inteira. |
 
 Fonte: Elaborado pelo grupo (2026).
 
 O recorte documentado do ciclo V1–V2 permite a seguinte comparação descritiva dos dois momentos
 da mesma P1. As notas não medem ganho experimental entre versões:
 
-| Aspecto | V1 | Evidência P1/V1 | Alteração V2 | Evidência P1/V2 |
+| Aspecto | V1 | Evidência inicial | Alteração na V2 | Reavaliação |
 |---|---|---|---|---|
 | Visualização temporal | Séries de Contatos, Visitas e Matrículas em gráficos separados | Apontou “Os gráficos em diversos lugares” e sugeriu visualização conjunta selecionável | Gráfico temporal consolidado com seleção independente das séries | Relatou que a visualização conjunta facilitou a comparação ao longo do tempo |
 
@@ -948,23 +953,23 @@ Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026
 
 ## 3.7 Rastreabilidade entre necessidade, solução e validação
 
-A tabela sintetiza a relação entre a escuta inicial e a solução construída. Suas células de
-avaliação final permanecem pendentes; a evidência individual já disponível sobre o ajuste
-FB-V1-P1-001 é discriminada separadamente abaixo.
+A tabela relaciona a escuta inicial, a solução construída e o alcance da avaliação registrada.
+As dimensões de Ads não foram apresentadas nas tarefas de P1; a cadeia específica de
+FB-V1-P1-001 é discriminada abaixo.
 
-| Necessidade identificada | Elemento da solução | Evidência no protótipo | Resultado da validação |
+| Necessidade identificada | Elemento da solução | Evidência no protótipo | Evidência do ciclo P1 |
 |---|---|---|---|
-| Compreender quanto investir em mídia | Indicadores e comparação determinística de orçamento | Ads sintéticos ativos localmente; premissa fictícia, sem determinar orçamento ideal | [PENDENTE] |
-| Avaliar a adequação dos investimentos | Métricas determinísticas e limites explícitos | Indicadores de Ads sintéticos; dados reais de mídia não autorizados | [PENDENTE] |
-| Acompanhar indicadores | Painéis de Captação e Matrículas | Indicadores, filtros e visualizações da Fase 1 | [PENDENTE] |
-| Comparar períodos e canais | Filtros temporais e visualizações comparativas | Safras na Fase 1; ano-calendário fictício e investimentos por canal na Fase 2 | [PENDENTE] |
-| Organizar informações dispersas | Interface web com dados e contexto padronizados | Módulos acadêmicos independentes com dados sintéticos | [PENDENTE] |
+| Compreender quanto investir em mídia | Indicadores e comparação determinística de orçamento | Ads sintéticos ativos localmente; premissa fictícia, sem determinar orçamento ideal | Não avaliado por P1 neste ciclo. |
+| Avaliar a adequação dos investimentos | Métricas determinísticas e limites explícitos | Indicadores de Ads sintéticos; dados reais de mídia não autorizados | Não avaliado por P1 neste ciclo. |
+| Acompanhar indicadores | Painéis de Captação e Matrículas | Indicadores, filtros e visualizações da Fase 1 | P1 atribuiu 5/5 à clareza de ambos os módulos nos dois momentos. |
+| Comparar períodos e canais | Filtros temporais e visualizações comparativas | Safras na Fase 1; ano-calendário fictício e investimentos por canal na Fase 2 | P1 destacou a utilidade dos gráficos temporais; canais não foram avaliados. |
+| Organizar informações dispersas | Interface web com dados e contexto padronizados | Módulos acadêmicos independentes com dados sintéticos | P1 apontou dispersão dos gráficos temporais na V1 e relatou comparação facilitada na V2 após o ajuste. |
 
 Fonte: Elaborado pelo grupo (2026).
 
 | Necessidade/observação | Evidência | Decisão | Implementação | Avaliação posterior |
 |---|---|---|---|---|
-| Visualizações temporais distribuídas (FB-V1-P1-001) | P1 relatou a dispersão na V1 e sugeriu um gráfico conjunto selecionável | Grupo aprovou a sugestão | V2 reuniu Contatos, Visitas e Matrículas em visualização temporal multissérie selecionável | A mesma P1 relatou que a consolidação facilitou a comparação; não relatou nova dificuldade |
+| Visualizações temporais distribuídas (FB-V1-P1-001) | P1/V1 relatou a dispersão e sugeriu um gráfico conjunto selecionável | O grupo aprovou a consolidação | V2 reuniu Contatos, Visitas e Matrículas em visualização temporal multissérie selecionável | P1/V2 relatou que a apresentação facilitou a comparação; não relatou nova dificuldade |
 
 Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026).
 
@@ -976,26 +981,28 @@ sem demonstração de solução definitiva ou eficácia geral.
 
 | Feedback ou observação | Decisão do grupo | Ajuste realizado | Evidência | Situação |
 |---|---|---|---|---|
-| Gráficos temporais em diversos lugares (FB-V1-P1-001) | Aprovou a consolidação sugerida por P1 | V2 reuniu Contatos, Visitas e Matrículas em gráfico temporal com seleção de séries | A mesma P1 relatou comparação facilitada e nenhuma nova dificuldade | Implementado na V2; evidência positiva individual na reavaliação de P1 |
+| Gráficos temporais em diversos lugares (FB-V1-P1-001) | O grupo aprovou a consolidação sugerida por P1 | V2 reuniu Contatos, Visitas e Matrículas em gráfico temporal multissérie selecionável | Na reavaliação, P1 relatou comparação facilitada, respondeu “Não.” sobre dificuldades e “Por enquanto, tudo ok.” sobre novas alterações | Implementado na V2; evidência individual positiva |
 
 Fonte: Elaborado pelo grupo (2026).
 
 ## 3.9 Limitações
 
 Os módulos funcionais utilizam dados inteiramente sintéticos e não mantêm conexão operacional com
-contas de anúncios, CRM, sistemas acadêmicos ou bases da instituição. Por isso, o protótipo
+APIs ou contas de anúncios, CRM, sistemas acadêmicos ou bases da instituição. Por isso, o protótipo
 demonstra organização, cálculo e visualização, mas não comprova desempenho real de campanhas nem
 impacto institucional.
 
-As fontes disponíveis não permitem atribuir individualmente uma matrícula a uma ação de mídia.
+As fontes disponíveis não permitem atribuir individualmente uma matrícula a uma ação de mídia
+nem estabelecer inferência causal.
 Associações agregadas devem ser interpretadas dentro do período, da unidade de análise e da regra de
 atribuição declarados. A ausência de períodos históricos autorizados para Google Ads, Meta Ads e
 conteúdo orgânico impede apresentar resultados operacionais desses componentes. Não impede
 o experimento separado de CPR, executado exclusivamente sobre dados sintéticos.
 
 Resultados obtidos em cenário sintético não podem ser generalizados para a operação da instituição
-ou para outras organizações. O experimento de CPR apresentou baixo poder explicativo e depende
-do processo gerador e da hipótese sintética de maturação de 14 dias. Não demonstra disponibilidade
+ou para outras organizações. Os experimentos de CPR são exploratórios, apresentam poder preditivo
+limitado e dependem do processo gerador e da hipótese sintética de maturação de 14 dias. A previsão
+recursiva pode amplificar valores extremos. Esses resultados não demonstram disponibilidade
 histórica de métricas reais ou utilidade operacional. A interpretação assistida por IA não
 substitui evidência, cálculo ou decisão humana.
 
@@ -1003,42 +1010,60 @@ A validação comunitária contou com uma participante, gerente de Marketing, qu
 de 2026, avaliou presencialmente a V1 e, após a implementação do ajuste decorrente de seu feedback,
 reavaliou a V2. Essa avaliação em dois momentos permite acompanhar a percepção da
 alteração, mas não equivale à validação por amostra independente nem a uma comparação quantitativa
-controlada. A evidência é exploratória e sua generalização é limitada pela participação de uma
-única pessoa. O gráfico reúne séries sintéticas agregadas, sem rastreamento de indivíduos,
+controlada. A evidência é exploratória e predominantemente qualitativa; sua generalização é
+limitada pela participação de uma única pessoa. O gráfico reúne séries sintéticas agregadas,
+sem rastreamento de indivíduos,
 medição objetiva da qualidade de cada lead ou atribuição causal entre etapas do funil.
-
-[PENDENTE – consolidar eventuais limitações adicionais observadas nos testes e na validação final]
 
 # 4 CONSIDERAÇÕES FINAIS
 
-O projeto parte do problema de organizar e apresentar dados históricos de investimentos em mídia
-digital para apoiar a tomada de decisão em uma instituição de ensino. A estrutura desenvolvida até
-o momento demonstra uma aplicação acadêmica independente, com dados sintéticos, regras
-determinísticas e módulos funcionais de Captação, Matrículas e Ads no ambiente local. Esse resultado sustenta apenas as
-afirmações técnicas correspondentes às Fases 1 e 2 e não comprova, por si só, impacto sobre decisões ou
-resultados da comunidade.
+O objetivo geral de desenvolver uma solução analítica para organizar dados históricos de
+investimentos em mídia digital e apoiar a decisão sobre a distribuição do orçamento de marketing
+foi atendido quanto à construção de um protótipo acadêmico. A aplicação organiza dados históricos
+sintéticos, calcula indicadores e apresenta recortes temporais e comparações. Seus recursos de
+investimento, gasto, saldo e CPR destinam-se a apoiar a análise de orçamento, mas não houve neste
+ciclo avaliação comunitária dessa decisão nem demonstração de melhoria na operação da instituição.
+Essa distinção preserva o papel dos indicadores e das visualizações exposto na fundamentação do
+capítulo 2: oferecer elementos para interpretação, sem substituir a decisão humana.
 
-Separadamente, o experimento demonstrou a viabilidade técnica de aplicar regressão supervisionada
-ao problema acadêmico de CPR definido. Entretanto, o baixo poder explicativo exige interpretar
-seus resultados apenas como exercício experimental sobre dados sintéticos. Essa constatação
-provisória não estabelece eficácia operacional nem atendimento integral aos objetivos do projeto.
+No escopo dos objetivos específicos, foram implementados a estrutura sintética de dados, os
+cálculos determinísticos e a interface com Captação e Matrículas na V1. A V2 acrescentou Visão
+Geral de Ads, Google Ads, Meta Ads, Estratégia e demonstrações acadêmicas de CPR. A comparação
+entre canais limita-se a investimentos em períodos compatíveis, sem equiparar resultados de
+denominadores diferentes. Testes automatizados, verificações de não vazamento e reprodução dos
+artefatos sustentam o funcionamento técnico descrito, não a eficácia institucional. A IA
+generativa serviu de apoio ao desenvolvimento e à documentação sob revisão humana. A avaliação
+com profissional da instituição alcançou Captação, Matrículas e o ajuste temporal; Fases 3 e 4
+permaneceram bloqueadas.
 
-Como constatação parcial, o ciclo de validação identificou na V1 uma necessidade de consolidar
-visualizações temporais, permitiu implementar esse ajuste na V2 por decisão do grupo e reuniu
-posteriormente uma percepção positiva de uso da mesma P1. Isso não encerra a avaliação dos objetivos
-gerais, do impacto institucional ou do uso operacional.
+No experimento inicial de CPR, a regressão apresentou erros menores que a persistência t−2. No
+holdout principal do experimento sazonal, superou o baseline t−12, mas não a persistência t−2, e
+obteve R² negativo. Os experimentos demonstram execução metodológica e reprodutibilidade em dados
+sintéticos, com controle de informação contemporânea ao alvo, mas não desempenho preditivo
+suficiente para uso operacional ou recomendação automática de investimento.
 
-[PENDENTE – avaliar o atendimento do objetivo geral e de cada objetivo específico com base nos resultados finais]
+A validação comunitária envolveu uma participante, P1, gerente de Marketing, presencialmente em
+07/10/2026, com TCLE obtido. Na V1, com Captação e Matrículas, ela apontou gráficos temporais
+dispersos e sugeriu reuni-los com seleção de séries. O grupo aprovou FB-V1-P1-001 e implementou
+essa mudança específica na V2. Na reavaliação, a mesma participante relatou que a visualização
+conjunta facilitou a comparação, não relatou nova dificuldade e não solicitou outra alteração
+naquele momento. Esse caso documenta um ciclo de escuta, avaliação, ajuste e reavaliação. Visão
+Geral de Ads, Google Ads, Meta Ads, Estratégia, CPR e previsão sazonal tiveram origem
+técnica/acadêmica e não foram avaliados por P1 neste ciclo.
 
-[PENDENTE – sintetizar os principais resultados técnicos efetivamente concluídos]
+A contribuição do protótipo está na organização de informações sintéticas com regras explícitas,
+na distinção entre ausência e zero, na separação entre indicadores calculados e experimentos de
+ML, no versionamento V1/V2 e na rastreabilidade do ajuste decorrente de feedback real. O alcance
+das conclusões é limitado por dados sintéticos, uma participante com perfil específico, reavaliação
+pela mesma pessoa sem amostra independente, séries agregadas sem rastreamento individual ou
+inferência causal, ausência de APIs e CRM operacionais e poder preditivo limitado dos experimentos.
+Esses limites não permitem generalizar a percepção de P1 nem afirmar impacto institucional.
 
-[PENDENTE – retomar os resultados à luz das referências utilizadas]
-
-[PENDENTE – registrar o retorno da comunidade, o impacto observado e o balanço entre a solução inicial e a solução final]
-
-[PENDENTE – consolidar as contribuições e limitações do trabalho]
-
-[PENDENTE – indicar possibilidades de continuidade sem apresentá-las como entregas concluídas]
+Como continuidade, poderão ser avaliados os módulos de Ads e Estratégia com profissionais da
+área, ampliados o número e a diversidade de participantes e examinados dados reais somente com
+autorização e anonimização adequadas. Integrações operacionais exigiriam requisitos próprios de
+segurança; séries históricas mais amplas e modelos preditivos adicionais dependeriam de volume e
+qualidade de dados suficientes. As Fases 3 e 4 poderão ser avaliadas após sua implementação.
 
 # REFERÊNCIAS
 

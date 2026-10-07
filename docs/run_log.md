@@ -934,4 +934,22 @@ agora descreve dois momentos da mesma pessoa, sem amostra independente. Somente 
 `TCLE obtido: SIM` foi versionado; o documento assinado permanece fora do Git. Sem PII, alteração
 funcional, commit ou push.
 
+## Fechamento científico das seções 3.5–3.9 — validação comunitária
+
+As seções 3.5–3.9 do Relatório Final foram auditadas contra os registros P1/V1 e P1/V2.
+As matrizes distinguem evidência observada de dimensões não avaliadas neste ciclo, especialmente
+Ads e investimentos; FB-V1-P1-001 permanece restrito ao gráfico temporal de Captação. O texto
+registra a decisão do grupo, a reavaliação pela mesma participante e as limitações de uma
+evidência exploratória individual, sem comparação quantitativa controlada. A figura de validação
+segue como pendência editorial. Respostas, aplicação e código intactos; sem commit ou push.
+
+## Fechamento científico do Capítulo 4 — Considerações Finais
+
+O capítulo 4 do Relatório Final foi concluído a partir do objetivo geral e dos resultados já
+registrados: atendimento no escopo do protótipo acadêmico, testes técnicos separados da avaliação
+P1/V1–P1/V2, ML CPR experimental de desempenho limitado e ausência de evidência de impacto em
+decisões reais de orçamento. A síntese explicita que Ads/ML não foram avaliados pela participante,
+registra limites e trabalhos futuros como possibilidades. Nenhuma evidência nova, resposta, código,
+dataset ou versão da aplicação foi alterada; sem commit ou push.
+
 ---
