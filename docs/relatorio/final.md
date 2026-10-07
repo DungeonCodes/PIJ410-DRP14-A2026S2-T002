@@ -495,20 +495,19 @@ Para tornar rastreáveis as futuras avaliações, a interface foi identificada p
 V1 é a baseline inicial pré-Ads e contém somente Captação e Matrículas. V2 incorporou
 posteriormente, por evolução técnica/acadêmica e não por feedback comunitário, os módulos de
 Ads, o experimento CPR e a demonstração sazonal descrita em 2.5.11. Ambas utilizam os mesmos
-dados sintéticos, métricas e fórmulas. A primeira aplicação deve registrar V1, período e filtros
-e não apresentar os conteúdos da V2. Não foi obtido resultado de comparação comunitária.
+dados sintéticos, métricas e fórmulas. P1 utilizou V1, sem os conteúdos da V2. Após a sugestão
+FB-V1-P1-001 e a aprovação do grupo, a V2 recebeu uma visualização temporal consolidada;
+P2 avaliou essa versão. As avaliações não constituem comparação experimental direta entre versões.
 
-A implementação disponível será apresentada à comunidade por meio de tarefas orientadas de
-interpretação. A avaliação deverá registrar compreensão dos indicadores, utilidade percebida,
-dificuldades, sugestões e prioridades de melhoria. Técnicas de pesquisa de experiência do usuário
+Cada participante avaliou a versão indicada em seu registro anonimizado. As respostas
+documentaram compreensão dos indicadores, utilidade percebida, dificuldades e sugestões.
+Técnicas de pesquisa de experiência do usuário
 apoiam a identificação de necessidades e a avaliação de serviços de informação (Pinheiro; Dias,
 2023).
 
-[PENDENTE – aplicar o instrumento de validação com a comunidade externa]
+[PENDENTE – confirmar perfil, data, modalidade e TCLE das sessões P1 e P2, sem identificação nominal desnecessária]
 
-[PENDENTE – registrar participantes por perfil, data, formato, tarefas realizadas e critérios de avaliação, sem identificação nominal desnecessária]
-
-[PENDENTE – descrever os testes executados, as devolutivas coletadas e os ajustes decorrentes]
+[PENDENTE – consolidar as demais evidências de validação e os testes finais antes das conclusões globais]
 
 ### 2.5.6 Arquitetura analítica de três camadas
 
@@ -699,7 +698,7 @@ indicadores determinísticos
         ↓
 Captação, Matrículas e Ads na interface web
         ↓
-aplicação e avaliação pela comunidade externa [PENDENTE]
+validação exploratória por P1 na V1 e P2 na V2; consolidação final [PENDENTE]
 ```
 
 Figura [numeração pendente] – Arquitetura e fluxo de dados da solução acadêmica
@@ -827,7 +826,7 @@ janeiro/2024, índice sazonal e comparação dos três métodos. A previsão apr
 baixas, não crescimento obrigatório. Valores extremos e estimativas usadas como lags podem
 se propagar pela recursão. A V1 pré-Ads e os artefatos do experimento permanecem preservados. Essa extensão
 não constitui melhoria solicitada pela comunidade, avaliação dos usuários ou impacto
-institucional; a primeira validação continua exclusivamente V1, com Captação e Matrículas.
+institucional; a primeira interação de P1 utilizou exclusivamente V1, com Captação e Matrículas.
 
 ### 3.4.5 Testes técnicos
 
@@ -848,11 +847,37 @@ Fonte: Elaborado pelo grupo (2026).
 
 ## 3.5 Validação da solução com a comunidade
 
-[PENDENTE – inserir resultado da apresentação e da utilização do protótipo pela comunidade externa]
+### Primeira interação — V1
 
-[PENDENTE – descrever tarefas realizadas, compreensão da interface, utilidade percebida, dificuldades, críticas e sugestões efetivamente registradas]
+P1 utilizou a V1, composta somente por Captação e Matrículas, com dados sintéticos. Atribuiu
+5/5 à clareza de Captação, 5/5 à clareza de Matrículas e 5/5 à facilidade de localizar e utilizar
+os filtros. Destacou os gráficos temporais como úteis para observar o comportamento ao longo do
+tempo. Sobre a dificuldade, respondeu: “Os gráficos em diversos lugares.” Sugeriu reunir
+contatos, visitas e matrículas em uma visualização temporal com seleção das séries. Essas respostas
+são evidência individual, não percepção atribuível a todos os usuários.
 
-[PENDENTE – registrar o instrumento aplicado, a quantidade e o perfil dos participantes de forma agregada e não identificável]
+### Ajuste realizado
+
+A sugestão foi identificada como FB-V1-P1-001. O grupo aprovou sua implementação com a finalidade
+de reduzir a dispersão visual e permitir comparação simultânea. Na V1, as séries temporais de
+Contatos, Visitas e Matrículas eram exibidas em gráficos separados. A V2 passou a oferecer uma
+visualização única de evolução temporal, com seleção independente dessas três séries. A decisão
+de implementar foi do grupo; P1 não utilizou nem aprovou a V2.
+
+### Avaliação posterior — V2
+
+P2 utilizou a V2 após o ajuste, com foco em Captação, Matrículas e na visualização temporal
+consolidada. Atribuiu 5/5 à clareza de Captação, 5/5 à facilidade de seleção das séries e 5/5 à
+clareza de Matrículas. Declarou que a visualização conjunta facilitou a comparação ao longo do
+tempo, não relatou dificuldade adicional e respondeu “Por enquanto, tudo ok.” à pergunta sobre
+novas alterações. Sua referência à “qualidade do lead” descreve uma percepção de uso, não uma
+métrica comprovada da plataforma. As séries são agregadas e não sustentam rastreamento
+individual, causalidade ou atribuição entre contato e matrícula.
+
+As respostas primárias estão preservadas em `docs/validacao/respostas/v1-p1.md` e
+`docs/validacao/respostas/v2-p2.md`. Perfil,
+data, modalidade e confirmação de TCLE permanecem pendentes nas duas sessões. Não se extrapolam
+essas observações para validação definitiva da interface.
 
 Figura [numeração pendente] – Evidência anonimizada da validação da solução
 
@@ -862,7 +887,7 @@ Fonte: Elaborado pelo grupo (2026).
 
 ## 3.6 Comparação entre necessidade inicial e avaliação final
 
-[PENDENTE – comparar as necessidades e expectativas registradas na escuta inicial com a utilização e a avaliação final do protótipo]
+[PENDENTE – concluir a comparação das necessidades da escuta inicial com a avaliação final do protótipo]
 
 | Dimensão | Antes: necessidade ou expectativa inicial | Depois: evidência da avaliação final |
 |---|---|---|
@@ -874,11 +899,20 @@ Fonte: Elaborado pelo grupo (2026).
 
 Fonte: Elaborado pelo grupo (2026).
 
+O recorte documentado do ciclo V1–V2 permite a seguinte comparação descritiva, sem tratar as
+notas de P1 e P2 como medida experimental de desempenho entre versões:
+
+| Aspecto | V1 | Evidência P1 | Alteração V2 | Evidência P2 |
+|---|---|---|---|---|
+| Visualização temporal | Séries de Contatos, Visitas e Matrículas em gráficos separados | Apontou “Os gráficos em diversos lugares” e sugeriu visualização conjunta selecionável | Gráfico temporal consolidado com seleção independente das séries | Relatou que a visualização conjunta facilitou a comparação ao longo do tempo |
+
+Fonte: Elaborado pelo grupo com base nos registros anonimizados de P1 e P2 (2026).
+
 ## 3.7 Rastreabilidade entre necessidade, solução e validação
 
-A tabela é compatível com o capítulo de resultados do modelo oficial porque sintetiza a relação
-entre a escuta, a solução construída e a contribuição da comunidade. A coluna de validação
-permanece pendente até que exista evidência real.
+A tabela sintetiza a relação entre a escuta inicial e a solução construída. Suas células de
+avaliação final permanecem pendentes; a evidência individual já disponível sobre o ajuste
+FB-V1-P1-001 é discriminada separadamente abaixo.
 
 | Necessidade identificada | Elemento da solução | Evidência no protótipo | Resultado da validação |
 |---|---|---|---|
@@ -890,13 +924,21 @@ permanece pendente até que exista evidência real.
 
 Fonte: Elaborado pelo grupo (2026).
 
+| Necessidade/observação | Evidência | Decisão | Implementação | Avaliação posterior |
+|---|---|---|---|---|
+| Visualizações temporais distribuídas (FB-V1-P1-001) | P1 relatou a dispersão na V1 e sugeriu um gráfico conjunto selecionável | Grupo aprovou a sugestão | V2 reuniu Contatos, Visitas e Matrículas em visualização temporal multissérie selecionável | P2 relatou que a consolidação facilitou a comparação; não relatou nova dificuldade |
+
+Fonte: Elaborado pelo grupo com base nos registros anonimizados de P1 e P2 (2026).
+
 ## 3.8 Feedback e ajustes decorrentes
 
-[PENDENTE – descrever cada feedback efetivamente recebido, a decisão do grupo e o ajuste correspondente]
+Até o momento, há um ajuste comunitário documentado neste ciclo. A observação de P1 foi a
+dispersão das visualizações temporais; o resultado posterior é a percepção individual de P2,
+sem demonstração de solução definitiva ou eficácia geral.
 
 | Feedback ou observação | Decisão do grupo | Ajuste realizado | Evidência | Situação |
 |---|---|---|---|---|
-| [PENDENTE] | [PENDENTE] | [PENDENTE] | [PENDENTE] | [PENDENTE] |
+| Gráficos temporais em diversos lugares (FB-V1-P1-001) | Aprovou a consolidação sugerida por P1 | V2 reuniu Contatos, Visitas e Matrículas em gráfico temporal com seleção de séries | P2 relatou comparação facilitada e nenhuma nova dificuldade | Implementado na V2; evidência positiva individual de uso por P2 |
 
 Fonte: Elaborado pelo grupo (2026).
 
@@ -919,7 +961,13 @@ do processo gerador e da hipótese sintética de maturação de 14 dias. Não de
 histórica de métricas reais ou utilidade operacional. A interpretação assistida por IA não
 substitui evidência, cálculo ou decisão humana.
 
-[PENDENTE – registrar limitações observadas durante testes e validação com a comunidade]
+O ciclo comunitário documentado reúne apenas P1 na V1 e P2 na V2. O número reduzido de
+participantes e o uso de versões diferentes impedem interpretar as notas como comparação
+experimental direta ou generalizar a percepção relatada. A evidência é qualitativa e
+exploratória; o gráfico reúne séries sintéticas agregadas, sem rastreamento de indivíduos,
+medição objetiva da qualidade de cada lead ou atribuição causal entre etapas do funil.
+
+[PENDENTE – consolidar eventuais limitações adicionais observadas nos testes e na validação final]
 
 # 4 CONSIDERAÇÕES FINAIS
 
@@ -934,6 +982,11 @@ Separadamente, o experimento demonstrou a viabilidade técnica de aplicar regres
 ao problema acadêmico de CPR definido. Entretanto, o baixo poder explicativo exige interpretar
 seus resultados apenas como exercício experimental sobre dados sintéticos. Essa constatação
 provisória não estabelece eficácia operacional nem atendimento integral aos objetivos do projeto.
+
+Como constatação parcial, o ciclo de validação identificou na V1 uma necessidade de consolidar
+visualizações temporais, permitiu implementar esse ajuste na V2 por decisão do grupo e reuniu
+posteriormente uma percepção positiva de uso por P2. Isso não encerra a avaliação dos objetivos
+gerais, do impacto institucional ou do uso operacional.
 
 [PENDENTE – avaliar o atendimento do objetivo geral e de cada objetivo específico com base nos resultados finais]
 

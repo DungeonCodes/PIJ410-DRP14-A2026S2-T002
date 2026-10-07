@@ -895,4 +895,12 @@ como percepção de P2, sem tratá-la como métrica comprovada. Nenhuma implemen
 nesta execução. Perfil, data, modalidade e TCLE permanecem pendentes de confirmação. O Relatório
 Final não foi alterado. Sem dados pessoais, commit, push ou deploy.
 
+## Incorporação científica do ciclo de validação V1 — V2
+
+O Relatório Final passou a registrar P1/V1, a sugestão FB-V1-P1-001, sua aprovação pelo grupo,
+o ajuste de visualização temporal na V2 e a avaliação posterior por P2/V2. A redação distingue
+as versões e limita os achados às respostas documentadas, sem comparação experimental direta,
+atribuição de qualidade individual de lead ou conclusão global. Perfil, data, modalidade e TCLE
+seguem pendentes. Respostas originais e aplicação não foram alteradas; sem commit, push ou deploy.
+
 ---
