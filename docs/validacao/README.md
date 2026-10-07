@@ -1,6 +1,6 @@
 # Validação com a comunidade externa
 
-A primeira validação usa a **V1 histórica**, composta somente por Captação e Matrículas.
+A primeira validação utilizou a **V1 histórica**, composta somente por Captação e Matrículas.
 O objetivo é observar compreensão, uso de filtros, utilidade percebida e dificuldades sem
 atribuir resultados ainda inexistentes à comunidade.
 
@@ -23,6 +23,8 @@ atribuir resultados ainda inexistentes à comunidade.
 - `versoes-interface.md`: significado formal e composição das versões.
 
 P1 utilizou V1; sua resposta individual está em `respostas/v1-p1.md`. Após a aprovação do
-grupo, FB-V1-P1-001 foi implementado na V2. O próximo participante utilizará V2 e sua versão
-deve ser registrada. O instrumento V2 inclui Ads e demonstrações de ML; a aplicação deve
-documentar os módulos efetivamente apresentados. Nenhum instrumento contém respostas fictícias.
+grupo, FB-V1-P1-001 foi implementado na V2, reavaliada pela mesma P1 em
+`respostas/v2-p1-reavaliacao.md`. A participante é gerente de Marketing, e os dois momentos
+ocorreram presencialmente em 07/10/2026, com TCLE obtido. O instrumento V2 completo inclui Ads
+e demonstrações de ML para aplicação futura; a reavaliação registrada concentrou-se em Captação,
+Matrículas e no gráfico consolidado. Nenhum instrumento contém respostas fictícias.

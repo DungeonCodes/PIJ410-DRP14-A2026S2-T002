@@ -471,7 +471,7 @@ pago, avaliar a adequação dos valores investidos, acompanhar indicadores, comp
 longo do tempo e organizar dados dispersos. O relato mantém a instituição e os participantes
 anonimizados e não incorpora dados pessoais ou informações comerciais sensíveis.
 
-[PENDENTE – confirmar a existência do TCLE aplicável às interações já realizadas e preservar o documento preenchido para inclusão obrigatória na versão final]
+[PENDENTE – confirmar a documentação de consentimento aplicável às conversas iniciais com profissionais da instituição; na validação de P1 em V1/V2, TCLE obtido: SIM]
 
 ### 2.5.3 Definir o problema e os requisitos
 
@@ -497,15 +497,16 @@ posteriormente, por evolução técnica/acadêmica e não por feedback comunitá
 Ads, o experimento CPR e a demonstração sazonal descrita em 2.5.11. Ambas utilizam os mesmos
 dados sintéticos, métricas e fórmulas. P1 utilizou V1, sem os conteúdos da V2. Após a sugestão
 FB-V1-P1-001 e a aprovação do grupo, a V2 recebeu uma visualização temporal consolidada;
-P2 avaliou essa versão. As avaliações não constituem comparação experimental direta entre versões.
+esta mesma P1 reavaliou a V2. Os dois momentos não constituem comparação experimental controlada.
 
-Cada participante avaliou a versão indicada em seu registro anonimizado. As respostas
+A participante avaliou as versões indicadas em seus registros anonimizados. As respostas
 documentaram compreensão dos indicadores, utilidade percebida, dificuldades e sugestões.
 Técnicas de pesquisa de experiência do usuário
 apoiam a identificação de necessidades e a avaliação de serviços de informação (Pinheiro; Dias,
 2023).
 
-[PENDENTE – confirmar perfil, data, modalidade e TCLE das sessões P1 e P2, sem identificação nominal desnecessária]
+P1, gerente de Marketing, participou presencialmente em 07/10/2026 dos dois momentos;
+TCLE obtido: SIM. O documento assinado permanece fora do repositório.
 
 [PENDENTE – consolidar as demais evidências de validação e os testes finais antes das conclusões globais]
 
@@ -653,8 +654,8 @@ As saídas foram revisadas por pessoas antes de qualquer incorporação. Arquite
 interpretação dos resultados, aprovação das alterações, validação comunitária e redação científica
 permaneceram sob responsabilidade dos integrantes do grupo. Essas ferramentas não foram usadas
 para gerar respostas de participantes, substituir entrevistas, criar evidência empírica, comprovar
-eficácia ou substituir decisões humanas. As respostas de P1 e P2 são registros reais preservados
-separadamente.
+eficácia ou substituir decisões humanas. As respostas reais de P1 nos dois momentos são
+preservadas em registros separados.
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
@@ -873,7 +874,7 @@ os verificadores dos dois experimentos CPR e 38 verificações de não vazamento
 verificações HTTP locais cobriram as rotas V1/V2, o acesso da extensão sazonal somente na V2 e as
 rotas bloqueadas das Fases 3 e 4. A reprodução dos experimentos foi comparada byte a byte aos
 artefatos versionados. Esses testes verificam software e reprodutibilidade; não equivalem à
-validação comunitária realizada por P1/V1 e P2/V2 nem demonstram impacto institucional.
+avaliação comunitária realizada por P1/V1 e pela mesma P1/V2 nem demonstram impacto institucional.
 
 Figura [numeração pendente] – Evidência dos resultados de testes da versão final
 
@@ -883,9 +884,10 @@ Fonte: Elaborado pelo grupo (2026).
 
 ## 3.5 Validação da solução com a comunidade
 
-### Primeira interação — V1
+### Primeira interação de P1 — V1
 
-P1 utilizou a V1, composta somente por Captação e Matrículas, com dados sintéticos. Atribuiu
+P1, gerente de Marketing, participou presencialmente em 07/10/2026; TCLE obtido: SIM.
+Utilizou a V1, composta somente por Captação e Matrículas, com dados sintéticos. Atribuiu
 5/5 à clareza de Captação, 5/5 à clareza de Matrículas e 5/5 à facilidade de localizar e utilizar
 os filtros. Destacou os gráficos temporais como úteis para observar o comportamento ao longo do
 tempo. Sobre a dificuldade, respondeu: “Os gráficos em diversos lugares.” Sugeriu reunir
@@ -898,11 +900,11 @@ A sugestão foi identificada como FB-V1-P1-001. O grupo aprovou sua implementaç
 de reduzir a dispersão visual e permitir comparação simultânea. Na V1, as séries temporais de
 Contatos, Visitas e Matrículas eram exibidas em gráficos separados. A V2 passou a oferecer uma
 visualização única de evolução temporal, com seleção independente dessas três séries. A decisão
-de implementar foi do grupo; P1 não utilizou nem aprovou a V2.
+de implementar foi do grupo; P1 reavaliou a V2 somente após o ajuste.
 
-### Avaliação posterior — V2
+### Reavaliação da mesma P1 — V2
 
-P2 utilizou a V2 após o ajuste, com foco em Captação, Matrículas e na visualização temporal
+P1 utilizou a V2 após o ajuste, com foco em Captação, Matrículas e na visualização temporal
 consolidada. Atribuiu 5/5 à clareza de Captação, 5/5 à facilidade de seleção das séries e 5/5 à
 clareza de Matrículas. Declarou que a visualização conjunta facilitou a comparação ao longo do
 tempo, não relatou dificuldade adicional e respondeu “Por enquanto, tudo ok.” à pergunta sobre
@@ -910,10 +912,10 @@ novas alterações. Sua referência à “qualidade do lead” descreve uma perc
 métrica comprovada da plataforma. As séries são agregadas e não sustentam rastreamento
 individual, causalidade ou atribuição entre contato e matrícula.
 
-As respostas primárias estão preservadas em `docs/validacao/respostas/v1-p1.md` e
-`docs/validacao/respostas/v2-p2.md`. Perfil,
-data, modalidade e confirmação de TCLE permanecem pendentes nas duas sessões. Não se extrapolam
-essas observações para validação definitiva da interface.
+As respostas primárias dos dois momentos estão preservadas em
+`docs/validacao/respostas/v1-p1.md` e `docs/validacao/respostas/v2-p1-reavaliacao.md`.
+Trata-se de uma participante que avaliou dois estados sucessivos da interface; a reavaliação
+não constitui amostra independente nem validação definitiva.
 
 Figura [numeração pendente] – Evidência anonimizada da validação da solução
 
@@ -935,14 +937,14 @@ Fonte: Elaborado pelo grupo (2026).
 
 Fonte: Elaborado pelo grupo (2026).
 
-O recorte documentado do ciclo V1–V2 permite a seguinte comparação descritiva, sem tratar as
-notas de P1 e P2 como medida experimental de desempenho entre versões:
+O recorte documentado do ciclo V1–V2 permite a seguinte comparação descritiva dos dois momentos
+da mesma P1. As notas não medem ganho experimental entre versões:
 
-| Aspecto | V1 | Evidência P1 | Alteração V2 | Evidência P2 |
+| Aspecto | V1 | Evidência P1/V1 | Alteração V2 | Evidência P1/V2 |
 |---|---|---|---|---|
 | Visualização temporal | Séries de Contatos, Visitas e Matrículas em gráficos separados | Apontou “Os gráficos em diversos lugares” e sugeriu visualização conjunta selecionável | Gráfico temporal consolidado com seleção independente das séries | Relatou que a visualização conjunta facilitou a comparação ao longo do tempo |
 
-Fonte: Elaborado pelo grupo com base nos registros anonimizados de P1 e P2 (2026).
+Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026).
 
 ## 3.7 Rastreabilidade entre necessidade, solução e validação
 
@@ -962,19 +964,19 @@ Fonte: Elaborado pelo grupo (2026).
 
 | Necessidade/observação | Evidência | Decisão | Implementação | Avaliação posterior |
 |---|---|---|---|---|
-| Visualizações temporais distribuídas (FB-V1-P1-001) | P1 relatou a dispersão na V1 e sugeriu um gráfico conjunto selecionável | Grupo aprovou a sugestão | V2 reuniu Contatos, Visitas e Matrículas em visualização temporal multissérie selecionável | P2 relatou que a consolidação facilitou a comparação; não relatou nova dificuldade |
+| Visualizações temporais distribuídas (FB-V1-P1-001) | P1 relatou a dispersão na V1 e sugeriu um gráfico conjunto selecionável | Grupo aprovou a sugestão | V2 reuniu Contatos, Visitas e Matrículas em visualização temporal multissérie selecionável | A mesma P1 relatou que a consolidação facilitou a comparação; não relatou nova dificuldade |
 
-Fonte: Elaborado pelo grupo com base nos registros anonimizados de P1 e P2 (2026).
+Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026).
 
 ## 3.8 Feedback e ajustes decorrentes
 
 Até o momento, há um ajuste comunitário documentado neste ciclo. A observação de P1 foi a
-dispersão das visualizações temporais; o resultado posterior é a percepção individual de P2,
+dispersão das visualizações temporais; o resultado posterior é sua própria percepção na V2,
 sem demonstração de solução definitiva ou eficácia geral.
 
 | Feedback ou observação | Decisão do grupo | Ajuste realizado | Evidência | Situação |
 |---|---|---|---|---|
-| Gráficos temporais em diversos lugares (FB-V1-P1-001) | Aprovou a consolidação sugerida por P1 | V2 reuniu Contatos, Visitas e Matrículas em gráfico temporal com seleção de séries | P2 relatou comparação facilitada e nenhuma nova dificuldade | Implementado na V2; evidência positiva individual de uso por P2 |
+| Gráficos temporais em diversos lugares (FB-V1-P1-001) | Aprovou a consolidação sugerida por P1 | V2 reuniu Contatos, Visitas e Matrículas em gráfico temporal com seleção de séries | A mesma P1 relatou comparação facilitada e nenhuma nova dificuldade | Implementado na V2; evidência positiva individual na reavaliação de P1 |
 
 Fonte: Elaborado pelo grupo (2026).
 
@@ -997,10 +999,12 @@ do processo gerador e da hipótese sintética de maturação de 14 dias. Não de
 histórica de métricas reais ou utilidade operacional. A interpretação assistida por IA não
 substitui evidência, cálculo ou decisão humana.
 
-O ciclo comunitário documentado reúne apenas P1 na V1 e P2 na V2. O número reduzido de
-participantes e o uso de versões diferentes impedem interpretar as notas como comparação
-experimental direta ou generalizar a percepção relatada. A evidência é qualitativa e
-exploratória; o gráfico reúne séries sintéticas agregadas, sem rastreamento de indivíduos,
+A validação comunitária contou com uma participante, gerente de Marketing, que, em 7 de outubro
+de 2026, avaliou presencialmente a V1 e, após a implementação do ajuste decorrente de seu feedback,
+reavaliou a V2. Essa avaliação em dois momentos permite acompanhar a percepção da
+alteração, mas não equivale à validação por amostra independente nem a uma comparação quantitativa
+controlada. A evidência é exploratória e sua generalização é limitada pela participação de uma
+única pessoa. O gráfico reúne séries sintéticas agregadas, sem rastreamento de indivíduos,
 medição objetiva da qualidade de cada lead ou atribuição causal entre etapas do funil.
 
 [PENDENTE – consolidar eventuais limitações adicionais observadas nos testes e na validação final]
@@ -1021,7 +1025,7 @@ provisória não estabelece eficácia operacional nem atendimento integral aos o
 
 Como constatação parcial, o ciclo de validação identificou na V1 uma necessidade de consolidar
 visualizações temporais, permitiu implementar esse ajuste na V2 por decisão do grupo e reuniu
-posteriormente uma percepção positiva de uso por P2. Isso não encerra a avaliação dos objetivos
+posteriormente uma percepção positiva de uso da mesma P1. Isso não encerra a avaliação dos objetivos
 gerais, do impacto institucional ou do uso operacional.
 
 [PENDENTE – avaliar o atendimento do objetivo geral e de cada objetivo específico com base nos resultados finais]
@@ -1080,7 +1084,7 @@ WANG, Lei et al. A survey on large language model based autonomous agents. **Fro
 
 ## Anexo A – Termo de Consentimento Livre e Esclarecido
 
-[PENDENTE – incluir no artefato final o TCLE preenchido e aplicável às interações com a comunidade, conforme o Regulamento do PI; não transcrever no Markdown dados pessoais desnecessários]
+[PENDENTE – definir, conforme o Regulamento do PI, a forma de apresentar o TCLE preenchido no artefato acadêmico final fora do Git; para P1, TCLE obtido: SIM, sem transcrever dados pessoais neste Markdown]
 
 [REVISAR – verificar se o documento deve ser apresentado com restrição ou tratamento adicional antes da publicação acadêmica]
 

@@ -31,8 +31,8 @@ Estado funcional:
 - previsão sazonal experimental de CPR.
 
 A incorporação de Ads e ML à V2 decorreu de evolução técnica/acadêmica. A primeira evidência
-real de uso da V2 foi registrada para P2 em `respostas/v2-p2.md`; nenhuma resposta fictícia foi
-atribuída à comunidade.
+real de uso da V2 foi a reavaliação da mesma P1 em `respostas/v2-p1-reavaliacao.md`; nenhuma
+resposta fictícia foi atribuída à comunidade.
 
 Após a validação individual de P1 na V1, o grupo aprovou FB-V1-P1-001. A V2 agora apresenta
 uma evolução temporal consolidada e selecionável em `/v2/captacao`. Essa alteração tem origem
@@ -89,10 +89,11 @@ de Ads, deve-se usar explicitamente `/v2/ads`, `/v2/ads/google`, `/v2/ads/meta` 
 
 ## Validação
 
-P1 utilizou V1 com o questionário curto de Captação e Matrículas. P2 utilizou V2 para avaliar
-Captação, Matrículas e a visualização consolidada. A versão apresentada deve ser registrada
-obrigatoriamente em cada sessão. Notas obtidas em versões diferentes não devem ser tratadas
-como avaliação da mesma interface. O instrumento mais extenso de V2 permanece separado em
+P1, gerente de Marketing, utilizou presencialmente a V1 e reavaliou a V2 em 07/10/2026, após
+a implementação de FB-V1-P1-001; TCLE obtido: SIM. Houve uma participante em dois momentos.
+A versão apresentada deve ser registrada em cada momento. As notas pertencem à mesma pessoa,
+mas a versões e itens diferentes; não constituem comparação quantitativa controlada.
+O instrumento mais extenso de V2 permanece separado em
 `instrumento_validacao_v2.md`; sessões futuras devem registrar versão e seguir o TCLE conforme
 o protocolo definido.
 
@@ -109,7 +110,7 @@ o protocolo definido.
 |---|---|---|---|---|
 | FB-V1-P1-001 | Feedback real P1; implementação aprovada pelo grupo | Gráficos temporais distribuídos | Consolidação de Contatos, Visitas e Matrículas do funil em gráfico temporal multissérie selecionável | V2 |
 
-Evidência posterior: P2 utilizou V2 e relatou que a visualização conjunta facilitou a comparação
-ao longo do tempo; não relatou dificuldades nem solicitou outra alteração neste momento. Trata-se
-de evidência positiva individual de uso, não validação definitiva nem consenso. A expressão
-“qualidade do lead” aparece na resposta de P2 como percepção; não constitui métrica comprovada.
+Evidência posterior: a mesma P1 reavaliou V2 e relatou que a visualização conjunta facilitou a
+comparação ao longo do tempo; não relatou dificuldades nem solicitou outra alteração naquele
+momento. Trata-se de evidência exploratória individual, não validação definitiva. A expressão
+“qualidade do lead” aparece na resposta de P1 como percepção; não constitui métrica comprovada.

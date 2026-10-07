@@ -2,8 +2,9 @@
 
 ## Antes da sessão
 
-- Registrar obrigatoriamente a versão da interface apresentada. Até aqui, P1 utilizou V1 e P2
-  utilizou V2. Não comparar as notas como se as interfaces fossem idênticas.
+- Registrar obrigatoriamente a versão da interface apresentada. A mesma P1 utilizou V1 e,
+  após o ajuste FB-V1-P1-001, reavaliou V2 em 07/10/2026. As notas dos dois momentos não
+  constituem comparação quantitativa controlada entre versões.
 - Na sessão V2, indicar que a evolução temporal consolidada de Captação é posterior à V1.
 - Registrar a fala sobre “qualidade do lead” como percepção do participante; a interface exibe
   séries agregadas e não demonstra, por si, qualidade individual, causalidade ou atribuição.
@@ -39,4 +40,6 @@ também se houve ajuda e em qual momento.
 Registrar a análise da equipe em campo separado e somente após a coleta. Não apresentar
 interpretação, inferência ou proposta do grupo como fala do participante.
 
-P1/P2 são apenas convenções para futuras sessões reais. Não representam respostas existentes.
+P1 identifica a única participante registrada até aqui, gerente de Marketing. Os registros
+`respostas/v1-p1.md` e `respostas/v2-p1-reavaliacao.md` documentam dois momentos presenciais da
+mesma pessoa em 07/10/2026, com TCLE obtido. O formulário assinado fica fora do Git.

@@ -871,9 +871,9 @@ Limite: demonstração válida frente a t−12, não superioridade geral nem pre
 
 Seis respostas reais de P1 registradas em `docs/validacao/respostas/v1-p1.md`: três avaliações
 5/5; preferência por gráficos temporais; observação sobre gráficos em diversos lugares; sugestão
-de gráfico combinado de contatos, visitas e matrículas com seleção de séries. Perfil, data,
-modalidade e condição do TCLE permanecem pendentes de confirmação. A interpretação do grupo
-aguarda demais participantes. Nenhuma alteração funcional foi executada e nenhum resultado foi
+de gráfico combinado de contatos, visitas e matrículas com seleção de séries. Os metadados
+foram posteriormente confirmados: gerente de Marketing, 07/10/2026, presencial, TCLE obtido.
+A interpretação não foi conclusiva. Nenhuma alteração funcional foi executada e nenhum resultado foi
 incorporado ao Relatório Final. Sem dados pessoais, commit, push ou deploy.
 
 ## FB-V1-P1-001 — alteração comunitária aprovada para V2
@@ -882,26 +882,28 @@ O grupo aprovou a sugestão registrada por P1 após a validação da V1. A V2 re
 `/v2/captacao` um gráfico mensal conjunto de contatos, visitas e matrículas do funil com
 seleção independente de séries. Os três gráficos mensais separados foram substituídos somente
 nessa página da V2; os gráficos categóricos e o histórico próprio de Matrículas permanecem.
-P1 utilizou V1; a validação seguinte foi realizada por P2 na V2 e está registrada em
-`docs/validacao/respostas/v2-p2.md`. A alteração comunitária fica separada da evolução técnica
+P1 utilizou V1; a reavaliação da mesma participante na V2 está registrada em
+`docs/validacao/respostas/v2-p1-reavaliacao.md`. A alteração comunitária fica separada da evolução técnica
 de Ads/ML. A resposta original de P1 e o Relatório Final não foram editados.
 
-## Validação V2 — P2 e verificação de FB-V1-P1-001
+## Reavaliação V2 — P1 e verificação de FB-V1-P1-001
 
-Seis respostas reais de P2 registradas em `docs/validacao/respostas/v2-p2.md`: três notas 5/5;
-P2 relatou que a visualização consolidada facilitou a comparação; nenhuma dificuldade foi
+Seis respostas reais da mesma P1 registradas em `docs/validacao/respostas/v2-p1-reavaliacao.md`:
+três notas 5/5; P1 relatou que a visualização consolidada facilitou a comparação; nenhuma dificuldade foi
 relatada e nenhuma nova alteração foi solicitada. A expressão “qualidade do lead” foi preservada
-como percepção de P2, sem tratá-la como métrica comprovada. Nenhuma implementação foi realizada
-nesta execução. Perfil, data, modalidade e TCLE permanecem pendentes de confirmação. O Relatório
+como percepção de P1, sem tratá-la como métrica comprovada. Nenhuma implementação foi realizada
+nesta execução. Os metadados foram confirmados posteriormente: gerente de Marketing, 07/10/2026,
+presencial, TCLE obtido. O Relatório
 Final não foi alterado. Sem dados pessoais, commit, push ou deploy.
 
 ## Incorporação científica do ciclo de validação V1 — V2
 
 O Relatório Final passou a registrar P1/V1, a sugestão FB-V1-P1-001, sua aprovação pelo grupo,
-o ajuste de visualização temporal na V2 e a avaliação posterior por P2/V2. A redação distingue
-as versões e limita os achados às respostas documentadas, sem comparação experimental direta,
-atribuição de qualidade individual de lead ou conclusão global. Perfil, data, modalidade e TCLE
-seguem pendentes. Respostas originais e aplicação não foram alteradas; sem commit, push ou deploy.
+o ajuste de visualização temporal na V2 e a reavaliação posterior pela mesma P1/V2. A redação
+distingue as versões e limita os achados às respostas documentadas, sem comparação experimental
+controlada, atribuição de qualidade individual de lead ou conclusão global. Os metadados da
+participante foram confirmados posteriormente. Respostas originais e aplicação não foram alteradas;
+sem commit, push ou deploy.
 
 ## Consolidação científica dos resultados técnicos — seções 3.1 a 3.4
 
@@ -911,8 +913,8 @@ funcionais de interfaces V1/V2; 3.3 descreve dados sintéticos, contratos, proce
 determinístico, feature gates e reprodução por CLI. 3.4 explicita a mudança comunitária limitada
 ao gráfico de Captação, corrige a nomenclatura de participação de rematrículas, documenta os
 módulos Ads e completa os resultados principal e complementar do experimento sazonal. Testes
-técnicos são apresentados como verificação de software/reprodutibilidade, separados da validação
-P1/V1 e P2/V2. Nenhum código, dataset ou resposta foi alterado; sem commit ou push.
+técnicos são apresentados como verificação de software/reprodutibilidade, separados da avaliação
+P1/V1 e da reavaliação P1/V2. Nenhum código, dataset ou resposta foi alterado; sem commit ou push.
 
 ## Confirmação metodológica do uso de IA assistiva e revisão humana
 
@@ -920,6 +922,16 @@ O Relatório Final registra o uso de IA generativa como apoio ao desenvolvimento
 com revisão humana antes da incorporação das saídas e responsabilidade humana pelas decisões,
 interpretações e validação. Também explicita que as ferramentas não geraram respostas ou evidências
 de participantes. As marcações pendentes sobre essa confirmação foram removidas; demais pendências
-permanecem. P1/P2, aplicação e dados não foram alterados; sem commit ou push.
+permanecem. As respostas de P1, aplicação e dados não foram alterados; sem commit ou push.
+
+## Correção da caracterização da validação — P1 em dois momentos
+
+Confirmado que houve uma única participante: P1, gerente de Marketing, em sessão presencial de
+07/10/2026, com TCLE obtido. P1 avaliou V1, originou FB-V1-P1-001 e, após decisão do grupo e
+implementação do ajuste, reavaliou V2. O registro V2 foi renomeado para
+`docs/validacao/respostas/v2-p1-reavaliacao.md`; respostas originais preservadas. A documentação
+agora descreve dois momentos da mesma pessoa, sem amostra independente. Somente o estado
+`TCLE obtido: SIM` foi versionado; o documento assinado permanece fora do Git. Sem PII, alteração
+funcional, commit ou push.
 
 ---

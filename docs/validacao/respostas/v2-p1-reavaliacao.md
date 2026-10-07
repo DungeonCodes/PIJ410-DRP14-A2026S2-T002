@@ -1,4 +1,4 @@
-# Validação V2 — P2
+# Reavaliação V2 — P1
 
 ## Identificação da sessão
 
@@ -6,11 +6,12 @@
 |---|---|
 | Versão da interface | V2 |
 | Escopo | Captação; Matrículas; validação específica da visualização temporal consolidada |
-| Participante anonimizado | P2 |
-| Perfil | [PENDENTE — confirmar] |
-| Data | [PENDENTE — confirmar] |
-| Modalidade | [PENDENTE — confirmar] |
-| TCLE obtido | [PENDENTE — confirmar] |
+| Participante anonimizado | P1 |
+| Perfil | Gerente de Marketing |
+| Data | 07/10/2026 |
+| Modalidade | Presencial |
+| TCLE obtido | SIM |
+| Momento | Reavaliação da V2 após implementação de FB-V1-P1-001 |
 | Dados apresentados | Sintéticos |
 
 ## Evidência direta
@@ -37,21 +38,21 @@ A versão normalizada é apenas apoio de leitura; a transcrição original perma
 
 ## Síntese factual
 
-- P2 atribuiu 5/5 à compreensão de Captação.
-- P2 atribuiu 5/5 ao uso da seleção das séries.
-- P2 atribuiu 5/5 à compreensão de Matrículas.
-- P2 declarou que a visualização conjunta facilitou a comparação ao longo do tempo.
-- P2 respondeu “Não.” à pergunta sobre dificuldades.
-- P2 respondeu “Por enquanto, tudo ok.” sobre novas alterações ou acréscimos.
+- P1 atribuiu 5/5 à compreensão de Captação na reavaliação da V2.
+- P1 atribuiu 5/5 ao uso da seleção das séries.
+- P1 atribuiu 5/5 à compreensão de Matrículas.
+- P1 declarou que a visualização conjunta facilitou a comparação ao longo do tempo.
+- P1 respondeu “Não.” à pergunta sobre dificuldades.
+- P1 respondeu “Por enquanto, tudo ok.” sobre novas alterações ou acréscimos.
 
 ## Nota metodológica — expressão “qualidade do lead”
 
-P2 utilizou a expressão “qualidade do lead” ao descrever sua leitura da relação entre contatos,
-visitas e matrículas. Essa é uma percepção relatada por P2. A visualização apresenta séries
+P1 utilizou a expressão “qualidade do lead” ao descrever sua leitura da relação entre contatos,
+visitas e matrículas. Essa é uma percepção relatada por P1. A visualização apresenta séries
 agregadas de contatos, visitas e matrículas do funil; não comprova medição de qualidade de lead,
 rastreamento individual, causalidade ou atribuição.
 
-Síntese segura: P2 relatou que a visualização conjunta facilitou a análise da relação entre
+Síntese segura: P1 relatou que a visualização conjunta facilitou a análise da relação entre
 contatos, visitas e matrículas ao longo do tempo.
 
 ## Rastreabilidade de FB-V1-P1-001
@@ -62,15 +63,16 @@ contatos, visitas e matrículas ao longo do tempo.
 | Sugestão | P1 propôs gráfico conjunto selecionável de contatos, visitas e matrículas. |
 | Decisão | O grupo aprovou a sugestão para implementação. |
 | Implementação | V2 consolidou Contatos, Visitas e Matrículas do funil em uma visualização temporal selecionável. |
-| Avaliação posterior | P2 relatou que a consolidação facilitou a comparação ao longo do tempo. |
-| Dificuldade posterior | Nenhuma relatada por P2. |
-| Nova alteração | Nenhuma solicitada por P2 neste momento. |
+| Avaliação posterior | A mesma P1 relatou que a consolidação facilitou a comparação ao longo do tempo. |
+| Dificuldade posterior | Nenhuma relatada por P1. |
+| Nova alteração | Nenhuma solicitada por P1 neste momento. |
 
-Esta evidência individual é positiva quanto ao uso relatado por P2. Não representa validação
-definitiva, consenso de participantes ou eficácia garantida.
+Esta reavaliação da mesma participante traz evidência exploratória positiva sobre o uso do ajuste.
+Não constitui amostra independente, validação definitiva ou eficácia garantida.
 
 ## Relação com o versionamento
 
-P1 utilizou V1. P2 utilizou V2. As notas das duas sessões não devem ser comparadas como se
-ambos tivessem avaliado exatamente a mesma interface. A evidência desta sessão ainda não foi
-incorporada ao Relatório Final.
+P1 utilizou V1 e, após a decisão do grupo e a implementação de FB-V1-P1-001, reavaliou a V2.
+As notas dos dois momentos pertencem à mesma pessoa, mas foram dadas a versões e itens distintos;
+não constituem comparação quantitativa controlada. A evidência deste ciclo foi incorporada ao
+Relatório Final como relato exploratório individual.
