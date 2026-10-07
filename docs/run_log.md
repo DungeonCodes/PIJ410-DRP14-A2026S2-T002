@@ -967,4 +967,14 @@ não foi encontrada nem criada. Restam decisões humanas e montagem editorial; n
 `Relatorio_Final_V1.md`. Sem alteração de código, dados, respostas ou versões; sem deploy, commit
 ou push.
 
+## Resolução documental das entrevistas iniciais — H08 e H12
+
+Confirmação humana: as entrevistas/conversas iniciais tiveram TCLE; a forma de apresentação dos
+documentos permanece pendência editorial do Anexo A, fora do Git. O instrumento autêntico foi
+localizado em `docs/questionario_comunidade_externa.md`, criado em 26/08/2026 para o levantamento
+de necessidades com marketing e direção, conforme histórico e registro anterior deste log.
+O Relatório Final vincula a fonte na metodologia, em 3.1 e no Apêndice A, sem copiar respostas
+para o roteiro nem confundir a entrevista inicial com a validação posterior de P1/V1–P1/V2.
+Nenhuma pergunta, resposta, dado pessoal ou código foi criado ou alterado; sem commit ou push.
+
 ---

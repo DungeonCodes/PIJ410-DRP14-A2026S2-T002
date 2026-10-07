@@ -470,13 +470,18 @@ recebida e ajuste correspondente.
 
 ### 2.5.2 Ouvir e interpretar o contexto
 
-Na etapa de ouvir, foram consolidados os registros das conversas iniciais com profissionais da
-instituição parceira. A escuta identificou a necessidade de compreender quanto investir em tráfego
-pago, avaliar a adequação dos valores investidos, acompanhar indicadores, comparar informações ao
-longo do tempo e organizar dados dispersos. O relato mantém a instituição e os participantes
-anonimizados e não incorpora dados pessoais ou informações comerciais sensíveis.
+Na etapa de ouvir, foram consolidados os registros das entrevistas/conversas iniciais com
+profissionais da instituição parceira, apoiadas pelo questionário estruturado preservado em
+`docs/questionario_comunidade_externa.md`. A escuta identificou a necessidade de compreender
+quanto investir em tráfego pago, avaliar a adequação dos valores investidos, acompanhar
+indicadores, comparar informações ao longo do tempo e organizar dados dispersos. O relato mantém
+a instituição e os participantes anonimizados e não incorpora dados pessoais ou informações
+comerciais sensíveis.
 
-[PENDENTE – confirmação humana do tratamento ético e do consentimento das conversas iniciais usadas no levantamento de necessidades. O TCLE obtido de P1 na validação posterior não comprova esse ponto.]
+As entrevistas iniciais foram realizadas mediante TCLE. O documento de consentimento será tratado
+na composição final dos anexos, fora do repositório público e sem divulgar dados pessoais. Esse
+consentimento refere-se ao levantamento inicial e não se confunde com o TCLE registrado para a
+avaliação posterior de P1.
 
 ### 2.5.3 Definir o problema e os requisitos
 
@@ -677,7 +682,9 @@ com a direção/mantenedora, o grupo buscou identificar informações e indicado
 investimentos e resultados ao longo do tempo. O levantamento inicial também registrou a necessidade
 de reunir dados dispersos, comparar resultados de canais e campanhas e apoiar decisões sobre a
 distribuição do orçamento. Esses pontos orientaram indicadores, comparações e visualizações do
-protótipo; descrevem o contato inicial e não constituem validação ou aprovação da interface.
+protótipo; descrevem o contato inicial e não constituem validação ou aprovação da interface. O
+levantamento foi apoiado pelo questionário estruturado da comunidade externa preservado no
+repositório, distinto dos instrumentos posteriores de validação da V1/V2.
 
 ## 3.2 Estado real das fases do protótipo
 
@@ -1111,7 +1118,7 @@ WANG, Lei et al. A survey on large language model based autonomous agents. **Fro
 
 ## Anexo A – Termo de Consentimento Livre e Esclarecido
 
-[PENDENTE – definir, conforme o Regulamento do PI, a forma de apresentar o TCLE preenchido no artefato acadêmico final fora do Git; para P1, TCLE obtido: SIM, sem transcrever dados pessoais neste Markdown]
+[PENDENTE – definir, conforme o Regulamento do PI, a forma de apresentar no artefato acadêmico final os TCLEs das entrevistas iniciais e da validação posterior de P1, fora do Git e sem transcrever dados pessoais neste Markdown]
 
 [REVISAR – verificar se o documento deve ser apresentado com restrição ou tratamento adicional antes da publicação acadêmica]
 
@@ -1121,9 +1128,15 @@ WANG, Lei et al. A survey on large language model based autonomous agents. **Fro
 
 # APÊNDICES
 
-## Apêndice A – Roteiro de entrevista ou conversa inicial
+## Apêndice A – Roteiro de entrevista inicial
 
-[PENDENTE – consolidar a versão efetivamente aplicada, sem identificação nominal dos participantes]
+O instrumento utilizado no levantamento de necessidades é o
+[Questionário estruturado — comunidade externa](../questionario_comunidade_externa.md), preservado
+no repositório desde 26/08/2026. Ele reúne perguntas comuns à coordenação de marketing e à direção,
+blocos específicos por função e perguntas prospectivas sobre a solução. É distinto dos instrumentos
+posteriores de validação da interface V1/V2. O arquivo de origem contém também respostas
+preenchidas; na composição do apêndice acadêmico, reproduzir somente as perguntas e os campos do
+roteiro, sem respostas ou identificação pessoal.
 
 ## Apêndice B – Instrumento de validação do protótipo
 
