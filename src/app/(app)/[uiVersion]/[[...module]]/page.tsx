@@ -1,6 +1,6 @@
 import { notFound } from 'next/navigation';
 import { isUIVersion } from '@/lib/interface';
-import { moduloDaRota } from '@/lib/fases';
+import { moduloDaRota, rotaHabilitadaNaVersao } from '@/lib/fases';
 import { exigirModuloHabilitado } from '@/lib/gate-servidor';
 import { INTERFACES } from '@/ui';
 
@@ -11,6 +11,7 @@ export default async function VersionPage({ params, searchParams }: {
   const { uiVersion, module: segments = [] } = await params;
   if (!isUIVersion(uiVersion)) notFound();
   const route = segments.length ? `/${segments.join('/')}` : '/';
+  if (!rotaHabilitadaNaVersao(uiVersion, route)) notFound();
   const modulo = moduloDaRota(route);
   if (modulo) exigirModuloHabilitado(modulo.chave);
   const pages = INTERFACES[uiVersion].pages;

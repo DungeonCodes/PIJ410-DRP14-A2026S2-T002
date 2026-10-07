@@ -17,7 +17,8 @@ for (const [nome, conteudo] of [['ads-sintetico.json', dataset], ['google-cpr-ex
   // Precisão registrada explícita; evita dependência de formatação de floats.
   const texto = `${JSON.stringify(conteudo, (_chave, valor) => typeof valor === 'number' ? Number(valor.toFixed(12)) : valor, 2)}\n`;
   if (argumentos.includes('--verificar')) {
-    if (readFileSync(caminho, 'utf8') !== texto) throw new Error(`Artefato divergente: ${nome}`);
+    const versionado = readFileSync(caminho, 'utf8').replace(/\r\n/g, '\n');
+    if (versionado !== texto) throw new Error(`Artefato divergente: ${nome}`);
   } else {
     writeFileSync(caminho, texto, 'utf8');
   }

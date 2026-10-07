@@ -22,7 +22,9 @@ const {
   moduloHabilitado,
   modulosHabilitados,
   modulosDaFase,
+  modulosDaVersao,
   rotaHabilitada,
+  rotaHabilitadaNaVersao,
 } = await import('../src/lib/fases.ts');
 
 let falhas = 0;
@@ -55,6 +57,9 @@ t('todo módulo das Fases 1 e 2 está habilitado',
   MODULOS.filter((m) => m.fase <= 2).every((m) => m.habilitado === true));
 t('todo módulo de fase > 2 está bloqueado',
   MODULOS.filter((m) => m.fase > 2).every((m) => m.habilitado === false));
+t('V1 contém somente Captação e Matrículas',
+  modulosDaVersao('v1').map((m) => m.chave).join(',') === 'captacao,matriculas');
+t('V2 contém as Fases 1 e 2', modulosDaVersao('v2').length === 6);
 t('nenhuma rota do catálogo se repete',
   new Set(MODULOS.map((m) => m.rota)).size === MODULOS.length);
 
@@ -85,6 +90,9 @@ t('fail closed: chave desconhecida NÃO é liberada',
 
 t('rota fora do catálogo não é governada pelo gate',
   rotaHabilitada('/') === true && moduloDaRota('/') === null);
+t('Ads falha fechado na composição V1 e permanece disponível na V2',
+  rotaHabilitadaNaVersao('v1', '/ads/google') === false &&
+  rotaHabilitadaNaVersao('v2', '/ads/google') === true);
 
 // --- 3. AS ROTAS BLOQUEADAS FALHAM FECHADAS ---------------------------------
 console.log('\n3 · Rotas bloqueadas falham fechadas no servidor');
@@ -105,11 +113,17 @@ for (const rota of BLOQUEADAS) {
     !/captacao-data|matriculas-data|fetch\(|process\.env/.test(src));
 }
 
-for (const rota of DISPONIVEIS) {
+for (const rota of ['/captacao', '/matriculas']) {
   const chave = MODULOS.find((m) => m.rota === rota).chave;
   const src = ler('src', 'app', '(app)', ...rota.split('/').filter(Boolean), 'page.tsx');
   t(`${rota} também passa pelo gate (não confia em estar numa fase ativa)`,
     src.includes(`exigirModuloHabilitado('${chave}')`));
+  t(`${rota} não conecta API nem lê credenciais`, !/fetch\(|process\.env/.test(src));
+}
+
+for (const rota of DISPONIVEIS.filter((item) => item.startsWith('/ads'))) {
+  const src = ler('src', 'app', '(app)', ...rota.split('/').filter(Boolean), 'page.tsx');
+  t(`${rota} canônica falha fechada enquanto V1 é corrente`, src.includes('notFound()') && !/redirect\s*\(/.test(src));
   t(`${rota} não conecta API nem lê credenciais`, !/fetch\(|process\.env/.test(src));
 }
 
@@ -137,9 +151,9 @@ function semComentarios(src) {
 
 const nav = semComentarios(ler('src', 'components', 'sidebar-nav.tsx'));
 
-t('sidebar e menu mobile derivam de modulosHabilitados()',
-  (nav.match(/modulosHabilitados\(\)/g) || []).length === 2,
-  `ocorrências no código: ${(nav.match(/modulosHabilitados\(\)/g) || []).length}`);
+t('sidebar e menu mobile derivam da composição da versão',
+  (nav.match(/modulosDaVersao\(version\)/g) || []).length === 2,
+  `ocorrências no código: ${(nav.match(/modulosDaVersao\(version\)/g) || []).length}`);
 
 t('a navegação não tem lista própria de rotas hardcoded',
   !/'\/ads'|'\/organico'|'\/gestao'|'\/arquitetura'/.test(nav));
@@ -165,12 +179,10 @@ for (const rota of BLOQUEADAS) {
   t(`nenhum link interno aponta para ${rota}`, culpados.length === 0, culpados.join(', '));
 }
 
-t('a home lista fases futuras sem transformá-las em link',
+t('a home restringe módulos e fases apresentados conforme a versão',
   (() => {
     const home = ler('src', 'ui', 'v1', 'pages', 'home.tsx');
-    // Os cards clicáveis vêm de modulosHabilitados(); as fases futuras saem
-    // como <li>, não como <Link>.
-    return home.includes('modulosHabilitados()') && home.includes('<li');
+    return home.includes('modulosDaVersao(version)') && home.includes("version === 'v1'");
   })());
 
 // --- 5. IDENTIFICAÇÃO ACADÊMICA ---------------------------------------------

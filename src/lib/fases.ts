@@ -25,7 +25,7 @@
  * Início da adaptação acadêmica. NÃO é a data de criação da arquitetura de
  * referência, que já existia. Ver `docs/migracao-modelo/arquitetura/`.
  */
-import { unversionedPath } from './interface.ts';
+import { unversionedPath, type UIVersion } from './interface.ts';
 
 export const PROJETO_INICIADO_EM = '2026-08-27';
 
@@ -133,6 +133,21 @@ export function rotaHabilitada(pathname: string): boolean {
 /** Somente os módulos que o usuário pode ver e acessar hoje. */
 export function modulosHabilitados(): ModuloAcademico[] {
   return MODULOS.filter((m) => m.habilitado);
+}
+
+/**
+ * Composição histórica de cada interface, independente da capacidade técnica
+ * global. A V1 representa o baseline pré-Ads; a V2 apresenta as Fases 1 e 2.
+ */
+export function modulosDaVersao(version: UIVersion): ModuloAcademico[] {
+  const fasesDaVersao: readonly Fase[] = version === 'v1' ? [1] : [1, 2];
+  return MODULOS.filter((m) => m.habilitado && fasesDaVersao.includes(m.fase));
+}
+
+/** Fail closed para uma rota conhecida que não integra a versão solicitada. */
+export function rotaHabilitadaNaVersao(version: UIVersion, pathname: string): boolean {
+  const modulo = moduloDaRota(pathname);
+  return modulo === null || modulosDaVersao(version).some((m) => m.chave === modulo.chave);
 }
 
 /** Módulos de uma fase. */

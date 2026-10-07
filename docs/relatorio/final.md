@@ -492,11 +492,11 @@ as Fases 3 e 4 permanecem bloqueadas.
 ### 2.5.5 Implementar, testar, validar e ajustar
 
 Para tornar rastreáveis as futuras avaliações, a interface foi identificada por versões.
-V1 é a baseline pré-validação congelada em 06/10/2026; V2 nasceu equivalente e poderá receber
-ajustes selecionados a partir de feedback real. Ambas utilizam os mesmos dados sintéticos,
-métricas, fórmulas e feature gates. A primeira aplicação deve registrar V1, período e filtros;
-V2 recebeu posteriormente, por demanda técnica acadêmica e não por feedback, a demonstração
-sazonal de CPR descrita em 2.5.11. Não foi obtido resultado de comparação comunitária.
+V1 é a baseline inicial pré-Ads e contém somente Captação e Matrículas. V2 incorporou
+posteriormente, por evolução técnica/acadêmica e não por feedback comunitário, os módulos de
+Ads, o experimento CPR e a demonstração sazonal descrita em 2.5.11. Ambas utilizam os mesmos
+dados sintéticos, métricas e fórmulas. A primeira aplicação deve registrar V1, período e filtros
+e não apresentar os conteúdos da V2. Não foi obtido resultado de comparação comunitária.
 
 A implementação disponível será apresentada à comunidade por meio de tarefas orientadas de
 interpretação. A avaliação deverá registrar compreensão dos indicadores, utilidade percebida,
@@ -825,16 +825,17 @@ eficácia real ou capacidade de automatizar investimentos.
 A V2 acrescenta histórico observado sintético, projeção tracejada de fevereiro/2023 a
 janeiro/2024, índice sazonal e comparação dos três métodos. A previsão apresenta altas e
 baixas, não crescimento obrigatório. Valores extremos e estimativas usadas como lags podem
-se propagar pela recursão. V1 e o experimento anterior permanecem preservados. Essa extensão
+se propagar pela recursão. A V1 pré-Ads e os artefatos do experimento permanecem preservados. Essa extensão
 não constitui melhoria solicitada pela comunidade, avaliação dos usuários ou impacto
-institucional; a primeira validação continua exclusivamente V1.
+institucional; a primeira validação continua exclusivamente V1, com Captação e Matrículas.
 
 ### 3.4.5 Testes técnicos
 
 Na ativação local da Fase 2, passaram os testes automatizados de fases, determinismo,
 CPR e reprodução dos artefatos, incluindo 37 verificações de não vazamento, além de lint,
-TypeScript e build. As rotas de Captação, Matrículas e dos quatro módulos de Ads responderam
-HTTP 200; conteúdo orgânico, gestão e arquitetura permaneceram em HTTP 404. Essas verificações
+TypeScript e build. Na V2, as rotas de Captação, Matrículas e dos quatro módulos de Ads responderam
+HTTP 200; na V1, somente Captação e Matrículas responderam 200 e Ads respondeu 404. Conteúdo
+orgânico, gestão e arquitetura permaneceram em HTTP 404. Essas verificações
 técnicas não constituem avaliação pela comunidade ou evidência de impacto institucional.
 
 [PENDENTE – consolidar os testes funcionais, de integridade, determinismo, não vazamento, acessibilidade e demais verificações efetivamente executadas sobre a versão final]

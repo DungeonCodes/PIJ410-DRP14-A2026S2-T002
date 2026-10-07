@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { versionedPath, type UIVersion } from '@/lib/interface';
 import { ArrowUpRight, Lock } from 'lucide-react';
-import { FASES, MODULOS, PROJETO_INICIADO_EM, modulosHabilitados, type Fase } from '@/lib/fases';
+import { FASES, MODULOS, PROJETO_INICIADO_EM, modulosDaVersao, type Fase } from '@/lib/fases';
 import { APP, AVISO_SINTETICO, INSTITUICAO_FICTICIA } from '@/lib/identidade';
 import { META_CAPTACAO } from '@/lib/captacao-data';
 import { PageHeader } from '@/components/metric-card';
@@ -19,7 +19,8 @@ const DESCRICOES: Record<string, string> = {
 };
 
 export default function HomePage({ version }: { version: UIVersion }) {
-  const disponiveis = modulosHabilitados();
+  const disponiveis = modulosDaVersao(version);
+  const fasesVisiveis = version === 'v1' ? FASES_ORDEM.filter((f) => f === 1) : FASES_ORDEM;
   const dataBr = PROJETO_INICIADO_EM.split('-').reverse().join('/');
 
   return (
@@ -96,9 +97,9 @@ export default function HomePage({ version }: { version: UIVersion }) {
         </div>
 
         <div className="space-y-3">
-          {FASES_ORDEM.map((f) => {
+          {fasesVisiveis.map((f) => {
             const doGrupo = MODULOS.filter((m) => m.fase === f);
-            const ativa = FASES[f].situacao === 'ativa';
+            const ativa = disponiveis.some((m) => m.fase === f);
             return (
               <div
                 key={f}
