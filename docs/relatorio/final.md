@@ -659,14 +659,13 @@ A ativação técnica não constitui validação comunitária nem novo deploy.
 
 ## 3.1 Contato inicial e necessidades identificadas
 
-O contato inicial com a gestora de marketing evidenciou a necessidade de compreender quanto deveria
-ser investido em tráfego pago e de avaliar se os valores investidos eram adequados aos objetivos da
-instituição.
-
-No contato com a direção, buscou-se compreender quais informações, indicadores e percepções seriam
-necessários para apresentar e acompanhar os investimentos e os resultados ao longo do tempo. Essas
-necessidades orientaram a organização inicial dos indicadores, das comparações, das visualizações e
-da estrutura da interface, sem constituir validação ou aprovação do protótipo.
+Na conversa inicial, a gestora de marketing apresentou a necessidade de compreender quanto investir
+em tráfego pago e avaliar a adequação dos valores aos objetivos da instituição. Em contato posterior
+com a direção/mantenedora, o grupo buscou identificar informações e indicadores para acompanhar os
+investimentos e resultados ao longo do tempo. O levantamento inicial também registrou a necessidade
+de reunir dados dispersos, comparar resultados de canais e campanhas e apoiar decisões sobre a
+distribuição do orçamento. Esses pontos orientaram indicadores, comparações e visualizações do
+protótipo; descrevem o contato inicial e não constituem validação ou aprovação da interface.
 
 ## 3.2 Estado real das fases do protótipo
 
@@ -679,26 +678,35 @@ da estrutura da interface, sem constituir validação ou aprovação do protóti
 
 Fonte: Elaborado pelo grupo com base no estado versionado do repositório (2026).
 
+As fases organizam a disponibilidade funcional; V1 e V2 identificam composições históricas da
+interface. V1 continha somente os módulos da Fase 1. V2 preserva a Fase 1 e acrescenta a Fase 2,
+incluindo os quatro módulos de Ads e as demonstrações acadêmicas de CPR. A consolidação temporal
+em Captação é uma alteração comunitária específica da V2 (FB-V1-P1-001); Ads e os experimentos de
+CPR tiveram origem técnica/acadêmica. Portanto, V2 não é sinônimo de Fase 2. As Fases 3 e 4
+continuam bloqueadas; não há Fase 5.
+
 [REVISAR – atualizar esta tabela antes de cada versão numerada do Relatório Final]
 
 ## 3.3 Estratégia incremental e arquitetura da solução
 
-A aplicação web acadêmica é independente do ambiente operacional da instituição. A Fase 1 tornou-se
-funcional em 27/08/2026 e disponibiliza Captação e Matrículas. Em 06/10/2026, a Fase 2 foi
-ativada e verificada localmente, acrescentando os quatro módulos de Ads. Os módulos apresentam
-relatórios, indicadores e visualizações baseados em dados sintéticos e não mantêm conexão com
-contas de anúncios, CRM, sistema acadêmico ou base real da instituição parceira.
+O projeto implementa uma aplicação web acadêmica independente do ambiente operacional. Dados
+sintéticos versionados são lidos por contratos locais, agregados por rotinas determinísticas e
+apresentados em interface Next.js/TypeScript. Um feature gate central controla a disponibilidade
+funcional das fases; a composição versionada mantém V1 restrita à Fase 1 e V2 com as Fases 1 e 2.
+Os experimentos de CPR são reproduzidos pela CLI e seus artefatos são apresentados em Google Ads
+na V2, sem treinamento no navegador. Não há integração operacional com contas de anúncios, CRM,
+sistema acadêmico ou base real da instituição.
 
 ```text
-dados sintéticos das Fases 1 e 2
+datasets sintéticos versionados e contratos analíticos locais
         ↓
-inventário, limpeza e padronização
+leitura, validação e agregação determinística
         ↓
-indicadores determinísticos
+feature gate funcional + composição V1/V2
         ↓
-Captação, Matrículas e Ads na interface web
+V1: Captação e Matrículas | V2: Captação, Matrículas e Ads
         ↓
-validação exploratória por P1 na V1 e P2 na V2; consolidação final [PENDENTE]
+CLI CPR → artefatos reproduzíveis → apresentação em Google Ads na V2
 ```
 
 Figura [numeração pendente] – Arquitetura e fluxo de dados da solução acadêmica
@@ -717,9 +725,11 @@ as etapas do funil. Os valores pertencem ao cenário acadêmico determinístico 
 resultados da instituição parceira.
 
 Além da visão agregada, o módulo disponibiliza séries mensais, distribuição da situação dos
-contatos, origem declarada e comparativo por safra. Esses recursos tornam visíveis diferentes
-recortes do cenário e preservam a distinção entre valores observados no conjunto sintético e dados
-ausentes.
+contatos, origem declarada e comparativo por safra. Na V1, Contatos, Visitas e Matrículas apareciam
+em gráficos temporais separados. A V2 substituiu somente esses gráficos por uma evolução temporal
+consolidada, com seleção independente das três séries, em resposta ao feedback FB-V1-P1-001.
+As demais visualizações de funil, situação e origem permanecem distintas. Os dados são sintéticos;
+a origem declarada não prova atribuição a anúncios ou causalidade.
 
 Figura [numeração pendente] – Visão final do módulo de Captação
 
@@ -737,12 +747,13 @@ Fonte: Elaborado pelo grupo (2026).
 
 O módulo de Matrículas apresenta histórico sintético por safra, ciclo, turma e mês. A interface
 permite filtrar os recortes e distinguir total de matrículas, rematrículas, novas matrículas e
-participação de rematrículas no total da safra atual. Essa participação não é retenção de coorte;
-o protótipo não dispõe da população elegível anterior necessária para calcular essa retenção.
+participação de rematrículas no total da safra atual.
 
 As visualizações complementares discriminam a composição por ciclo e turma, a efetivação mensal e
-a tabela de participação de rematrículas por safra. A organização mantém separados os valores calculados, as contagens
-sintéticas e os casos em que não há base de comparação.
+a participação de rematrículas por safra. O percentual apresentado corresponde à participação das
+rematrículas no total atual das safras classificáveis; apesar do nome legado no campo interno, não
+é retenção de coorte. A aplicação não calcula evasão nem continuidade individual entre safras.
+Contagens, cálculos e casos sem base de comparação permanecem distintos.
 
 Figura [numeração pendente] – Visão final do módulo de Matrículas
 
@@ -758,20 +769,22 @@ Fonte: Elaborado pelo grupo (2026).
 
 ### 3.4.3 Módulos de Ads e componentes ainda planejados
 
-A Fase 2 disponibiliza localmente visão geral, Google Ads, Meta Ads e Estratégia, mantendo a
-identidade acadêmica e os dados sintéticos. Google Ads apresenta investimento, impressões,
-cliques, conversões registradas, CTR, CPC, CPM e CPR, com filtros de ano-calendário fictício
-e campanha, além de série mensal de CPR. A granularidade é mensal, sem filtros diários artificiais.
+A V2 disponibiliza localmente Visão Geral Ads, Google Ads, Meta Ads e Estratégia, todos com dados
+sintéticos. Não há integração com Google Ads API, Meta API ou CRM. Google Ads apresenta
+investimento, impressões, cliques, conversões registradas, CTR, CPC, CPM e CPR, com filtros de
+ano-calendário fictício e campanha e série mensal de CPR. CPR = investimento / conversões
+registradas; não significa custo por matrícula ou lead único e não demonstra atribuição causal.
+A granularidade é mensal, sem filtros diários artificiais.
 
-Na visão geral, a comparação entre canais se limita a investimentos em períodos compatíveis;
-resultados com denominadores distintos não são tratados como equivalentes. Meta Ads separa
-conversas e interações e seus custos por resultado, sem ML. Ausências tornam o agregado
-incompleto. Estratégia apresenta gastos por canal e comparação determinística com uma premissa
-mensal sintética de R$ 10.000, explicitamente fictícia e sem recomendação ou execução de campanhas.
+Na Visão Geral, a comparação entre canais se limita a investimentos em períodos compatíveis;
+resultados com denominadores distintos não são tratados como equivalentes. Meta Ads mantém
+separados os resultados e custos por conversa e por interação; ausência de métrica produz valor
+indisponível/agregado incompleto, não zero. Meta Ads não utiliza ML. Estratégia compara gastos
+por canal com uma premissa mensal sintética de R$ 10.000 e apresenta gasto do último mês selecionado,
+saldo e percentual de execução. Esse orçamento é fictício, não aprovado, ideal ou recomendação
+automática; não há otimização nem execução de campanhas.
 
 [PENDENTE – atualizar somente após implementação comprovada de conteúdo orgânico, Objetivo da Gestão ou Arquitetura e Algoritmos]
-
-[PENDENTE – registrar funcionalidades, filtros, indicadores, algoritmos e visualizações efetivamente concluídos, sem converter scaffolding ou planejamento em resultado]
 
 ### 3.4.4 Experimento de aprendizagem de máquina para CPR
 
@@ -779,7 +792,9 @@ O experimento descrito em 2.5.11 foi efetivamente executado e pode ser reproduzi
 via CLI. Os artefatos sintéticos registram condições de execução, amostras e previsões.
 O treinamento permanece separado da interface: a Fase 2 acadêmica está ativa localmente e
 Google Ads exibe o artefato de resultados, independente dos filtros de consulta. Não há treinamento
-no navegador, inferência operacional ou recomendação automática. Não foram utilizados dados operacionais ou APIs reais.
+no navegador, inferência operacional ou recomendação automática. O target é CPR = investimento /
+conversões registradas; não representa custo por matrícula ou lead único. Não foram utilizados
+dados operacionais ou APIs reais.
 
 | Modelo | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -805,7 +820,12 @@ Fonte: Elaborado pelo grupo (2026).
 #### Previsão sazonal mensal — extensão técnica exclusiva V2
 
 O experimento sazonal separado foi efetivamente executado e reproduzido pela CLI sobre o
-dataset sintético existente. No holdout recursivo de 2022, foram obtidos:
+dataset sintético existente de janeiro/2017 a janeiro/2023. O CPR mensal é calculado como soma
+do investimento dividida pela soma das conversões registradas, quando a cobertura mensal é válida;
+71 dos 73 meses do calendário têm CPR consolidado válido. O modelo OLS usa seno e cosseno do mês,
+índice temporal e CPR t−2/t−12 como features. Não há variáveis contemporâneas ao alvo; t−1 é
+excluído pela hipótese sintética de maturação de 14 dias. O holdout recursivo de 12 meses em 2022
+é a avaliação principal e produziu:
 
 | Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -815,29 +835,39 @@ dataset sintético existente. No holdout recursivo de 2022, foram obtidos:
 
 Fonte: Elaborado pelo grupo a partir da execução sintética (2026).
 
-A regressão superou t−12, reduzindo MAE em 17,67% e RMSE em 7,27%, mas foi inferior à
-persistência t−2 e apresentou R² negativo. No rolling origin complementar de um passo, a
-regressão obteve MAE 6,335071, RMSE 12,541304 e R² 0,013138; o protocolo não é equivalente
-à projeção simultânea de 12 meses. Portanto, não há evidência de bom poder explicativo,
-eficácia real ou capacidade de automatizar investimentos.
+A regressão superou o baseline sazonal t−12, com MAE 17,67% e RMSE 7,27% menores, mas não superou
+a persistência t−2. O R² negativo e os erros observados indicam baixo poder explicativo neste
+experimento sintético. O rolling origin mensal de um passo é análise complementar, não substitui
+o holdout principal:
 
-A V2 acrescenta histórico observado sintético, projeção tracejada de fevereiro/2023 a
-janeiro/2024, índice sazonal e comparação dos três métodos. A previsão apresenta altas e
-baixas, não crescimento obrigatório. Valores extremos e estimativas usadas como lags podem
-se propagar pela recursão. A V1 pré-Ads e os artefatos do experimento permanecem preservados. Essa extensão
-não constitui melhoria solicitada pela comunidade, avaliação dos usuários ou impacto
-institucional; a primeira interação de P1 utilizou exclusivamente V1, com Captação e Matrículas.
+| Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
+|---|---:|---:|---:|
+| Persistência t−2 | 7,332367 | 12,576527 | 0,007587 |
+| Sazonal t−12 | 8,321915 | 12,633565 | −0,001435 |
+| Regressão linear | 6,335071 | 12,541304 | 0,013138 |
+
+Os dois protocolos medem horizontes distintos. Nenhum resultado demonstra eficácia real ou
+capacidade de automatizar investimentos.
+
+Na análise descritiva retrospectiva, dezembro apresentou o maior índice sazonal (1,214), outubro
+também ficou acima da média (1,131) e junho abaixo (0,893). O índice compara médias históricas
+mensais com a média global; não é ML nem demonstra sazonalidade estável.
+
+A V2 apresenta histórico sintético e projeção experimental recursiva de fevereiro/2023 a
+janeiro/2024, além do índice sazonal e da comparação dos métodos. As maiores projeções são para
+dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativas do
+cenário, não resultados futuros observados. Valores extremos e lags previstos podem se propagar
+pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
+FB-V1-P1-001 refere-se somente ao gráfico consolidado de Captação.
 
 ### 3.4.5 Testes técnicos
 
-Na ativação local da Fase 2, passaram os testes automatizados de fases, determinismo,
-CPR e reprodução dos artefatos, incluindo 37 verificações de não vazamento, além de lint,
-TypeScript e build. Na V2, as rotas de Captação, Matrículas e dos quatro módulos de Ads responderam
-HTTP 200; na V1, somente Captação e Matrículas responderam 200 e Ads respondeu 404. Conteúdo
-orgânico, gestão e arquitetura permaneceram em HTTP 404. Essas verificações
-técnicas não constituem avaliação pela comunidade ou evidência de impacto institucional.
-
-[PENDENTE – consolidar os testes funcionais, de integridade, determinismo, não vazamento, acessibilidade e demais verificações efetivamente executadas sobre a versão final]
+Na verificação técnica registrada em 06/10/2026, passaram `npm test`, lint, TypeScript, build,
+os verificadores dos dois experimentos CPR e 38 verificações de não vazamento. Quarenta
+verificações HTTP locais cobriram as rotas V1/V2, o acesso da extensão sazonal somente na V2 e as
+rotas bloqueadas das Fases 3 e 4. A reprodução dos experimentos foi comparada byte a byte aos
+artefatos versionados. Esses testes verificam software e reprodutibilidade; não equivalem à
+validação comunitária realizada por P1/V1 e P2/V2 nem demonstram impacto institucional.
 
 Figura [numeração pendente] – Evidência dos resultados de testes da versão final
 

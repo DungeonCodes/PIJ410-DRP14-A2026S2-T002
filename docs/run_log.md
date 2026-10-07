@@ -903,4 +903,15 @@ as versões e limita os achados às respostas documentadas, sem comparação exp
 atribuição de qualidade individual de lead ou conclusão global. Perfil, data, modalidade e TCLE
 seguem pendentes. Respostas originais e aplicação não foram alteradas; sem commit, push ou deploy.
 
+## Consolidação científica dos resultados técnicos — seções 3.1 a 3.4
+
+O Relatório Final foi revisado contra o Plano de Ação, ADRs, arquitetura, código, artefatos CPR e
+registros de execução. 3.1 mantém somente necessidades do contato inicial; 3.2 distingue fases
+funcionais de interfaces V1/V2; 3.3 descreve dados sintéticos, contratos, processamento
+determinístico, feature gates e reprodução por CLI. 3.4 explicita a mudança comunitária limitada
+ao gráfico de Captação, corrige a nomenclatura de participação de rematrículas, documenta os
+módulos Ads e completa os resultados principal e complementar do experimento sazonal. Testes
+técnicos são apresentados como verificação de software/reprodutibilidade, separados da validação
+P1/V1 e P2/V2. Nenhum código, dataset ou resposta foi alterado; sem commit ou push.
+
 ---
