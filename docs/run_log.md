@@ -952,4 +952,19 @@ decisões reais de orçamento. A síntese explicita que Ads/ML não foram avalia
 registra limites e trabalhos futuros como possibilidades. Nenhuma evidência nova, resposta, código,
 dataset ou versão da aplicação foi alterada; sem commit ou push.
 
+## Auditoria final de pendências e capturas locais da interface
+
+O Relatório Final foi varrido integralmente. A pendência genérica de demais evidências e testes foi
+removida por estar superada pelos registros P1/V1–P1/V2 e verificações técnicas documentadas.
+A conferência dos objetivos específicos registrou a ausência de execução documentada de cenários
+de simulação com IA agêntica via CLI. O consentimento das conversas iniciais permanece dependente
+de confirmação humana, sem inferência a partir do TCLE de P1. Marcadores opcionais de figuras de
+testes e do experimento CPR inicial, além do marcador de atualização futura das Fases 3 e 4,
+foram retirados sem alterar resultados. Nove capturas reais da aplicação local em Chrome/Playwright
+(1600×900, dados sintéticos) documentam V1 e V2; seis foram vinculadas ao relatório. Build,
+teste de interface e verificação de não vazamento passaram. Fotografia da sessão presencial
+não foi encontrada nem criada. Restam decisões humanas e montagem editorial; não foi criado
+`Relatorio_Final_V1.md`. Sem alteração de código, dados, respostas ou versões; sem deploy, commit
+ou push.
+
 ---

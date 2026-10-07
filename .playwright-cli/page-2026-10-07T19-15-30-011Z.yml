@@ -1,0 +1,208 @@
+- generic [active] [ref=f3e1]:
+  - generic [ref=f3e2]:
+    - complementary [ref=f3e3]:
+      - link [ref=f3e4] [cursor=pointer]:
+        - /url: /v2
+        - paragraph [ref=f3e5]: UNIVESP · 2026 · 2º semestre
+        - heading "Painel Analítico Acadêmico" [level=1] [ref=f3e6]
+        - paragraph [ref=f3e7]: PIJ410 — Projeto Integrador em Computação III
+      - generic [ref=f3e8]:
+        - generic [ref=f3e9]: Ambiente acadêmico · dados sintéticos
+        - paragraph [ref=f3e12]: "Versão de interface: V2"
+      - navigation "Módulos disponíveis" [ref=f3e13]:
+        - link "Captação" [ref=f3e14] [cursor=pointer]:
+          - /url: /v2/captacao
+        - link "Matrículas" [ref=f3e15] [cursor=pointer]:
+          - /url: /v2/matriculas
+        - group [ref=f3e16]:
+          - paragraph [ref=f3e17]: Ads
+          - generic [ref=f3e18]:
+            - link "Visão geral" [ref=f3e19] [cursor=pointer]:
+              - /url: /v2/ads
+            - link "Google Ads" [ref=f3e20] [cursor=pointer]:
+              - /url: /v2/ads/google
+            - link "Meta Ads" [ref=f3e21] [cursor=pointer]:
+              - /url: /v2/ads/meta
+            - link "Estratégia" [ref=f3e22] [cursor=pointer]:
+              - /url: /v2/ads/estrategia
+      - generic [ref=f3e23]:
+        - generic [ref=f3e24]:
+          - paragraph [ref=f3e25]: Cenário
+          - paragraph [ref=f3e26]: Instituição Educacional Alfa
+          - paragraph [ref=f3e27]: entidade fictícia · cenário de demonstração
+        - paragraph [ref=f3e28]: Adaptação acadêmica iniciada em 27/08/2026. Rollout por fases.
+    - main [ref=f3e29]:
+      - generic [ref=f3e31]:
+        - generic [ref=f3e32]:
+          - paragraph [ref=f3e33]: Fase 1 · módulo ativo
+          - heading "Funil de Captação" [level=1] [ref=f3e34]
+          - generic [ref=f3e35]: Comparando 2 safras · 764 contatos no recorte · 2.021 no cenário completo. Todos os números são sintéticos e determinísticos.
+          - generic [ref=f3e36]:
+            - generic [ref=f3e37]:
+              - generic [ref=f3e38]: Cenário
+              - generic [aria-hidden] [ref=f3e39]: ·
+              - generic [ref=f3e40]: cenario-alfa-1 · semente pij410-alfa-2026
+            - generic [ref=f3e41]:
+              - generic [ref=f3e42]: Dataset gerado em
+              - generic [aria-hidden] [ref=f3e43]: ·
+              - generic [ref=f3e44]: 27/08/2026
+            - generic [ref=f3e45]:
+              - generic [ref=f3e46]: Cronologia fictícia até
+              - generic [aria-hidden] [ref=f3e47]: ·
+              - generic [ref=f3e48]: 15/08/2026
+        - generic [ref=f3e49]:
+          - generic [ref=f3e50]:
+            - generic [ref=f3e51]: Safra
+            - link "2022" [ref=f3e52] [cursor=pointer]:
+              - /url: /v2/captacao?safras=2025%2C2026%2C2022
+            - link "2023" [ref=f3e53] [cursor=pointer]:
+              - /url: /v2/captacao?safras=2025%2C2026%2C2023
+            - link "2024" [ref=f3e54] [cursor=pointer]:
+              - /url: /v2/captacao?safras=2025%2C2026%2C2024
+            - link "2025" [ref=f3e55] [cursor=pointer]:
+              - /url: /v2/captacao?safras=2026
+            - link "2026" [ref=f3e56] [cursor=pointer]:
+              - /url: /v2/captacao?safras=2025
+          - generic [ref=f3e57]:
+            - generic [ref=f3e58]: Ciclo
+            - link "Educação Infantil" [ref=f3e59] [cursor=pointer]:
+              - /url: /v2/captacao?ciclos=EF-I%2CEF-II%2CEM
+            - link "Fundamental Anos Iniciais" [ref=f3e60] [cursor=pointer]:
+              - /url: /v2/captacao?ciclos=EI%2CEF-II%2CEM
+            - link "Fundamental Anos Finais" [ref=f3e61] [cursor=pointer]:
+              - /url: /v2/captacao?ciclos=EI%2CEF-I%2CEM
+            - link "Ensino Médio" [ref=f3e62] [cursor=pointer]:
+              - /url: /v2/captacao?ciclos=EI%2CEF-I%2CEF-II
+        - generic [ref=f3e63]:
+          - generic [ref=f3e64]:
+            - paragraph [ref=f3e65]: Contatos
+            - paragraph [ref=f3e66]: "764"
+            - paragraph [ref=f3e67]: Entradas no funil
+          - generic [ref=f3e68]:
+            - paragraph [ref=f3e69]: Visitas
+            - paragraph [ref=f3e70]: "201"
+            - paragraph [ref=f3e71]: 26.3% dos contatos
+          - generic [ref=f3e72]:
+            - paragraph [ref=f3e73]: Matrículas
+            - paragraph [ref=f3e74]: "89"
+            - paragraph [ref=f3e75]: 44.3% das visitas
+          - generic [ref=f3e76]:
+            - paragraph [ref=f3e77]: Perdidos
+            - paragraph [ref=f3e78]: "314"
+            - paragraph [ref=f3e79]: Encerrados sem matrícula
+        - region [ref=f3e80]:
+          - heading "Evolução temporal" [level=2] [ref=f3e81]
+          - paragraph [ref=f3e82]: Contagens mensais do mesmo funil sintético de Captação, por safra e ciclo selecionados. Matrículas do funil não são o total histórico do módulo Matrículas. Linha interrompida significa ausência de observação, não zero.
+          - group "Séries exibidas na evolução temporal" [ref=f3e83]:
+            - generic [ref=f3e84]: Séries exibidas
+            - generic [ref=f3e85] [cursor=pointer]:
+              - checkbox "Contatos" [checked] [ref=f3e86]
+              - text: Contatos
+            - generic [ref=f3e88] [cursor=pointer]:
+              - checkbox "Visitas" [checked] [ref=f3e89]
+              - text: Visitas
+            - generic [ref=f3e91] [cursor=pointer]:
+              - checkbox "Matrículas do funil" [checked] [ref=f3e92]
+              - text: Matrículas do funil
+          - 'img "Evolução temporal mensal. Séries visíveis: Contatos, Visitas, Matrículas do funil." [ref=f3e94]':
+            - application [ref=f3e97]:
+              - generic [ref=f3e111]:
+                - generic [ref=f3e112]:
+                  - generic [ref=f3e113]: Fev/2025
+                  - generic [ref=f3e115]: Abr/2025
+                  - generic [ref=f3e117]: Jun/2025
+                  - generic [ref=f3e119]: Ago/2025
+                  - generic [ref=f3e121]: Out/2025
+                  - generic [ref=f3e123]: Dez/2025
+                  - generic [ref=f3e125]: Fev/2026
+                  - generic [ref=f3e127]: Abr/2026
+                  - generic [ref=f3e129]: Jun/2026
+                  - generic [ref=f3e131]: Ago/2026
+                  - generic [ref=f3e133]: Out/2026
+                  - generic [ref=f3e135]: Dez/2026
+                - generic [ref=f3e137]:
+                  - generic [ref=f3e138]: "0"
+                  - generic [ref=f3e140]: "20"
+                  - generic [ref=f3e142]: "40"
+                  - generic [ref=f3e144]: "60"
+                  - generic [ref=f3e146]: "80"
+        - generic [ref=f3e148]:
+          - generic [ref=f3e149]:
+            - heading "Funil de captação" [level=3] [ref=f3e150]
+            - paragraph [ref=f3e151]: Taxas calculadas dos volumes ao lado — não são campos independentes.
+            - generic [ref=f3e152]:
+              - generic [ref=f3e153]:
+                - generic [ref=f3e154]:
+                  - generic [ref=f3e155]: Contatos
+                  - generic [ref=f3e156]: "764"
+                - paragraph [ref=f3e159]: ↓ 26.3% contato → visita
+              - generic [ref=f3e160]:
+                - generic [ref=f3e161]:
+                  - generic [ref=f3e162]: Visitas
+                  - generic [ref=f3e163]: "201"
+                - paragraph [ref=f3e166]: ↓ 44.3% visita → matrícula
+              - generic [ref=f3e168]:
+                - generic [ref=f3e169]: Matrículas
+                - generic [ref=f3e170]: "89"
+          - generic [ref=f3e173]:
+            - heading "Situação dos contatos no recorte" [level=3] [ref=f3e174]
+            - application [ref=f3e177]:
+              - generic [ref=f3e181]:
+                - generic [ref=f3e182]:
+                  - generic [ref=f3e183]: "0"
+                  - generic [ref=f3e185]: "80"
+                  - generic [ref=f3e187]: "160"
+                  - generic [ref=f3e189]: "240"
+                  - generic [ref=f3e191]: "320"
+                - generic [ref=f3e193]:
+                  - generic [ref=f3e194]: Matriculado
+                  - generic [ref=f3e196]: Emnegociação
+                  - generic [ref=f3e198]: Sem avanço
+                  - generic [ref=f3e200]: Perdido
+                  - generic [ref=f3e202]: Semclassificação
+        - generic [ref=f3e204]:
+          - heading "Origem declarada do contato" [level=3] [ref=f3e205]
+          - paragraph [ref=f3e206]: Categorias fictícias do cenário. Origem declarada não prova atribuição a anúncios ou causalidade.
+          - application [ref=f3e209]:
+            - generic [ref=f3e213]:
+              - generic [ref=f3e214]:
+                - generic [ref=f3e215]: Telefone
+                - generic [ref=f3e217]: Visita espontânea
+                - generic [ref=f3e219]: Redes sociais
+                - generic [ref=f3e221]: Site
+                - generic [ref=f3e223]: Indicação
+              - generic [ref=f3e225]:
+                - generic [ref=f3e226]: "0"
+                - generic [ref=f3e228]: "50"
+                - generic [ref=f3e230]: "100"
+                - generic [ref=f3e232]: "150"
+                - generic [ref=f3e234]: "200"
+        - generic [ref=f3e236]:
+          - heading "Comparativo por safra" [level=3] [ref=f3e237]
+          - paragraph [ref=f3e238]: Cada taxa é recalculada dos volumes da própria linha.
+          - table [ref=f3e240]:
+            - rowgroup [ref=f3e241]:
+              - row [ref=f3e242]:
+                - columnheader "Safra" [ref=f3e243]
+                - columnheader "Contatos" [ref=f3e244]
+                - columnheader "Visitas" [ref=f3e245]
+                - columnheader "Matrículas" [ref=f3e246]
+                - columnheader "c→v" [ref=f3e247]
+                - columnheader "v→m" [ref=f3e248]
+            - rowgroup [ref=f3e249]:
+              - row [ref=f3e250]:
+                - cell "2025" [ref=f3e251]
+                - cell "468" [ref=f3e252]
+                - cell "122" [ref=f3e253]
+                - cell "56" [ref=f3e254]
+                - cell "26.1%" [ref=f3e255]
+                - cell "45.9%" [ref=f3e256]
+              - row [ref=f3e257]:
+                - cell "2026" [ref=f3e258]
+                - cell "296" [ref=f3e259]
+                - cell "79" [ref=f3e260]
+                - cell "33" [ref=f3e261]
+                - cell "26.7%" [ref=f3e262]
+                - cell "41.8%" [ref=f3e263]
+  - alert [ref=f3e264]
+  - generic [aria-hidden] [ref=f3e265]: "50"

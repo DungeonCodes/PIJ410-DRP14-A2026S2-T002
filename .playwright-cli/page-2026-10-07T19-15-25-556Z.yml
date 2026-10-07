@@ -1,0 +1,217 @@
+- generic [active] [ref=f2e1]:
+  - generic [ref=f2e2]:
+    - complementary [ref=f2e3]:
+      - link [ref=f2e4] [cursor=pointer]:
+        - /url: /v1
+        - paragraph [ref=f2e5]: UNIVESP · 2026 · 2º semestre
+        - heading "Painel Analítico Acadêmico" [level=1] [ref=f2e6]
+        - paragraph [ref=f2e7]: PIJ410 — Projeto Integrador em Computação III
+      - generic [ref=f2e8]:
+        - generic [ref=f2e9]: Ambiente acadêmico · dados sintéticos
+        - paragraph [ref=f2e12]: "Versão de interface: V1"
+      - navigation "Módulos disponíveis" [ref=f2e13]:
+        - link "Captação" [ref=f2e14] [cursor=pointer]:
+          - /url: /v1/captacao
+        - link "Matrículas" [ref=f2e15] [cursor=pointer]:
+          - /url: /v1/matriculas
+      - generic [ref=f2e16]:
+        - generic [ref=f2e17]:
+          - paragraph [ref=f2e18]: Cenário
+          - paragraph [ref=f2e19]: Instituição Educacional Alfa
+          - paragraph [ref=f2e20]: entidade fictícia · cenário de demonstração
+        - paragraph [ref=f2e21]: Adaptação acadêmica iniciada em 27/08/2026. Rollout por fases.
+    - main [ref=f2e22]:
+      - generic [ref=f2e24]:
+        - generic [ref=f2e25]:
+          - paragraph [ref=f2e26]: Fase 1 · módulo ativo
+          - heading "Matrículas (Histórico)" [level=1] [ref=f2e27]
+          - generic [ref=f2e28]:
+            - text: 1.480 matrículas no recorte, sobre um cenário fictício de 5 safras (2022–2026). O dataset guarda apenas
+            - strong [ref=f2e29]: contagens
+            - text: por safra, ciclo, turma e mês — nenhuma pessoa é representada.
+          - generic [ref=f2e30]:
+            - generic [ref=f2e31]:
+              - generic [ref=f2e32]: Cenário
+              - generic [aria-hidden] [ref=f2e33]: ·
+              - generic [ref=f2e34]: cenario-alfa-1 · semente pij410-alfa-2026
+            - generic [ref=f2e35]:
+              - generic [ref=f2e36]: Dataset gerado em
+              - generic [aria-hidden] [ref=f2e37]: ·
+              - generic [ref=f2e38]: 27/08/2026
+            - generic [ref=f2e39]:
+              - generic [ref=f2e40]: Cronologia fictícia
+              - generic [aria-hidden] [ref=f2e41]: ·
+              - generic [ref=f2e42]: 2022–2026
+        - generic [ref=f2e43]:
+          - generic [ref=f2e44]:
+            - generic [ref=f2e45]: Safra
+            - link "2022" [ref=f2e46] [cursor=pointer]:
+              - /url: /v1/matriculas?safras=2025%2C2026%2C2022
+            - link "2023" [ref=f2e47] [cursor=pointer]:
+              - /url: /v1/matriculas?safras=2025%2C2026%2C2023
+            - link "2024" [ref=f2e48] [cursor=pointer]:
+              - /url: /v1/matriculas?safras=2025%2C2026%2C2024
+            - link "2025" [ref=f2e49] [cursor=pointer]:
+              - /url: /v1/matriculas?safras=2026
+            - link "2026" [ref=f2e50] [cursor=pointer]:
+              - /url: /v1/matriculas?safras=2025
+          - generic [ref=f2e51]:
+            - generic [ref=f2e52]: Ciclo
+            - link "Educação Infantil" [ref=f2e53] [cursor=pointer]:
+              - /url: /v1/matriculas?ciclos=EF-I%2CEF-II%2CEM
+            - link "Fundamental Anos Iniciais" [ref=f2e54] [cursor=pointer]:
+              - /url: /v1/matriculas?ciclos=EI%2CEF-II%2CEM
+            - link "Fundamental Anos Finais" [ref=f2e55] [cursor=pointer]:
+              - /url: /v1/matriculas?ciclos=EI%2CEF-I%2CEM
+            - link "Ensino Médio" [ref=f2e56] [cursor=pointer]:
+              - /url: /v1/matriculas?ciclos=EI%2CEF-I%2CEF-II
+        - generic [ref=f2e57]:
+          - generic [ref=f2e58]:
+            - paragraph [ref=f2e59]: Total
+            - paragraph [ref=f2e60]: "1.480"
+            - paragraph [ref=f2e61]: Matrículas no recorte
+          - generic [ref=f2e62]:
+            - paragraph [ref=f2e63]: Rematrículas
+            - paragraph [ref=f2e64]: "1.288"
+            - paragraph [ref=f2e65]: Continuidade da trajetória
+          - generic [ref=f2e66]:
+            - paragraph [ref=f2e67]: Novas
+            - paragraph [ref=f2e68]: "192"
+            - paragraph [ref=f2e69]: Somente safras classificáveis
+          - generic [ref=f2e70]:
+            - paragraph [ref=f2e71]: Participação de rematrículas
+            - paragraph [ref=f2e72]: 87%
+            - paragraph [ref=f2e73]: Rematrículas / total atual nas safras classificáveis
+        - generic [ref=f2e74]:
+          - heading "Composição por safra" [level=3] [ref=f2e75]
+          - paragraph [ref=f2e76]: Rematrículas + novas = total das safras classificáveis; safra sem base anterior não entra na composição.
+          - generic [ref=f2e78]:
+            - list [ref=f2e80]:
+              - listitem [ref=f2e81]:
+                - img "Novas legend icon" [ref=f2e82]
+                - text: Novas
+              - listitem [ref=f2e84]:
+                - img "Rematrículas legend icon" [ref=f2e85]
+                - text: Rematrículas
+            - application [ref=f2e87]:
+              - generic [ref=f2e91]:
+                - generic [ref=f2e92]:
+                  - generic [ref=f2e93]: "2025"
+                  - generic [ref=f2e95]: "2026"
+                - generic [ref=f2e97]:
+                  - generic [ref=f2e98]: "0"
+                  - generic [ref=f2e100]: "200"
+                  - generic [ref=f2e102]: "400"
+                  - generic [ref=f2e104]: "600"
+                  - generic [ref=f2e106]: "800"
+        - generic [ref=f2e108]:
+          - generic [ref=f2e109]:
+            - heading "Composição por ciclo" [level=3] [ref=f2e110]
+            - generic [ref=f2e112]:
+              - list [ref=f2e114]:
+                - listitem [ref=f2e115]:
+                  - img "Novas legend icon" [ref=f2e116]
+                  - text: Novas
+                - listitem [ref=f2e118]:
+                  - img "Rematrículas legend icon" [ref=f2e119]
+                  - text: Rematrículas
+              - application [ref=f2e121]:
+                - generic [ref=f2e125]:
+                  - generic [ref=f2e126]:
+                    - generic [ref=f2e127]: Educação Infantil
+                    - generic [ref=f2e129]: Fundamental Anos Iniciais
+                    - generic [ref=f2e131]: Fundamental Anos Finais
+                    - generic [ref=f2e133]: Ensino Médio
+                  - generic [ref=f2e135]:
+                    - generic [ref=f2e136]: "0"
+                    - generic [ref=f2e138]: "150"
+                    - generic [ref=f2e140]: "300"
+                    - generic [ref=f2e142]: "450"
+                    - generic [ref=f2e144]: "600"
+          - generic [ref=f2e146]:
+            - heading "Composição por turma" [level=3] [ref=f2e147]
+            - paragraph [ref=f2e148]: Turmas fictícias — nomenclatura genérica, sem correspondência com nenhuma instituição.
+            - generic [ref=f2e150]:
+              - list [ref=f2e152]:
+                - listitem [ref=f2e153]:
+                  - img "Novas legend icon" [ref=f2e154]
+                  - text: Novas
+                - listitem [ref=f2e156]:
+                  - img "Rematrículas legend icon" [ref=f2e157]
+                  - text: Rematrículas
+              - application [ref=f2e159]:
+                - generic [ref=f2e163]:
+                  - generic [ref=f2e164]:
+                    - generic [ref=f2e165]: Infantil 1
+                    - generic [ref=f2e167]: Infantil 3
+                    - generic [ref=f2e169]: Infantil 5
+                    - generic [ref=f2e171]: 2º Ano
+                    - generic [ref=f2e173]: 4º Ano
+                    - generic [ref=f2e175]: 6º Ano
+                    - generic [ref=f2e177]: 8º Ano
+                    - generic [ref=f2e179]: 1ª Série EM
+                    - generic [ref=f2e181]: 3ª Série EM
+                  - generic [ref=f2e183]:
+                    - generic [ref=f2e184]: "0"
+                    - generic [ref=f2e186]: "35"
+                    - generic [ref=f2e188]: "70"
+                    - generic [ref=f2e190]: "105"
+                    - generic [ref=f2e192]: "140"
+        - generic [ref=f2e194]:
+          - heading "Efetivação de matrículas por mês" [level=3] [ref=f2e195]
+          - paragraph [ref=f2e196]: Linha interrompida = mês ainda não observado no cenário (não é zero).
+          - generic [ref=f2e198]:
+            - list [ref=f2e200]:
+              - listitem [ref=f2e201]:
+                - img "2025 legend icon" [ref=f2e202]
+                - text: "2025"
+              - listitem [ref=f2e204]:
+                - img "2026 legend icon" [ref=f2e205]
+                - text: "2026"
+            - application [ref=f2e207]:
+              - generic [ref=f2e218]:
+                - generic [ref=f2e219]:
+                  - generic [ref=f2e220]: Jan
+                  - generic [ref=f2e222]: Fev
+                  - generic [ref=f2e224]: Mar
+                  - generic [ref=f2e226]: Abr
+                  - generic [ref=f2e228]: Mai
+                  - generic [ref=f2e230]: Jun
+                  - generic [ref=f2e232]: Jul
+                  - generic [ref=f2e234]: Ago
+                  - generic [ref=f2e236]: Set
+                  - generic [ref=f2e238]: Out
+                  - generic [ref=f2e240]: Nov
+                  - generic [ref=f2e242]: Dez
+                - generic [ref=f2e244]:
+                  - generic [ref=f2e245]: "0"
+                  - generic [ref=f2e247]: "50"
+                  - generic [ref=f2e249]: "100"
+                  - generic [ref=f2e251]: "150"
+                  - generic [ref=f2e253]: "200"
+        - generic [ref=f2e255]:
+          - heading "Participação de rematrículas por safra" [level=3] [ref=f2e256]
+          - paragraph [ref=f2e257]: Rematrículas / total atual; não representa retenção de coorte ou evasão. Travessão onde é indeterminado.
+          - table [ref=f2e259]:
+            - rowgroup [ref=f2e260]:
+              - row [ref=f2e261]:
+                - columnheader "Safra" [ref=f2e262]
+                - columnheader "Total" [ref=f2e263]
+                - columnheader "Rematrículas" [ref=f2e264]
+                - columnheader "Novas" [ref=f2e265]
+                - columnheader "Rematrículas / total" [ref=f2e266]
+            - rowgroup [ref=f2e267]:
+              - row [ref=f2e268]:
+                - cell "2025" [ref=f2e269]
+                - cell "731" [ref=f2e270]
+                - cell "626" [ref=f2e271]
+                - cell "105" [ref=f2e272]
+                - cell "85.6%" [ref=f2e273]
+              - row [ref=f2e274]:
+                - cell "2026" [ref=f2e275]
+                - cell "749" [ref=f2e276]
+                - cell "662" [ref=f2e277]
+                - cell "87" [ref=f2e278]
+                - cell "88.4%" [ref=f2e279]
+  - alert [ref=f2e280]
+  - generic [aria-hidden] [ref=f2e281]: "50"

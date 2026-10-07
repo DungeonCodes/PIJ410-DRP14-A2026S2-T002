@@ -1,0 +1,180 @@
+- generic [active] [ref=f4e1]:
+  - generic [ref=f4e2]:
+    - complementary [ref=f4e3]:
+      - link [ref=f4e4] [cursor=pointer]:
+        - /url: /v2
+        - paragraph [ref=f4e5]: UNIVESP · 2026 · 2º semestre
+        - heading "Painel Analítico Acadêmico" [level=1] [ref=f4e6]
+        - paragraph [ref=f4e7]: PIJ410 — Projeto Integrador em Computação III
+      - generic [ref=f4e8]:
+        - generic [ref=f4e9]: Ambiente acadêmico · dados sintéticos
+        - paragraph [ref=f4e12]: "Versão de interface: V2"
+      - navigation "Módulos disponíveis" [ref=f4e13]:
+        - link "Captação" [ref=f4e14] [cursor=pointer]:
+          - /url: /v2/captacao
+        - link "Matrículas" [ref=f4e15] [cursor=pointer]:
+          - /url: /v2/matriculas
+        - group [ref=f4e16]:
+          - paragraph [ref=f4e17]: Ads
+          - generic [ref=f4e18]:
+            - link "Visão geral" [ref=f4e19] [cursor=pointer]:
+              - /url: /v2/ads
+            - link "Google Ads" [ref=f4e20] [cursor=pointer]:
+              - /url: /v2/ads/google
+            - link "Meta Ads" [ref=f4e21] [cursor=pointer]:
+              - /url: /v2/ads/meta
+            - link "Estratégia" [ref=f4e22] [cursor=pointer]:
+              - /url: /v2/ads/estrategia
+      - generic [ref=f4e23]:
+        - generic [ref=f4e24]:
+          - paragraph [ref=f4e25]: Cenário
+          - paragraph [ref=f4e26]: Instituição Educacional Alfa
+          - paragraph [ref=f4e27]: entidade fictícia · cenário de demonstração
+        - paragraph [ref=f4e28]: Adaptação acadêmica iniciada em 27/08/2026. Rollout por fases.
+    - main [ref=f4e29]:
+      - generic [ref=f4e31]:
+        - generic [ref=f4e32]:
+          - paragraph [ref=f4e33]: Fase 2 · ambiente acadêmico · dados sintéticos
+          - heading "Ads — visão consolidada" [level=1] [ref=f4e34]
+          - generic [ref=f4e35]: Cenário independente com dados sintéticos. Conversões do Google, conversas e interações sociais têm significados diferentes; nenhuma delas comprova leads únicos, matrículas ou causalidade.
+          - generic [ref=f4e36]:
+            - generic [ref=f4e37]:
+              - generic [ref=f4e38]: Cenário
+              - generic [aria-hidden] [ref=f4e39]: ·
+              - generic [ref=f4e40]: ads-academico-1
+            - generic [ref=f4e41]:
+              - generic [ref=f4e42]: Semente
+              - generic [aria-hidden] [ref=f4e43]: ·
+              - generic [ref=f4e44]: pij410-ads-cenario-independente-1
+            - generic [ref=f4e45]:
+              - generic [ref=f4e46]: Cronologia
+              - generic [aria-hidden] [ref=f4e47]: ·
+              - generic [ref=f4e48]: 2017–2023 · fictícia
+        - generic [ref=f4e49]:
+          - generic [ref=f4e50]: Ano-calendário fictício
+          - link "2017" [ref=f4e51] [cursor=pointer]:
+            - /url: /v2/ads?anos=2022%2C2017
+          - link "2018" [ref=f4e52] [cursor=pointer]:
+            - /url: /v2/ads?anos=2022%2C2018
+          - link "2019" [ref=f4e53] [cursor=pointer]:
+            - /url: /v2/ads?anos=2022%2C2019
+          - link "2020" [ref=f4e54] [cursor=pointer]:
+            - /url: /v2/ads?anos=2022%2C2020
+          - link "2021" [ref=f4e55] [cursor=pointer]:
+            - /url: /v2/ads?anos=2022%2C2021
+          - link "2022" [disabled] [ref=f4e56]:
+            - /url: /v2/ads?anos=2022
+          - link "2023" [ref=f4e57] [cursor=pointer]:
+            - /url: /v2/ads?anos=2022%2C2023
+        - generic [ref=f4e58]:
+          - generic [ref=f4e59]:
+            - paragraph [ref=f4e60]: Investimento Google (R$)
+            - paragraph [ref=f4e61]: 126.982,13
+          - generic [ref=f4e62]:
+            - paragraph [ref=f4e63]: Impressões Google
+            - paragraph [ref=f4e64]: 1.585.395
+          - generic [ref=f4e65]:
+            - paragraph [ref=f4e66]: Cliques
+            - paragraph [ref=f4e67]: "58.423"
+          - generic [ref=f4e68]:
+            - paragraph [ref=f4e69]: Conversões registradas
+            - paragraph [ref=f4e70]: 3.241,47
+          - generic [ref=f4e71]:
+            - paragraph [ref=f4e72]: CPR Google (R$)
+            - paragraph [ref=f4e73]: 39,17
+            - paragraph [ref=f4e74]: Custo / conversões; não é custo por matrícula
+        - paragraph [ref=f4e75]: "CTR: 3,69% · CPC: R$ 2,17 · CPM: R$ 80,09. Taxas recalculadas sobre totais; ausência não vira zero. Cobertura: fechado."
+        - paragraph [ref=f4e76]: CPR = investimento / conversões registradas no Google Ads. Não é custo por matrícula ou lead único e não implica atribuição causal.
+        - generic [ref=f4e77]:
+          - heading "Meta Ads — indicadores avaliados separadamente" [level=2] [ref=f4e78]
+          - table [ref=f4e80]:
+            - rowgroup [ref=f4e81]:
+              - row [ref=f4e82]:
+                - columnheader "Indicador" [ref=f4e83]
+                - columnheader "Gasto (R$)" [ref=f4e84]
+                - columnheader "Resultados" [ref=f4e85]
+                - columnheader "Custo/resultado (R$)" [ref=f4e86]
+            - rowgroup [ref=f4e87]:
+              - row [ref=f4e88]:
+                - cell "conversa" [ref=f4e89]
+                - cell "7.714,41" [ref=f4e90]
+                - cell "643" [ref=f4e91]
+                - cell "12" [ref=f4e92]
+              - row [ref=f4e93]:
+                - cell "interacao" [ref=f4e94]
+                - cell "—" [ref=f4e95]
+                - cell "—" [ref=f4e96]
+                - cell "—" [ref=f4e97]
+          - paragraph [ref=f4e98]: Uma linha sem medição torna o agregado incompleto. Conversas e interações não são somadas como um resultado único. Análise determinística, sem ML.
+        - generic [ref=f4e99]:
+          - heading "Investimento por mês-calendário e canal" [level=2] [ref=f4e100]
+          - table [ref=f4e102]:
+            - rowgroup [ref=f4e103]:
+              - row [ref=f4e104]:
+                - columnheader "Período" [ref=f4e105]
+                - columnheader "Google (R$)" [ref=f4e106]
+                - columnheader "Social (R$)" [ref=f4e107]
+                - columnheader "Total completo (R$)" [ref=f4e108]
+            - rowgroup [ref=f4e109]:
+              - row [ref=f4e110]:
+                - cell "2022-01" [ref=f4e111]
+                - cell "7.964,88" [ref=f4e112]
+                - cell "1.529,54" [ref=f4e113]
+                - cell "9.494,42" [ref=f4e114]
+              - row [ref=f4e115]:
+                - cell "2022-02" [ref=f4e116]
+                - cell "13.418,13" [ref=f4e117]
+                - cell "1.624,93" [ref=f4e118]
+                - cell "15.043,06" [ref=f4e119]
+              - row [ref=f4e120]:
+                - cell "2022-03" [ref=f4e121]
+                - cell "8.522,74" [ref=f4e122]
+                - cell "898,72" [ref=f4e123]
+                - cell "9.421,46" [ref=f4e124]
+              - row [ref=f4e125]:
+                - cell "2022-04" [ref=f4e126]
+                - cell "11.505,44" [ref=f4e127]
+                - cell "1.287,41" [ref=f4e128]
+                - cell "12.792,85" [ref=f4e129]
+              - row [ref=f4e130]:
+                - cell "2022-05" [ref=f4e131]
+                - cell "11.615,58" [ref=f4e132]
+                - cell "—" [ref=f4e133]
+                - cell "—" [ref=f4e134]
+              - row [ref=f4e135]:
+                - cell "2022-06" [ref=f4e136]
+                - cell "11.000,86" [ref=f4e137]
+                - cell "1.147,29" [ref=f4e138]
+                - cell "12.148,15" [ref=f4e139]
+              - row [ref=f4e140]:
+                - cell "2022-07" [ref=f4e141]
+                - cell "9.340,22" [ref=f4e142]
+                - cell "1.294,17" [ref=f4e143]
+                - cell "10.634,39" [ref=f4e144]
+              - row [ref=f4e145]:
+                - cell "2022-08" [ref=f4e146]
+                - cell "10.316,21" [ref=f4e147]
+                - cell "780,34" [ref=f4e148]
+                - cell "11.096,55" [ref=f4e149]
+              - row [ref=f4e150]:
+                - cell "2022-09" [ref=f4e151]
+                - cell "12.599,77" [ref=f4e152]
+                - cell "1.341,27" [ref=f4e153]
+                - cell "13.941,04" [ref=f4e154]
+              - row [ref=f4e155]:
+                - cell "2022-10" [ref=f4e156]
+                - cell "11.170,48" [ref=f4e157]
+                - cell "1.353,81" [ref=f4e158]
+                - cell "12.524,29" [ref=f4e159]
+              - row [ref=f4e160]:
+                - cell "2022-11" [ref=f4e161]
+                - cell "9.126,81" [ref=f4e162]
+                - cell "1.717,7" [ref=f4e163]
+                - cell "10.844,51" [ref=f4e164]
+              - row [ref=f4e165]:
+                - cell "2022-12" [ref=f4e166]
+                - cell "10.401,01" [ref=f4e167]
+                - cell "1.222,43" [ref=f4e168]
+                - cell "11.623,44" [ref=f4e169]
+          - paragraph [ref=f4e170]: O total aparece somente quando ambos os canais possuem cobertura. O ano-calendário não é tratado como safra acadêmica ou ciclo financeiro.
+  - alert [ref=f4e171]
