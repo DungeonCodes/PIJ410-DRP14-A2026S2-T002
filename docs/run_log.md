@@ -867,4 +867,13 @@ Sem deploy, commit, push, DOCX/PDF ou tratamento do histórico Git. diff --check
 Gate: PREVISÃO SAZONAL CPR PRONTA PARA DEMONSTRAÇÃO NA V2.
 Limite: demonstração válida frente a t−12, não superioridade geral nem previsão operacional.
 
+## Registro da primeira validação real da V1 — P1
+
+Seis respostas reais de P1 registradas em `docs/validacao/respostas/v1-p1.md`: três avaliações
+5/5; preferência por gráficos temporais; observação sobre gráficos em diversos lugares; sugestão
+de gráfico combinado de contatos, visitas e matrículas com seleção de séries. Perfil, data,
+modalidade e condição do TCLE permanecem pendentes de confirmação. A interpretação do grupo
+aguarda demais participantes. Nenhuma alteração funcional foi executada e nenhum resultado foi
+incorporado ao Relatório Final. Sem dados pessoais, commit, push ou deploy.
+
 ---
