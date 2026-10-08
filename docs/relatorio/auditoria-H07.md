@@ -38,7 +38,7 @@ A/B/C avaliam aplicação de conceitos, não matrícula, conclusão ou leitura i
 | Estruturas de Dados | Relação apenas plausível | Arrays/objetos comuns não individualizam a disciplina; PPC §6.13 | C | Não |
 | Modelagem e Inferência Estatística | Inferência não demonstrada | Métricas não comprovam inferência populacional; PPC §6.32 | C | Não |
 
-Redes Neurais e Aprendizado Profundo são disciplinas separadas no PPC 2020. Estatística Aplicada aparece na matriz 2026, mas não se adotou como cursada: a matriz do grupo requer confirmação. Não se criou disciplina chamada Análise de Dados, UX, Inteligência Artificial ou Design Thinking para completar quantidade.
+Redes Neurais e Aprendizado Profundo são disciplinas separadas no PPC 2020. Estatística Aplicada aparece na matriz 2026, mas não se adotou como cursada: a trajetória curricular de ao menos um integrante com contribuição correspondente requer confirmação. Não se criou disciplina chamada Análise de Dados, UX, Inteligência Artificial ou Design Thinking para completar quantidade.
 
 ## Materiais
 
@@ -88,7 +88,7 @@ Redes neurais, aprendizado profundo e visão computacional não foram excluídos
 
 ## Confirmações indispensáveis
 
-1. Disciplinas oficiais efetivamente cursadas por integrantes que mobilizaram os conhecimentos; matriz/ano e pertinência das associações B. Não afirmar que todos cursaram todas; não publicar dados pessoais.
+1. Para cada disciplina citada, confirmar estudo efetivo por ao menos um integrante cuja contribuição correspondente esteja relacionada ao projeto, inclusive nas associações B. Não exigir graduação ou matriz única do grupo. Curso/matriz individuais podem esclarecer o nome oficial quando necessário; não publicar dados pessoais.
 2. Se houver comprovação de consulta a materiais específicos, registrar título/autor ou aula/semana, disciplina e atividade correspondente. A ausência de aula/apostila comprovada, isoladamente, não impede descrever a aplicação dos conhecimentos. Não confundir ausência de registro com prova de que nenhum material foi consultado, nem escolher bibliografia retrospectivamente para cumprir rubrica.
 
 A rubrica de Avaliação, p. 9, pede mais de três disciplinas estudadas e referências a materiais específicos para pontuação máxima. A falta de aula comprovada não impede descrever aplicação; impede afirmar concluída a confirmação requerida por H07. Referências externas são documentadas como tais.
@@ -99,7 +99,7 @@ Escrita restrita à seção 2.4, este registro e run log. Capítulos 3/4, P1, V1
 
 ## Auditoria final após integração — 08/10/2026
 
-**H07 permanece aberta pela falta de confirmação das disciplinas efetivamente estudadas e da matriz aplicável.** A aplicação dos conhecimentos descritos é sustentada pelos artefatos. A falta de apostila/aula específica não é, isoladamente, bloqueador científico dessa descrição. H08 e H12 não foram reabertas.
+**H07 permanece aberta pela falta de confirmação, para cada disciplina citada, de estudo efetivo por ao menos um integrante com contribuição correspondente ao projeto. Não se exige matriz única do grupo.** A aplicação dos conhecimentos descritos é sustentada pelos artefatos. A falta de apostila/aula específica não é, isoladamente, bloqueador científico dessa descrição. H08 e H12 não foram reabertas.
 
 Nesta rodada foram relidos integralmente 2.4, contexto, regras, decisões e rubrica; pesquisados documentos, fontes, scripts e código; extraído o texto de todos os PDF/DOCX em `docs/`; conferidos inventário, fichamentos, registros V1/P1 e V2/P1, protocolos CPR e histórico Git recente. Extração textual não cobre imagens sem texto pesquisável. Os PPCs oficiais vinculados foram novamente acessados. Não foi encontrado registro suficiente de disciplinas cursadas ou consulta a aulas técnicas. A seção 2.4 e a auditoria anterior não são corroboradores independentes de suas próprias alegações.
 
@@ -119,7 +119,7 @@ Nesta rodada foram relidos integralmente 2.4, contexto, regras, decisões e rubr
 | Avaliação e ajuste temporal após feedback de P1 | CONFIRMADA | `docs/validacao/respostas/v1-p1.md`, `v2-p1-reavaliacao.md`, `src/ui/v2/temporal.ts`, `components/evolucao-temporal.tsx`, `pages/captacao.tsx` e `scripts/test-v2-feedback.mjs`. IHC: A para atividade executada. |
 | Preparação/agregação, ausências, séries, indicadores e gráficos | CONFIRMADA como prática | `src/lib/ads/dados.ts`, `metricas.ts`, módulos CPR, geradores e gráficos. Introdução a Ciência de Dados/Estatística e Probabilidade/Visualização Computacional: B. |
 | Avaliação limitada ao experimento, sem inferência populacional/causalidade | CONFIRMADA | Protocolos e resultados sintéticos. |
-| Nome Estatística e Probabilidade no PPC 2020 | CONFIRMADA | §6.16; matriz do grupo DEPENDE DE CONFIRMAÇÃO HUMANA. Não substituir por Estatística Aplicada do PPC 2026 sem confirmação. |
+| Nome Estatística e Probabilidade no PPC 2020 | CONFIRMADA | §6.16; trajetória de ao menos um integrante com contribuição correspondente DEPENDE DE CONFIRMAÇÃO HUMANA. Não substituir por Estatística Aplicada do PPC 2026 sem confirmação. |
 | Dados sintéticos, exclusão de PII/integrações, supervisão humana | CONFIRMADA como decisão/prática | ADR-006/007, contexto, geradores e `test-nao-vazamento.mjs`. Impactos da Computação na Sociedade: B para associação curricular, substituindo A anterior baseado na própria redação. |
 | Escopo de Impactos no PPC 2026, sem comprovar disciplina cursada | CONFIRMADA | Ementa COM500 contempla ética/governança; trajetória permanece sem confirmação. |
 | PI organiza ouvir/criar/implementar; Design Thinking como abordagem | CONFIRMADA | Orientações, Plano de Ação e 2.5; PI: A. Rosado/Dias é referência externa. |
@@ -147,6 +147,6 @@ Não foi encontrado acervo de apostilas/slides/videoaulas técnicas acompanhado 
 
 ### Confirmação mínima e resultado editorial
 
-Para fechar H07, obter uma relação confirmada pelo grupo com **nome oficial da disciplina estudada, matriz/ano aplicável e atividade em que seus conhecimentos foram mobilizados**, sem atribuir todas a todos. Uma declaração registrada pode atender à lacuna; não se exige publicar histórico acadêmico ou dados pessoais. Material específico somente será incluído com comprovação de consulta associada à atividade.
+Para fechar H07, obter uma relação registrada que confirme, para cada disciplina citada, **nome oficial, estudo efetivo por ao menos um integrante e contribuição correspondente ao projeto**. O grupo é multidisciplinar no eixo de TI: não se exige graduação ou matriz única. Curso/matriz individuais servem para esclarecer a identificação curricular quando necessário, sem atribuir todas as disciplinas a todos. Uma declaração registrada pode atender à lacuna; não se exige publicar histórico acadêmico ou dados pessoais. Material específico somente será incluído com comprovação de consulta associada à atividade.
 
 A exigência de materiais específicos para pontuação máxima da rubrica permanece distinta da suficiência científica da descrição. Não justifica inventar consulta nem bloquear automaticamente a aplicação demonstrada. Ajustado apenas o marcador H07 da seção 2.4 para refletir essa distinção; conteúdo factual preservado. Sem geração de DOCX/PDF, commit ou push.

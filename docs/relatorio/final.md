@@ -420,7 +420,9 @@ permanece sob responsabilidade humana, em diálogo com a instituição parceira.
 ## 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
 
 No desenvolvimento do projeto foram mobilizados conhecimentos relacionados a disciplinas
-identificadas nos projetos pedagógicos da UNIVESP (2020; 2026). As relações abaixo descrevem
+identificadas nos projetos pedagógicos da UNIVESP (2020; 2026). O grupo reúne integrantes de
+diferentes cursos do eixo de TI, cujas contribuições podem mobilizar conhecimentos de disciplinas
+e matrizes curriculares distintas. As relações abaixo descrevem
 conceitos observáveis na implementação. Elas não comprovam quais disciplinas foram cursadas
 pelos integrantes ou quais materiais didáticos foram consultados.
 
@@ -449,17 +451,20 @@ Visualização Computacional aparecem na preparação e agregação de dados sin
 de ausências, na descrição de séries mensais e na apresentação de indicadores e gráficos. As
 métricas de erro e a comparação dos baselines sustentam uma avaliação limitada ao experimento,
 sem inferência sobre a população da instituição ou causalidade. Estatística e Probabilidade é o
-nome registrado no PPC de 2020; a matriz efetivamente cursada pelo grupo requer confirmação.
+nome registrado no PPC de 2020; sua identificação na trajetória de ao menos um integrante cuja
+contribuição esteja relacionada a essas práticas requer confirmação, sem pressupor uma matriz
+curricular única para o grupo.
 
 A relação com Impactos da Computação na Sociedade é observável nas decisões de utilizar dados
 sintéticos, excluir informações pessoais e integrações operacionais e manter supervisão humana.
 O PPC de 2026 confirma o escopo curricular dessa associação, mas não comprova que a disciplina
-foi cursada pelos integrantes. Em Projeto Integrador em Computação III, a orientação oficial
+foi efetivamente estudada por ao menos um integrante que contribuiu com essas práticas. Em
+Projeto Integrador em Computação III, a orientação oficial
 fundamenta a organização metodológica em ouvir, criar e implementar. Design Thinking é tratado
 como abordagem metodológica do PI, também apoiada em Rosado e Dias (2024). Etapas planejadas não
 são apresentadas como realizadas.
 
-[PENDENTE – H07: confirmar quais das disciplinas oficiais relacionadas acima foram efetivamente estudadas por integrantes que mobilizaram esses conhecimentos, indicando a matriz aplicável e a atividade correspondente. Não é necessário atribuir todas as disciplinas a todos os integrantes. Aula, apostila ou semana específica somente será incluída se houver comprovação de consulta; sua ausência, isoladamente, não impede descrever a aplicação dos conhecimentos.]
+[PENDENTE – H07: para cada disciplina citada, confirmar que foi efetivamente estudada por ao menos um integrante cuja contribuição correspondente esteja relacionada ao projeto. Não se exige graduação ou matriz curricular única do grupo; curso e matriz individuais podem esclarecer o nome oficial quando necessário. Aula, apostila ou semana específica somente será incluída se houver comprovação de consulta; sua ausência, isoladamente, não impede descrever a aplicação dos conhecimentos.]
 
 ## 2.5 Metodologia
 

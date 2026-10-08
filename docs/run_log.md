@@ -1024,3 +1024,7 @@ Ação realizada: auditoria final de H07 após integração, registrada em docs/
 Fontes: seção 2.4 integral, contexto/regras/rubrica, extração textual dos PDF/DOCX de docs, PPCs oficiais 2020/2026, referências/fichamentos, histórico Git, artefatos de software/CPR e validações V1/P1 e V2/P1.
 Resultado: aplicação dos conhecimentos sustentada; disciplinas efetivamente estudadas e matriz ainda dependem de confirmação humana. Ausência de aula/apostila comprovada não bloqueia automaticamente a descrição da aplicação. Ajustado apenas o marcador H07 de final.md; nenhuma consulta inventada. H07 permanece aberta; H08/H12 preservadas.
 Verificação: git diff --check e conferência do diff; alterações restritas à auditoria, marcador 2.4 e log. Sem mudança de código/dados, geração de DOCX/PDF, commit ou push.
+
+
+Data: 2026-10-08
+Correção metodológica de H07 solicitada pelo usuário: grupo multidisciplinar no eixo de TI, sem exigência de graduação ou matriz curricular única. Para cada disciplina citada, basta confirmação de estudo efetivo por ao menos um integrante com contribuição correspondente ao projeto. Seção 2.4 e critérios da auditoria ajustados; curso/matriz individuais esclarecem nomes quando necessário. H07 permanece aberta até essa confirmação. Verificação: git diff --check; sem commit/push.
