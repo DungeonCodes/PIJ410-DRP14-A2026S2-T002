@@ -459,7 +459,7 @@ fundamenta a organização metodológica em ouvir, criar e implementar. Design T
 como abordagem metodológica do PI, também apoiada em Rosado e Dias (2024). Etapas planejadas não
 são apresentadas como realizadas.
 
-[PENDENTE – H07: confirmar disciplinas efetivamente cursadas e sua matriz; identificar materiais didáticos específicos realmente consultados e relacioná-los à atividade realizada. A aplicação de conceitos acima não comprova consulta a apostila, PDF, aula ou semana específica.]
+[PENDENTE – H07: confirmar quais das disciplinas oficiais relacionadas acima foram efetivamente estudadas por integrantes que mobilizaram esses conhecimentos, indicando a matriz aplicável e a atividade correspondente. Não é necessário atribuir todas as disciplinas a todos os integrantes. Aula, apostila ou semana específica somente será incluída se houver comprovação de consulta; sua ausência, isoladamente, não impede descrever a aplicação dos conhecimentos.]
 
 ## 2.5 Metodologia
 
