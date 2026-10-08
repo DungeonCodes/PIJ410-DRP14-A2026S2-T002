@@ -978,3 +978,15 @@ para o roteiro nem confundir a entrevista inicial com a validação posterior de
 Nenhuma pergunta, resposta, dado pessoal ou código foi criado ou alterado; sem commit ou push.
 
 ---
+
+## Auditoria H07 — disciplinas e materiais acadêmicos
+
+A seção 2.4 foi confrontada com PPCs, fichamentos, registros técnicos e implementação. Há
+aplicação observável de conceitos de aprendizagem de máquina, ética de dados e desenvolvimento
+da interface; não foi localizado registro suficiente das disciplinas efetivamente cursadas por
+integrante nem dos materiais de aula consultados. PPCs comprovam nomes e escopos curriculares,
+não uso didático. As atribuições sem aplicação demonstrada a redes neurais, aprendizado profundo
+e visão computacional foram retiradas da relação de disciplinas mobilizadas. H07 permanece aberta
+para confirmação humana; nenhuma aula ou participação foi presumida.
+
+---

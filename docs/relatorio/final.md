@@ -419,30 +419,25 @@ permanece sob responsabilidade humana, em diálogo com a instituição parceira.
 
 ## 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
 
-O desenvolvimento articula conteúdos de mais de três disciplinas dos cursos de Bacharelado em
-Ciência de Dados e Engenharia da Computação. Aplicações em Aprendizado de Máquina fornece o
-repertório para formular uma tarefa supervisionada, separar dados de treinamento e teste, comparar
-modelos e selecionar métricas de avaliação. Redes Neurais e Aprendizado Profundo amplia a
-compreensão sobre modelos preditivos e seus limites, sem implicar que uma rede neural tenha sido
-implementada ou validada neste projeto. Esses conteúdos integram os projetos pedagógicos dos cursos
-e são mobilizados de acordo com a disponibilidade efetiva dos dados (UNIVESP, 2020; UNIVESP, 2026).
+O experimento de CPR aplica conceitos compatíveis com Aplicações em Aprendizado de Máquina:
+regressão linear, comparação com baselines, separação temporal entre treino e teste e métricas de
+erro. As decisões documentadas de anonimização, minimização de dados e supervisão humana também
+se relacionam ao escopo de Impactos da Computação na Sociedade. Os projetos pedagógicos da UNIVESP
+confirmam os nomes e as ementas dessas disciplinas, mas não comprovam, por si, quais integrantes
+as cursaram ou quais materiais didáticos consultaram (UNIVESP, 2020; UNIVESP, 2026).
 
-Visão Computacional contribui para a compreensão de aquisição, preparação e análise de dados
-visuais. No escopo atual, essa disciplina oferece repertório metodológico, mas não corresponde a um
-módulo implementado, pois o projeto não utiliza imagens da instituição nem dados identificáveis.
-Impactos da Computação na Sociedade fundamenta as decisões de anonimização, minimização de dados,
-supervisão humana e delimitação do uso de inteligência artificial, especialmente diante da
-possibilidade de publicação acadêmica dos resultados (UNIVESP, 2020; UNIVESP, 2026).
+A interface em Next.js e TypeScript, a componentização, a separação entre dados e apresentação,
+os feature gates e os testes automatizados evidenciam práticas compatíveis com Desenvolvimento Web
+e Engenharia de Software. A avaliação e o ajuste da visualização temporal após o feedback de P1
+também se relacionam a Interface Humano-Computador. Essas relações descrevem aplicações observáveis
+no projeto, sem atribuir seu aprendizado a uma aula específica. Thakkar (2020) é referência externa
+do relatório sobre React e renderização no servidor, não material didático comprovadamente usado
+em uma disciplina.
 
-A construção da interface em Next.js e TypeScript também mobiliza conteúdos de desenvolvimento de
-sistemas e engenharia de software, como componentização, separação entre dados e apresentação,
-controle de acesso por feature gate e testes automatizados. A arquitetura web utiliza componentes
-React e renderização no servidor, recursos discutidos por Thakkar (2020), para manter a aplicação
-acadêmica independente de integrações operacionais.
+Redes Neurais, Aprendizado Profundo e Visão Computacional constam nos currículos consultados, mas
+não há implementação correspondente que permita apresentá-las como aplicadas neste projeto.
 
-[PENDENTE – identificar, para cada disciplina, os materiais específicos efetivamente estudados e usados pelo grupo, pois a rubrica final exige referência explícita aos materiais e não apenas às ementas]
-
-[REVISAR – confirmar a lista de disciplinas efetivamente cursadas pelos integrantes e manter apenas relações demonstráveis com a solução]
+[PENDENTE – confirmar com o grupo quais dessas disciplinas foram efetivamente cursadas e quais materiais acadêmicos específicos foram consultados ou usados; os PPCs e a implementação não comprovam essa utilização.]
 
 ## 2.5 Metodologia
 
