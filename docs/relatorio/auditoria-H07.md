@@ -150,3 +150,65 @@ Não foi encontrado acervo de apostilas/slides/videoaulas técnicas acompanhado 
 Para fechar H07, obter uma relação registrada que confirme, para cada disciplina citada, **nome oficial, estudo efetivo por ao menos um integrante e contribuição correspondente ao projeto**. O grupo é multidisciplinar no eixo de TI: não se exige graduação ou matriz única. Curso/matriz individuais servem para esclarecer a identificação curricular quando necessário, sem atribuir todas as disciplinas a todos. Uma declaração registrada pode atender à lacuna; não se exige publicar histórico acadêmico ou dados pessoais. Material específico somente será incluído com comprovação de consulta associada à atividade.
 
 A exigência de materiais específicos para pontuação máxima da rubrica permanece distinta da suficiência científica da descrição. Não justifica inventar consulta nem bloquear automaticamente a aplicação demonstrada. Ajustado apenas o marcador H07 da seção 2.4 para refletir essa distinção; conteúdo factual preservado. Sem geração de DOCX/PDF, commit ou push.
+
+## Auditoria complementar H07 — WhatsApp, cursos, contribuições e PPCs
+
+Data: 2026-10-08. **H07 AINDA BLOQUEADA. Gate: H07 AINDA POSSUI LACUNAS DOCUMENTAIS RELEVANTES.**
+
+### Disponibilidade das fontes e cursos
+
+Não foram localizados `chat.md`, `chat.txt`, `chat(1).md` ou `chat(1).txt`: busca recursiva no repositório incluindo ignorados, consulta ao histórico Git disponível e busca pelos nomes exatos em Documentos, Downloads e Desktop. Não foram lidas mensagens de WhatsApp nesta execução. Foi solicitada a localização dos exports; sem acesso a eles, não há como registrar data/trecho das declarações ou concluir o cruzamento solicitado. Esta é uma limitação documental, não prova de inexistência dos exports.
+
+O pedido informa indícios de Ciência de Dados para Ademário/Ade e Michelle, Engenharia de Computação para Marcos, Alexsander e Rodrigo Felipe, e Ciência de Dados para um participante sem identificação nominal segura. São pistas fornecidas pelo usuário, **não declarações diretamente verificadas nesta rodada**. Nenhum desses cursos foi promovido a comprovado por WhatsApp. O run log de 25/08/2026 e `docs/decisions.md` confirmam apenas a composição multicurso do grupo, sem vínculo nominal curso–integrante. Rafael, Lucas e Raul também não têm curso individual comprovado nos registros consultados. A grafia Michele consta dos planos; a equivalência com Michelle, Ade com Ademário e Rodrigo com Rodrigo Felipe deve ser verificada no export antes de consolidar identidades. O participante sem nome seguro não será identificado por telefone.
+
+### Contribuições: execução, atribuição e probabilidade
+
+O Plano de Ação original em `docs/univesp/Plano_de_Acao_PIJ410_2026S2.docx`, a versão `docs/migracao-modelo/trabalho/Plano_de_Acao_V3.docx` e o rascunho Markdown registram responsabilidades **planejadas**. A existência de um texto, teste ou validação não comprova que cada responsável planejado o executou. Não se atribuem resumo, introdução, formatação, prints ou revisão científica a uma pessoa sem registro correspondente.
+
+**CONTRIBUIÇÃO COMPROVADA, com alcance delimitado:** Rafael é responsável designado pela frente técnica nos planos, e o Git registra Rafael Martins como autor dos commits `dad9c49` (protótipo/arquitetura), `c757e25` (módulos, geradores, métricas e experimento CPR), `34a78f8` (CPR sazonal, gráficos e testes de leakage), `bbda691` (baseline/instrumentos) e `9563824` (visualização temporal V2 e testes). Isso comprova contribuição versionada e responsabilidade documental, não autoria exclusiva/manual de cada linha, nem execução pessoal de entrevistas ou validações. Os artefatos ligados são `src/lib/ads`, `src/lib/sintetico`, `src/ui/v2`, `src/components` e scripts experimentais/testes.
+
+**CONTRIBUIÇÃO PROVÁVEL:** as frentes atribuídas aos demais integrantes têm produtos correspondentes no projeto, mas faltam registros nominais de execução para confirmar quem realizou cada atividade. Probabilidade aqui decorre do planejamento e da existência de produtos, não de mensagem de WhatsApp auditada.
+
+**NÃO COMPROVADA:** execução individual de cada tarefa planejada, curso de Rafael, leitura de materiais técnicos específicos e disciplina efetivamente estudada/aplicada por qualquer integrante. P1 é participante da comunidade externa, não prova de autoria de um integrante do grupo.
+
+### Matriz de rastreabilidade
+
+| Integrante | Curso comprovado | Contribuição comprovada | Disciplina(s) candidata(s) da matriz | Evidência suficiente? | Confirmação humana ainda necessária |
+|---|---|---|---|---|---|
+| Rafael | Não localizado | Responsabilidade técnica nos planos e contribuição registrada nos commits acima: aplicação, dados, CPR/ML, arquitetura, testes e visualizações | Desenvolvimento Web; Engenharia de Software; Algoritmos e Programação de Computadores I/II; Estatística e Probabilidade. Condicionadas ao curso/trajetória: Introdução a Ciência de Dados, Visualização Computacional, Aprendizado de Máquinas; Interface Humano-Computador ou Plataforma de Ingestão e Análise de Dados | Sim para contribuição versionada; não para estudo/curso/matriz | Curso/matriz individual e quais disciplinas estudadas sustentaram cada atividade |
+| Ademário / Ade (vínculo a verificar) | Não verificado no export | Atribuição planejada: requisitos, comunidade e consolidação de necessidades; execução individual não comprovada | Não individualizadas sem contribuição executada comprovada | Não para fechamento | Primeiro recuperar mensagens de curso/contribuição; depois perguntar somente disciplinas relacionadas à atividade comprovada |
+| Michelle / Michele (vínculo a verificar) | Não verificado no export | Atribuição planejada: redação, pesquisa e consolidação do relatório; execução individual não comprovada | Não individualizadas sem contribuição executada comprovada | Não para fechamento | Recuperar mensagens de curso/contribuição antes de formular confirmação disciplinar |
+| Marcos | Não verificado no export | Atribuição planejada: prazos, checklist, entregas e revisão/consolidação do parcial; execução individual não comprovada | Não individualizadas sem contribuição executada comprovada | Não para fechamento | Recuperar mensagens de curso/contribuição |
+| Alexsander | Não verificado no export | Atribuição planejada: comunidade, requisitos e Design Thinking; execução individual não comprovada | Não individualizadas; Design Thinking não é disciplina presumida | Não para fechamento | Recuperar mensagens de curso/contribuição |
+| Rodrigo / Rodrigo Felipe (vínculo a verificar) | Não verificado no export | Atribuição planejada: testes, validação e comunidade; execução individual não comprovada | Não individualizadas sem contribuição executada comprovada | Não para fechamento | Recuperar mensagens de curso/contribuição |
+| Lucas | Não localizado | Atribuição planejada: bibliografia, fundamentação e redação; execução individual não comprovada | Não individualizadas sem contribuição executada comprovada | Não para fechamento | Verificar se os exports identificam curso/contribuição |
+| Raul | Não localizado | Atribuição planejada: gestão, comunicação/vídeo; no plano original, análise de indicadores; execução individual não comprovada | Não individualizadas sem contribuição executada comprovada | Não para fechamento | Verificar se os exports identificam curso/contribuição |
+| Participante sem identificação nominal segura | Não verificado no export | Nenhuma contribuição atribuída | Nenhuma | Não | Não tentar identificá-lo por telefone; conferir apenas vínculo documental explícito |
+
+### PPCs e candidatas para a frente técnica
+
+Reconsultados o [PPC 2020](https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BTI.pdf), especialmente §§2.10.6/2.10.7, e o [PPC 2026 de Ciência de Dados](https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BCD-2026.pdf). A data do PPC não comprova a matriz de nenhum integrante. A lista abaixo é condicional e restrita aos artefatos técnicos comprovados; não é atribuição curricular a Rafael.
+
+| Curso/matriz de referência | Disciplina oficial candidata | Relação concreta com a contribuição técnica versionada | Confirmada como estudada por Rafael? |
+|---|---|---|---|
+| Ciência de Dados ou Engenharia de Computação, PPC 2020 | Desenvolvimento Web | Aplicação Next.js/React/TypeScript e componentes | Não |
+| Ciência de Dados ou Engenharia de Computação, PPC 2020 | Engenharia de Software | Modularização, versionamento, gates e testes | Não |
+| Ciência de Dados ou Engenharia de Computação, PPC 2020 | Algoritmos e Programação de Computadores I / II | Rotinas determinísticas e geradores; não distingue I de II | Não |
+| Ciência de Dados ou Engenharia de Computação, PPC 2020 | Estatística e Probabilidade | Agregações e métricas; sem inferência populacional | Não |
+| Ciência de Dados, PPC 2020 | Introdução a Ciência de Dados | Preparação/tratamento de ausências e avaliação experimental | Não |
+| Ciência de Dados, PPC 2020 | Visualização Computacional | Indicadores e gráficos, inclusive sazonais | Não |
+| Ciência de Dados, PPC 2020 | Aprendizado de Máquinas | Regressão, baselines, avaliação temporal e leakage | Não |
+| Engenharia de Computação, PPC 2020 | Interface Humano-Computador | Implementação da melhoria temporal V2 após feedback | Não |
+| Engenharia de Computação, PPC 2020 | Plataforma de Ingestão e Análise de Dados | Preparação e processamento de dados; compatibilidade limitada, sem afirmar ingestão operacional | Não |
+
+Aplicações em Aprendizado de Máquina é nome oficial encontrado na ementa do PPC 2020 (§6.34), mas não deve substituir automaticamente Aprendizado de Máquinas da grade de Ciência de Dados. O PPC também contempla a trilha de desenvolvimento de software do BTI; curso/matriz individuais definirão o nome pertinente. Redes Neurais, Aprendizado Profundo e Banco de Dados não foram associados a Rafael: o experimento não usa redes e JSON não demonstra aplicação de modelagem relacional. Projeto Integrador em Computação III é o componente do trabalho; sua existência não confirma estudo das demais disciplinas.
+
+### Perguntas mínimas, sem repetir cursos já declarados
+
+1. Ao responsável pelos arquivos: em qual pasta estão os quatro exports citados? Essa recuperação vem antes de perguntar novamente cursos aos integrantes mencionados no pedido.
+2. A Rafael, se o export não resolver: qual é seu curso e a matriz/ano de ingresso aplicável? Entre Desenvolvimento Web, Engenharia de Software, Algoritmos e Programação de Computadores I/II e Estatística e Probabilidade, quais você efetivamente estudou e quais conhecimentos mobilizou na aplicação, nos cálculos ou nos testes? Registrar disciplina–atividade para cada resposta, sem presumir que cursou todas.
+3. Ainda a Rafael, após identificar seu curso/matriz: confirmar o nome oficial da disciplina de aprendizagem de máquina efetivamente estudada que sustentou regressão, baselines, divisão temporal e métricas do CPR. Se Ciência de Dados/PPC 2020 for sua trajetória, verificar especificamente Aprendizado de Máquinas e, para os demais artefatos, Introdução a Ciência de Dados e Visualização Computacional; se Engenharia de Computação/PPC 2020, verificar Interface Humano-Computador para a melhoria V2. São perguntas condicionais, não declarações de estudo.
+
+Não foi gerada pergunta a Ademário sobre uma disciplina de análise/revisão porque sua execução individual dessa atividade ainda não foi comprovada. Após leitura dos exports, reduzir as perguntas com base nas respostas já existentes e encaminhar apenas lacunas efetivas. Não é necessário perguntar a todos: para cada disciplina mantida na seção 2.4, basta um integrante com estudo, curso/matriz e contribuição correspondente confirmados. Materiais específicos continuam condicionados à comprovação de consulta.
+
+`final.md` preservado integralmente nesta rodada. Nenhum curso foi inventado, nenhum telefone foi incluído, nenhuma candidata foi dada como estudada e nenhuma tarefa planejada foi promovida a execução comprovada. Não se concluiu o cruzamento WhatsApp sem os arquivos. Sem commit/push.

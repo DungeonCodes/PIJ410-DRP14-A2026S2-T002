@@ -1028,3 +1028,10 @@ Verificação: git diff --check e conferência do diff; alterações restritas �
 
 Data: 2026-10-08
 Correção metodológica de H07 solicitada pelo usuário: grupo multidisciplinar no eixo de TI, sem exigência de graduação ou matriz curricular única. Para cada disciplina citada, basta confirmação de estudo efetivo por ao menos um integrante com contribuição correspondente ao projeto. Seção 2.4 e critérios da auditoria ajustados; curso/matriz individuais esclarecem nomes quando necessário. H07 permanece aberta até essa confirmação. Verificação: git diff --check; sem commit/push.
+
+Data: 2026-10-08
+Ação: Auditoria complementar H07 — cruzamento WhatsApp — cursos — contribuições — PPCs.
+Limitação: chat.md, chat.txt, chat(1).md e chat(1).txt não localizados no repositório (incluindo ignorados), histórico Git consultado ou busca pelos nomes em Documentos/Downloads/Desktop. Localização solicitada; cruzamento das mensagens não concluído. Indícios nominais de cursos do pedido não tratados como comprovação direta.
+Resultado: responsabilidades planejadas distinguidas de execução; contribuição técnica versionada de Rafael identificada nos commits dad9c49, c757e25, 34a78f8, bbda691 e 9563824, sem alegar autoria exclusiva ou presumir seu curso. PPCs oficiais reconsultados e candidatas condicionais registradas em docs/relatorio/auditoria-H07.md. Demais execuções individuais não comprovadas pelas fontes disponíveis. Perguntas mínimas provisórias registradas, sem repetir cursos declarados antes de recuperar os exports.
+Gate: H07 AINDA POSSUI LACUNAS DOCUMENTAIS RELEVANTES. H07 AINDA BLOQUEADA.
+Verificação: git diff --check; final.md preservado; sem curso inventado, telefone incluído, disciplina candidata declarada cursada ou tarefa planejada promovida a execução comprovada. Sem código/dados alterados, commit ou push.
