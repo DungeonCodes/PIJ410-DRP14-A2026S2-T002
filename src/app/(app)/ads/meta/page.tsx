@@ -1,8 +1,5 @@
-import { redirect } from 'next/navigation';
-import { canonicalTarget, type UIQuery } from '@/lib/interface';
-import { exigirModuloHabilitado } from '@/lib/gate-servidor';
+import { notFound } from 'next/navigation';
 
-export default async function CanonicalAlias({ searchParams }: { searchParams: Promise<UIQuery> }) {
-  exigirModuloHabilitado('ads-meta');
-  redirect(canonicalTarget('/ads/meta', await searchParams));
+export default function CanonicalAlias() {
+  notFound();
 }

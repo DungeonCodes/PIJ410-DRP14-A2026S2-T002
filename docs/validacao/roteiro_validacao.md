@@ -1,106 +1,41 @@
 # Roteiro de validação com a comunidade — V1
 
-**Duração estimada: 30 a 40 minutos. Versão da interface: V1. Cenário: dados sintéticos.**
-Planejamento: 5 minutos de contextualização/TCLE, 10 de Fase 1, 15 de Fase 2 e 5 a 10
-de encerramento (35–40 minutos previstos). Para 30 minutos, abreviar orientação inicial e
-tarefas A–E, sem omitir a interpretação espontânea de CPR. Não exigir tempo igual em cada tela.
+**Duração prevista: 10–15 minutos. Versão: V1 — baseline inicial pré-Ads.**
 
-Usar somente `/v1/**`, não apresentar V2 nem alternar versões. Registrar data, perfil genérico,
-cenário/seed, período e filtros utilizados. Fases 1 e 2 ativas; Fases 3 e 4 bloqueadas.
+Usar somente `/v1/captacao` e `/v1/matriculas`. Não apresentar V2, Ads, CPR, ML,
+Estratégia nem módulos das Fases 3 e 4. Informar que o cenário e todos os valores são sintéticos.
 
-## Etapa 1 — Contextualização e TCLE (5 minutos)
+## TCLE
 
-Obter TCLE antes da demonstração e coleta; não iniciar sem consentimento. Participação voluntária,
-interrompível a qualquer momento; somente dados pertinentes serão consolidados e anonimizados.
-Guardar TCLE preenchido fora do Git em local restrito. Registrar `TCLE obtido: SIM` somente
-após obtenção efetiva, sem identificadores pessoais.
+Tratar o TCLE conforme o protocolo da pesquisa: obter consentimento antes da demonstração e
+da coleta, manter o documento preenchido fora do Git e registrar no repositório apenas a condição
+de obtenção, sem identificadores pessoais.
 
-Antes da demonstração, informar:
+## Estrutura sugerida
 
-- finalidade acadêmica; avalia-se a interface, não o desempenho do participante;
-- todos os dados são sintéticos; valores não representam operação real;
-- não há integração com Google Ads/Meta reais, CRM ou sistemas acadêmicos;
-- orçamento é premissa acadêmica, não orçamento real, ideal ou recomendação automática.
+- **2–3 minutos — contextualização e início:** explicar a finalidade acadêmica, que se avalia
+  a interface e não o participante, e confirmar o TCLE.
+- **4–5 minutos — Captação:** pedir a Tarefa 1 sem ensinar a interpretação dos indicadores.
+- **4–5 minutos — Matrículas:** pedir a Tarefa 2 sem antecipar a resposta.
+- **2–3 minutos — perguntas finais:** aplicar as seis perguntas do instrumento V1.
 
-Apresentar brevemente a navegação em `/v1`, sem ensinar a interpretar os indicadores.
-Não explicar CPR antes de registrar a resposta espontânea em G. A leitura das explicações
-existentes na tela é parte da avaliação e não deve ser impedida.
+Os intervalos são flexíveis e podem se sobrepor; a sessão deve permanecer na faixa total prevista.
 
-## Etapa 2 — Fase 1: tarefas A–E (10 minutos)
+## Tarefa 1 — Captação
 
-| ID | Rota | Solicitação |
-|---|---|---|
-| A | /v1/captacao | Localize e interprete os principais indicadores de Captação. |
-| B | /v1/captacao | Altere um filtro disponível de safra ou ciclo e observe as visualizações. |
-| C | /v1/captacao | Compare períodos ou grupos apresentados. |
-| D | /v1/matriculas | Identifique os principais indicadores de Matrículas. |
-| E | /v1/captacao ou /v1/matriculas | Interprete uma visualização complementar disponível. |
+Observe a tela de Captação, altere um dos filtros e explique o que você entende dos
+indicadores apresentados.
 
-Aplicar perguntas 1–3 ao concluir A–E. Abreviar condução, não demonstrar a resposta.
+## Tarefa 2 — Matrículas
 
-## Etapa 3 — Fase 2: tarefas F–K (15 minutos)
+Observe a tela de Matrículas e explique o que você entende sobre o total, novas matrículas
+e rematrículas.
 
-### Tarefa F — Visão Geral de Ads
-Rota: `/v1/ads`.
-“Observe esta página e explique o que você entende sobre os investimentos apresentados.”
-Observar indicadores que chamam atenção, localização de investimento/resultados, comparação
-de canais e dificuldades; não sugerir a interpretação correta. Aplicar pergunta 4.
-Não tratar resultados com denominadores distintos como equivalentes.
+## Encerramento e registro
 
-### Tarefa G — Google Ads e CPR
-Rota: `/v1/ads/google`.
-Pedir que localize investimento, conversões registradas e CPR. Aplicar pergunta 5:
-“Com suas próprias palavras, o que você entende que CPR representa?”
-Registrar a resposta **antes de esclarecer**; anotar se leu a explicação da tela ou recebeu ajuda.
-Não corrigir enquanto responde.
+Aplicar as seis perguntas de `instrumento_validacao_v1.md`. Registrar em campos separados:
 
-Após o registro, esclarecer: CPR = investimento / conversões registradas no Google Ads.
-Não é custo por matrícula, não é custo por lead único e não estabelece atribuição causal
-de matrícula ao anúncio. Aplicar pergunta 6 **após esclarecimento**, sem substituir a resposta 5.
+- evidência direta: o que a pessoa efetivamente disse ou fez, inclusive ajuda necessária;
+- interpretação posterior do grupo: análise produzida somente depois da sessão.
 
-### Tarefa H — Filtros e comparação
-Ainda em `/v1/ads/google`, solicitar alteração de um filtro existente: ano-calendário fictício
-ou campanha sintética. Aplicar pergunta 7: “O que mudou na análise depois da alteração do filtro?”
-Observar facilidade, percepção e interpretação. Registrar período/filtro antes e depois;
-não criar granularidade diária ou filtros inexistentes.
-
-### Tarefa I — Meta Ads
-Rota: `/v1/ads/meta`.
-“Observe os resultados apresentados e explique como você interpreta os diferentes tipos
-de resultado e seus respectivos custos.”
-Observar se distingue conversas e interações e seus denominadores; não antecipar a distinção.
-Aplicar pergunta 8. Não perguntar sobre ML nesta página.
-
-### Tarefa J — Estratégia
-Rota: `/v1/ads/estrategia`.
-“Com base nesta tela, explique como você interpreta orçamento, gasto e saldo.”
-Depois: “Que tipo de decisão essa informação poderia ajudar você a analisar?”
-Aplicar pergunta 9. Reiterar a natureza sintética do orçamento se necessário, registrando a
-intervenção; nunca apresentar a premissa como orçamento real, ideal ou recomendação automática.
-
-### Tarefa K — Comunicação do experimento CPR
-Voltar à seção do experimento acadêmico em `/v1/ads/google`.
-Aplicar pergunta 10: “Pelo que esta seção apresenta, o que você entende que esse experimento
-consegue fazer e o que ele não consegue fazer?”
-Registrar interpretação espontânea antes de explicar limitações. Não avaliar conhecimento
-de MAE, RMSE, R² ou regressão linear; avalia-se a comunicação, não a qualidade científica.
-
-Para análise posterior, observar atribuições indevidas: definir orçamento, prever matrículas,
-otimizar automaticamente campanhas, garantir redução de custo ou eficácia real.
-**Não ler essa lista como alternativas ao participante.** Depois do registro, se necessário
-esclarecer caráter experimental/sintético, baixo poder explicativo e ausência de decisão
-automática; registrar ajuda sem reclassificá-la como compreensão espontânea.
-
-## Etapa 4 — Perguntas abertas e encerramento (5 a 10 minutos)
-
-Aplicar perguntas 11–18, sem repetir as respondidas durante o uso. Permitir resposta negativa,
-neutra, “não sei”, “não se aplica” ou recusa. Agradecer, reiterar anonimização e não prometer
-ajustes antes da análise. Registrar tarefas/perguntas não realizadas; nunca preencher por inferência.
-
-## Conduta de registro
-
-Para A–K, registrar conclusão sem ajuda, ajuda necessária, dificuldade e evidência direta,
-incluindo tipo/momento da ajuda. Distinguir opinião de facilidade de execução observada.
-Em K, concluir significa examinar a seção e expressar compreensão, não dominar matemática.
-Separar fala/ação da interpretação posterior do grupo. Citações futuras apenas breves e
-anonimizadas. Nenhuma resposta é preenchida nesta preparação.
+Não preencher respostas por inferência e não prometer alterações antes da análise.

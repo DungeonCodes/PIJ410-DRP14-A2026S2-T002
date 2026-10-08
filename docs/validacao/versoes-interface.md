@@ -1,102 +1,116 @@
 # Versões da interface acadêmica
 
-Decisão: ADR-008 em `docs/decisions.md`. Versões comparáveis usam `/v1`, `/v2` e,
-se autorizadas no futuro, V3 e seguintes. Não se usam nomes relativos como old/new/legacy.
-Versionamento de apresentação não é versionamento do experimento científico nem abertura de fases.
+O versionamento representa composições históricas da interface. Ele é distinto da capacidade
+técnica global do projeto e dos gates de implantação.
 
-## V1
+| Versão | Conteúdo |
+|---|---|
+| V1 | Captação + Matrículas |
+| V2 | Captação + Matrículas + Ads + ML CPR + evolução temporal consolidada (FB-V1-P1-001) |
 
-Status: **BASELINE PRÉ-VALIDAÇÃO**.
+As origens são distintas: Ads e ML CPR constituem evolução técnica/acadêmica; a evolução
+temporal consolidada foi aprovada pelo grupo após o feedback real de P1.
 
-Data de congelamento: **06/10/2026**.
+## V1 — baseline inicial pré-Ads
 
-Fases: 1 e 2 ativas; 3 e 4 bloqueadas.
+Estado funcional:
 
-Objetivo: servir como referência inicial da interface antes dos ajustes oriundos da validação.
-Preserva o estado funcional/visual aprovado localmente, exceto prefixo de rota e identificador discreto.
+- Fase 1: Captação e Matrículas.
 
-Páginas: `/v1`, `/v1/captacao`, `/v1/matriculas`, `/v1/ads`, `/v1/ads/google`,
-`/v1/ads/meta` e `/v1/ads/estrategia`.
+Ads ainda não fazia parte da interface. As únicas rotas funcionais são `/v1`,
+`/v1/captacao` e `/v1/matriculas`. Rotas `/v1/ads/**` respondem 404 e não redirecionam
+para V2. A navegação V1 não apresenta Ads, Orgânico, Gestão ou Arquitetura.
 
-V1 somente pode ser alterada para bug crítico, erro factual, vulnerabilidade, vazamento ou
-falha que impeça execução. Uma melhoria de UX não autoriza editar V1. Toda exceção exige
-motivo documentado, testes e revisão humana da proteção de hashes.
+## V2 — evolução técnica/acadêmica
 
-## V2
+Estado funcional:
 
-Status: **EVOLUÇÃO TÉCNICA ACADÊMICA — SEM ALTERAÇÕES DE FEEDBACK**.
+- Fase 1: Captação e Matrículas;
+- Fase 2: Ads — Visão Geral, Google Ads, Meta Ads e Estratégia;
+- demonstração acadêmica do experimento CPR;
+- previsão sazonal experimental de CPR.
 
-Origem: V1.
+A incorporação de Ads e ML à V2 decorreu de evolução técnica/acadêmica. A primeira evidência
+real de uso da V2 foi a reavaliação da mesma P1 em `respostas/v2-p1-reavaliacao.md`; nenhuma
+resposta fictícia foi atribuída à comunidade.
 
-Objetivo: receber ajustes decorrentes de validação, preservando a V1 para comparação.
-As mesmas páginas existem sob `/v2` e nasceram equivalentes. Por demanda técnica/acadêmica
-explícita de 06/10/2026, somente Google Ads acrescenta previsão sazonal experimental de CPR.
-Não é feedback P1/P2 nem melhoria validada pela comunidade. As demais páginas continuam herdadas.
+Após a validação individual de P1 na V1, o grupo aprovou FB-V1-P1-001. A V2 agora apresenta
+uma evolução temporal consolidada e selecionável em `/v2/captacao`. Essa alteração tem origem
+comunitária distinta da inclusão técnica de Ads e ML.
 
-| Versão | Estado | Alterações em relação à anterior | Evidência |
+### Granularidade e filtros da evolução temporal
+
+| Série | Fonte | Granularidade original | Granularidade utilizada |
 |---|---|---|---|
-| V1 | baseline | Não se aplica; estado atual aprovado localmente | Pré-validação; não é avaliação comunitária |
-| V2 | evolução técnica acadêmica | Adição de previsão sazonal experimental de CPR em Google Ads | CLI e testes técnicos; avaliação comunitária [PENDENTE] |
+| Contatos | Contagens mensais do funil de Captação | Mês por safra e ciclo | Mês/ano |
+| Visitas | Contagens mensais do funil de Captação | Mês por safra e ciclo | Mês/ano |
+| Matrículas do funil | Contagens mensais do funil de Captação | Mês por safra e ciclo | Mês/ano |
 
-## Arquitetura e proteção
+Os filtros existentes de safra e ciclo recortam as três séries com os mesmos critérios.
+Não há filtro de período adicional; o eixo usa os meses das safras selecionadas em ordem
+cronológica. Meses sem observação permanecem `null`; zero é exibido somente quando há zero
+observado. Não há interpolação, normalização percentual ou segundo eixo Y.
 
-- `src/lib/interface.ts`: versões aceitas, `CURRENT_UI_VERSION`, prefixos e aliases com filtros preservados.
-- `src/app/(app)/[uiVersion]/`: validação da versão, layout e roteador comum; versão/rota desconhecida dá 404.
-- `src/ui/v1/`: composições de tela preservadas; componentes existentes em `src/components/`
-  e estilo base são dependências protegidas da baseline, não pontos de edição de UX para V2.
-- `src/ui/v2/index.ts`: registro independente que herda as apresentações V1 inicialmente.
-  Uma alteração futura substitui somente a página/componente necessário por uma implementação
-  em `src/ui/v2/`, sem editar a baseline ou copiar a camada analítica.
-- `data-ui-version` permite escopo de estilos futuros por versão; nunca alterar CSS global
-  ou componentes protegidos para melhorar V2. O tema atual permanece igual.
-- `scripts/ui-v1-baseline.mjs`: hashes de 17 fontes de apresentação/identidade; testes verificam
-  esses arquivos sem regenerar ou aprovar hashes automaticamente. Não é snapshot de dados.
-- Datasets em `src/data/`, contratos, tipos, utilitários analíticos e algoritmos em `src/lib/`
-  são únicos e compartilhados. Não existem calcularMetricasV1/V2 nem cópias de datasets nas UIs.
-- O artefato CPR anterior é o mesmo para ambas. O novo artefato sazonal é compartilhável
-  na camada científica, mas apresentado somente na V2; nenhum dataset de origem foi duplicado.
-  Treinamento permanece na CLI, nunca no navegador.
+O módulo Matrículas usa outra base de contagens mensais, com totais próprios que não equivalem
+às matrículas do funil de Captação. Seu gráfico de efetivação por mês permanece complementar
+em `/v2/matriculas`; os filtros daquela página continuam independentes. A distinção é indicada
+na seção consolidada para evitar comparação enganosa entre bases diferentes.
 
-Rotas canônicas apontam para `CURRENT_UI_VERSION`, atualmente `v1`, por redirect temporário 307.
-Filtros da URL são preservados. Navegação e página inicial mantêm o prefixo da versão acessada.
-Não há seletor de versão para o participante; o pesquisador acessa `/v1` ou `/v2` diretamente.
-O identificador discreto aparece no desktop e mobile, inclusive em capturas de evidência.
+| Gráfico temporal anterior | Classificação na V2 | Decisão |
+|---|---|---|
+| Contatos por mês, em Captação | SUBSTITUÍDO PELO CONSOLIDADO | Removido apenas da apresentação V2 |
+| Visitas por mês, em Captação | SUBSTITUÍDO PELO CONSOLIDADO | Removido apenas da apresentação V2 |
+| Matrículas por mês, em Captação | SUBSTITUÍDO PELO CONSOLIDADO | Removido apenas da apresentação V2 |
+| Efetivação de matrículas por mês, no módulo Matrículas | COMPLEMENTAR | Mantido; outra base e outra finalidade |
 
-Promover V2 exige feedback real, alterações selecionadas, testes, comparação e decisão explícita.
-Não há promoção, deploy ou autorização de publicação nesta execução. O bloqueio do histórico Git
-permanece separado e não foi resolvido.
+Funil, situação dos contatos, origem declarada e composição por safra/ciclo/turma são
+visualizações não temporais e permanecem.
 
-## Comparabilidade e primeira aplicação
+## Capacidade técnica e composição histórica
 
-A primeira sessão real deve usar **V1**, sem apresentar V2 como alternativa. Registrar versão,
-dataset/seed, período, filtros e módulos efetivamente apresentados. Pela ampliação documental explícita de 06/10/2026, o instrumento cobre Captação, Matrículas
-e Ads (Visão Geral, Google Ads, Meta Ads, Estratégia e comunicação do experimento CPR),
-com tarefas A–K e 18 perguntas em 30 a 40 minutos. Não se avalia a qualidade científica
-do modelo. Fases 3 e 4 continuam bloqueadas; V2 não é apresentada nesta primeira sessão.
-Sua alteração sazonal é técnica acadêmica, não resultado dessa sessão ainda futura.
+| Escopo | Estado |
+|---|---|
+| Capacidade técnica — Fase 1 | ATIVA |
+| Capacidade técnica — Fase 2 | IMPLEMENTADA |
+| Conteúdo V1 | Somente Fase 1 |
+| Conteúdo V2 | Fases 1 e 2 |
+| Fases 3 e 4 | BLOQUEADAS |
 
-Comparações posteriores exigem mesmo dataset, métricas, período/filtros, fórmulas, gates e
-definição de CPR para os módulos e experimentos anteriores. A V2 agora adiciona um experimento
-científico separado, por demanda explícita; seus indicadores novos não são atribuídos a mudanças
-puramente visuais. Uma comparação futura deve controlar a exposição a esse novo conteúdo ou
-analisar seu efeito separadamente. Não há comparação comunitária já realizada.
+A restrição é aplicada na composição/roteamento da interface. Dados, métricas, seeds,
+experimentos e artefatos científicos permanecem compartilhados e intactos.
 
-Ciclo: V1 → validação → feedback real → seleção de alterações → V2 → nova validação →
-comparação V1/V2 → eventual V3. Nenhuma dessas etapas futuras é declarada concluída.
+## Versão corrente e aliases
 
-## Changelog — distinguir evolução técnica de feedback
+`CURRENT_UI_VERSION = "v1"` permanece inalterado. Assim, `/captacao` e `/matriculas`
+continuam apontando para V1. Enquanto V1 for corrente, não há alias canônico de Ads: `/ads`,
+`/ads/google`, `/ads/meta` e `/ads/estrategia` respondem 404. Para acessar a capacidade técnica
+de Ads, deve-se usar explicitamente `/v2/ads`, `/v2/ads/google`, `/v2/ads/meta` e
+`/v2/ads/estrategia`. Essa decisão evita atribuir silenciosamente conteúdo V2 à V1.
 
-| ID | Origem | Feedback/evidência | Alteração proposta | Versão | Status |
-|---|---|---|---|---|---|
-| TEC-001 | DEMANDA TÉCNICA/ACADÊMICA DE DEMONSTRAÇÃO DE ML | Solicitação explícita; experimento-google-cpr-sazonal.md e artefato da CLI | Adição de previsão sazonal experimental de CPR | V2 | Implementação técnica; sem validação comunitária |
+## Validação
 
-Não existem entradas de feedback comunitário. Novas linhas devem distinguir origem técnica
-acadêmica de feedback real, sem atribuir TEC-001 a P1/P2. Entradas de feedback somente após coleta
-real, separando observação e interpretação.
+P1, gerente de Marketing, utilizou presencialmente a V1 e reavaliou a V2 em 07/10/2026, após
+a implementação de FB-V1-P1-001; TCLE obtido: SIM. Houve uma participante em dois momentos.
+A versão apresentada deve ser registrada em cada momento. As notas pertencem à mesma pessoa,
+mas a versões e itens diferentes; não constituem comparação quantitativa controlada.
+O instrumento mais extenso de V2 permanece separado em
+`instrumento_validacao_v2.md`; sessões futuras devem registrar versão e seguir o TCLE conforme
+o protocolo definido.
 
-## Verificações
+## Registro cronológico
 
-`npm run test:interface` verifica configuração, gates, herança das páginas e única extensão técnica V2, com proteção de V1.
-`npm run test:interface:http -- --url=http://127.0.0.1:3101` verifica servidor local, preservação
-do painel original nas duas versões (incluindo filtros), extensão exclusiva V2, identificadores, navegação,
-aliases e bloqueios. O teste HTTP não acessa ambientes publicados.
+| ID | Origem | Alteração | Versão | Evidência comunitária |
+|---|---|---|---|---|
+| HIST-001 | Correção factual da cronologia | V1 recomposta como baseline pré-Ads | V1 | Não se aplica |
+| TEC-001 | Evolução técnica/acadêmica | Ads, experimento CPR e previsão sazonal | V2 | Nenhuma; validação futura |
+
+### Alteração aprovada pelo grupo após feedback real
+
+| ID | Origem | V1 | Alteração | Destino |
+|---|---|---|---|---|
+| FB-V1-P1-001 | Feedback real P1; implementação aprovada pelo grupo | Gráficos temporais distribuídos | Consolidação de Contatos, Visitas e Matrículas do funil em gráfico temporal multissérie selecionável | V2 |
+
+Evidência posterior: a mesma P1 reavaliou V2 e relatou que a visualização conjunta facilitou a
+comparação ao longo do tempo; não relatou dificuldades nem solicitou outra alteração naquele
+momento. Trata-se de evidência exploratória individual, não validação definitiva. A expressão
+“qualidade do lead” aparece na resposta de P1 como percepção; não constitui métrica comprovada.

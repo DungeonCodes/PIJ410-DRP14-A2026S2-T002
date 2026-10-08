@@ -210,8 +210,10 @@ horizonte, barras de índice sazonal, métricas dos três métodos, interpretaç
 tabelas e avisos. O painel original continua composto por reutilização de GoogleV1.
 A seção integral do experimento não depende dos filtros do painel; isso é avisado visivelmente.
 
-V1 e 17 hashes protegidos permanecem intactos; canônicas continuam V1. Fases 3 e 4 bloqueadas.
-A primeira sessão com comunidade permanece exclusivamente V1. A evolução técnica não é feedback,
+Os artefatos científicos permanecem intactos. A V1 histórica contém somente Captação e
+Matrículas; Ads e esta extensão pertencem à V2. As canônicas de Captação e Matrículas continuam
+V1, enquanto Ads exige rota `/v2/ads/**`. Fases 3 e 4 permanecem bloqueadas.
+A primeira sessão com comunidade permanece exclusivamente V1, sem Ads. A evolução técnica não é feedback,
 melhoria comprovada de compreensão, aplicação comunitária ou comparação V1/V2 realizada.
 Uma futura comparação deve reconhecer que V2 possui **novo conteúdo científico**, além da UI,
 e não atribuir diferenças exclusivamente à apresentação sem controlar essa diferença.

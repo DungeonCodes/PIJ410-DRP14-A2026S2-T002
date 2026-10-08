@@ -4,7 +4,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { createHash } from 'node:crypto';
 import { fileURLToPath } from 'node:url';
 import { CURRENT_UI_VERSION, UI_VERSIONS, canonicalTarget, isUIVersion, versionedPath } from '../src/lib/interface.ts';
-import { MODULOS, moduloDaRota, rotaHabilitada } from '../src/lib/fases.ts';
+import { MODULOS, moduloDaRota, modulosDaVersao, rotaHabilitada, rotaHabilitadaNaVersao } from '../src/lib/fases.ts';
 import { BASELINE_V1 } from './ui-v1-baseline.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
@@ -14,20 +14,25 @@ assert.deepEqual(UI_VERSIONS, ['v1', 'v2']);
 assert.equal(isUIVersion('v3'), false);
 assert.equal(isUIVersion('old'), false);
 for (const version of UI_VERSIONS) {
+  const chavesDaVersao = new Set(modulosDaVersao(version).map((m) => m.chave));
   for (const modulo of MODULOS) {
     const path = versionedPath(version, modulo.rota);
     assert.equal(moduloDaRota(path)?.chave, modulo.chave);
     assert.equal(rotaHabilitada(path), modulo.habilitado);
+    assert.equal(rotaHabilitadaNaVersao(version, path), modulo.habilitado && chavesDaVersao.has(modulo.chave));
   }
-  assert.equal(rotaHabilitada(versionedPath(version, '/organico/subrota')), false);
+  assert.equal(rotaHabilitadaNaVersao(version, versionedPath(version, '/organico/subrota')), false);
 }
-assert.equal(canonicalTarget('/ads/google', { anos: '2021,2022', campanhas: 'Cenario-A' }),
-  `${versionedPath(CURRENT_UI_VERSION, '/ads/google')}?anos=2021%2C2022&campanhas=Cenario-A`);
+assert.deepEqual(modulosDaVersao('v1').map((m) => m.chave), ['captacao', 'matriculas']);
+assert.deepEqual(modulosDaVersao('v2').map((m) => m.chave),
+  ['captacao', 'matriculas', 'ads', 'ads-google', 'ads-meta', 'ads-estrategia']);
 assert.equal(canonicalTarget('/captacao', { safras: ['2025', '2026'] }),
   `${versionedPath(CURRENT_UI_VERSION, '/captacao')}?safras=2025&safras=2026`);
 assert.equal(canonicalTarget('/'), versionedPath(CURRENT_UI_VERSION));
-assert.match(read('src/ui/v2/index.ts'), /pages:\s*\{\s*\.\.\.UI_V1\.pages,\s*'\/ads\/google': GoogleV2\s*\}/,
-  'Única evolução técnica V2 autorizada: Google Ads sazonal; demais páginas herdadas');
+assert.doesNotMatch(read('src/ui/v1/index.ts'), /'\/ads(?:\/|')/, 'V1 não registra páginas Ads');
+for (const route of ['/ads', '/ads/google', '/ads/meta', '/ads/estrategia']) {
+  assert.ok(read('src/ui/v2/index.ts').includes(`'${route}'`), `V2 registra ${route}`);
+}
 assert.match(read('src/ui/v2/pages/google.tsx'), /<GoogleV1 \{\.\.\.props\} \/>/, 'Baseline Google é preservada na composição V2');
 assert.match(read('src/ui/v2/pages/google.tsx'), /<PrevisaoCPRSazonal \/>/);
 assert.match(read('src/components/sidebar-nav.tsx'), /versionedPath\(version, m\.rota\)/);
@@ -46,4 +51,4 @@ function checkUI(path) {
   }
 }
 checkUI('src/ui');
-console.log(`UI: versões, aliases, gates e única extensão técnica V2 verificados; ${Object.keys(BASELINE_V1).length} arquivos V1 protegidos.`);
+console.log(`UI: composição histórica V1/V2, aliases e gates verificados; ${Object.keys(BASELINE_V1).length} arquivos protegidos.`);

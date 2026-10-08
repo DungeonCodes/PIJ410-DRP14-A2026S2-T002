@@ -12,7 +12,7 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Fragment } from 'react';
-import { moduloDaRota, modulosHabilitados, type ModuloAcademico } from '@/lib/fases';
+import { moduloDaRota, modulosDaVersao, type ModuloAcademico } from '@/lib/fases';
 import { versionedPath, type UIVersion } from '@/lib/interface';
 
 const BASE = 'block rounded-md px-3 py-2 text-sm font-medium transition-colors';
@@ -37,7 +37,7 @@ function agrupar(modulos: ModuloAcademico[]) {
 
 export function SidebarNav({ version }: { version: UIVersion }) {
   const pathname = usePathname() ?? '';
-  const blocos = agrupar(modulosHabilitados());
+  const blocos = agrupar(modulosDaVersao(version));
 
   return (
     <nav className="mt-8 space-y-1" aria-label="Módulos disponíveis">
@@ -88,7 +88,7 @@ export function MobileNav({ version }: { version: UIVersion }) {
 
   return (
     <nav className="mt-3 flex items-center gap-2 overflow-x-auto pb-1" aria-label="Módulos disponíveis">
-      {modulosHabilitados().map((m) => (
+      {modulosDaVersao(version).map((m) => (
         <Link
           key={m.chave}
           href={versionedPath(version, m.rota)}

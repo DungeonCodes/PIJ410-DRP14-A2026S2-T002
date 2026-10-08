@@ -867,6 +867,128 @@ Sem deploy, commit, push, DOCX/PDF ou tratamento do histórico Git. diff --check
 Gate: PREVISÃO SAZONAL CPR PRONTA PARA DEMONSTRAÇÃO NA V2.
 Limite: demonstração válida frente a t−12, não superioridade geral nem previsão operacional.
 
+## Registro da primeira validação real da V1 — P1
+
+Seis respostas reais de P1 registradas em `docs/validacao/respostas/v1-p1.md`: três avaliações
+5/5; preferência por gráficos temporais; observação sobre gráficos em diversos lugares; sugestão
+de gráfico combinado de contatos, visitas e matrículas com seleção de séries. Os metadados
+foram posteriormente confirmados: gerente de Marketing, 07/10/2026, presencial, TCLE obtido.
+A interpretação não foi conclusiva. Nenhuma alteração funcional foi executada e nenhum resultado foi
+incorporado ao Relatório Final. Sem dados pessoais, commit, push ou deploy.
+
+## FB-V1-P1-001 — alteração comunitária aprovada para V2
+
+O grupo aprovou a sugestão registrada por P1 após a validação da V1. A V2 recebeu em
+`/v2/captacao` um gráfico mensal conjunto de contatos, visitas e matrículas do funil com
+seleção independente de séries. Os três gráficos mensais separados foram substituídos somente
+nessa página da V2; os gráficos categóricos e o histórico próprio de Matrículas permanecem.
+P1 utilizou V1; a reavaliação da mesma participante na V2 está registrada em
+`docs/validacao/respostas/v2-p1-reavaliacao.md`. A alteração comunitária fica separada da evolução técnica
+de Ads/ML. A resposta original de P1 e o Relatório Final não foram editados.
+
+## Reavaliação V2 — P1 e verificação de FB-V1-P1-001
+
+Seis respostas reais da mesma P1 registradas em `docs/validacao/respostas/v2-p1-reavaliacao.md`:
+três notas 5/5; P1 relatou que a visualização consolidada facilitou a comparação; nenhuma dificuldade foi
+relatada e nenhuma nova alteração foi solicitada. A expressão “qualidade do lead” foi preservada
+como percepção de P1, sem tratá-la como métrica comprovada. Nenhuma implementação foi realizada
+nesta execução. Os metadados foram confirmados posteriormente: gerente de Marketing, 07/10/2026,
+presencial, TCLE obtido. O Relatório
+Final não foi alterado. Sem dados pessoais, commit, push ou deploy.
+
+## Incorporação científica do ciclo de validação V1 — V2
+
+O Relatório Final passou a registrar P1/V1, a sugestão FB-V1-P1-001, sua aprovação pelo grupo,
+o ajuste de visualização temporal na V2 e a reavaliação posterior pela mesma P1/V2. A redação
+distingue as versões e limita os achados às respostas documentadas, sem comparação experimental
+controlada, atribuição de qualidade individual de lead ou conclusão global. Os metadados da
+participante foram confirmados posteriormente. Respostas originais e aplicação não foram alteradas;
+sem commit, push ou deploy.
+
+## Consolidação científica dos resultados técnicos — seções 3.1 a 3.4
+
+O Relatório Final foi revisado contra o Plano de Ação, ADRs, arquitetura, código, artefatos CPR e
+registros de execução. 3.1 mantém somente necessidades do contato inicial; 3.2 distingue fases
+funcionais de interfaces V1/V2; 3.3 descreve dados sintéticos, contratos, processamento
+determinístico, feature gates e reprodução por CLI. 3.4 explicita a mudança comunitária limitada
+ao gráfico de Captação, corrige a nomenclatura de participação de rematrículas, documenta os
+módulos Ads e completa os resultados principal e complementar do experimento sazonal. Testes
+técnicos são apresentados como verificação de software/reprodutibilidade, separados da avaliação
+P1/V1 e da reavaliação P1/V2. Nenhum código, dataset ou resposta foi alterado; sem commit ou push.
+
+## Confirmação metodológica do uso de IA assistiva e revisão humana
+
+O Relatório Final registra o uso de IA generativa como apoio ao desenvolvimento e à documentação,
+com revisão humana antes da incorporação das saídas e responsabilidade humana pelas decisões,
+interpretações e validação. Também explicita que as ferramentas não geraram respostas ou evidências
+de participantes. As marcações pendentes sobre essa confirmação foram removidas; demais pendências
+permanecem. As respostas de P1, aplicação e dados não foram alterados; sem commit ou push.
+
+## Correção da caracterização da validação — P1 em dois momentos
+
+Confirmado que houve uma única participante: P1, gerente de Marketing, em sessão presencial de
+07/10/2026, com TCLE obtido. P1 avaliou V1, originou FB-V1-P1-001 e, após decisão do grupo e
+implementação do ajuste, reavaliou V2. O registro V2 foi renomeado para
+`docs/validacao/respostas/v2-p1-reavaliacao.md`; respostas originais preservadas. A documentação
+agora descreve dois momentos da mesma pessoa, sem amostra independente. Somente o estado
+`TCLE obtido: SIM` foi versionado; o documento assinado permanece fora do Git. Sem PII, alteração
+funcional, commit ou push.
+
+## Fechamento científico das seções 3.5–3.9 — validação comunitária
+
+As seções 3.5–3.9 do Relatório Final foram auditadas contra os registros P1/V1 e P1/V2.
+As matrizes distinguem evidência observada de dimensões não avaliadas neste ciclo, especialmente
+Ads e investimentos; FB-V1-P1-001 permanece restrito ao gráfico temporal de Captação. O texto
+registra a decisão do grupo, a reavaliação pela mesma participante e as limitações de uma
+evidência exploratória individual, sem comparação quantitativa controlada. A figura de validação
+segue como pendência editorial. Respostas, aplicação e código intactos; sem commit ou push.
+
+## Fechamento científico do Capítulo 4 — Considerações Finais
+
+O capítulo 4 do Relatório Final foi concluído a partir do objetivo geral e dos resultados já
+registrados: atendimento no escopo do protótipo acadêmico, testes técnicos separados da avaliação
+P1/V1–P1/V2, ML CPR experimental de desempenho limitado e ausência de evidência de impacto em
+decisões reais de orçamento. A síntese explicita que Ads/ML não foram avaliados pela participante,
+registra limites e trabalhos futuros como possibilidades. Nenhuma evidência nova, resposta, código,
+dataset ou versão da aplicação foi alterada; sem commit ou push.
+
+## Auditoria final de pendências e capturas locais da interface
+
+O Relatório Final foi varrido integralmente. A pendência genérica de demais evidências e testes foi
+removida por estar superada pelos registros P1/V1–P1/V2 e verificações técnicas documentadas.
+A conferência dos objetivos específicos registrou a ausência de execução documentada de cenários
+de simulação com IA agêntica via CLI. O consentimento das conversas iniciais permanece dependente
+de confirmação humana, sem inferência a partir do TCLE de P1. Marcadores opcionais de figuras de
+testes e do experimento CPR inicial, além do marcador de atualização futura das Fases 3 e 4,
+foram retirados sem alterar resultados. Nove capturas reais da aplicação local em Chrome/Playwright
+(1600×900, dados sintéticos) documentam V1 e V2; seis foram vinculadas ao relatório. Build,
+teste de interface e verificação de não vazamento passaram. Fotografia da sessão presencial
+não foi encontrada nem criada. Restam decisões humanas e montagem editorial; não foi criado
+`Relatorio_Final_V1.md`. Sem alteração de código, dados, respostas ou versões; sem deploy, commit
+ou push.
+
+## Resolução documental das entrevistas iniciais — H08 e H12
+
+Confirmação humana: as entrevistas/conversas iniciais tiveram TCLE; a forma de apresentação dos
+documentos permanece pendência editorial do Anexo A, fora do Git. O instrumento autêntico foi
+localizado em `docs/questionario_comunidade_externa.md`, criado em 26/08/2026 para o levantamento
+de necessidades com marketing e direção, conforme histórico e registro anterior deste log.
+O Relatório Final vincula a fonte na metodologia, em 3.1 e no Apêndice A, sem copiar respostas
+para o roteiro nem confundir a entrevista inicial com a validação posterior de P1/V1–P1/V2.
+Nenhuma pergunta, resposta, dado pessoal ou código foi criado ou alterado; sem commit ou push.
+
+---
+
+## Auditoria H07 — disciplinas e materiais acadêmicos
+
+A seção 2.4 foi confrontada com PPCs, fichamentos, registros técnicos e implementação. Há
+aplicação observável de conceitos de aprendizagem de máquina, ética de dados e desenvolvimento
+da interface; não foi localizado registro suficiente das disciplinas efetivamente cursadas por
+integrante nem dos materiais de aula consultados. PPCs comprovam nomes e escopos curriculares,
+não uso didático. As atribuições sem aplicação demonstrada a redes neurais, aprendizado profundo
+e visão computacional foram retiradas da relação de disciplinas mobilizadas. H07 permanece aberta
+para confirmação humana; nenhuma aula ou participação foi presumida.
+
 ---
 
 Data: 2026-10-08
@@ -882,5 +1004,17 @@ Capítulos 3/4, P1, V1/V2, aplicação, código, datasets, figuras e ML intactos
 Sem commit, push ou geração de artefatos. Verificações: diff --check e busca de
 marcadores/disciplinas/material efetivamente/confirmar disciplinas.
 Gate: H07 AINDA BLOQUEADA — NECESSÁRIA CONFIRMAÇÃO HUMANA.
+
+---
+
+Data: 2026-10-08
+Ação realizada: resolução do conflito de merge de origin/dev em dev.
+Conflito único em final.md 2.4: preservada auditoria H07 local e incorporada relação
+com Interface Humano-Computador e feedback P1 documentada na atualização remota.
+Conteúdo fora de 2.4 preservado da versão remota; nenhum código editado na resolução.
+Auditoria H07 recebeu nota de integração para distinguir o estado anterior das novas
+evidências V1/P1 e V2/P1. H07 continua aberta para confirmação de disciplinas/materiais.
+Verificação: npm test, TypeScript e diff --cached --check aprovados.
+Conclusão do merge por commit local autorizada nesta execução; sem push.
 
 ---

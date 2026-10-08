@@ -2,6 +2,13 @@
 
 Data: 2026-10-08. Resultado: **AINDA BLOQUEADA — necessária confirmação humana.**
 
+Nota de integração Git em 08/10/2026: a auditoria abaixo registra o estado local anterior ao
+merge. A atualização remota acrescenta os registros `docs/validacao/respostas/v1-p1.md` e
+`v2-p1-reavaliacao.md` e a implementação do ajuste temporal V2. Com essas novas evidências,
+Interface Humano-Computador tem relação explícita com avaliação e ajuste na seção 2.4 integrada
+(nível A quanto à aplicação). As descrições de instrumentos apenas preparados abaixo são
+históricas. Permanecem sem comprovação a disciplina cursada e o material didático consultado.
+
 ## Método
 
 Busca global pelos termos solicitados: 104 arquivos textuais, 72 com ocorrências e 1.400 correspondências antes desta edição. Inventariados e extraídos todos os PDFs e DOCX em `docs/`; consultados relatórios, referências, fichamentos, resumos, run log, decisões, documentação técnica, código pertinente e histórico Git. A extração não verifica layout nem texto presente apenas em imagens. O textconv Git de DOCX está indisponível; os binários foram lidos diretamente.
