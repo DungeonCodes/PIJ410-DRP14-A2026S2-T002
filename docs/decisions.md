@@ -439,3 +439,13 @@ Registradas aqui porque constaram como pendências e já não são.
   desde que recebam somente contexto versionado e sanitizado. Cada explicação ou recomendação deve
   apontar os fatos, cálculos, resultados estimados ou referências que a sustentam; saídas sem base
   verificável não serão usadas.
+
+---
+
+## Revisão metodológica H07 — integração curricular coletiva
+
+**Data:** 2026-10-08.
+**Decisão:** por instrução explícita do responsável pelo projeto, a seção 2.4 é sustentada pelas matrizes oficiais dos dois cursos representados, pela previsão curricular até PJI410 e pela correspondência entre ementas e atividades executadas. Não exige histórico ou vínculo individual disciplina–pessoa. PJI410 é Projeto Integrador em Computação IV.
+**Motivo:** o Projeto Integrador é coletivo e multicurso; os artefatos comprovam aplicação dos conhecimentos e as fontes oficiais identificam conteúdo e posição curricular.
+**Alternativa considerada:** rastreamento de disciplinas estudadas por integrante, substituído pelo critério coletivo autorizado.
+**Impacto:** seção 2.4 revisada com oito disciplinas de vínculo forte; H07 resolvida. Materiais específicos só são alegados quando documentados. A decisão não confirma matrícula individual, leitura por todos ou eficácia operacional do ML.

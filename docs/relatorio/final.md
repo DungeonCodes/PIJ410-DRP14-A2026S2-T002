@@ -1,4 +1,4 @@
-# Relatório Final — Projeto Integrador em Computação III (PIJ410)
+# Relatório Final — Projeto Integrador em Computação IV (PJI410)
 
 <!--
 CONTROLE EDITORIAL — não integrar ao DOCX/PDF de entrega.
@@ -419,52 +419,56 @@ permanece sob responsabilidade humana, em diálogo com a instituição parceira.
 
 ## 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
 
-No desenvolvimento do projeto foram mobilizados conhecimentos relacionados a disciplinas
-identificadas nos projetos pedagógicos da UNIVESP (2020; 2026). O grupo reúne integrantes de
-diferentes cursos do eixo de TI, cujas contribuições podem mobilizar conhecimentos de disciplinas
-e matrizes curriculares distintas. As relações abaixo descrevem
-conceitos observáveis na implementação. Elas não comprovam quais disciplinas foram cursadas
-pelos integrantes ou quais materiais didáticos foram consultados.
+Considerando a composição do grupo por estudantes de Bacharelado em Ciência de Dados e
+Engenharia de Computação, o desenvolvimento do projeto mobilizou conhecimentos presentes em
+diferentes componentes curriculares das respectivas matrizes. A relação é apresentada em nível
+coletivo, pela correspondência entre os conteúdos curriculares e as atividades executadas, sem
+atribuir disciplinas a integrantes específicos ou afirmar que todos cursaram os mesmos componentes.
 
-Os conhecimentos relacionados a Aplicações em Aprendizado de Máquina foram mobilizados na
-formulação e avaliação de uma tarefa supervisionada de regressão. No protótipo, isso se
-materializou nos experimentos de CPR sintético do Google Ads: regressão linear, comparação com
-baselines, separação temporal de treinamento e teste, MAE, RMSE, R² e prevenção de vazamento
-de informação. A previsão é experimental, sem eficácia operacional comprovada ou superioridade
-geral do modelo. Não foram implementadas redes neurais ou aprendizado profundo.
+O [Plano de Ensino oficial de PJI410 — Projeto Integrador em Computação IV](https://assets.univesp.br/blackboard/plano-de-ensino/disciplinas/PJI410.html)
+abrange os dois cursos e articula resolução de problemas, análise de dados, aprendizagem de
+máquina e interface para visualização de resultados. As matrizes do PPC dos cursos de Computação
+(UNIVESP, 2020), conferidas também na [versão com códigos revisados](https://univesp.br/sites/58f6506869226e9479d38201/assets/6012ad8f7c1bd13535c41a85/PPC-BTI_C_digos_Revisados.pdf),
+situam PJI410 no sétimo semestre. Os oito componentes selecionados abaixo estão previstos antes
+desse período em pelo menos um dos cursos representados no grupo.
 
-Conhecimentos relacionados a Desenvolvimento Web e Engenharia de Software aparecem na interface
-em Next.js e TypeScript, na componentização, na separação entre cálculo e apresentação, no
-versionamento e nos testes automatizados. A liberação incremental por feature gates e as rotinas
-reproduzíveis constituem evidências dessas práticas. A associação curricular é sustentada pelo
-escopo das disciplinas e pela implementação, sem registro da origem didática dos conhecimentos.
-Thakkar (2020) é referência bibliográfica externa sobre React e renderização no servidor; sua
-citação não comprova consulta a material de uma disciplina.
+| Disciplina | Curso(s) em que está presente | Aplicação no projeto |
+|---|---|---|
+| Algoritmos e Programação de Computadores II | Ciência de Dados e Engenharia de Computação | Organização de funções e módulos, manipulação de arquivos JSON e rotinas determinísticas para gerar cenários e calcular indicadores. |
+| Desenvolvimento Web | Ciência de Dados e Engenharia de Computação | Construção da aplicação em Next.js, React e TypeScript, com componentes, páginas, filtros e apresentação dos resultados. |
+| Engenharia de Software | Ciência de Dados e Engenharia de Computação | Separação entre dados, cálculos e apresentação; arquitetura modular; versionamento; testes automatizados; liberação incremental por feature gates e rotinas reproduzíveis. |
+| Estatística e Probabilidade | Ciência de Dados e Engenharia de Computação | Organização e agregação dos dados sintéticos, descrição de séries mensais, cálculo de indicadores e interpretação quantitativa limitada ao cenário demonstrativo. |
+| Introdução à Ciência de Dados | Ciência de Dados | Preparação dos dados sintéticos, distinção entre ausência e zero, seleção de observações elegíveis e organização dos experimentos e de seus resultados. |
+| Visualização Computacional | Ciência de Dados | Apresentação de indicadores e gráficos nos dashboards, filtragem, agregação e consolidação temporal de séries, inclusive na interface V2. |
+| Aprendizado de Máquinas | Ciência de Dados | Formulação e avaliação dos experimentos supervisionados de CPR: comparação de regressão linear com baselines, divisão temporal, prevenção de leakage e métricas MAE, RMSE e R². |
+| Interface Humano-Computador | Engenharia de Computação | Avaliação da apresentação da interface e implementação da visualização temporal consolidada na V2 após o feedback de P1, seguida de reavaliação. |
 
-A avaliação da interface e o ajuste da visualização temporal após o feedback de P1 também
-evidenciam práticas relacionadas a Interface Humano-Computador. Essa relação é sustentada pelos
-registros de validação V1 e reavaliação V2 e pela implementação da visualização consolidada,
-sem comprovar qual aula ou material didático foi consultado.
+Fonte: elaboração do grupo, com base nas matrizes e ementas oficiais da UNIVESP e nos artefatos
+do projeto. A grafia Introdução à Ciência de Dados segue o Plano de Ensino de COM350; o PPC
+registra o mesmo componente como Introdução a Ciência de Dados.
 
-Conhecimentos relacionados a Introdução a Ciência de Dados, Estatística e Probabilidade e
-Visualização Computacional aparecem na preparação e agregação de dados sintéticos, no tratamento
-de ausências, na descrição de séries mensais e na apresentação de indicadores e gráficos. As
-métricas de erro e a comparação dos baselines sustentam uma avaliação limitada ao experimento,
-sem inferência sobre a população da instituição ou causalidade. Estatística e Probabilidade é o
-nome registrado no PPC de 2020; sua identificação na trajetória de ao menos um integrante cuja
-contribuição esteja relacionada a essas práticas requer confirmação, sem pressupor uma matriz
-curricular única para o grupo.
+Na construção do software, os conhecimentos de programação foram articulados aos de arquitetura,
+componentização e verificação. A aplicação separa as fontes sintéticas das funções de cálculo e
+dos componentes de apresentação; o controle de versão registra sua evolução, e os testes verificam
+regras de cálculo, disponibilidade dos módulos e comportamento das versões da interface. Os
+feature gates regulam a liberação incremental das fases. A organização dos dados e as
+visualizações, por sua vez, tornam os indicadores e as séries temporais examináveis por filtros e
+gráficos. A avaliação documentada de V1 e a reavaliação de V2 sustentam a relação entre apresentação,
+interação e melhoria da interface, sem generalizar a percepção de P1 a todos os usuários.
 
-A relação com Impactos da Computação na Sociedade é observável nas decisões de utilizar dados
-sintéticos, excluir informações pessoais e integrações operacionais e manter supervisão humana.
-O PPC de 2026 confirma o escopo curricular dessa associação, mas não comprova que a disciplina
-foi efetivamente estudada por ao menos um integrante que contribuiu com essas práticas. Em
-Projeto Integrador em Computação III, a orientação oficial
-fundamenta a organização metodológica em ouvir, criar e implementar. Design Thinking é tratado
-como abordagem metodológica do PI, também apoiada em Rosado e Dias (2024). Etapas planejadas não
-são apresentadas como realizadas.
+Nos experimentos de aprendizagem de máquina, a regressão linear e os baselines foram avaliados
+sobre CPR sintético do Google Ads, com separação temporal e controle da disponibilidade das
+informações utilizadas. MAE, RMSE e R² apoiaram a comparação quantitativa dos resultados. O
+experimento sazonal acrescentou uma previsão exploratória no mesmo contexto sintético. Essas
+atividades não demonstram eficácia preditiva operacional, superioridade geral do modelo,
+causalidade ou inferência sobre a população da instituição. A associação curricular se limita aos
+conteúdos aplicados; não implica utilização de todas as técnicas ou bibliotecas das ementas.
 
-[PENDENTE – H07: para cada disciplina citada, confirmar que foi efetivamente estudada por ao menos um integrante cuja contribuição correspondente esteja relacionada ao projeto. Não se exige graduação ou matriz curricular única do grupo; curso e matriz individuais podem esclarecer o nome oficial quando necessário. Aula, apostila ou semana específica somente será incluída se houver comprovação de consulta; sua ausência, isoladamente, não impede descrever a aplicação dos conhecimentos.]
+Os PPCs e os Planos de Ensino sustentam a identificação e o escopo dos componentes curriculares;
+não são apresentados como prova de consulta a uma aula ou apostila específica. As referências
+bibliográficas externas mantêm seu papel de fundamentação e apoio técnico. Design Thinking é
+tratado como abordagem metodológica orientadora do Projeto Integrador, conforme desenvolvido na
+seção 2.5, sem ser acrescentado como disciplina autônoma.
 
 ## 2.5 Metodologia
 
@@ -1106,7 +1110,7 @@ DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artific
 
 FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
 
-GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação III**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
+GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação IV**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
 
 JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
 

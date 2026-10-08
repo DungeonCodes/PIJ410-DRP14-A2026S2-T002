@@ -12,7 +12,7 @@ Intenção preliminar (hipótese, não decisão): investigar como informações 
 
 ## Tipo de Projeto
 
-Projeto acadêmico: **PIJ410 — Projeto Integrador em Computação III — UNIVESP — 2º semestre de 2026**, desenvolvido pelo grupo do Projeto Integrador.
+Projeto acadêmico: **PJI410 — Projeto Integrador em Computação IV — UNIVESP — 2º semestre de 2026**, desenvolvido pelo grupo do Projeto Integrador.
 
 O trabalho usa como contexto uma necessidade real observada em uma instituição de ensino e segue as orientações metodológicas e acadêmicas da UNIVESP.
 

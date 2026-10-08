@@ -1,6 +1,6 @@
 # Questionário estruturado — comunidade externa
 
-> **Projeto Integrador em Computação III — PIJ410**  
+> **Projeto Integrador em Computação IV — PJI410**
 > **Finalidade:** compreender necessidades, processos de decisão e critérios de avaliação para uma
 > solução de análise de dados de mídia digital.  
 > **Preenchimento:** responder apenas ao que estiver dentro de sua área de atuação. Não inserir

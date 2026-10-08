@@ -295,7 +295,7 @@ GAO, Yunfan et al. **Retrieval-Augmented Generation for Large Language Models**:
 
 GOMES, Robson Ferreira et al. Dashboard para Gestão Acadêmica. **Congresso de Computação e Tecnologias da Informação**, v. 1, n. 21, p. 64-72, 2019. DOI: 10.33911/encoinfo.21.2019.v1.6. Disponível em: https://doi.org/10.33911/encoinfo.21.2019.v1.6. Acesso em: 24 ago. 2026.
 
-GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação III**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
+GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação IV**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
 
 JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
 
