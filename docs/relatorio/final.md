@@ -414,30 +414,42 @@ permanece sob responsabilidade humana, em diálogo com a instituição parceira.
 
 ## 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
 
-O desenvolvimento articula conteúdos de mais de três disciplinas dos cursos de Bacharelado em
-Ciência de Dados e Engenharia da Computação. Aplicações em Aprendizado de Máquina fornece o
-repertório para formular uma tarefa supervisionada, separar dados de treinamento e teste, comparar
-modelos e selecionar métricas de avaliação. Redes Neurais e Aprendizado Profundo amplia a
-compreensão sobre modelos preditivos e seus limites, sem implicar que uma rede neural tenha sido
-implementada ou validada neste projeto. Esses conteúdos integram os projetos pedagógicos dos cursos
-e são mobilizados de acordo com a disponibilidade efetiva dos dados (UNIVESP, 2020; UNIVESP, 2026).
+No desenvolvimento do projeto foram mobilizados conhecimentos relacionados a disciplinas
+identificadas nos projetos pedagógicos da UNIVESP (2020; 2026). As relações abaixo descrevem
+conceitos observáveis na implementação. Elas não comprovam quais disciplinas foram cursadas
+pelos integrantes ou quais materiais didáticos foram consultados.
 
-Visão Computacional contribui para a compreensão de aquisição, preparação e análise de dados
-visuais. No escopo atual, essa disciplina oferece repertório metodológico, mas não corresponde a um
-módulo implementado, pois o projeto não utiliza imagens da instituição nem dados identificáveis.
-Impactos da Computação na Sociedade fundamenta as decisões de anonimização, minimização de dados,
-supervisão humana e delimitação do uso de inteligência artificial, especialmente diante da
-possibilidade de publicação acadêmica dos resultados (UNIVESP, 2020; UNIVESP, 2026).
+Os conhecimentos relacionados a Aplicações em Aprendizado de Máquina foram mobilizados na
+formulação e avaliação de uma tarefa supervisionada de regressão. No protótipo, isso se
+materializou nos experimentos de CPR sintético do Google Ads: regressão linear, comparação com
+baselines, separação temporal de treinamento e teste, MAE, RMSE, R² e prevenção de vazamento
+de informação. A previsão é experimental, sem eficácia operacional comprovada ou superioridade
+geral do modelo. Não foram implementadas redes neurais ou aprendizado profundo.
 
-A construção da interface em Next.js e TypeScript também mobiliza conteúdos de desenvolvimento de
-sistemas e engenharia de software, como componentização, separação entre dados e apresentação,
-controle de acesso por feature gate e testes automatizados. A arquitetura web utiliza componentes
-React e renderização no servidor, recursos discutidos por Thakkar (2020), para manter a aplicação
-acadêmica independente de integrações operacionais.
+Conhecimentos relacionados a Desenvolvimento Web e Engenharia de Software aparecem na interface
+em Next.js e TypeScript, na componentização, na separação entre cálculo e apresentação, no
+versionamento e nos testes automatizados. A liberação incremental por feature gates e as rotinas
+reproduzíveis constituem evidências dessas práticas. A associação curricular é sustentada pelo
+escopo das disciplinas e pela implementação, sem registro da origem didática dos conhecimentos.
+Thakkar (2020) é referência bibliográfica externa sobre React e renderização no servidor; sua
+citação não comprova consulta a material de uma disciplina.
 
-[PENDENTE – identificar, para cada disciplina, os materiais específicos efetivamente estudados e usados pelo grupo, pois a rubrica final exige referência explícita aos materiais e não apenas às ementas]
+Conhecimentos relacionados a Introdução a Ciência de Dados, Estatística e Probabilidade e
+Visualização Computacional aparecem na preparação e agregação de dados sintéticos, no tratamento
+de ausências, na descrição de séries mensais e na apresentação de indicadores e gráficos. As
+métricas de erro e a comparação dos baselines sustentam uma avaliação limitada ao experimento,
+sem inferência sobre a população da instituição ou causalidade. Estatística e Probabilidade é o
+nome registrado no PPC de 2020; a matriz efetivamente cursada pelo grupo requer confirmação.
 
-[REVISAR – confirmar a lista de disciplinas efetivamente cursadas pelos integrantes e manter apenas relações demonstráveis com a solução]
+A relação com Impactos da Computação na Sociedade é observável nas decisões de utilizar dados
+sintéticos, excluir informações pessoais e integrações operacionais e manter supervisão humana.
+O PPC de 2026 confirma o escopo curricular dessa associação, mas não comprova que a disciplina
+foi cursada pelos integrantes. Em Projeto Integrador em Computação III, a orientação oficial
+fundamenta a organização metodológica em ouvir, criar e implementar. Design Thinking é tratado
+como abordagem metodológica do PI, também apoiada em Rosado e Dias (2024). Etapas planejadas não
+são apresentadas como realizadas.
+
+[PENDENTE – H07: confirmar disciplinas efetivamente cursadas e sua matriz; identificar materiais didáticos específicos realmente consultados e relacioná-los à atividade realizada. A aplicação de conceitos acima não comprova consulta a apostila, PDF, aula ou semana específica.]
 
 ## 2.5 Metodologia
 

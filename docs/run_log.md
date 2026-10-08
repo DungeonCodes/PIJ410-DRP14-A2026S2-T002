@@ -868,3 +868,19 @@ Gate: PREVISÃO SAZONAL CPR PRONTA PARA DEMONSTRAÇÃO NA V2.
 Limite: demonstração válida frente a t−12, não superioridade geral nem previsão operacional.
 
 ---
+
+Data: 2026-10-08
+Ação realizada: Auditoria H07 — disciplinas e materiais efetivamente utilizados.
+Classificação: docs/relatorio/auditoria-H07.md; busca global, extração de PDFs/DOCX,
+histórico Git, fichamentos, protocolos e código existente. PPCs oficiais conferidos
+somente para nomes/escopos. Classificação concluída antes da revisão de final.md 2.4.
+Resultado: aplicação A/B separada de candidatas C e referências externas. Corrigidas
+relações não comprovadas com redes neurais, aprendizado profundo e visão computacional.
+H07 AINDA BLOQUEADA: confirmar disciplinas cursadas/matriz e materiais didáticos
+realmente consultados. Não registrado fechamento da seção 2.4.
+Capítulos 3/4, P1, V1/V2, aplicação, código, datasets, figuras e ML intactos.
+Sem commit, push ou geração de artefatos. Verificações: diff --check e busca de
+marcadores/disciplinas/material efetivamente/confirmar disciplinas.
+Gate: H07 AINDA BLOQUEADA — NECESSÁRIA CONFIRMAÇÃO HUMANA.
+
+---
