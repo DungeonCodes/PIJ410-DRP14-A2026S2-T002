@@ -20,8 +20,9 @@
     "test:google-cpr:sazonal": "node scripts/test-google-cpr-sazonal.mjs",
     "test:google-cpr": "node scripts/test-google-cpr.mjs",
     "test:interface": "node scripts/test-interface.mjs",
+    "test:v2-feedback": "node scripts/test-v2-feedback.mjs",
     "test:interface:http": "node scripts/test-interface-http.mjs",
-    "test": "npm run test:fases && npm run test:interface && npm run test:determinismo && npm run test:google-cpr && npm run ml:google-cpr:verificar && npm run test:google-cpr:sazonal && npm run ml:google-cpr:sazonal:verificar && npm run test:nao-vazamento"
+    "test": "npm run test:fases && npm run test:interface && npm run test:v2-feedback && npm run test:determinismo && npm run test:google-cpr && npm run ml:google-cpr:verificar && npm run test:google-cpr:sazonal && npm run ml:google-cpr:sazonal:verificar && npm run test:nao-vazamento"
   },
   "dependencies": {
     "lucide-react": "^1.16.0",

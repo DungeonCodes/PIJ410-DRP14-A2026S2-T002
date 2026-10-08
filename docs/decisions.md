@@ -346,25 +346,26 @@ e [protocolo do experimento](migracao-modelo/arquitetura/experimento-google-cpr.
 
 **Data:** 2026-10-06.
 
-**Decisão:** adotar `/v1` e `/v2`, não nomes relativos old/new/legacy. V1 congela o estado
-visual/funcional aprovado localmente, com Fases 1 e 2 ativas e Fases 3 e 4 bloqueadas. V2 nasce
-equivalente, por herança explícita das apresentações V1, com registro próprio para futuras
-substituições de páginas/layout/componentes. Dados, contratos, algoritmos e artefato CPR são
-únicos e compartilhados; não existe nova versão científica do ML nesta decisão.
+**Decisão corrigida em 07/10/2026:** adotar `/v1` e `/v2`, não nomes relativos
+old/new/legacy. V1 representa o baseline inicial pré-Ads, composto somente pela Fase 1
+(Captação e Matrículas). V2 representa a evolução técnica/acadêmica que introduziu a Fase 2
+(Ads, Google Ads, Meta Ads e Estratégia), o experimento CPR e sua extensão sazonal. Fases 3 e 4
+permanecem bloqueadas. Dados, contratos, algoritmos e artefatos CPR são únicos e compartilhados.
 
-`CURRENT_UI_VERSION` em `src/lib/interface.ts` permanece `v1`. As canônicas redirecionam
-temporariamente para essa versão, preservando filtros. Navegação permanece dentro da versão
+`CURRENT_UI_VERSION` em `src/lib/interface.ts` permanece `v1`. As canônicas de Captação e
+Matrículas redirecionam para essa versão, preservando filtros. Ads não possui alias canônico
+enquanto V1 for corrente e deve ser acessado explicitamente em `/v2/ads/**`. Navegação permanece dentro da versão
 acessada; identificação discreta é exibida no desktop/mobile, sem seletor para o participante.
-V2 só pode tornar-se corrente após feedback, alterações selecionadas, testes, comparação e
-decisão explícita. Os gates são independentes do versionamento da apresentação.
+V2 só pode tornar-se corrente após decisão explícita. Os gates de capacidade técnica são
+independentes da composição histórica da apresentação.
 
 V1 somente muda por bug crítico, erro factual, vulnerabilidade, vazamento ou falha de execução,
 com justificativa, testes e revisão humana dos hashes protegidos. Melhorias de UX são feitas
 inicialmente em V2. Não alterar componentes/CSS protegidos compartilhados pela baseline para
 melhorar V2: substituir a apresentação necessária em `src/ui/v2/`, com estilos escopados.
 
-Primeira validação usa V1, sem apresentar V2 como alternativa. Comparações exigem mesmo dataset,
-período/filtros, fórmulas, métricas, CPR e gates. Nenhum feedback ou benefício foi inventado.
+Primeira validação usa V1, somente Captação e Matrículas, sem apresentar V2 como alternativa.
+Nenhum feedback ou benefício foi inventado.
 ADR-007 e seus resultados permanecem intactos; o histórico Git problemático não é tratado aqui.
 
 **Motivo:** preservar uma referência anterior ao feedback e permitir comparar mudanças de
@@ -378,10 +379,10 @@ de V2 (descartada). O mínimo adotado é roteador comum, apresentações registr
 
 ---
 
-### Emenda de 2026-10-06 — Evolução técnica sazonal exclusiva V2
+### Emenda consolidada em 2026-10-07 — evolução técnica exclusiva V2
 
-Por nova demanda técnica/acadêmica explícita, V2 acrescenta previsão sazonal experimental
-de CPR somente em Google Ads, preservando a composição original e toda a baseline V1.
+Por demanda técnica/acadêmica explícita, V2 incorpora Ads, o experimento CPR e a previsão
+sazonal experimental em Google Ads, preservando a baseline inicial V1 sem Ads.
 Origem: demonstração acadêmica de ML, não feedback comunitário. Experimento separado, dados
 sintéticos existentes, OLS, t−2/t−12, maturação, holdout recursivo e rolling origin são descritos
 em `experimento-google-cpr-sazonal.md`. ADR-007 e seus resultados anteriores não são alterados.
@@ -438,3 +439,13 @@ Registradas aqui porque constaram como pendências e já não são.
   desde que recebam somente contexto versionado e sanitizado. Cada explicação ou recomendação deve
   apontar os fatos, cálculos, resultados estimados ou referências que a sustentam; saídas sem base
   verificável não serão usadas.
+
+---
+
+## Revisão metodológica H07 — integração curricular coletiva
+
+**Data:** 2026-10-08.
+**Decisão:** por instrução explícita do responsável pelo projeto, a seção 2.4 é sustentada pelas matrizes oficiais dos dois cursos representados, pela previsão curricular até PJI410 e pela correspondência entre ementas e atividades executadas. Não exige histórico ou vínculo individual disciplina–pessoa. PJI410 é Projeto Integrador em Computação IV.
+**Motivo:** o Projeto Integrador é coletivo e multicurso; os artefatos comprovam aplicação dos conhecimentos e as fontes oficiais identificam conteúdo e posição curricular.
+**Alternativa considerada:** rastreamento de disciplinas estudadas por integrante, substituído pelo critério coletivo autorizado.
+**Impacto:** seção 2.4 revisada com oito disciplinas de vínculo forte; H07 resolvida. Materiais específicos só são alegados quando documentados. A decisão não confirma matrícula individual, leitura por todos ou eficácia operacional do ML.

@@ -1,4 +1,4 @@
-# Relatório Parcial — Projeto Integrador em Computação III (PIJ410)
+# Relatório Parcial — Projeto Integrador em Computação IV (PJI410)
 
 # GUIA EDITORIAL PARA MONTAGEM MANUAL DO DOCX
 
@@ -22,7 +22,7 @@ Nas Figuras 1 a 5, os parágrafos operacionais que começam por “A figura deve
 # Relatório Parcial — PIJ410
 )
 (V3  ENTRA:
-# Relatório Parcial — Projeto Integrador em Computação III (PIJ410)
+# Relatório Parcial — Projeto Integrador em Computação IV (PJI410)
 )
 
 > Fonte única do texto do relatório parcial (ADR-001). O `.docx` de entrega é gerado a partir
@@ -921,7 +921,7 @@ DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artific
 
 FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
 
-GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação III**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
+GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação IV**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
 
 JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
 
