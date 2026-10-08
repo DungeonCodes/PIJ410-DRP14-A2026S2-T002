@@ -1046,3 +1046,10 @@ Resultado: PJI410 confirmado como Projeto Integrador em Computação IV, 7º sem
 Correção factual: denominação do componente atual ajustada em final.md, master_context.md, questionario_comunidade_externa.md, parcial.md e referencias.md; identificadores internos/arquivos e snapshots históricos preservados. Documentos oficiais não alterados.
 Gate vigente: H07 RESOLVIDA — NÃO RESTAM BLOQUEADORES CIENTÍFICOS DE CONTEÚDO no escopo H07, com H08/H12 já resolvidas. Entradas anteriores de H07 permanecem históricas, superadas por esta decisão; tarefas formais de entrega não foram certificadas.
 Verificação: git diff --check; comparação do Final fora de 2.4 limitada às duas correções de identificação, sem atribuição individual ou afirmação universal de disciplinas cursadas. Sem código/dados alterados, documento privado utilizado, commit ou push.
+
+---
+
+Data: 2026-10-08
+Ação: auditoria científico-técnica final da metodologia, arquitetura, indicadores, versões V1/V2, testes e experimentos de CPR inicial e sazonal no Relatório Final.
+Resultado: artefatos e protocolos numéricos conferidos. Em final.md, esclarecidos o fluxo local de dados sintéticos, as fórmulas dos indicadores, o significado das métricas ML, a distinção entre níveis analíticos, ML e IA, a rastreabilidade dos comandos de reprodução e os valores da previsão experimental. Removida atribuição sem implementação a redes neurais, aprendizado profundo e visão computacional na introdução. Preservados os limites dos dados sintéticos, do holdout sazonal e da validação P1.
+Verificação: build, testes de interface, não vazamento, testes e verificadores dos dois experimentos CPR aprovados. Sem alteração de código, dados ou valores numéricos dos artefatos; sem commit ou push.

@@ -158,14 +158,12 @@ envolvidos indicaram condições para desenvolver a solução e submetê-la à v
 participante, sem antecipar o resultado dessa validação.
 
 Soma-se a essa demanda a composição interdisciplinar do grupo, que reúne estudantes dos cursos de
-Bacharelado em Ciência de Dados e Engenharia da Computação. Aplicações em Aprendizado de Máquina,
-Redes Neurais e Aprendizado Profundo fornecem repertório de algoritmos, frameworks e modelos
-neurais pertinente à análise e à interpretação dos dados do projeto (UNIVESP, 2020). Visão
-Computacional amplia o repertório de aquisição, processamento e análise de dados visuais, enquanto
-Impactos da Computação na Sociedade orienta a reflexão sobre os aspectos éticos, sociais, legais e
-de governança de dados relacionados ao uso de inteligência artificial (UNIVESP, 2020; UNIVESP,
-2026). Esses conteúdos são mobilizados como base de formação; o projeto não prevê o uso de imagens
-nem de dados sensíveis da instituição parceira.
+Bacharelado em Ciência de Dados e Engenharia de Computação. A seção 2.4 relaciona os componentes
+curriculares desses cursos às atividades documentadas: desenvolvimento web, engenharia de software,
+preparação e visualização de dados, estatística e aprendizagem de máquina (UNIVESP, 2020). O
+experimento implementado utiliza regressão linear; não foram implementadas redes neurais,
+aprendizado profundo ou visão computacional. A proteção dos dados e a supervisão humana orientam
+as decisões do projeto, sem uso de dados sensíveis da instituição parceira.
 
 # 2 DESENVOLVIMENTO
 
@@ -544,17 +542,19 @@ apoiam a identificação de necessidades e a avaliação de serviços de informa
 P1, gerente de Marketing, participou presencialmente em 07/10/2026 dos dois momentos;
 TCLE obtido: SIM. O documento assinado permanece fora do repositório.
 
-### 2.5.6 Arquitetura analítica de três camadas
+### 2.5.6 Níveis de interpretação analítica
 
-O motor analítico adota três camadas com escopos distintos. A primeira é formada por regras de
-negócio e indicadores determinísticos que comparam valores observados a requisitos declarados. A
-segunda realiza leituras agregadas do funil de captação e das matrículas, quando os períodos e os
-campos permitem esse cruzamento. A terceira registra os limites de atribuição individual, isto é,
+A interpretação dos indicadores adota três níveis com escopos distintos. O primeiro reúne regras
+de negócio e indicadores determinísticos que comparam valores observados a requisitos declarados.
+O segundo realiza leituras agregadas do funil de captação e das matrículas, quando os períodos e os
+campos permitem esse cruzamento. O terceiro registra os limites de atribuição individual, isto é,
 os casos em que as fontes disponíveis não permitem ligar uma ação de mídia, um contato e uma
 matrícula específica.
 
-Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma
-correlação agregada seja tratada como atribuição por canal. Quando uma informação necessária não
+Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem de máquina e o
+apoio de IA são procedimentos separados, descritos em 2.5.11 e 2.5.12. Essa separação impede que um
+resultado de regra seja apresentado como causalidade ou que uma correlação agregada seja tratada
+como atribuição por canal. Quando uma informação necessária não
 estiver disponível, o resultado será sinalizado como não verificável (Saura, 2021; Li et al.,
 2016).
 
@@ -574,11 +574,17 @@ identificadores pessoais, credenciais, nomes de contas ou informações comercia
 
 ### 2.5.8 Preparação, governança e rastreabilidade dos dados
 
-Os dados passam por identificação da origem, normalização de nomes e formatos, verificação de
-tipos, tratamento explícito de valores ausentes e consolidação em artefatos versionados. Cada
-indicador deve preservar fonte, período, unidade de análise e fórmula. Problemas de qualidade em
+A preparação dos cenários documenta origem, nomes, formatos, tipos, valores ausentes e
+consolidação em artefatos versionados. Cada indicador deve preservar fonte, período, unidade de
+análise e fórmula. Problemas de qualidade em
 pipelines podem ocorrer na ingestão, integração, limpeza e transformação, o que reforça a
 necessidade de documentar as regras aplicadas (Foidl et al., 2024).
+
+Na implementação acadêmica, os cenários são gerados localmente com parâmetros e sementes fixos,
+gravados em arquivos JSON versionados e lidos por contratos locais da aplicação. Os filtros
+selecionam os registros do recorte; funções separadas calculam somas, razões e séries antes da
+apresentação em componentes web. Não há ingestão de base operacional, banco de dados ou API de
+anúncios nesse fluxo.
 
 Valores ausentes, incompatibilidades de período e falhas estruturais são sinalizados; não são
 convertidos silenciosamente em zero nem em estimativas. Essa regra distingue um indicador medido de
@@ -590,6 +596,13 @@ Os indicadores são calculados por rotinas determinísticas, com fórmulas e par
 Podem incluir investimento, impressões, alcance, frequência, cliques, CTR, CPC, conversões, taxa de
 conversão, CPA, custo por mil impressões e participação de impressões, conforme os campos
 efetivamente disponibilizados. A interpretação ocorre no contexto do objetivo da campanha.
+
+Nos módulos Ads implementados, CTR é cliques divididos por impressões (em porcentagem), CPC é
+investimento dividido por cliques e CPM é investimento dividido por impressões, multiplicado por
+mil. Em Google Ads, CPR é investimento dividido por conversões registradas no cenário; sem
+denominador válido, a razão permanece indefinida. Em Captação, contatos, visitas e matrículas são
+contagens do cenário sintético no recorte selecionado; as taxas entre etapas são recalculadas a
+partir dessas contagens, sem vincular pessoas individualmente.
 
 Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento
 devem ser explicitados antes da construção de cenários. Cenários mínimo, ideal e agressivo, quando
@@ -611,7 +624,7 @@ etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal espec�
 ### 2.5.11 Protocolo experimental de aprendizagem de máquina
 
 Foi executado um experimento supervisionado, exploratório e reproduzível, restrito ao CPR do
-Google Ads. Neste recorte, CPR é o custo por conversão registrada na plataforma, calculado como
+Google Ads. Neste recorte, CPR é o custo por conversão registrada no cenário, calculado como
 investimento dividido pelas conversões registradas. Não representa custo por matrícula ou por
 lead único e não estabelece causalidade entre anúncio e matrícula. Denominador zero ou ausente
 produz valor indefinido, não zero artificial. O protocolo distingue indicadores calculados por
@@ -654,11 +667,19 @@ princípio de reprodutibilidade computacional (Peng, 2011). A execução ocorre 
 sem API real. A interface Google Ads da Fase 2 exibe o artefato de resultados da CLI, sem
 executar treinamento no navegador ou recomendar investimento. Os resultados estão em 3.4.4.
 
+MAE é o erro absoluto médio; RMSE é a raiz do erro quadrático médio e penaliza mais os erros
+grandes. R² compara a soma dos erros quadráticos à variação dos valores observados em torno da
+média do conjunto avaliado. R² negativo indica desempenho inferior ao da referência constante
+baseada nessa média; não é percentual de acerto nem substitui a comparação com a persistência t−2.
+
 Como extensão técnica separada, foi executada regressão temporal para CPR mensal consolidado:
 soma dos investimentos dividida pela soma das conversões, com cobertura integral. Foram
 examinados todos os anos sintéticos disponíveis, de 2017 a janeiro/2023; 71 dos 73 meses
-possuem CPR consolidado válido. A análise sazonal descritiva calcula média, mediana, dispersão
-e índice por mês do calendário; não constitui aprendizagem de máquina. O modelo OLS utiliza
+possuem CPR consolidado válido. O arquivo de origem contém 292 registros campanha–mês, dos quais
+284 têm CPR individual definido; novembro/2018 tem cobertura incompleta e janeiro/2023 é
+provisório, razão pela qual não entram como CPR mensal observado. A análise sazonal descritiva
+calcula média, mediana, dispersão e índice por mês do calendário; não constitui aprendizagem de
+máquina. O modelo OLS utiliza
 seno/cosseno do mês, índice temporal e CPR t−2/t−12. t−1 foi excluído pela maturação sintética
 de 14 dias; t−24 não foi incluído para preservar a pequena amostra, sem escolha baseada no teste.
 
@@ -672,6 +693,13 @@ fevereiro/2023 a janeiro/2024. Janeiro/2023 provisório permaneceu ausente no hi
 ponte estimada foi identificada somente como lag auxiliar da recursão. Não foram calculados
 intervalos de confiança. O novo artefato é apresentado apenas em V2/Google Ads e sua origem
 é demanda técnica acadêmica, não feedback da comunidade.
+
+Os procedimentos locais estão registrados em
+`docs/migracao-modelo/arquitetura/experimento-google-cpr.md` e
+`experimento-google-cpr-sazonal.md`. A partir do dataset sintético versionado, os comandos
+`npm run ml:google-cpr` e `npm run ml:google-cpr:sazonal` geram os artefatos;
+`npm run ml:google-cpr:verificar` e `npm run ml:google-cpr:sazonal:verificar` repetem os cálculos e
+conferem os resultados com os arquivos versionados sem gravá-los.
 
 ### 2.5.12 Interpretação assistida por IA e engenharia de contexto
 
@@ -888,6 +916,18 @@ dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores s
 cenário, não resultados futuros observados. Valores extremos e lags previstos podem se propagar
 pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
 FB-V1-P1-001 refere-se somente ao gráfico consolidado de Captação.
+
+| Mês projetado | CPR sintético previsto (R$ fictícios) | Mês projetado | CPR sintético previsto (R$ fictícios) |
+|---|---:|---|---:|
+| Fev./2023 | 73,75 | Ago./2023 | 56,62 |
+| Mar./2023 | 48,87 | Set./2023 | 51,36 |
+| Abr./2023 | 67,15 | Out./2023 | 59,08 |
+| Mai./2023 | 47,64 | Nov./2023 | 54,74 |
+| Jun./2023 | 59,42 | Dez./2023 | 75,43 |
+| Jul./2023 | 47,87 | Jan./2024 | 60,01 |
+
+Fonte: artefato sintético `src/data/google-cpr-sazonal.json` (2026). Não foram calculados
+intervalos de confiança nem houve verificação dessas projeções com dados reais posteriores.
 
 Figura [numeração pendente] – Histórico sintético e previsão sazonal experimental de CPR na V2
 
