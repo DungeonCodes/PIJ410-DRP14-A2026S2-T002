@@ -92,17 +92,18 @@ Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêm
 
 - Tabela 1 – Indicadores e perguntas de decisão
 - Tabela 2 – Disciplinas estudadas e aplicações no projeto
-- Tabela 3 – Grupos de variáveis do experimento de CPR
-- Tabela 4 – Estado das fases do protótipo
-- Tabela 5 – Resultados do experimento inicial de CPR
-- Tabela 6 – Resultados da previsão sazonal de CPR no holdout
-- Tabela 7 – Resultados da previsão sazonal de CPR no rolling origin
-- Tabela 8 – Valores projetados de CPR sintético
-- Tabela 9 – Comparação entre necessidades iniciais e ciclo V1–V2
-- Tabela 10 – Evolução da visualização temporal da V1 à V2
-- Tabela 11 – Rastreabilidade entre necessidade, solução e validação
-- Tabela 12 – Rastreabilidade do ajuste FB-V1-P1-001
-- Tabela 13 – Feedback e ajuste decorrente da validação
+- Tabela 3 – Organização funcional das fases e relação com as versões da interface
+- Tabela 4 – Grupos de variáveis do experimento de CPR
+- Tabela 5 – Estado das fases do protótipo
+- Tabela 6 – Resultados do experimento inicial de CPR
+- Tabela 7 – Resultados da previsão sazonal de CPR no holdout
+- Tabela 8 – Resultados da previsão sazonal de CPR no rolling origin
+- Tabela 9 – Valores projetados de CPR sintético
+- Tabela 10 – Comparação entre necessidades iniciais e ciclo V1–V2
+- Tabela 11 – Evolução da visualização temporal da V1 à V2
+- Tabela 12 – Rastreabilidade entre necessidade, solução e validação
+- Tabela 13 – Rastreabilidade do ajuste FB-V1-P1-001
+- Tabela 14 – Feedback e ajuste decorrente da validação
 
 ## Sumário
 
@@ -135,7 +136,7 @@ Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêm
     - 2.5.9 Indicadores, regras de negócio e cenários determinísticos
     - 2.5.10 Auditoria, reprodutibilidade e limites de atribuição
     - 2.5.11 Protocolo experimental de aprendizagem de máquina
-    - 2.5.12 Interpretação assistida por IA e engenharia de contexto
+    - 2.5.12 Uso assistivo de IA agêntica e verificação humana
 - 3 Resultados: solução final
   - 3.1 Contato inicial e necessidades identificadas
   - 3.2 Estado real das fases do protótipo
@@ -444,24 +445,29 @@ melhoria nas decisões ou nos resultados de captação.
 
 ### 2.3.7 Uso controlado de IA agêntica e supervisão humana
 
-A IA agêntica é tratada como recurso auxiliar de organização e interação com ferramentas, e não
-como sinônimo de aprendizagem de máquina aplicada à base de campanhas. Agentes baseados em modelos
-de linguagem podem combinar componentes como planejamento, memória e uso de ferramentas; contudo,
-a área permanece em desenvolvimento e apresenta desafios de avaliação e confiabilidade (Wang et
-al., 2024). Essa característica impede que suas respostas sejam aceitas como evidência sem
-verificação.
+A IA agêntica designa aqui o uso auxiliar de agentes baseados em modelos de linguagem no processo
+de desenvolvimento e análise, distinto do modelo supervisionado aplicado aos dados de campanhas.
+Esses agentes podem articular planejamento, etapas de ação e ferramentas para consultar ambientes
+externos (Wang *et al.*, 2024; Yao *et al.*, 2023). Em engenharia de software, há sistemas
+experimentais capazes de navegar repositórios, editar arquivos e executar testes (Yang *et al.*,
+2024). Essas capacidades contextualizam a classe de ferramentas utilizada; não demonstram, por si,
+a correção das alterações deste projeto.
 
-Modelos de linguagem de alta capacidade poderão atuar como camada de interpretação assistida:
-organizar evidências, comparar cenários e formular explicações preliminares sobre indicadores e
-resultados já calculados. O agente não terá acesso a contas reais de anúncios, não executará
-alterações de orçamento e não definirá o modelo de aprendizagem de máquina sem validação do grupo.
-Dados sensíveis ou identificáveis não serão enviados a essa camada.
+A literatura sobre geração de código com requisitos explícitos relaciona especificações, casos
+de teste e conferência do comportamento produzido (Han *et al.*, 2024). A seleção e a organização
+do contexto também requerem cuidado: em tarefas estudadas por Liu *et al.* (2024), a posição da
+informação relevante em entradas longas afetou o desempenho dos modelos. Neste trabalho,
+desenvolvimento orientado por requisitos, decomposição de tarefas e organização do contexto
+descrevem práticas de engenharia adotadas; não são apresentados como uma metodologia científica
+autônoma denominada *spec-driven development* ou *context engineering*.
 
-Para garantir rastreabilidade, a engenharia de memória e contexto reunirá somente documentos
-versionados, dados locais sanitizados, fórmulas de indicadores, resultados do modelo e decisões já
-registradas. Toda explicação ou recomendação deverá indicar a evidência que a sustenta e será
-rejeitada quando criar métricas, resultados ou conclusões sem base verificável. A decisão final
-permanece sob responsabilidade humana, em diálogo com a instituição parceira.
+A revisão da própria resposta pelo modelo não substitui feedback externo confiável, como
+verificações reproduzíveis e inspeção de evidências (Kamoi *et al.*, 2024). Diretrizes de
+interação humano–IA reforçam a necessidade de manter meios de avaliação e correção pelo usuário
+(Amershi *et al.*, 2019). Por isso, análises e alterações propostas por agentes foram submetidas
+à conferência documental, a testes quando cabíveis e à decisão humana. Saídas dos agentes não
+constituem evidência científica independente; também não substituem os resultados do experimento
+de CPR, a validação com P1 ou a responsabilidade do grupo pelas conclusões.
 
 ## 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
 
@@ -566,22 +572,56 @@ associação agregada com causalidade, nem apresentar dado ausente como zero ou 
 
 ### 2.5.4 Criar e prototipar
 
-Na etapa de criar, as necessidades foram relacionadas aos campos disponíveis, às regras de cálculo
-e às alternativas de visualização. A baseline foi construída em Next.js e TypeScript, separando os
-dados sintéticos locais da camada de apresentação web. A construção segue estratégia incremental:
-Fase 1, Captação e Matrículas; Fase 2, Ads; Fase 3, conteúdo orgânico; Fase 4, Objetivo da Gestão e
-Arquitetura e Algoritmos. As Fases 1 e 2 constituem resultado funcional acadêmico local;
-as Fases 3 e 4 permanecem bloqueadas.
+Na etapa de criar e prototipar, o grupo relacionou as necessidades aos campos disponíveis, às
+regras de cálculo e às alternativas de visualização. O plano funcional foi dividido em quatro
+fases para limitar o escopo de cada incremento, testar módulos menores e preservar a distinção
+entre o que estava planejado e o que podia ser utilizado. Mecanismos centrais de habilitação
+(*feature gates*) ocultam da navegação e bloqueiam as rotas dos módulos ainda não liberados.
+A liberação de cada fase exige implementação, verificação e decisão humana registrada; nenhuma
+fase é aberta automaticamente pela passagem de uma data.
+
+A Fase 1 reuniu Captação e Matrículas, módulos que puderam ser prototipados com dados sintéticos
+locais sem depender de plataformas de anúncios. Constituiu a primeira baseline funcional e a
+interface apresentada a P1 na validação inicial. Sua organização permitiu examinar indicadores,
+filtros e visualizações desses dois módulos antes da ampliação do escopo.
+
+A Fase 2 acrescentou Ads — Visão geral, Google Ads, Meta Ads e Estratégia — no ambiente
+acadêmico local, também com dados sintéticos. A interface Google Ads apresenta artefatos dos
+experimentos acadêmicos de CPR executados fora do navegador. A liberação técnica dessa fase
+ampliou as possibilidades de demonstração, mas não corresponde a integração com contas reais
+nem a validação de Ads ou ML pela participante.
+
+A Fase 3 prevê Reels orgânicos; a Fase 4, Objetivo da Gestão e Arquitetura & Algoritmos.
+Ambas permaneceram bloqueadas porque seus módulos e requisitos de dados ainda não haviam sido
+concluídos. A presença de rotas preparadas no código não as torna resultados funcionais. Essa
+restrição manteve o protótipo disponível limitado aos incrementos verificáveis.
+
+As fases designam blocos funcionais; V1 e V2 designam composições versionadas da interface.
+A V1 preserva a Fase 1 com os gráficos temporais separados de Captação. A V2 preserva os módulos
+da Fase 1, incorpora a Fase 2 e apresenta o gráfico temporal consolidado de Captação aprovado
+após o feedback FB-V1-P1-001. Ads e CPR entraram por evolução técnica e acadêmica independente
+desse feedback. O versionamento permite comparar a interface inicialmente avaliada com a
+evolução posterior sem reescrever a experiência de P1.
+
+Tabela 3 – Organização funcional das fases e relação com as versões da interface
+
+| Fase | Escopo | Estado no protótipo | Relação com as versões |
+|---|---|---|---|
+| Fase 1 | Captação e Matrículas | Funcional; baseline acadêmica | V1 e V2; apresentação temporal de Captação distinta em cada versão |
+| Fase 2 | Ads: Visão geral, Google Ads, Meta Ads e Estratégia; apresentação dos artefatos CPR em Google Ads | Funcional no ambiente acadêmico local | Incorporada à V2 por evolução técnica/acadêmica |
+| Fase 3 | Reels orgânicos | Planejada e bloqueada | Não integra V1 nem V2 |
+| Fase 4 | Objetivo da Gestão e Arquitetura & Algoritmos | Planejada e bloqueada | Não integra V1 nem V2 |
+
+Fonte: Elaborado pelo grupo com base no plano de fases, nos registros das versões e no estado
+versionado do protótipo (2026).
 
 ### 2.5.5 Implementar, testar, validar e ajustar
 
-Para tornar rastreáveis as avaliações, a interface foi identificada por versões.
-V1 é a baseline inicial pré-Ads e contém somente Captação e Matrículas. V2 incorporou
-posteriormente, por evolução técnica/acadêmica e não por feedback comunitário, os módulos de
-Ads, o experimento CPR e a demonstração sazonal descrita em 2.5.11. Ambas utilizam os mesmos
-dados sintéticos, métricas e fórmulas. P1 utilizou V1, sem os conteúdos da V2. Após a sugestão
-FB-V1-P1-001 e a aprovação do grupo, a V2 recebeu uma visualização temporal consolidada;
-esta mesma P1 reavaliou a V2. Os dois momentos não constituem comparação experimental controlada.
+Para tornar rastreáveis as avaliações, cada sessão registrou a versão da interface apresentada.
+P1 utilizou inicialmente a V1, sem Ads ou CPR. Após a sugestão FB-V1-P1-001 e a aprovação do
+grupo, a V2 recebeu a visualização temporal consolidada; a mesma P1 reavaliou essa versão.
+Os módulos comuns às duas versões utilizam os mesmos dados sintéticos, métricas e fórmulas.
+Os dois momentos não constituem comparação experimental controlada.
 
 A participante avaliou as versões indicadas em seus registros anonimizados. As respostas
 documentaram compreensão dos indicadores, utilidade percebida, dificuldades e sugestões.
@@ -693,7 +733,7 @@ cosseno do mês de t. Os atributos históricos não recompõem o CPR contemporâ
 metodológicas foram definidas antes da avaliação, para prevenir leakage, isto é, uso de
 informação do resultado ou do futuro no treinamento ou na emissão da estimativa.
 
-Tabela 3 – Grupos de variáveis do experimento de CPR
+Tabela 4 – Grupos de variáveis do experimento de CPR
 
 | Grupo | Decisão | Justificativa |
 |---|---|---|
@@ -753,27 +793,28 @@ Os procedimentos locais estão registrados em
 `npm run ml:google-cpr:verificar` e `npm run ml:google-cpr:sazonal:verificar` repetem os cálculos e
 conferem os resultados com os arquivos versionados sem gravá-los.
 
-### 2.5.12 Interpretação assistida por IA e engenharia de contexto
-
-Modelos de linguagem podem organizar evidências, comparar cenários e formular explicações
-preliminares a partir de indicadores já calculados. Essa atividade não constitui evidência empírica
-independente nem aprendizagem de máquina aplicada à base. O contexto disponibilizado ao agente é
-restrito a documentos versionados, dados sanitizados, fórmulas, resultados e referências
-verificadas. Saídas sem base rastreável não são utilizadas (Wang *et al.*, 2024).
+### 2.5.12 Uso assistivo de IA agêntica e verificação humana
 
 Durante o desenvolvimento do protótipo e da documentação técnica, agentes de inteligência
 artificial foram utilizados como apoio à leitura e auditoria do repositório, programação, revisão
 de código e textos, organização documental, elaboração e verificação de testes, conferência dos
 algoritmos e artefatos dos experimentos de CPR e análise de consistência entre método, resultados
-e conclusões. O uso foi confirmado pelo responsável técnico e é distinto da regressão linear e
-dos baselines que produziram as estimativas de CPR. Não há registro de um experimento específico
-de simulação agêntica como parte da solução analítica.
-As saídas foram revisadas por pessoas antes de qualquer incorporação. Arquitetura, metodologia,
-interpretação dos resultados, aprovação das alterações, validação comunitária e redação científica
-permaneceram sob responsabilidade dos integrantes do grupo. Essas ferramentas não foram usadas
-para gerar respostas de participantes, substituir entrevistas, criar evidência empírica, comprovar
-eficácia ou substituir decisões humanas. As respostas reais de P1 nos dois momentos são
-preservadas em registros separados.
+e conclusões. O uso foi confirmado pelo responsável técnico.
+
+As tarefas foram delimitadas por requisitos, decisões e critérios registrados. Conforme a
+atividade, forneceram-se ao agente arquivos versionados, dados sanitizados e restrições
+pertinentes; suas análises ou alterações foram inspecionadas, confrontadas com os artefatos do
+projeto e submetidas a testes ou verificadores aplicáveis antes de aceitação, ajuste ou rejeição
+pelos integrantes. O contexto fornecido não incluiu contas reais de anúncios nem dados pessoais
+da participante. Esse fluxo descreve o procedimento do grupo, sem atribuir aos agentes uma
+validação independente dos resultados.
+
+Arquitetura, metodologia, escolha dos modelos, interpretação dos resultados, aprovação das
+alterações, validação comunitária e conclusões permaneceram sob responsabilidade humana. Os
+agentes não produziram as estimativas de CPR: elas resultaram da regressão linear e dos baselines
+documentados em 2.5.11. Não há registro de experimento específico de simulação agêntica na
+solução analítica. As ferramentas não geraram respostas de P1 nem substituíram entrevistas; os
+registros originais dos dois momentos de validação foram preservados.
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
@@ -802,23 +843,21 @@ repositório, distinto dos instrumentos posteriores de validação da V1/V2.
 
 ## 3.2 Estado real das fases do protótipo
 
-Tabela 4 – Estado das fases do protótipo
+Tabela 5 – Estado das fases do protótipo
 
 | Fase | Escopo | Estado em 06/10/2026 | Evidência documental |
 |---|---|---|---|
 | Fase 1 | Captação e Matrículas | ATIVA/FUNCIONAL | Módulos funcionais com dados sintéticos |
 | Fase 2 | Ads: visão geral, Google Ads, Meta Ads e estratégia | ATIVA/FUNCIONAL NO AMBIENTE ACADÊMICO LOCAL | Gate liberado explicitamente; build, testes e quatro rotas HTTP 200; somente dados sintéticos |
-| Fase 3 | Conteúdo orgânico | PLANEJADA/BLOQUEADA | Feature gate fechado; conjunto sintético e algoritmos pendentes |
-| Fase 4 | Objetivo da Gestão, Arquitetura e Algoritmos | PLANEJADA/BLOQUEADA | Feature gate fechado; depende das fases anteriores |
+| Fase 3 | Reels orgânicos | PLANEJADA/BLOQUEADA | Feature gate fechado; conjunto sintético e algoritmos pendentes |
+| Fase 4 | Objetivo da Gestão e Arquitetura & Algoritmos | PLANEJADA/BLOQUEADA | Feature gate fechado; depende das fases anteriores |
 
 Fonte: Elaborado pelo grupo com base no estado versionado do repositório (2026).
 
-As fases organizam a disponibilidade funcional; V1 e V2 identificam composições históricas da
-interface. V1 continha somente os módulos da Fase 1. V2 preserva a Fase 1 e acrescenta a Fase 2,
-incluindo os quatro módulos de Ads e as demonstrações acadêmicas de CPR. A consolidação temporal
-em Captação é uma alteração comunitária específica da V2 (FB-V1-P1-001); Ads e os experimentos de
-CPR tiveram origem técnica/acadêmica. Portanto, V2 não é sinônimo de Fase 2. As Fases 3 e 4
-continuam bloqueadas; não há Fase 5.
+O quadro registra a disponibilidade efetiva, distinta do plano exposto em 2.5.4. A Fase 1
+compõe a V1 e a V2; a Fase 2 está acessível somente pela V2 no ambiente acadêmico local. A
+publicação anterior da Fase 1 não foi ampliada por essa liberação local. As Fases 3 e 4 não
+foram entregues funcionalmente.
 
 ## 3.3 Estratégia incremental e arquitetura da solução
 
@@ -919,7 +958,7 @@ no navegador, inferência operacional ou recomendação automática. O target é
 conversões registradas; não representa custo por matrícula ou lead único. Não foram utilizados
 dados operacionais ou APIs reais.
 
-Tabela 5 – Resultados do experimento inicial de CPR
+Tabela 6 – Resultados do experimento inicial de CPR
 
 | Modelo | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -944,7 +983,7 @@ do investimento dividida pela soma das conversões registradas, quando a cobertu
 excluído pela hipótese sintética de maturação de 14 dias. O holdout recursivo de 12 meses em 2022
 é a avaliação principal e produziu:
 
-Tabela 6 – Resultados da previsão sazonal de CPR no holdout
+Tabela 7 – Resultados da previsão sazonal de CPR no holdout
 
 | Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -959,7 +998,7 @@ a persistência t−2. O R² negativo e os erros observados indicam baixo poder 
 experimento sintético. O rolling origin mensal de um passo é análise complementar, não substitui
 o holdout principal:
 
-Tabela 7 – Resultados da previsão sazonal de CPR no rolling origin
+Tabela 8 – Resultados da previsão sazonal de CPR no rolling origin
 
 | Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -983,7 +1022,7 @@ cenário, não resultados futuros observados. Valores extremos e lags previstos 
 pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
 FB-V1-P1-001 refere-se somente ao gráfico consolidado de Captação.
 
-Tabela 8 – Valores projetados de CPR sintético
+Tabela 9 – Valores projetados de CPR sintético
 
 | Mês projetado | CPR sintético previsto (R$ fictícios) | Mês projetado | CPR sintético previsto (R$ fictícios) |
 |---|---:|---|---:|
@@ -1058,7 +1097,7 @@ não constitui amostra independente nem validação definitiva.
 Esta matriz distingue as necessidades iniciais do que foi efetivamente observado nos dois
 momentos da mesma participante. O ciclo não avaliou todas as dimensões do protótipo.
 
-Tabela 9 – Comparação entre necessidades iniciais e ciclo V1–V2
+Tabela 10 – Comparação entre necessidades iniciais e ciclo V1–V2
 
 | Dimensão | Antes: necessidade ou expectativa inicial | Evidência deste ciclo (P1/V1 e P1/V2) |
 |---|---|---|
@@ -1073,7 +1112,7 @@ Fonte: Elaborado pelo grupo (2026).
 O recorte documentado do ciclo V1–V2 permite a seguinte comparação descritiva dos dois momentos
 da mesma P1. As notas não medem ganho experimental entre versões:
 
-Tabela 10 – Evolução da visualização temporal da V1 à V2
+Tabela 11 – Evolução da visualização temporal da V1 à V2
 
 | Aspecto | V1 | Evidência inicial | Alteração na V2 | Reavaliação |
 |---|---|---|---|---|
@@ -1097,9 +1136,9 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 
 A tabela relaciona a escuta inicial, a solução construída e o alcance da avaliação registrada.
 As dimensões de Ads não foram apresentadas nas tarefas de P1; a cadeia específica de
-FB-V1-P1-001 é discriminada na Tabela 12.
+FB-V1-P1-001 é discriminada na Tabela 13.
 
-Tabela 11 – Rastreabilidade entre necessidade, solução e validação
+Tabela 12 – Rastreabilidade entre necessidade, solução e validação
 
 | Necessidade identificada | Elemento da solução | Evidência no protótipo | Evidência do ciclo P1 |
 |---|---|---|---|
@@ -1111,7 +1150,7 @@ Tabela 11 – Rastreabilidade entre necessidade, solução e validação
 
 Fonte: Elaborado pelo grupo (2026).
 
-Tabela 12 – Rastreabilidade do ajuste FB-V1-P1-001
+Tabela 13 – Rastreabilidade do ajuste FB-V1-P1-001
 
 | Necessidade/observação | Evidência | Decisão | Implementação | Avaliação posterior |
 |---|---|---|---|---|
@@ -1125,7 +1164,7 @@ Até o momento, há um ajuste comunitário documentado neste ciclo. A observaç�
 dispersão das visualizações temporais; o resultado posterior é sua própria percepção na V2,
 sem demonstração de solução definitiva ou eficácia geral.
 
-Tabela 13 – Feedback e ajuste decorrente da validação
+Tabela 14 – Feedback e ajuste decorrente da validação
 
 | Feedback ou observação | Decisão do grupo | Ajuste realizado | Evidência | Situação |
 |---|---|---|---|---|
@@ -1216,6 +1255,8 @@ qualidade de dados suficientes. As Fases 3 e 4 poderão ser avaliadas após sua 
 
 # REFERÊNCIAS
 
+AMERSHI, Saleema *et al.* Guidelines for Human-AI Interaction. In: CHI CONFERENCE ON HUMAN FACTORS IN COMPUTING SYSTEMS, 2019, Glasgow. **Proceedings** [...]. New York: ACM, 2019. p. 1-13. DOI: 10.1145/3290605.3300233. Disponível em: https://doi.org/10.1145/3290605.3300233. Acesso em: 9 out. 2026.
+
 BACH, Benjamin *et al.* Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
 
 BERGMEIR, Christoph; BENÍTEZ, José M. On the use of cross-validation for time series predictor evaluation. **Information Sciences**, v. 191, p. 192-213, 2012. DOI: 10.1016/j.ins.2011.12.028. Disponível em: https://doi.org/10.1016/j.ins.2011.12.028. Acesso em: 9 out. 2026.
@@ -1226,15 +1267,21 @@ FOIDL, Harald *et al.* Data pipeline quality: influencing factors, root causes o
 
 GRUPO DO PROJETO INTEGRADOR. **Plano de ação**: PIJ410-DRP14-A2026S2-T002. [S. l.]: UNIVESP, 2026. Documento interno do grupo.
 
+HAN, Hojae *et al.* ArchCode: Incorporating Software Requirements in Code Generation with Large Language Models. In: ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS, 62., 2024, Bangkok. **Proceedings** [...]. Bangkok: Association for Computational Linguistics, 2024. p. 13520-13552. DOI: 10.18653/v1/2024.acl-long.730. Disponível em: https://doi.org/10.18653/v1/2024.acl-long.730. Acesso em: 9 out. 2026.
+
 HYNDMAN, Rob J.; KOEHLER, Anne B. Another look at measures of forecast accuracy. **International Journal of Forecasting**, v. 22, n. 4, p. 679-688, 2006. DOI: 10.1016/j.ijforecast.2006.03.001. Disponível em: https://doi.org/10.1016/j.ijforecast.2006.03.001. Acesso em: 9 out. 2026.
 
 JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
+
+KAMOI, Ryo *et al.* When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs. **Transactions of the Association for Computational Linguistics**, v. 12, p. 1417-1440, 2024. DOI: 10.1162/tacl_a_00713. Disponível em: https://doi.org/10.1162/tacl_a_00713. Acesso em: 9 out. 2026.
 
 KANNAN, P. K.; LI, Hongshuang "Alice". Digital marketing: a framework, review and research agenda. **International Journal of Research in Marketing**, v. 34, n. 1, p. 22-45, 2017. DOI: 10.1016/j.ijresmar.2016.11.006. Disponível em: https://doi.org/10.1016/j.ijresmar.2016.11.006. Acesso em: 26 ago. 2026.
 
 LEMES, Thieny de Cássio; DIAS, Marina Oliveira de Souza; OLIVEIRA, Tiago de. Análise do uso de dashboard como ferramenta de apoio a tomada de decisão em instituições de ensino: uma revisão sistemática da literatura. **RENOTE**, v. 21, n. 1, p. 281-290, 2023. DOI: 10.22456/1679-1916.134356. Disponível em: https://doi.org/10.22456/1679-1916.134356. Acesso em: 24 ago. 2026.
 
 LI, Hongshuang "Alice"; KANNAN, P. K.; VISWANATHAN, Siva; PANI, Abhishek. Attribution strategies and return on keyword investment in paid search advertising. **Marketing Science**, v. 35, n. 6, p. 831-848, 2016. DOI: 10.1287/mksc.2016.0987. Disponível em: https://doi.org/10.1287/mksc.2016.0987. Acesso em: 26 ago. 2026.
+
+LIU, Nelson F. *et al.* Lost in the Middle: How Language Models Use Long Contexts. **Transactions of the Association for Computational Linguistics**, v. 12, p. 157-173, 2024. DOI: 10.1162/tacl_a_00638. Disponível em: https://doi.org/10.1162/tacl_a_00638. Acesso em: 9 out. 2026.
 
 MARTINS, Felipe. **Otimização de uma campanha publicitária na rede de pesquisa do Google Ads utilizando Teoria da Decisão Bayesiana**. 2019. Dissertação (Mestrado) – Universidade de São Paulo, São Paulo, 2019. DOI: 10.11606/d.45.2019.tde-22102019-115749. Disponível em: https://doi.org/10.11606/d.45.2019.tde-22102019-115749. Acesso em: 24 ago. 2026.
 
@@ -1253,6 +1300,10 @@ UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Plano de Ensino**: dis
 UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico dos cursos de Bacharelado em Tecnologia da Informação, Ciência de Dados e Engenharia de Computação**. São Paulo: UNIVESP, 2020. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BTI.pdf. Acesso em: 25 ago. 2026.
 
 WANG, Lei *et al.* A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, art. 186345, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.
+
+YANG, John *et al.* SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. **Advances in Neural Information Processing Systems**, v. 37, 2024. DOI: 10.52202/079017-1601. Disponível em: https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html. Acesso em: 9 out. 2026.
+
+YAO, Shunyu *et al.* ReAct: Synergizing Reasoning and Acting in Language Models. In: INTERNATIONAL CONFERENCE ON LEARNING REPRESENTATIONS, 11., 2023, Kigali. **Proceedings** [...]. [S. l.: s. n.], 2023. Disponível em: https://arxiv.org/abs/2210.03629. Acesso em: 9 out. 2026.
 
 <!-- Na versão institucional final, inserir manualmente o Anexo A com os TCLEs preenchidos e assinados, mantidos fora do Git. Incluir o anexo no sumário somente após essa inserção protegida. -->
 

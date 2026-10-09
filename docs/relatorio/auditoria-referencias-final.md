@@ -118,3 +118,18 @@ O modelo conserva a redação histórica sobre a NBR 6023:2002 em contexto de ci
 **Gate bibliográfico:** REFERÊNCIAS E CITAÇÕES CIENTIFICAMENTE ÍNTEGRAS.
 
 **Gate ABNT:** PADRÃO ABNT DEFINIDO E CONSISTENTE.
+
+## 6. Atualização posterior — fundamentação de IA agêntica (9 out. 2026)
+
+Esta seção registra uma ampliação autorizada após a auditoria original; as contagens de 19 nas seções anteriores descrevem o estado anterior e permanecem como histórico. A pesquisa e a análise de pertinência constam de `docs/relatorio/auditoria-ia-agentica-fontes.md`.
+
+| Chave adicionada ao Relatório Final | Tipo | Recorte em 2.3.7 | Entrada no catálogo do projeto |
+|---|---|---|---|
+| Amershi *et al.* (2019) | Conferência CHI | Interação humano–IA e correção | Nova |
+| Han *et al.* (2024) | Conferência ACL | Requisitos e testes | Nova |
+| Kamoi *et al.* (2024) | Artigo TACL | Feedback externo e limites da autocorreção | Nova |
+| Liu *et al.* (2024) | Artigo TACL | Limite de contexto longo | Já existente; antes candidata |
+| Yang *et al.* (2024) | Conferência NeurIPS | Agente em repositório, edição e testes | Nova |
+| Yao *et al.* (2023) | Conferência ICLR | Planejamento e uso de ferramentas | Nova |
+
+**Correspondência bidirecional atual:** 25 chaves autor–ano citadas; 25 referências na seção final; 25 citações com referência; 0 citações sem referência; 25 referências citadas; 0 referências sem citação. A seção final passou de 19 para 25 entradas, sem remover ou alterar as 19 fontes científicas anteriores. Os novos metadados foram conferidos nas páginas dos periódicos e conferências e nas versões publicadas dos artigos. A fonte Yao é apresentada pela versão final ICLR disponibilizada pelos autores no arXiv, sem DOI de anais inventado. Não há citação direta nem página de citação direta acrescentada. Mantêm-se NBR 10520:2023 para citações e NBR 6023:2025 para referências.

@@ -468,3 +468,13 @@ encerra H10 sem alterar o conteúdo científico ou o conjunto de fontes do traba
 
 **Aplicação:** conferir a seção de referências e as chamadas autor–data na fonte editorial
 `docs/relatorio/final.md`; manter 19 referências já validadas, sem inventar metadados.
+
+---
+
+## Decisão editorial — termos de IA agêntica no Relatório Final
+
+**Data:** 2026-10-09.
+
+**Decisão:** usar a literatura de agentes baseados em modelos de linguagem, planejamento, ferramentas, interação humano–IA, requisitos, contexto e verificação para fundamentar 2.3.7. Descrever em 2.5.12 o procedimento efetivamente registrado no projeto. *Scaffolding* tem sentidos variáveis; *spec-driven development* é sobretudo um rótulo profissional recente; *context engineering* é terminologia emergente com forte uso industrial. Nenhum desses rótulos designa metodologia científica formal adotada pelo PI. Preferir descrições concretas: decomposição de tarefas, requisitos e critérios registrados, seleção de contexto, inspeção, testes e decisão humana.
+
+**Motivo:** evitar transferir resultados de benchmarks ou nomes comerciais para a eficácia do projeto e manter os agentes auxiliares separados da regressão linear e dos baselines do CPR. Fontes e limites estão em `docs/relatorio/auditoria-ia-agentica-fontes.md`.

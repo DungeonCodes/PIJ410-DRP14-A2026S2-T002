@@ -57,7 +57,7 @@ grupo fechar o tema com a instituição parceira.
 | `E8` | Arquitetura front-end, React e renderização no servidor (Next.js) | 2.4 Aplicação das disciplinas / Resultados |
 | `E9` | Bancos de dados relacionais, modelagem e desempenho (PostgreSQL) | 2.4 Aplicação das disciplinas / Resultados |
 | `E10` | Análise de dados, pipelines e qualidade de dados | 2.4 Aplicação das disciplinas |
-| `E11` | Agentes de LLM, memória, engenharia de contexto e apoio controlado a simulações | Metodologia (processo de desenvolvimento) |
+| `E11` | Agentes de LLM, organização de contexto, verificação e supervisão humana | 2.3.7 Fundamentação / 2.5.12 Metodologia |
 | `E12` | Aprendizagem de máquina aplicada à análise preditiva e à tomada de decisão em marketing | 2.3 Fundamentação teórica / 2.5 Resultados |
 | `E13` | Estratégia de marketing digital, tráfego pago e atribuição de resultados | 2.3 Fundamentação teórica |
 
@@ -65,12 +65,11 @@ Os eixos `E7` a `E10` sustentam o item **"Relação com as disciplinas estudadas
 **2,0 pontos** no relatório final e exige conteúdo de *mais de três disciplinas com referência
 a materiais específicos*. Sem bibliografia técnica esse item não fecha.
 
-O eixo `E11` é de natureza diferente: descreve **como o grupo organizou o desenvolvimento**
-(o scaffolding de contexto em `/docs/` — `master_context.md`, `agent_rules.md`, `decisions.md`,
-`run_log.md` — funciona como memória persistente para trabalho assistido por agentes). Isso
-pertence à metodologia de desenvolvimento, **não** ao Design Thinking exigido pela rubrica, que
-trata do ciclo ouvir/criar/implementar junto à comunidade externa. Não confundir os dois na
-redação: são camadas distintas e a banca avalia apenas a segunda.
+O eixo `E11` fundamenta a classe de agentes e descreve **como o grupo organizou o trabalho
+assistido** com requisitos, contexto versionado, verificações e supervisão humana. Os registros
+em `/docs/` apoiam rastreabilidade; *scaffolding* e *context engineering* não foram adotados como
+nomes de teorias ou de métodos formais. O procedimento é distinto do ciclo de Design Thinking
+realizado com a comunidade externa e do modelo supervisionado usado para CPR.
 
 ---
 
@@ -188,23 +187,30 @@ A obra 29 conecta análise de dados a **decisão gerencial**, que é a ponte ent
 |---|---|---|---|---|---|---|
 | 33 | PARK et al. — Generative Agents: Interactive Simulacra of Human Behavior | 2023 | ACM UIST | 1726 | sim | `candidata` |
 | 34 | WANG et al. — A survey on large language model based autonomous agents | 2024 | Frontiers of Computer Science | 1437 | sim | `citada` |
-| 35 | LIU et al. — Lost in the Middle: How Language Models Use Long Contexts | 2024 | TACL | 1188 | sim | `candidata` |
+| 35 | LIU et al. — Lost in the Middle: How Language Models Use Long Contexts | 2024 | TACL | 1188 | sim | `citada` |
 | 36 | GAO et al. — Retrieval-Augmented Generation for LLMs: A Survey | 2023 | arXiv | 707 | **não — preprint** | `candidata` |
 | 37 | SUMERS et al. — Cognitive Architectures for Language Agents | 2023 | arXiv | 65 | **não — preprint** | `candidata` |
 | 38 | ANTHROPIC — Introducing Claude Fable 5 and Claude Mythos 5 | 2026 | documentação técnica oficial | — | não se aplica | `lida` |
 | 39 | OPENAI — GPT-5.6 Sol Model | 2026 | documentação técnica oficial | — | não se aplica | `lida` |
+| 44 | AMERSHI et al. — Guidelines for Human-AI Interaction | 2019 | CHI / ACM | — | sim | `citada` |
+| 45 | HAN et al. — ArchCode: Incorporating Software Requirements in Code Generation with Large Language Models | 2024 | ACL | — | sim | `citada` |
+| 46 | KAMOI et al. — When Can LLMs Actually Correct Their Own Mistakes? | 2024 | TACL | — | sim | `citada` |
+| 47 | YANG et al. — SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering | 2024 | NeurIPS | — | sim | `citada` |
+| 48 | YAO et al. — ReAct: Synergizing Reasoning and Acting in Language Models | 2023 | ICLR | — | sim | `citada` |
 
-**Atenção à rubrica.** A fundamentação teórica zera se as fontes não forem confiáveis, e preprint
-não passou por revisão por pares. As obras 33, 34 e 35 são publicadas e sustentam o eixo sozinhas;
-prefira-as. As obras 36 e 37 só devem ser citadas se não houver equivalente publicado — e a 37 é
-conhecida por ter versão em periódico, que precisa ser localizada antes de citar.
+**Atenção à rubrica.** A fundamentação exige fontes confiáveis. As obras 34, 35 e 44–48 são
+publicadas e sustentam os recortes adotados. As obras 36 e 37 permanecem preprints candidatos;
+não foram necessárias para o Relatório Final. A obra 33 trata de simulação social, fora do recorte
+metodológico atual.
 
 A obra 34 foi lida e citada para delimitar o papel dos agentes como apoio sujeito a controle
-humano. As obras 38 e 39 foram lidas como documentação técnica, mas deixaram de ser citadas no
-relatório parcial após a revisão de 27 ago. 2026: nomes e configurações comerciais específicos não
-alteram o método e envelhecem rapidamente. A obra 35 permanece candidata e poderá ser
-avaliada, antes de eventual citação, para a discussão sobre limites de contexto e organização da
-memória.
+humano. A obra 35 passou a ser citada no Relatório Final apenas para o efeito da posição de
+informações relevantes em contextos longos. As obras 44–48 sustentam interação humano–IA,
+requisitos, verificação, agentes em repositórios e planejamento com ferramentas. As obras 38 e 39
+foram lidas como documentação técnica, mas deixaram de ser citadas no relatório parcial após a
+revisão de 27 ago. 2026: nomes e configurações comerciais específicos não alteram o método e
+envelhecem rapidamente. Os rótulos *spec-driven development* e *context engineering* não foram
+tratados como teorias consolidadas; ver `docs/relatorio/auditoria-ia-agentica-fontes.md`.
 
 ### E12 — Aprendizagem de máquina aplicada ao marketing
 
@@ -258,8 +264,8 @@ Registradas para a próxima rodada:
   documentação apenas como fonte técnica, distinta da fundamentação teórica.
 * **Nada sobre modelagem dimensional.** O eixo E9 cobre desempenho e comparação de SGBD, mas não
   modelagem de dados analíticos (star schema, fato/dimensão), que é o que o protótipo precisa.
-* **E11 depende de preprints.** Localizar as versões publicadas de GAO et al. e SUMERS et al.
-  antes de citar; ver a ressalva na seção do eixo.
+* **E11 usa fontes publicadas.** A fundamentação atual não depende dos preprints de Gao ou
+  Sumers; eles permanecem candidatos para eventual pesquisa futura, sem citação no Final.
 
 ---
 
@@ -278,6 +284,8 @@ Registradas para a próxima rodada:
 
 Ordem alfabética. Conferir capitalização de títulos antes de colar no relatório: vários
 periódicos brasileiros publicam títulos em caixa alta e os metadados reproduzem isso.
+
+AMERSHI, Saleema *et al.* Guidelines for Human-AI Interaction. In: CHI CONFERENCE ON HUMAN FACTORS IN COMPUTING SYSTEMS, 2019, Glasgow. **Proceedings** [...]. New York: ACM, 2019. p. 1-13. DOI: 10.1145/3290605.3300233. Disponível em: https://doi.org/10.1145/3290605.3300233. Acesso em: 9 out. 2026.
 
 ARISTIZÁBAL, Catalina Ramírez. **Sucesso de sistemas de Business Intelligence**: uma abordagem multidimensional. 2016. Tese (Doutorado) – Universidade de São Paulo, São Paulo, 2016. DOI: 10.11606/t.3.2016.tde-18082016-101353. Disponível em: https://doi.org/10.11606/t.3.2016.tde-18082016-101353. Acesso em: 24 ago. 2026.
 
@@ -299,9 +307,13 @@ GOMES, Robson Ferreira et al. Dashboard para Gestão Acadêmica. **Congresso de 
 
 GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação IV**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
 
+HAN, Hojae *et al.* ArchCode: Incorporating Software Requirements in Code Generation with Large Language Models. In: ANNUAL MEETING OF THE ASSOCIATION FOR COMPUTATIONAL LINGUISTICS, 62., 2024, Bangkok. **Proceedings** [...]. Bangkok: Association for Computational Linguistics, 2024. p. 13520-13552. DOI: 10.18653/v1/2024.acl-long.730. Disponível em: https://doi.org/10.18653/v1/2024.acl-long.730. Acesso em: 9 out. 2026.
+
 JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
 
 KALUŽA, Marin; VUKELIĆ, Bernard. Comparison of front-end frameworks for web applications development. **Zbornik Veleučilišta u Rijeci**, v. 6, n. 1, p. 261-282, 2018. DOI: 10.31784/zvr.6.1.19. Disponível em: https://doi.org/10.31784/zvr.6.1.19. Acesso em: 24 ago. 2026.
+
+KAMOI, Ryo *et al.* When Can LLMs Actually Correct Their Own Mistakes? A Critical Survey of Self-Correction of LLMs. **Transactions of the Association for Computational Linguistics**, v. 12, p. 1417-1440, 2024. DOI: 10.1162/tacl_a_00713. Disponível em: https://doi.org/10.1162/tacl_a_00713. Acesso em: 9 out. 2026.
 
 KANNAN, P. K.; LI, Hongshuang "Alice". Digital marketing: a framework, review and research agenda. **International Journal of Research in Marketing**, v. 34, n. 1, p. 22-45, 2017. DOI: 10.1016/j.ijresmar.2016.11.006. Disponível em: https://doi.org/10.1016/j.ijresmar.2016.11.006. Acesso em: 26 ago. 2026.
 
@@ -370,3 +382,7 @@ UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico do
 VYAS, Rishi. Comparative Analysis on Front-End Frameworks for Web Applications. **International Journal for Research in Applied Science and Engineering Technology**, v. 10, n. 7, p. 298-307, 2022. DOI: 10.22214/ijraset.2022.45260. Disponível em: https://doi.org/10.22214/ijraset.2022.45260. Acesso em: 24 ago. 2026.
 
 WANG, Lei et al. A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.
+
+YANG, John *et al.* SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. **Advances in Neural Information Processing Systems**, v. 37, 2024. DOI: 10.52202/079017-1601. Disponível em: https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html. Acesso em: 9 out. 2026.
+
+YAO, Shunyu *et al.* ReAct: Synergizing Reasoning and Acting in Language Models. In: INTERNATIONAL CONFERENCE ON LEARNING REPRESENTATIONS, 11., 2023, Kigali. **Proceedings** [...]. [S. l.: s. n.], 2023. Disponível em: https://arxiv.org/abs/2210.03629. Acesso em: 9 out. 2026.

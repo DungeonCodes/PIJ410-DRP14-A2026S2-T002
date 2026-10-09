@@ -1143,3 +1143,16 @@ Resultado: RA de Michele Jeremias da Silva Santos confirmado diretamente pela in
 Data: 2026-10-09
 Ação: Fechamento administrativo do Relatório Final.
 Resultado: RA de Michele Jeremias da Silva Santos confirmado diretamente pela integrante: 1700600; H10 resolvida por decisão expressa do responsável com ABNT NBR 10520:2023 para citações e NBR 6023:2025 para referências; H11 resolvida operacionalmente pela inserção manual dos TCLEs preenchidos e assinados apenas na versão institucional final, com os arquivos fora do Git público. A fonte editorial não contém anexo vazio. Na revisão normativa, `et al.` foi posto em itálico; 19 referências, autoria, títulos, DOI, URLs e datas de acesso foram mantidos. Restam URL do vídeo e dados de paginação/total de folhas para a composição. Nenhuma conversa, captura privada, TCLE assinado, telefone, CPF, RG ou assinatura foi adicionada; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Pesquisa bibliográfica e revisão científica controlada da seção de IA agêntica.
+Resultado: consultadas fontes primárias sobre agentes LLM, supervisão humana, planejamento e uso de ferramentas, requisitos, organização de contexto e verificação. Seis referências passaram a integrar a seção 2.3.7 e a bibliografia do Final; cinco são novas no catálogo geral e Liu et al. (2024) já constava como candidata. A seção 2.5.12 passou a descrever o uso assistivo registrado: especificação, contexto restrito, inspeção, testes ou verificadores aplicáveis e decisão humana. Os rótulos scaffolding, spec-driven development e context engineering foram limitados conforme a auditoria específica. O catálogo, as sínteses, os fichamentos, as decisões e a auditoria de referências foram atualizados. Nenhum resultado, dado, código, resposta de P1, figura ou resumo foi alterado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Revisão da metodologia de criação e prototipação do Relatório Final.
+Resultado: a seção 2.5.4 passou a explicar a estratégia incremental em quatro fases, os mecanismos de habilitação, o estado funcional e a distinção entre fases e versões V1/V2. Acrescentada tabela metodológica das fases; tabelas posteriores e lista foram renumeradas editorialmente, sem alteração de seus dados. A seção 2.5.5 foi condensada para destacar a sequência de avaliação; 3.2 mantém a comprovação do estado real, com nomes de módulos alinhados ao código; 3.3 permanece dedicada à arquitetura e aos contratos técnicos. A matriz de rastreabilidade foi registrada em `docs/relatorio/auditoria-evidencias-final.md`. Fases 3 e 4 seguem bloqueadas, Ads/CPR não foram atribuídos ao feedback de P1 e não existe versão de interface V3 documentada. Nenhum código, dataset, resultado experimental, resposta de P1 ou figura foi alterado; sem commit ou push.
+Verificação: `npm run test:fases` (61 testes), `npm run test:interface` (composição V1/V2 e 17 arquivos protegidos) e `npm run test:v2-feedback` aprovados; `git diff --check` aprovado.

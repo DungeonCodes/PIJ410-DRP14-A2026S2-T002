@@ -119,3 +119,26 @@ Essa classificação se refere aos materiais atualmente destinados ao relatório
 Atualização administrativa de 09/10/2026: RA de Michele Jeremias da Silva Santos confirmado
 diretamente pela integrante como 1700600 e preenchido na fonte editorial corrente. A conversa
 privada e sua captura não foram incorporadas ao repositório.
+
+## Adendo — fases funcionais e versões da interface (9 out. 2026)
+
+Este adendo registra a verificação documental usada para reestruturar 2.5.4 do Relatório Final. O plano de fases de 27/08/2026 descrevia quatro incrementos; a emenda da ADR-006 de 06/10/2026 liberou a Fase 2 apenas no ambiente acadêmico local. `src/lib/fases.ts` distingue módulos habilitados de rotas preparadas, e `src/lib/interface.ts` enumera somente `v1` e `v2`. V3 nos arquivos do Relatório Parcial é versão editorial daquele documento, não versão de interface implementada.
+
+| Fase | Necessidade atendida | Funcionalidades previstas ou ativas | Versão da interface | Estado | Evidência |
+|---|---|---|---|---|---|
+| Fase 1 | Organizar captação e matrículas | Captação, Matrículas, indicadores e visualizações | V1 e V2; gráficos de Captação separados na V1 e consolidados na V2 | Funcional | Plano de fases; `src/lib/fases.ts`; `docs/validacao/versoes-interface.md`; registros P1/V1 e P1/V2 |
+| Fase 2 | Demonstrar análise de mídia paga | Ads: Visão geral, Google Ads, Meta Ads e Estratégia; apresentação de CPR experimental em Google Ads | Somente V2 | Funcional no ambiente acadêmico sintético local; sem novo deploy | Emenda ADR-006; gate; rotas e testes; registros de versões |
+| Fase 3 | Planejar análise de conteúdo orgânico | Reels orgânicos | Nenhuma versão ativa | Planejada e bloqueada | Plano de fases; `src/lib/fases.ts`; guarda das rotas |
+| Fase 4 | Planejar premissa da gestão e documentação técnica na interface | Objetivo da Gestão; Arquitetura & Algoritmos | Nenhuma versão ativa | Planejada e bloqueada | Plano de fases; `src/lib/fases.ts`; guarda das rotas |
+
+| Objetivo específico de 2.1.2 | Fase(s) que contribuem | Resultado documentado |
+|---|---|---|
+| Consolidar dados históricos de fontes distintas | Fases 1 e 2 | Organização por módulos em cenários sintéticos; sem consolidação operacional institucional |
+| Organizar indicadores para comparar canais e campanhas | Fases 1 e 2 | Indicadores dos módulos ativos; canais de Ads sem validação por P1 |
+| Implementar cálculos determinísticos conferíveis | Fases 1 e 2 | Rotinas e testes versionados |
+| Avaliar regressão supervisionada de CPR | Fase 2 | Experimentos locais executados e limitados ao cenário sintético |
+| Empregar IA agêntica via CLI em cenários de simulação | Transversal ao desenvolvimento; conferência de artefatos da Fase 2 | Apoio assistivo documentado; simulação agêntica específica não comprovada |
+| Desenvolver interface web compreensível para a gestão | Fases 1 e 2 | V1 e V2 funcionais em seus respectivos escopos |
+| Avaliar versão do protótipo com profissionais da parceira | Fase 1 nas versões V1 e V2 | Uma profissional avaliou Captação, Matrículas e ajuste temporal; Ads/ML não avaliados |
+
+**Distinção de origem:** FB-V1-P1-001 causou apenas a consolidação temporal de Captação na V2. Ads e o experimento de CPR resultaram de evolução técnica/acadêmica. Nenhuma implementação ou validação da interface V3 foi localizada; não se atribui à participante resultado futuro.

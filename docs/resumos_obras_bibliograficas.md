@@ -351,12 +351,12 @@ apoio agêntico controlado. [Acesso](https://doi.org/10.1007/s11704-024-40231-1)
 
 ### 35. Liu et al. (2024)
 
-**Base da síntese:** artigo publicado e abstract consultado. **A obra:** avalia como modelos de
+**Base da síntese:** artigo publicado consultado, especialmente resumo, análise e conclusão. **A obra:** avalia como modelos de
 linguagem usam informações em contextos longos por tarefas controladas de recuperação e resposta.
 O desempenho tende a ser melhor quando a informação relevante está no início ou no fim e pior
-quando está no meio, mesmo em modelos com grandes janelas. **Decisão preliminar:** `priorizar` para
-justificar organização, seleção e recuperação de contexto; não extrapolar para todos os modelos e
-tarefas. [Acesso](https://doi.org/10.1162/tacl_a_00638)
+quando está no meio, mesmo em modelos com grandes janelas. **Limite:** tarefas e modelos avaliados
+não demonstram eficácia de uma técnica específica usada pelo PI. **Decisão:** `usar` somente para
+justificar cuidado na organização do contexto. [Acesso](https://doi.org/10.1162/tacl_a_00638)
 
 ### 36. Gao et al. (2023)
 
@@ -453,6 +453,42 @@ mesma trajetória. [Acesso](https://apps.univesp.br/manual-do-aluno/assets/PPC/c
 pedagógica de Ciência de Dados, incluindo competências técnicas, éticas e de governança.
 **Decisão preliminar:** `manter` como fonte curricular complementar, não como fundamentação sobre o
 objeto empírico. [Acesso](https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BCD-2026.pdf)
+
+### 44. Amershi et al. (2019)
+
+**Base da síntese:** artigo publicado em CHI e versão dos autores consultados. **A obra:** propõe e
+avalia diretrizes para interação humano–IA, incluindo avaliação e correção das saídas. **Limite:**
+trata de desenho de interação, não mede a qualidade dos agentes ou das decisões do PI. **Decisão:**
+`usar` para fundamentar controle humano. [Acesso](https://doi.org/10.1145/3290605.3300233)
+
+### 45. Han et al. (2024)
+
+**Base da síntese:** artigo de ACL e trechos de método e conclusão consultados. **A obra:**
+incorpora requisitos na geração de código e relaciona casos de teste à conferência das saídas.
+**Limite:** ArchCode é um framework específico, não o método empregado pelo grupo. **Decisão:**
+`usar` para a relação geral entre requisitos e testes. [Acesso](https://doi.org/10.18653/v1/2024.acl-long.730)
+
+### 46. Kamoi et al. (2024)
+
+**Base da síntese:** survey publicado em TACL, resumo e discussão sobre feedback consultados.
+**A obra:** distingue revisão pelo próprio LLM de correção apoiada por feedback externo
+confiável. **Limite:** não demonstra que todo teste ou revisão humana encontre todos os erros.
+**Decisão:** `usar` para justificar verificações externas. [Acesso](https://doi.org/10.1162/tacl_a_00713)
+
+### 47. Yang et al. (2024)
+
+**Base da síntese:** artigo publicado em NeurIPS, resumo, arquitetura e avaliação consultados.
+**A obra:** examina uma interface para agente de software que navega, edita e executa testes em
+repositórios. **Limite:** os resultados pertencem ao SWE-agent e a seus benchmarks, não ao PI.
+**Decisão:** `usar` para contextualizar a classe de ferramentas. [Acesso](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html)
+
+### 48. Yao et al. (2023)
+
+**Base da síntese:** versão ICLR disponibilizada pelos autores, resumo, método e conclusão
+consultados. **A obra:** ReAct intercala raciocínio e ações em fontes ou ferramentas externas.
+**Limite:** não se verificou que os agentes usados pelo grupo implementem ReAct. **Decisão:**
+`usar` para explicar planejamento e uso de ferramentas, sem atribuição arquitetural específica.
+[Acesso](https://arxiv.org/abs/2210.03629)
 
 ## Fluxo para novas obras
 
