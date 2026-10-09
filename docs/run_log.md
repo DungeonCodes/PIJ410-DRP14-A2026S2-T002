@@ -1124,3 +1124,16 @@ Ação: Correção editorial da identificação PJI410 nas figuras do Relatório
 Origem: `APP.disciplina` em `src/lib/identidade.ts` traz `PIJ410 — Projeto Integrador em Computação III` na baseline protegida da V1; `src/components/app-shell.tsx` e o layout raiz a consomem. A V2 herdava o mesmo shell.
 Solução: V1, seus 17 arquivos/hash protegidos e seus três PNGs utilizados foram preservados como registro da interface apresentada a P1; o Final recebeu uma nota editorial única sobre o rótulo histórico. A V2 passou a usar shell e constante próprios com `PJI410 — Projeto Integrador em Computação IV`, incluindo título da rota versionada, sem alteração funcional. Duas novas capturas reais 1600×900 do build local (`fig-v2-ads-visao-geral-pji410.png` e `fig-v2-captacao-evolucao-temporal-pji410.png`) substituem as referências no Final; os PNGs V2 anteriores permanecem intactos. A figura sazonal já não exibia o rótulo e foi mantida.
 Verificação: `npm run build`, `npm run test:interface` (17 hashes V1 intactos), `npm run test:v2-feedback`, `npm run test:interface:http` (35 verificações de rotas) e `npm run test:nao-vazamento` (38 verificações) aprovados. HTML das duas rotas V1 conserva o rótulo histórico; as sete rotas V2 exibem PJI410 IV sem Computação III. DOM das duas telas recapturadas conferido e capturas inspecionadas visualmente. Nenhuma resposta P1, dado, ML, metodologia ou resultado alterado. Nenhum pixel histórico retocado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Auditoria editorial integral do Relatório Final antes da composição DOCX/PDF.
+Fontes: `docs/relatorio/final.md` lido integralmente e modelo oficial do Relatório Final; listas, sumário, figuras, tabelas, referências e apêndices conferidos.
+Resultado: corrigidos concordância e fluidez na introdução e na abertura dos resultados; convertidas em comentários Markdown as instruções de paginação das listas e do sumário e a pendência administrativa do Anexo A; condensada a nota de preservação histórica da V1; acrescentada a fonte ausente da Tabela 7; uniformizados sinais negativos e apresentação de fontes/notas; substituídas referências posicionais por numéricas. Resumo, objetivos, dados, resultados, respostas de P1, V1 e capturas V2 preservados. Permanecem RA de Michele, URL do vídeo, total de folhas, paginação final, decisão H10 e tratamento institucional protegido dos TCLEs H11. Nenhum DOCX/PDF gerado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Fechamento do registro acadêmico pendente na fonte editorial corrente.
+Resultado: RA de Michele Jeremias da Silva Santos confirmado diretamente pela integrante: 1700600. O marcador foi substituído em `docs/relatorio/final.md`. A conversa privada e sua captura não foram incorporadas ao repositório; registros históricos foram preservados.

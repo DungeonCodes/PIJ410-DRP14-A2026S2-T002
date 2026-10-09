@@ -16,7 +16,7 @@ Lucas Baldoino Santos — RA 1707374
 
 Marcos da Silva — RA 1906409
 
-Michele Jeremias da Silva Santos — [PENDENTE – RA não informado no Plano de Ação nem nas versões V2/V3]
+Michele Jeremias da Silva Santos — RA 1700600
 
 Rafael Gonçalves Martins — RA 1705632
 
@@ -77,7 +77,7 @@ Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêm
 
 ## Lista de ilustrações
 
-Numeração provisória das seis figuras selecionadas; páginas a inserir na composição do DOCX/PDF.
+<!-- Paginação e numeração definitivas das figuras serão conferidas na composição do DOCX/PDF. -->
 
 - Figura 1 – Indicadores e filtros da Captação na V1
 - Figura 2 – Indicadores e composição por safra em Matrículas na V1
@@ -88,7 +88,7 @@ Numeração provisória das seis figuras selecionadas; páginas a inserir na com
 
 ## Lista de tabelas
 
-Numeração provisória das 13 tabelas do corpo; páginas a inserir na composição do DOCX/PDF.
+<!-- Paginação e numeração definitivas das tabelas serão conferidas na composição do DOCX/PDF. -->
 
 - Tabela 1 – Indicadores e perguntas de decisão
 - Tabela 2 – Disciplinas estudadas e aplicações no projeto
@@ -106,7 +106,7 @@ Numeração provisória das 13 tabelas do corpo; páginas a inserir na composiç
 
 ## Sumário
 
-Paginação a atualizar automaticamente na composição do DOCX/PDF.
+<!-- Paginação do sumário a atualizar na composição do DOCX/PDF. -->
 
 - 1 Introdução
 - 2 Desenvolvimento
@@ -183,12 +183,11 @@ analítica antes de ser tecnológica: os dados existem, mas não se apresentam e
 a decisão.
 
 A ideia básica que orienta o trabalho é que esse conjunto disperso pode ser consolidado e submetido
-à análise de dados em escala. Indicadores calculados por regras determinísticas poderão ser
-complementados pela investigação experimental de padrões. Neste trabalho, foi executado um
-experimento separado de regressão para CPR no Google Ads, com dados integralmente sintéticos,
-com resultados da CLI exibidos no módulo Google Ads da Fase 2 acadêmica, sem treinamento
-no navegador. A interface web apresenta os resultados
-disponíveis de modo acompanhável pela gestão. O objeto deste trabalho é, assim, o desenvolvimento
+à análise de dados em escala. Os indicadores calculados por regras determinísticas foram
+complementados por um experimento separado de regressão para CPR no Google Ads, com dados
+integralmente sintéticos. Os resultados produzidos pela CLI são exibidos no módulo Google Ads
+da Fase 2 acadêmica, sem treinamento no navegador. A interface web apresenta os resultados
+disponíveis para acompanhamento pela gestão. O objeto deste trabalho é, assim, o desenvolvimento
 acadêmico de uma solução analítica para investimentos em mídia digital no contexto educacional.
 A avaliação comunitária registrada limitou-se a Captação, Matrículas e ao ajuste de visualização
 temporal, sem avaliar decisões de orçamento ou os módulos de Ads e ML.
@@ -478,7 +477,7 @@ O Plano de Ensino oficial de PJI410 — Projeto Integrador em Computação IV (U
 abrange os dois cursos e articula resolução de problemas, análise de dados, aprendizagem de
 máquina e interface para visualização de resultados. As matrizes do PPC dos cursos de Computação
 (UNIVESP, 2020)
-situam PJI410 no sétimo semestre. Os oito componentes selecionados abaixo estão previstos antes
+situam PJI410 no sétimo semestre. Os oito componentes da Tabela 2 estão previstos antes
 desse período em pelo menos um dos cursos representados no grupo.
 
 Tabela 2 – Disciplinas estudadas e aplicações no projeto
@@ -494,7 +493,7 @@ Tabela 2 – Disciplinas estudadas e aplicações no projeto
 | Aprendizado de Máquinas | Ciência de Dados | Formulação e avaliação dos experimentos supervisionados de CPR: comparação de regressão linear com baselines, divisão temporal, prevenção de leakage e métricas MAE, RMSE e R². |
 | Interface Humano-Computador | Engenharia de Computação | Avaliação da apresentação da interface e implementação da visualização temporal consolidada na V2 após o feedback de P1, seguida de reavaliação. |
 
-Fonte: elaboração do grupo, com base nas matrizes e ementas oficiais da UNIVESP e nos artefatos
+Fonte: Elaboração do grupo, com base nas matrizes e ementas oficiais da UNIVESP e nos artefatos
 do projeto. A grafia Introdução à Ciência de Dados segue o Plano de Ensino de COM350; o PPC
 registra o mesmo componente como Introdução a Ciência de Dados.
 
@@ -578,7 +577,7 @@ as Fases 3 e 4 permanecem bloqueadas.
 
 ### 2.5.5 Implementar, testar, validar e ajustar
 
-Para tornar rastreáveis as futuras avaliações, a interface foi identificada por versões.
+Para tornar rastreáveis as avaliações, a interface foi identificada por versões.
 V1 é a baseline inicial pré-Ads e contém somente Captação e Matrículas. V2 incorporou
 posteriormente, por evolução técnica/acadêmica e não por feedback comunitário, os módulos de
 Ads, o experimento CPR e a demonstração sazonal descrita em 2.5.11. Ambas utilizam os mesmos
@@ -780,7 +779,7 @@ preservadas em registros separados.
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
-Este capítulo distingue resultados comprovados, desenvolvimento em curso e itens planejados. Na
+Este capítulo distingue resultados comprovados, desenvolvimento em curso e itens planejados. No
 estado local verificado em 06/10/2026, as Fases 1 e 2 estão ativas; Fases 3 e 4 permanecem
 planejadas e bloqueadas. A Fase 2 utiliza Google Ads e Meta Ads integralmente sintéticos,
 sem integração real. O experimento de CPR descrito em 3.4.4 continua executado pela CLI;
@@ -867,10 +866,9 @@ Figura 1 – Indicadores e filtros da Captação na V1
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
-Nota editorial das figuras V1: as capturas históricas preservam o rótulo lateral legado
-“PIJ410 — Projeto Integrador em Computação III”, presente na interface apresentada a P1.
-O componente acadêmico correto deste trabalho é PJI410 — Projeto Integrador em Computação IV.
-O rótulo não altera os dados nem as funcionalidades demonstradas nessas capturas.
+Nota: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo
+legado “PIJ410 — Projeto Integrador em Computação III”. O componente correto deste trabalho é
+PJI410 — Projeto Integrador em Computação IV.
 
 ### 3.4.2 Módulo de Matrículas
 
@@ -952,9 +950,9 @@ Tabela 6 – Resultados da previsão sazonal de CPR no holdout
 
 | Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
-| Persistência t−2 | 6,563180 | 13,132417 | -0,082082 |
-| Sazonal t−12 | 9,200559 | 15,375354 | -0,483273 |
-| Regressão linear | 7,575144 | 14,257769 | -0,275481 |
+| Persistência t−2 | 6,563180 | 13,132417 | −0,082082 |
+| Sazonal t−12 | 9,200559 | 15,375354 | −0,483273 |
+| Regressão linear | 7,575144 | 14,257769 | −0,275481 |
 
 Fonte: Elaborado pelo grupo a partir da execução sintética (2026).
 
@@ -970,6 +968,8 @@ Tabela 7 – Resultados da previsão sazonal de CPR no rolling origin
 | Persistência t−2 | 7,332367 | 12,576527 | 0,007587 |
 | Sazonal t−12 | 8,321915 | 12,633565 | −0,001435 |
 | Regressão linear | 6,335071 | 12,541304 | 0,013138 |
+
+Fonte: Elaborado pelo grupo a partir da execução sintética (2026).
 
 Os dois protocolos medem horizontes distintos. Nenhum resultado demonstra eficácia real ou
 capacidade de automatizar investimentos.
@@ -996,8 +996,10 @@ Tabela 8 – Valores projetados de CPR sintético
 | Jun./2023 | 59,42 | Dez./2023 | 75,43 |
 | Jul./2023 | 47,87 | Jan./2024 | 60,01 |
 
-Fonte: artefato sintético `src/data/google-cpr-sazonal.json` (2026). Não foram calculados
-intervalos de confiança nem houve verificação dessas projeções com dados reais posteriores.
+Fonte: Artefato sintético `src/data/google-cpr-sazonal.json` (2026).
+
+Nota: Não foram calculados intervalos de confiança nem houve verificação dessas projeções com
+dados reais posteriores.
 
 Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
 
@@ -1097,7 +1099,7 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 
 A tabela relaciona a escuta inicial, a solução construída e o alcance da avaliação registrada.
 As dimensões de Ads não foram apresentadas nas tarefas de P1; a cadeia específica de
-FB-V1-P1-001 é discriminada abaixo.
+FB-V1-P1-001 é discriminada na Tabela 12.
 
 Tabela 11 – Rastreabilidade entre necessidade, solução e validação
 
@@ -1260,7 +1262,7 @@ WANG, Lei et al. A survey on large language model based autonomous agents. **Fro
 
 ## Anexo A – Termo de Consentimento Livre e Esclarecido
 
-[PENDENTE – H11: definir com a orientadora/UNIVESP a forma de inclusão protegida dos TCLEs preenchidos na entrega institucional; arquivos assinados permanecem fora do repositório público]
+<!-- H11: definir com a orientadora/UNIVESP a forma de inclusão protegida dos TCLEs preenchidos na entrega institucional; arquivos assinados permanecem fora do repositório público. Não exportar este anexo vazio. -->
 
 # APÊNDICES
 
