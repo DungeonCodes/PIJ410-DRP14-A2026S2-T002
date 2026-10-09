@@ -126,7 +126,7 @@ Oliveira, 2023).
 
 Em campanhas digitais, métricas como investimento, conversão e retorno precisam ser interpretadas
 em relação aos objetivos organizacionais e às configurações de cada ação (Saura; Palos-Sánchez;
-Suárez, 2017). Na publicidade de busca, a possibilidade de combinar palavras-chave, lances,
+Cerdá Suárez, 2017). Na publicidade de busca, a possibilidade de combinar palavras-chave, lances,
 dispositivos e períodos torna insuficiente uma leitura baseada em um único total (Martins, 2019).
 Na instituição parceira, os registros de investimento e desempenho permanecem dispersos entre
 fontes distintas, com indicadores, unidades de medida e recortes temporais próprios (Grupo do
@@ -216,7 +216,7 @@ demanda análise de dados em escala e prevê uma interface web para tornar os re
 acompanháveis. A aprendizagem de máquina integra o tema por meio do experimento sintético de
 CPR no Google Ads, sem inferência operacional ou decisão autônoma. A escolha de indicadores e métricas é necessária para
 avaliar a efetividade das estratégias de marketing digital e verificar sua aderência aos objetivos
-organizacionais (Saura; Palos-Sánchez; Suárez, 2017). A proposta, portanto, não se limita à criação
+organizacionais (Saura; Palos-Sánchez; Cerdá Suárez, 2017). A proposta, portanto, não se limita à criação
 de uma interface: busca converter dados dispersos em informação que possa sustentar uma decisão de
 gestão.
 
@@ -320,7 +320,7 @@ baseadas em uma métrica isolada. Investimento, impressões e alcance descrevem 
 taxa de cliques (CTR) avaliam a resposta inicial; custo por clique (CPC) mostra o custo do tráfego;
 conversões e taxa de conversão aproximam o resultado de captação; custo por aquisição (CPA) e
 retorno sobre o investimento em publicidade (ROAS) apoiam a comparação entre o valor gerado e o
-recurso aplicado (Saura, 2021; Saura; Palos-Sánchez; Suárez, 2017).
+recurso aplicado (Saura, 2021; Saura; Palos-Sánchez; Cerdá Suárez, 2017).
 
 | Indicador ou combinação | Pergunta de decisão que orienta |
 |---|---|
@@ -426,10 +426,10 @@ diferentes componentes curriculares das respectivas matrizes. A relação é apr
 coletivo, pela correspondência entre os conteúdos curriculares e as atividades executadas, sem
 atribuir disciplinas a integrantes específicos ou afirmar que todos cursaram os mesmos componentes.
 
-O [Plano de Ensino oficial de PJI410 — Projeto Integrador em Computação IV](https://assets.univesp.br/blackboard/plano-de-ensino/disciplinas/PJI410.html)
+O Plano de Ensino oficial de PJI410 — Projeto Integrador em Computação IV (UNIVESP, [s. d.])
 abrange os dois cursos e articula resolução de problemas, análise de dados, aprendizagem de
 máquina e interface para visualização de resultados. As matrizes do PPC dos cursos de Computação
-(UNIVESP, 2020), conferidas também na [versão com códigos revisados](https://univesp.br/sites/58f6506869226e9479d38201/assets/6012ad8f7c1bd13535c41a85/PPC-BTI_C_digos_Revisados.pdf),
+(UNIVESP, 2020)
 situam PJI410 no sétimo semestre. Os oito componentes selecionados abaixo estão previstos antes
 desse período em pelo menos um dos cursos representados no grupo.
 
@@ -611,7 +611,7 @@ Regras de negócio, sazonalidade, capacidade de atendimento e limites de variaç
 devem ser explicitados antes da construção de cenários. Cenários mínimo, ideal e agressivo, quando
 aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados. Eles não
 projetarão matrícula, não garantirão retorno e não ocultarão conflitos entre regras ou limitações
-dos dados (Saura; Palos-Sánchez; Suárez, 2017; Martins, 2019).
+dos dados (Saura; Palos-Sánchez; Cerdá Suárez, 2017; Martins, 2019).
 
 ### 2.5.10 Auditoria, reprodutibilidade e limites de atribuição
 
@@ -656,7 +656,7 @@ informação do resultado ou do futuro no treinamento ou na emissão da estimati
 
 Fonte: Elaborado pelo grupo (2026).
 
-O particionamento é temporal, sem sorteio aleatório: 198 amostras de treino e 71 de teste, com
+O particionamento é temporal, sem sorteio aleatório (Bergmeir; Benítez, 2012): 198 amostras de treino e 71 de teste, com
 corte na data fictícia de 01/07/2021. Targets ainda indisponíveis no corte foram retirados do
 treino; amostras sem histórico elegível ou CPR definido foram excluídas. A padronização foi
 ajustada exclusivamente no treino, sem usar estatísticas do teste. O modelo permanece fixo e
@@ -671,7 +671,7 @@ sem API real. A interface Google Ads da Fase 2 exibe o artefato de resultados da
 executar treinamento no navegador ou recomendar investimento. Os resultados estão em 3.4.4.
 
 MAE é o erro absoluto médio; RMSE é a raiz do erro quadrático médio e penaliza mais os erros
-grandes. R² compara a soma dos erros quadráticos à variação dos valores observados em torno da
+grandes (Hyndman; Koehler, 2006). R² compara a soma dos erros quadráticos à variação dos valores observados em torno da
 média do conjunto avaliado. R² negativo indica desempenho inferior ao da referência constante
 baseada nessa média; não é percentual de acerto nem substitui a comparação com a persistência t−2.
 
@@ -994,12 +994,6 @@ As respostas primárias dos dois momentos estão preservadas em
 Trata-se de uma participante que avaliou dois estados sucessivos da interface; a reavaliação
 não constitui amostra independente nem validação definitiva.
 
-Figura [numeração pendente] – Evidência anonimizada da validação da solução
-
-[PENDENTE – obter arquivo fotográfico real e autorização específica, caso a figura da sessão presencial seja exigida; não substituir por captura da interface nem expor identificadores pessoais]
-
-Fonte: Elaborado pelo grupo (2026).
-
 ## 3.6 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
 
 Esta matriz distingue as necessidades iniciais do que foi efetivamente observado nos dois
@@ -1153,15 +1147,19 @@ qualidade de dados suficientes. As Fases 3 e 4 poderão ser avaliadas após sua 
 
 # REFERÊNCIAS
 
-[REVISAR – confirmar com a orientadora a aplicação da NBR 6023:2018 e da NBR 10520:2023, conforme a pendência registrada na ADR-002; o modelo oficial ainda menciona a edição de 2002]
+[REVISAR – confirmar com a orientadora o padrão de referências e citações: o modelo oficial menciona a NBR 6023:2002 para citações; a ADR-002 adotou a NBR 6023:2018 e a NBR 10520:2023; a NBR 6023 teve edição de 2025. Manter H10 aberta até a decisão institucional]
 
 BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
 
-DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
+BERGMEIR, Christoph; BENÍTEZ, José M. On the use of cross-validation for time series predictor evaluation. **Information Sciences**, v. 191, p. 192-213, 2012. DOI: 10.1016/j.ins.2011.12.028. Disponível em: https://doi.org/10.1016/j.ins.2011.12.028. Acesso em: 9 out. 2026.
+
+DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, n. 4, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
 
 FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
 
-GRUPO DO PROJETO INTEGRADOR. **Plano de ação do Projeto Integrador em Computação IV**: PIJ410-DRP14-A2026S2-T002. São Paulo: UNIVESP, 2026. Documento interno.
+GRUPO DO PROJETO INTEGRADOR. **Plano de ação**: PIJ410-DRP14-A2026S2-T002. [S. l.]: UNIVESP, 2026. Documento interno do grupo.
+
+HYNDMAN, Rob J.; KOEHLER, Anne B. Another look at measures of forecast accuracy. **International Journal of Forecasting**, v. 22, n. 4, p. 679-688, 2006. DOI: 10.1016/j.ijforecast.2006.03.001. Disponível em: https://doi.org/10.1016/j.ijforecast.2006.03.001. Acesso em: 9 out. 2026.
 
 JORDAN, Michael I.; MITCHELL, Tom M. Machine learning: trends, perspectives, and prospects. **Science**, v. 349, n. 6245, p. 255-260, 2015. DOI: 10.1126/science.aaa8415. Disponível em: https://doi.org/10.1126/science.aaa8415. Acesso em: 26 ago. 2026.
 
@@ -1181,15 +1179,13 @@ ROSADO, Keila Mara Lara; DIAS, Célia da Consolação. A metodologia Design Thin
 
 SAURA, José Ramón. Using Data Sciences in Digital Marketing: framework, methods, and performance metrics. **Journal of Innovation & Knowledge**, v. 6, n. 2, p. 92-102, 2021. DOI: 10.1016/j.jik.2020.08.001. Disponível em: https://doi.org/10.1016/j.jik.2020.08.001. Acesso em: 25 ago. 2026.
 
-SAURA, José Ramón; PALOS-SÁNCHEZ, Pedro; SUÁREZ, Luis Manuel Cerdá. Understanding the Digital Marketing Environment with KPIs and Web Analytics. **Future Internet**, v. 9, n. 4, p. 76, 2017. DOI: 10.3390/fi9040076. Disponível em: https://doi.org/10.3390/fi9040076. Acesso em: 24 ago. 2026.
+SAURA, José Ramón; PALOS-SÁNCHEZ, Pedro; CERDÁ SUÁREZ, Luis Manuel. Understanding the Digital Marketing Environment with KPIs and Web Analytics. **Future Internet**, v. 9, n. 4, p. 76, 2017. DOI: 10.3390/fi9040076. Disponível em: https://doi.org/10.3390/fi9040076. Acesso em: 24 ago. 2026.
 
-THAKKAR, Mohit. **Building React Apps with Server-Side Rendering**: use React, Redux, and Next to build full server-side rendering applications. Berkeley: Apress, 2020. DOI: 10.1007/978-1-4842-5869-9. Disponível em: https://doi.org/10.1007/978-1-4842-5869-9. Acesso em: 26 ago. 2026.
+UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Plano de Ensino**: disciplina Projeto Integrador em Computação IV (PJI410). [S. l.]: UNIVESP, [s. d.]. Disponível em: https://assets.univesp.br/blackboard/plano-de-ensino/disciplinas/PJI410.html. Acesso em: 9 out. 2026.
 
 UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico dos cursos de Bacharelado em Tecnologia da Informação, Ciência de Dados e Engenharia de Computação**. São Paulo: UNIVESP, 2020. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BTI.pdf. Acesso em: 25 ago. 2026.
 
-UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico do curso de Bacharelado em Ciência de Dados**. São Paulo: UNIVESP, 2026. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BCD-2026.pdf. Acesso em: 25 ago. 2026.
-
-WANG, Lei et al. A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.
+WANG, Lei et al. A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, art. 186345, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.
 
 # ANEXOS
 

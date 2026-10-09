@@ -1068,3 +1068,44 @@ Ação: auditoria histórica e científica dos objetivos, com reavaliação do u
 Fontes: Plano de Ação oficial e versões V2/V3, Relatório Parcial V1–V3 e histórico Git, proposta histórica de cinco objetivos, Relatório Final, decisões, registros de execução, protocolos CPR e confirmação humana do responsável técnico.
 Correção do registro anterior: foi confirmado o uso de agentes em ambiente Antigravity, incluindo Codex/GPT-6.1 Sol, como apoio ao desenvolvimento, auditoria, revisão metodológica, verificação de algoritmos e resultados de ML, testes e documentação. A ausência de simulação agêntica específica via linha de comando não equivale à ausência de uso agêntico. O objetivo de IA do Final mantém a modalidade histórica de apoio a cenários de simulação e é classificado como parcialmente atendido; essa simulação específica não foi documentada. O apoio agêntico não produziu o modelo preditivo de CPR nem substituiu decisões científicas humanas.
 Alteração: final.md ajustado somente nas passagens sobre uso de IA e estado do objetivo; nomes comerciais mantidos neste log, não no corpo científico. Sem alteração de números experimentais, código, datasets, respostas de P1 ou instrumentos. Sem commit ou push.
+---
+
+Data: 2026-10-09
+Ação: Auditoria final de referências, citações e integridade bibliográfica do Relatório Final.
+Escopo: `docs/relatorio/final.md`, modelo oficial DOCX, orientações institucionais de 2026,
+PPC/Plano de Ensino PJI410, DOI, páginas oficiais de periódicos/editoras e documento interno do grupo.
+Resultado: 19 chaves de citação e 19 referências finais, correspondência bidirecional integral;
+inventário, fontes, força e afirmações centrais em `docs/relatorio/auditoria-referencias-final.md`.
+Corrigidos o sobrenome composto Cerdá Suárez, o título do Plano de Ação interno, o fascículo
+de De Mauro et al. e o número de artigo de Wang et al.; incluído o Plano de Ensino PJI410 citado;
+removido o PPC 2026 não citado; adicionadas referências primárias verificadas de Bergmeir/Benítez
+e Hyndman/Koehler aos conceitos de avaliação temporal e métricas. Datas de acesso antigas
+preservadas; data 9 out. 2026 usada somente para fontes consultadas nesta auditoria.
+H10 continua aberta: modelo oficial menciona “ABNT 6023, de 2002” para citações; orientações
+de avaliação de 2026 mencionam ABNT sem edição; padrão interno usa 6023:2018 e 10520:2023;
+edição 6023:2025 foi verificada em catálogo de normas e biblioteca universitária, sem adoção
+institucional específica localizada para este PI. Marcador H10 em final.md atualizado.
+Nenhum resultado, número, código, dataset, resposta P1, objetivo ou método foi alterado.
+Sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Auditoria final de evidências, apêndices, anexos e privacidade do Relatório Final.
+Fontes: questionário inicial e histórico Git; instrumentos V1/V2 e respostas originais P1/V1–P1/V2;
+protocolo e registro de versões; nove capturas da aplicação; artefatos/protocolos CPR; run log;
+Regulamento, orientações e modelo oficial da UNIVESP. Inventário e gates em
+`docs/relatorio/auditoria-evidencias-final.md`.
+Resultado: 30 perguntas iniciais; seis perguntas aplicadas em V1 e seis na reavaliação V2;
+cadeia FB-V1-P1-001 rastreável; nove capturas existentes, seis utilizadas. Confirmados gráficos
+separados V1, consolidado V2 e CPR sazonal experimental. Cinco capturas utilizadas exibem na
+barra lateral a identificação antiga “Projeto Integrador em Computação III”; pendência editorial
+para composição sem alterar código ou imagem agora. Nenhuma fotografia da validação localizada;
+os documentos consultados não a exigem; removidos de final.md o marcador e a legenda fotográfica
+opcionais. Art. 13 do Regulamento exige TCLE preenchido na versão
+final; H11 permanece para definir a apresentação institucional protegida, fora do Git público.
+Corrigida em `auditoria-referencias-final.md` somente a contagem por tipo: 19 referências =
+15 artigos + 1 dissertação + 3 documentos institucionais/internos; a redação literal do modelo
+sobre “ABNT 6023, de 2002” foi contextualizada sem resolver H10.
+Nenhuma resposta, TCLE, PII, imagem, código, dataset, resultado ou texto científico foi alterado;
+nenhum DOCX/PDF gerado; sem commit ou push.
