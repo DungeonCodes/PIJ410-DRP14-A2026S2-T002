@@ -867,6 +867,11 @@ Figura 1 – Indicadores e filtros da Captação na V1
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
+Nota editorial das figuras V1: as capturas históricas preservam o rótulo lateral legado
+“PIJ410 — Projeto Integrador em Computação III”, presente na interface apresentada a P1.
+O componente acadêmico correto deste trabalho é PJI410 — Projeto Integrador em Computação IV.
+O rótulo não altera os dados nem as funcionalidades demonstradas nessas capturas.
+
 ### 3.4.2 Módulo de Matrículas
 
 O módulo de Matrículas apresenta histórico sintético por safra, ciclo, turma e mês. A interface
@@ -904,7 +909,7 @@ automática; não há otimização nem execução de campanhas.
 
 Figura 3 – Visão geral acadêmica de Ads na V2
 
-![Visão geral de Ads da V2 com indicadores sintéticos e distinção entre resultados Google e Meta.](figuras/fig-v2-ads-visao-geral.png)
+![Visão geral de Ads da V2 com indicadores sintéticos e distinção entre resultados Google e Meta.](figuras/fig-v2-ads-visao-geral-pji410.png)
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
@@ -1084,7 +1089,7 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 
 Figura 6 – Evolução temporal consolidada de Captação na V2
 
-![Gráfico temporal da V2 com Contatos, Visitas e Matrículas do funil selecionados simultaneamente.](figuras/fig-v2-captacao-evolucao-temporal.png)
+![Gráfico temporal da V2 com Contatos, Visitas e Matrículas do funil selecionados simultaneamente.](figuras/fig-v2-captacao-evolucao-temporal-pji410.png)
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
