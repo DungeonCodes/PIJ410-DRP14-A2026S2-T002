@@ -1137,3 +1137,9 @@ Resultado: corrigidos concordância e fluidez na introdução e na abertura dos 
 Data: 2026-10-09
 Ação: Fechamento do registro acadêmico pendente na fonte editorial corrente.
 Resultado: RA de Michele Jeremias da Silva Santos confirmado diretamente pela integrante: 1700600. O marcador foi substituído em `docs/relatorio/final.md`. A conversa privada e sua captura não foram incorporadas ao repositório; registros históricos foram preservados.
+
+---
+
+Data: 2026-10-09
+Ação: Fechamento administrativo do Relatório Final.
+Resultado: RA de Michele Jeremias da Silva Santos confirmado diretamente pela integrante: 1700600; H10 resolvida por decisão expressa do responsável com ABNT NBR 10520:2023 para citações e NBR 6023:2025 para referências; H11 resolvida operacionalmente pela inserção manual dos TCLEs preenchidos e assinados apenas na versão institucional final, com os arquivos fora do Git público. A fonte editorial não contém anexo vazio. Na revisão normativa, `et al.` foi posto em itálico; 19 referências, autoria, títulos, DOI, URLs e datas de acesso foram mantidos. Restam URL do vídeo e dados de paginação/total de folhas para a composição. Nenhuma conversa, captura privada, TCLE assinado, telefone, CPF, RG ou assinatura foi adicionada; sem commit ou push.

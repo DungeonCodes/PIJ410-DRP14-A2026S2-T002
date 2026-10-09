@@ -9,8 +9,10 @@ efetivamente usados e os links para conferência pelo grupo são registrados em
 [`docs/fichamentos_bibliograficos.md`](fichamentos_bibliograficos.md). Pela ADR-004, toda inclusão
 neste catálogo exige entradas correspondentes nos dois documentos.
 
-Norma adotada: **ABNT NBR 6023:2018** (referências) e **NBR 10520:2023** (citações).
-Ver `/docs/decisions.md` e `.claude/skills/pesquisa-bibliografica/references/abnt.md`.
+Norma adotada para o Relatório Final desde 2026-10-09: **ABNT NBR 6023:2025** (referências)
+e **NBR 10520:2023** (citações), conforme ADR-009 em `/docs/decisions.md`. O guia legado
+`.claude/skills/pesquisa-bibliografica/references/abnt.md` ainda descreve a edição de 2018;
+para o Relatório Final prevalece a decisão atual.
 
 ## Como usar
 

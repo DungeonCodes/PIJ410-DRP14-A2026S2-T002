@@ -101,7 +101,7 @@ As 18 fontes externas são categoria A pelo papel científico ou institucional. 
 
 O estudo não transforma documentação comercial em prova de eficácia. As métricas, baselines, protocolo temporal e resultados sintéticos são artefatos experimentais do grupo, separados das fontes teóricas. Nenhum trecho atribui ao Codex/GPT uma teoria de ML.
 
-## 5. ABNT e pendências
+## 5. ABNT e decisão normativa posterior
 
 | Fonte institucional ou interna | Norma mencionada |
 |---|---|
@@ -109,12 +109,12 @@ O estudo não transforma documentação comercial em prova de eficácia. As mét
 | `docs/univesp/Modelo_Relatorio_Final.docx` | Mesmo modelo oficial; verificar arquivo publicado se houver atualização posterior |
 | `docs/univesp/Orientacoes_para_Avaliacao_PI.pdf` (2026), pp. 7 e 10 | “normas da ABNT”, sem número ou edição |
 | Demais orientações PI 2026 em `docs/univesp/` | Nenhuma edição específica localizada na extração integral |
-| [ABNT NBR 6023:2025, catálogo de normas](https://shop.standards.ie/en-ie/standards/abnt-nbr-6023-2025-779112_saig_nbr_nbr_3644196/); [biblioteca universitária UFU](https://bibliotecas.ufu.br/en/node/3660) | Terceira edição de 21 maio 2025, substitui 6023:2018; não foi localizada adoção explícita pela UNIVESP para este PI |
-| `docs/decisions.md`, ADR-002; `docs/referencias.md` | NBR 6023:2018 para referências e NBR 10520:2023 para citações |
-| `docs/relatorio/final.md` | 6023:2018/10520:2023 aplicadas; marcador H10 atualizado para registrar também a edição de 2025 |
+| [ABNT NBR 6023:2025, catálogo de normas](https://shop.standards.ie/en-ie/standards/abnt-nbr-6023-2025-779112_saig_nbr_nbr_3644196/); [biblioteca universitária UFU](https://bibliotecas.ufu.br/en/node/3660) | Terceira edição de 21 maio 2025, substitui 6023:2018; a decisão de adotá-la no PI veio do responsável pelo relatório, não de documento institucional posterior |
+| `docs/decisions.md`, ADR-002 e ADR-009; `docs/referencias.md` | ADR-002 registra a escolha histórica de 2018; ADR-009 a substitui pela NBR 6023:2025 para referências e mantém a NBR 10520:2023 para citações |
+| `docs/relatorio/final.md` | Edições de 2025/2023 adotadas; o marcador H10 foi removido após decisão expressa |
 
-Há conflito real entre a edição e a atribuição de objeto da norma no modelo, o padrão interno de 2018 e a edição de 2025. H10 continua aguardando confirmação da orientadora. O padrão autor–data do texto e a lista bibliográfica estão internamente consistentes com a decisão interna; esta auditoria não certifica conformidade integral com a NBR 6023:2025. Ordem alfabética, autores institucionais, pontuação, DOI/URL e datas de acesso foram conferidos. O marcador H10 não foi removido.
+O modelo conserva a redação histórica sobre a NBR 6023:2002 em contexto de citações. Em 09/10/2026, o responsável definiu expressamente a NBR 10520:2023 para citações e a NBR 6023:2025 para referências; H10 foi encerrada sem alterar o modelo. Na revisão normativa da fonte editorial, `et al.` passou a itálico nas chamadas e nas entradas bibliográficas pertinentes. Foram conferidos ordem alfabética, padrão autor–data, autoria institucional, DOI, URL e data de acesso. Nenhum dado bibliográfico ou conjunto de obras foi alterado: permanecem 19 referências citadas e nenhuma citação sem referência. A checagem estrutural em Markdown não substitui a conferência visual do DOCX/PDF.
 
 **Gate bibliográfico:** REFERÊNCIAS E CITAÇÕES CIENTIFICAMENTE ÍNTEGRAS.
 
-**Gate ABNT:** PADRÃO ABNT INTERNAMENTE CONSISTENTE, MAS H10 AGUARDA CONFIRMAÇÃO DA ORIENTADORA.
+**Gate ABNT:** PADRÃO ABNT DEFINIDO E CONSISTENTE.

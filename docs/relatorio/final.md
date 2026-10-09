@@ -153,8 +153,6 @@ Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêm
   - 3.9 Limitações
 - 4 Considerações finais
 - Referências
-- Anexos
-  - Anexo A – Termo de Consentimento Livre e Esclarecido
 - Apêndices
   - Apêndice A – Instrumento de levantamento inicial
   - Apêndice B – Instrumentos de validação aplicados à V1 e à V2
@@ -355,7 +353,7 @@ O propósito da análise não é declarar antecipadamente qual campanha deve rec
 Busca-se organizar evidências para comparar exposição, interesse, conversão e custo em relação aos
 objetivos de captação definidos com a instituição. Em publicidade de busca paga, as decisões de
 lance e de orçamento são influenciadas pelo modo como as conversões são atribuídas aos elementos
-que antecedem a ação do usuário (Li et al., 2016). Por isso, a regra de atribuição registrada pela
+que antecedem a ação do usuário (Li *et al.*, 2016). Por isso, a regra de atribuição registrada pela
 plataforma, quando disponível, deve ser tratada como parte do contexto analítico.
 
 ### 2.3.3 Indicadores e tomada de decisão
@@ -380,7 +378,7 @@ Fonte: Elaborado pelo grupo (2026).
 
 A atribuição de conversões deve ser declarada antes das comparações, pois a regra escolhida altera o
 crédito atribuído aos elementos da jornada e pode modificar decisões de lance, orçamento e retorno
-estimado (Li et al., 2016). Quando não houver receita ou valor de conversão confiável na base, o
+estimado (Li *et al.*, 2016). Quando não houver receita ou valor de conversão confiável na base, o
 relatório não calculará ROAS como se fosse dado observado; usará os indicadores disponíveis e
 registrará a limitação.
 
@@ -392,7 +390,7 @@ integrar e transformar os registros em uma base adequada à análise. Essa prepa
 comparações entre campanhas e períodos sejam afetadas por nomes inconsistentes, formatos
 incompatíveis, valores ausentes, duplicações ou unidades de medida diferentes.
 
-A qualidade desse processo é parte do resultado analítico. Foidl et al. (2024) identificam
+A qualidade desse processo é parte do resultado analítico. Foidl *et al.* (2024) identificam
 ingestão, integração, limpeza e transformação como etapas relevantes de pipelines de dados e
 associam problemas de qualidade a aspectos como tipos de dados, compatibilidade e rastreabilidade.
 Cada transformação relevante deverá ser documentada, de modo que um indicador ou uma estimativa
@@ -435,7 +433,7 @@ informações provenientes de sistemas distintos.
 
 Padrões de design de dashboards ajudam a relacionar estrutura, interação e conteúdo, permitindo
 justificar por que determinada visão emprega comparação temporal, detalhamento, agrupamento ou
-destaque de exceções (Bach et al., 2023). O protótipo seleciona os recursos visuais por sua função
+destaque de exceções (Bach *et al.*, 2023). O protótipo seleciona os recursos visuais por sua função
 na interpretação. A interface deve preservar contexto: período, canal, unidade de análise, fórmula
 do indicador e limitações dos dados precisam permanecer disponíveis.
 
@@ -554,8 +552,8 @@ indicadores, comparar informações ao longo do tempo e organizar dados disperso
 a instituição e os participantes anonimizados e não incorpora dados pessoais ou informações
 comerciais sensíveis.
 
-As entrevistas iniciais foram realizadas mediante TCLE. O documento de consentimento será tratado
-na composição final dos anexos, fora do repositório público e sem divulgar dados pessoais. Esse
+As entrevistas iniciais foram realizadas mediante TCLE. Os termos preenchidos serão inseridos
+manualmente como anexo na versão institucional final, fora do repositório público. Esse
 consentimento refere-se ao levantamento inicial e não se confunde com o TCLE registrado para a
 avaliação posterior de P1.
 
@@ -607,7 +605,7 @@ Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem
 apoio de IA são procedimentos separados, descritos em 2.5.11 e 2.5.12. Essa separação impede que um
 resultado de regra seja apresentado como causalidade ou que uma correlação agregada seja tratada
 como atribuição por canal. Quando uma informação necessária não
-estiver disponível, o resultado será sinalizado como não verificável (Saura, 2021; Li et al.,
+estiver disponível, o resultado será sinalizado como não verificável (Saura, 2021; Li *et al.*,
 2016).
 
 ### 2.5.7 Fontes de dados, recortes temporais e confidencialidade
@@ -630,7 +628,7 @@ A preparação dos cenários documenta origem, nomes, formatos, tipos, valores a
 consolidação em artefatos versionados. Cada indicador deve preservar fonte, período, unidade de
 análise e fórmula. Problemas de qualidade em
 pipelines podem ocorrer na ingestão, integração, limpeza e transformação, o que reforça a
-necessidade de documentar as regras aplicadas (Foidl et al., 2024).
+necessidade de documentar as regras aplicadas (Foidl *et al.*, 2024).
 
 Na implementação acadêmica, os cenários são gerados localmente com parâmetros e sementes fixos,
 gravados em arquivos JSON versionados e lidos por contratos locais da aplicação. Os filtros
@@ -670,7 +668,7 @@ conferir resultados computacionais e suas condições de produção (Peng, 2011)
 
 Impressão, clique, conversão de plataforma, conversa, contato, visita e matrícula não são tratados
 como sinônimos. Quando houver apenas dados agregados, a análise poderá descrever associação entre
-etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal específico (Li et al.,
+etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal específico (Li *et al.*,
 2016).
 
 ### 2.5.11 Protocolo experimental de aprendizagem de máquina
@@ -761,7 +759,7 @@ Modelos de linguagem podem organizar evidências, comparar cenários e formular 
 preliminares a partir de indicadores já calculados. Essa atividade não constitui evidência empírica
 independente nem aprendizagem de máquina aplicada à base. O contexto disponibilizado ao agente é
 restrito a documentos versionados, dados sanitizados, fórmulas, resultados e referências
-verificadas. Saídas sem base rastreável não são utilizadas (Wang et al., 2024).
+verificadas. Saídas sem base rastreável não são utilizadas (Wang *et al.*, 2024).
 
 Durante o desenvolvimento do protótipo e da documentação técnica, agentes de inteligência
 artificial foram utilizados como apoio à leitura e auditoria do repositório, programação, revisão
@@ -1218,15 +1216,13 @@ qualidade de dados suficientes. As Fases 3 e 4 poderão ser avaliadas após sua 
 
 # REFERÊNCIAS
 
-<!-- H10 — Confirmar com a orientadora qual edição normativa deve prevalecer: o modelo oficial menciona a NBR 6023:2002 em contexto de citações; o padrão interno usa NBR 6023:2018 e NBR 10520:2023; há edição NBR 6023:2025 sem adoção institucional específica comprovada para este PI. Esta nota não integra o DOCX/PDF. -->
-
-BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
+BACH, Benjamin *et al.* Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
 
 BERGMEIR, Christoph; BENÍTEZ, José M. On the use of cross-validation for time series predictor evaluation. **Information Sciences**, v. 191, p. 192-213, 2012. DOI: 10.1016/j.ins.2011.12.028. Disponível em: https://doi.org/10.1016/j.ins.2011.12.028. Acesso em: 9 out. 2026.
 
 DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, n. 4, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
 
-FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
+FOIDL, Harald *et al.* Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
 
 GRUPO DO PROJETO INTEGRADOR. **Plano de ação**: PIJ410-DRP14-A2026S2-T002. [S. l.]: UNIVESP, 2026. Documento interno do grupo.
 
@@ -1256,13 +1252,9 @@ UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Plano de Ensino**: dis
 
 UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO (UNIVESP). **Projeto pedagógico dos cursos de Bacharelado em Tecnologia da Informação, Ciência de Dados e Engenharia de Computação**. São Paulo: UNIVESP, 2020. Disponível em: https://apps.univesp.br/manual-do-aluno/assets/PPC/ciencia-de-dados/PPC-BTI.pdf. Acesso em: 25 ago. 2026.
 
-WANG, Lei et al. A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, art. 186345, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.
+WANG, Lei *et al.* A survey on large language model based autonomous agents. **Frontiers of Computer Science**, v. 18, n. 6, art. 186345, 2024. DOI: 10.1007/s11704-024-40231-1. Disponível em: https://doi.org/10.1007/s11704-024-40231-1. Acesso em: 24 ago. 2026.
 
-# ANEXOS
-
-## Anexo A – Termo de Consentimento Livre e Esclarecido
-
-<!-- H11: definir com a orientadora/UNIVESP a forma de inclusão protegida dos TCLEs preenchidos na entrega institucional; arquivos assinados permanecem fora do repositório público. Não exportar este anexo vazio. -->
+<!-- Na versão institucional final, inserir manualmente o Anexo A com os TCLEs preenchidos e assinados, mantidos fora do Git. Incluir o anexo no sumário somente após essa inserção protegida. -->
 
 # APÊNDICES
 

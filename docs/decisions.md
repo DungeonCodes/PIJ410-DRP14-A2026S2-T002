@@ -449,3 +449,22 @@ Registradas aqui porque constaram como pendências e já não são.
 **Motivo:** o Projeto Integrador é coletivo e multicurso; os artefatos comprovam aplicação dos conhecimentos e as fontes oficiais identificam conteúdo e posição curricular.
 **Alternativa considerada:** rastreamento de disciplinas estudadas por integrante, substituído pelo critério coletivo autorizado.
 **Impacto:** seção 2.4 revisada com oito disciplinas de vínculo forte; H07 resolvida. Materiais específicos só são alegados quando documentados. A decisão não confirma matrícula individual, leitura por todos ou eficácia operacional do ML.
+
+---
+
+## ADR-009 — Edições ABNT adotadas no Relatório Final
+
+**Data:** 2026-10-09.
+
+**Decisão:** por confirmação expressa do responsável pelo relatório, o Relatório Final adota a
+ABNT NBR 10520:2023 para citações e a ABNT NBR 6023:2025 para referências. Esta decisão
+substitui a edição de referências indicada na ADR-002, preservada acima como registro histórico.
+As exigências específicas de apresentação do modelo oficial da UNIVESP permanecem aplicáveis
+quando não houver conflito material.
+
+**Motivo:** a menção à NBR 6023:2002 no modelo oficial descreve uma orientação histórica e
+atribui a essa norma o tratamento de citações. A decisão atual separa citações de referências e
+encerra H10 sem alterar o conteúdo científico ou o conjunto de fontes do trabalho.
+
+**Aplicação:** conferir a seção de referências e as chamadas autor–data na fonte editorial
+`docs/relatorio/final.md`; manter 19 referências já validadas, sem inventar metadados.
