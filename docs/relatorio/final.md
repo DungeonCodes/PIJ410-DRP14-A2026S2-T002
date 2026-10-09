@@ -191,12 +191,15 @@ ensino.
 - Desenvolver uma interface web que apresente os indicadores de forma compreensível para a gestão.
 - Avaliar a versão do protótipo com profissionais da instituição parceira, registrando as contribuições recebidas para sua evolução.
 
-No estado documentado, a organização de dados, os indicadores, os cálculos determinísticos e a
-interface foram implementados no ambiente acadêmico com dados sintéticos; o experimento de CPR
-foi executado e comparado às referências definidas. A avaliação da interface foi parcial:
-uma profissional examinou Captação, Matrículas e o ajuste temporal, não Ads ou ML. Não há
-execução documentada de cenários de simulação com IA agêntica via CLI; o uso assistivo de IA
-na programação e documentação, descrito em 2.5.12, não demonstra esse objetivo específico.
+No estado documentado, os dados de investimento e desempenho foram organizados por módulo em
+cenários sintéticos; não houve consolidação de fontes operacionais distintas em uma base
+institucional. Os indicadores, os cálculos determinísticos e a interface foram implementados no
+ambiente acadêmico com esses dados; o experimento de CPR foi executado e comparado às referências
+definidas. A avaliação da interface foi parcial: uma profissional examinou Captação, Matrículas e
+o ajuste temporal, não Ads ou ML. O responsável técnico confirmou o uso de agentes de IA como
+apoio ao desenvolvimento, à revisão e à verificação técnico-científica, descrito em 2.5.12. Não
+há registro de uma simulação agêntica específica via linha de comando; portanto, a modalidade de
+simulação prevista no objetivo de IA não é declarada atendida integralmente.
 
 ## 2.2 Justificativa e delimitação do problema
 
@@ -709,9 +712,13 @@ independente nem aprendizagem de máquina aplicada à base. O contexto disponibi
 restrito a documentos versionados, dados sanitizados, fórmulas, resultados e referências
 verificadas. Saídas sem base rastreável não são utilizadas (Wang et al., 2024).
 
-Durante o desenvolvimento do protótipo e da documentação técnica, ferramentas de inteligência
-artificial generativa foram utilizadas como apoio à programação, revisão e organização textual,
-estruturação de documentação, elaboração e verificação de testes e análise de consistência técnica.
+Durante o desenvolvimento do protótipo e da documentação técnica, agentes de inteligência
+artificial foram utilizados como apoio à leitura e auditoria do repositório, programação, revisão
+de código e textos, organização documental, elaboração e verificação de testes, conferência dos
+algoritmos e artefatos dos experimentos de CPR e análise de consistência entre método, resultados
+e conclusões. O uso foi confirmado pelo responsável técnico e é distinto da regressão linear e
+dos baselines que produziram as estimativas de CPR. Não há registro de um experimento específico
+de simulação agêntica como parte da solução analítica.
 As saídas foram revisadas por pessoas antes de qualquer incorporação. Arquitetura, metodologia,
 interpretação dos resultados, aprovação das alterações, validação comunitária e redação científica
 permaneceram sob responsabilidade dos integrantes do grupo. Essas ferramentas não foram usadas
@@ -727,6 +734,10 @@ planejadas e bloqueadas. A Fase 2 utiliza Google Ads e Meta Ads integralmente si
 sem integração real. O experimento de CPR descrito em 3.4.4 continua executado pela CLI;
 a interface apenas apresenta seus resultados reproduzíveis, sem treinamento no navegador.
 A ativação técnica não constitui validação comunitária nem novo deploy.
+Não houve consolidação de fontes institucionais reais. Houve apoio de agentes de IA ao
+desenvolvimento e à verificação técnico-científica, mas não há execução documentada de uma
+simulação agêntica específica via linha de comando; o objetivo correspondente foi atendido apenas
+parcialmente.
 
 ## 3.1 Contato inicial e necessidades identificadas
 
@@ -1105,9 +1116,9 @@ cálculos determinísticos e a interface com Captação e Matrículas na V1. A V
 Geral de Ads, Google Ads, Meta Ads, Estratégia e demonstrações acadêmicas de CPR. A comparação
 entre canais limita-se a investimentos em períodos compatíveis, sem equiparar resultados de
 denominadores diferentes. Testes automatizados, verificações de não vazamento e reprodução dos
-artefatos sustentam o funcionamento técnico descrito, não a eficácia institucional. A IA
-generativa serviu de apoio ao desenvolvimento e à documentação sob revisão humana; não há
-execução documentada de cenários de simulação com IA agêntica via CLI. A avaliação
+artefatos sustentam o funcionamento técnico descrito, não a eficácia institucional. Agentes de IA
+apoiaram o desenvolvimento, a auditoria e a verificação técnico-científica sob revisão humana;
+isso não demonstra execução de uma simulação agêntica específica via linha de comando. A avaliação
 com profissional da instituição alcançou Captação, Matrículas e o ajuste temporal; Fases 3 e 4
 permaneceram bloqueadas.
 

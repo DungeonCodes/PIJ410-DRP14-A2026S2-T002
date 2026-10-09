@@ -1053,3 +1053,18 @@ Data: 2026-10-08
 Ação: auditoria científico-técnica final da metodologia, arquitetura, indicadores, versões V1/V2, testes e experimentos de CPR inicial e sazonal no Relatório Final.
 Resultado: artefatos e protocolos numéricos conferidos. Em final.md, esclarecidos o fluxo local de dados sintéticos, as fórmulas dos indicadores, o significado das métricas ML, a distinção entre níveis analíticos, ML e IA, a rastreabilidade dos comandos de reprodução e os valores da previsão experimental. Removida atribuição sem implementação a redes neurais, aprendizado profundo e visão computacional na introdução. Preservados os limites dos dados sintéticos, do holdout sazonal e da validação P1.
 Verificação: build, testes de interface, não vazamento, testes e verificadores dos dois experimentos CPR aprovados. Sem alteração de código, dados ou valores numéricos dos artefatos; sem commit ou push.
+
+---
+
+Data: 2026-10-08
+Ação: auditoria final de coerência científica do Relatório Final, cruzando problema, sete objetivos específicos, metodologia, resultados, validação V1/V2 e considerações finais.
+Resultado: identificados e delimitados dois objetivos não plenamente realizados: a organização dos dados foi demonstrada em cenários sintéticos por módulo, sem consolidação de fontes institucionais reais; a simulação com IA agêntica via CLI não foi executada. O primeiro é atendimento parcial no protótipo, e o segundo permanece não atendido, ambos explicitados no texto. Os demais resultados, a avaliação limitada a uma P1 e as limitações científicas permaneceram coerentes. Em final.md, acrescentadas apenas essas delimitações nas seções 2.1 e 3; sem alterar números, respostas, dados, código, instrumentos ou apêndices.
+Verificação: git diff --check; sem commit ou push.
+
+---
+
+Data: 2026-10-08
+Ação: auditoria histórica e científica dos objetivos, com reavaliação do uso de IA agêntica.
+Fontes: Plano de Ação oficial e versões V2/V3, Relatório Parcial V1–V3 e histórico Git, proposta histórica de cinco objetivos, Relatório Final, decisões, registros de execução, protocolos CPR e confirmação humana do responsável técnico.
+Correção do registro anterior: foi confirmado o uso de agentes em ambiente Antigravity, incluindo Codex/GPT-6.1 Sol, como apoio ao desenvolvimento, auditoria, revisão metodológica, verificação de algoritmos e resultados de ML, testes e documentação. A ausência de simulação agêntica específica via linha de comando não equivale à ausência de uso agêntico. O objetivo de IA do Final mantém a modalidade histórica de apoio a cenários de simulação e é classificado como parcialmente atendido; essa simulação específica não foi documentada. O apoio agêntico não produziu o modelo preditivo de CPR nem substituiu decisões científicas humanas.
+Alteração: final.md ajustado somente nas passagens sobre uso de IA e estado do objetivo; nomes comerciais mantidos neste log, não no corpo científico. Sem alteração de números experimentais, código, datasets, respostas de P1 ou instrumentos. Sem commit ou push.
