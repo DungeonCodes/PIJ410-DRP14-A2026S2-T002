@@ -1,33 +1,6 @@
 # Relatório Final — Projeto Integrador em Computação IV (PJI410)
 
-<!--
-CONTROLE EDITORIAL — não integrar ao DOCX/PDF de entrega.
-
-| Seção do Parcial | Destino no Final | Classificação | Ação |
-|---|---|---|---|
-| Guia editorial, histórico V2/V3 e checklist de montagem | Não migrar | NÃO MIGRAR | Excluir marcações comparativas, URLs operacionais e instruções internas. |
-| Dados do projeto | Capa, folha de rosto e ficha catalográfica | REVISAR | Confirmar título definitivo, cursos, nomes, Registro Acadêmico pendente, cidade, polo e dados do tutor. |
-| 1 Introdução | 1 Introdução | REVISAR | Preservar o texto vigente e atualizar somente afirmações que dependam do estado final do projeto. |
-| 2.1 Objetivos | 2.1 Objetivos | REVISAR | Preservar objetivos; ao final, conferir sua correspondência com os resultados efetivamente obtidos. |
-| 2.2 Justificativa e delimitação do problema | 2.2 Justificativa e delimitação do problema | REUTILIZAR | Manter problema, relevância, escopo e limites já consolidados. |
-| 2.3 Fundamentação teórica | 2.3 Fundamentação teórica | REUTILIZAR | Manter texto e citações vigentes; não acrescentar bibliografia nesta estrutura inicial. |
-| Conteúdos de disciplinas citados na Introdução | 2.4 Aplicação das disciplinas estudadas no Projeto Integrador | NOVO NO FINAL | Organizar a relação entre mais de três disciplinas, materiais específicos e partes da solução. |
-| 2.4 Metodologia | 2.5 Metodologia | EXPANDIR | Renumerar, preservar o método e completar implementar/testar, validação, feedback e ajustes. |
-| 2.5 Resultados preliminares | 3 Resultados: solução final | EXPANDIR | Manter apenas resultados comprovados e abrir espaços explícitos para resultados finais. |
-| Contato inicial com a comunidade | 3.1 Contato inicial e necessidades identificadas | REUTILIZAR | Preservar o registro já consolidado, sem tratá-lo como validação final. |
-| Estratégia incremental e protótipo acadêmico | 3.2 e 3.3 | REVISAR | Atualizar o estado das fases antes de cada versão numerada do Final. |
-| Captação e Matrículas | 3.4 Resultados técnicos | EXPANDIR | Manter o resultado funcional da Fase 1 e acrescentar apenas módulos realmente concluídos. |
-| Aplicação/validação pendente | 3.5 a 3.8 | NOVO NO FINAL | Registrar aplicação, devolutivas, comparação antes/depois e ajustes somente após sua realização. |
-| Limitações já declaradas | 3.9 Limitações | EXPANDIR | Consolidar dados sintéticos, ausência de integração, atribuição, períodos e generalização. |
-| Figuras do Parcial | Capítulo 3 e listas pré-textuais | REVISAR | Reaproveitar somente imagens ainda fiéis e incluir novas evidências finais depois. |
-| Referências | Referências | REUTILIZAR | Migrar as obras efetivamente citadas e conferir correspondência citação–referência. |
-| Considerações finais | 4 Considerações finais | NOVO NO FINAL | Estruturar retomada de objetivos, resultados, comunidade, limitações e continuidade. |
-| TCLE, instrumentos e evidências | Anexos e Apêndices | NOVO NO FINAL | Inserir TCLE no artefato final e organizar instrumentos sem expor dados pessoais no Markdown. |
--->
-
-> Fonte editorial do Relatório Final, conforme ADR-001. Este arquivo admite apenas os marcadores
-> `[PENDENTE – ...]`, `[REVISAR – ...]` e `[INSERIR FIGURA – ...]`. Planejamento não constitui
-> resultado. O Relatório Parcial permanece preservado em `docs/relatorio/parcial.md`.
+<!-- Fonte editorial do Relatório Final (ADR-001). A paginação será inserida na composição. -->
 
 # ELEMENTOS PRÉ-TEXTUAIS
 
@@ -35,17 +8,33 @@ CONTROLE EDITORIAL — não integrar ao DOCX/PDF de entrega.
 
 **UNIVERSIDADE VIRTUAL DO ESTADO DE SÃO PAULO**
 
-[PENDENTE – inserir os nomes dos integrantes conforme o registro acadêmico vigente, sem acrescentar outros identificadores pessoais]
+Ademário Silva Mascarenhas — RA 23210269
+
+Alexsander da Silva Fernandes — RA 23225327
+
+Lucas Baldoino Santos — RA 1707374
+
+Marcos da Silva — RA 1906409
+
+Michele Jeremias da Silva Santos — [PENDENTE – RA não informado no Plano de Ação nem nas versões V2/V3]
+
+Rafael Gonçalves Martins — RA 1705632
+
+Raul Kelmani Ribeiro França Junior — RA 23200936
+
+Rodrigo Felipe Nunes de Vasconcelos — RA 23205582
 
 **Plataforma Analítica para Apoio à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional**
 
-[REVISAR – confirmar o título definitivo do trabalho]
-
 **Vídeo de apresentação do Projeto Integrador**
 
-[PENDENTE – inserir o link válido do vídeo publicado no YouTube]
+[PENDENTE – URL do vídeo final publicado no YouTube; inserir após publicação pelo grupo]
 
-[PENDENTE – confirmar cidade e polo que constarão na capa]
+Grupo 11 · Turma PIJ410-DRP14-A2026S2-T002 · PJI410 — Projeto Integrador em Computação IV
+
+Polos Aricanduva, São Rafael, Rosa da China e Jaçanã
+
+São Paulo – SP
 
 2026
 
@@ -55,63 +44,120 @@ CONTROLE EDITORIAL — não integrar ao DOCX/PDF de entrega.
 
 **Plataforma Analítica para Apoio à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional**
 
-[REVISAR – confirmar o título definitivo do trabalho]
+Relatório Técnico-Científico apresentado na disciplina Projeto Integrador em Computação IV
+(PJI410), para os cursos de Bacharelado em Ciência de Dados e Bacharelado em Engenharia de
+Computação da Universidade Virtual do Estado de São Paulo (UNIVESP).
 
-Relatório Técnico-Científico apresentado na disciplina de Projeto Integrador para os cursos de
-[PENDENTE – confirmar a forma oficial de registrar Bacharelado em Ciência de Dados e Engenharia da Computação]
-da Universidade Virtual do Estado de São Paulo (UNIVESP).
+Orientadora do PI: Letícia Vieira Santos.
 
-[PENDENTE – confirmar cidade e polo]
+Grupo 11 · Turma PIJ410-DRP14-A2026S2-T002.
+
+Polos Aricanduva, São Rafael, Rosa da China e Jaçanã.
+
+São Paulo – SP.
 
 2026
 
 ## Ficha catalográfica
 
-[PENDENTE – preencher a ficha conforme o modelo oficial: autoria; título definitivo; total de folhas; natureza do trabalho; curso ou cursos; Universidade Virtual do Estado de São Paulo; tutor; polo; ano]
-
-[REVISAR – confirmar o Registro Acadêmico ainda pendente antes da montagem do artefato final]
+MASCARENHAS, Ademário Silva; FERNANDES, Alexsander da Silva; SANTOS, Lucas Baldoino;
+SILVA, Marcos da; SANTOS, Michele Jeremias da Silva; MARTINS, Rafael Gonçalves; FRANÇA JUNIOR,
+Raul Kelmani Ribeiro; VASCONCELOS, Rodrigo Felipe Nunes de. **Plataforma Analítica para Apoio
+à Tomada de Decisão em Investimentos de Mídia Digital no Contexto Educacional**.
+[PENDENTE – total final de folhas após a composição do DOCX/PDF] f. Relatório Técnico-Científico —
+Projeto Integrador em Computação IV (PJI410), Bacharelado em Ciência de Dados e Bacharelado em
+Engenharia de Computação, Universidade Virtual do Estado de São Paulo. Orientadora do PI:
+Letícia Vieira Santos. Polos: Aricanduva, São Rafael, Rosa da China e Jaçanã. São Paulo, 2026.
 
 ## Resumo
 
-[PENDENTE – redigir, em parágrafo único e com até 250 palavras, a introdução, os objetivos, a metodologia, os resultados efetivamente obtidos e as considerações finais]
+Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêmica para organizar informações sobre investimentos em mídia digital e apoiar a tomada de decisão em uma instituição de ensino. O projeto partiu de necessidades identificadas em conversas com profissionais da comunidade externa e adotou um percurso de escuta, definição do problema, prototipação, testes e avaliação. A aplicação web utiliza exclusivamente dados sintéticos, indicadores determinísticos, filtros e visualizações. A V1 reúne Captação e Matrículas; a V2 acrescenta módulos de Ads e uma visualização temporal consolidada. Uma gerente de Marketing avaliou presencialmente a V1, apontou a dispersão dos gráficos temporais e sugeriu reuni-los. Após decisão do grupo e implementação do ajuste, a mesma participante reavaliou a V2 e relatou maior facilidade de comparação. Um experimento separado de aprendizado de máquina estimou custo por resultado em cenário sintético, com validação temporal e comparação com baselines; o resultado sazonal apresentou desempenho preditivo limitado e não fundamenta recomendações operacionais. Testes automatizados e registros versionados sustentam a execução técnica. A contribuição demonstrada é a organização rastreável de informações e de um ciclo de melhoria da interface. Dados sintéticos, ausência de integrações operacionais e avaliação por uma única participante impedem inferir impacto institucional ou generalizar os resultados.
 
-**Palavras-chave:** [PENDENTE – definir cinco palavras-chave, separadas por ponto e vírgula].
+**Palavras-chave:** Inteligência de negócios; Mídia digital; Visualização de dados; Aprendizado de máquina; Tomada de decisão.
 
 ## Lista de ilustrações
 
-[PENDENTE – gerar após a seleção, a numeração e a paginação definitivas das figuras]
+Numeração provisória das seis figuras selecionadas; páginas a inserir na composição do DOCX/PDF.
+
+- Figura 1 – Indicadores e filtros da Captação na V1
+- Figura 2 – Indicadores e composição por safra em Matrículas na V1
+- Figura 3 – Visão geral acadêmica de Ads na V2
+- Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
+- Figura 5 – Gráficos temporais separados de Captação na V1
+- Figura 6 – Evolução temporal consolidada de Captação na V2
 
 ## Lista de tabelas
 
-[PENDENTE – gerar após a seleção, a numeração e a paginação definitivas das tabelas]
+Numeração provisória das 13 tabelas do corpo; páginas a inserir na composição do DOCX/PDF.
+
+- Tabela 1 – Indicadores e perguntas de decisão
+- Tabela 2 – Disciplinas estudadas e aplicações no projeto
+- Tabela 3 – Grupos de variáveis do experimento de CPR
+- Tabela 4 – Estado das fases do protótipo
+- Tabela 5 – Resultados do experimento inicial de CPR
+- Tabela 6 – Resultados da previsão sazonal de CPR no holdout
+- Tabela 7 – Resultados da previsão sazonal de CPR no rolling origin
+- Tabela 8 – Valores projetados de CPR sintético
+- Tabela 9 – Comparação entre necessidades iniciais e ciclo V1–V2
+- Tabela 10 – Evolução da visualização temporal da V1 à V2
+- Tabela 11 – Rastreabilidade entre necessidade, solução e validação
+- Tabela 12 – Rastreabilidade do ajuste FB-V1-P1-001
+- Tabela 13 – Feedback e ajuste decorrente da validação
 
 ## Sumário
 
-[PENDENTE – atualizar automaticamente no DOCX após a paginação final]
+Paginação a atualizar automaticamente na composição do DOCX/PDF.
 
-1 Introdução
-
-2 Desenvolvimento
-
-2.1 Objetivos
-
-2.2 Justificativa e delimitação do problema
-
-2.3 Fundamentação teórica
-
-2.4 Aplicação das disciplinas estudadas no Projeto Integrador
-
-2.5 Metodologia
-
-3 Resultados: solução final
-
-4 Considerações finais
-
-Referências
-
-Anexos
-
-Apêndices
+- 1 Introdução
+- 2 Desenvolvimento
+  - 2.1 Objetivos
+    - 2.1.1 Objetivo geral
+    - 2.1.2 Objetivos específicos
+  - 2.2 Justificativa e delimitação do problema
+  - 2.3 Fundamentação teórica
+    - 2.3.1 Marketing digital e decisão orientada por dados
+    - 2.3.2 Tráfego pago e campanhas de anúncios
+    - 2.3.3 Indicadores e tomada de decisão
+    - 2.3.4 Análise de dados em escala e apoio à tomada de decisão
+    - 2.3.5 Aprendizagem de máquina aplicada ao marketing digital
+    - 2.3.6 Visualização de dados e dashboards para apoio à gestão educacional
+    - 2.3.7 Uso controlado de IA agêntica e supervisão humana
+  - 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
+  - 2.5 Metodologia
+    - 2.5.1 Delineamento aplicado e Design Thinking
+    - 2.5.2 Ouvir e interpretar o contexto
+    - 2.5.3 Definir o problema e os requisitos
+    - 2.5.4 Criar e prototipar
+    - 2.5.5 Implementar, testar, validar e ajustar
+    - 2.5.6 Níveis de interpretação analítica
+    - 2.5.7 Fontes de dados, recortes temporais e confidencialidade
+    - 2.5.8 Preparação, governança e rastreabilidade dos dados
+    - 2.5.9 Indicadores, regras de negócio e cenários determinísticos
+    - 2.5.10 Auditoria, reprodutibilidade e limites de atribuição
+    - 2.5.11 Protocolo experimental de aprendizagem de máquina
+    - 2.5.12 Interpretação assistida por IA e engenharia de contexto
+- 3 Resultados: solução final
+  - 3.1 Contato inicial e necessidades identificadas
+  - 3.2 Estado real das fases do protótipo
+  - 3.3 Estratégia incremental e arquitetura da solução
+  - 3.4 Resultados técnicos
+    - 3.4.1 Módulo de Captação
+    - 3.4.2 Módulo de Matrículas
+    - 3.4.3 Módulos de Ads e componentes ainda planejados
+    - 3.4.4 Experimento de aprendizagem de máquina para CPR
+    - 3.4.5 Testes técnicos
+  - 3.5 Validação da solução com a comunidade
+  - 3.6 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
+  - 3.7 Rastreabilidade entre necessidade, solução e validação
+  - 3.8 Feedback e ajustes decorrentes
+  - 3.9 Limitações
+- 4 Considerações finais
+- Referências
+- Anexos
+  - Anexo A – Termo de Consentimento Livre e Esclarecido
+- Apêndices
+  - Apêndice A – Instrumento de levantamento inicial
+  - Apêndice B – Instrumentos de validação aplicados à V1 e à V2
 
 # 1 INTRODUÇÃO
 
@@ -322,6 +368,8 @@ conversões e taxa de conversão aproximam o resultado de captação; custo por 
 retorno sobre o investimento em publicidade (ROAS) apoiam a comparação entre o valor gerado e o
 recurso aplicado (Saura, 2021; Saura; Palos-Sánchez; Cerdá Suárez, 2017).
 
+Tabela 1 – Indicadores e perguntas de decisão
+
 | Indicador ou combinação | Pergunta de decisão que orienta |
 |---|---|
 | Investimento, impressões e alcance | Onde houve entrega e exposição suficientes para justificar continuidade ou revisão da segmentação? |
@@ -432,6 +480,8 @@ máquina e interface para visualização de resultados. As matrizes do PPC dos c
 (UNIVESP, 2020)
 situam PJI410 no sétimo semestre. Os oito componentes selecionados abaixo estão previstos antes
 desse período em pelo menos um dos cursos representados no grupo.
+
+Tabela 2 – Disciplinas estudadas e aplicações no projeto
 
 | Disciplina | Curso(s) em que está presente | Aplicação no projeto |
 |---|---|---|
@@ -646,6 +696,8 @@ cosseno do mês de t. Os atributos históricos não recompõem o CPR contemporâ
 metodológicas foram definidas antes da avaliação, para prevenir leakage, isto é, uso de
 informação do resultado ou do futuro no treinamento ou na emissão da estimativa.
 
+Tabela 3 – Grupos de variáveis do experimento de CPR
+
 | Grupo | Decisão | Justificativa |
 |---|---|---|
 | Investimento e conversões em t | Excluir | Compõem diretamente o target e não estão disponíveis na emissão |
@@ -753,6 +805,8 @@ repositório, distinto dos instrumentos posteriores de validação da V1/V2.
 
 ## 3.2 Estado real das fases do protótipo
 
+Tabela 4 – Estado das fases do protótipo
+
 | Fase | Escopo | Estado em 06/10/2026 | Evidência documental |
 |---|---|---|---|
 | Fase 1 | Captação e Matrículas | ATIVA/FUNCIONAL | Módulos funcionais com dados sintéticos |
@@ -768,8 +822,6 @@ incluindo os quatro módulos de Ads e as demonstrações acadêmicas de CPR. A c
 em Captação é uma alteração comunitária específica da V2 (FB-V1-P1-001); Ads e os experimentos de
 CPR tiveram origem técnica/acadêmica. Portanto, V2 não é sinônimo de Fase 2. As Fases 3 e 4
 continuam bloqueadas; não há Fase 5.
-
-[REVISAR – atualizar esta tabela antes de cada versão numerada do Relatório Final]
 
 ## 3.3 Estratégia incremental e arquitetura da solução
 
@@ -793,12 +845,6 @@ V1: Captação e Matrículas | V2: Captação, Matrículas e Ads
 CLI CPR → artefatos reproduzíveis → apresentação em Google Ads na V2
 ```
 
-Figura [numeração pendente] – Arquitetura e fluxo de dados da solução acadêmica
-
-[INSERIR FIGURA – representar o fluxo sem incluir dados, credenciais ou nomes da instituição]
-
-Fonte: Elaborado pelo grupo (2026).
-
 ## 3.4 Resultados técnicos
 
 ### 3.4.1 Módulo de Captação
@@ -815,7 +861,7 @@ consolidada, com seleção independente das três séries, em resposta ao feedba
 As demais visualizações de funil, situação e origem permanecem distintas. Os dados são sintéticos;
 a origem declarada não prova atribuição a anúncios ou causalidade.
 
-Figura [numeração pendente] – Indicadores e filtros da Captação na V1
+Figura 1 – Indicadores e filtros da Captação na V1
 
 ![Interface de Captação da V1 com filtros, indicadores e funil sintético.](figuras/fig-v1-captacao.png)
 
@@ -833,7 +879,7 @@ rematrículas no total atual das safras classificáveis; apesar do nome legado n
 é retenção de coorte. A aplicação não calcula evasão nem continuidade individual entre safras.
 Contagens, cálculos e casos sem base de comparação permanecem distintos.
 
-Figura [numeração pendente] – Indicadores e composição por safra em Matrículas na V1
+Figura 2 – Indicadores e composição por safra em Matrículas na V1
 
 ![Interface de Matrículas da V1 com filtros, indicadores e composição por safra sintética.](figuras/fig-v1-matriculas.png)
 
@@ -856,7 +902,7 @@ por canal com uma premissa mensal sintética de R$ 10.000 e apresenta gasto do �
 saldo e percentual de execução. Esse orçamento é fictício, não aprovado, ideal ou recomendação
 automática; não há otimização nem execução de campanhas.
 
-Figura [numeração pendente] – Visão geral acadêmica de Ads na V2
+Figura 3 – Visão geral acadêmica de Ads na V2
 
 ![Visão geral de Ads da V2 com indicadores sintéticos e distinção entre resultados Google e Meta.](figuras/fig-v2-ads-visao-geral.png)
 
@@ -871,6 +917,8 @@ Google Ads exibe o artefato de resultados, independente dos filtros de consulta.
 no navegador, inferência operacional ou recomendação automática. O target é CPR = investimento /
 conversões registradas; não representa custo por matrícula ou lead único. Não foram utilizados
 dados operacionais ou APIs reais.
+
+Tabela 5 – Resultados do experimento inicial de CPR
 
 | Modelo | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -895,6 +943,8 @@ do investimento dividida pela soma das conversões registradas, quando a cobertu
 excluído pela hipótese sintética de maturação de 14 dias. O holdout recursivo de 12 meses em 2022
 é a avaliação principal e produziu:
 
+Tabela 6 – Resultados da previsão sazonal de CPR no holdout
+
 | Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
 | Persistência t−2 | 6,563180 | 13,132417 | -0,082082 |
@@ -907,6 +957,8 @@ A regressão superou o baseline sazonal t−12, com MAE 17,67% e RMSE 7,27% meno
 a persistência t−2. O R² negativo e os erros observados indicam baixo poder explicativo neste
 experimento sintético. O rolling origin mensal de um passo é análise complementar, não substitui
 o holdout principal:
+
+Tabela 7 – Resultados da previsão sazonal de CPR no rolling origin
 
 | Método | MAE (R$ fictícios) | RMSE (R$ fictícios) | R² |
 |---|---:|---:|---:|
@@ -928,6 +980,8 @@ cenário, não resultados futuros observados. Valores extremos e lags previstos 
 pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
 FB-V1-P1-001 refere-se somente ao gráfico consolidado de Captação.
 
+Tabela 8 – Valores projetados de CPR sintético
+
 | Mês projetado | CPR sintético previsto (R$ fictícios) | Mês projetado | CPR sintético previsto (R$ fictícios) |
 |---|---:|---|---:|
 | Fev./2023 | 73,75 | Ago./2023 | 56,62 |
@@ -940,7 +994,7 @@ FB-V1-P1-001 refere-se somente ao gráfico consolidado de Captação.
 Fonte: artefato sintético `src/data/google-cpr-sazonal.json` (2026). Não foram calculados
 intervalos de confiança nem houve verificação dessas projeções com dados reais posteriores.
 
-Figura [numeração pendente] – Histórico sintético e previsão sazonal experimental de CPR na V2
+Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
 
 ![Histórico sintético de CPR e projeção experimental, identificados separadamente na interface Google Ads da V2.](figuras/fig-v2-google-cpr-sazonal.png)
 
@@ -999,6 +1053,8 @@ não constitui amostra independente nem validação definitiva.
 Esta matriz distingue as necessidades iniciais do que foi efetivamente observado nos dois
 momentos da mesma participante. O ciclo não avaliou todas as dimensões do protótipo.
 
+Tabela 9 – Comparação entre necessidades iniciais e ciclo V1–V2
+
 | Dimensão | Antes: necessidade ou expectativa inicial | Evidência deste ciclo (P1/V1 e P1/V2) |
 |---|---|---|
 | Investimento em mídia | Compreender quanto investir e avaliar a adequação dos valores | Não avaliado neste ciclo; Ads e orçamento não integraram as tarefas registradas. |
@@ -1012,19 +1068,21 @@ Fonte: Elaborado pelo grupo (2026).
 O recorte documentado do ciclo V1–V2 permite a seguinte comparação descritiva dos dois momentos
 da mesma P1. As notas não medem ganho experimental entre versões:
 
+Tabela 10 – Evolução da visualização temporal da V1 à V2
+
 | Aspecto | V1 | Evidência inicial | Alteração na V2 | Reavaliação |
 |---|---|---|---|---|
 | Visualização temporal | Séries de Contatos, Visitas e Matrículas em gráficos separados | Apontou “Os gráficos em diversos lugares” e sugeriu visualização conjunta selecionável | Gráfico temporal consolidado com seleção independente das séries | Relatou que a visualização conjunta facilitou a comparação ao longo do tempo |
 
 Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026).
 
-Figura [numeração pendente] – Gráficos temporais separados de Captação na V1
+Figura 5 – Gráficos temporais separados de Captação na V1
 
 ![Gráficos mensais separados de Contatos, Visitas e Matrículas na V1.](figuras/fig-v1-captacao-graficos-temporais.png)
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
-Figura [numeração pendente] – Evolução temporal consolidada de Captação na V2
+Figura 6 – Evolução temporal consolidada de Captação na V2
 
 ![Gráfico temporal da V2 com Contatos, Visitas e Matrículas do funil selecionados simultaneamente.](figuras/fig-v2-captacao-evolucao-temporal.png)
 
@@ -1036,6 +1094,8 @@ A tabela relaciona a escuta inicial, a solução construída e o alcance da aval
 As dimensões de Ads não foram apresentadas nas tarefas de P1; a cadeia específica de
 FB-V1-P1-001 é discriminada abaixo.
 
+Tabela 11 – Rastreabilidade entre necessidade, solução e validação
+
 | Necessidade identificada | Elemento da solução | Evidência no protótipo | Evidência do ciclo P1 |
 |---|---|---|---|
 | Compreender quanto investir em mídia | Indicadores e comparação determinística de orçamento | Ads sintéticos ativos localmente; premissa fictícia, sem determinar orçamento ideal | Não avaliado por P1 neste ciclo. |
@@ -1045,6 +1105,8 @@ FB-V1-P1-001 é discriminada abaixo.
 | Organizar informações dispersas | Interface web com dados e contexto padronizados | Módulos acadêmicos independentes com dados sintéticos | P1 apontou dispersão dos gráficos temporais na V1 e relatou comparação facilitada na V2 após o ajuste. |
 
 Fonte: Elaborado pelo grupo (2026).
+
+Tabela 12 – Rastreabilidade do ajuste FB-V1-P1-001
 
 | Necessidade/observação | Evidência | Decisão | Implementação | Avaliação posterior |
 |---|---|---|---|---|
@@ -1057,6 +1119,8 @@ Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026
 Até o momento, há um ajuste comunitário documentado neste ciclo. A observação de P1 foi a
 dispersão das visualizações temporais; o resultado posterior é sua própria percepção na V2,
 sem demonstração de solução definitiva ou eficácia geral.
+
+Tabela 13 – Feedback e ajuste decorrente da validação
 
 | Feedback ou observação | Decisão do grupo | Ajuste realizado | Evidência | Situação |
 |---|---|---|---|---|
@@ -1147,7 +1211,7 @@ qualidade de dados suficientes. As Fases 3 e 4 poderão ser avaliadas após sua 
 
 # REFERÊNCIAS
 
-[REVISAR – confirmar com a orientadora o padrão de referências e citações: o modelo oficial menciona a NBR 6023:2002 para citações; a ADR-002 adotou a NBR 6023:2018 e a NBR 10520:2023; a NBR 6023 teve edição de 2025. Manter H10 aberta até a decisão institucional]
+<!-- H10 — Confirmar com a orientadora qual edição normativa deve prevalecer: o modelo oficial menciona a NBR 6023:2002 em contexto de citações; o padrão interno usa NBR 6023:2018 e NBR 10520:2023; há edição NBR 6023:2025 sem adoção institucional específica comprovada para este PI. Esta nota não integra o DOCX/PDF. -->
 
 BACH, Benjamin et al. Dashboard Design Patterns. **IEEE Transactions on Visualization and Computer Graphics**, v. 29, n. 1, p. 342-352, 2023. DOI: 10.1109/tvcg.2022.3209448. Disponível em: https://doi.org/10.1109/tvcg.2022.3209448. Acesso em: 26 ago. 2026.
 
@@ -1191,34 +1255,195 @@ WANG, Lei et al. A survey on large language model based autonomous agents. **Fro
 
 ## Anexo A – Termo de Consentimento Livre e Esclarecido
 
-[PENDENTE – definir, conforme o Regulamento do PI, a forma de apresentar no artefato acadêmico final os TCLEs das entrevistas iniciais e da validação posterior de P1, fora do Git e sem transcrever dados pessoais neste Markdown]
-
-[REVISAR – verificar se o documento deve ser apresentado com restrição ou tratamento adicional antes da publicação acadêmica]
-
-## Anexo B – Documentos externos necessários
-
-[PENDENTE – incluir apenas documentos externos indispensáveis, autorizados e sem conteúdo confidencial]
+[PENDENTE – H11: definir com a orientadora/UNIVESP a forma de inclusão protegida dos TCLEs preenchidos na entrega institucional; arquivos assinados permanecem fora do repositório público]
 
 # APÊNDICES
 
-## Apêndice A – Roteiro de entrevista inicial
+## Apêndice A – Instrumento de levantamento inicial
 
-O instrumento utilizado no levantamento de necessidades é o
-[Questionário estruturado — comunidade externa](../questionario_comunidade_externa.md), preservado
-no repositório desde 26/08/2026. Ele reúne perguntas comuns à coordenação de marketing e à direção,
-blocos específicos por função e perguntas prospectivas sobre a solução. É distinto dos instrumentos
-posteriores de validação da interface V1/V2. O arquivo de origem contém também respostas
-preenchidas; na composição do apêndice acadêmico, reproduzir somente as perguntas e os campos do
-roteiro, sem respostas ou identificação pessoal.
+Transposição dos 30 itens e campos de `docs/questionario_comunidade_externa.md`, sem respostas preenchidas, síntese da conversa ou identificação pessoal. Este instrumento antecede e não substitui a avaliação da V1/V2.
 
-## Apêndice B – Instrumento de validação do protótipo
+### A.1 Identificação da conversa
 
-[PENDENTE – transpor o instrumento V1 efetivamente aplicado de `docs/validacao/instrumento_validacao_v1.md` e as perguntas da reavaliação V2 registradas em `docs/validacao/respostas/v2-p1-reavaliacao.md`; não apresentar o instrumento V2 extenso como aplicado]
+- Data.
+- Formato: ☐ Presencial; ☐ Videochamada; ☐ Telefone; ☐ Outro.
+- Participante(s) da instituição.
+- Cargo(s): ☐ Coordenação de marketing; ☐ Direção; ☐ Ambos; ☐ Outro.
+- Integrantes do grupo presentes.
+- Autorização para registrar respostas sem identificação nominal: ☐ Sim; ☐ Não.
 
-## Apêndice C – Critérios de avaliação da interface
+### A.2 Perguntas comuns à coordenação de marketing e à direção
 
-[PENDENTE – transpor tarefas e critérios dos instrumentos e do protocolo de evidências já documentados, distinguindo avaliação V1 e reavaliação V2]
+#### A.2.1 Contexto e prioridade
 
-## Apêndice D – Respostas consolidadas da validação
+1. Quais são hoje os principais objetivos da instituição relacionados à captação e à comunicação
+   digital?
 
-[PENDENTE – transpor síntese anonimizada dos dois momentos da única P1 a partir dos registros primários, sem agregação populacional ou respostas inventadas]
+2. Quais decisões sobre investimentos em marketing são mais difíceis de tomar atualmente?
+
+3. Em quais períodos do ano a demanda por matrículas, visitas ou contatos costuma ser mais relevante?
+   Existem limitações de capacidade que precisam ser consideradas?
+
+4. Quais públicos, ciclos/modalidades ou serviços são prioritários? Há públicos ou frentes que não
+   devem ser priorizados neste momento?
+
+#### A.2.2 Dados e informações disponíveis
+
+5. Quais fontes de informação são usadas atualmente para acompanhar marketing e captação?
+
+   - ☐ Google Ads
+   - ☐ Meta Ads
+   - ☐ Instagram/Facebook orgânico
+   - ☐ Planilha de contatos ou funil
+   - ☐ Sistema acadêmico/matrículas
+   - ☐ CRM
+   - ☐ Relatórios manuais
+   - ☐ Outra:
+
+6. Quais informações dessas fontes são mais confiáveis para a tomada de decisão? Quais apresentam
+   lacunas, atrasos ou dificuldades de interpretação?
+
+7. Há dados que não podem ser compartilhados, mesmo de forma sanitizada, no contexto acadêmico?
+
+8. É possível disponibilizar relatórios históricos sem dados pessoais, por exemplo com métricas
+   agregadas por campanha, período ou publicação?
+
+   - ☐ Sim
+   - ☐ Sim, mediante validação prévia
+   - ☐ Não neste momento
+   - ☐ Não sei informar
+
+#### A.2.3 Critérios de sucesso e limitações
+
+9. Quais indicadores ajudam a decidir se uma ação de marketing merece continuidade, revisão ou
+   interrupção?
+
+   - ☐ Investimento
+   - ☐ Alcance/impressões
+   - ☐ Frequência
+   - ☐ Cliques/CTR
+   - ☐ CPC/CPM
+   - ☐ Conversões
+   - ☐ Custo por conversão/CPA
+   - ☐ Conversas iniciadas
+   - ☐ Visitas
+   - ☐ Matrículas
+   - ☐ Outro:
+
+10. Há alguma regra, limite ou princípio que uma recomendação de investimento deve respeitar?
+
+   Exemplos: teto de orçamento, período de matrícula, capacidade de atendimento, público
+   prioritário, campanha que não deve ser alterada.
+
+11. Quais conclusões seriam inadequadas ou arriscadas de tirar apenas a partir dos dados atuais?
+
+### A.3 Bloco específico — coordenação de marketing
+
+12. Como as campanhas de mídia paga são planejadas, acompanhadas e revisadas atualmente?
+
+13. Quais plataformas e formatos de campanha são usados? Para cada um, qual é o objetivo esperado?
+
+14. Quais métricas são vistas com maior frequência? Quais são difíceis de calcular ou comparar?
+
+15. As campanhas possuem recortes de período, público, região, ciclo ou objetivo que devem ser
+    preservados na análise?
+
+16. Como é registrada uma conversão em cada plataforma? Há alguma regra de atribuição conhecida
+    (por exemplo, último clique, primeiro clique ou outra)?
+
+17. Sobre conteúdo orgânico da Meta, existem relatórios históricos de publicações e métricas de
+    alcance, interações, salvamentos, compartilhamentos, reproduções ou seguidores?
+
+    - ☐ Sim, com histórico suficiente
+    - ☐ Sim, mas com histórico limitado
+    - ☐ Não
+    - ☐ Não sei informar
+
+    Observações sobre formato, período e possibilidade de uso sanitizado:
+
+18. Que perguntas um painel deveria responder rapidamente para facilitar seu trabalho?
+
+19. Que tipo de alerta, comparação ou explicação seria útil — e qual poderia gerar interpretação
+    equivocada?
+
+### A.4 Bloco específico — direção da instituição
+
+20. Que tipo de decisão estratégica a direção espera apoiar com uma análise de marketing digital?
+
+21. Quais resultados institucionais devem ser considerados além das métricas de mídia?
+
+    - ☐ Capacidade de atendimento
+    - ☐ Visitas/agendamentos
+    - ☐ Novas matrículas
+    - ☐ Retenção/rematrículas
+    - ☐ Posicionamento institucional
+    - ☐ Outro:
+
+22. Quais restrições institucionais devem aparecer antes de qualquer sugestão de distribuição de
+    orçamento?
+
+23. Como a direção prefere receber uma análise: painel resumido, comparativo por período, cenários
+    de investimento, relatório textual ou combinação desses formatos?
+
+24. Quais elementos tornariam a análise suficientemente confiável para apoiar uma discussão de
+    gestão? E quais exigiriam confirmação adicional?
+
+25. Que riscos éticos, reputacionais, operacionais ou de confidencialidade precisam ser evitados?
+
+### A.5 Perguntas prospectivas sobre a solução
+
+26. Qual conjunto mínimo de informações a interface deve mostrar para ser útil?
+
+27. Quais filtros seriam indispensáveis?
+
+    - ☐ Período
+    - ☐ Canal/plataforma
+    - ☐ Campanha
+    - ☐ Objetivo da campanha
+    - ☐ Público/segmento agregado
+    - ☐ Ciclo/modalidade
+    - ☐ Outro:
+
+28. Como deve ficar explícita a diferença entre dado observado, cálculo determinístico e estimativa?
+
+29. Uma interpretação assistida por IA, sempre acompanhada dos dados, cálculos e fontes que a
+    sustentam, seria útil? Que limites ela deveria respeitar?
+
+30. A instituição teria disponibilidade para avaliar uma versão inicial do protótipo e registrar
+    sugestões de melhoria?
+
+    - ☐ Sim
+    - ☐ Talvez, dependendo do período
+    - ☐ Não neste momento
+
+## Apêndice B – Instrumentos de validação aplicados à V1 e à V2
+
+### B.1 Instrumento V1 — primeira avaliação de P1
+
+A avaliação utilizou somente Captação e Matrículas da V1, com dados sintéticos. As duas tarefas e as seis perguntas abaixo foram transpostas de `docs/validacao/instrumento_validacao_v1.md`, sem as respostas da participante.
+
+**Tarefa 1 — Captação:** Observe a tela de Captação, altere um dos filtros e explique o que você entende dos indicadores apresentados.
+
+**Tarefa 2 — Matrículas:** Observe a tela de Matrículas e explique o que você entende sobre o total, novas matrículas e rematrículas.
+
+Nas perguntas 1 a 3, a escala foi de 1 a 5, em que 1 representa a menor concordância e 5 a maior. As perguntas 4 a 6 foram abertas. O instrumento permitia “não sei”, “não se aplica” ou recusa.
+
+1. As informações apresentadas em Captação ficaram fáceis de compreender?
+2. As informações apresentadas em Matrículas ficaram fáceis de compreender?
+3. Foi fácil localizar e utilizar os filtros?
+4. Qual informação apresentada você considera mais útil para acompanhar a captação e as matrículas?
+5. Houve alguma informação, gráfico ou elemento da tela que você não entendeu ou teve dificuldade para utilizar?
+6. O que você alteraria ou acrescentaria nesta primeira versão?
+
+### B.2 Perguntas da reavaliação V2 — mesma P1
+
+As seis perguntas abaixo foram transpostas do registro efetivo em `docs/validacao/respostas/v2-p1-reavaliacao.md`. Não há instrumento V2 independente para esta reavaliação; o documento posterior de 18 perguntas não foi aplicado a P1. O escopo registrado foi Captação, Matrículas e a visualização temporal consolidada, com dados sintéticos. As respostas numéricas registradas para as perguntas 1, 2 e 4 foram expressas em escala de cinco pontos; as demais foram abertas.
+
+1. As informações apresentadas em Captação ficaram fáceis de compreender?
+2. Foi fácil utilizar a seleção de Contatos, Visitas e Matrículas no gráfico temporal?
+3. Visualizar essas informações no mesmo gráfico ajudou ou dificultou a comparação ao longo do tempo? Por quê?
+4. As informações apresentadas em Matrículas ficaram fáceis de compreender?
+5. Houve alguma informação, gráfico ou elemento que você não entendeu ou teve dificuldade para utilizar?
+6. O que você ainda alteraria ou acrescentaria nesta versão?
+
+As respostas originais e a distinção entre transcrição e versão normalizada permanecem nos registros de validação. A síntese necessária está no corpo deste relatório.

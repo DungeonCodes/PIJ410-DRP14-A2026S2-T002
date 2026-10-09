@@ -1109,3 +1109,10 @@ Corrigida em `auditoria-referencias-final.md` somente a contagem por tipo: 19 re
 sobre “ABNT 6023, de 2002” foi contextualizada sem resolver H10.
 Nenhuma resposta, TCLE, PII, imagem, código, dataset, resultado ou texto científico foi alterado;
 nenhum DOCX/PDF gerado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Fechamento sistemático de pendências editoriais e pré-textuais com reaproveitamento das fontes acadêmicas existentes no repositório.
+Fontes: Plano de Ação oficial completo; versões V2/V3; Relatório Parcial; modelo oficial do Relatório Final; auditorias de referências e evidências; instrumentos e registros V1/V2; questionário inicial; histórico Git e página institucional de polos da UNIVESP (`https://locomotive.univesp.br/polos`).
+Resultado: preenchidos oito nomes na grafia documental, sete RAs conhecidos, quatro polos do grupo, cidade São Paulo, orientadora, dois cursos, título corrente, Grupo 11, turma e componente PJI410. O RA de Michele continua ausente inclusive nas versões do Plano. Redigidos resumo de 200 palavras e cinco palavras-chave; estruturados sumário, seis figuras e 13 tabelas com numeração provisória. Transpostos os 30 itens do instrumento inicial sem respostas e os dois instrumentos efetivamente aplicados, com seis perguntas em cada momento. Suprimidos o marcador de arquitetura opcional, o Anexo B sem fonte e os apêndices C/D redundantes. Mantidos apenas vídeo ainda não publicado, RA faltante, total de folhas/paginação final, H10 normativa e H11 sobre TCLE protegido. O reenquadramento de cinco figuras, já diagnosticado, pertence à composição final e deve preservar os PNGs originais. Nenhum DOCX/PDF gerado; ciência, respostas, código, dados e imagens preservados; sem commit ou push.
