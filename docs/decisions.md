@@ -478,3 +478,18 @@ encerra H10 sem alterar o conteúdo científico ou o conjunto de fontes do traba
 **Decisão:** usar a literatura de agentes baseados em modelos de linguagem, planejamento, ferramentas, interação humano–IA, requisitos, contexto e verificação para fundamentar 2.3.7. Descrever em 2.5.12 o procedimento efetivamente registrado no projeto. *Scaffolding* tem sentidos variáveis; *spec-driven development* é sobretudo um rótulo profissional recente; *context engineering* é terminologia emergente com forte uso industrial. Nenhum desses rótulos designa metodologia científica formal adotada pelo PI. Preferir descrições concretas: decomposição de tarefas, requisitos e critérios registrados, seleção de contexto, inspeção, testes e decisão humana.
 
 **Motivo:** evitar transferir resultados de benchmarks ou nomes comerciais para a eficácia do projeto e manter os agentes auxiliares separados da regressão linear e dos baselines do CPR. Fontes e limites estão em `docs/relatorio/auditoria-ia-agentica-fontes.md`.
+
+## Decisão de implementação — feedbacks da avaliação ampliada V2 para V3
+
+**Data da decisão:** não informada; o registro desta decisão foi solicitado em 10/10/2026.
+
+**Decisão:** por instrução expressa do responsável pelo projeto, os feedbacks FB-V2-P1-001 a
+FB-V2-P1-007 foram todos aceitos para incorporação na V3. A V3 é nova versão de apresentação,
+sem reescrever V1 ou V2 e sem abrir as Fases 3 e 4. Leads e alcance inexistentes na base Ads
+original são derivações sintéticas, determinísticas e rotuladas como simulação; a comparação
+com Matrículas não estabelece atribuição entre plataformas e pessoas.
+
+**Evidência:** `docs/validacao/feedback-v2-v3.md`, `docs/validacao/v3-dados-sinteticos.md`,
+testes automatizados e capturas provisórias em `docs/relatorio/figuras/v3-preview-*.png`.
+
+---

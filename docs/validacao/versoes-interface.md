@@ -7,6 +7,7 @@ técnica global do projeto e dos gates de implantação.
 |---|---|
 | V1 | Captação + Matrículas |
 | V2 | Captação + Matrículas + Ads + ML CPR + evolução temporal consolidada (FB-V1-P1-001) |
+| V3 | Fases 1 e 2 com as sete melhorias FB-V2-P1-001 a FB-V2-P1-007; nova apresentação final do protótipo acadêmico |
 
 As origens são distintas: Ads e ML CPR constituem evolução técnica/acadêmica; a evolução
 temporal consolidada foi aprovada pelo grupo após o feedback real de P1.
@@ -90,19 +91,45 @@ de Ads, deve-se usar explicitamente `/v2/ads`, `/v2/ads/google`, `/v2/ads/meta` 
 ## Validação
 
 P1, gerente de Marketing, utilizou presencialmente a V1 e reavaliou a V2 em 07/10/2026, após
-a implementação de FB-V1-P1-001; TCLE obtido: SIM. Houve uma participante em dois momentos.
+a implementação de FB-V1-P1-001; TCLE obtido: SIM nessas duas aplicações iniciais. Houve uma
+participante em ambos os momentos.
+A mesma P1 participou depois de uma avaliação ampliada da V2 para orientar a V3, documentada em
+`instrumento_validacao_v2_para_v3.md`, `respostas/v2-p1-para-v3.md` e `feedback-v2-v3.md`.
+Esse é o terceiro momento sucessivo da mesma participante, sem constituir nova amostra
+independente. Data, modalidade e TCLE específicos desta nova aplicação ainda dependem de
+confirmação no registro de respostas. P1 classificou a V2 na opção C, como necessitando
+alterações importantes antes da versão final. Os feedbacks FB-V2-P1-001 a FB-V2-P1-007
+foram aceitos pelo responsável e implementados na V3. Essa implementação não é validação por P1.
+
 A versão apresentada deve ser registrada em cada momento. As notas pertencem à mesma pessoa,
 mas a versões e itens diferentes; não constituem comparação quantitativa controlada.
-O instrumento mais extenso de V2 permanece separado em
-`instrumento_validacao_v2.md`; sessões futuras devem registrar versão e seguir o TCLE conforme
-o protocolo definido.
+O instrumento extenso `instrumento_validacao_v2.md` permanece separado da reavaliação anterior
+e deste novo instrumento de 16 questões. Sessões futuras devem registrar versão e seguir o TCLE
+conforme o protocolo definido.
+
+## Estado histórico para a V3
+
+V1 permanece congelada como baseline. V2 permanece a versão avaliada. A cadeia documentada é
+V1 → P1/V1 → FB-V1-P1-001 → V2 → P1/V2 → avaliação ampliada da V2 pela mesma P1 →
+FB-V2-P1-001 a FB-V2-P1-007 → decisão do responsável: aceitar todos → V3 implementada e
+verificada tecnicamente. P1 avaliou a V2, não a V3; a revisão visual humana da V3 está pendente.
+
+A V3 usa `/v3` e seus módulos com o mesmo mecanismo de roteamento. V1 e V2 mantêm suas rotas,
+composições e apresentação históricas. `CURRENT_UI_VERSION = "v1"` e os aliases canônicos não
+mudaram. As Fases 1 e 2 estão ativas nas V2/V3; as Fases 3 e 4 continuam bloqueadas em todas
+as versões. **Versão da interface não equivale a fase funcional.**
+
+A V3 reutiliza os contratos sintéticos existentes e acrescenta somente regras de apresentação
+e derivação documentadas em `v3-dados-sinteticos.md`. A comparação mensal de Ads com Matrículas
+é exploratória, entre cenários fictícios independentes, sem atribuição causal.
 
 ## Registro cronológico
 
 | ID | Origem | Alteração | Versão | Evidência comunitária |
 |---|---|---|---|---|
 | HIST-001 | Correção factual da cronologia | V1 recomposta como baseline pré-Ads | V1 | Não se aplica |
-| TEC-001 | Evolução técnica/acadêmica | Ads, experimento CPR e previsão sazonal | V2 | Nenhuma; validação futura |
+| TEC-001 | Evolução técnica/acadêmica | Ads, experimento CPR e previsão sazonal | V2 | Nenhuma no momento da inclusão; avaliação ampliada posterior da V2 |
+| V3-001 | Sete feedbacks aceitos após avaliação ampliada da mesma P1 | Apresentação executiva mensal, análises temporais, composição por série e comunicação do ML | V3 | P1 avaliou V2; V3 ainda sem nova avaliação por P1 |
 
 ### Alteração aprovada pelo grupo após feedback real
 

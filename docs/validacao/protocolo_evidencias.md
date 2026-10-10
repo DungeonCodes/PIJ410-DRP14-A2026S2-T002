@@ -40,6 +40,10 @@ também se houve ajuda e em qual momento.
 Registrar a análise da equipe em campo separado e somente após a coleta. Não apresentar
 interpretação, inferência ou proposta do grupo como fala do participante.
 
-P1 identifica a única participante registrada até aqui, gerente de Marketing. Os registros
-`respostas/v1-p1.md` e `respostas/v2-p1-reavaliacao.md` documentam dois momentos presenciais da
-mesma pessoa em 07/10/2026, com TCLE obtido. O formulário assinado fica fora do Git.
+P1 identifica a única participante registrada até aqui, Gerente de Marketing. Os registros
+`respostas/v1-p1.md` e `respostas/v2-p1-reavaliacao.md` documentam duas aplicações presenciais
+da mesma pessoa em 07/10/2026, com TCLE obtido. `respostas/v2-p1-para-v3.md` documenta a
+terceira aplicação sucessiva, em que P1 avaliou a V2 por questionário de 16 questões. Data,
+modalidade e TCLE dessa terceira aplicação requerem confirmação própria no registro primário;
+não são inferidos das anteriores. O formulário assinado fica fora do Git. A V3 incorpora os
+feedbacks da terceira aplicação, sem avaliação posterior registrada por P1.

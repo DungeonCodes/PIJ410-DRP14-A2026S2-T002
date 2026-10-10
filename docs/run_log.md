@@ -1156,3 +1156,26 @@ Data: 2026-10-09
 Ação: Revisão da metodologia de criação e prototipação do Relatório Final.
 Resultado: a seção 2.5.4 passou a explicar a estratégia incremental em quatro fases, os mecanismos de habilitação, o estado funcional e a distinção entre fases e versões V1/V2. Acrescentada tabela metodológica das fases; tabelas posteriores e lista foram renumeradas editorialmente, sem alteração de seus dados. A seção 2.5.5 foi condensada para destacar a sequência de avaliação; 3.2 mantém a comprovação do estado real, com nomes de módulos alinhados ao código; 3.3 permanece dedicada à arquitetura e aos contratos técnicos. A matriz de rastreabilidade foi registrada em `docs/relatorio/auditoria-evidencias-final.md`. Fases 3 e 4 seguem bloqueadas, Ads/CPR não foram atribuídos ao feedback de P1 e não existe versão de interface V3 documentada. Nenhum código, dataset, resultado experimental, resposta de P1 ou figura foi alterado; sem commit ou push.
 Verificação: `npm run test:fases` (61 testes), `npm run test:interface` (composição V1/V2 e 17 arquivos protegidos) e `npm run test:v2-feedback` aprovados; `git diff --check` aprovado.
+
+---
+
+Data do registro documental: 2026-10-10 (não corresponde à data da nova aplicação, ainda a confirmar).
+Ação: Documentação da avaliação ampliada da V2 pela Gerente de Marketing para orientar a V3 final, com preservação integral das respostas primárias e criação da rastreabilidade FB-V2-P1-001 a FB-V2-P1-007.
+Resultado: A documentação vigente confirmou P1 como a mesma Gerente de Marketing das duas avaliações anteriores; esta é a terceira aplicação sucessiva da mesma participante, não uma nova amostra. Criados `docs/validacao/instrumento_validacao_v2_para_v3.md`, `docs/validacao/respostas/v2-p1-para-v3.md` e `docs/validacao/feedback-v2-v3.md`; atualizado `docs/validacao/versoes-interface.md`. Data, modalidade e TCLE desta etapa permanecem a confirmar apenas no registro de respostas. As sete decisões do grupo estão pendentes e nenhuma ação na V3 foi implementada.
+Relatório Final: atualização ampla adiada até decisão e implementação da V3 para reconciliar as passagens que descrevem somente os dois primeiros momentos e afirmam que Ads/ML não foram avaliados por P1 naquele ciclo. O relatório corrente não deve ser lido como síntese desta terceira avaliação.
+Escopo: somente documentação; código, scripts, datasets, ML, figuras, rotas e componentes intactos. Sem commit ou push.
+
+---
+
+Data do registro de implementação: 2026-10-10 (não é data da avaliação de P1).
+Ação: Implementação da V3 final após decisão expressa do responsável de aceitar FB-V2-P1-001 a FB-V2-P1-007.
+Resultado: novas rotas `/v3` com taxa mensal de efetivação visita–matrícula, composição por série existente, resumo executivo mensal de Ads, análises Google/Meta, comparação temporal em Estratégia e comunicação mais clara do CPR experimental. V1 e V2 permaneceram com páginas históricas e datasets intactos. A extensão de leads e alcance é sintética, determinística, exclusiva da V3 e documentada em `docs/validacao/v3-dados-sinteticos.md`; Ads e Matrículas são cenários fictícios independentes sem atribuição causal. Fases 3 e 4 bloqueadas.
+Documentação: feedbacks atualizados como aceitos, implementados e verificados; versionamento e decisão registrados; `docs/relatorio/final.md` atualizado nas seções Resumo, 2.5.4–2.5.5, abertura do capítulo 3, 3.3, 3.4.5, 3.5–3.9, 4 e Apêndice B.3. A V3 não foi avaliada por P1; metadados da terceira aplicação continuam pendentes no registro primário. Capturas V3 reais e provisórias foram produzidas para revisão visual humana, sem substituir figuras históricas.
+Verificação: `npm run lint`, `npm run build`, `npm test`, `npm run test:interface:http`, inspeção visual local em 1600×900 e 390×844, e `git diff --check`. `npm run verificar:integridade-docs` não pôde completar porque a linha de base desse verificador não existe no repositório; nenhuma linha de base foi criada nesta execução. Sem commit ou push.
+
+---
+
+Data do registro da auditoria: 2026-10-10 (não é a data da terceira avaliação de P1).
+Ação: Auditoria de rastreabilidade da terceira avaliação da mesma P1 e da transição V2 → V3, confrontando instrumento, respostas primárias, sete feedbacks, decisão de aceitá-los, implementação, testes e Relatório Final.
+Resultado: criada `docs/validacao/auditoria-rastreabilidade-v2-v3.md`; atualizados o índice e o protocolo de validação para reconhecer a terceira aplicação. O Relatório Final passou a delimitar o escopo das duas primeiras aplicações, a avaliação ampliada de Ads/ML na terceira, a disponibilidade das Fases 1 e 2 na V3 e a reprodução integral das 16 questões no Apêndice B.3. Mantida a distinção entre versões da interface e fases funcionais, entre verificação técnica e avaliação por P1, e entre métricas sintéticas e dados operacionais. Respostas primárias, código, dados, ML e figuras não foram alterados nesta auditoria.
+Verificação: 16 questões idênticas no instrumento e Apêndice B.3, 16 registros de resposta, sete falas abertas e notas conferidos; `npm run test:v3-feedback`, `npm run test:interface` (17 arquivos V1 protegidos), `npm run test:nao-vazamento` (38 verificações) e `git diff --check` aprovados. `npm run verificar:integridade-docs` permanece impedido pela ausência preexistente da linha de base; ela não foi criada. Sem commit ou push.

@@ -9,7 +9,7 @@ import { INTERFACES } from '@/ui';
 export async function generateMetadata({ params }: { params: Promise<{ uiVersion: string }> }): Promise<Metadata> {
   const { uiVersion } = await params;
   if (!isUIVersion(uiVersion)) notFound();
-  return { title: `${APP.nome} · ${uiVersion === 'v2' ? DISCIPLINA_V2 : APP.disciplina}` };
+  return { title: `${APP.nome} · ${uiVersion === 'v1' ? APP.disciplina : DISCIPLINA_V2}` };
 }
 
 export default async function VersionLayout({ children, params }: {
