@@ -103,7 +103,8 @@ Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêm
 - Tabela 11 – Evolução da visualização temporal da V1 à V2
 - Tabela 12 – Rastreabilidade entre necessidade, solução e validação
 - Tabela 13 – Rastreabilidade do ajuste FB-V1-P1-001
-- Tabela 14 – Feedback e ajuste decorrente da validação
+- Tabela 14 – Rastreabilidade dos feedbacks FB-V2-P1-001 a FB-V2-P1-007
+- Tabela 15 – Feedback e ajuste decorrente da validação
 
 ## Sumário
 
@@ -241,8 +242,10 @@ No estado documentado, os dados de investimento e desempenho foram organizados p
 cenários sintéticos; não houve consolidação de fontes operacionais distintas em uma base
 institucional. Os indicadores, os cálculos determinísticos e a interface foram implementados no
 ambiente acadêmico com esses dados; o experimento de CPR foi executado e comparado às referências
-definidas. A avaliação da interface foi parcial: uma profissional examinou Captação, Matrículas e
-o ajuste temporal, não Ads ou ML. O responsável técnico confirmou o uso de agentes de IA como
+definidas. A avaliação da interface foi parcial: uma única profissional participou de três
+aplicações sucessivas; as duas primeiras examinaram Captação, Matrículas e o ajuste temporal, e a
+terceira examinou a V2 de forma ampliada, incluindo Ads, Estratégia e a apresentação da previsão de
+CPR, sem validação matemática do modelo. A V3 resultante não foi reavaliada. O responsável técnico confirmou o uso de agentes de IA como
 apoio ao desenvolvimento, à revisão e à verificação técnico-científica, descrito em 2.5.12. Não
 há registro de uma simulação agêntica específica via linha de comando; portanto, a modalidade de
 simulação prevista no objetivo de IA não é declarada atendida integralmente.
@@ -497,7 +500,7 @@ Tabela 2 – Disciplinas estudadas e aplicações no projeto
 | Introdução à Ciência de Dados | Ciência de Dados | Preparação dos dados sintéticos, distinção entre ausência e zero, seleção de observações elegíveis e organização dos experimentos e de seus resultados. |
 | Visualização Computacional | Ciência de Dados | Apresentação de indicadores e gráficos nos dashboards, filtragem, agregação e consolidação temporal de séries, inclusive na interface V2. |
 | Aprendizado de Máquinas | Ciência de Dados | Formulação e avaliação dos experimentos supervisionados de CPR: comparação de regressão linear com baselines, divisão temporal, prevenção de leakage e métricas MAE, RMSE e R². |
-| Interface Humano-Computador | Engenharia de Computação | Avaliação da apresentação da interface e implementação da visualização temporal consolidada na V2 após o feedback de P1, seguida de reavaliação. |
+| Interface Humano-Computador | Engenharia de Computação | Avaliação da apresentação da interface e implementação da visualização temporal consolidada na V2 após o feedback de P1, seguida de reavaliação; avaliação ampliada da V2 e incorporação dos sete feedbacks aceitos na V3. |
 
 Fonte: Elaboração do grupo, com base nas matrizes e ementas oficiais da UNIVESP e nos artefatos
 do projeto. A grafia Introdução à Ciência de Dados segue o Plano de Ensino de COM350; o PPC
@@ -702,6 +705,15 @@ denominador válido, a razão permanece indefinida. Em Captação, contatos, vis
 contagens do cenário sintético no recorte selecionado; as taxas entre etapas são recalculadas a
 partir dessas contagens, sem vincular pessoas individualmente.
 
+Na V3, a efetivação visita–matrícula é matrículas divididas por visitas do mesmo mês do funil de
+Captação, multiplicadas por cem; visita zero ou dado ausente resulta em taxa indisponível. Leads e
+alcance não existiam na base Ads original e foram derivados por regras determinísticas fixadas
+para demonstração da interface (identificador `pij410-v3-extensao-1`): leads simulados do Google
+correspondem a 0,07 × cliques; leads simulados do Meta, a 0,55 × conversas; e alcance simulado do
+Meta, a 7 × investimento + 3 × resultados, com arredondamento. Esses coeficientes não são
+estimativas empíricas, taxas institucionais, relações causais ou dados observados; os valores
+derivados não representam pessoas únicas nem medições de plataforma.
+
 Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento
 devem ser explicitados antes da construção de cenários. Cenários mínimo, ideal e agressivo, quando
 aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados. Eles não
@@ -791,8 +803,8 @@ executado rolling origin mensal, incorporando apenas resultados já maduros. Ap�
 o OLS pré-especificado foi reajustado em 57 amostras elegíveis até dezembro/2022 para projetar
 fevereiro/2023 a janeiro/2024. Janeiro/2023 provisório permaneceu ausente no histórico; uma
 ponte estimada foi identificada somente como lag auxiliar da recursão. Não foram calculados
-intervalos de confiança. O novo artefato é apresentado apenas em V2/Google Ads e sua origem
-é demanda técnica acadêmica, não feedback da comunidade.
+intervalos de confiança. O novo artefato é apresentado em Google Ads na V2 e na V3, não na V1;
+sua origem é demanda técnica acadêmica, não feedback da comunidade.
 
 Os procedimentos locais estão registrados em
 `docs/migracao-modelo/arquitetura/experimento-google-cpr.md` e
@@ -982,7 +994,7 @@ a comparação experimental neste cenário sintético. Não demonstram desempenh
 eficácia institucional, atribuição causal ou capacidade de automatizar investimentos. A hipótese
 de maturação de 14 dias também é exclusivamente sintética.
 
-#### Previsão sazonal mensal — extensão técnica exclusiva V2
+#### Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3
 
 O experimento sazonal separado foi efetivamente executado e reproduzido pela CLI sobre o
 dataset sintético existente de janeiro/2017 a janeiro/2023. O CPR mensal é calculado como soma
@@ -1025,7 +1037,8 @@ também ficou acima da média (1,131) e junho abaixo (0,893). O índice compara 
 mensais com a média global; não é ML nem demonstra sazonalidade estável.
 
 A V2 apresenta histórico sintético e projeção experimental recursiva de fevereiro/2023 a
-janeiro/2024, além do índice sazonal e da comparação dos métodos. As maiores projeções são para
+janeiro/2024, além do índice sazonal e da comparação dos métodos. A V3 exibe o mesmo artefato,
+sem alterar valores ou algoritmo, acrescido da explicitação dos limites (FB-V2-P1-007). As maiores projeções são para
 dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativas do
 cenário, não resultados futuros observados. Valores extremos e lags previstos podem se propagar
 pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
@@ -1203,6 +1216,8 @@ Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026
 
 Na avaliação ampliada da V2, a cadeia de rastreabilidade foi estendida à V3:
 
+Tabela 14 – Rastreabilidade dos feedbacks FB-V2-P1-001 a FB-V2-P1-007
+
 | Feedback | Evidência da V2 | Decisão do responsável | Incorporação na V3 | Avaliação posterior por P1 |
 |---|---|---|---|---|
 | FB-V2-P1-001 | Q6: efetivação visita–matrícula | Aceito | Taxa mensal do funil | Não realizada |
@@ -1224,7 +1239,7 @@ de P1 foi a dispersão das visualizações; o resultado posterior foi sua própr
 sem demonstração de solução definitiva ou eficácia geral. A terceira aplicação produziu sete
 feedbacks adicionais, aceitos pelo responsável e implementados na V3.
 
-Tabela 14 – Feedback e ajuste decorrente da validação
+Tabela 15 – Feedback e ajuste decorrente da validação
 
 | Feedback ou observação | Decisão do grupo | Ajuste realizado | Evidência | Situação |
 |---|---|---|---|---|
