@@ -103,11 +103,16 @@
 |---|---|---|---|
 | 33. Park et al. (2023) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1145/3586183.3606763) |
 | 34. Wang et al. (2024) | `usada no relatório` | Pesquisa sobre agentes baseados em LLM, com planejamento, memória e ferramentas, mas desafios de avaliação e confiabilidade. Recorte: apoio controlado, sempre sujeito à verificação humana. Usada em 2.1, 2.3.7 e 2.4.8. | [DOI](https://doi.org/10.1007/s11704-024-40231-1) |
-| 35. Liu et al. (2024) | `candidata` | Leitura pendente; não há recorte adotado. | [DOI](https://doi.org/10.1162/tacl_a_00638) |
+| 35. Liu et al. (2024) | `usada no relatório` | Texto publicado consultado, especialmente resumo, análise e seção 7. Recorte: a posição da informação relevante pode afetar o desempenho em contextos longos nas tarefas estudadas; não prova que uma técnica específica de organização do contexto seja superior neste PI. Usada em 2.3.7. | [DOI](https://doi.org/10.1162/tacl_a_00638) |
 | 36. Gao et al. (2023) | `candidata` | Leitura pendente; preprint sem revisão por pares; não há recorte adotado. | [DOI](https://doi.org/10.48550/arXiv.2312.10997) |
 | 37. Sumers et al. (2023) | `candidata` | Leitura pendente; preprint sem revisão por pares; não há recorte adotado. | [DOI](https://doi.org/10.48550/arXiv.2309.02427) |
 | 38. Anthropic (2026) | `fichada` | Documentação técnica, não fundamentação teórica. A menção ao modelo comercial foi retirada do parcial porque a configuração é instrumental, substituível e não altera o método. | [documentação](https://platform.claude.com/docs/es/models/fable-5/introducing-claude-fable-5-and-claude-mythos-5) |
 | 39. OpenAI (2026) | `fichada` | Documentação técnica, não fundamentação teórica. A menção ao modelo comercial foi retirada do parcial porque a configuração é instrumental, substituível e não altera o método. | [documentação](https://developers.openai.com/api/docs/models/gpt-5.6-sol) |
+| 44. Amershi et al. (2019) | `usada no relatório` | Artigo e diretrizes consultados. Recorte: interação humano–IA deve oferecer meios para avaliar e corrigir o sistema; não constitui prova da eficácia dos agentes do PI. Diretrizes e discussão, 2.3.7. | [DOI](https://doi.org/10.1145/3290605.3300233) |
+| 45. Han et al. (2024) | `usada no relatório` | Artigo publicado consultado, seções 1–3 e 6. Recorte: requisitos explícitos podem orientar geração e casos de teste; o projeto não adotou o framework ArchCode. Usada em 2.3.7. | [DOI](https://doi.org/10.18653/v1/2024.acl-long.730) |
+| 46. Kamoi et al. (2024) | `usada no relatório` | Survey crítico consultado, resumo, análise sobre feedback e seção 12. Recorte: autocorreção por prompt sem feedback confiável tem limites; verificação externa é mais defensável. Usada em 2.3.7. | [DOI](https://doi.org/10.1162/tacl_a_00713) |
+| 47. Yang et al. (2024) | `usada no relatório` | Artigo de conferência consultado, resumo e seções sobre interface de agente e avaliação. Recorte: agentes podem navegar, editar e testar repositórios; benchmark não valida o PI. Usada em 2.3.7. | [NeurIPS](https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html) |
+| 48. Yao et al. (2023) | `usada no relatório` | Versão publicada em ICLR consultada, resumo, método e seção 6. Recorte: intercalar ações em ferramentas e planejamento; não se atribui o método ReAct específico aos agentes do PI. Usada em 2.3.7. | [artigo](https://arxiv.org/abs/2210.03629) |
 
 ## E12 — Aprendizagem de máquina aplicada ao marketing
 

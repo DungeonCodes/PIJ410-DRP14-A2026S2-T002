@@ -1,5 +1,5 @@
 // Versionamento de apresentação, independente de dados, algoritmos e feature gates.
-export const UI_VERSIONS = ['v1', 'v2'] as const;
+export const UI_VERSIONS = ['v1', 'v2', 'v3'] as const;
 export type UIVersion = (typeof UI_VERSIONS)[number];
 export const CURRENT_UI_VERSION: UIVersion = UI_VERSIONS[0];
 export type UIQuery = Record<string, string | string[] | undefined>;

@@ -1053,3 +1053,136 @@ Data: 2026-10-08
 Ação: auditoria científico-técnica final da metodologia, arquitetura, indicadores, versões V1/V2, testes e experimentos de CPR inicial e sazonal no Relatório Final.
 Resultado: artefatos e protocolos numéricos conferidos. Em final.md, esclarecidos o fluxo local de dados sintéticos, as fórmulas dos indicadores, o significado das métricas ML, a distinção entre níveis analíticos, ML e IA, a rastreabilidade dos comandos de reprodução e os valores da previsão experimental. Removida atribuição sem implementação a redes neurais, aprendizado profundo e visão computacional na introdução. Preservados os limites dos dados sintéticos, do holdout sazonal e da validação P1.
 Verificação: build, testes de interface, não vazamento, testes e verificadores dos dois experimentos CPR aprovados. Sem alteração de código, dados ou valores numéricos dos artefatos; sem commit ou push.
+
+---
+
+Data: 2026-10-08
+Ação: auditoria final de coerência científica do Relatório Final, cruzando problema, sete objetivos específicos, metodologia, resultados, validação V1/V2 e considerações finais.
+Resultado: identificados e delimitados dois objetivos não plenamente realizados: a organização dos dados foi demonstrada em cenários sintéticos por módulo, sem consolidação de fontes institucionais reais; a simulação com IA agêntica via CLI não foi executada. O primeiro é atendimento parcial no protótipo, e o segundo permanece não atendido, ambos explicitados no texto. Os demais resultados, a avaliação limitada a uma P1 e as limitações científicas permaneceram coerentes. Em final.md, acrescentadas apenas essas delimitações nas seções 2.1 e 3; sem alterar números, respostas, dados, código, instrumentos ou apêndices.
+Verificação: git diff --check; sem commit ou push.
+
+---
+
+Data: 2026-10-08
+Ação: auditoria histórica e científica dos objetivos, com reavaliação do uso de IA agêntica.
+Fontes: Plano de Ação oficial e versões V2/V3, Relatório Parcial V1–V3 e histórico Git, proposta histórica de cinco objetivos, Relatório Final, decisões, registros de execução, protocolos CPR e confirmação humana do responsável técnico.
+Correção do registro anterior: foi confirmado o uso de agentes em ambiente Antigravity, incluindo Codex/GPT-6.1 Sol, como apoio ao desenvolvimento, auditoria, revisão metodológica, verificação de algoritmos e resultados de ML, testes e documentação. A ausência de simulação agêntica específica via linha de comando não equivale à ausência de uso agêntico. O objetivo de IA do Final mantém a modalidade histórica de apoio a cenários de simulação e é classificado como parcialmente atendido; essa simulação específica não foi documentada. O apoio agêntico não produziu o modelo preditivo de CPR nem substituiu decisões científicas humanas.
+Alteração: final.md ajustado somente nas passagens sobre uso de IA e estado do objetivo; nomes comerciais mantidos neste log, não no corpo científico. Sem alteração de números experimentais, código, datasets, respostas de P1 ou instrumentos. Sem commit ou push.
+---
+
+Data: 2026-10-09
+Ação: Auditoria final de referências, citações e integridade bibliográfica do Relatório Final.
+Escopo: `docs/relatorio/final.md`, modelo oficial DOCX, orientações institucionais de 2026,
+PPC/Plano de Ensino PJI410, DOI, páginas oficiais de periódicos/editoras e documento interno do grupo.
+Resultado: 19 chaves de citação e 19 referências finais, correspondência bidirecional integral;
+inventário, fontes, força e afirmações centrais em `docs/relatorio/auditoria-referencias-final.md`.
+Corrigidos o sobrenome composto Cerdá Suárez, o título do Plano de Ação interno, o fascículo
+de De Mauro et al. e o número de artigo de Wang et al.; incluído o Plano de Ensino PJI410 citado;
+removido o PPC 2026 não citado; adicionadas referências primárias verificadas de Bergmeir/Benítez
+e Hyndman/Koehler aos conceitos de avaliação temporal e métricas. Datas de acesso antigas
+preservadas; data 9 out. 2026 usada somente para fontes consultadas nesta auditoria.
+H10 continua aberta: modelo oficial menciona “ABNT 6023, de 2002” para citações; orientações
+de avaliação de 2026 mencionam ABNT sem edição; padrão interno usa 6023:2018 e 10520:2023;
+edição 6023:2025 foi verificada em catálogo de normas e biblioteca universitária, sem adoção
+institucional específica localizada para este PI. Marcador H10 em final.md atualizado.
+Nenhum resultado, número, código, dataset, resposta P1, objetivo ou método foi alterado.
+Sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Auditoria final de evidências, apêndices, anexos e privacidade do Relatório Final.
+Fontes: questionário inicial e histórico Git; instrumentos V1/V2 e respostas originais P1/V1–P1/V2;
+protocolo e registro de versões; nove capturas da aplicação; artefatos/protocolos CPR; run log;
+Regulamento, orientações e modelo oficial da UNIVESP. Inventário e gates em
+`docs/relatorio/auditoria-evidencias-final.md`.
+Resultado: 30 perguntas iniciais; seis perguntas aplicadas em V1 e seis na reavaliação V2;
+cadeia FB-V1-P1-001 rastreável; nove capturas existentes, seis utilizadas. Confirmados gráficos
+separados V1, consolidado V2 e CPR sazonal experimental. Cinco capturas utilizadas exibem na
+barra lateral a identificação antiga “Projeto Integrador em Computação III”; pendência editorial
+para composição sem alterar código ou imagem agora. Nenhuma fotografia da validação localizada;
+os documentos consultados não a exigem; removidos de final.md o marcador e a legenda fotográfica
+opcionais. Art. 13 do Regulamento exige TCLE preenchido na versão
+final; H11 permanece para definir a apresentação institucional protegida, fora do Git público.
+Corrigida em `auditoria-referencias-final.md` somente a contagem por tipo: 19 referências =
+15 artigos + 1 dissertação + 3 documentos institucionais/internos; a redação literal do modelo
+sobre “ABNT 6023, de 2002” foi contextualizada sem resolver H10.
+Nenhuma resposta, TCLE, PII, imagem, código, dataset, resultado ou texto científico foi alterado;
+nenhum DOCX/PDF gerado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Fechamento sistemático de pendências editoriais e pré-textuais com reaproveitamento das fontes acadêmicas existentes no repositório.
+Fontes: Plano de Ação oficial completo; versões V2/V3; Relatório Parcial; modelo oficial do Relatório Final; auditorias de referências e evidências; instrumentos e registros V1/V2; questionário inicial; histórico Git e página institucional de polos da UNIVESP (`https://locomotive.univesp.br/polos`).
+Resultado: preenchidos oito nomes na grafia documental, sete RAs conhecidos, quatro polos do grupo, cidade São Paulo, orientadora, dois cursos, título corrente, Grupo 11, turma e componente PJI410. O RA de Michele continua ausente inclusive nas versões do Plano. Redigidos resumo de 200 palavras e cinco palavras-chave; estruturados sumário, seis figuras e 13 tabelas com numeração provisória. Transpostos os 30 itens do instrumento inicial sem respostas e os dois instrumentos efetivamente aplicados, com seis perguntas em cada momento. Suprimidos o marcador de arquitetura opcional, o Anexo B sem fonte e os apêndices C/D redundantes. Mantidos apenas vídeo ainda não publicado, RA faltante, total de folhas/paginação final, H10 normativa e H11 sobre TCLE protegido. O reenquadramento de cinco figuras, já diagnosticado, pertence à composição final e deve preservar os PNGs originais. Nenhum DOCX/PDF gerado; ciência, respostas, código, dados e imagens preservados; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Correção editorial da identificação PJI410 nas figuras do Relatório Final.
+Origem: `APP.disciplina` em `src/lib/identidade.ts` traz `PIJ410 — Projeto Integrador em Computação III` na baseline protegida da V1; `src/components/app-shell.tsx` e o layout raiz a consomem. A V2 herdava o mesmo shell.
+Solução: V1, seus 17 arquivos/hash protegidos e seus três PNGs utilizados foram preservados como registro da interface apresentada a P1; o Final recebeu uma nota editorial única sobre o rótulo histórico. A V2 passou a usar shell e constante próprios com `PJI410 — Projeto Integrador em Computação IV`, incluindo título da rota versionada, sem alteração funcional. Duas novas capturas reais 1600×900 do build local (`fig-v2-ads-visao-geral-pji410.png` e `fig-v2-captacao-evolucao-temporal-pji410.png`) substituem as referências no Final; os PNGs V2 anteriores permanecem intactos. A figura sazonal já não exibia o rótulo e foi mantida.
+Verificação: `npm run build`, `npm run test:interface` (17 hashes V1 intactos), `npm run test:v2-feedback`, `npm run test:interface:http` (35 verificações de rotas) e `npm run test:nao-vazamento` (38 verificações) aprovados. HTML das duas rotas V1 conserva o rótulo histórico; as sete rotas V2 exibem PJI410 IV sem Computação III. DOM das duas telas recapturadas conferido e capturas inspecionadas visualmente. Nenhuma resposta P1, dado, ML, metodologia ou resultado alterado. Nenhum pixel histórico retocado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Auditoria editorial integral do Relatório Final antes da composição DOCX/PDF.
+Fontes: `docs/relatorio/final.md` lido integralmente e modelo oficial do Relatório Final; listas, sumário, figuras, tabelas, referências e apêndices conferidos.
+Resultado: corrigidos concordância e fluidez na introdução e na abertura dos resultados; convertidas em comentários Markdown as instruções de paginação das listas e do sumário e a pendência administrativa do Anexo A; condensada a nota de preservação histórica da V1; acrescentada a fonte ausente da Tabela 7; uniformizados sinais negativos e apresentação de fontes/notas; substituídas referências posicionais por numéricas. Resumo, objetivos, dados, resultados, respostas de P1, V1 e capturas V2 preservados. Permanecem RA de Michele, URL do vídeo, total de folhas, paginação final, decisão H10 e tratamento institucional protegido dos TCLEs H11. Nenhum DOCX/PDF gerado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Fechamento do registro acadêmico pendente na fonte editorial corrente.
+Resultado: RA de Michele Jeremias da Silva Santos confirmado diretamente pela integrante: 1700600. O marcador foi substituído em `docs/relatorio/final.md`. A conversa privada e sua captura não foram incorporadas ao repositório; registros históricos foram preservados.
+
+---
+
+Data: 2026-10-09
+Ação: Fechamento administrativo do Relatório Final.
+Resultado: RA de Michele Jeremias da Silva Santos confirmado diretamente pela integrante: 1700600; H10 resolvida por decisão expressa do responsável com ABNT NBR 10520:2023 para citações e NBR 6023:2025 para referências; H11 resolvida operacionalmente pela inserção manual dos TCLEs preenchidos e assinados apenas na versão institucional final, com os arquivos fora do Git público. A fonte editorial não contém anexo vazio. Na revisão normativa, `et al.` foi posto em itálico; 19 referências, autoria, títulos, DOI, URLs e datas de acesso foram mantidos. Restam URL do vídeo e dados de paginação/total de folhas para a composição. Nenhuma conversa, captura privada, TCLE assinado, telefone, CPF, RG ou assinatura foi adicionada; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Pesquisa bibliográfica e revisão científica controlada da seção de IA agêntica.
+Resultado: consultadas fontes primárias sobre agentes LLM, supervisão humana, planejamento e uso de ferramentas, requisitos, organização de contexto e verificação. Seis referências passaram a integrar a seção 2.3.7 e a bibliografia do Final; cinco são novas no catálogo geral e Liu et al. (2024) já constava como candidata. A seção 2.5.12 passou a descrever o uso assistivo registrado: especificação, contexto restrito, inspeção, testes ou verificadores aplicáveis e decisão humana. Os rótulos scaffolding, spec-driven development e context engineering foram limitados conforme a auditoria específica. O catálogo, as sínteses, os fichamentos, as decisões e a auditoria de referências foram atualizados. Nenhum resultado, dado, código, resposta de P1, figura ou resumo foi alterado; sem commit ou push.
+
+---
+
+Data: 2026-10-09
+Ação: Revisão da metodologia de criação e prototipação do Relatório Final.
+Resultado: a seção 2.5.4 passou a explicar a estratégia incremental em quatro fases, os mecanismos de habilitação, o estado funcional e a distinção entre fases e versões V1/V2. Acrescentada tabela metodológica das fases; tabelas posteriores e lista foram renumeradas editorialmente, sem alteração de seus dados. A seção 2.5.5 foi condensada para destacar a sequência de avaliação; 3.2 mantém a comprovação do estado real, com nomes de módulos alinhados ao código; 3.3 permanece dedicada à arquitetura e aos contratos técnicos. A matriz de rastreabilidade foi registrada em `docs/relatorio/auditoria-evidencias-final.md`. Fases 3 e 4 seguem bloqueadas, Ads/CPR não foram atribuídos ao feedback de P1 e não existe versão de interface V3 documentada. Nenhum código, dataset, resultado experimental, resposta de P1 ou figura foi alterado; sem commit ou push.
+Verificação: `npm run test:fases` (61 testes), `npm run test:interface` (composição V1/V2 e 17 arquivos protegidos) e `npm run test:v2-feedback` aprovados; `git diff --check` aprovado.
+
+---
+
+Data do registro documental: 2026-10-10 (não corresponde à data da nova aplicação, ainda a confirmar).
+Ação: Documentação da avaliação ampliada da V2 pela Gerente de Marketing para orientar a V3 final, com preservação integral das respostas primárias e criação da rastreabilidade FB-V2-P1-001 a FB-V2-P1-007.
+Resultado: A documentação vigente confirmou P1 como a mesma Gerente de Marketing das duas avaliações anteriores; esta é a terceira aplicação sucessiva da mesma participante, não uma nova amostra. Criados `docs/validacao/instrumento_validacao_v2_para_v3.md`, `docs/validacao/respostas/v2-p1-para-v3.md` e `docs/validacao/feedback-v2-v3.md`; atualizado `docs/validacao/versoes-interface.md`. Data, modalidade e TCLE desta etapa permanecem a confirmar apenas no registro de respostas. As sete decisões do grupo estão pendentes e nenhuma ação na V3 foi implementada.
+Relatório Final: atualização ampla adiada até decisão e implementação da V3 para reconciliar as passagens que descrevem somente os dois primeiros momentos e afirmam que Ads/ML não foram avaliados por P1 naquele ciclo. O relatório corrente não deve ser lido como síntese desta terceira avaliação.
+Escopo: somente documentação; código, scripts, datasets, ML, figuras, rotas e componentes intactos. Sem commit ou push.
+
+---
+
+Data do registro de implementação: 2026-10-10 (não é data da avaliação de P1).
+Ação: Implementação da V3 final após decisão expressa do responsável de aceitar FB-V2-P1-001 a FB-V2-P1-007.
+Resultado: novas rotas `/v3` com taxa mensal de efetivação visita–matrícula, composição por série existente, resumo executivo mensal de Ads, análises Google/Meta, comparação temporal em Estratégia e comunicação mais clara do CPR experimental. V1 e V2 permaneceram com páginas históricas e datasets intactos. A extensão de leads e alcance é sintética, determinística, exclusiva da V3 e documentada em `docs/validacao/v3-dados-sinteticos.md`; Ads e Matrículas são cenários fictícios independentes sem atribuição causal. Fases 3 e 4 bloqueadas.
+Documentação: feedbacks atualizados como aceitos, implementados e verificados; versionamento e decisão registrados; `docs/relatorio/final.md` atualizado nas seções Resumo, 2.5.4–2.5.5, abertura do capítulo 3, 3.3, 3.4.5, 3.5–3.9, 4 e Apêndice B.3. A V3 não foi avaliada por P1; metadados da terceira aplicação continuam pendentes no registro primário. Capturas V3 reais e provisórias foram produzidas para revisão visual humana, sem substituir figuras históricas.
+Verificação: `npm run lint`, `npm run build`, `npm test`, `npm run test:interface:http`, inspeção visual local em 1600×900 e 390×844, e `git diff --check`. `npm run verificar:integridade-docs` não pôde completar porque a linha de base desse verificador não existe no repositório; nenhuma linha de base foi criada nesta execução. Sem commit ou push.
+
+---
+
+Data do registro da auditoria: 2026-10-10 (não é a data da terceira avaliação de P1).
+Ação: Auditoria de rastreabilidade da terceira avaliação da mesma P1 e da transição V2 → V3, confrontando instrumento, respostas primárias, sete feedbacks, decisão de aceitá-los, implementação, testes e Relatório Final.
+Resultado: criada `docs/validacao/auditoria-rastreabilidade-v2-v3.md`; atualizados o índice e o protocolo de validação para reconhecer a terceira aplicação. O Relatório Final passou a delimitar o escopo das duas primeiras aplicações, a avaliação ampliada de Ads/ML na terceira, a disponibilidade das Fases 1 e 2 na V3 e a reprodução integral das 16 questões no Apêndice B.3. Mantida a distinção entre versões da interface e fases funcionais, entre verificação técnica e avaliação por P1, e entre métricas sintéticas e dados operacionais. Respostas primárias, código, dados, ML e figuras não foram alterados nesta auditoria.
+Verificação: 16 questões idênticas no instrumento e Apêndice B.3, 16 registros de resposta, sete falas abertas e notas conferidos; `npm run test:v3-feedback`, `npm run test:interface` (17 arquivos V1 protegidos), `npm run test:nao-vazamento` (38 verificações) e `git diff --check` aprovados. `npm run verificar:integridade-docs` permanece impedido pela ausência preexistente da linha de base; ela não foi criada. Sem commit ou push.
+
+---
+
+Data do registro da auditoria: 2026-10-10.
+Ação: Auditoria-mestre final documental e científica do Relatório Final após a V3.
+Resultado: criada `docs/relatorio/auditoria-final-documental-cientifica-v3.md`. Corrigidos em `final.md`: 2.1 (avaliação não mais descrita como sem Ads/ML; três aplicações da mesma P1; V3 não reavaliada), 2.5.11 e 3.4.4 (artefato sazonal exibido na V2 e na V3, não na V1), 2.5.9 (fórmula da efetivação e regras `pij410-v3-extensao-1` com seus limites), Tabela 2/IHC (ciclo V2→V3), numeração da tabela de rastreabilidade V2→V3 (nova Tabela 14; anterior renumerada para 15). `master_context.md` recebeu atualização datada sobre a V3. Métricas de ML, projeções, índice sazonal e regras sintéticas conferidos com artefatos e código; 25 referências, todas citadas, nenhuma citação órfã ou duplicata; nenhuma PII ou segredo. Metadados da terceira aplicação permanecem a confirmar, sem inferência.
+Verificação: `npm test` aprovado (inclui test:fases 61, test:interface com 17 arquivos V1 protegidos, test:v2-feedback, test:v3-feedback, test:determinismo 46, test:google-cpr, ml:google-cpr:verificar, test:google-cpr:sazonal, ml:google-cpr:sazonal:verificar, test:nao-vazamento 38); `git diff --check` aprovado. `npm run build` e `npm run test:interface:http` não executados nesta máquina por ausência de `node_modules` (não instalado nesta auditoria). `npm run verificar:integridade-docs` segue impedido pela ausência preexistente da linha de base, não criada. Código, datasets, V1, V2, resultados, respostas de P1, figuras, modelo e `parcial.md` intactos. Sem commit ou push.

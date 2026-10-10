@@ -56,10 +56,10 @@ assert.ok(!prepararSazonal(tardio).some((s) => s.periodo === '2022-01-01'));
 const ajustado = ajustarSazonal(samples, '2022-01-01');
 const forecast = preverHorizonte(serie, ajustado.modelo, '2022-01-01', 12, '2022-01-01', 'linear');
 assert.ok(forecast.previsoes.flatMap((p) => p.lags).filter((l) => l.periodo >= '2022-01-01').every((l) => l.fonte === 'estimado'));
-// Só o componente V2 importa o novo artefato; modelo científico nunca treinado na UI.
+// Somente apresentações versionadas V2/V3 importam o artefato; modelo não é treinado na UI.
 for (const path of readdirSync(new URL('../src/', import.meta.url), { recursive: true }).filter((p) => /\.tsx?$/.test(p))) {
   const p = path.replaceAll('\\', '/'), s = readFileSync(new URL(`../src/${p}`, import.meta.url), 'utf8');
-  if (s.includes("from '@/data/google-cpr-sazonal.json'")) assert.equal(p, 'ui/v2/components/previsao-cpr-sazonal.tsx');
+  if (s.includes("from '@/data/google-cpr-sazonal.json'")) assert.ok(['ui/v2/components/previsao-cpr-sazonal.tsx', 'ui/v3/previsao.tsx'].includes(p));
   if (p.endsWith('.tsx')) assert.ok(!s.includes('executarSazonal(') && !s.includes('ajustarSazonal('));
 }
 console.log('CPR sazonal: agregação, ausência, maturação, purga, scaler, leakage, holdout recursivo, rolling origin, pontes e V2 verificados.');

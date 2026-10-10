@@ -23,6 +23,7 @@ function linksDaNavegacao(html) {
 const v1Ativas = ['/v1', '/v1/captacao', '/v1/matriculas'];
 const v1Ads = ['/v1/ads', '/v1/ads/google', '/v1/ads/meta', '/v1/ads/estrategia'];
 const v2Ativas = ['/v2', '/v2/captacao', '/v2/matriculas', '/v2/ads', '/v2/ads/google', '/v2/ads/meta', '/v2/ads/estrategia'];
+const v3Ativas = ['/v3', '/v3/captacao', '/v3/matriculas', '/v3/ads', '/v3/ads/google', '/v3/ads/meta', '/v3/ads/estrategia'];
 
 for (const path of v1Ativas) {
   const { html } = await get(path, 200);
@@ -37,6 +38,25 @@ for (const path of v2Ativas) {
   assert.ok(html.includes('V2'), `Identificador V2 ausente em ${path}`);
   assert.ok(linksDaNavegacao(html).every((link) => link === '/v2' || link.startsWith('/v2/')));
 }
+for (const path of v3Ativas) {
+  const { html } = await get(path, 200);
+  assert.ok(html.includes('V3'), `Identificador V3 ausente em ${path}`);
+  assert.ok(linksDaNavegacao(html).every((link) => link === '/v3' || link.startsWith('/v3/')));
+}
+const adsJaneiroV3 = await get('/v3/ads?mes=2022-01', 200);
+const adsDezembroV3 = await get('/v3/ads?mes=2022-12', 200);
+assert.ok(adsJaneiroV3.html.includes('Resumo por plataforma · <!-- -->01<!-- -->/<!-- -->2022'));
+assert.ok(adsDezembroV3.html.includes('Resumo por plataforma · <!-- -->12<!-- -->/<!-- -->2022'));
+assert.notEqual(adsJaneiroV3.html, adsDezembroV3.html, 'Resumo mensal reage ao seletor');
+const captacaoV3 = await get('/v3/captacao?safras=2025&ciclos=EI', 200);
+assert.ok(captacaoV3.html.includes('Efetivação de visitas em matrículas'));
+const matriculasV3 = await get('/v3/matriculas?safras=2025&ciclos=EI', 200);
+assert.ok(matriculasV3.html.includes('Matrículas novas e rematrículas por série'));
+assert.ok(matriculasV3.html.includes('Infantil 1'));
+const googleV3 = await get('/v3/ads/google', 200);
+assert.ok(googleV3.html.includes('data-experimento="cpr-sazonal-v3"'));
+const estrategiaV3 = await get('/v3/ads/estrategia', 200);
+assert.ok(estrategiaV3.html.includes('Bases sintéticas independentes'));
 
 const captacaoV1 = await get('/v1/captacao?safras=2025&ciclos=EI', 200);
 const captacaoV2 = await get('/v2/captacao?safras=2025&ciclos=EI', 200);
@@ -55,7 +75,7 @@ assert.ok(matriculasV2.html.includes('Efetivação de matrículas por mês'), 'H
 const googleV2 = await get('/v2/ads/google?anos=2022&campanhas=Cenario-A', 200);
 assert.ok(googleV2.html.includes('data-experimento="cpr-sazonal-v2"'), 'Previsão sazonal ausente na V2');
 
-for (const path of ['/v1/organico', '/v1/gestao', '/v1/arquitetura', '/v2/organico', '/v2/gestao', '/v2/arquitetura']) {
+for (const path of ['/v1/organico', '/v1/gestao', '/v1/arquitetura', '/v2/organico', '/v2/gestao', '/v2/arquitetura', '/v3/organico', '/v3/gestao', '/v3/arquitetura']) {
   await get(path, 404);
 }
 
@@ -64,9 +84,9 @@ for (const path of ['/captacao?safras=2025%2C2026&ciclos=EI', '/matriculas']) {
   assert.equal(canonical.location, `/${CURRENT_UI_VERSION}${path}`);
 }
 for (const path of ['/ads', '/ads/google', '/ads/meta', '/ads/estrategia']) await get(path, 404);
-for (const path of ['/v3/captacao', '/old/captacao', '/v1/inexistente', '/v2/ads/inexistente']) await get(path, 404);
+for (const path of ['/old/captacao', '/v1/inexistente', '/v2/ads/inexistente', '/v3/ads/inexistente']) await get(path, 404);
 
 assert.equal(CURRENT_UI_VERSION, 'v1');
 assert.equal(versionedPath(CURRENT_UI_VERSION, '/captacao'), '/v1/captacao');
 console.table(rows);
-console.log('HTTP: V1 pré-Ads, V2 com Ads/ML, aliases explícitos e bloqueios aprovados.');
+console.log('HTTP: V1 pré-Ads, V2 histórica, V3 funcional, aliases explícitos e bloqueios aprovados.');

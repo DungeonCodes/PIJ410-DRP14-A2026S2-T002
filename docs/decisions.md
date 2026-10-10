@@ -449,3 +449,47 @@ Registradas aqui porque constaram como pendências e já não são.
 **Motivo:** o Projeto Integrador é coletivo e multicurso; os artefatos comprovam aplicação dos conhecimentos e as fontes oficiais identificam conteúdo e posição curricular.
 **Alternativa considerada:** rastreamento de disciplinas estudadas por integrante, substituído pelo critério coletivo autorizado.
 **Impacto:** seção 2.4 revisada com oito disciplinas de vínculo forte; H07 resolvida. Materiais específicos só são alegados quando documentados. A decisão não confirma matrícula individual, leitura por todos ou eficácia operacional do ML.
+
+---
+
+## ADR-009 — Edições ABNT adotadas no Relatório Final
+
+**Data:** 2026-10-09.
+
+**Decisão:** por confirmação expressa do responsável pelo relatório, o Relatório Final adota a
+ABNT NBR 10520:2023 para citações e a ABNT NBR 6023:2025 para referências. Esta decisão
+substitui a edição de referências indicada na ADR-002, preservada acima como registro histórico.
+As exigências específicas de apresentação do modelo oficial da UNIVESP permanecem aplicáveis
+quando não houver conflito material.
+
+**Motivo:** a menção à NBR 6023:2002 no modelo oficial descreve uma orientação histórica e
+atribui a essa norma o tratamento de citações. A decisão atual separa citações de referências e
+encerra H10 sem alterar o conteúdo científico ou o conjunto de fontes do trabalho.
+
+**Aplicação:** conferir a seção de referências e as chamadas autor–data na fonte editorial
+`docs/relatorio/final.md`; manter 19 referências já validadas, sem inventar metadados.
+
+---
+
+## Decisão editorial — termos de IA agêntica no Relatório Final
+
+**Data:** 2026-10-09.
+
+**Decisão:** usar a literatura de agentes baseados em modelos de linguagem, planejamento, ferramentas, interação humano–IA, requisitos, contexto e verificação para fundamentar 2.3.7. Descrever em 2.5.12 o procedimento efetivamente registrado no projeto. *Scaffolding* tem sentidos variáveis; *spec-driven development* é sobretudo um rótulo profissional recente; *context engineering* é terminologia emergente com forte uso industrial. Nenhum desses rótulos designa metodologia científica formal adotada pelo PI. Preferir descrições concretas: decomposição de tarefas, requisitos e critérios registrados, seleção de contexto, inspeção, testes e decisão humana.
+
+**Motivo:** evitar transferir resultados de benchmarks ou nomes comerciais para a eficácia do projeto e manter os agentes auxiliares separados da regressão linear e dos baselines do CPR. Fontes e limites estão em `docs/relatorio/auditoria-ia-agentica-fontes.md`.
+
+## Decisão de implementação — feedbacks da avaliação ampliada V2 para V3
+
+**Data da decisão:** não informada; o registro desta decisão foi solicitado em 10/10/2026.
+
+**Decisão:** por instrução expressa do responsável pelo projeto, os feedbacks FB-V2-P1-001 a
+FB-V2-P1-007 foram todos aceitos para incorporação na V3. A V3 é nova versão de apresentação,
+sem reescrever V1 ou V2 e sem abrir as Fases 3 e 4. Leads e alcance inexistentes na base Ads
+original são derivações sintéticas, determinísticas e rotuladas como simulação; a comparação
+com Matrículas não estabelece atribuição entre plataformas e pessoas.
+
+**Evidência:** `docs/validacao/feedback-v2-v3.md`, `docs/validacao/v3-dados-sinteticos.md`,
+testes automatizados e capturas provisórias em `docs/relatorio/figuras/v3-preview-*.png`.
+
+---

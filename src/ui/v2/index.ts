@@ -6,9 +6,11 @@ import CaptacaoV2 from './pages/captacao';
 import GoogleV2 from './pages/google';
 import Meta from '../v1/pages/meta';
 import Estrategia from '../v1/pages/estrategia';
+import { V2Shell } from './shell';
 
 export const UI_V2 = {
   ...UI_V1,
+  Shell: V2Shell,
   pages: {
     ...UI_V1.pages,
     '/captacao': CaptacaoV2,
