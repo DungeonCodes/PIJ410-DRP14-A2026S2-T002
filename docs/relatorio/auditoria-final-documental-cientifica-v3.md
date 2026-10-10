@@ -190,3 +190,15 @@ questão 9 do Apêndice B.3, herdados do instrumento.
 Conteúdo científico aprovado após as correções; documentação coerente e rastreável, com a pendência
 externa de metadados (data/modalidade) da terceira aplicação explicitamente declarada. Relatório
 apto para composição.
+
+## Adendo de 10 out. 2026 — práticas de IA agêntica
+
+As observações de “Fundamentação teórica” e “Referências” acima descrevem o estado anterior. Após
+revisão autorizada, 2.3.7 assume *scaffolding* (Zelikman *et al.*, 2024), desenvolvimento orientado
+por especificações (Han *et al.*, 2024; Feng *et al.*, 2026) e organização estruturada do contexto
+(Liu *et al.*, 2024; Mei *et al.*, 2025, preprint com ressalva) como práticas de engenharia
+efetivamente utilizadas, sem classificá-las como metodologias científicas autônomas, e explicita
+*human-in-the-loop*. 2.5.12 descreve o fluxo especificação → contexto e restrições →
+*scaffolding*/decomposição → execução assistida → inspeção → testes e verificações → decisão
+humana. *Verification workflow* não é usado como nome próprio. Referências: 28, todas citadas;
+nenhuma citação sem referência; nenhuma duplicata. Detalhes em `auditoria-ia-agentica-fontes.md`.

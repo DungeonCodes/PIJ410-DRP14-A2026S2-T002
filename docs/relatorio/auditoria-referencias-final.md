@@ -133,3 +133,15 @@ Esta seção registra uma ampliação autorizada após a auditoria original; as 
 | Yao *et al.* (2023) | Conferência ICLR | Planejamento e uso de ferramentas | Nova |
 
 **Correspondência bidirecional atual:** 25 chaves autor–ano citadas; 25 referências na seção final; 25 citações com referência; 0 citações sem referência; 25 referências citadas; 0 referências sem citação. A seção final passou de 19 para 25 entradas, sem remover ou alterar as 19 fontes científicas anteriores. Os novos metadados foram conferidos nas páginas dos periódicos e conferências e nas versões publicadas dos artigos. A fonte Yao é apresentada pela versão final ICLR disponibilizada pelos autores no arXiv, sem DOI de anais inventado. Não há citação direta nem página de citação direta acrescentada. Mantêm-se NBR 10520:2023 para citações e NBR 6023:2025 para referências.
+
+## 7. Atualização posterior — práticas de engenharia de IA agêntica (10 out. 2026)
+
+As contagens de 25 na seção 6 descrevem o estado anterior. As 25 referências foram reauditadas antes de qualquer inclusão: Han, Liu, Kamoi, Amershi, Wang, Yao e Yang continuam sustentando requisitos e testes, efeito do contexto, feedback externo, supervisão humana e agentes; nenhuma define *scaffolding* nem registra os termos *spec-driven* ou *context engineering*. Por isso, foram incluídas apenas três fontes.
+
+| Chave adicionada ao Relatório Final | Tipo | Recorte em 2.3.7 | Entrada no catálogo do projeto |
+|---|---|---|---|
+| Zelikman *et al.* (2024) | Conferência COLM | Definição de *scaffolding* em LLMs | Nova (49) |
+| Feng *et al.* (2026) | ACM FSE Companion '26, p. 1257-1261 | Termo *spec-driven engineering* em veículo revisado; sem alegação de eficácia | Nova (50) |
+| Mei *et al.* (2025) | Preprint arXiv | Termo emergente *context engineering*, com ressalva no texto | Nova (51) |
+
+**Correspondência bidirecional atual:** 28 referências na seção final; 28 referências citadas; 0 referências sem citação; 0 citações sem referência; 0 duplicatas (as duas entradas UNIVESP continuam obras distintas). Metadados de Feng conferidos no Crossref (DOI 10.1145/3803437.3805567); STOP apresentado pela versão publicada em COLM disponibilizada no arXiv, sem DOI de anais inventado; Mei identificado como preprint não revisado por pares na própria referência. Sem citação direta acrescentada. Normas mantidas: NBR 10520:2023 e NBR 6023:2025.
