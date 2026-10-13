@@ -188,6 +188,9 @@ integralmente sintéticos. Os resultados produzidos pela CLI são exibidos no m�
 da Fase 2 acadêmica, sem treinamento no navegador. A interface web apresenta os resultados
 disponíveis para acompanhamento pela gestão. O objeto deste trabalho é, assim, o desenvolvimento
 acadêmico de uma solução analítica para investimentos em mídia digital no contexto educacional.
+Esse recorte articula o tema norteador da UNIVESP ao problema registrado junto à comunidade
+parceira (Grupo do Projeto Integrador, 2026). A aprendizagem de máquina foi delimitada ao
+experimento sintético de CPR, executado separadamente da interface.
 As duas primeiras aplicações com P1 concentraram-se em Captação, Matrículas e no ajuste de
 visualização temporal. Em terceira aplicação, a mesma participante avaliou a V2 de forma ampliada,
 incluindo Ads, Estratégia e a apresentação da previsão experimental de CPR. Essa avaliação de
@@ -215,12 +218,6 @@ as decisões do projeto, sem uso de dados sensíveis da instituição parceira.
 
 ## 2.1 Objetivos
 
-O projeto busca desenvolver análise de dados em escala a partir de um conjunto de dados históricos
-de investimentos em mídia digital, aplicando métodos analíticos e preparando uma interface para
-visualização dos resultados. A aprendizagem de máquina foi delimitada a um experimento sintético
-de CPR no Google Ads, executado separadamente do protótipo. Essa finalidade corresponde ao tema norteador da UNIVESP e
-articula o problema identificado junto à comunidade parceira (Grupo do Projeto Integrador, 2026).
-
 ### 2.1.1 Objetivo geral
 
 Desenvolver uma solução analítica para organizar dados históricos de investimentos em mídia digital
@@ -229,23 +226,12 @@ ensino.
 
 ### 2.1.2 Objetivos específicos
 
-- Consolidar dados históricos de investimento e desempenho de campanhas provenientes de fontes distintas em uma estrutura adequada à análise.
-- Identificar e organizar indicadores que permitam comparar o desempenho de canais e campanhas.
-- Implementar rotinas determinísticas para calcular indicadores a partir dos dados consolidados, com parâmetros e resultados passíveis de conferência.
-- Avaliar, em dados históricos integralmente sintéticos de Google Ads, uma regressão supervisionada para estimar CPR, comparando-a à persistência do CPR histórico elegível e registrando métricas, controles de leakage e limitações.
-- Empregar IA agêntica via linha de comando como apoio controlado à formulação, execução e interpretação de cenários de simulação, sem substituir os cálculos determinísticos, o modelo de aprendizagem de máquina ou a revisão humana.
-- Desenvolver uma interface web que apresente os indicadores de forma compreensível para a gestão.
-- Avaliar a versão do protótipo com profissionais da instituição parceira, registrando as contribuições recebidas para sua evolução.
-
-No estado documentado, os dados de investimento e desempenho foram organizados por módulo em
-cenários sintéticos; não houve consolidação de fontes operacionais distintas em uma base
-institucional. Os indicadores, os cálculos determinísticos e a interface foram implementados no
-ambiente acadêmico com esses dados; o experimento de CPR foi executado e comparado às referências
-definidas. A avaliação da interface foi parcial: uma profissional examinou Captação, Matrículas e
-o ajuste temporal, não Ads ou ML. O responsável técnico confirmou o uso de agentes de IA como
-apoio ao desenvolvimento, à revisão e à verificação técnico-científica, descrito em 2.5.12. Não
-há registro de uma simulação agêntica específica via linha de comando; portanto, a modalidade de
-simulação prevista no objetivo de IA não é declarada atendida integralmente.
+1. Organizar dados de captação, matrículas e mídia digital em uma estrutura analítica.
+2. Construir indicadores comparáveis de investimentos, campanhas e resultados de captação.
+3. Desenvolver uma interface web para visualizar e analisar os indicadores.
+4. Avaliar experimentalmente a previsão do custo por resultado (CPR) com aprendizagem de máquina.
+5. Aplicar práticas de IA agêntica como apoio à construção, análise e verificação da solução.
+6. Avaliar o protótipo com profissional da instituição parceira e incorporar contribuições viáveis.
 
 ## 2.2 Justificativa e delimitação do problema
 
@@ -302,7 +288,7 @@ marketing ligadas a apoio à decisão e impacto financeiro. Assim, a contribuiç
 não é apenas uma interface nem uma explicação gerada por IA. O recorte de aprendizagem de máquina
 adotado é uma regressão supervisionada para CPR no Google Ads, com dados sintéticos. O modelo,
 a variável-alvo, as entradas, o particionamento e as métricas do experimento executado são
-documentados nas subseções 2.5.11 e 3.4.4.
+documentados nas subseções 2.5.10 e 3.1.6.
 
 ### 2.3.1 Marketing digital e decisão orientada por dados
 
@@ -536,6 +522,23 @@ perguntas de gestão e formas de apresentação são relevantes. A descrição d
 técnica construída dos procedimentos ainda planejados; atividades não realizadas não são
 apresentadas como resultados.
 
+O desenvolvimento funcional foi organizado em quatro fases. Elas indicam o escopo dos módulos,
+enquanto V1, V2 e V3 identificam versões sucessivas da interface; uma versão não corresponde a
+uma fase. No estado final documentado, as Fases 1 e 2 estão implementadas no ambiente acadêmico,
+e as Fases 3 e 4 permanecem bloqueadas.
+
+| Fase | Escopo | Estado final |
+|---|---|---|
+| Fase 1 | Captação e Matrículas | Implementada |
+| Fase 2 | Mídia paga: Visão Geral, Google Ads, Meta Ads, Estratégia e experimento de CPR | Implementada no ambiente acadêmico local |
+| Fase 3 | Conteúdo orgânico | Bloqueada |
+| Fase 4 | Gestão e Arquitetura | Bloqueada |
+
+O método parte da escuta e dos requisitos, passa pela organização dos dados e pelo cálculo dos
+indicadores, constrói a interface, examina separadamente o CPR experimental e o apoio de IA
+agêntica e termina com avaliação externa, decisão do grupo, implementação e verificação técnica.
+Os procedimentos específicos e seus limites são descritos nas subseções seguintes.
+
 ### 2.5.1 Delineamento aplicado e Design Thinking
 
 O projeto possui caráter aplicado: parte de uma demanda apresentada pela instituição parceira e
@@ -572,7 +575,86 @@ de investimentos em mídia digital para apoiar a tomada de decisão. A definiç�
 de indicadores, comparações, filtros, visualizações e rastreabilidade. A análise não deve confundir
 associação agregada com causalidade, nem apresentar dado ausente como zero ou estimativa silenciosa.
 
-### 2.5.4 Criar e prototipar
+### 2.5.4 Fontes de dados, recortes temporais e confidencialidade
+
+Cada fonte deve ter período de referência e unidade de análise identificados antes de qualquer
+comparação. Métricas de fontes ou janelas temporais distintas não podem ser somadas ou comparadas
+como se representassem o mesmo fenômeno. No ambiente acadêmico, o recorte demonstrado para
+captação e matrículas é inteiramente sintético: abrange as safras de 2022 a 2026, com última
+observação simulada em 15/08/2026. Não há período histórico real autorizado para Google Ads, Meta Ads ou
+conteúdo orgânico. O experimento de CPR utiliza uma cronologia fictícia independente, de 2017 a 2023,
+sem correspondência com campanhas ou períodos operacionais da instituição.
+
+Os dados reais, o código operacional e os relatórios operacionais detalhados permanecem fora
+deste repositório. No ambiente acadêmico, são usados somente dados sintéticos, sem
+identificadores pessoais, credenciais, nomes de contas ou informações comerciais sensíveis.
+
+### 2.5.5 Preparação, governança e rastreabilidade dos dados
+
+A preparação dos cenários documenta origem, nomes, formatos, tipos, valores ausentes e
+consolidação em artefatos versionados. Cada indicador deve preservar fonte, período, unidade de
+análise e fórmula. Problemas de qualidade em
+pipelines podem ocorrer na ingestão, integração, limpeza e transformação, o que reforça a
+necessidade de documentar as regras aplicadas (Foidl *et al.*, 2024).
+
+Na implementação acadêmica, os cenários são gerados localmente com parâmetros e sementes fixos,
+gravados em arquivos JSON versionados e lidos por contratos locais da aplicação. Os filtros
+selecionam os registros do recorte; funções separadas calculam somas, razões e séries antes da
+apresentação em componentes web. Não há ingestão de base operacional, banco de dados ou API de
+anúncios nesse fluxo.
+
+Valores ausentes, incompatibilidades de período e falhas estruturais são sinalizados; não são
+convertidos silenciosamente em zero nem em estimativas. Essa regra distingue um indicador medido de
+um dado indisponível e possibilita auditoria posterior.
+
+### 2.5.6 Níveis de interpretação analítica
+
+A interpretação dos indicadores adota três níveis com escopos distintos. O primeiro reúne regras
+de negócio e indicadores determinísticos que comparam valores observados a requisitos declarados.
+O segundo realiza leituras agregadas do funil de captação e das matrículas, quando os períodos e os
+campos permitem esse cruzamento. O terceiro registra os limites de atribuição individual, isto é,
+os casos em que as fontes disponíveis não permitem ligar uma ação de mídia, um contato e uma
+matrícula específica.
+
+Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem de máquina e o
+apoio de IA são procedimentos separados, descritos em 2.5.10 e 2.5.11. Essa separação impede que um
+resultado de regra seja apresentado como causalidade ou que uma correlação agregada seja tratada
+como atribuição por canal. Quando uma informação necessária não
+estiver disponível, o resultado será sinalizado como não verificável (Saura, 2021; Li *et al.*,
+2016).
+
+### 2.5.7 Indicadores, regras de negócio e cenários determinísticos
+
+Os indicadores são calculados por rotinas determinísticas, com fórmulas e parâmetros registrados.
+Podem incluir investimento, impressões, alcance, frequência, cliques, CTR, CPC, conversões, taxa de
+conversão, CPA, custo por mil impressões e participação de impressões, conforme os campos
+efetivamente disponibilizados. A interpretação ocorre no contexto do objetivo da campanha.
+
+Nos módulos Ads implementados, CTR é cliques divididos por impressões (em porcentagem), CPC é
+investimento dividido por cliques e CPM é investimento dividido por impressões, multiplicado por
+mil. Em Google Ads, CPR é investimento dividido por conversões registradas no cenário; sem
+denominador válido, a razão permanece indefinida. Em Captação, contatos, visitas e matrículas são
+contagens do cenário sintético no recorte selecionado; as taxas entre etapas são recalculadas a
+partir dessas contagens, sem vincular pessoas individualmente.
+
+Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento
+devem ser explicitados antes da construção de cenários. Cenários mínimo, ideal e agressivo, quando
+aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados. Eles não
+projetarão matrícula, não garantirão retorno e não ocultarão conflitos entre regras ou limitações
+dos dados (Saura; Palos-Sánchez; Cerdá Suárez, 2017; Martins, 2019).
+
+### 2.5.8 Auditoria, reprodutibilidade e limites de atribuição
+
+Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de
+transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite
+conferir resultados computacionais e suas condições de produção (Peng, 2011).
+
+Impressão, clique, conversão de plataforma, conversa, contato, visita e matrícula não são tratados
+como sinônimos. Quando houver apenas dados agregados, a análise poderá descrever associação entre
+etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal específico (Li *et al.*,
+2016).
+
+### 2.5.9 Criar e prototipar
 
 Na etapa de criar e prototipar, o grupo relacionou as necessidades aos campos disponíveis, às
 regras de cálculo e às alternativas de visualização. O plano funcional foi dividido em quatro
@@ -619,107 +701,7 @@ Tabela 3 – Organização funcional das fases e relação com as versões da in
 Fonte: Elaborado pelo grupo com base no plano de fases, nos registros das versões e no estado
 versionado do protótipo (2026).
 
-### 2.5.5 Implementar, testar, validar e ajustar
-
-Para tornar rastreáveis as avaliações, cada sessão registrou a versão da interface apresentada.
-P1 utilizou inicialmente a V1, sem Ads ou CPR. Após a sugestão FB-V1-P1-001 e a aprovação do
-grupo, a V2 recebeu a visualização temporal consolidada; a mesma P1 reavaliou essa versão.
-Os módulos comuns às duas versões utilizam os mesmos dados sintéticos, métricas e fórmulas.
-Em terceira aplicação sucessiva, P1 avaliou a V2 de forma ampliada. O responsável aceitou os
-sete feedbacks registrados, incorporados na V3. Nenhum dos três momentos constitui amostra
-independente ou comparação experimental controlada. A V3 ainda não foi avaliada por P1.
-
-A participante avaliou as versões indicadas em seus registros anonimizados. As respostas
-documentaram compreensão dos indicadores, utilidade percebida, dificuldades e sugestões.
-Técnicas de pesquisa de experiência do usuário
-apoiam a identificação de necessidades e a avaliação de serviços de informação (Pinheiro; Dias,
-2023).
-
-P1, gerente de Marketing, participou presencialmente em 07/10/2026 dos dois primeiros momentos;
-TCLE obtido: SIM nessas aplicações. O documento assinado permanece fora do repositório. Data,
-modalidade e TCLE específicos da terceira aplicação aguardam confirmação; não são inferidos dos
-registros anteriores.
-
-### 2.5.6 Níveis de interpretação analítica
-
-A interpretação dos indicadores adota três níveis com escopos distintos. O primeiro reúne regras
-de negócio e indicadores determinísticos que comparam valores observados a requisitos declarados.
-O segundo realiza leituras agregadas do funil de captação e das matrículas, quando os períodos e os
-campos permitem esse cruzamento. O terceiro registra os limites de atribuição individual, isto é,
-os casos em que as fontes disponíveis não permitem ligar uma ação de mídia, um contato e uma
-matrícula específica.
-
-Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem de máquina e o
-apoio de IA são procedimentos separados, descritos em 2.5.11 e 2.5.12. Essa separação impede que um
-resultado de regra seja apresentado como causalidade ou que uma correlação agregada seja tratada
-como atribuição por canal. Quando uma informação necessária não
-estiver disponível, o resultado será sinalizado como não verificável (Saura, 2021; Li *et al.*,
-2016).
-
-### 2.5.7 Fontes de dados, recortes temporais e confidencialidade
-
-Cada fonte deve ter período de referência e unidade de análise identificados antes de qualquer
-comparação. Métricas de fontes ou janelas temporais distintas não podem ser somadas ou comparadas
-como se representassem o mesmo fenômeno. No ambiente acadêmico, o recorte demonstrado para
-captação e matrículas é inteiramente sintético: abrange as safras de 2022 a 2026, com última
-observação simulada em 15/08/2026. Não há período histórico real autorizado para Google Ads, Meta Ads ou
-conteúdo orgânico. O experimento de CPR utiliza uma cronologia fictícia independente, de 2017 a 2023,
-sem correspondência com campanhas ou períodos operacionais da instituição.
-
-Os dados reais, o código operacional e os relatórios operacionais detalhados permanecem fora
-deste repositório. No ambiente acadêmico, são usados somente dados sintéticos, sem
-identificadores pessoais, credenciais, nomes de contas ou informações comerciais sensíveis.
-
-### 2.5.8 Preparação, governança e rastreabilidade dos dados
-
-A preparação dos cenários documenta origem, nomes, formatos, tipos, valores ausentes e
-consolidação em artefatos versionados. Cada indicador deve preservar fonte, período, unidade de
-análise e fórmula. Problemas de qualidade em
-pipelines podem ocorrer na ingestão, integração, limpeza e transformação, o que reforça a
-necessidade de documentar as regras aplicadas (Foidl *et al.*, 2024).
-
-Na implementação acadêmica, os cenários são gerados localmente com parâmetros e sementes fixos,
-gravados em arquivos JSON versionados e lidos por contratos locais da aplicação. Os filtros
-selecionam os registros do recorte; funções separadas calculam somas, razões e séries antes da
-apresentação em componentes web. Não há ingestão de base operacional, banco de dados ou API de
-anúncios nesse fluxo.
-
-Valores ausentes, incompatibilidades de período e falhas estruturais são sinalizados; não são
-convertidos silenciosamente em zero nem em estimativas. Essa regra distingue um indicador medido de
-um dado indisponível e possibilita auditoria posterior.
-
-### 2.5.9 Indicadores, regras de negócio e cenários determinísticos
-
-Os indicadores são calculados por rotinas determinísticas, com fórmulas e parâmetros registrados.
-Podem incluir investimento, impressões, alcance, frequência, cliques, CTR, CPC, conversões, taxa de
-conversão, CPA, custo por mil impressões e participação de impressões, conforme os campos
-efetivamente disponibilizados. A interpretação ocorre no contexto do objetivo da campanha.
-
-Nos módulos Ads implementados, CTR é cliques divididos por impressões (em porcentagem), CPC é
-investimento dividido por cliques e CPM é investimento dividido por impressões, multiplicado por
-mil. Em Google Ads, CPR é investimento dividido por conversões registradas no cenário; sem
-denominador válido, a razão permanece indefinida. Em Captação, contatos, visitas e matrículas são
-contagens do cenário sintético no recorte selecionado; as taxas entre etapas são recalculadas a
-partir dessas contagens, sem vincular pessoas individualmente.
-
-Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento
-devem ser explicitados antes da construção de cenários. Cenários mínimo, ideal e agressivo, quando
-aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados. Eles não
-projetarão matrícula, não garantirão retorno e não ocultarão conflitos entre regras ou limitações
-dos dados (Saura; Palos-Sánchez; Cerdá Suárez, 2017; Martins, 2019).
-
-### 2.5.10 Auditoria, reprodutibilidade e limites de atribuição
-
-Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de
-transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite
-conferir resultados computacionais e suas condições de produção (Peng, 2011).
-
-Impressão, clique, conversão de plataforma, conversa, contato, visita e matrícula não são tratados
-como sinônimos. Quando houver apenas dados agregados, a análise poderá descrever associação entre
-etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal específico (Li *et al.*,
-2016).
-
-### 2.5.11 Protocolo experimental de aprendizagem de máquina
+### 2.5.10 Protocolo experimental de aprendizagem de máquina
 
 Foi executado um experimento supervisionado, exploratório e reproduzível, restrito ao CPR do
 Google Ads. Neste recorte, CPR é o custo por conversão registrada no cenário, calculado como
@@ -765,7 +747,7 @@ com intercepto, treinada apenas nas amostras anteriores ao corte. Foram calculad
 R² no conjunto de teste, mantendo registro de previsões e condições de execução, conforme o
 princípio de reprodutibilidade computacional (Peng, 2011). A execução ocorre localmente via CLI,
 sem API real. A interface Google Ads da Fase 2 exibe o artefato de resultados da CLI, sem
-executar treinamento no navegador ou recomendar investimento. Os resultados estão em 3.4.4.
+executar treinamento no navegador ou recomendar investimento. Os resultados estão em 3.1.6.
 
 MAE é o erro absoluto médio; RMSE é a raiz do erro quadrático médio e penaliza mais os erros
 grandes (Hyndman; Koehler, 2006). R² compara a soma dos erros quadráticos à variação dos valores observados em torno da
@@ -801,7 +783,7 @@ Os procedimentos locais estão registrados em
 `npm run ml:google-cpr:verificar` e `npm run ml:google-cpr:sazonal:verificar` repetem os cálculos e
 conferem os resultados com os arquivos versionados sem gravá-los.
 
-### 2.5.12 Uso assistivo de IA agêntica e verificação humana
+### 2.5.11 Uso assistivo de IA agêntica e verificação humana
 
 Durante o desenvolvimento do protótipo e da documentação técnica, agentes de inteligência
 artificial foram utilizados como apoio à leitura e auditoria do repositório, programação, revisão
@@ -820,36 +802,53 @@ validação independente dos resultados.
 Arquitetura, metodologia, escolha dos modelos, interpretação dos resultados, aprovação das
 alterações, validação comunitária e conclusões permaneceram sob responsabilidade humana. Os
 agentes não produziram as estimativas de CPR: elas resultaram da regressão linear e dos baselines
-documentados em 2.5.11. Não há registro de experimento específico de simulação agêntica na
+documentados em 2.5.10. Não há registro de experimento específico de simulação agêntica na
 solução analítica. As ferramentas não geraram respostas de P1 nem substituíram entrevistas; os
 registros originais dos três momentos de validação foram preservados.
+
+### 2.5.12 Implementar, testar, validar e ajustar
+
+O tratamento de cada contribuição seguiu a cadeia observação ou feedback, análise de viabilidade
+e compatibilidade dos dados pelo grupo, decisão registrada, alteração implementada e verificação
+técnica. A avaliação externa examinou clareza, compreensão e utilidade percebida; a verificação
+independente examinou cálculos, integridade, reprodutibilidade, versões e bloqueios. Uma sugestão
+aceita não comprova, por si, a correção técnica da solução.
+
+Para tornar rastreáveis as avaliações, cada sessão registrou a versão da interface apresentada.
+P1 utilizou inicialmente a V1, sem Ads ou CPR. Após a sugestão FB-V1-P1-001 e a aprovação do
+grupo, a V2 recebeu a visualização temporal consolidada; a mesma P1 reavaliou essa versão.
+Os módulos comuns às duas versões utilizam os mesmos dados sintéticos, métricas e fórmulas.
+Em terceira aplicação sucessiva, P1 avaliou a V2 de forma ampliada. O responsável aceitou os
+sete feedbacks registrados, incorporados na V3. Nenhum dos três momentos constitui amostra
+independente ou comparação experimental controlada. A V3 ainda não foi avaliada por P1.
+
+A participante avaliou as versões indicadas em seus registros anonimizados. As respostas
+documentaram compreensão dos indicadores, utilidade percebida, dificuldades e sugestões.
+Técnicas de pesquisa de experiência do usuário
+apoiam a identificação de necessidades e a avaliação de serviços de informação (Pinheiro; Dias,
+2023).
+
+P1, gerente de Marketing, participou presencialmente em 07/10/2026 dos dois primeiros momentos;
+TCLE obtido: SIM nessas aplicações. O documento assinado permanece fora do repositório. Data,
+modalidade e TCLE específicos da terceira aplicação aguardam confirmação; não são inferidos dos
+registros anteriores.
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
 Este capítulo distingue resultados comprovados, desenvolvimento em curso e itens planejados. No
 estado local após a implementação da V3, as Fases 1 e 2 estão ativas; Fases 3 e 4 permanecem
 planejadas e bloqueadas. A Fase 2 utiliza Google Ads e Meta Ads integralmente sintéticos,
-sem integração real. O experimento de CPR descrito em 3.4.4 continua executado pela CLI;
+sem integração real. O experimento de CPR descrito em 3.1.6 continua executado pela CLI;
 a interface apenas apresenta seus resultados reproduzíveis, sem treinamento no navegador.
 A ativação técnica não constitui validação comunitária nem novo deploy.
-Não houve consolidação de fontes institucionais reais. Houve apoio de agentes de IA ao
-desenvolvimento e à verificação técnico-científica, mas não há execução documentada de uma
-simulação agêntica específica via linha de comando; o objetivo correspondente foi atendido apenas
-parcialmente.
+Não houve consolidação de fontes institucionais reais. As práticas de IA agêntica foram aplicadas
+como apoio à construção, análise e verificação da solução, sob supervisão humana; o objetivo 5
+foi atendido nesse escopo assistivo. Não houve experimento independente de eficácia da IA
+agêntica nem execução documentada de simulação agêntica específica via linha de comando.
 
-## 3.1 Contato inicial e necessidades identificadas
+## 3.1 Desenvolvimento e resultados técnicos
 
-Na conversa inicial, a gestora de marketing apresentou a necessidade de compreender quanto investir
-em tráfego pago e avaliar a adequação dos valores aos objetivos da instituição. Em contato posterior
-com a direção/mantenedora, o grupo buscou identificar informações e indicadores para acompanhar os
-investimentos e resultados ao longo do tempo. O levantamento inicial também registrou a necessidade
-de reunir dados dispersos, comparar resultados de canais e campanhas e apoiar decisões sobre a
-distribuição do orçamento. Esses pontos orientaram indicadores, comparações e visualizações do
-protótipo; descrevem o contato inicial e não constituem validação ou aprovação da interface. O
-levantamento foi apoiado pelo questionário estruturado da comunidade externa preservado no
-repositório, distinto dos instrumentos posteriores de validação da V1/V2.
-
-## 3.2 Estado real das fases do protótipo
+### 3.1.1 Estado real das fases do protótipo
 
 Tabela 5 – Estado das fases do protótipo
 
@@ -862,13 +861,13 @@ Tabela 5 – Estado das fases do protótipo
 
 Fonte: Elaborado pelo grupo com base no estado versionado do repositório (2026).
 
-O quadro registra o estado das fases em 06/10/2026, distinto do plano exposto em 2.5.4. Na
+O quadro registra o estado das fases em 06/10/2026, distinto do plano exposto em 2.5.9. Na
 composição atual, a Fase 1 integra V1, V2 e V3; a Fase 2 está acessível em V2 e V3 no ambiente
 acadêmico local. A publicação anterior da Fase 1 não foi ampliada por essa liberação local. As
 Fases 3 e 4 continuam
 bloqueadas e não foram entregues funcionalmente.
 
-## 3.3 Estratégia incremental e arquitetura da solução
+### 3.1.2 Estratégia incremental e arquitetura da solução
 
 O projeto implementa uma aplicação web acadêmica independente do ambiente operacional. Dados
 sintéticos versionados são lidos por contratos locais, agregados por rotinas determinísticas e
@@ -890,9 +889,7 @@ V1: Captação e Matrículas | V2: Fases 1 e 2 | V3: Fases 1 e 2 com feedbacks i
 CLI CPR → artefatos reproduzíveis → apresentação em Google Ads na V2 e V3
 ```
 
-## 3.4 Resultados técnicos
-
-### 3.4.1 Módulo de Captação
+### 3.1.3 Módulo de Captação
 
 O módulo de Captação apresenta o funil sintético de contatos, visitas e matrículas. A página permite
 selecionar safras e ciclos, consultar indicadores do recorte e visualizar as taxas derivadas entre
@@ -916,7 +913,7 @@ Nota: as figuras da V1 preservam as capturas da interface apresentada a P1, incl
 legado “PIJ410 — Projeto Integrador em Computação III”. O componente correto deste trabalho é
 PJI410 — Projeto Integrador em Computação IV.
 
-### 3.4.2 Módulo de Matrículas
+### 3.1.4 Módulo de Matrículas
 
 O módulo de Matrículas apresenta histórico sintético por safra, ciclo, turma e mês. A interface
 permite filtrar os recortes e distinguir total de matrículas, rematrículas, novas matrículas e
@@ -934,7 +931,7 @@ Figura 2 – Indicadores e composição por safra em Matrículas na V1
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
-### 3.4.3 Módulos de Ads e componentes ainda planejados
+### 3.1.5 Módulos de Ads e componentes ainda planejados
 
 A V2 disponibiliza localmente Visão Geral Ads, Google Ads, Meta Ads e Estratégia, todos com dados
 sintéticos. Não há integração com Google Ads API, Meta API ou CRM. Google Ads apresenta
@@ -957,9 +954,9 @@ Figura 3 – Visão geral acadêmica de Ads na V2
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
-### 3.4.4 Experimento de aprendizagem de máquina para CPR
+### 3.1.6 Experimento de aprendizagem de máquina para CPR
 
-O experimento descrito em 2.5.11 foi efetivamente executado e pode ser reproduzido localmente
+O experimento descrito em 2.5.10 foi efetivamente executado e pode ser reproduzido localmente
 via CLI. Os artefatos sintéticos registram condições de execução, amostras e previsões.
 O treinamento permanece separado da interface: a Fase 2 acadêmica está ativa localmente e
 Google Ads exibe o artefato de resultados, independente dos filtros de consulta. Não há treinamento
@@ -1053,24 +1050,21 @@ Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
-### 3.4.5 Testes técnicos
+## 3.2 Avaliação com a comunidade e alterações decorrentes
 
-Na verificação técnica registrada em 06/10/2026, passaram `npm test`, lint, TypeScript, build,
-os verificadores dos dois experimentos CPR e 38 verificações de não vazamento. Quarenta
-verificações HTTP locais cobriram as rotas V1/V2, o acesso da extensão sazonal somente na V2 e as
-rotas bloqueadas das Fases 3 e 4. A reprodução dos experimentos foi comparada byte a byte aos
-artefatos versionados.
-Na implementação da V3, `npm run build`, `npm test` e `npm run test:interface:http` voltaram a
-passar. A suíte incluiu verificações da nova taxa com denominador zero, das regras sintéticas,
-das 17 assinaturas protegidas da V1, da disponibilidade das rotas V1/V2/V3 e do bloqueio das
-Fases 3 e 4. Capturas locais da V3 foram geradas para revisão visual humana, sem substituir as
-figuras históricas. Esses verificadores comprovam execução técnica, não validação de uso da V3
-por P1.
+### 3.2.1 Contato inicial e necessidades identificadas
 
-Os testes históricos e atuais não equivalem às três aplicações comunitárias da mesma P1 nem
-demonstram impacto institucional.
+Na conversa inicial, a gestora de marketing apresentou a necessidade de compreender quanto investir
+em tráfego pago e avaliar a adequação dos valores aos objetivos da instituição. Em contato posterior
+com a direção/mantenedora, o grupo buscou identificar informações e indicadores para acompanhar os
+investimentos e resultados ao longo do tempo. O levantamento inicial também registrou a necessidade
+de reunir dados dispersos, comparar resultados de canais e campanhas e apoiar decisões sobre a
+distribuição do orçamento. Esses pontos orientaram indicadores, comparações e visualizações do
+protótipo; descrevem o contato inicial e não constituem validação ou aprovação da interface. O
+levantamento foi apoiado pelo questionário estruturado da comunidade externa preservado no
+repositório, distinto dos instrumentos posteriores de validação da V1/V2.
 
-## 3.5 Validação da solução com a comunidade
+### 3.2.2 Avaliação da solução pela participante
 
 ### Primeira interação de P1 — V1
 
@@ -1126,11 +1120,11 @@ O instrumento, as respostas literais e as interpretações separadas estão em
 e `docs/validacao/feedback-v2-v3.md`. São três momentos sucessivos da mesma pessoa, sem nova
 amostra independente. P1 avaliou a V2; a V3 decorrente ainda não foi avaliada pela participante.
 
-## 3.6 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
+### 3.2.3 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
 
 Esta matriz distingue as necessidades iniciais do que foi efetivamente observado nos dois
 primeiros momentos da mesma participante. A terceira aplicação ampliada está descrita na seção
-3.5 e não altera retroativamente o escopo desses dois registros.
+3.2.2 e não altera retroativamente o escopo desses dois registros.
 
 Tabela 10 – Comparação entre necessidades iniciais e ciclo V1–V2
 
@@ -1174,7 +1168,7 @@ Figura 6 – Evolução temporal consolidada de Captação na V2
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
-## 3.7 Rastreabilidade entre necessidade, solução e validação
+### 3.2.4 Rastreabilidade entre necessidade, solução e avaliação externa
 
 A tabela relaciona a escuta inicial, a solução construída e o alcance das duas primeiras
 aplicações. As dimensões de Ads não foram apresentadas nessas tarefas; a terceira aplicação
@@ -1201,36 +1195,35 @@ Tabela 13 – Rastreabilidade do ajuste FB-V1-P1-001
 
 Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026).
 
-Na avaliação ampliada da V2, a cadeia de rastreabilidade foi estendida à V3:
+Na avaliação ampliada da V2, a cadeia de rastreabilidade foi estendida aos sete feedbacks
+aceitos e incorporados à V3. A Tabela 14 reúne origem, análise, decisão, alteração e verificação
+de cada item; as respostas literais permanecem em `docs/validacao/feedback-v2-v3.md`.
 
-| Feedback | Evidência da V2 | Decisão do responsável | Incorporação na V3 | Avaliação posterior por P1 |
-|---|---|---|---|---|
-| FB-V2-P1-001 | Q6: efetivação visita–matrícula | Aceito | Taxa mensal do funil | Não realizada |
-| FB-V2-P1-002 | Q6: matrículas/rematrículas por série | Aceito | Composição por série existente | Não realizada |
-| FB-V2-P1-003 | Q7–9: resumo mensal de Ads | Aceito | Visão Geral executiva por mês | Não realizada |
-| FB-V2-P1-004 | Q9: evolução de leads no Google | Aceito | Investimento e leads simulados por mês | Não realizada |
-| FB-V2-P1-005 | Q9: alcance, investimento e leads Meta | Aceito | Métricas distintas e gráficos legíveis | Não realizada |
-| FB-V2-P1-006 | Q10: integração temporal em Estratégia | Aceito | Painéis de investimento e contagens sem atribuição | Não realizada |
-| FB-V2-P1-007 | Comentário espontâneo e Q11–13: previsão | Aceito | Limites do experimento explicitados, sem alterar o algoritmo | Não realizada |
-
-Fonte: Instrumento, respostas literais e implementação documentados em
-`docs/validacao/feedback-v2-v3.md` (2026). A coluna de avaliação posterior permanece vazia de
-evidência comunitária porque P1 não avaliou a V3.
-
-## 3.8 Feedback e ajustes decorrentes
+### 3.2.5 Feedback, decisões e alterações implementadas
 
 O primeiro ajuste comunitário documentado foi a consolidação temporal de Captação. A observação
 de P1 foi a dispersão das visualizações; o resultado posterior foi sua própria percepção na V2,
 sem demonstração de solução definitiva ou eficácia geral. A terceira aplicação produziu sete
 feedbacks adicionais, aceitos pelo responsável e implementados na V3.
 
-Tabela 14 – Feedback e ajuste decorrente da validação
+Tabela 14 – Rastreabilidade das avaliações, decisões e alterações implementadas
 
-| Feedback ou observação | Decisão do grupo | Ajuste realizado | Evidência | Situação |
-|---|---|---|---|---|
-| Gráficos temporais em diversos lugares (FB-V1-P1-001) | O grupo aprovou a consolidação sugerida por P1 | V2 reuniu Contatos, Visitas e Matrículas em gráfico temporal multissérie selecionável | Na reavaliação, P1 relatou comparação facilitada, respondeu “Não.” sobre dificuldades e “Por enquanto, tudo ok.” sobre novas alterações | Implementado na V2; evidência individual positiva |
+| Origem | Feedback | Análise e decisão do grupo | Alteração implementada | Versão | Verificação técnica |
+|---|---|---|---|---|---|
+| P1/V1 | FB-V1-P1-001: gráficos temporais dispersos | Consolidação aprovada, preservando as séries do mesmo funil | Gráfico multissérie selecionável de Contatos, Visitas e Matrículas | V2 | Testes de V2 e preservação dos 17 hashes da V1; P1 reavaliou a apresentação |
+| P1/V2 ampliada | FB-V2-P1-001: efetivação visita–matrícula | Aceito para o mesmo funil, com denominador definido | Taxa mensal e indisponibilidade quando visitas são zero ou ausentes | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1/V2 ampliada | FB-V2-P1-002: matrículas e rematrículas por série | Aceito apenas para séries existentes no dado sintético | Comparação por série; safra sem classificação excluída | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1/V2 ampliada | FB-V2-P1-003: resumo mensal de Ads | Aceito; detalhes permanecem nos painéis específicos | Seletor mensal, indicadores e tabela por canal na Visão Geral | V3 | `test:interface:http` e captura local |
+| P1/V2 ampliada | FB-V2-P1-004: evolução de leads no Google | Aceito com rótulo de simulação e distinção de conversões | Investimento e leads simulados por mês | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1/V2 ampliada | FB-V2-P1-005: alcance, investimento e leads Meta | Aceito mantendo alcance, lead e resultado distintos | Métricas e gráficos separados no Meta Ads | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1/V2 ampliada | FB-V2-P1-006: comparação temporal em Estratégia | Aceito sem inferir atribuição causal entre cenários | Investimento por canal e contagens de leads/matrículas no mesmo eixo temporal | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1/V2 ampliada | FB-V2-P1-007: previsão percebida como variável | Aceito como melhoria de comunicação, sem alterar algoritmo ou valores | Explicação simples, aviso de desempenho limitado e gráfico histórico/previsão | V3 | `test:google-cpr:sazonal` e reprodução do artefato |
 
 Fonte: Elaborado pelo grupo (2026).
+
+Ads e o experimento inicial de CPR entraram na V2 por evolução técnica e acadêmica independente
+do feedback FB-V1-P1-001. A tabela registra implementação e verificação da V3; P1 avaliou a
+V2 e não reavaliou a V3.
 
 **Implementação decorrente da avaliação ampliada da V2.** FB-V2-P1-001 acrescentou a taxa mensal
 de efetivação visita–matrícula do mesmo funil; FB-V2-P1-002, a composição por série existente na
@@ -1243,7 +1236,34 @@ Esses itens foram verificados tecnicamente, mas não avaliados novamente por P1.
 provisórias foram produzidas apenas para revisão visual humana; não substituem as figuras
 históricas do relatório.
 
-## 3.9 Limitações
+## 3.3 Verificação técnica da solução e limitações
+
+### 3.3.1 Testes e verificação técnica
+
+Na verificação técnica registrada em 06/10/2026, passaram `npm test`, lint, TypeScript, build,
+os verificadores dos dois experimentos CPR e 38 verificações de não vazamento. Quarenta
+verificações HTTP locais cobriram as rotas V1/V2, o acesso da extensão sazonal somente na V2 e as
+rotas bloqueadas das Fases 3 e 4. A reprodução dos experimentos foi comparada byte a byte aos
+artefatos versionados.
+Na implementação da V3, `npm run build`, `npm test` e `npm run test:interface:http` voltaram a
+passar. A suíte incluiu verificações da nova taxa com denominador zero, das regras sintéticas,
+das 17 assinaturas protegidas da V1, da disponibilidade das rotas V1/V2/V3 e do bloqueio das
+Fases 3 e 4. Capturas locais da V3 foram geradas para revisão visual humana, sem substituir as
+figuras históricas. Esses verificadores comprovam execução técnica, não validação de uso da V3
+por P1.
+
+Os testes históricos e atuais não equivalem às três aplicações comunitárias da mesma P1 nem
+demonstram impacto institucional.
+
+A verificação técnica cobre propriedades que as respostas de P1 não poderiam comprovar: cálculo
+dos indicadores e da taxa com divisão por zero tratada como indisponível; integridade e
+determinismo dos dados sintéticos; distinção entre alcance, lead e conversão; preservação dos
+artefatos e das métricas de ML; reprodução dos experimentos; 17 hashes protegidos da V1;
+rotas das versões e bloqueio das Fases 3 e 4; e verificações de não vazamento. A comparação
+temporal entre Ads e Matrículas permanece descritiva, sem atribuição causal. A implementação
+da V3 passou por esses verificadores, mas não recebeu avaliação posterior de P1.
+
+### 3.3.2 Limitações
 
 Os módulos funcionais utilizam dados inteiramente sintéticos e não mantêm conexão operacional com
 APIs ou contas de anúncios, CRM, sistemas acadêmicos ou bases da instituição. Por isso, o protótipo
@@ -1299,9 +1319,10 @@ sete feedbacks aceitos da avaliação ampliada da V2, por meio de apresentação
 de matrículas por série, efetivação de visitas, comparações temporais e comunicação mais clara do
 ML. A comparação entre canais limita-se a investimentos em períodos compatíveis, sem equiparar resultados de
 denominadores diferentes. Testes automatizados, verificações de não vazamento e reprodução dos
-artefatos sustentam o funcionamento técnico descrito, não a eficácia institucional. Agentes de IA
-apoiaram o desenvolvimento, a auditoria e a verificação técnico-científica sob revisão humana;
-isso não demonstra execução de uma simulação agêntica específica via linha de comando. A avaliação
+artefatos sustentam o funcionamento técnico descrito, não a eficácia institucional. Práticas de IA
+agêntica foram aplicadas na construção, análise e verificação da solução sob revisão humana,
+atendendo ao objetivo 5 nesse escopo assistivo. Isso não demonstra eficácia da IA agêntica nem
+execução de uma simulação agêntica específica via linha de comando. A avaliação
 com a profissional alcançou Captação e Matrículas nos dois primeiros momentos e, no terceiro,
 também Ads, Estratégia e apresentação do ML na V2. A V3 não recebeu avaliação comunitária
 posterior. Fases 3 e 4 permaneceram bloqueadas.
