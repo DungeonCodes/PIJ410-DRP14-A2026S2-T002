@@ -479,6 +479,8 @@ encerra H10 sem alterar o conteúdo científico ou o conjunto de fontes do traba
 
 **Motivo:** evitar transferir resultados de benchmarks ou nomes comerciais para a eficácia do projeto e manter os agentes auxiliares separados da regressão linear e dos baselines do CPR. Fontes e limites estão em `docs/relatorio/auditoria-ia-agentica-fontes.md`.
 
+**Situação:** revista em 2026-10-10 pela decisão “Práticas de engenharia no uso de IA agêntica”, abaixo. A ressalva sobre metodologia científica permanece; muda o tratamento dos nomes das práticas.
+
 ## Decisão de implementação — feedbacks da avaliação ampliada V2 para V3
 
 **Data da decisão:** não informada; o registro desta decisão foi solicitado em 10/10/2026.
@@ -491,5 +493,33 @@ com Matrículas não estabelece atribuição entre plataformas e pessoas.
 
 **Evidência:** `docs/validacao/feedback-v2-v3.md`, `docs/validacao/v3-dados-sinteticos.md`,
 testes automatizados e capturas provisórias em `docs/relatorio/figuras/v3-preview-*.png`.
+
+---
+
+## Decisão editorial — práticas de engenharia no uso de IA agêntica
+
+**Data:** 2026-10-10.
+
+**Decisão:** o projeto reconhece explicitamente *scaffolding*, desenvolvimento orientado por
+especificações (*spec-driven development*) e organização estruturada do contexto (*context
+engineering*) como práticas de engenharia efetivamente utilizadas no uso controlado de IA
+agêntica, combinadas com decomposição de tarefas, verificação iterativa por testes e
+verificadores e supervisão humana no ciclo (*human-in-the-loop*). A adoção desses termos descreve
+o processo técnico e não implica classificá-los como metodologias científicas autônomas ou
+universalmente padronizadas. O fluxo de verificação é descrito em linguagem comum, sem nome
+próprio como *verification-driven development*.
+
+**Fundamentação:** *scaffolding* em LLMs, Zelikman *et al.* (2024, COLM); requisitos e testes,
+Han *et al.* (2024, ACL); termo *spec-driven engineering* em veículo revisado, Feng *et al.* (2026,
+FSE Companion), sem alegação de eficácia; efeito do contexto, Liu *et al.* (2024, TACL); termo
+*context engineering*, Mei *et al.* (2025), preprint citado com ressalva; feedback externo, Kamoi
+*et al.* (2024); supervisão humana, Amershi *et al.* (2019). Classificação dos termos em
+`docs/relatorio/auditoria-ia-agentica-fontes.md`.
+
+**Limites:** agentes sugerem, executam, comparam, testam e verificam; arquitetura, metodologia,
+escolha de modelos, decisões sobre feedbacks, aceitação de alterações, interpretação científica e
+conclusões permanecem humanas. A IA agêntica não produziu as estimativas de CPR nem validou
+matematicamente o modelo de aprendizagem de máquina. Nomes comerciais de ferramentas ficam no
+registro de execuções, não no corpo científico do relatório.
 
 ---

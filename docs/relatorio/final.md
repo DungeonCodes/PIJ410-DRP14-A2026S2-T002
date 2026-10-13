@@ -279,8 +279,8 @@ A fundamentação adota três camadas distintas. A primeira é a análise determ
 métricas e indicadores obtidos por regras explícitas. A segunda é a aprendizagem de máquina,
 entendida como treinamento e avaliação de modelos que aprendem padrões a partir de exemplos
 históricos e produzem estimativas para novas observações (Jordan; Mitchell, 2015). A terceira é a
-IA agêntica ou generativa, utilizada somente como apoio controlado à organização e à interpretação,
-sem ser apresentada como o método que aprende com os dados.
+IA agêntica ou generativa, utilizada somente como apoio controlado ao desenvolvimento, à
+organização e à interpretação, sem ser apresentada como o método que aprende com os dados.
 
 Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
 Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
@@ -441,21 +441,41 @@ experimentais capazes de navegar repositórios, editar arquivos e executar teste
 2024). Essas capacidades contextualizam a classe de ferramentas utilizada; não demonstram, por si,
 a correção das alterações deste projeto.
 
+Em modelos de linguagem, *scaffolding* designa a estrutura, em geral escrita por pessoas, que
+organiza chamadas sucessivas ao modelo para obter resultados melhores; raciocínio por etapas,
+acesso a ferramentas e avaliação das soluções segundo um critério definido figuram entre os
+exemplos discutidos por Zelikman *et al.* (2024). Neste trabalho, o termo é aplicado nesse sentido
+à estruturação de tarefas complexas em etapas, com contexto, restrições, suportes intermediários e
+pontos de verificação. Dividir uma tarefa não basta para caracterizar *scaffolding*: a expressão
+refere-se ao conjunto organizado desses suportes em torno da execução assistida.
+
 A literatura sobre geração de código com requisitos explícitos relaciona especificações, casos
-de teste e conferência do comportamento produzido (Han *et al.*, 2024). A seleção e a organização
-do contexto também requerem cuidado: em tarefas estudadas por Liu *et al.* (2024), a posição da
-informação relevante em entradas longas afetou o desempenho dos modelos. Neste trabalho,
-desenvolvimento orientado por requisitos, decomposição de tarefas e organização do contexto
-descrevem práticas de engenharia adotadas; não são apresentados como uma metodologia científica
-autônoma denominada *spec-driven development* ou *context engineering*.
+de teste e conferência do comportamento produzido (Han *et al.*, 2024). Em contextos recentes de
+desenvolvimento assistido por IA, manter especificações estruturadas como guia da implementação e
+base de verificação tem sido denominado *spec-driven development* ou *spec-driven engineering*.
+Feng *et al.* (2026) associam artefatos estruturados a saídas mais verificáveis, mas relatam
+resultados ainda variáveis em estudo piloto e mantêm a intervenção de engenheiros. A seleção e a
+organização do contexto também influenciam o desempenho: em tarefas estudadas por Liu *et al.*
+(2024), a posição da informação relevante em entradas longas afetou os resultados dos modelos. A
+organização deliberada das informações fornecidas ao modelo vem sendo descrita como *context
+engineering*, que Mei *et al.* (2025) propõem sistematizar em levantamento ainda não revisado por
+pares.
+
+Neste projeto, essas evidências foram operacionalizadas como práticas de engenharia efetivamente
+utilizadas no trabalho com agentes: *scaffolding*, desenvolvimento orientado por especificações e
+organização estruturada do contexto. O emprego desses nomes descreve o processo técnico adotado;
+não os classifica como metodologias científicas autônomas ou universalmente padronizadas, nem
+transfere ao projeto os resultados quantitativos das fontes.
 
 A revisão da própria resposta pelo modelo não substitui feedback externo confiável, como
 verificações reproduzíveis e inspeção de evidências (Kamoi *et al.*, 2024). Diretrizes de
 interação humano–IA reforçam a necessidade de manter meios de avaliação e correção pelo usuário
-(Amershi *et al.*, 2019). Por isso, análises e alterações propostas por agentes foram submetidas
-à conferência documental, a testes quando cabíveis e à decisão humana. Saídas dos agentes não
-constituem evidência científica independente; também não substituem os resultados do experimento
-de CPR, a validação com P1 ou a responsabilidade do grupo pelas conclusões.
+(Amershi *et al.*, 2019). Por isso, o uso dos agentes seguiu um arranjo de supervisão humana no
+ciclo (*human-in-the-loop*): análises e alterações propostas foram submetidas à inspeção, à
+conferência documental, a testes quando cabíveis e à decisão humana de aceitá-las, ajustá-las ou
+rejeitá-las. Saídas dos agentes não constituem evidência científica independente; também não
+substituem os resultados do experimento de CPR, a validação com P1 ou a responsabilidade do grupo
+pelas conclusões.
 
 ## 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
 
@@ -483,7 +503,7 @@ Tabela 2 – Disciplinas estudadas e aplicações no projeto
 | Introdução à Ciência de Dados | Ciência de Dados | Preparação dos dados sintéticos, distinção entre ausência e zero, seleção de observações elegíveis e organização dos experimentos e de seus resultados. |
 | Visualização Computacional | Ciência de Dados | Apresentação de indicadores e gráficos nos dashboards, filtragem, agregação e consolidação temporal de séries, inclusive na interface V2. |
 | Aprendizado de Máquinas | Ciência de Dados | Formulação e avaliação dos experimentos supervisionados de CPR: comparação de regressão linear com baselines, divisão temporal, prevenção de leakage e métricas MAE, RMSE e R². |
-| Interface Humano-Computador | Engenharia de Computação | Avaliação da apresentação da interface e implementação da visualização temporal consolidada na V2 após o feedback de P1, seguida de reavaliação. |
+| Interface Humano-Computador | Engenharia de Computação | Avaliação da apresentação da interface e implementação da visualização temporal consolidada na V2 após o feedback de P1, seguida de reavaliação; avaliação ampliada da V2 e incorporação dos sete feedbacks aceitos na V3. |
 
 Fonte: Elaboração do grupo, com base nas matrizes e ementas oficiais da UNIVESP e nos artefatos
 do projeto. A grafia Introdução à Ciência de Dados segue o Plano de Ensino de COM350; o PPC
@@ -637,6 +657,15 @@ denominador válido, a razão permanece indefinida. Em Captação, contatos, vis
 contagens do cenário sintético no recorte selecionado; as taxas entre etapas são recalculadas a
 partir dessas contagens, sem vincular pessoas individualmente.
 
+Na V3, a efetivação visita–matrícula é matrículas divididas por visitas do mesmo mês do funil de
+Captação, multiplicadas por cem; visita zero ou dado ausente resulta em taxa indisponível. Leads e
+alcance não existiam na base Ads original e foram derivados por regras determinísticas fixadas
+para demonstração da interface (identificador `pij410-v3-extensao-1`): leads simulados do Google
+correspondem a 0,07 × cliques; leads simulados do Meta, a 0,55 × conversas; e alcance simulado do
+Meta, a 7 × investimento + 3 × resultados, com arredondamento. Esses coeficientes não são
+estimativas empíricas, taxas institucionais, relações causais ou dados observados; os valores
+derivados não representam pessoas únicas nem medições de plataforma.
+
 Regras de negócio, sazonalidade, capacidade de atendimento e limites de variação de orçamento
 devem ser explicitados antes da construção de cenários. Cenários mínimo, ideal e agressivo, quando
 aplicáveis, serão cálculos direcionais e reproduzíveis baseados em parâmetros declarados. Eles não
@@ -773,8 +802,8 @@ executado rolling origin mensal, incorporando apenas resultados já maduros. Ap�
 o OLS pré-especificado foi reajustado em 57 amostras elegíveis até dezembro/2022 para projetar
 fevereiro/2023 a janeiro/2024. Janeiro/2023 provisório permaneceu ausente no histórico; uma
 ponte estimada foi identificada somente como lag auxiliar da recursão. Não foram calculados
-intervalos de confiança. O novo artefato é apresentado apenas em V2/Google Ads e sua origem
-é demanda técnica acadêmica, não feedback da comunidade.
+intervalos de confiança. O novo artefato é apresentado em Google Ads na V2 e na V3, não na V1;
+sua origem é demanda técnica acadêmica, não feedback da comunidade.
 
 Os procedimentos locais estão registrados em
 `docs/migracao-modelo/arquitetura/experimento-google-cpr.md` e
@@ -791,17 +820,30 @@ de código e textos, organização documental, elaboração e verificação de t
 algoritmos e artefatos dos experimentos de CPR e análise de consistência entre método, resultados
 e conclusões. O uso foi confirmado pelo responsável técnico.
 
-As tarefas foram delimitadas por requisitos, decisões e critérios registrados. Conforme a
-atividade, forneceram-se ao agente arquivos versionados, dados sanitizados e restrições
-pertinentes; suas análises ou alterações foram inspecionadas, confrontadas com os artefatos do
-projeto e submetidas a testes ou verificadores aplicáveis antes de aceitação, ajuste ou rejeição
-pelos integrantes. O contexto fornecido não incluiu contas reais de anúncios nem dados pessoais
-da participante. Esse fluxo descreve o procedimento do grupo, sem atribuir aos agentes uma
-validação independente dos resultados.
+O trabalho seguiu o fluxo especificação da tarefa → contexto e restrições → *scaffolding* e
+decomposição → execução assistida → inspeção → testes e verificações → decisão humana. As
+tarefas partiram de especificação explícita, com objetivo, escopo, entradas, saídas, restrições e
+critério de aceitação aplicáveis, conforme as regras operacionais versionadas para agentes.
+Requisitos e decisões registrados em `docs/decisions.md`, especificações dos feedbacks de
+validação e regras documentadas dos dados sintéticos serviram de referência para comparar o
+resultado com o esperado. O contexto foi selecionado deliberadamente: priorizaram-se documentos
+canônicos, como o contexto-mestre, as decisões e o registro de execuções, além dos arquivos
+pertinentes e de dados sanitizados; contas reais de anúncios e dados pessoais da participante
+foram excluídos.
+
+Tarefas extensas foram decompostas em etapas verificáveis, como leitura do repositório,
+alteração delimitada, execução de testes e atualização documental. As saídas foram
+inspecionadas e confrontadas com os artefatos do projeto, e as alterações foram submetidas aos
+testes automatizados, às verificações de reprodução dos artefatos de aprendizagem de máquina e às
+auditorias documentais aplicáveis, com correção iterativa quando houve divergência. Cada
+resultado foi então aceito, ajustado ou rejeitado pelos integrantes, e as execuções relevantes
+foram registradas em `docs/run_log.md`. Esse fluxo descreve o procedimento do grupo, sem
+atribuir aos agentes uma validação independente dos resultados.
 
 Arquitetura, metodologia, escolha dos modelos, interpretação dos resultados, aprovação das
-alterações, validação comunitária e conclusões permaneceram sob responsabilidade humana. Os
-agentes não produziram as estimativas de CPR: elas resultaram da regressão linear e dos baselines
+alterações, decisões sobre feedbacks, validação comunitária e conclusões permaneceram sob
+responsabilidade humana. Os agentes não produziram as estimativas de CPR nem validaram
+matematicamente o experimento: as estimativas resultaram da regressão linear e dos baselines
 documentados em 2.5.10. Não há registro de experimento específico de simulação agêntica na
 solução analítica. As ferramentas não geraram respostas de P1 nem substituíram entrevistas; os
 registros originais dos três momentos de validação foram preservados.
@@ -979,7 +1021,7 @@ a comparação experimental neste cenário sintético. Não demonstram desempenh
 eficácia institucional, atribuição causal ou capacidade de automatizar investimentos. A hipótese
 de maturação de 14 dias também é exclusivamente sintética.
 
-#### Previsão sazonal mensal — extensão técnica exclusiva V2
+#### Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3
 
 O experimento sazonal separado foi efetivamente executado e reproduzido pela CLI sobre o
 dataset sintético existente de janeiro/2017 a janeiro/2023. O CPR mensal é calculado como soma
@@ -1022,7 +1064,8 @@ também ficou acima da média (1,131) e junho abaixo (0,893). O índice compara 
 mensais com a média global; não é ML nem demonstra sazonalidade estável.
 
 A V2 apresenta histórico sintético e projeção experimental recursiva de fevereiro/2023 a
-janeiro/2024, além do índice sazonal e da comparação dos métodos. As maiores projeções são para
+janeiro/2024, além do índice sazonal e da comparação dos métodos. A V3 exibe o mesmo artefato,
+sem alterar valores ou algoritmo, acrescido da explicitação dos limites (FB-V2-P1-007). As maiores projeções são para
 dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativas do
 cenário, não resultados futuros observados. Valores extremos e lags previstos podem se propagar
 pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
@@ -1370,6 +1413,8 @@ BERGMEIR, Christoph; BENÍTEZ, José M. On the use of cross-validation for time 
 
 DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, n. 4, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
 
+FENG, Shuzhao; CHEN, Boqi; MEYER, Brett H.; MUSSBACHER, Gunter. LLM-Assisted Repository-Level Generation with Structured Spec-Driven Engineering. In: ACM INTERNATIONAL CONFERENCE ON THE FOUNDATIONS OF SOFTWARE ENGINEERING, 34., 2026, Montreal. **Proceedings** [...]: FSE Companion '26. New York: ACM, 2026. p. 1257-1261. DOI: 10.1145/3803437.3805567. Disponível em: https://doi.org/10.1145/3803437.3805567. Acesso em: 10 out. 2026.
+
 FOIDL, Harald *et al.* Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
 
 GRUPO DO PROJETO INTEGRADOR. **Plano de ação**: PIJ410-DRP14-A2026S2-T002. [S. l.]: UNIVESP, 2026. Documento interno do grupo.
@@ -1392,6 +1437,8 @@ LIU, Nelson F. *et al.* Lost in the Middle: How Language Models Use Long Context
 
 MARTINS, Felipe. **Otimização de uma campanha publicitária na rede de pesquisa do Google Ads utilizando Teoria da Decisão Bayesiana**. 2019. Dissertação (Mestrado) – Universidade de São Paulo, São Paulo, 2019. DOI: 10.11606/d.45.2019.tde-22102019-115749. Disponível em: https://doi.org/10.11606/d.45.2019.tde-22102019-115749. Acesso em: 24 ago. 2026.
 
+MEI, Lingrui *et al.* **A Survey of Context Engineering for Large Language Models**. arXiv, 2025. Preprint, não revisado por pares. DOI: 10.48550/arXiv.2507.13334. Disponível em: https://doi.org/10.48550/arXiv.2507.13334. Acesso em: 10 out. 2026.
+
 PENG, Roger D. Reproducible research in computational science. **Science**, v. 334, n. 6060, p. 1226-1227, 2011. DOI: 10.1126/science.1213847. Disponível em: https://doi.org/10.1126/science.1213847. Acesso em: 25 ago. 2026.
 
 PINHEIRO, Gabriela da Silva Santos; DIAS, Célia da Consolação. Técnicas e métodos de pesquisa de experiência do usuário (UX) para avaliação de estudo de usuários da informação. **Perspectivas em Gestão & Conhecimento**, v. 13, n. 2, p. 133-148, 2023. DOI: 10.22478/ufpb.2236-417x.2023v13n2.63290. Disponível em: https://doi.org/10.22478/ufpb.2236-417x.2023v13n2.63290. Acesso em: 24 ago. 2026.
@@ -1411,6 +1458,8 @@ WANG, Lei *et al.* A survey on large language model based autonomous agents. **F
 YANG, John *et al.* SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. **Advances in Neural Information Processing Systems**, v. 37, 2024. DOI: 10.52202/079017-1601. Disponível em: https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html. Acesso em: 9 out. 2026.
 
 YAO, Shunyu *et al.* ReAct: Synergizing Reasoning and Acting in Language Models. In: INTERNATIONAL CONFERENCE ON LEARNING REPRESENTATIONS, 11., 2023, Kigali. **Proceedings** [...]. [S. l.: s. n.], 2023. Disponível em: https://arxiv.org/abs/2210.03629. Acesso em: 9 out. 2026.
+
+ZELIKMAN, Eric; LORCH, Eliana; MACKEY, Lester; KALAI, Adam Tauman. Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation. In: CONFERENCE ON LANGUAGE MODELING, 1., 2024, Philadelphia. **Proceedings** [...]. [S. l.: s. n.], 2024. Disponível em: https://arxiv.org/abs/2310.02304. Acesso em: 10 out. 2026.
 
 <!-- Na versão institucional final, inserir manualmente o Anexo A com os TCLEs preenchidos e assinados, mantidos fora do Git. Incluir o anexo no sumário somente após essa inserção protegida. -->
 

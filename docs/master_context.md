@@ -108,6 +108,11 @@ inicialmente equivalente, sem feedback aplicado. Pela evolução técnica solici
 o dataset existente; essa origem acadêmica não é feedback comunitário. `CURRENT_UI_VERSION` permanece V1; dados, algoritmos,
 experimento CPR e gates são compartilhados. Primeira sessão deve usar V1 e registrar a versão.
 Melhorias de UX pertencem à V2, sem alterar V1 ou promover uma versão automaticamente.
+**Atualização de 10/10/2026:** a V3 (`/v3`) foi implementada após a avaliação ampliada da V2
+pela mesma P1 e incorpora FB-V2-P1-001 a FB-V2-P1-007; também apresenta em Google Ads o
+artefato sazonal de CPR, sem alterar valores ou algoritmo. V1 e V2 permanecem preservadas;
+P1 avaliou a V2, não a V3. Fases 3 e 4 continuam bloqueadas. Ver
+`docs/validacao/versoes-interface.md` e `docs/validacao/v3-dados-sinteticos.md`.
 O protocolo sazonal e seus limites estão em docs/migracao-modelo/arquitetura/experimento-google-cpr-sazonal.md.
 
 Confidencialidade — o contexto é real e o repositório acadêmico não deve expor:

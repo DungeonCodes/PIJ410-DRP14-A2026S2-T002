@@ -67,8 +67,10 @@ a materiais específicos*. Sem bibliografia técnica esse item não fecha.
 
 O eixo `E11` fundamenta a classe de agentes e descreve **como o grupo organizou o trabalho
 assistido** com requisitos, contexto versionado, verificações e supervisão humana. Os registros
-em `/docs/` apoiam rastreabilidade; *scaffolding* e *context engineering* não foram adotados como
-nomes de teorias ou de métodos formais. O procedimento é distinto do ciclo de Design Thinking
+em `/docs/` apoiam rastreabilidade. Desde 2026-10-10, *scaffolding*, desenvolvimento orientado
+por especificações (*spec-driven development*) e organização estruturada do contexto (*context
+engineering*) são nomeados como práticas de engenharia efetivamente utilizadas, sem classificá-los
+como metodologias científicas autônomas ou universalmente padronizadas. O procedimento é distinto do ciclo de Design Thinking
 realizado com a comunidade externa e do modelo supervisionado usado para CPR.
 
 ---
@@ -197,9 +199,14 @@ A obra 29 conecta análise de dados a **decisão gerencial**, que é a ponte ent
 | 46 | KAMOI et al. — When Can LLMs Actually Correct Their Own Mistakes? | 2024 | TACL | — | sim | `citada` |
 | 47 | YANG et al. — SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering | 2024 | NeurIPS | — | sim | `citada` |
 | 48 | YAO et al. — ReAct: Synergizing Reasoning and Acting in Language Models | 2023 | ICLR | — | sim | `citada` |
+| 49 | ZELIKMAN et al. — Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation | 2024 | COLM | — | sim | `citada` |
+| 50 | FENG et al. — LLM-Assisted Repository-Level Generation with Structured Spec-Driven Engineering | 2026 | ACM FSE Companion | — | sim | `citada` |
+| 51 | MEI et al. — A Survey of Context Engineering for Large Language Models | 2025 | arXiv | — | **não — preprint** | `citada` |
 
-**Atenção à rubrica.** A fundamentação exige fontes confiáveis. As obras 34, 35 e 44–48 são
-publicadas e sustentam os recortes adotados. As obras 36 e 37 permanecem preprints candidatos;
+**Atenção à rubrica.** A fundamentação exige fontes confiáveis. As obras 34, 35 e 44–50 são
+publicadas e sustentam os recortes adotados. A obra 51 é preprint e é citada apenas para registrar
+a terminologia emergente *context engineering*, com ressalva explícita no relatório; o efeito do
+contexto sobre o desempenho é sustentado pela obra 35. As obras 36 e 37 permanecem preprints candidatos;
 não foram necessárias para o Relatório Final. A obra 33 trata de simulação social, fora do recorte
 metodológico atual.
 
@@ -209,8 +216,11 @@ informações relevantes em contextos longos. As obras 44–48 sustentam intera�
 requisitos, verificação, agentes em repositórios e planejamento com ferramentas. As obras 38 e 39
 foram lidas como documentação técnica, mas deixaram de ser citadas no relatório parcial após a
 revisão de 27 ago. 2026: nomes e configurações comerciais específicos não alteram o método e
-envelhecem rapidamente. Os rótulos *spec-driven development* e *context engineering* não foram
-tratados como teorias consolidadas; ver `docs/relatorio/auditoria-ia-agentica-fontes.md`.
+envelhecem rapidamente. Em 2026-10-10, as obras 49–51 foram incorporadas para nomear práticas
+efetivamente usadas: 49 define *scaffolding* em modelos de linguagem; 50 registra *spec-driven
+engineering* em veículo revisado de engenharia de software; 51 registra *context engineering* como
+termo emergente. Nenhum desses rótulos é tratado como metodologia científica autônoma ou
+padronizada; ver `docs/relatorio/auditoria-ia-agentica-fontes.md`.
 
 ### E12 — Aprendizagem de máquina aplicada ao marketing
 
@@ -299,6 +309,8 @@ CAMPELO, Arandi et al. Marketing digital na captação e fidelização de client
 
 DE MAURO, Andrea; SESTINO, Andrea; BACCONI, Andrea. Machine learning and artificial intelligence use in marketing: a general taxonomy. **Italian Journal of Marketing**, v. 2022, p. 439-457, 2022. DOI: 10.1007/s43039-022-00057-w. Disponível em: https://doi.org/10.1007/s43039-022-00057-w. Acesso em: 26 ago. 2026.
 
+FENG, Shuzhao; CHEN, Boqi; MEYER, Brett H.; MUSSBACHER, Gunter. LLM-Assisted Repository-Level Generation with Structured Spec-Driven Engineering. In: ACM INTERNATIONAL CONFERENCE ON THE FOUNDATIONS OF SOFTWARE ENGINEERING, 34., 2026, Montreal. **Proceedings** [...]: FSE Companion '26. New York: ACM, 2026. p. 1257-1261. DOI: 10.1145/3803437.3805567. Disponível em: https://doi.org/10.1145/3803437.3805567. Acesso em: 10 out. 2026.
+
 FOIDL, Harald et al. Data pipeline quality: influencing factors, root causes of data-related issues, and processing problem areas for developers. **Journal of Systems and Software**, v. 207, p. 111855, 2024. DOI: 10.1016/j.jss.2023.111855. Disponível em: https://doi.org/10.1016/j.jss.2023.111855. Acesso em: 26 ago. 2026.
 
 GAO, Yunfan et al. **Retrieval-Augmented Generation for Large Language Models**: a survey. arXiv, 2023. Preprint, não revisado por pares. DOI: 10.48550/arXiv.2312.10997. Disponível em: https://doi.org/10.48550/arXiv.2312.10997. Acesso em: 24 ago. 2026.
@@ -336,6 +348,8 @@ MANGINI, Eduardo Roque et al. Plano de Marketing de Serviços Aplicado a Institu
 MARTINS, Felipe. **Otimização de uma campanha publicitária na rede de pesquisa do Google Ads utilizando Teoria da Decisão Bayesiana**. 2019. Dissertação (Mestrado) – Universidade de São Paulo, São Paulo, 2019. DOI: 10.11606/d.45.2019.tde-22102019-115749. Disponível em: https://doi.org/10.11606/d.45.2019.tde-22102019-115749. Acesso em: 24 ago. 2026.
 
 MATHEUS, Ricardo; JANSSEN, Marijn; MAHESHWARI, Devender. Data science empowering the public: data-driven dashboards for transparent and accountable decision-making in smart cities. **Government Information Quarterly**, v. 37, n. 3, p. 101284, 2018. DOI: 10.1016/j.giq.2018.01.006. Disponível em: https://doi.org/10.1016/j.giq.2018.01.006. Acesso em: 24 ago. 2026.
+
+MEI, Lingrui *et al.* **A Survey of Context Engineering for Large Language Models**. arXiv, 2025. Preprint, não revisado por pares. DOI: 10.48550/arXiv.2507.13334. Disponível em: https://doi.org/10.48550/arXiv.2507.13334. Acesso em: 10 out. 2026.
 
 OLIVEIRA, Ronei dos Santos; MEDEIROS, Francisco. Modelo de Predição de Evasão Escolar com Base em Dados de Autoavaliação de Cursos de Graduação. **Revista Brasileira de Informática na Educação**, v. 32, p. 1-21, 2024. DOI: 10.5753/rbie.2024.3542. Disponível em: https://doi.org/10.5753/rbie.2024.3542. Acesso em: 24 ago. 2026.
 
@@ -386,3 +400,5 @@ WANG, Lei et al. A survey on large language model based autonomous agents. **Fro
 YANG, John *et al.* SWE-agent: Agent-Computer Interfaces Enable Automated Software Engineering. **Advances in Neural Information Processing Systems**, v. 37, 2024. DOI: 10.52202/079017-1601. Disponível em: https://proceedings.neurips.cc/paper_files/paper/2024/hash/5a7c947568c1b1328ccc5230172e1e7c-Abstract-Conference.html. Acesso em: 9 out. 2026.
 
 YAO, Shunyu *et al.* ReAct: Synergizing Reasoning and Acting in Language Models. In: INTERNATIONAL CONFERENCE ON LEARNING REPRESENTATIONS, 11., 2023, Kigali. **Proceedings** [...]. [S. l.: s. n.], 2023. Disponível em: https://arxiv.org/abs/2210.03629. Acesso em: 9 out. 2026.
+
+ZELIKMAN, Eric; LORCH, Eliana; MACKEY, Lester; KALAI, Adam Tauman. Self-Taught Optimizer (STOP): Recursively Self-Improving Code Generation. In: CONFERENCE ON LANGUAGE MODELING, 1., 2024, Philadelphia. **Proceedings** [...]. [S. l.: s. n.], 2024. Disponível em: https://arxiv.org/abs/2310.02304. Acesso em: 10 out. 2026.
