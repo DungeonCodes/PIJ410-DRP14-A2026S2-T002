@@ -1214,3 +1214,10 @@ Data: 2026-10-14.
 Ação realizada: Conferência pós-crash e revisão de legibilidade do Relatório Final: sincronização do sumário e listas com o corpo, verificação das orientações docentes, alinhamento objetivo–metodologia–resultado e redução controlada de redundâncias.
 Resultado: corrigidas as declarações atuais sobre o TCLE assinado da terceira aplicação, mantendo data e modalidade sem inferência e o documento protegido fora do Git; preservado o registro primário original de P1. A decisão de aceitar os sete feedbacks foi atribuída ao grupo, sob instrução expressa do responsável. Mantidos os seis objetivos, as quatro fases, V1/V2/V3, métricas, resultados de ML, IA assistiva e 28 referências. Paginação e apresentação visual das listas seguem para composição final.
 Verificação: comparação automática dos headings do corpo com o sumário, das seis legendas de figuras com a lista de ilustrações e das 14 legendas de tabelas com a lista de tabelas; `git diff --check` aprovado. Nenhum código, dataset, resposta original de P1, captura ou artefato alterado; sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: revisão editorial final de legibilidade do Relatório Final para leitor universitário não especialista.
+Resultado: conceitos técnicos passaram a ser introduzidos por explicações em português antes das siglas; o Resumo, 2.3.7, 2.5.10, 2.5.11, 3.1.2, 3.1.6, 3.3.2 e as Considerações Finais foram reorganizados ou simplificados. A conclusão principal dos experimentos precede as tabelas; as quatro limitações principais abrem 3.3.2. Reduzidos tom de auditoria e ressalvas repetidas, com evidências de reprodução preservadas. O registro docente recebeu subseção específica desta revisão.
+Verificação: seis objetivos, referências e Tabelas 6–14 idênticos ao HEAD; 28 referências, 6 figuras e 14 tabelas; números de 2.5.10 e citações preservados; Resumo com 225 palavras; sumário textual coerente com 49 headings; `git diff --check` aprovado. Código, dados e respostas de P1 intactos. Sem commit ou push.

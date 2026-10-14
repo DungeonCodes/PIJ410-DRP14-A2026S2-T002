@@ -102,6 +102,13 @@ Problema científico, métricas e resultados de ML, algoritmo e artefatos, liter
 
 A redação vigente passou de “Avaliar o uso de IA agêntica como apoio à construção e à análise da solução” para “Aplicar práticas de IA agêntica como apoio à construção, análise e verificação da solução”. A seção 2.5.11 e o registro de uso confirmado pelo responsável técnico documentam agentes na programação, auditoria do repositório, revisão documental, análise de consistência, elaboração e verificação de testes e conferência dos algoritmos e artefatos de CPR, sempre sob supervisão humana. Esses fatos cobrem construção, análise e verificação; portanto, o objetivo vigente é **ATENDIDO**. A classificação anterior de atendimento parcial correspondia à exigência histórica de simulação agêntica específica via CLI, que não integra o objetivo reformulado. Não houve avaliação científica independente da eficácia da IA agêntica.
 
+## Revisão de legibilidade para leitor não especialista
+
+- **Termos clarificados:** dados sintéticos, cálculos determinísticos, séries temporais, indicadores de mídia, fluxo de dados, controle de acesso aos módulos, arquivos de resultados, variáveis do modelo, vazamento de informação, referências simples, testes temporais, medidas de erro e práticas de IA agêntica. A ideia em português antecede o termo técnico nas primeiras ocorrências relevantes.
+- **Parágrafos simplificados:** Resumo, abertura de 2.3.7, protocolo de 2.5.10, procedimento de 2.5.11, apresentação de 3.1.6, arquitetura de 3.1.2, limitações de 3.3.2 e Considerações Finais. O resultado principal dos experimentos antecede as tabelas.
+- **Redundâncias reduzidas:** ressalvas consecutivas sobre cenário sintético, ausência de causalidade e uso operacional; repetição da cronologia V1–V3 e de detalhes metodológicos nos resultados. A explicação completa dos limites permanece em 3.3.2.
+- **Conteúdo científico preservado:** seis objetivos, fases e hierarquia, números e fórmulas de ML, dados e versões, respostas e feedbacks de P1, conclusões, citações e 28 referências. A IA agêntica permanece atendida somente como uso assistivo, sob decisão humana.
+
 ## Gate final
 
 - Objetivos diretos, sem citações e sem metodologia embutida: **A**.
