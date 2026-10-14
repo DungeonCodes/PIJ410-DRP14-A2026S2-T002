@@ -1213,8 +1213,9 @@ modalidade não constam do registro primário consultado. As notas de navegaçã
 (questões 1–3); as de Captação e Matrículas, 5 e 4 (questões 4–5); as quatro notas de Ads e
 Estratégia foram 3 (questões 7–10); e as de apresentação do ML, 4, 5 e 5 (questões 11–13).
 Na classificação final, escolheu “C  Precisa de alterações importantes antes da versão final.”
-As notas mostram áreas bem avaliadas, mas os pedidos concentrados em Ads e Estratégia, junto da
-classificação final, motivaram nova rodada de alterações. Ao apontar Matrículas como o resultado
+As menores notas concentraram-se em Ads e Estratégia. P1 também solicitou ajustes específicos em
+Captação e Matrículas. Em conjunto com a classificação final da V2, essas observações motivaram
+uma nova rodada de alterações. Ao apontar Matrículas como o resultado
 mais relevante para seu trabalho, P1 expressou uma prioridade profissional, não uma relação
 causal demonstrada pelo protótipo.
 
