@@ -15,6 +15,11 @@ institucional. Ver `docs/validacao/v3-v4-matriz.md`, `docs/validacao/respostas/v
 `docs/validacao/analise-v4-p1.md`. As descrições abaixo de Fases 3 e 4 bloqueadas registram
 o estado anterior da V1–V3.
 
+**Baseline do Relatório Final em 14/10/2026:** `docs/relatorio/Relatorio_Final_V1.md` é a
+baseline textual científica fechada (cópia byte a byte de `final.md`). Alterações posteriores só
+com registro `(SAI: "..." | ENTRA: "...")` em `docs/relatorio/CONTROLE_ALTERACOES_RELATORIO.md` e
+aprovação humana (ADR-012). V4 permanece a versão funcional avaliada atual; V5 inexiste.
+
 ## Objetivo Central
 
 **Pendente.** O objetivo definitivo será definido pelo grupo após as orientações da UNIVESP, o contato com a instituição parceira, as entrevistas e a validação das hipóteses.

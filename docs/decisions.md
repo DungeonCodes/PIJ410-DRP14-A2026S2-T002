@@ -590,3 +590,19 @@ técnica ou decisão formal do grupo.
 comparativa em Q12 não foi verificado com dados operacionais e não demonstra que a plataforma
 ou os Ads causaram melhora institucional. A avaliação ocorreu após a evolução técnica V3→V4;
 não altera retroativamente a origem dos itens TEC-002 a TEC-008.
+
+## ADR-012 — Congelamento do Relatório Final como baseline V1 e controle SAI/ENTRA
+
+**Data:** 2026-10-14. **Natureza:** decisão de governança editorial do Relatório Final.
+
+**Decisão:** `docs/relatorio/Relatorio_Final_V1.md`, cópia byte a byte de
+`docs/relatorio/final.md` (SHA-256 `3af4147e3deb97ad00d55d44b79ab53fcfa4e0fe0b837fb01f2a820213f1276c`),
+torna-se a baseline científica fechada V1. Toda alteração textual posterior exige registro em
+`docs/relatorio/CONTROLE_ALTERACOES_RELATORIO.md` com ID `ALT-nnn` e o par
+`(SAI: "..." | ENTRA: "...")`, inclusive adições (`SAI: ∅`) e remoções (`ENTRA: ∅`). Nenhuma mudança
+pode ser silenciosa; a aplicação depende de aprovação humana, salvo ordem explícita do responsável,
+que também é registrada. `final.md` e a baseline só divergem mediante registro. Nova baseline
+(`Relatorio_Final_V2.md`) somente após aprovação humana de um conjunto de alterações.
+
+**Limites:** o congelamento é textual; paginação e composição DOCX/PDF permanecem abertas. Nenhum
+conteúdo científico foi alterado no ato do congelamento.

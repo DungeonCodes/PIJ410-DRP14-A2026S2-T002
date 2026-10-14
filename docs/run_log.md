@@ -1236,3 +1236,12 @@ Ação realizada: recebimento das respostas da quarta aplicação de avaliação
 Arquivos alterados: `docs/validacao/respostas/v4-p1.md` (registro primário literal), `docs/validacao/analise-v4-p1.md` (análise separada), `docs/validacao/v4-preparacao-avaliacao.md`, `docs/validacao/versoes-interface.md`, `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md` (estado posterior da avaliação), `docs/validacao/README.md` (índice), `docs/decisions.md` (ADR-011), `docs/master_context.md` e este log.
 Resultado: oito notas 5/5 e opção A; nenhuma alteração relevante solicitada. V4 mantida como versão avaliada; nenhuma V5 criada. O relato comparativo de Q12 foi tratado somente como percepção da participante, sem conclusão causal ou verificação de impacto institucional.
 Verificação: conferência das doze questões, preservação literal das respostas abertas, origem técnica V3→V4 e `git diff --check`. Código, dados, V4 e `docs/relatorio/final.md` não foram alterados. Sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: congelamento formal do Relatório Final como baseline científica V1 e ativação do regime de controle de alterações SAI/ENTRA.
+Arquivos: criados `docs/relatorio/Relatorio_Final_V1.md` (cópia byte a byte de `docs/relatorio/final.md`) e `docs/relatorio/CONTROLE_ALTERACOES_RELATORIO.md` (histórico vazio); atualizados `docs/decisions.md` (ADR-012), `docs/master_context.md` e este log.
+Hashes: `final.md` e `Relatorio_Final_V1.md` com 142914 bytes, 1997 linhas e SHA-256 `3af4147e3deb97ad00d55d44b79ab53fcfa4e0fe0b837fb01f2a820213f1276c`; `cmp` confirma identidade byte a byte.
+Verificação: 18 figuras referenciadas (arquivos existentes), 14 tabelas, 28 referências, Resumo com 239 palavras, cinco palavras-chave; nenhuma V5 nem `Relatorio_Final_V2.md` criados; `git diff --check` aprovado.
+Nenhuma alteração científica realizada: `final.md`, código, datasets, ML, respostas de P1 e figuras intactos. Sem commit ou push.
