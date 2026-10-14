@@ -71,7 +71,7 @@ Letícia Vieira Santos. Polos: Aricanduva, São Rafael, Rosa da China e Jaçanã
 
 ## Resumo
 
-Este relatório apresenta uma plataforma acadêmica para organizar informações sobre investimentos em mídia digital e apoiar decisões de marketing em uma instituição de ensino. A necessidade surgiu de registros dispersos, identificados em conversas com profissionais da instituição. O grupo desenvolveu uma aplicação web com indicadores, filtros e gráficos. Para testá-la sem utilizar registros institucionais, empregou dados sintéticos: dados fictícios criados para demonstração, que não representam resultados reais da instituição. A primeira versão da interface (V1) reuniu Captação e Matrículas; a segunda (V2) acrescentou módulos de anúncios e um gráfico temporal consolidado. Uma gerente de Marketing avaliou a V1, sugeriu reunir gráficos dispersos e reavaliou a V2 após a alteração, relatando maior facilidade de comparação. Em uma terceira aplicação, avaliou a V2 de forma ampliada. O grupo analisou sete feedbacks e os incorporou à V3, ainda não avaliada pela participante. Em experimento separado, a aprendizagem de máquina estimou o custo por resultado (CPR), isto é, o investimento dividido pelas conversões registradas no cenário. O modelo sazonal foi comparado a métodos simples e apresentou capacidade preditiva limitada, insuficiente para orientar investimentos reais. Testes automatizados e registros versionados sustentam o funcionamento técnico descrito. O projeto demonstrou a organização rastreável dos indicadores e das alterações da interface. O uso de dados fictícios, a ausência de integração operacional e a avaliação por uma única participante limitam a generalização dos resultados.
+Este relatório apresenta uma plataforma acadêmica para organizar informações sobre investimentos em mídia digital e apoiar decisões de marketing em uma instituição de ensino. A necessidade de reunir registros dispersos foi identificada em conversas com profissionais da instituição. O grupo desenvolveu uma aplicação web com indicadores, filtros e gráficos, usando dados sintéticos, sem integrar registros operacionais. A V1 reuniu Captação e Matrículas. Após a primeira avaliação de uma gerente de Marketing, identificada como P1, a V2 incorporou um gráfico temporal consolidado; uma segunda aplicação confirmou sua utilidade percebida. Na terceira aplicação, ampliada à V2, P1 apresentou contribuições, das quais sete feedbacks foram aceitos e incorporados à V3. Sem nova avaliação comunitária entre versões, o grupo desenvolveu a V4 por evolução técnica e acadêmica: ela reúne o escopo especificado das quatro fases, incluindo Conteúdo Orgânico, Gestão e Arquitetura & Algoritmos, além de rankings sintéticos em Ads e séries temporais de custo por resultado (CPR). Depois da implementação, P1 avaliou a V4 online, em 14/10/2026. Atribuiu 5/5 às oito questões fechadas, escolheu a opção A e não solicitou alteração relevante; a V4 foi mantida. Em experimento separado, a aprendizagem de máquina estimou o CPR Google, definido como investimento dividido pelas conversões registradas. O modelo sazonal apresentou desempenho preditivo limitado, insuficiente para orientar investimentos reais. Testes e registros versionados sustentam a execução técnica. Dados fictícios, ausência de integração operacional e avaliação por uma única participante impedem generalização ou comprovação de impacto institucional.
 
 **Palavras-chave:** Inteligência de negócios; Mídia digital; Visualização de dados; Aprendizado de máquina; Tomada de decisão.
 
@@ -85,13 +85,18 @@ Este relatório apresenta uma plataforma acadêmica para organizar informações
 - Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
 - Figura 5 – Gráficos temporais separados de Captação na V1
 - Figura 6 – Evolução temporal consolidada de Captação na V2
-- Figura 7 – V3: efetivação visitamatrícula em Captação
+- Figura 7 – V3: efetivação visita–matrícula em Captação
 - Figura 8 – V3: matrículas e rematrículas por série
 - Figura 9 – V3: resumo mensal da Visão Geral de Ads
 - Figura 10 – V3: investimento e leads simulados no Google Ads
 - Figura 11 – V3: alcance, investimento e resultados no Meta Ads
 - Figura 12 – V3: comparação temporal no módulo Estratégia
 - Figura 13 – V3: comunicação dos limites da previsão experimental de CPR
+- Figura 14 – V4: ranking sintético de Reels orgânicos
+- Figura 15 – V4: plano fictício de vagas e ocupação em Gestão
+- Figura 16 – V4: ranking sintético de anúncios no Meta Ads
+- Figura 17 – V4: ranking sintético de palavras-chave no Google Ads
+- Figura 18 – V4: séries temporais separadas de CPR em Estratégia
 
 ## Lista de tabelas
 
@@ -150,9 +155,10 @@ Este relatório apresenta uma plataforma acadêmica para organizar informações
     - 3.1.2 Estratégia incremental e arquitetura da solução
     - 3.1.3 Módulo de Captação
     - 3.1.4 Módulo de Matrículas
-    - 3.1.5 Módulos de Ads e componentes ainda planejados
+    - 3.1.5 Módulos de Ads
     - 3.1.6 Experimento de aprendizagem de máquina para CPR
     - 3.1.7 Uso assistivo de IA agêntica
+    - 3.1.8 V4 e conclusão do escopo especificado das quatro fases
   - 3.2 Avaliação com a comunidade e alterações decorrentes
     - 3.2.1 Contato inicial e necessidades identificadas
     - 3.2.2 Avaliação da solução pela participante
@@ -166,7 +172,7 @@ Este relatório apresenta uma plataforma acadêmica para organizar informações
 - Referências
 - Apêndices
   - Apêndice A – Instrumento de levantamento inicial
-  - Apêndice B – Instrumentos de validação aplicados à V1 e à V2
+  - Apêndice B – Instrumentos de validação aplicados à V1, à V2 e à V4
 
 # 1 INTRODUÇÃO
 
@@ -201,14 +207,15 @@ interface de linha de comando (CLI); seus resultados são exibidos na aplicaçã
 navegador. Esse recorte articula o tema norteador da UNIVESP ao
 problema registrado junto à comunidade parceira (Grupo do Projeto Integrador, 2026).
 
-O desenvolvimento foi dividido em **fases**, que agrupam funcionalidades da solução. **V1, V2 e
-V3** são versões sucessivas da interface, alteradas ao longo do desenvolvimento e após o feedback;
-uma versão não equivale a uma fase. A mesma profissional, identificada como P1, participou de três
-aplicações: avaliou inicialmente a V1, reavaliou a V2 após um ajuste em Captação e examinou a V2
-de forma ampliada, incluindo Ads, Estratégia e a apresentação da previsão de CPR. A avaliação
-registrou compreensão e utilidade percebida, não a correção matemática do modelo ou a qualidade
-de decisões reais de orçamento. A V3 foi implementada depois desse terceiro momento e ainda não
-foi avaliada por P1.
+O desenvolvimento foi dividido em **fases**, que agrupam funcionalidades da solução. **V1, V2,
+V3 e V4** são composições sucessivas da interface; versão e fase funcional são conceitos
+distintos. A mesma profissional, identificada como P1, participou de quatro aplicações: avaliou
+a V1, reavaliou a V2 após um ajuste em Captação, examinou a V2 de forma ampliada e, por fim,
+avaliou a V4. Os sete feedbacks aceitos na terceira aplicação deram origem à V3. A transição
+V3→V4 foi evolução técnica e acadêmica do grupo, sem aplicação comunitária entre as versões.
+Somente depois de implementada, a V4 foi avaliada por P1, online, em 14/10/2026; nenhuma
+alteração relevante foi solicitada. Essas avaliações registram compreensão e utilidade
+percebida, não a correção matemática do modelo ou o efeito de decisões reais de orçamento.
 
 A escolha do tema decorre de uma necessidade real, manifestada por uma instituição de ensino
 privada da região metropolitana de São Paulo à qual o grupo teve acesso por intermédio de um de
@@ -278,9 +285,10 @@ longo do tempo (séries temporais), que simulam históricos de captação, matr�
 Ele não reúne registros operacionais
 da instituição nem se conecta a contas reais de anúncios, gestão de relacionamento com clientes
 (CRM), sistemas acadêmicos ou outras bases operacionais; tampouco trata dados pessoais ou
-informações comerciais sensíveis. As Fases 1 e 2 estão funcionais localmente, com Captação,
-Matrículas e Ads (visão geral, Google Ads, Meta Ads e Estratégia). Conteúdo orgânico e Objetivo
-da Gestão com Arquitetura e Algoritmos, das Fases 3 e 4, permanecem planejados e bloqueados.
+informações comerciais sensíveis. Na composição local V4, as quatro fases especificadas estão
+implementadas: Captação, Matrículas, Ads (visão geral, Google Ads, Meta Ads e Estratégia),
+Conteúdo Orgânico, Objetivo da Gestão e Arquitetura & Algoritmos. As Fases 3 e 4 permanecem
+bloqueadas somente nas composições históricas V1–V3.
 O apoio de agentes de IA, que auxiliam em tarefas delimitadas e têm suas saídas revistas por
 pessoas, utilizou contexto fictício ou sanitizado. Uma eventual
 simulação futura deverá ser identificada como exploratória e depender de cálculo determinístico e
@@ -556,16 +564,16 @@ avaliação qualitativa do protótipo. Os dados delimitam os cálculos e as esti
 da comunidade orienta as perguntas de gestão e a apresentação dos indicadores.
 
 O desenvolvimento funcional foi organizado em quatro fases. Elas indicam o escopo dos módulos,
-enquanto V1, V2 e V3 identificam versões sucessivas da interface; uma versão não corresponde a
-uma fase. No estado final documentado, as Fases 1 e 2 estão implementadas no ambiente acadêmico,
-e as Fases 3 e 4 permanecem bloqueadas.
+enquanto V1, V2, V3 e V4 identificam versões sucessivas da interface; uma versão não corresponde
+a uma fase. Na composição local V4, as quatro fases foram implementadas **dentro do escopo
+explicitamente especificado** no plano de fases, sem ampliar esse escopo por inferência.
 
 | Fase | Escopo | Estado final |
 |---|---|---|
 | Fase 1 | Captação e Matrículas | Implementada |
 | Fase 2 | Mídia paga: Visão Geral, Google Ads, Meta Ads, Estratégia e experimento de CPR | Implementada no ambiente acadêmico local |
-| Fase 3 | Conteúdo orgânico | Bloqueada |
-| Fase 4 | Gestão e Arquitetura | Bloqueada |
+| Fase 3 | Conteúdo Orgânico: Reels sintéticos | Implementada na V4 |
+| Fase 4 | Objetivo da Gestão e Arquitetura & Algoritmos | Implementada na V4 |
 
 Após a escuta e a definição dos requisitos, o método segue os seis objetivos: organizar dados,
 construir indicadores, desenvolver a interface, examinar o CPR experimental, aplicar IA agêntica
@@ -725,10 +733,13 @@ ampliou as possibilidades de demonstração, sem integração com contas reais. 
 e a reavaliação focal da V2 não cobriram Ads ou ML; a terceira aplicação examinou a compreensão
 desses módulos e a utilidade percebida da previsão, sem validar seu desempenho matemático.
 
-A Fase 3 prevê Reels orgânicos; a Fase 4, Objetivo da Gestão e Arquitetura & Algoritmos.
-Ambas permaneceram bloqueadas porque seus módulos e requisitos de dados ainda não haviam sido
-concluídos. A presença de rotas preparadas no código não as torna resultados funcionais. Essa
-restrição manteve o protótipo disponível limitado aos incrementos verificáveis.
+A Fase 3 foi concluída na V4 com publicações fictícias de Reels, alcance e interações, taxa de
+interação e ranking determinístico. O score demonstrativo usa pesos declarados de 70% para a
+taxa de interação normalizada e 30% para o alcance normalizado; ausência de medição permanece
+distinta de zero observado. A Fase 4 acrescentou um plano fictício de vagas e ocupação em
+Objetivo da Gestão, isolado das matrículas do painel, e a página Arquitetura & Algoritmos,
+que descreve fontes, regras, cálculos, verificações e limites da solução. São as entregas
+explicitamente especificadas no plano de fases.
 
 Essa divisão funcional não corresponde à numeração das versões da interface. A V1 preserva a
 Fase 1 com os gráficos temporais separados de Captação. A V2 preserva os módulos
@@ -737,15 +748,19 @@ após o feedback FB-V1-P1-001. Ads e CPR entraram por evolução técnica e acad
 desse feedback. O versionamento permite comparar a interface inicialmente avaliada com a
 evolução posterior sem reescrever a experiência de P1. A V3 foi implementada após a avaliação
 ampliada da V2 para incorporar os sete feedbacks aceitos; não constitui uma nova fase funcional.
+A V4 foi produzida por evolução técnica/acadêmica do grupo, sem questionário entre V3 e V4.
+Sua segunda iteração técnica acrescentou ranking de anúncios pagos no Meta Ads, ranking de
+palavras-chave no Google Ads e séries temporais de CPR em Estratégia. Nenhuma dessas alterações
+teve origem em P1; a avaliação da V4 ocorreu posteriormente.
 
 Tabela 3 – Organização funcional das fases e relação com as versões da interface
 
 | Fase | Escopo | Estado no protótipo | Relação com as versões |
 |---|---|---|---|
-| Fase 1 | Captação e Matrículas | Funcional; baseline acadêmica | V1, V2 e V3, com apresentações versionadas |
-| Fase 2 | Ads: Visão geral, Google Ads, Meta Ads e Estratégia; apresentação dos artefatos CPR em Google Ads | Funcional no ambiente acadêmico local | Incorporada à V2 por evolução técnica/acadêmica e revista na V3 após avaliação da V2 |
-| Fase 3 | Reels orgânicos | Planejada e bloqueada | Não integra V1, V2 ou V3 |
-| Fase 4 | Objetivo da Gestão e Arquitetura & Algoritmos | Planejada e bloqueada | Não integra V1, V2 ou V3 |
+| Fase 1 | Captação e Matrículas | Implementada | V1–V4, com apresentações versionadas |
+| Fase 2 | Ads: Visão geral, Google Ads, Meta Ads e Estratégia; apresentação dos artefatos CPR em Google Ads | Implementada no ambiente acadêmico local | V2–V4; revista na V3 após avaliação da V2; ampliada tecnicamente na V4 |
+| Fase 3 | Reels orgânicos | Implementada no escopo especificado | Somente V4; bloqueada em V1–V3 |
+| Fase 4 | Objetivo da Gestão e Arquitetura & Algoritmos | Implementada no escopo especificado | Somente V4; bloqueada em V1–V3 |
 
 Fonte: Elaborado pelo grupo com base no plano de fases, nos registros das versões e no estado
 versionado do protótipo (2026).
@@ -873,7 +888,7 @@ responsabilidade humana. Os agentes não produziram as estimativas de CPR nem va
 matematicamente o experimento: as estimativas resultaram da regressão linear e dos baselines
 documentados em 2.5.10. Não há registro de experimento específico de simulação agêntica na
 solução analítica. As ferramentas não geraram respostas de P1 nem substituíram entrevistas; os
-registros originais dos três momentos de validação foram preservados.
+registros originais das quatro aplicações com P1 foram preservados.
 
 ### 2.5.12 Implementar, testar, validar e ajustar
 
@@ -888,8 +903,10 @@ P1 utilizou inicialmente a V1, sem Ads ou CPR. Após a sugestão FB-V1-P1-001 e 
 grupo, a V2 recebeu a visualização temporal consolidada; a mesma P1 reavaliou essa versão.
 Os módulos comuns às duas versões utilizam os mesmos dados sintéticos, métricas e fórmulas.
 Em terceira aplicação sucessiva, P1 avaliou a V2 de forma ampliada. O grupo analisou os sete
-feedbacks, decidiu incorporá-los e implementou a V3. Nenhum dos três momentos constitui amostra
-independente ou comparação experimental controlada. A V3 ainda não foi avaliada por P1.
+feedbacks, decidiu incorporá-los e implementou a V3. Depois, o grupo desenvolveu a V4 por
+evolução técnica/acadêmica, sem nova avaliação entre as versões. Em quarta aplicação, P1 avaliou
+online a V4 já implementada e não solicitou alteração relevante. Os quatro momentos envolveram
+a mesma participante; não constituem amostras independentes ou comparação experimental controlada.
 
 A participante avaliou as versões indicadas em seus registros anonimizados. As respostas
 documentaram compreensão dos indicadores, utilidade percebida, dificuldades e sugestões.
@@ -898,48 +915,53 @@ apoiam a identificação de necessidades e a avaliação de serviços de informa
 2023).
 
 P1, gerente de Marketing, participou presencialmente em 07/10/2026 dos dois primeiros momentos.
-O TCLE das três aplicações foi obtido e assinado; os documentos protegidos permanecem fora do
-repositório. Data e modalidade da terceira aplicação não constam do registro primário consultado.
+O TCLE dessas três aplicações anteriores foi obtido e assinado; os documentos protegidos
+permanecem fora do repositório. Data e modalidade da terceira aplicação não constam do registro
+primário consultado. A quarta aplicação ocorreu online em 14/10/2026; o registro primário
+consultado não informa o estado de TCLE dessa etapa.
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
-O capítulo apresenta dois tipos de resultado: o funcionamento técnico da solução e as alterações
-da interface decorrentes de três avaliações sucessivas com a mesma profissional da instituição
-parceira, identificada como P1. Ela avaliou a V1 e sugeriu um ajuste incorporado à V2. Em seguida,
-reavaliou esse ajuste na V2 e relatou sua utilidade, sem solicitar outra alteração naquele escopo.
-Mais tarde, avaliou a V2 de forma ampliada; o grupo analisou sete novos feedbacks e os incorporou
-à V3. Essa última versão foi verificada tecnicamente, mas ainda não foi avaliada por P1.
+O capítulo apresenta o funcionamento técnico da solução, a origem de cada versão e quatro
+aplicações com a mesma profissional da instituição parceira, identificada como P1. Ela avaliou
+a V1, reavaliou a V2 após o primeiro ajuste e examinou a V2 de forma ampliada; sete feedbacks
+da terceira aplicação foram incorporados à V3. A transição da V3 para a V4 não decorreu de
+nova aplicação com a comunidade. Tratou-se de evolução técnica e acadêmica do grupo,
+destinada a concluir o escopo funcional previamente especificado nas Fases 3 e 4 e ampliar
+análises já existentes. A avaliação comunitária ocorreu **posteriormente**, sobre a V4 já
+implementada; P1 não solicitou alteração relevante.
 
 A seção 3.1 apresenta dados, indicadores, interface, CPR e uso assistivo de IA agêntica. A seção
-3.2 mostra o que P1 apontou, como o grupo decidiu e o que mudou em cada versão; 3.3 reúne testes
-e limitações independentes da percepção da participante. No estado local da V3, as Fases 1 e 2
-estão ativas; Fases 3 e 4 permanecem planejadas e bloqueadas. Ads utiliza dados sintéticos, sem
-integração real. O experimento de CPR continua executado pela CLI; a interface apenas apresenta
-seus resultados reproduzíveis, sem treinamento no navegador. Não houve consolidação de fontes
-institucionais reais nem novo deploy.
+3.2 mostra as avaliações, as decisões e as alterações decorrentes, distinguindo a V4 técnica
+da avaliação posterior; 3.3 reúne testes e limitações independentes da percepção da
+participante. A V4 constitui a primeira composição local que reúne o escopo funcional
+explicitamente especificado das quatro fases. Ads utiliza dados sintéticos, sem integração
+real. O experimento de CPR continua executado pela CLI; a interface apenas apresenta seus
+resultados, sem treinamento no navegador. Não houve consolidação de fontes institucionais
+reais nem novo deploy.
 
 ## 3.1 Desenvolvimento e resultados técnicos
 
 ### 3.1.1 Estado real das fases do protótipo
 
-A Tabela 5 distingue os módulos disponíveis dos que ainda estavam bloqueados na data registrada.
+A Tabela 5 distingue o estado final local da V4 dos bloqueios preservados nas versões anteriores.
 
 Tabela 5 – Estado das fases do protótipo
 
-| Fase | Escopo | Estado em 06/10/2026 | Evidência documental |
+| Fase | Escopo | Estado local em 14/10/2026 | Evidência documental |
 |---|---|---|---|
 | Fase 1 | Captação e Matrículas | ATIVA/FUNCIONAL | Módulos funcionais com dados sintéticos |
 | Fase 2 | Ads: visão geral, Google Ads, Meta Ads e estratégia | ATIVA/FUNCIONAL NO AMBIENTE ACADÊMICO LOCAL | Gate liberado explicitamente; build, testes e quatro rotas HTTP 200; somente dados sintéticos |
-| Fase 3 | Reels orgânicos | PLANEJADA/BLOQUEADA | Feature gate fechado; conjunto sintético e algoritmos pendentes |
-| Fase 4 | Objetivo da Gestão e Arquitetura & Algoritmos | PLANEJADA/BLOQUEADA | Feature gate fechado; depende das fases anteriores |
+| Fase 3 | Reels orgânicos | IMPLEMENTADA NA V4 | Publicações sintéticas, score e ranking determinístico; bloqueada em V1–V3 |
+| Fase 4 | Objetivo da Gestão e Arquitetura & Algoritmos | IMPLEMENTADA NA V4 | Plano fictício e documentação da solução; bloqueada em V1–V3 |
 
 Fonte: Elaborado pelo grupo com base no estado versionado do repositório (2026).
 
-O quadro registra o estado das fases em 06/10/2026, distinto do plano exposto em 2.5.9. Na
-composição atual, a Fase 1 integra V1, V2 e V3; a Fase 2 está acessível em V2 e V3 no ambiente
-acadêmico local. A publicação anterior da Fase 1 não foi ampliada por essa liberação local. As
-Fases 3 e 4 continuam
-bloqueadas e não foram entregues funcionalmente.
+O quadro registra o estado da composição local V4, distinto da situação inicial do plano de
+27/08/2026 e do estado intermediário de 06/10/2026. A Fase 1 integra V1–V4; a Fase 2 está
+acessível em V2–V4. As Fases 3 e 4 foram implementadas no escopo especificado somente em V4,
+permanecendo bloqueadas em V1–V3. A publicação anterior da Fase 1 não foi ampliada por essa
+liberação local.
 
 ### 3.1.2 Estratégia incremental e arquitetura da solução
 
@@ -1007,7 +1029,7 @@ Figura 2 – Indicadores e composição por safra em Matrículas na V1
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
-### 3.1.5 Módulos de Ads e componentes ainda planejados
+### 3.1.5 Módulos de Ads
 
 A V2 disponibiliza localmente Visão Geral Ads, Google Ads, Meta Ads e Estratégia, todos com dados
 sintéticos. Não há integração com Google Ads API, Meta API ou CRM. Google Ads apresenta
@@ -1135,14 +1157,57 @@ de execução estão em 2.5.11 e `docs/run_log.md`. As saídas passaram por insp
 humana; não houve avaliação independente da eficácia dos agentes nem simulação agêntica
 específica documentada na solução analítica.
 
+### 3.1.8 V4 e conclusão do escopo especificado das quatro fases
+
+A V4 reúne, pela primeira vez em uma composição local, o escopo funcional explicitamente
+especificado das quatro fases. Sua origem é **evolução técnica/acadêmica do grupo**; não houve
+questionário ou avaliação comunitária entre V3 e V4. A quarta aplicação com P1 ocorreu somente
+depois da implementação e é apresentada em 3.2.2. A V4 preserva os indicadores históricos de
+V1–V3 e acrescenta módulos e análises identificados como sintéticos.
+
+Em Conteúdo Orgânico, doze Reels fictícios têm mês, alcance e interações. A taxa de interação
+divide interações por alcance. O score demonstrativo combina 70% da taxa normalizada e 30% do
+alcance normalizado, segundo referências acadêmicas declaradas, e produz ranking com desempate
+determinístico. Ausência de medição impede a classificação, enquanto zero interações observado
+permanece um valor válido. A Figura 14 mostra a apresentação desse cenário; seu score não é
+utilizado para ordenar anúncios pagos.
+
+Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e
+taxas alvo por turma. Ele demonstra uma premissa de ocupação e não representa matrícula
+observada, previsão institucional ou plano aprovado pela parceira (Figura 15). A página
+Arquitetura & Algoritmos documenta na interface as fontes locais, as regras de cálculo,
+as verificações e os limites de interpretação da solução.
+
+Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios
+do mês associados ao indicador **conversa**, ordenados pelo menor CPR válido. Para cada
+anúncio, CPR Meta = investimento ÷ conversas; sem conversas, o valor fica indisponível.
+Interações são outro indicador e não entram nesse denominador. O ranking de anúncios pagos
+da Figura 16 não utiliza o score de Reels orgânicos.
+
+No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques,
+conversões registradas e CPR (Figura 17). CPR Google = custo ÷ conversões registradas no
+Google Ads; conversão zero ou ausente torna o CPR indisponível. Essas conversões não equivalem
+a matrículas, leads únicos ou pessoas identificadas. Os registros granulares de ambos os
+rankings são partições determinísticas das linhas mensais fechadas da base sintética;
+preservam os totais de origem quando aplicável, sem acesso a APIs ou dados operacionais.
+
+Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google
+por conversão registrada e CPR Meta por conversa (Figura 18). Os denominadores têm sentidos
+diferentes: não há CPR agregado Google+Meta, atribuição causal de matrículas aos canais nem
+mistura com a previsão experimental de CPR Google. O protótipo não contém dados pessoais,
+integração com plataformas reais ou dados institucionais operacionais. As Figuras 14 a 18,
+apresentadas após a rastreabilidade da seção 3.2, documentam essas funcionalidades técnicas;
+não representam resultados produzidos pela avaliação de P1.
+
 ## 3.2 Avaliação com a comunidade e alterações decorrentes
 
-V1 → 1ª avaliação de P1 → FB-V1-P1-001 → decisão e alteração do grupo → V2 → 2ª avaliação da
-mesma P1 → relato positivo sobre o ajuste → V2 mantida → 3ª avaliação ampliada da V2 →
-FB-V2-P1-001 a FB-V2-P1-007 → decisão e alterações do grupo → V3 → verificação técnica.
+V1 → 1ª avaliação de P1 → FB-V1-P1-001 → V2 → 2ª avaliação focal de P1 → V2 mantida →
+3ª avaliação ampliada da V2 → FB-V2-P1-001 a FB-V2-P1-007 → V3 → evolução técnica/acadêmica
+sem nova avaliação comunitária → V4 → 4ª avaliação de P1 → V4 mantida.
 
-As três aplicações envolveram uma participante, não três amostras independentes. A segunda
-avaliação encerrou o primeiro ciclo de alteração e retorno; não originou a V3.
+As quatro aplicações envolveram uma participante, não quatro amostras independentes. A segunda
+avaliação encerrou o primeiro ciclo de alteração e retorno; não originou a V3. A quarta avaliou
+uma V4 já implementada e não originou a própria V4.
 
 ### 3.2.1 Contato inicial e necessidades identificadas
 
@@ -1225,7 +1290,7 @@ rematrículas por series.” O grupo registrou FB-V2-P1-001 e FB-V2-P1-002 e dec
 na V3, a taxa mensal de efetivação visita–matrícula no mesmo funil e a comparação de matrículas
 novas e rematrículas por série existente no cenário sintético.
 
-Figura 7 – V3: efetivação visitamatrícula em Captação
+Figura 7 – V3: efetivação visita–matrícula em Captação
 
 ![Tela de Captação da V3 com visitas, matrículas e gráfico da taxa mensal de efetivação visita–matrícula.](figuras/fig-v3-captacao-efetivacao.png)
 
@@ -1292,10 +1357,37 @@ V3 por P1 nem prova de impacto institucional ou de qualidade preditiva do modelo
 
 **Efeito no desenvolvimento:** os sete feedbacks da terceira avaliação foram analisados pelo
 grupo e incorporados à V3. A implementação passou por verificação técnica, descrita em 3.3;
-P1 ainda não reavaliou essa versão. As falas citadas constam dos registros primários
+P1 não avaliou a V3. A aplicação seguinte ocorreu depois da evolução técnica que produziu a
+V4. As falas anteriores citadas constam dos registros primários
 `docs/validacao/respostas/v1-p1.md`, `docs/validacao/respostas/v2-p1-reavaliacao.md` e
 `docs/validacao/respostas/v2-p1-para-v3.md`; o instrumento e a análise dos feedbacks estão
 identificados na seção 2.5.12.
+
+#### Quarto momento — avaliação da V4
+
+P1, Gerente de Marketing, avaliou **online, em 14/10/2026**, a V4 já implementada. Nas oito
+questões fechadas, relativas a navegação, Conteúdo Orgânico, Gestão, Arquitetura & Algoritmos,
+ranking Meta, ranking Google, CPR temporal em Estratégia e utilidade geral, as notas foram:
+**Q1 = 5; Q2 = 5; Q3 = 5; Q4 = 5; Q5 = 5; Q6 = 5; Q7 = 5; Q8 = 5**. A média descritiva foi
+**5,0 / 5,0**. Na Q11, P1 escolheu **A — “A versão está adequada para uso no contexto
+apresentado, sem necessidade de alterações relevantes.”** As notas descrevem a percepção de
+uma participante; não constituem amostra estatística nem permitem generalização.
+
+Os trechos a seguir preservam a redação da participante conforme o registro primário. Na Q9,
+ela apontou como parte mais útil: “Aparte do ADS que mostra o relatório do quantitativo de
+alcance e interações tanto google quanto meta”. Na Q10, respondeu: “No uso inicial parece
+estar tudo dentro da minha necessidade”. Na Q12, não solicitou mudança específica e escreveu:
+“No fluxo de utilização atual esta sendo o suficiente, estamos tendo um resultado comparativo
+com ano passado melhor, e esses painéis estão ajudando muito a mensurar isso.”
+
+P1 relatou perceber melhora comparativa em relação ao ano anterior e afirmou que os painéis
+auxiliavam sua mensuração. Esse relato pertence ao contexto profissional da participante;
+o protótipo acadêmico não verifica o resultado institucional referido nem permite atribuir
+eventual melhora à plataforma ou aos investimentos em mídia. Nesta aplicação, **nenhuma
+alteração relevante foi solicitada**, nenhuma necessidade de V5 foi identificada e a V4 foi
+mantida como versão avaliada atual. Isso não equivale a validação definitiva. As respostas
+literais estão em `docs/validacao/respostas/v4-p1.md`, separadas da análise em
+`docs/validacao/analise-v4-p1.md`.
 
 ### 3.2.3 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
 
@@ -1328,7 +1420,7 @@ Fonte: Elaborado pelo grupo com base nos dois registros anonimizados de P1 (2026
 
 Na terceira aplicação, as menores notas concentraram-se em Ads e Estratégia (3 em cada uma das
 questões 7–10), ao passo que navegação, Captação/Matrículas e apresentação do ML receberam notas
-de 4 ou 5. A comparação é descritiva e individual; os instrumentos dos três momentos têm escopos
+de 4 ou 5. A comparação é descritiva e individual; os instrumentos dos três primeiros momentos têm escopos
 distintos. A implementação posterior da V3 responde aos pedidos de resumo mensal, análise por
 série, comparação temporal e comunicação mais explícita dos limites da previsão, sem comprovar
 melhoria percebida pela participante.
@@ -1366,14 +1458,16 @@ de cada item; as respostas literais permanecem em `docs/validacao/feedback-v2-v3
 
 ### 3.2.5 Feedback, decisões e alterações implementadas
 
-A Tabela 14 reúne o ajuste da V1 para a V2 e os sete feedbacks da avaliação ampliada da V2. O
-grupo analisou esses feedbacks, decidiu incorporá-los e implementou as alterações na V3.
+A Tabela 14 distingue os ajustes originados em feedback de P1, a evolução técnica V3→V4 e a
+avaliação posterior da V4. O grupo incorporou os sete feedbacks da terceira aplicação à V3;
+nenhuma alteração relevante decorreu da quarta.
 
 Tabela 14 – Rastreabilidade das avaliações, decisões e alterações implementadas
 
-| Origem | Feedback | Análise e decisão do grupo | Alteração implementada | Versão | Verificação técnica |
+| Origem | Feedback ou item | Análise e decisão do grupo | Alteração implementada | Versão | Verificação ou evidência |
 |---|---|---|---|---|---|
 | P1 — 1ª avaliação da V1 | FB-V1-P1-001: gráficos temporais dispersos | Consolidação aprovada, preservando as séries do mesmo funil | Gráfico multissérie selecionável de Contatos, Visitas e Matrículas | V2 | Testes de V2 e preservação dos 17 hashes da V1; P1 reavaliou a apresentação |
+| P1 — 2ª avaliação focal da V2 | Confirmação do ajuste anterior; sem novo feedback de mudança | Manter V2 naquele ciclo | Nenhuma nova alteração solicitada | V2 mantida | Registro primário da reavaliação V2 |
 | P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-001: efetivação visita–matrícula | Aceito para o mesmo funil, com denominador definido | Taxa mensal e indisponibilidade quando visitas são zero ou ausentes | V3 | `test:v3-feedback` e `test:interface:http` |
 | P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-002: matrículas e rematrículas por série | Aceito apenas para séries existentes no dado sintético | Comparação por série; safra sem classificação excluída | V3 | `test:v3-feedback` e `test:interface:http` |
 | P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-003: resumo mensal de Ads | Aceito; detalhes permanecem nos painéis específicos | Seletor mensal, indicadores e tabela por canal na Visão Geral | V3 | `test:interface:http` e captura local |
@@ -1381,21 +1475,62 @@ Tabela 14 – Rastreabilidade das avaliações, decisões e alterações impleme
 | P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-005: alcance, investimento e leads Meta | Aceito mantendo alcance, lead e resultado distintos | Métricas e gráficos separados no Meta Ads | V3 | `test:v3-feedback` e `test:interface:http` |
 | P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-006: comparação temporal em Estratégia | Aceito sem inferir atribuição causal entre cenários | Investimento por canal e contagens de leads/matrículas no mesmo eixo temporal | V3 | `test:v3-feedback` e `test:interface:http` |
 | P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-007: previsão percebida como variável | Aceito como melhoria de comunicação, sem alterar algoritmo ou valores | Explicação simples, aviso de desempenho limitado e gráfico histórico/previsão | V3 | `test:google-cpr:sazonal` e reprodução do artefato |
+| Grupo — sem avaliação entre V3 e V4 | TEC-002 a TEC-005: conclusão do escopo das Fases 3 e 4 e composição V4 | Evolução técnica/acadêmica previamente especificada | Reels orgânicos, plano fictício de gestão, documentação da arquitetura e composição das quatro fases | V4 | `test:v4`, gates e capturas locais |
+| Grupo — segunda iteração técnica da V4 | TEC-006 a TEC-008: rankings Ads e CPR temporal | Evolução técnica/acadêmica, sem origem em P1 | Criativos Meta, palavras-chave Google e CPR separado por canal | V4 | `test:v4`, `test:interface:http` e capturas locais |
+| P1 — 4ª avaliação posterior da V4 | Oito notas 5/5, opção A; nenhuma alteração relevante solicitada | Manter V4; nenhuma V5 aberta neste ciclo | Nenhuma alteração decorrente desta aplicação | V4 mantida | Registro primário `respostas/v4-p1.md` e análise separada |
 
 Fonte: Elaborado pelo grupo (2026).
 
 Ads e o experimento inicial de CPR entraram na V2 por evolução técnica e acadêmica independente
-de FB-V1-P1-001. Os arquivos e testes de cada alteração constam de
-`docs/validacao/feedback-v2-v3.md`. A V3 reúne cenários sintéticos independentes, sem atribuição
-causal, e não foi reavaliada por P1. As Figuras 1 a 6 preservam a evidência histórica da V1/V2;
-as Figuras 7 a 13 integram este relatório como evidência visual das alterações da V3.
+de FB-V1-P1-001. As alterações comunitárias V2→V3 constam de
+`docs/validacao/feedback-v2-v3.md`; os itens técnicos V3→V4, de
+`docs/validacao/v3-v4-matriz.md`. A V3 reúne cenários sintéticos independentes, sem atribuição
+causal, e não foi avaliada por P1. As Figuras 1 a 6 preservam a evidência histórica da V1/V2;
+as Figuras 7 a 13 documentam a V3; as Figuras 14 a 18 mostram a V4 já implementada, sem
+constituir prova de impacto institucional.
 
 Em síntese, a V1 oferecia Captação e Matrículas; a primeira avaliação apontou a dispersão dos
 gráficos e originou o ajuste incorporado à V2. Essa versão reuniu o gráfico selecionável e ganhou
 Ads/CPR por evolução técnica independente. A segunda avaliação confirmou, na percepção de P1, a
 utilidade do ajuste, sem gerar outra versão. Na terceira avaliação, agora ampliada à V2, P1 indicou
-sete necessidades que o grupo incorporou à V3. A V3 foi verificada tecnicamente e ainda aguarda
-reavaliação por P1.
+sete necessidades que o grupo incorporou à V3. A transição V3→V4 concluiu tecnicamente o
+escopo especificado das quatro fases, sem aplicação comunitária intermediária. Só depois P1
+avaliou a V4, atribuiu oito notas 5/5, escolheu A e não solicitou alteração relevante. O
+grupo manteve a V4, sem abrir V5.
+
+As cinco capturas seguintes registram a interface técnica da V4 já implementada. Sua posição
+após a tabela mantém a sequência das figuras históricas; as imagens não são evidência de
+desempenho institucional nem resultado produzido pela avaliação de P1.
+
+Figura 14 – V4: ranking sintético de Reels orgânicos
+
+![Ranking de Reels fictícios na V4, com alcance, interações, taxa e score demonstrativo.](figuras/fig-v4-organico-reels.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
+
+Figura 15 – V4: plano fictício de vagas e ocupação em Gestão
+
+![Plano fictício de ocupação da V4 com vagas hipotéticas, taxas e vagas alvo por etapa.](figuras/fig-v4-gestao-ocupacao.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
+
+Figura 16 – V4: ranking sintético de anúncios no Meta Ads
+
+![Ranking mensal de criativos pagos fictícios da V4 com investimento, conversas e CPR Meta.](figuras/fig-v4-meta-ranking-anuncios.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
+
+Figura 17 – V4: ranking sintético de palavras-chave no Google Ads
+
+![Ranking mensal de palavras-chave fictícias da V4 com cliques, conversões, custo e CPR Google.](figuras/fig-v4-google-palavras-chave.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
+
+Figura 18 – V4: séries temporais separadas de CPR em Estratégia
+
+![Gráfico da V4 com CPR mensal Google por conversão e CPR Meta por conversa em séries separadas.](figuras/fig-v4-estrategia-cpr-temporal.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
 
 ## 3.3 Verificação técnica da solução e limitações
 
@@ -1413,7 +1548,14 @@ Na implementação da V3, `npm run build`, `npm test` e `npm run test:interface:
 passar. A suíte verificou a nova taxa com denominador zero, as regras sintéticas, as 17
 assinaturas que protegem os arquivos da V1, o acesso às páginas V1/V2/V3 e o bloqueio das Fases
 3 e 4. As capturas da V3 foram conferidas visualmente e incorporadas ao capítulo 3, sem substituir
-as figuras históricas. Esses testes verificam a execução técnica; P1 não avaliou o uso da V3.
+as figuras históricas. Esse é o estado **histórico da V3**: os testes verificaram sua execução
+técnica, mas P1 não avaliou seu uso.
+
+Na V4, os testes de interface passaram a verificar a composição das quatro fases, o isolamento
+de V1–V3, os rankings sintéticos de anúncios e palavras-chave e o CPR temporal com denominadores
+separados. As proteções dos 17 hashes V1 e 13 hashes V3 foram preservadas. As Figuras 14 a 18
+foram conferidas visualmente; a quarta aplicação com P1 avaliou a percepção de uso da V4 já
+implementada, separadamente da verificação de código e cálculo.
 
 Os testes também examinam integridade e determinismo dos dados sintéticos, cálculo dos
 indicadores e separação entre alcance, lead e conversão.
@@ -1421,16 +1563,16 @@ indicadores e separação entre alcance, lead e conversão.
 ### 3.3.2 Limitações
 
 Quatro limites orientam a interpretação dos resultados: os dados são sintéticos; a aplicação não
-se integra aos sistemas operacionais da instituição; a avaliação externa envolveu uma única
-participante; e o experimento de CPR apresentou desempenho preditivo limitado. Em conjunto, eles
-restringem o trabalho à demonstração acadêmica de organização, cálculo e visualização, sem prova
-de impacto institucional.
+se integra aos sistemas operacionais da instituição; as quatro avaliações externas envolveram
+uma única participante; e o experimento de CPR apresentou desempenho preditivo limitado. Em
+conjunto, eles restringem o trabalho à demonstração acadêmica de organização, cálculo e
+visualização, sem prova de impacto institucional ou generalização estatística.
 
 Os módulos funcionais não se conectam a contas de anúncios, CRM, sistemas acadêmicos ou bases da
 instituição. Assim, não permitem medir o desempenho real das campanhas.
 
 As fontes disponíveis não permitem atribuir individualmente uma matrícula a uma ação de mídia
-nem estabelecer inferência causal. Na V3, Ads e Matrículas compartilham meses fictícios de 2022,
+nem estabelecer inferência causal. Na V3 e na V4, Ads e Matrículas compartilham meses fictícios de 2022,
 mas provêm de cenários sintéticos independentes, sem chave de ligação. Leads e alcance dos painéis
 Ads são derivações determinísticas
 criadas para demonstração e não medições de plataforma ou pessoas. O total de leads simulados não
@@ -1442,6 +1584,12 @@ de atribuição declarados. A ausência de períodos históricos autorizados par
 conteúdo orgânico impede apresentar resultados operacionais desses componentes. Não impede
 o experimento separado de CPR, executado exclusivamente sobre dados sintéticos.
 
+Na V4, os criativos Meta e as palavras-chave Google foram derivados por partição determinística
+das linhas sintéticas, não observados nas plataformas. CPR Meta por conversa e CPR Google por
+conversão registrada têm denominadores distintos, por isso não são agregados. Os rankings
+não comprovam eficiência real nem constituem recomendação automática de orçamento. O plano
+de Gestão é fictício e não representa ocupação aprovada ou medida pela instituição.
+
 Resultados obtidos em cenário sintético não podem ser generalizados para a operação da instituição
 ou para outras organizações. Os experimentos de CPR são exploratórios, apresentam poder preditivo
 limitado e dependem do processo gerador e da hipótese sintética de maturação de 14 dias. A previsão
@@ -1451,11 +1599,15 @@ substitui evidência, cálculo ou decisão humana.
 
 A validação comunitária contou com uma participante, gerente de Marketing. Ela avaliou
 presencialmente a V1 e reavaliou a V2 em 07/10/2026; depois, avaliou a V2 de forma ampliada.
-O TCLE das três aplicações foi obtido e assinado. Data e modalidade do terceiro momento não
-constam do registro primário consultado. A V3 não foi avaliada por P1. As avaliações sucessivas
-constituem evidência exploratória de uma pessoa, sem amostra independente ou comparação
-quantitativa controlada. As séries sintéticas agregadas não medem a qualidade individual dos leads
-nem sustentam rastreamento de pessoas ou atribuição causal entre etapas do funil.
+O TCLE dessas três aplicações foi obtido e assinado. Data e modalidade do terceiro momento não
+constam do registro primário consultado. A V3 não foi avaliada por P1. Em quarto momento,
+P1 avaliou online a V4 em 14/10/2026. As oito notas 5/5 e a opção A expressam sua percepção
+individual, não validação definitiva. O relato de Q12 sobre comparação com o ano anterior
+não foi verificado com dados operacionais e não demonstra que a plataforma ou os anúncios
+tenham causado melhora institucional. As avaliações sucessivas não formam amostra independente
+ou comparação quantitativa controlada. As séries sintéticas agregadas não medem a qualidade
+individual dos leads nem sustentam rastreamento de pessoas ou atribuição causal entre etapas
+do funil.
 
 # 4 CONSIDERAÇÕES FINAIS
 
@@ -1477,10 +1629,13 @@ Na terceira aplicação, P1 avaliou a V2 de forma ampliada, solicitou sete grupo
 classificou a versão como necessitando alterações importantes. O grupo analisou os feedbacks,
 decidiu incorporá-los e implementou a V3: apresentação mensal, composição de matrículas por
 série, efetivação de visitas, comparações temporais e comunicação mais clara dos limites da
-previsão. A V3 passou por verificação técnica e ainda aguarda reavaliação comunitária; P1 não a
-avaliou. Suas respostas documentam compreensão e utilidade percebida,
-sem medir precisão do modelo ou eficácia de decisões reais. A comparação entre canais usa apenas
-investimentos em períodos compatíveis, sem equiparar resultados com denominadores diferentes.
+previsão. P1 não avaliou a V3. Em seguida, por evolução técnica/acadêmica **sem nova aplicação
+comunitária entre as versões**, o grupo implementou a V4 com o escopo especificado das quatro
+fases, rankings sintéticos de Ads e CPR temporal por canal. A quarta avaliação ocorreu depois
+dessa implementação: P1 atribuiu 5/5 às oito questões fechadas, escolheu A e não solicitou
+alteração relevante. A V4 foi mantida, sem abertura de V5. Os quatro momentos atendem ao
+objetivo de avaliar o protótipo com uma profissional e incorporar contribuições viáveis, dentro
+do limite de uma única participante; não equivalem a validação externa ampla.
 
 Os experimentos de CPR delimitam o alcance da solução. No experimento inicial, a
 regressão apresentou erros menores que a persistência t−2. No período de teste principal do
@@ -1498,13 +1653,16 @@ entre indicadores calculados e previsões experimentais e a rastreabilidade das 
 Dados sintéticos independentes, uma única participante, séries agregadas sem rastreamento
 individual ou inferência causal, ausência de integrações operacionais e desempenho preditivo
 limitado impedem generalizar as percepções de P1 ou afirmar melhoria real de decisões de
-orçamento, redução de custos, aumento de matrículas ou impacto institucional. As Fases 3 e 4
-permaneceram bloqueadas.
+orçamento, redução de custos, aumento de matrículas ou impacto institucional. A fala de Q12
+sobre comparação anual permanece relato da participante, sem verificação institucional ou
+inferência causal. As quatro fases foram implementadas na V4 dentro do escopo documental;
+nenhum uso operacional real foi demonstrado.
 
-Como próximos passos, a V3 poderá passar por revisão visual e avaliação com mais profissionais.
-O exame de dados reais dependerá de autorização e anonimização; integrações operacionais exigirão
-requisitos próprios de segurança. Séries mais amplas e outros modelos dependerão de dados
-suficientes e de qualidade, e as Fases 3 e 4 só poderão ser avaliadas após sua implementação.
+Avaliações futuras com outros profissionais poderão ampliar a compreensão de uso da V4, sem
+pressupor uma nova versão. O exame de dados reais dependerá de autorização e anonimização;
+integrações operacionais exigirão requisitos próprios de segurança. Séries mais amplas e
+outros modelos dependerão de dados suficientes e de qualidade. O CPR experimental permanece
+limitado e separado dos indicadores descritivos da V4.
 
 # REFERÊNCIAS
 
@@ -1725,7 +1883,7 @@ Transposição dos 30 itens e campos de `docs/questionario_comunidade_externa.md
     - ☐ Talvez, dependendo do período
     - ☐ Não neste momento
 
-## Apêndice B – Instrumentos de validação aplicados à V1 e à V2
+## Apêndice B – Instrumentos de validação aplicados à V1, à V2 e à V4
 
 ### B.1 Instrumento V1 — primeira avaliação de P1
 
@@ -1764,7 +1922,7 @@ Está preservado em `docs/validacao/instrumento_validacao_v2_para_v3.md`, com as
 literais em `docs/validacao/respostas/v2-p1-para-v3.md`. A separação entre falas, interpretação,
 decisão e implementação está em `docs/validacao/feedback-v2-v3.md`. O TCLE da terceira aplicação
 foi obtido e assinado; data e modalidade não constam do registro primário consultado. P1 avaliou
-a V2; a V3 subsequente ainda não foi avaliada por ela.
+a V2; a V3 subsequente não foi avaliada por ela naquele momento.
 
 Escala das questões fechadas: 1 — Muito ruim / Discordo totalmente; 2 — Ruim / Discordo;
 3 — Regular / Neutro; 4 — Bom / Concordo; 5 — Muito bom / Concordo totalmente.
@@ -1811,3 +1969,29 @@ Pergunta complementar: Quais ajustes você considera necessários?
 **F. Pergunta complementar**
 
 16. Qual parte da plataforma você considera mais útil para apoiar a análise de marketing e por quê?
+
+### B.4 Instrumento de avaliação da V4 — quarta aplicação com P1
+
+As doze perguntas abaixo foram transpostas do registro da aplicação online de 14/10/2026,
+`docs/validacao/respostas/v4-p1.md`. P1 avaliou a V4 depois de sua implementação. As respostas
+primárias e a interpretação permanecem fora deste apêndice, respectivamente em
+`docs/validacao/respostas/v4-p1.md` e `docs/validacao/analise-v4-p1.md`. Não há assinatura,
+TCLE preenchido ou dado pessoal identificável neste instrumento.
+
+Escala das questões 1 a 8: 1 — Muito ruim; 2 — Ruim; 3 — Regular; 4 — Bom; 5 — Muito bom.
+
+1. A navegação entre os módulos da V4 está clara e fácil de utilizar?
+2. O módulo de Conteúdo Orgânico permite compreender quais publicações tiveram melhor desempenho?
+3. O módulo de Gestão apresenta de forma clara o planejamento fictício de vagas e ocupação?
+4. A área de Arquitetura & Algoritmos ajuda a compreender de onde vêm os dados, como os indicadores são calculados e quais são seus limites?
+5. No Meta Ads, o ranking dos melhores anúncios facilita identificar os criativos com melhor desempenho?
+6. No Google Ads, o ranking de palavras-chave facilita comparar investimento, conversões e custo por resultado?
+7. No módulo Estratégia, a visualização temporal do custo por resultado de Google e Meta está clara e útil?
+8. Considerando a V4 como um todo, a plataforma apresenta informações úteis para apoiar análises e decisões de marketing?
+9. Qual parte da V4 você considera mais útil para o seu trabalho? Por quê?
+10. Há alguma informação, gráfico, ranking ou funcionalidade que deveria ser alterado, retirado ou acrescentado?
+11. Após utilizar a V4, qual opção melhor representa sua avaliação?
+12. Se você pudesse solicitar apenas uma mudança para uma próxima versão, qual seria?
+
+Opção A da questão 11: A versão está adequada para uso no contexto apresentado, sem necessidade
+de alterações relevantes.
