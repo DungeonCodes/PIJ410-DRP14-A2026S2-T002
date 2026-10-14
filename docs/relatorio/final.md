@@ -85,6 +85,13 @@ Este relatório apresenta uma plataforma acadêmica para organizar informações
 - Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
 - Figura 5 – Gráficos temporais separados de Captação na V1
 - Figura 6 – Evolução temporal consolidada de Captação na V2
+- Figura 7 – V3: efetivação visitamatrícula em Captação
+- Figura 8 – V3: matrículas e rematrículas por série
+- Figura 9 – V3: resumo mensal da Visão Geral de Ads
+- Figura 10 – V3: investimento e leads simulados no Google Ads
+- Figura 11 – V3: alcance, investimento e resultados no Meta Ads
+- Figura 12 – V3: comparação temporal no módulo Estratégia
+- Figura 13 – V3: comunicação dos limites da previsão experimental de CPR
 
 ## Lista de tabelas
 
@@ -1164,12 +1171,24 @@ gráficos temporais, mas identificou uma dificuldade: “Os gráficos em diverso
 “Se tivesse uma opção de colocar no mesmo gráfico contato/visita e matrícula, com opção de
 selecionar quando quer usar, facilitaria [...]”.
 
+Figura 5 – Gráficos temporais separados de Captação na V1
+
+![Gráficos mensais separados de Contatos, Visitas e Matrículas na V1.](figuras/fig-v1-captacao-graficos-temporais.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
+
 O grupo interpretou que a dificuldade estava na dispersão de séries relacionadas, não nos
 indicadores em si. Decidiu incorporar a sugestão como FB-V1-P1-001: os gráficos separados de
 Contatos, Visitas e Matrículas deram lugar a uma visualização temporal consolidada, com seleção
 independente das três séries. **Efeito no desenvolvimento:** esse ajuste foi implementado na V2.
 Ads e o experimento inicial de CPR também entraram na V2, por evolução técnica e acadêmica
 independente da primeira avaliação.
+
+Figura 6 – Evolução temporal consolidada de Captação na V2
+
+![Gráfico temporal da V2 com Contatos, Visitas e Matrículas do funil selecionados simultaneamente.](figuras/fig-v2-captacao-evolucao-temporal-pji410.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
 #### Segundo momento — reavaliação da V2
 
@@ -1205,11 +1224,35 @@ rematrículas por series.” O grupo registrou FB-V2-P1-001 e FB-V2-P1-002 e dec
 na V3, a taxa mensal de efetivação visita–matrícula no mesmo funil e a comparação de matrículas
 novas e rematrículas por série existente no cenário sintético.
 
+Figura 7 – V3: efetivação visitamatrícula em Captação
+
+![Tela de Captação da V3 com visitas, matrículas e gráfico da taxa mensal de efetivação visita–matrícula.](figuras/fig-v3-captacao-efetivacao.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica local com dados sintéticos, após incorporação de FB-V2-P1-001.
+
+Figura 8 – V3: matrículas e rematrículas por série
+
+![Tela de Matrículas da V3 com barras comparativas de matrículas novas e rematrículas por série.](figuras/fig-v3-matriculas-series.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica local com dados sintéticos, após incorporação de FB-V2-P1-002.
+
 Na Visão Geral de Ads, P1 explicou: “Visao geral preciso de um resumo mensal pois avalio o
 investimento mensalmente [...]” e pediu que o gráfico temporal mostrasse “quantos leads reais
 gerou”. O grupo converteu essas necessidades em FB-V2-P1-003, resumo mensal na Visão Geral, e
 FB-V2-P1-004, investimento e leads simulados por mês no Google Ads. Embora a participante tenha
 pedido leads reais, a V3 apresenta apenas valores sintéticos, identificados como simulação.
+
+Figura 9 – V3: resumo mensal da Visão Geral de Ads
+
+![Visão Geral de Ads da V3 com mês selecionado, investimento total e resultados distintos por canal.](figuras/fig-v3-ads-resumo-mensal.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica local com dados sintéticos, após incorporação de FB-V2-P1-003.
+
+Figura 10 – V3: investimento e leads simulados no Google Ads
+
+![Google Ads na V3 com gráficos mensais separados de investimento e leads simulados, além das conversões da plataforma.](figuras/fig-v3-google-leads.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica local com dados sintéticos, após incorporação de FB-V2-P1-004.
 
 Para Meta Ads, P1 pediu dados sobre “quantos resultados alcançamo (pessoas alcançadas)” e “quanto
 investimos nesse mês comparado aos leads gerados pela plataforma”. O grupo
@@ -1219,11 +1262,32 @@ quantos estamos investindo por mês, uma linha google, uma meta [...]”. A deci
 resultou em comparação temporal entre investimentos Google/Meta, leads simulados e matrículas
 sintéticas; cenários independentes não autorizam inferência causal entre Ads e Matrículas.
 
+Figura 11 – V3: alcance, investimento e resultados no Meta Ads
+
+![Meta Ads na V3 com alcance simulado, investimento, leads simulados e resultados apresentados separadamente.](figuras/fig-v3-meta-metricas.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica local com dados sintéticos, após incorporação de FB-V2-P1-005.
+
+Figura 12 – V3: comparação temporal no módulo Estratégia
+
+![Estratégia na V3 com investimento mensal de Google e Meta e séries separadas de leads simulados e matrículas sintéticas, sem atribuição causal.](figuras/fig-v3-estrategia-temporal.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica local com dados sintéticos, após incorporação de FB-V2-P1-006.
+
 Sobre o CPR, o comentário espontâneo foi: “Achei que esta variando muito a previsão, da p entender
 mas n parece proximo do real”. A participante compreendeu a apresentação, mas relatou baixa
 confiança na proximidade da previsão com sua expectativa prática. Em FB-V2-P1-007, o grupo decidiu
 melhorar a comunicação: a V3 distingue histórico e previsão e explicita o desempenho limitado.
 Essa decisão não alterou algoritmo, valores ou métricas do experimento.
+
+Figura 13 – V3: comunicação dos limites da previsão experimental de CPR
+
+![Área de CPR da V3 com aviso de desempenho limitado e gráfico que distingue histórico sintético de previsão experimental.](figuras/fig-v3-google-cpr-limitacoes.png)
+
+Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica local com dados sintéticos, após incorporação de FB-V2-P1-007.
+
+As Figuras 7 a 13 documentam a implementação visual das alterações. Não constituem avaliação da
+V3 por P1 nem prova de impacto institucional ou de qualidade preditiva do modelo.
 
 **Efeito no desenvolvimento:** os sete feedbacks da terceira avaliação foram analisados pelo
 grupo e incorporados à V3. A implementação passou por verificação técnica, descrita em 3.3;
@@ -1267,18 +1331,6 @@ de 4 ou 5. A comparação é descritiva e individual; os instrumentos dos três 
 distintos. A implementação posterior da V3 responde aos pedidos de resumo mensal, análise por
 série, comparação temporal e comunicação mais explícita dos limites da previsão, sem comprovar
 melhoria percebida pela participante.
-
-Figura 5 – Gráficos temporais separados de Captação na V1
-
-![Gráficos mensais separados de Contatos, Visitas e Matrículas na V1.](figuras/fig-v1-captacao-graficos-temporais.png)
-
-Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
-
-Figura 6 – Evolução temporal consolidada de Captação na V2
-
-![Gráfico temporal da V2 com Contatos, Visitas e Matrículas do funil selecionados simultaneamente.](figuras/fig-v2-captacao-evolucao-temporal-pji410.png)
-
-Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
 ### 3.2.4 Rastreabilidade entre necessidade, solução e avaliação externa
 
@@ -1334,8 +1386,8 @@ Fonte: Elaborado pelo grupo (2026).
 Ads e o experimento inicial de CPR entraram na V2 por evolução técnica e acadêmica independente
 de FB-V1-P1-001. Os arquivos e testes de cada alteração constam de
 `docs/validacao/feedback-v2-v3.md`. A V3 reúne cenários sintéticos independentes, sem atribuição
-causal, e não foi reavaliada por P1. Suas capturas provisórias servem à revisão visual humana,
-sem substituir as figuras históricas do relatório.
+causal, e não foi reavaliada por P1. As Figuras 1 a 6 preservam a evidência histórica da V1/V2;
+as Figuras 7 a 13 integram este relatório como evidência visual das alterações da V3.
 
 Em síntese, a V1 oferecia Captação e Matrículas; a primeira avaliação apontou a dispersão dos
 gráficos e originou o ajuste incorporado à V2. Essa versão reuniu o gráfico selecionável e ganhou
@@ -1359,8 +1411,8 @@ comparados integralmente, byte a byte, aos arquivos versionados.
 Na implementação da V3, `npm run build`, `npm test` e `npm run test:interface:http` voltaram a
 passar. A suíte verificou a nova taxa com denominador zero, as regras sintéticas, as 17
 assinaturas que protegem os arquivos da V1, o acesso às páginas V1/V2/V3 e o bloqueio das Fases
-3 e 4. Capturas locais da V3 foram geradas para revisão visual humana, sem substituir as figuras
-históricas. Esses testes verificam a execução técnica; P1 não avaliou o uso da V3.
+3 e 4. As capturas da V3 foram conferidas visualmente e incorporadas ao capítulo 3, sem substituir
+as figuras históricas. Esses testes verificam a execução técnica; P1 não avaliou o uso da V3.
 
 Os testes também examinam integridade e determinismo dos dados sintéticos, cálculo dos
 indicadores e separação entre alcance, lead e conversão.
