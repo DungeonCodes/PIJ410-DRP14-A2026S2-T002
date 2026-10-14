@@ -13,7 +13,7 @@ export default async function VersionPage({ params, searchParams }: {
   const route = segments.length ? `/${segments.join('/')}` : '/';
   if (!rotaHabilitadaNaVersao(uiVersion, route)) notFound();
   const modulo = moduloDaRota(route);
-  if (modulo) exigirModuloHabilitado(modulo.chave);
+  if (modulo && uiVersion !== 'v4') exigirModuloHabilitado(modulo.chave);
   const pages = INTERFACES[uiVersion].pages;
   if (!Object.hasOwn(pages, route)) notFound();
   const Page = pages[route as keyof typeof pages];

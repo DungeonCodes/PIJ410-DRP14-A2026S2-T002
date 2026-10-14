@@ -4,6 +4,13 @@
 > Apenas fatos confirmados no handoff de 2026-08-23 estão registrados aqui.
 > Itens marcados como **Pendente** ainda não foram decididos e não devem ser inferidos.
 
+**Atualização técnica de 14/10/2026:** a composição local `/v4` implementa as Fases 3 e 4
+documentadas, com dados e premissas fictícios. A V1, V2 e V3 continuam históricas; seus gates
+e aliases não foram promovidos. V3→V4 é evolução técnica/acadêmica do grupo, sem nova
+avaliação comunitária. A V4 ainda não foi avaliada nem publicada. Ver
+`docs/validacao/v3-v4-matriz.md` e `docs/validacao/v4-dados-sinteticos.md`. As descrições
+abaixo de Fases 3 e 4 bloqueadas registram o estado anterior da V1–V3.
+
 ## Objetivo Central
 
 **Pendente.** O objetivo definitivo será definido pelo grupo após as orientações da UNIVESP, o contato com a instituição parceira, as entrevistas e a validação das hipóteses.

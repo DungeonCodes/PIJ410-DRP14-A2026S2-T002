@@ -136,12 +136,12 @@ export function modulosHabilitados(): ModuloAcademico[] {
 }
 
 /**
- * Composição histórica de cada interface, independente da capacidade técnica
- * global. A V1 representa o baseline pré-Ads; a V2 apresenta as Fases 1 e 2.
+ * Composição histórica de cada interface. O gate global preserva os aliases
+ * antigos; as Fases 3 e 4 são liberadas somente na composição explícita V4.
  */
 export function modulosDaVersao(version: UIVersion): ModuloAcademico[] {
-  const fasesDaVersao: readonly Fase[] = version === 'v1' ? [1] : [1, 2];
-  return MODULOS.filter((m) => m.habilitado && fasesDaVersao.includes(m.fase));
+  const fasesDaVersao: readonly Fase[] = version === 'v1' ? [1] : version === 'v4' ? [1, 2, 3, 4] : [1, 2];
+  return MODULOS.filter((m) => fasesDaVersao.includes(m.fase) && (m.habilitado || version === 'v4'));
 }
 
 /** Fail closed para uma rota conhecida que não integra a versão solicitada. */

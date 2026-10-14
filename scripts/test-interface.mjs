@@ -6,12 +6,14 @@ import { fileURLToPath } from 'node:url';
 import { CURRENT_UI_VERSION, UI_VERSIONS, canonicalTarget, isUIVersion, versionedPath } from '../src/lib/interface.ts';
 import { MODULOS, moduloDaRota, modulosDaVersao, rotaHabilitada, rotaHabilitadaNaVersao } from '../src/lib/fases.ts';
 import { BASELINE_V1 } from './ui-v1-baseline.mjs';
+import { BASELINE_V3 } from './ui-v3-baseline.mjs';
 
 const root = fileURLToPath(new URL('../', import.meta.url));
 const read = (path) => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8');
 assert.equal(CURRENT_UI_VERSION, UI_VERSIONS[0], 'V2 não é promovida automaticamente');
-assert.deepEqual(UI_VERSIONS, ['v1', 'v2', 'v3']);
+assert.deepEqual(UI_VERSIONS, ['v1', 'v2', 'v3', 'v4']);
 assert.equal(isUIVersion('v3'), true);
+assert.equal(isUIVersion('v4'), true);
 assert.equal(isUIVersion('old'), false);
 for (const version of UI_VERSIONS) {
   const chavesDaVersao = new Set(modulosDaVersao(version).map((m) => m.chave));
@@ -19,15 +21,16 @@ for (const version of UI_VERSIONS) {
     const path = versionedPath(version, modulo.rota);
     assert.equal(moduloDaRota(path)?.chave, modulo.chave);
     assert.equal(rotaHabilitada(path), modulo.habilitado);
-    assert.equal(rotaHabilitadaNaVersao(version, path), modulo.habilitado && chavesDaVersao.has(modulo.chave));
+    assert.equal(rotaHabilitadaNaVersao(version, path), chavesDaVersao.has(modulo.chave));
   }
-  assert.equal(rotaHabilitadaNaVersao(version, versionedPath(version, '/organico/subrota')), false);
+  assert.equal(rotaHabilitadaNaVersao(version, versionedPath(version, '/organico/subrota')), version === 'v4');
 }
 assert.deepEqual(modulosDaVersao('v1').map((m) => m.chave), ['captacao', 'matriculas']);
 assert.deepEqual(modulosDaVersao('v2').map((m) => m.chave),
   ['captacao', 'matriculas', 'ads', 'ads-google', 'ads-meta', 'ads-estrategia']);
 assert.deepEqual(modulosDaVersao('v3').map((m) => m.chave),
   ['captacao', 'matriculas', 'ads', 'ads-google', 'ads-meta', 'ads-estrategia']);
+assert.deepEqual(modulosDaVersao('v4').map((m) => m.chave), MODULOS.map((m) => m.chave));
 assert.equal(canonicalTarget('/captacao', { safras: ['2025', '2026'] }),
   `${versionedPath(CURRENT_UI_VERSION, '/captacao')}?safras=2025&safras=2026`);
 assert.equal(canonicalTarget('/'), versionedPath(CURRENT_UI_VERSION));
@@ -46,6 +49,11 @@ for (const [path, expected] of Object.entries(BASELINE_V1)) {
   assert.equal(createHash('sha256').update(normalized).digest('hex'), expected,
     `Baseline V1 modificada: ${path}. Exceção crítica exige motivo documentado e revisão humana.`);
 }
+for (const [path, expected] of Object.entries(BASELINE_V3)) {
+  const normalized = read(path).replace(/\r\n/g, '\n');
+  assert.equal(createHash('sha256').update(normalized).digest('hex'), expected,
+    `V3 histórica modificada: ${path}. Exige decisão documentada e revisão humana.`);
+}
 function checkUI(path) {
   for (const entry of readdirSync(`${root}${path}`, { withFileTypes: true })) {
     const next = `${path}/${entry.name}`;
@@ -54,4 +62,4 @@ function checkUI(path) {
   }
 }
 checkUI('src/ui');
-console.log(`UI: composição histórica V1/V2/V3, aliases e gates verificados; ${Object.keys(BASELINE_V1).length} arquivos protegidos.`);
+console.log(`UI: composição histórica V1/V2/V3, V4 isolada, aliases e gates verificados; ${Object.keys(BASELINE_V1).length} arquivos V1 e ${Object.keys(BASELINE_V3).length} arquivos V3 protegidos.`);

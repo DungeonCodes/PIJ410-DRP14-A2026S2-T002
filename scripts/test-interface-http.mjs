@@ -24,6 +24,7 @@ const v1Ativas = ['/v1', '/v1/captacao', '/v1/matriculas'];
 const v1Ads = ['/v1/ads', '/v1/ads/google', '/v1/ads/meta', '/v1/ads/estrategia'];
 const v2Ativas = ['/v2', '/v2/captacao', '/v2/matriculas', '/v2/ads', '/v2/ads/google', '/v2/ads/meta', '/v2/ads/estrategia'];
 const v3Ativas = ['/v3', '/v3/captacao', '/v3/matriculas', '/v3/ads', '/v3/ads/google', '/v3/ads/meta', '/v3/ads/estrategia'];
+const v4Ativas = ['/v4', '/v4/captacao', '/v4/matriculas', '/v4/ads', '/v4/ads/google', '/v4/ads/meta', '/v4/ads/estrategia', '/v4/organico', '/v4/gestao', '/v4/arquitetura'];
 
 for (const path of v1Ativas) {
   const { html } = await get(path, 200);
@@ -43,6 +44,17 @@ for (const path of v3Ativas) {
   assert.ok(html.includes('V3'), `Identificador V3 ausente em ${path}`);
   assert.ok(linksDaNavegacao(html).every((link) => link === '/v3' || link.startsWith('/v3/')));
 }
+for (const path of v4Ativas) {
+  const { html } = await get(path, 200);
+  assert.ok(html.includes('V4'), `Identificador V4 ausente em ${path}`);
+  assert.ok(linksDaNavegacao(html).every((link) => link === '/v4' || link.startsWith('/v4/')));
+}
+const organicoV4 = await get('/v4/organico?periodo=2022-02', 200);
+assert.ok(organicoV4.html.includes('Ranking explicável') && organicoV4.html.includes('Reel fictício'));
+const gestaoV4 = await get('/v4/gestao', 200);
+assert.ok(gestaoV4.html.includes('Premissas por turma fictícia'));
+const arquiteturaV4 = await get('/v4/arquitetura', 200);
+assert.ok(arquiteturaV4.html.includes('Cálculos determinísticos'));
 const adsJaneiroV3 = await get('/v3/ads?mes=2022-01', 200);
 const adsDezembroV3 = await get('/v3/ads?mes=2022-12', 200);
 assert.ok(adsJaneiroV3.html.includes('Resumo por plataforma · <!-- -->01<!-- -->/<!-- -->2022'));
@@ -84,9 +96,9 @@ for (const path of ['/captacao?safras=2025%2C2026&ciclos=EI', '/matriculas']) {
   assert.equal(canonical.location, `/${CURRENT_UI_VERSION}${path}`);
 }
 for (const path of ['/ads', '/ads/google', '/ads/meta', '/ads/estrategia']) await get(path, 404);
-for (const path of ['/old/captacao', '/v1/inexistente', '/v2/ads/inexistente', '/v3/ads/inexistente']) await get(path, 404);
+for (const path of ['/old/captacao', '/v1/inexistente', '/v2/ads/inexistente', '/v3/ads/inexistente', '/v4/inexistente']) await get(path, 404);
 
 assert.equal(CURRENT_UI_VERSION, 'v1');
 assert.equal(versionedPath(CURRENT_UI_VERSION, '/captacao'), '/v1/captacao');
 console.table(rows);
-console.log('HTTP: V1 pré-Ads, V2 histórica, V3 funcional, aliases explícitos e bloqueios aprovados.');
+console.log('HTTP: V1–V3 históricas, V4 com quatro fases, aliases explícitos e bloqueios aprovados.');

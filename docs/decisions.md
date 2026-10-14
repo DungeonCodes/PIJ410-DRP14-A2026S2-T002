@@ -523,3 +523,30 @@ matematicamente o modelo de aprendizagem de máquina. Nomes comerciais de ferram
 registro de execuções, não no corpo científico do relatório.
 
 ---
+
+## ADR-010 — V4 técnica para as Fases 3 e 4
+
+**Data:** 2026-10-14. **Classificação:** EVOLUÇÃO TÉCNICA/ACADÊMICA.
+
+**Decisão:** criar uma composição `/v4` separada, que reúna as quatro fases funcionais. Reels
+orgânicos seguem o contrato documentado de publicações sintéticas, score com pesos explícitos,
+ausência distinta de zero e desempate total. Objetivo da Gestão apresenta somente um plano
+fictício de ocupação, independente dos dados apurados. Arquitetura & Algoritmos documenta a
+stack, as fontes, as regras e os limites em prosa na aplicação. A V4 reutiliza as páginas das
+Fases 1 e 2 sem modificar os arquivos de V1, V2 ou V3. O gate abre os novos módulos somente em
+`/v4`; as rotas históricas e os aliases permanecem como estavam.
+
+**Origem e limite:** a transição V3→V4 foi planejada pelo grupo a partir de
+`docs/migracao-modelo/arquitetura/plano-de-fases.md`. Não houve questionário, entrevista ou
+avaliação comunitária entre as versões. Nenhuma aprovação ou pedido de P1 é atribuído à V4.
+O CPR, seus dados e suas métricas permanecem intactos. Nenhuma integração real é adicionada.
+
+**Evidência:** `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md`,
+`docs/validacao/v4-preparacao-avaliacao.md`, testes de V4 e capturas provisórias. O relatório
+científico `docs/relatorio/final.md` será considerado em etapa posterior, após revisão visual
+da V4.
+
+**Próximo ciclo:** a V4 será submetida a avaliação futura com instrumento próprio; feedbacks
+aceitos pelo grupo poderão originar uma V5. Nenhuma avaliação ou V5 foi criada nesta execução.
+
+---

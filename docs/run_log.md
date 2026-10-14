@@ -1221,3 +1221,10 @@ Data: 2026-10-14.
 Ação realizada: revisão editorial final de legibilidade do Relatório Final para leitor universitário não especialista.
 Resultado: conceitos técnicos passaram a ser introduzidos por explicações em português antes das siglas; o Resumo, 2.3.7, 2.5.10, 2.5.11, 3.1.2, 3.1.6, 3.3.2 e as Considerações Finais foram reorganizados ou simplificados. A conclusão principal dos experimentos precede as tabelas; as quatro limitações principais abrem 3.3.2. Reduzidos tom de auditoria e ressalvas repetidas, com evidências de reprodução preservadas. O registro docente recebeu subseção específica desta revisão.
 Verificação: seis objetivos, referências e Tabelas 6–14 idênticos ao HEAD; 28 referências, 6 figuras e 14 tabelas; números de 2.5.10 e citações preservados; Resumo com 225 palavras; sumário textual coerente com 49 headings; `git diff --check` aprovado. Código, dados e respostas de P1 intactos. Sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: implementação da V4 como evolução técnica e acadêmica das Fases 3 e 4 previstas no plano de fases, sem avaliação comunitária entre V3 e V4.
+Resultado: criada a composição `/v4` com Reels orgânicos sintéticos, plano fictício de ocupação em Objetivo da Gestão e documentação em Arquitetura & Algoritmos. As páginas das Fases 1 e 2 foram reutilizadas sem editar V1, V2 ou V3. Registradas a transição, as regras dos dados e a preparação para avaliação futura em `docs/decisions.md` e `docs/validacao/`. Três capturas provisórias da V4 foram geradas para revisão visual. `docs/relatorio/final.md` permaneceu intacto; não foi criado questionário, feedback nem V5.
+Verificação: `npm test`, `npm run build`, `npm run lint` e `npm run test:interface:http` aprovados; rotas históricas e gates conferidos. Sem commit ou push.

@@ -8,6 +8,7 @@ técnica global do projeto e dos gates de implantação.
 | V1 | Captação + Matrículas |
 | V2 | Captação + Matrículas + Ads + ML CPR + evolução temporal consolidada (FB-V1-P1-001) |
 | V3 | Fases 1 e 2 com as sete melhorias FB-V2-P1-001 a FB-V2-P1-007; nova apresentação final do protótipo acadêmico |
+| V4 | Fases 1 a 4 em composição separada; Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos por evolução técnica/acadêmica do grupo |
 
 As origens são distintas: Ads e ML CPR constituem evolução técnica/acadêmica; a evolução
 temporal consolidada foi aprovada pelo grupo após o feedback real de P1.
@@ -125,6 +126,19 @@ A V3 reutiliza os contratos sintéticos existentes e acrescenta somente regras d
 e derivação documentadas em `v3-dados-sinteticos.md`. A comparação mensal de Ads com Matrículas
 é exploratória, entre cenários fictícios independentes, sem atribuição causal.
 
+## V4 — conclusão técnica das fases restantes
+
+Em 14/10/2026, a V4 passou a reunir as Fases 1 a 4 em rotas `/v4/...`. As Fases 1 e 2
+reutilizam as páginas da V3, com aviso explícito de conteúdo herdado; Reels orgânicos,
+Objetivo da Gestão e Arquitetura & Algoritmos são novos. As rotas equivalentes das Fases 3 e
+4 continuam bloqueadas em V1, V2, V3 e nos aliases antigos. `CURRENT_UI_VERSION = "v1"`
+permanece inalterado. Regras e limites estão em `v4-dados-sinteticos.md` e a transição está
+em `v3-v4-matriz.md`.
+
+**Origem:** EVOLUÇÃO TÉCNICA/ACADÊMICA. Não houve aplicação comunitária entre V3 e V4.
+A V4 ainda não foi avaliada. Uma avaliação futura poderá produzir feedbacks que, após análise
+do grupo, poderão originar uma V5; não há instrumento ou V5 nesta etapa.
+
 ## Registro cronológico
 
 | ID | Origem | Alteração | Versão | Evidência comunitária |
@@ -132,6 +146,7 @@ e derivação documentadas em `v3-dados-sinteticos.md`. A comparação mensal de
 | HIST-001 | Correção factual da cronologia | V1 recomposta como baseline pré-Ads | V1 | Não se aplica |
 | TEC-001 | Evolução técnica/acadêmica | Ads, experimento CPR e previsão sazonal | V2 | Nenhuma no momento da inclusão; avaliação ampliada posterior da V2 |
 | V3-001 | Sete feedbacks aceitos após avaliação ampliada da mesma P1 | Apresentação executiva mensal, análises temporais, composição por série e comunicação do ML | V3 | P1 avaliou V2; V3 ainda sem nova avaliação por P1 |
+| TEC-002 a TEC-005 | Evolução técnica/acadêmica do grupo, sem nova avaliação | Fases 3 e 4 em composição `/v4` | V4 | Nenhuma avaliação comunitária da V4 |
 
 ### Alteração aprovada pelo grupo após feedback real
 
