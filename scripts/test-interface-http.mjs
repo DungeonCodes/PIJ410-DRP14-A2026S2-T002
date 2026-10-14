@@ -55,6 +55,24 @@ const gestaoV4 = await get('/v4/gestao', 200);
 assert.ok(gestaoV4.html.includes('Premissas por turma fictícia'));
 const arquiteturaV4 = await get('/v4/arquitetura', 200);
 assert.ok(arquiteturaV4.html.includes('Cálculos determinísticos'));
+const metaV4 = await get('/v4/ads/meta?mes=2022-12', 200);
+assert.ok(metaV4.html.includes('Melhores anúncios') && metaV4.html.includes('CPR Meta') && metaV4.html.includes('Criativo fictício'));
+const metaJaneiroV4 = await get('/v4/ads/meta?mes=2022-01', 200);
+assert.notEqual(metaJaneiroV4.html, metaV4.html, 'ranking Meta acompanha o mês selecionado');
+const googleRankingV4 = await get('/v4/ads/google?mes=2022-12', 200);
+assert.ok(googleRankingV4.html.includes('Melhores palavras-chave') && googleRankingV4.html.includes('Conversões') && googleRankingV4.html.includes('CPR Google'));
+const googleJaneiroV4 = await get('/v4/ads/google?mes=2022-01', 200);
+assert.notEqual(googleJaneiroV4.html, googleRankingV4.html, 'ranking Google acompanha o mês selecionado');
+const estrategiaCprV4 = await get('/v4/ads/estrategia?mes=2022-12', 200);
+assert.ok(estrategiaCprV4.html.includes('Custo por resultado · evolução mensal') && estrategiaCprV4.html.includes('CPR Google') && estrategiaCprV4.html.includes('CPR Meta'));
+const estrategiaJaneiroV4 = await get('/v4/ads/estrategia?mes=2022-01', 200);
+assert.ok(estrategiaJaneiroV4.html.includes('Mês do resumo: <!-- -->01') && estrategiaCprV4.html.includes('Mês do resumo: <!-- -->12'));
+for (const versao of ['v2', 'v3']) {
+  for (const [rota, marcador] of [['meta', 'Melhores anúncios'], ['google', 'Melhores palavras-chave'], ['estrategia', 'Custo por resultado · evolução mensal']]) {
+    const { html } = await get(`/${versao}/ads/${rota}`, 200);
+    assert.ok(!html.includes(marcador), `${marcador} vazou para ${versao}`);
+  }
+}
 const adsJaneiroV3 = await get('/v3/ads?mes=2022-01', 200);
 const adsDezembroV3 = await get('/v3/ads?mes=2022-12', 200);
 assert.ok(adsJaneiroV3.html.includes('Resumo por plataforma · <!-- -->01<!-- -->/<!-- -->2022'));

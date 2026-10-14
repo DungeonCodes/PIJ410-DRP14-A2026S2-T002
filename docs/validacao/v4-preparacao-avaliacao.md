@@ -15,6 +15,9 @@ aprovada pela comunidade. V3 também não foi reavaliada por P1.
 | TEC-003 | Objetivo da Gestão | Bloqueado | Plano fictício de ocupação independente | Escopo previamente documentado da Fase 4 | EVOLUÇÃO TÉCNICA/ACADÊMICA |
 | TEC-004 | Arquitetura & Algoritmos | Bloqueado | Documentação em prosa na aplicação | Escopo previamente documentado da Fase 4 | EVOLUÇÃO TÉCNICA/ACADÊMICA |
 | TEC-005 | Navegação e gates | Fases 1 e 2 em V3 | Quatro fases acessíveis em `/v4`; versões históricas preservadas | Planejamento técnico do rollout | EVOLUÇÃO TÉCNICA/ACADÊMICA |
+| TEC-006 | Meta Ads | Totais mensais por indicador | Ranking de criativos pagos sintéticos por CPR de conversas | Segunda iteração técnica da V4 | EVOLUÇÃO TÉCNICA/ACADÊMICA |
+| TEC-007 | Google Ads | Totais mensais por campanha | Ranking de palavras-chave sintéticas por CPR de conversões registradas | Segunda iteração técnica da V4 | EVOLUÇÃO TÉCNICA/ACADÊMICA |
+| TEC-008 | Estratégia | Investimento e contagens temporais | Séries separadas de CPR Google e CPR Meta por conversa | Segunda iteração técnica da V4 | EVOLUÇÃO TÉCNICA/ACADÊMICA |
 
 Regras, unidades, ausências e limites dos novos cenários constam de `v4-dados-sinteticos.md`.
 As diferenças e evidências técnicas estão em `v3-v4-matriz.md`. Nenhum resultado de ML foi
@@ -28,6 +31,9 @@ alterado; a V4 apenas reapresenta o experimento existente nas páginas herdadas.
 - Distinção entre premissa fictícia de gestão e indicadores calculados.
 - Carga visual, legibilidade e possíveis dificuldades de uso.
 - Compreensão do caráter experimental e limitado do CPR preservado.
+- Meta: compreensão do ranking dos anúncios pagos, utilidade para identificar criativos de melhor desempenho no cenário e clareza da ordenação.
+- Google: compreensão do ranking de palavras-chave, utilidade da comparação entre custo e conversões registradas e clareza do CPR.
+- Estratégia: utilidade da leitura temporal de CPR e clareza da comparação entre canais com denominadores separados.
 
 Esta lista indica aspectos observáveis; **não é um questionário** e não contém perguntas,
 respostas, notas ou participantes simulados.

@@ -550,3 +550,22 @@ da V4.
 aceitos pelo grupo poderão originar uma V5. Nenhuma avaliação ou V5 foi criada nesta execução.
 
 ---
+
+## Emenda à ADR-010 — segunda iteração técnica da V4
+
+**Data:** 2026-10-14. **Classificação:** EVOLUÇÃO TÉCNICA/ACADÊMICA.
+
+**Decisão:** TEC-006 acrescenta ranking mensal de anúncios Meta fictícios apenas do indicador
+conversa; TEC-007 acrescenta ranking mensal de palavras-chave Google fictícias por custo por
+conversão registrada; TEC-008 acrescenta séries temporais separadas de CPR Google e CPR Meta
+por conversa em Estratégia. As novas linhas são partições determinísticas dos totais fechados,
+sem alteração da base Ads ou das versões V1, V2 e V3. CPR inválido por zero ou ausência fica
+indisponível. O CPR descritivo não modifica o experimento preditivo Google.
+
+**Origem e limite:** estas três alterações foram solicitadas como evolução técnica/acadêmica
+da V4; não houve novo questionário, entrevista, feedback ou avaliação de P1. A V4 ainda será
+avaliada em ciclo futuro. Somente feedbacks aceitos dessa futura avaliação poderão originar
+uma possível V5. O relatório final fica para a revisão posterior da V4.
+
+**Evidência:** `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md`,
+`docs/validacao/v4-preparacao-avaliacao.md` e testes da V4.

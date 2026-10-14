@@ -21,8 +21,14 @@ entrevista ou avaliação comunitária entre as versões. Nenhum item abaixo tem
 | TEC-003 | Objetivo da Gestão | Fase 4 bloqueada | Plano fictício de ocupação sem mistura com dado apurado | Demonstrar premissa externa separada de observação | EVOLUÇÃO TÉCNICA/ACADÊMICA | `src/lib/v4/gestao.ts`, `src/ui/v4/pages/gestao.tsx`, `test:v4` |
 | TEC-004 | Arquitetura & Algoritmos | Fase 4 bloqueada | Página em prosa sobre stack, fontes, cálculos, verificações e limites | Fechar a documentação funcional prevista | EVOLUÇÃO TÉCNICA/ACADÊMICA | `src/ui/v4/pages/arquitetura.tsx`, testes HTTP |
 | TEC-005 | Composição V4 | V1–V3 sem Fases 3 e 4 | `/v4` reúne os nove módulos das quatro fases; aliases e versões anteriores preservados | Disponibilizar o escopo concluído em versão separada | EVOLUÇÃO TÉCNICA/ACADÊMICA | `src/ui/v4/index.tsx`, `src/lib/fases.ts`, `test:interface`, `test:interface:http` |
+| TEC-006 | Meta Ads | Somente totais mensais por campanha e indicador | Top 5 de criativos sintéticos da linha de conversas, ordenado por CPR | Demonstrar comparação explicável de anúncios pagos sem confundir com Orgânico | EVOLUÇÃO TÉCNICA/ACADÊMICA | `src/lib/v4/ads.ts`, `src/ui/v4/pages/meta.tsx`, `test:v4` |
+| TEC-007 | Google Ads | Somente totais mensais por campanha | Top 5 de palavras-chave sintéticas, ordenado por custo por conversão registrada | Demonstrar comparação de custo e conversões da plataforma | EVOLUÇÃO TÉCNICA/ACADÊMICA | `src/lib/v4/ads.ts`, `src/ui/v4/pages/google.tsx`, `test:v4` |
+| TEC-008 | Estratégia | Investimento e contagens mensais em painéis separados | Gráfico temporal complementar de CPR Google e CPR Meta por conversa, sem agregação | Dar leitura temporal de custos com denominadores identificados | EVOLUÇÃO TÉCNICA/ACADÊMICA | `src/lib/v4/ads.ts`, `src/ui/v4/pages/estrategia.tsx`, `src/ui/v4/graficos.tsx`, `test:v4` |
 
-As páginas das Fases 1 e 2 são reutilizadas na V4 com aviso de conteúdo histórico preservado.
+Na segunda iteração técnica, as páginas Meta, Google e Estratégia da V4 envolvem as páginas
+V3 preservadas e acrescentam seções exclusivas da V4. Não houve novo instrumento, entrevista,
+feedback ou avaliação de P1. As outras páginas das Fases 1 e 2 são reutilizadas com aviso de
+conteúdo histórico preservado.
 Fase funcional e versão da interface continuam conceitos distintos. A V3 permanece a versão
 decorrente dos sete feedbacks da terceira avaliação de P1; a V4 ainda não foi avaliada.
 

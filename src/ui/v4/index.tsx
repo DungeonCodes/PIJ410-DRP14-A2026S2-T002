@@ -4,6 +4,9 @@ import Home from './pages/home';
 import Organico from './pages/organico';
 import Gestao from './pages/gestao';
 import Arquitetura from './pages/arquitetura';
+import GoogleV4 from './pages/google';
+import MetaV4 from './pages/meta';
+import EstrategiaV4 from './pages/estrategia';
 
 function ContextoHerdado({ children }: { children: ReactNode }) {
   return <div className="space-y-6"><p className="rounded-xl border border-[var(--accent-blue)]/30 bg-[var(--accent-blue)]/[0.05] p-4 text-sm text-[var(--text-muted)]">V4 · módulo das Fases 1 ou 2 preservado da V3. O conteúdo abaixo conserva os rótulos e cálculos históricos; os módulos novos estão na mesma navegação V4.</p>{children}</div>;
@@ -13,15 +16,12 @@ type Props = { searchParams: Promise<Record<string, string | undefined>> };
 const CaptacaoV3 = UI_V3.pages['/captacao'];
 const MatriculasV3 = UI_V3.pages['/matriculas'];
 const AdsV3 = UI_V3.pages['/ads'];
-const GoogleV3 = UI_V3.pages['/ads/google'];
-const MetaV3 = UI_V3.pages['/ads/meta'];
-const EstrategiaV3 = UI_V3.pages['/ads/estrategia'];
 const Captacao = (props: Props) => <ContextoHerdado><CaptacaoV3 {...props} /></ContextoHerdado>;
 const Matriculas = (props: Props) => <ContextoHerdado><MatriculasV3 {...props} /></ContextoHerdado>;
 const Ads = (props: Props) => <ContextoHerdado><AdsV3 {...props} /></ContextoHerdado>;
-const Google = (props: Props) => <ContextoHerdado><GoogleV3 {...props} /></ContextoHerdado>;
-const Meta = (props: Props) => <ContextoHerdado><MetaV3 {...props} /></ContextoHerdado>;
-const Estrategia = (props: Props) => <ContextoHerdado><EstrategiaV3 {...props} /></ContextoHerdado>;
+const Google = (props: Props) => <ContextoHerdado><GoogleV4 {...props} /></ContextoHerdado>;
+const Meta = (props: Props) => <ContextoHerdado><MetaV4 {...props} /></ContextoHerdado>;
+const Estrategia = (props: Props) => <ContextoHerdado><EstrategiaV4 {...props} /></ContextoHerdado>;
 
 /** Nova composição; nenhuma implementação de V1, V2 ou V3 é modificada. */
 export const UI_V4 = {
