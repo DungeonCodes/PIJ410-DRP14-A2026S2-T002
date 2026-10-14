@@ -569,3 +569,24 @@ uma possível V5. O relatório final fica para a revisão posterior da V4.
 
 **Evidência:** `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md`,
 `docs/validacao/v4-preparacao-avaliacao.md` e testes da V4.
+
+---
+
+## ADR-011 — manter a V4 após a quarta aplicação com P1
+
+**Data:** 2026-10-14. **Natureza:** decisão de versionamento após avaliação exploratória.
+
+**Evidência:** P1, Gerente de Marketing, avaliou online a V4 após sua implementação. As oito
+questões fechadas receberam 5/5; a opção final foi A. Nas respostas abertas, P1 não solicitou
+alteração relevante. O registro literal está em `docs/validacao/respostas/v4-p1.md`; a
+interpretação e seus limites estão em `docs/validacao/analise-v4-p1.md`.
+
+**Decisão do grupo:** manter a V4 como versão avaliada atual. Não abrir V5 nem criar um identificador
+de feedback de mudança para esta aplicação, pois não houve solicitação específica que exija
+nova versão. Uma versão posterior dependerá de novo requisito, novo feedback, necessidade
+técnica ou decisão formal do grupo.
+
+**Limites:** a aplicação envolveu uma participante e mede sua percepção. O relato de melhora
+comparativa em Q12 não foi verificado com dados operacionais e não demonstra que a plataforma
+ou os Ads causaram melhora institucional. A avaliação ocorreu após a evolução técnica V3→V4;
+não altera retroativamente a origem dos itens TEC-002 a TEC-008.

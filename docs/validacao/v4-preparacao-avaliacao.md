@@ -1,11 +1,16 @@
-# V4 — preparação para futura avaliação
+# V4 — preparação e registro da avaliação posterior
+
+**Estado atual:** a quarta aplicação com P1 foi realizada em **14/10/2026**, na modalidade
+**online**, após a implementação da V4. O [registro primário](respostas/v4-p1.md) e a
+[análise](analise-v4-p1.md) documentam a aplicação. As seções de preparação abaixo permanecem
+como histórico do planejamento anterior à avaliação.
 
 ## 1. Origem da V4
 
 A transição V3→V4 não decorreu de nova aplicação com P1 nem com outra pessoa. A V3 resulta
 dos sete feedbacks da avaliação ampliada da V2; a V4 é evolução técnica e acadêmica do grupo
-para completar as Fases 3 e 4 previstas no plano de 27/08/2026. A V4 não foi validada ou
-aprovada pela comunidade. V3 também não foi reavaliada por P1.
+para completar as Fases 3 e 4 previstas no plano de 27/08/2026. Na transição V3→V4, a V4
+ainda não havia sido avaliada pela comunidade. V3 também não foi reavaliada por P1.
 
 ## 2. Diferenças V3→V4
 
@@ -23,7 +28,7 @@ Regras, unidades, ausências e limites dos novos cenários constam de `v4-dados-
 As diferenças e evidências técnicas estão em `v3-v4-matriz.md`. Nenhum resultado de ML foi
 alterado; a V4 apenas reapresenta o experimento existente nas páginas herdadas.
 
-## 3. Itens que deverão ser avaliados posteriormente
+## 3. Itens previstos para avaliação
 
 - Clareza dos novos módulos e de seus limites sintéticos.
 - Navegação entre as quatro fases e relação compreendida entre os módulos.
@@ -38,8 +43,18 @@ alterado; a V4 apenas reapresenta o experimento existente nas páginas herdadas.
 Esta lista indica aspectos observáveis; **não é um questionário** e não contém perguntas,
 respostas, notas ou participantes simulados.
 
-## 4. Possível evolução futura
+## 4. Planejamento registrado antes da aplicação
 
-A V4 será posteriormente submetida a nova avaliação, com instrumento elaborado em etapa
-própria. O grupo analisará os feedbacks dessa aplicação; os que forem aceitos poderão originar
-uma V5. Nenhuma avaliação da V4 ocorreu ainda.
+O planejamento previa submeter posteriormente a V4 a uma avaliação e analisar eventuais
+solicitações antes de decidir sobre outra versão. Essa avaliação ocorreu em 14/10/2026;
+o resultado está registrado abaixo. Este histórico não atribui a avaliação à origem da V4.
+
+## 5. Aplicação realizada e estado atual
+
+P1, Gerente de Marketing, avaliou a V4 online em 14/10/2026. As oito questões fechadas
+receberam nota 5/5; P1 selecionou a opção A e não solicitou alteração relevante. A análise
+separa a percepção profissional expressa em Q12 de qualquer conclusão causal ou verificação
+operacional. A V4 permanece como versão avaliada; nenhuma V5 foi aberta nesta aplicação.
+
+- Registro primário: [`docs/validacao/respostas/v4-p1.md`](respostas/v4-p1.md).
+- Análise: [`docs/validacao/analise-v4-p1.md`](analise-v4-p1.md).

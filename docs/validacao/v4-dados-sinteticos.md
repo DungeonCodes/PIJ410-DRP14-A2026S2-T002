@@ -84,4 +84,5 @@ gráfico, que mantém os doze meses para leitura temporal.
 
 A V4 é local e acadêmica. Não há API, credencial, PII, integração operacional, inferência
 causal entre módulos nem mudança no experimento de CPR. V1–V3 continuam históricas. A V4
-ainda não foi avaliada por participantes da comunidade.
+foi avaliada posteriormente por P1 em 14/10/2026; essa aplicação registra percepção de uso,
+não valida dados sintéticos como resultados institucionais. Ver `respostas/v4-p1.md`.

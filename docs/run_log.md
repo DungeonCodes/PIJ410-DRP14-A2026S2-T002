@@ -1228,3 +1228,11 @@ Data: 2026-10-14.
 Ação realizada: implementação da V4 como evolução técnica e acadêmica das Fases 3 e 4 previstas no plano de fases, sem avaliação comunitária entre V3 e V4.
 Resultado: criada a composição `/v4` com Reels orgânicos sintéticos, plano fictício de ocupação em Objetivo da Gestão e documentação em Arquitetura & Algoritmos. As páginas das Fases 1 e 2 foram reutilizadas sem editar V1, V2 ou V3. Registradas a transição, as regras dos dados e a preparação para avaliação futura em `docs/decisions.md` e `docs/validacao/`. Três capturas provisórias da V4 foram geradas para revisão visual. `docs/relatorio/final.md` permaneceu intacto; não foi criado questionário, feedback nem V5.
 Verificação: `npm test`, `npm run build`, `npm run lint` e `npm run test:interface:http` aprovados; rotas históricas e gates conferidos. Sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: recebimento das respostas da quarta aplicação de avaliação com P1, realizada online sobre a V4 após sua implementação; consolidação documental e científica do resultado.
+Arquivos alterados: `docs/validacao/respostas/v4-p1.md` (registro primário literal), `docs/validacao/analise-v4-p1.md` (análise separada), `docs/validacao/v4-preparacao-avaliacao.md`, `docs/validacao/versoes-interface.md`, `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md` (estado posterior da avaliação), `docs/validacao/README.md` (índice), `docs/decisions.md` (ADR-011), `docs/master_context.md` e este log.
+Resultado: oito notas 5/5 e opção A; nenhuma alteração relevante solicitada. V4 mantida como versão avaliada; nenhuma V5 criada. O relato comparativo de Q12 foi tratado somente como percepção da participante, sem conclusão causal ou verificação de impacto institucional.
+Verificação: conferência das doze questões, preservação literal das respostas abertas, origem técnica V3→V4 e `git diff --check`. Código, dados, V4 e `docs/relatorio/final.md` não foram alterados. Sem commit ou push.

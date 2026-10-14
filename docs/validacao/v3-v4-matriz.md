@@ -30,7 +30,11 @@ V3 preservadas e acrescentam seções exclusivas da V4. Não houve novo instrume
 feedback ou avaliação de P1. As outras páginas das Fases 1 e 2 são reutilizadas com aviso de
 conteúdo histórico preservado.
 Fase funcional e versão da interface continuam conceitos distintos. A V3 permanece a versão
-decorrente dos sete feedbacks da terceira avaliação de P1; a V4 ainda não foi avaliada.
+decorrente dos sete feedbacks da terceira avaliação de P1; a V4 ainda não havia sido avaliada
+no momento dessa transição.
 
-Próximo ciclo previsto: avaliação da V4 com instrumento a definir posteriormente. O grupo
-analisará eventuais feedbacks; os aceitos **poderão** originar uma V5. Não há V5 nesta etapa.
+**Avaliação posterior:** P1 avaliou a V4 em 14/10/2026, na modalidade online, após sua
+implementação. O [registro primário](respostas/v4-p1.md) e a [análise](analise-v4-p1.md)
+documentam essa quarta aplicação. Ela não constitui origem das alterações V3→V4; todos os
+itens TEC acima permanecem evolução técnica/acadêmica. Nenhuma alteração relevante foi
+solicitada e nenhuma V5 foi criada.

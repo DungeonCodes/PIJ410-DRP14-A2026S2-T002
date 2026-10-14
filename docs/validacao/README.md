@@ -24,6 +24,11 @@ atribuir resultados ainda inexistentes à comunidade.
 - `respostas/v2-p1-para-v3.md`: respostas primárias da terceira aplicação com a mesma P1;
 - `feedback-v2-v3.md`: sete feedbacks, decisão, implementação e verificação na V3;
 - `v3-dados-sinteticos.md`: regras e limites das métricas adicionais da V3;
+- `v3-v4-matriz.md`: origem técnica/acadêmica da transição V3→V4;
+- `v4-dados-sinteticos.md`: regras e limites do cenário da V4;
+- `v4-preparacao-avaliacao.md`: planejamento histórico e estado da quarta aplicação;
+- `respostas/v4-p1.md`: registro primário da quarta aplicação com P1, após a V4;
+- `analise-v4-p1.md`: análise separada e limites de interpretação dessa aplicação;
 - `versoes-interface.md`: significado formal e composição das versões.
 
 P1, Gerente de Marketing, utilizou V1; suas respostas estão em `respostas/v1-p1.md`.
@@ -36,3 +41,9 @@ avaliação por P1. O TCLE da terceira aplicação foi obtido e assinado; o docu
 permanece fora do Git. Data e modalidade não constam do registro primário consultado. As três
 aplicações são da mesma pessoa, sem constituir amostras independentes. Nenhum instrumento contém
 respostas fictícias.
+
+Depois da implementação técnica da V4, a mesma P1, Gerente de Marketing, participou da
+quarta aplicação em 14/10/2026, online. As oito questões fechadas receberam 5/5, a opção
+final foi A e nenhuma alteração relevante foi solicitada. Essa avaliação posterior não é
+origem da transição V3→V4 e não criou V5. A fala sobre comparação com o ano anterior é
+registrada como percepção de P1, sem atribuição causal ou verificação institucional.

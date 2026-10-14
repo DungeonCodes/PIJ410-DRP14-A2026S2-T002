@@ -4,12 +4,16 @@
 > Apenas fatos confirmados no handoff de 2026-08-23 estão registrados aqui.
 > Itens marcados como **Pendente** ainda não foram decididos e não devem ser inferidos.
 
-**Atualização técnica de 14/10/2026:** a composição local `/v4` implementa as Fases 3 e 4
-documentadas, com dados e premissas fictícios. A V1, V2 e V3 continuam históricas; seus gates
-e aliases não foram promovidos. V3→V4 é evolução técnica/acadêmica do grupo, sem nova
-avaliação comunitária. A V4 ainda não foi avaliada nem publicada. Ver
-`docs/validacao/v3-v4-matriz.md` e `docs/validacao/v4-dados-sinteticos.md`. As descrições
-abaixo de Fases 3 e 4 bloqueadas registram o estado anterior da V1–V3.
+**Estado da V4 em 14/10/2026:** a composição local `/v4` implementa o escopo especificado
+das quatro fases, com dados e premissas fictícios, inclusive rankings de Ads e CPR temporal.
+V1, V2 e V3 continuam históricas; seus gates e aliases não foram promovidos. V3→V4 foi
+evolução técnica/acadêmica do grupo, sem avaliação comunitária entre as versões. Depois de
+implementada, a V4 foi avaliada online por P1, Gerente de Marketing, em 14/10/2026: oito
+notas 5/5, opção final A e nenhuma alteração relevante solicitada. A V4 foi mantida como
+versão avaliada; V5 inexiste. Isso registra percepção individual, não comprova impacto
+institucional. Ver `docs/validacao/v3-v4-matriz.md`, `docs/validacao/respostas/v4-p1.md` e
+`docs/validacao/analise-v4-p1.md`. As descrições abaixo de Fases 3 e 4 bloqueadas registram
+o estado anterior da V1–V3.
 
 ## Objetivo Central
 

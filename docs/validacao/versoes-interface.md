@@ -8,7 +8,7 @@ técnica global do projeto e dos gates de implantação.
 | V1 | Captação + Matrículas |
 | V2 | Captação + Matrículas + Ads + ML CPR + evolução temporal consolidada (FB-V1-P1-001) |
 | V3 | Fases 1 e 2 com as sete melhorias FB-V2-P1-001 a FB-V2-P1-007; nova apresentação final do protótipo acadêmico |
-| V4 | Fases 1 a 4 em composição separada; Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos por evolução técnica/acadêmica do grupo |
+| V4 | Fases 1 a 4 em composição separada, com rankings de Ads e CPR temporal; evolução técnica/acadêmica do grupo, avaliada posteriormente por P1 em 14/10/2026 |
 
 As origens são distintas: Ads e ML CPR constituem evolução técnica/acadêmica; a evolução
 temporal consolidada foi aprovada pelo grupo após o feedback real de P1.
@@ -76,7 +76,7 @@ visualizações não temporais e permanecem.
 | Capacidade técnica — Fase 2 | IMPLEMENTADA |
 | Conteúdo V1 | Somente Fase 1 |
 | Conteúdo V2 | Fases 1 e 2 |
-| Fases 3 e 4 | BLOQUEADAS |
+| Fases 3 e 4 | BLOQUEADAS em V1–V3; IMPLEMENTADAS na composição local V4 |
 
 A restrição é aplicada na composição/roteamento da interface. Dados, métricas, seeds,
 experimentos e artefatos científicos permanecem compartilhados e intactos.
@@ -128,16 +128,21 @@ e derivação documentadas em `v3-dados-sinteticos.md`. A comparação mensal de
 
 ## V4 — conclusão técnica das fases restantes
 
-Em 14/10/2026, a V4 passou a reunir as Fases 1 a 4 em rotas `/v4/...`. As Fases 1 e 2
-reutilizam as páginas da V3, com aviso explícito de conteúdo herdado; Reels orgânicos,
-Objetivo da Gestão e Arquitetura & Algoritmos são novos. As rotas equivalentes das Fases 3 e
+Em 14/10/2026, a V4 passou a reunir as Fases 1 a 4 em rotas `/v4/...`. Os indicadores das
+Fases 1 e 2 reutilizam a apresentação da V3, com aviso de conteúdo herdado; a segunda
+iteração técnica da V4 acrescentou rankings sintéticos em Meta e Google e séries descritivas
+de CPR em Estratégia. Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos também
+são novos. As rotas equivalentes das Fases 3 e
 4 continuam bloqueadas em V1, V2, V3 e nos aliases antigos. `CURRENT_UI_VERSION = "v1"`
 permanece inalterado. Regras e limites estão em `v4-dados-sinteticos.md` e a transição está
 em `v3-v4-matriz.md`.
 
 **Origem:** EVOLUÇÃO TÉCNICA/ACADÊMICA. Não houve aplicação comunitária entre V3 e V4.
-A V4 ainda não foi avaliada. Uma avaliação futura poderá produzir feedbacks que, após análise
-do grupo, poderão originar uma V5; não há instrumento ou V5 nesta etapa.
+**Avaliação posterior:** a mesma P1, Gerente de Marketing, avaliou a V4 online em 14/10/2026.
+As oito questões fechadas receberam 5/5; P1 escolheu a opção A e não solicitou alteração
+relevante. A V4 permanece como versão avaliada atual. Essa aplicação não modifica a origem
+técnica dos itens TEC-002 a TEC-008 e não criou V5. Ver
+`respostas/v4-p1.md` e `analise-v4-p1.md`.
 
 ## Registro cronológico
 
@@ -146,7 +151,8 @@ do grupo, poderão originar uma V5; não há instrumento ou V5 nesta etapa.
 | HIST-001 | Correção factual da cronologia | V1 recomposta como baseline pré-Ads | V1 | Não se aplica |
 | TEC-001 | Evolução técnica/acadêmica | Ads, experimento CPR e previsão sazonal | V2 | Nenhuma no momento da inclusão; avaliação ampliada posterior da V2 |
 | V3-001 | Sete feedbacks aceitos após avaliação ampliada da mesma P1 | Apresentação executiva mensal, análises temporais, composição por série e comunicação do ML | V3 | P1 avaliou V2; V3 ainda sem nova avaliação por P1 |
-| TEC-002 a TEC-005 | Evolução técnica/acadêmica do grupo, sem nova avaliação | Fases 3 e 4 em composição `/v4` | V4 | Nenhuma avaliação comunitária da V4 |
+| TEC-002 a TEC-008 | Evolução técnica/acadêmica do grupo, anterior à avaliação da V4 | Quatro fases, rankings Ads e CPR temporal em `/v4` | V4 | Nenhuma avaliação entre V3 e V4; quarta aplicação posterior em 14/10/2026 |
+| 4ª aplicação P1 | Avaliação posterior da mesma participante | Oito notas 5/5, opção A; nenhuma alteração relevante solicitada | V4 mantida | `respostas/v4-p1.md`; `analise-v4-p1.md` |
 
 ### Alteração aprovada pelo grupo após feedback real
 
