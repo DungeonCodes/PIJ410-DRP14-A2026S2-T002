@@ -490,6 +490,32 @@ consultados. **A obra:** ReAct intercala raciocínio e ações em fontes ou ferr
 `usar` para explicar planejamento e uso de ferramentas, sem atribuição arquitetural específica.
 [Acesso](https://arxiv.org/abs/2210.03629)
 
+### 49. Zelikman et al. (2024)
+
+**Base da síntese:** versão publicada em COLM 2024 disponibilizada no arXiv; resumo, introdução,
+trabalhos relacionados e conclusão consultados. **A obra:** chama de *scaffolding* o programa que
+estrutura múltiplas chamadas a um modelo de linguagem e estuda um programa desse tipo que melhora
+a si mesmo segundo uma função de utilidade. **Limite:** o PI não adotou o STOP nem
+autoaperfeiçoamento recursivo; a aplicação do termo ao fluxo do grupo é extensão declarada.
+**Decisão:** `usar` para a definição de *scaffolding* em LLMs. [Acesso](https://arxiv.org/abs/2310.02304)
+
+### 50. Feng et al. (2026)
+
+**Base da síntese:** versão dos autores e metadados ACM (FSE Companion '26, p. 1257-1261)
+consultados. **A obra:** propõe *structured spec-driven engineering*, com artefatos estruturados
+como entrada para geração de código por LLM, e avalia a proposta em estudo piloto. **Limite:**
+três sistemas e cinco modelos; artefatos estruturados não superaram linguagem natural em todas as
+combinações. **Decisão:** `usar` para registrar o termo em veículo revisado, sem alegar eficácia.
+[Acesso](https://doi.org/10.1145/3803437.3805567)
+
+### 51. Mei et al. (2025)
+
+**Base da síntese:** preprint arXiv (v2), resumo, definição e taxonomia consultados. **A obra:**
+levanta a literatura e propõe *context engineering* como sistematização da recuperação, do
+processamento e do gerenciamento do contexto fornecido a LLMs. **Limite:** não revisado por pares;
+o caráter de disciplina formal é proposta dos autores. **Decisão:** `usar` somente para a
+terminologia emergente, com ressalva. [Acesso](https://doi.org/10.48550/arXiv.2507.13334)
+
 ## Fluxo para novas obras
 
 1. Cadastrar a referência e o eixo em [referencias.md](referencias.md).

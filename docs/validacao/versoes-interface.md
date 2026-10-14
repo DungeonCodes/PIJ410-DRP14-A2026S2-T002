@@ -8,6 +8,7 @@ técnica global do projeto e dos gates de implantação.
 | V1 | Captação + Matrículas |
 | V2 | Captação + Matrículas + Ads + ML CPR + evolução temporal consolidada (FB-V1-P1-001) |
 | V3 | Fases 1 e 2 com as sete melhorias FB-V2-P1-001 a FB-V2-P1-007; nova apresentação final do protótipo acadêmico |
+| V4 | Fases 1 a 4 em composição separada, com rankings de Ads e CPR temporal; evolução técnica/acadêmica do grupo, avaliada posteriormente por P1 em 14/10/2026 |
 
 As origens são distintas: Ads e ML CPR constituem evolução técnica/acadêmica; a evolução
 temporal consolidada foi aprovada pelo grupo após o feedback real de P1.
@@ -75,7 +76,7 @@ visualizações não temporais e permanecem.
 | Capacidade técnica — Fase 2 | IMPLEMENTADA |
 | Conteúdo V1 | Somente Fase 1 |
 | Conteúdo V2 | Fases 1 e 2 |
-| Fases 3 e 4 | BLOQUEADAS |
+| Fases 3 e 4 | BLOQUEADAS em V1–V3; IMPLEMENTADAS na composição local V4 |
 
 A restrição é aplicada na composição/roteamento da interface. Dados, métricas, seeds,
 experimentos e artefatos científicos permanecem compartilhados e intactos.
@@ -96,10 +97,12 @@ participante em ambos os momentos.
 A mesma P1 participou depois de uma avaliação ampliada da V2 para orientar a V3, documentada em
 `instrumento_validacao_v2_para_v3.md`, `respostas/v2-p1-para-v3.md` e `feedback-v2-v3.md`.
 Esse é o terceiro momento sucessivo da mesma participante, sem constituir nova amostra
-independente. Data, modalidade e TCLE específicos desta nova aplicação ainda dependem de
-confirmação no registro de respostas. P1 classificou a V2 na opção C, como necessitando
-alterações importantes antes da versão final. Os feedbacks FB-V2-P1-001 a FB-V2-P1-007
-foram aceitos pelo responsável e implementados na V3. Essa implementação não é validação por P1.
+independente. O TCLE desta aplicação foi obtido e assinado; o documento protegido fica fora do
+Git. Data e modalidade não constam do registro de respostas consultado. P1 classificou a V2 na
+opção C, como necessitando alterações importantes antes da versão final. Os feedbacks
+FB-V2-P1-001 a FB-V2-P1-007
+foram aceitos por decisão do grupo, sob instrução expressa do responsável pelo projeto, e
+implementados na V3. Essa implementação não é validação por P1.
 
 A versão apresentada deve ser registrada em cada momento. As notas pertencem à mesma pessoa,
 mas a versões e itens diferentes; não constituem comparação quantitativa controlada.
@@ -123,6 +126,24 @@ A V3 reutiliza os contratos sintéticos existentes e acrescenta somente regras d
 e derivação documentadas em `v3-dados-sinteticos.md`. A comparação mensal de Ads com Matrículas
 é exploratória, entre cenários fictícios independentes, sem atribuição causal.
 
+## V4 — conclusão técnica das fases restantes
+
+Em 14/10/2026, a V4 passou a reunir as Fases 1 a 4 em rotas `/v4/...`. Os indicadores das
+Fases 1 e 2 reutilizam a apresentação da V3, com aviso de conteúdo herdado; a segunda
+iteração técnica da V4 acrescentou rankings sintéticos em Meta e Google e séries descritivas
+de CPR em Estratégia. Reels orgânicos, Objetivo da Gestão e Arquitetura & Algoritmos também
+são novos. As rotas equivalentes das Fases 3 e
+4 continuam bloqueadas em V1, V2, V3 e nos aliases antigos. `CURRENT_UI_VERSION = "v1"`
+permanece inalterado. Regras e limites estão em `v4-dados-sinteticos.md` e a transição está
+em `v3-v4-matriz.md`.
+
+**Origem:** EVOLUÇÃO TÉCNICA/ACADÊMICA. Não houve aplicação comunitária entre V3 e V4.
+**Avaliação posterior:** a mesma P1, Gerente de Marketing, avaliou a V4 online em 14/10/2026.
+As oito questões fechadas receberam 5/5; P1 escolheu a opção A e não solicitou alteração
+relevante. A V4 permanece como versão avaliada atual. Essa aplicação não modifica a origem
+técnica dos itens TEC-002 a TEC-008 e não criou V5. Ver
+`respostas/v4-p1.md` e `analise-v4-p1.md`.
+
 ## Registro cronológico
 
 | ID | Origem | Alteração | Versão | Evidência comunitária |
@@ -130,6 +151,8 @@ e derivação documentadas em `v3-dados-sinteticos.md`. A comparação mensal de
 | HIST-001 | Correção factual da cronologia | V1 recomposta como baseline pré-Ads | V1 | Não se aplica |
 | TEC-001 | Evolução técnica/acadêmica | Ads, experimento CPR e previsão sazonal | V2 | Nenhuma no momento da inclusão; avaliação ampliada posterior da V2 |
 | V3-001 | Sete feedbacks aceitos após avaliação ampliada da mesma P1 | Apresentação executiva mensal, análises temporais, composição por série e comunicação do ML | V3 | P1 avaliou V2; V3 ainda sem nova avaliação por P1 |
+| TEC-002 a TEC-008 | Evolução técnica/acadêmica do grupo, anterior à avaliação da V4 | Quatro fases, rankings Ads e CPR temporal em `/v4` | V4 | Nenhuma avaliação entre V3 e V4; quarta aplicação posterior em 14/10/2026 |
+| 4ª aplicação P1 | Avaliação posterior da mesma participante | Oito notas 5/5, opção A; nenhuma alteração relevante solicitada | V4 mantida | `respostas/v4-p1.md`; `analise-v4-p1.md` |
 
 ### Alteração aprovada pelo grupo após feedback real
 

@@ -1179,6 +1179,19 @@ Data do registro da auditoria: 2026-10-10 (não é a data da terceira avaliaçã
 Ação: Auditoria de rastreabilidade da terceira avaliação da mesma P1 e da transição V2 → V3, confrontando instrumento, respostas primárias, sete feedbacks, decisão de aceitá-los, implementação, testes e Relatório Final.
 Resultado: criada `docs/validacao/auditoria-rastreabilidade-v2-v3.md`; atualizados o índice e o protocolo de validação para reconhecer a terceira aplicação. O Relatório Final passou a delimitar o escopo das duas primeiras aplicações, a avaliação ampliada de Ads/ML na terceira, a disponibilidade das Fases 1 e 2 na V3 e a reprodução integral das 16 questões no Apêndice B.3. Mantida a distinção entre versões da interface e fases funcionais, entre verificação técnica e avaliação por P1, e entre métricas sintéticas e dados operacionais. Respostas primárias, código, dados, ML e figuras não foram alterados nesta auditoria.
 Verificação: 16 questões idênticas no instrumento e Apêndice B.3, 16 registros de resposta, sete falas abertas e notas conferidos; `npm run test:v3-feedback`, `npm run test:interface` (17 arquivos V1 protegidos), `npm run test:nao-vazamento` (38 verificações) e `git diff --check` aprovados. `npm run verificar:integridade-docs` permanece impedido pela ausência preexistente da linha de base; ela não foi criada. Sem commit ou push.
+---
+
+Data: 2026-10-13
+Ação realizada: revisão estrutural do Relatório Final conforme orientação docente: objetivos mais diretos e sem citações, abertura da metodologia com briefing das fases, alinhamento objetivo–metodologia–resultado e reorganização dos resultados com separação entre feedback externo e verificação técnica.
+Resultado: `docs/relatorio/final.md` passou a apresentar seis objetivos específicos, a sequência metodológica dados → indicadores → interface → CPR → IA assistiva → avaliação, e o capítulo 3 em três eixos. A Tabela 14 rastreia FB-V1-P1-001 e FB-V2-P1-001 a 007 da observação à decisão, alteração e verificação. Criada `docs/relatorio/auditoria-orientacoes-professora-objetivos-metodologia-resultados.md` com matriz de atendimento e limites. P1 avaliou V1 e V2, não V3; resultados de ML, dados, respostas, versões, figuras e referências preservados. A auditoria `auditoria-final-documental-cientifica-v3.md` indicada na solicitação não estava presente. Sumário e demais elementos de composição não foram editados; nenhum código, dataset, DOCX/PDF, commit ou push.
+Verificação: zero citações acadêmicas em 2.1; 12 subseções metodológicas numeradas, três eixos no capítulo 3 e oito feedbacks na Tabela 14. `git diff --check`, `npm run test:interface`, `npm run test:v3-feedback`, `npm run test:nao-vazamento`, `npm run test:determinismo` e `npm run ml:google-cpr:sazonal:verificar` aprovados. O verificador documental de integridade depende de linha de base temporária ausente; nenhuma linha de base foi criada.
+
+---
+
+Data: 2026-10-13
+Ação realizada: micro-revisão do objetivo específico de IA agêntica, substituindo “avaliar o uso” por “aplicar práticas” para alinhar o objetivo ao uso efetivamente realizado na construção, análise e verificação da solução.
+Resultado: o objetivo 5 vigente foi classificado como ATENDIDO no escopo assistivo, com base no uso confirmado de agentes em programação, auditoria, revisão, análise de consistência e verificação de testes e artefatos sob supervisão humana. A ausência de simulação agêntica específica permanece como limite do objetivo histórico; não se declarou avaliação científica da eficácia da IA. Foram alinhados a abertura dos resultados, as considerações finais e a matriz em `docs/relatorio/auditoria-orientacoes-professora-objetivos-metodologia-resultados.md`. Metodologia 2.5.11, ciência, ML, dados, interfaces, respostas de P1 e referências preservados. Nenhum código, dataset, commit ou push.
+Verificação: zero citações acadêmicas em 2.1; `git diff --check` aprovado. O verificador documental de integridade permanece sem sua linha de base temporária preexistente, que não foi criada.
 
 ---
 
@@ -1186,3 +1199,40 @@ Data do registro da auditoria: 2026-10-10.
 Ação: Auditoria-mestre final documental e científica do Relatório Final após a V3.
 Resultado: criada `docs/relatorio/auditoria-final-documental-cientifica-v3.md`. Corrigidos em `final.md`: 2.1 (avaliação não mais descrita como sem Ads/ML; três aplicações da mesma P1; V3 não reavaliada), 2.5.11 e 3.4.4 (artefato sazonal exibido na V2 e na V3, não na V1), 2.5.9 (fórmula da efetivação e regras `pij410-v3-extensao-1` com seus limites), Tabela 2/IHC (ciclo V2→V3), numeração da tabela de rastreabilidade V2→V3 (nova Tabela 14; anterior renumerada para 15). `master_context.md` recebeu atualização datada sobre a V3. Métricas de ML, projeções, índice sazonal e regras sintéticas conferidos com artefatos e código; 25 referências, todas citadas, nenhuma citação órfã ou duplicata; nenhuma PII ou segredo. Metadados da terceira aplicação permanecem a confirmar, sem inferência.
 Verificação: `npm test` aprovado (inclui test:fases 61, test:interface com 17 arquivos V1 protegidos, test:v2-feedback, test:v3-feedback, test:determinismo 46, test:google-cpr, ml:google-cpr:verificar, test:google-cpr:sazonal, ml:google-cpr:sazonal:verificar, test:nao-vazamento 38); `git diff --check` aprovado. `npm run build` e `npm run test:interface:http` não executados nesta máquina por ausência de `node_modules` (não instalado nesta auditoria). `npm run verificar:integridade-docs` segue impedido pela ausência preexistente da linha de base, não criada. Código, datasets, V1, V2, resultados, respostas de P1, figuras, modelo e `parcial.md` intactos. Sem commit ou push.
+
+---
+
+Data do registro: 2026-10-10.
+Ação: Revisão da fundamentação e metodologia de IA agêntica para explicitar scaffolding, desenvolvimento orientado por especificações, organização estruturada de contexto, supervisão humana e verificação como práticas efetivamente utilizadas no projeto.
+Resultado: `docs/relatorio/final.md` atualizado em 2.3 (abertura: apoio também ao desenvolvimento), 2.3.7 (definição de *scaffolding*, *spec-driven development* e *context engineering* como práticas de engenharia, com nível de consolidação; *human-in-the-loop* explícito) e 2.5.12 (fluxo especificação → contexto e restrições → *scaffolding*/decomposição → execução assistida → inspeção → testes e verificações → decisão humana, com artefatos reais). Novas referências: Zelikman *et al.* (2024, COLM), Feng *et al.* (2026, ACM FSE Companion) e Mei *et al.* (2025, preprint com ressalva); 25 → 28. Wood, Bruner e Ross (1976), Piskala (2026) e Lin *et al.* (preprint) foram avaliados e não incorporados. Atualizados `docs/referencias.md`, `docs/fichamentos_bibliograficos.md`, `docs/resumos_obras_bibliograficas.md`, `docs/decisions.md` e `docs/relatorio/auditoria-ia-agentica-fontes.md`. Objetivos, Design Thinking, validação P1, V1/V2/V3, ML, métricas, dados, resultados, figuras e conclusões não foram alterados.
+Ferramentas (registro de reprodutibilidade, fora do corpo científico): o responsável informou o uso de Antigravity e de agentes baseados em Codex/GPT-6.1 Sol no projeto; esta revisão foi executada com Claude Code (Claude Opus 5.5) e permanece sujeita à aceitação humana.
+Verificação: `git diff --check` aprovado; conferência bidirecional com 28 referências, 28 citadas, 0 citações sem referência e 0 duplicatas; `npm run test:nao-vazamento` aprovado (38 verificações). `npm run verificar:integridade-docs` falhou por ausência preexistente da linha de base, que não foi criada. Código não alterado. Sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: Conferência pós-crash e revisão de legibilidade do Relatório Final: sincronização do sumário e listas com o corpo, verificação das orientações docentes, alinhamento objetivo–metodologia–resultado e redução controlada de redundâncias.
+Resultado: corrigidas as declarações atuais sobre o TCLE assinado da terceira aplicação, mantendo data e modalidade sem inferência e o documento protegido fora do Git; preservado o registro primário original de P1. A decisão de aceitar os sete feedbacks foi atribuída ao grupo, sob instrução expressa do responsável. Mantidos os seis objetivos, as quatro fases, V1/V2/V3, métricas, resultados de ML, IA assistiva e 28 referências. Paginação e apresentação visual das listas seguem para composição final.
+Verificação: comparação automática dos headings do corpo com o sumário, das seis legendas de figuras com a lista de ilustrações e das 14 legendas de tabelas com a lista de tabelas; `git diff --check` aprovado. Nenhum código, dataset, resposta original de P1, captura ou artefato alterado; sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: revisão editorial final de legibilidade do Relatório Final para leitor universitário não especialista.
+Resultado: conceitos técnicos passaram a ser introduzidos por explicações em português antes das siglas; o Resumo, 2.3.7, 2.5.10, 2.5.11, 3.1.2, 3.1.6, 3.3.2 e as Considerações Finais foram reorganizados ou simplificados. A conclusão principal dos experimentos precede as tabelas; as quatro limitações principais abrem 3.3.2. Reduzidos tom de auditoria e ressalvas repetidas, com evidências de reprodução preservadas. O registro docente recebeu subseção específica desta revisão.
+Verificação: seis objetivos, referências e Tabelas 6–14 idênticos ao HEAD; 28 referências, 6 figuras e 14 tabelas; números de 2.5.10 e citações preservados; Resumo com 225 palavras; sumário textual coerente com 49 headings; `git diff --check` aprovado. Código, dados e respostas de P1 intactos. Sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: implementação da V4 como evolução técnica e acadêmica das Fases 3 e 4 previstas no plano de fases, sem avaliação comunitária entre V3 e V4.
+Resultado: criada a composição `/v4` com Reels orgânicos sintéticos, plano fictício de ocupação em Objetivo da Gestão e documentação em Arquitetura & Algoritmos. As páginas das Fases 1 e 2 foram reutilizadas sem editar V1, V2 ou V3. Registradas a transição, as regras dos dados e a preparação para avaliação futura em `docs/decisions.md` e `docs/validacao/`. Três capturas provisórias da V4 foram geradas para revisão visual. `docs/relatorio/final.md` permaneceu intacto; não foi criado questionário, feedback nem V5.
+Verificação: `npm test`, `npm run build`, `npm run lint` e `npm run test:interface:http` aprovados; rotas históricas e gates conferidos. Sem commit ou push.
+
+---
+
+Data: 2026-10-14.
+Ação realizada: recebimento das respostas da quarta aplicação de avaliação com P1, realizada online sobre a V4 após sua implementação; consolidação documental e científica do resultado.
+Arquivos alterados: `docs/validacao/respostas/v4-p1.md` (registro primário literal), `docs/validacao/analise-v4-p1.md` (análise separada), `docs/validacao/v4-preparacao-avaliacao.md`, `docs/validacao/versoes-interface.md`, `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md` (estado posterior da avaliação), `docs/validacao/README.md` (índice), `docs/decisions.md` (ADR-011), `docs/master_context.md` e este log.
+Resultado: oito notas 5/5 e opção A; nenhuma alteração relevante solicitada. V4 mantida como versão avaliada; nenhuma V5 criada. O relato comparativo de Q12 foi tratado somente como percepção da participante, sem conclusão causal ou verificação de impacto institucional.
+Verificação: conferência das doze questões, preservação literal das respostas abertas, origem técnica V3→V4 e `git diff --check`. Código, dados, V4 e `docs/relatorio/final.md` não foram alterados. Sem commit ou push.

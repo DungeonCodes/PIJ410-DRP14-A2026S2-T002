@@ -479,6 +479,8 @@ encerra H10 sem alterar o conteúdo científico ou o conjunto de fontes do traba
 
 **Motivo:** evitar transferir resultados de benchmarks ou nomes comerciais para a eficácia do projeto e manter os agentes auxiliares separados da regressão linear e dos baselines do CPR. Fontes e limites estão em `docs/relatorio/auditoria-ia-agentica-fontes.md`.
 
+**Situação:** revista em 2026-10-10 pela decisão “Práticas de engenharia no uso de IA agêntica”, abaixo. A ressalva sobre metodologia científica permanece; muda o tratamento dos nomes das práticas.
+
 ## Decisão de implementação — feedbacks da avaliação ampliada V2 para V3
 
 **Data da decisão:** não informada; o registro desta decisão foi solicitado em 10/10/2026.
@@ -493,3 +495,98 @@ com Matrículas não estabelece atribuição entre plataformas e pessoas.
 testes automatizados e capturas provisórias em `docs/relatorio/figuras/v3-preview-*.png`.
 
 ---
+
+## Decisão editorial — práticas de engenharia no uso de IA agêntica
+
+**Data:** 2026-10-10.
+
+**Decisão:** o projeto reconhece explicitamente *scaffolding*, desenvolvimento orientado por
+especificações (*spec-driven development*) e organização estruturada do contexto (*context
+engineering*) como práticas de engenharia efetivamente utilizadas no uso controlado de IA
+agêntica, combinadas com decomposição de tarefas, verificação iterativa por testes e
+verificadores e supervisão humana no ciclo (*human-in-the-loop*). A adoção desses termos descreve
+o processo técnico e não implica classificá-los como metodologias científicas autônomas ou
+universalmente padronizadas. O fluxo de verificação é descrito em linguagem comum, sem nome
+próprio como *verification-driven development*.
+
+**Fundamentação:** *scaffolding* em LLMs, Zelikman *et al.* (2024, COLM); requisitos e testes,
+Han *et al.* (2024, ACL); termo *spec-driven engineering* em veículo revisado, Feng *et al.* (2026,
+FSE Companion), sem alegação de eficácia; efeito do contexto, Liu *et al.* (2024, TACL); termo
+*context engineering*, Mei *et al.* (2025), preprint citado com ressalva; feedback externo, Kamoi
+*et al.* (2024); supervisão humana, Amershi *et al.* (2019). Classificação dos termos em
+`docs/relatorio/auditoria-ia-agentica-fontes.md`.
+
+**Limites:** agentes sugerem, executam, comparam, testam e verificam; arquitetura, metodologia,
+escolha de modelos, decisões sobre feedbacks, aceitação de alterações, interpretação científica e
+conclusões permanecem humanas. A IA agêntica não produziu as estimativas de CPR nem validou
+matematicamente o modelo de aprendizagem de máquina. Nomes comerciais de ferramentas ficam no
+registro de execuções, não no corpo científico do relatório.
+
+---
+
+## ADR-010 — V4 técnica para as Fases 3 e 4
+
+**Data:** 2026-10-14. **Classificação:** EVOLUÇÃO TÉCNICA/ACADÊMICA.
+
+**Decisão:** criar uma composição `/v4` separada, que reúna as quatro fases funcionais. Reels
+orgânicos seguem o contrato documentado de publicações sintéticas, score com pesos explícitos,
+ausência distinta de zero e desempate total. Objetivo da Gestão apresenta somente um plano
+fictício de ocupação, independente dos dados apurados. Arquitetura & Algoritmos documenta a
+stack, as fontes, as regras e os limites em prosa na aplicação. A V4 reutiliza as páginas das
+Fases 1 e 2 sem modificar os arquivos de V1, V2 ou V3. O gate abre os novos módulos somente em
+`/v4`; as rotas históricas e os aliases permanecem como estavam.
+
+**Origem e limite:** a transição V3→V4 foi planejada pelo grupo a partir de
+`docs/migracao-modelo/arquitetura/plano-de-fases.md`. Não houve questionário, entrevista ou
+avaliação comunitária entre as versões. Nenhuma aprovação ou pedido de P1 é atribuído à V4.
+O CPR, seus dados e suas métricas permanecem intactos. Nenhuma integração real é adicionada.
+
+**Evidência:** `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md`,
+`docs/validacao/v4-preparacao-avaliacao.md`, testes de V4 e capturas provisórias. O relatório
+científico `docs/relatorio/final.md` será considerado em etapa posterior, após revisão visual
+da V4.
+
+**Próximo ciclo:** a V4 será submetida a avaliação futura com instrumento próprio; feedbacks
+aceitos pelo grupo poderão originar uma V5. Nenhuma avaliação ou V5 foi criada nesta execução.
+
+---
+
+## Emenda à ADR-010 — segunda iteração técnica da V4
+
+**Data:** 2026-10-14. **Classificação:** EVOLUÇÃO TÉCNICA/ACADÊMICA.
+
+**Decisão:** TEC-006 acrescenta ranking mensal de anúncios Meta fictícios apenas do indicador
+conversa; TEC-007 acrescenta ranking mensal de palavras-chave Google fictícias por custo por
+conversão registrada; TEC-008 acrescenta séries temporais separadas de CPR Google e CPR Meta
+por conversa em Estratégia. As novas linhas são partições determinísticas dos totais fechados,
+sem alteração da base Ads ou das versões V1, V2 e V3. CPR inválido por zero ou ausência fica
+indisponível. O CPR descritivo não modifica o experimento preditivo Google.
+
+**Origem e limite:** estas três alterações foram solicitadas como evolução técnica/acadêmica
+da V4; não houve novo questionário, entrevista, feedback ou avaliação de P1. A V4 ainda será
+avaliada em ciclo futuro. Somente feedbacks aceitos dessa futura avaliação poderão originar
+uma possível V5. O relatório final fica para a revisão posterior da V4.
+
+**Evidência:** `docs/validacao/v3-v4-matriz.md`, `docs/validacao/v4-dados-sinteticos.md`,
+`docs/validacao/v4-preparacao-avaliacao.md` e testes da V4.
+
+---
+
+## ADR-011 — manter a V4 após a quarta aplicação com P1
+
+**Data:** 2026-10-14. **Natureza:** decisão de versionamento após avaliação exploratória.
+
+**Evidência:** P1, Gerente de Marketing, avaliou online a V4 após sua implementação. As oito
+questões fechadas receberam 5/5; a opção final foi A. Nas respostas abertas, P1 não solicitou
+alteração relevante. O registro literal está em `docs/validacao/respostas/v4-p1.md`; a
+interpretação e seus limites estão em `docs/validacao/analise-v4-p1.md`.
+
+**Decisão do grupo:** manter a V4 como versão avaliada atual. Não abrir V5 nem criar um identificador
+de feedback de mudança para esta aplicação, pois não houve solicitação específica que exija
+nova versão. Uma versão posterior dependerá de novo requisito, novo feedback, necessidade
+técnica ou decisão formal do grupo.
+
+**Limites:** a aplicação envolveu uma participante e mede sua percepção. O relato de melhora
+comparativa em Q12 não foi verificado com dados operacionais e não demonstra que a plataforma
+ou os Ads causaram melhora institucional. A avaliação ocorreu após a evolução técnica V3→V4;
+não altera retroativamente a origem dos itens TEC-002 a TEC-008.

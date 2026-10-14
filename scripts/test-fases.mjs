@@ -60,6 +60,8 @@ t('todo módulo de fase > 2 está bloqueado',
 t('V1 contém somente Captação e Matrículas',
   modulosDaVersao('v1').map((m) => m.chave).join(',') === 'captacao,matriculas');
 t('V2 contém as Fases 1 e 2', modulosDaVersao('v2').length === 6);
+t('V3 preserva as Fases 1 e 2', modulosDaVersao('v3').length === 6);
+t('V4 libera os nove módulos das quatro fases', modulosDaVersao('v4').length === 9);
 t('nenhuma rota do catálogo se repete',
   new Set(MODULOS.map((m) => m.rota)).size === MODULOS.length);
 
@@ -93,6 +95,12 @@ t('rota fora do catálogo não é governada pelo gate',
 t('Ads falha fechado na composição V1 e permanece disponível na V2',
   rotaHabilitadaNaVersao('v1', '/ads/google') === false &&
   rotaHabilitadaNaVersao('v2', '/ads/google') === true);
+t('Fases 3 e 4 abrem apenas na rota versionada V4',
+  BLOQUEADAS.every((rota) =>
+    rotaHabilitadaNaVersao('v1', rota) === false &&
+    rotaHabilitadaNaVersao('v2', rota) === false &&
+    rotaHabilitadaNaVersao('v3', rota) === false &&
+    rotaHabilitadaNaVersao('v4', rota) === true));
 
 // --- 3. AS ROTAS BLOQUEADAS FALHAM FECHADAS ---------------------------------
 console.log('\n3 · Rotas bloqueadas falham fechadas no servidor');
