@@ -896,15 +896,20 @@ repositório. Data e modalidade da terceira aplicação não constam do registro
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
-Este capítulo distingue resultados comprovados, desenvolvimento em curso e itens planejados. No
-estado local após a implementação da V3, as Fases 1 e 2 estão ativas; Fases 3 e 4 permanecem
-planejadas e bloqueadas. A Fase 2 utiliza Google Ads e Meta Ads integralmente sintéticos,
-sem integração real. O experimento de CPR descrito em 3.1.6 continua executado pela CLI;
-a interface apenas apresenta seus resultados reproduzíveis, sem treinamento no navegador.
-A ativação técnica não constitui validação comunitária nem novo deploy.
-Não houve consolidação de fontes institucionais reais. A seção 3.1 apresenta, na ordem dos
-objetivos, dados, indicadores, interface, CPR e uso assistivo de IA agêntica. A seção 3.2 acompanha
-a avaliação de P1 e as alterações decorrentes; 3.3 reúne a verificação técnica e os limites.
+O capítulo apresenta dois tipos de resultado: o funcionamento técnico da solução e as alterações
+da interface decorrentes de três avaliações sucessivas com a mesma profissional da instituição
+parceira, identificada como P1. Ela avaliou a V1 e sugeriu um ajuste incorporado à V2. Em seguida,
+reavaliou esse ajuste na V2 e relatou sua utilidade, sem solicitar outra alteração naquele escopo.
+Mais tarde, avaliou a V2 de forma ampliada; o grupo analisou sete novos feedbacks e os incorporou
+à V3. Essa última versão foi verificada tecnicamente, mas ainda não foi avaliada por P1.
+
+A seção 3.1 apresenta dados, indicadores, interface, CPR e uso assistivo de IA agêntica. A seção
+3.2 mostra o que P1 apontou, como o grupo decidiu e o que mudou em cada versão; 3.3 reúne testes
+e limitações independentes da percepção da participante. No estado local da V3, as Fases 1 e 2
+estão ativas; Fases 3 e 4 permanecem planejadas e bloqueadas. Ads utiliza dados sintéticos, sem
+integração real. O experimento de CPR continua executado pela CLI; a interface apenas apresenta
+seus resultados reproduzíveis, sem treinamento no navegador. Não houve consolidação de fontes
+institucionais reais nem novo deploy.
 
 ## 3.1 Desenvolvimento e resultados técnicos
 
@@ -1125,6 +1130,13 @@ específica documentada na solução analítica.
 
 ## 3.2 Avaliação com a comunidade e alterações decorrentes
 
+V1 → 1ª avaliação de P1 → FB-V1-P1-001 → decisão e alteração do grupo → V2 → 2ª avaliação da
+mesma P1 → relato positivo sobre o ajuste → V2 mantida → 3ª avaliação ampliada da V2 →
+FB-V2-P1-001 a FB-V2-P1-007 → decisão e alterações do grupo → V3 → verificação técnica.
+
+As três aplicações envolveram uma participante, não três amostras independentes. A segunda
+avaliação encerrou o primeiro ciclo de alteração e retorno; não originou a V3.
+
 ### 3.2.1 Contato inicial e necessidades identificadas
 
 Na conversa inicial, a gestora de marketing apresentou a necessidade de compreender quanto investir
@@ -1139,64 +1151,86 @@ repositório, distinto dos instrumentos posteriores de validação da V1/V2.
 
 ### 3.2.2 Avaliação da solução pela participante
 
-A sequência documentada foi V1 → avaliação de P1 → FB-V1-P1-001 → análise, decisão e alteração
-pelo grupo → V2 → reavaliação focal e avaliação ampliada por P1 → sete feedbacks → análise e
-decisão do grupo → V3 → verificação técnica. P1 não avaliou a V3.
+Os trechos citados a seguir preservam a redação de P1 nos registros primários; a marca [...] indica
+supressão de parte da resposta. As interpretações e decisões apresentadas após cada fala são do
+grupo, e as notas descrevem apenas a percepção dessa participante.
 
-### Primeira interação de P1 — V1
+#### Primeiro momento — avaliação da V1
 
-P1, gerente de Marketing, participou presencialmente em 07/10/2026; TCLE obtido: SIM.
-Utilizou a V1, composta somente por Captação e Matrículas, com dados sintéticos. Atribuiu
-5/5 à clareza de Captação, 5/5 à clareza de Matrículas e 5/5 à facilidade de localizar e utilizar
-os filtros. Destacou os gráficos temporais como úteis para observar o comportamento ao longo do
-tempo. Sobre a dificuldade, respondeu: “Os gráficos em diversos lugares.” Sugeriu reunir
-contatos, visitas e matrículas em uma visualização temporal com seleção das séries. Essas respostas
-são evidência individual, não percepção atribuível a todos os usuários.
+P1, gerente de Marketing, avaliou presencialmente em 07/10/2026 a V1, composta por Captação e
+Matrículas com dados sintéticos; o TCLE foi obtido. Atribuiu 5/5 à clareza de Captação, 5/5 à
+clareza de Matrículas e 5/5 à facilidade de localizar e utilizar os filtros. Considerou úteis os
+gráficos temporais, mas identificou uma dificuldade: “Os gráficos em diversos lugares.” Sugeriu:
+“Se tivesse uma opção de colocar no mesmo gráfico contato/visita e matrícula, com opção de
+selecionar quando quer usar, facilitaria [...]”.
 
-### Ajuste realizado
+O grupo interpretou que a dificuldade estava na dispersão de séries relacionadas, não nos
+indicadores em si. Decidiu incorporar a sugestão como FB-V1-P1-001: os gráficos separados de
+Contatos, Visitas e Matrículas deram lugar a uma visualização temporal consolidada, com seleção
+independente das três séries. **Efeito no desenvolvimento:** esse ajuste foi implementado na V2.
+Ads e o experimento inicial de CPR também entraram na V2, por evolução técnica e acadêmica
+independente da primeira avaliação.
 
-A sugestão foi identificada como FB-V1-P1-001. O grupo aprovou sua implementação com a finalidade
-de reduzir a dispersão visual e permitir comparação simultânea. Na V1, as séries temporais de
-Contatos, Visitas e Matrículas eram exibidas em gráficos separados. A V2 passou a oferecer uma
-visualização única de evolução temporal, com seleção independente dessas três séries. A decisão
-de implementar foi do grupo; P1 reavaliou a V2 somente após o ajuste.
+#### Segundo momento — reavaliação da V2
 
-### Reavaliação da mesma P1 — V2
+Na mesma data, a mesma P1 utilizou a V2 para examinar o ajuste que havia solicitado. Atribuiu 5/5
+à clareza de Captação, 5/5 à seleção das séries temporais e 5/5 à clareza de Matrículas. Sobre a
+visualização conjunta, respondeu: “Facilitou pq consigo avaliar a qualidade do lead que relaciona
+o contato ocm a visita, e a conversao final que é a matricula”. Em sua percepção, o novo
+gráfico tornou mais fácil observar a relação entre contatos, visitas e matrículas; a fala não
+constitui medida objetiva da qualidade dos leads. P1 não relatou nova dificuldade e respondeu
+“Por enquanto, tudo ok.” à pergunta sobre outras alterações.
 
-P1 utilizou a V2 após o ajuste, com foco em Captação, Matrículas e na visualização temporal
-consolidada. Atribuiu 5/5 à clareza de Captação, 5/5 à facilidade de seleção das séries e 5/5 à
-clareza de Matrículas. Relatou que a visualização conjunta facilitou a análise da relação entre
-contatos, visitas e matrículas ao longo do tempo, não relatou dificuldade adicional e respondeu
-“Por enquanto, tudo ok.” à pergunta sobre novas alterações. Sua referência à “qualidade do lead”
-descreve uma percepção de uso, não uma
-métrica comprovada da plataforma. As séries são agregadas e não sustentam rastreamento
-individual, causalidade ou atribuição entre contato e matrícula.
+**Efeito no desenvolvimento:** esse retorno encerrou o primeiro ciclo de avaliação, alteração e
+reavaliação com a participante. A V2 foi mantida para uma aplicação ampliada posterior, sem que
+esse segundo momento originasse outra versão. Ads e ML não integraram as tarefas dessa reavaliação
+focal.
 
-O escopo desse segundo momento foi Captação, Matrículas e o ajuste temporal da V2. Ads e ML
-integraram a evolução técnica da V2, mas não foram avaliados nessa reavaliação específica.
+#### Terceiro momento — avaliação ampliada da V2
 
-As respostas primárias dos dois momentos estão preservadas em
-`docs/validacao/respostas/v1-p1.md` e `docs/validacao/respostas/v2-p1-reavaliacao.md`.
+Em aplicação posterior, P1 respondeu a 16 questões sobre navegação, Captação, Matrículas, Ads,
+Estratégia e apresentação da previsão experimental. O TCLE foi obtido e assinado; data e
+modalidade não constam do registro primário consultado. As notas de navegação foram 4, 5 e 4
+(questões 1–3); as de Captação e Matrículas, 5 e 4 (questões 4–5); as quatro notas de Ads e
+Estratégia foram 3 (questões 7–10); e as de apresentação do ML, 4, 5 e 5 (questões 11–13).
+Na classificação final, escolheu “C  Precisa de alterações importantes antes da versão final.”
+As notas mostram áreas bem avaliadas, mas os pedidos concentrados em Ads e Estratégia, junto da
+classificação final, motivaram nova rodada de alterações. Ao apontar Matrículas como o resultado
+mais relevante para seu trabalho, P1 expressou uma prioridade profissional, não uma relação
+causal demonstrada pelo protótipo.
 
-### Avaliação ampliada da V2 pela mesma P1 — terceiro momento
+Em Captação, P1 pediu: “um gráfico temporal tb entrevisitas/matriculas onde mostra percentual de
+efetivação.” Em Matrículas, sugeriu: “Em amtricula poderíamos ter uma avaliação de metriculas e
+rematrículas por series.” O grupo registrou FB-V2-P1-001 e FB-V2-P1-002 e decidiu acrescentar,
+na V3, a taxa mensal de efetivação visita–matrícula no mesmo funil e a comparação de matrículas
+novas e rematrículas por série existente no cenário sintético.
 
-Em aplicação posterior, a mesma P1 respondeu a 16 questões sobre navegação, Captação,
-Matrículas, Ads, Estratégia e a apresentação da previsão experimental. O TCLE desta aplicação
-foi obtido e assinado; data e modalidade não constam do registro primário consultado. A
-participante
-atribuiu 4, 5 e 4 às questões 1–3; 5 e 4 às questões 4–5; 3 às quatro questões 7–10; e 4, 5 e
-5 às questões 11–13. Classificou a V2 na opção C, como necessitando alterações importantes antes
-da versão final. Solicitou maior orientação mensal e temporal em Ads, análise de efetivação de
-visitas e composição de matrículas por série. Apontou Matrículas como desfecho mais útil para sua
-atividade. Considerou a previsão compreensível e potencialmente útil, mas percebeu variação
-excessiva e baixa proximidade com o esperado na prática; essa percepção não é avaliação
-matemática do algoritmo. A fala sobre qualidade dos leads exprime sua interpretação da relação
-entre contatos e visitas; o protótipo não mede objetivamente qualidade de lead.
+Na Visão Geral de Ads, P1 explicou: “Visao geral preciso de um resumo mensal pois avalio o
+investimento mensalmente [...]” e pediu que o gráfico temporal mostrasse “quantos leads reais
+gerou”. O grupo converteu essas necessidades em FB-V2-P1-003, resumo mensal na Visão Geral, e
+FB-V2-P1-004, investimento e leads simulados por mês no Google Ads. Embora a participante tenha
+pedido leads reais, a V3 apresenta apenas valores sintéticos, identificados como simulação.
 
-O instrumento, as respostas literais e as interpretações separadas estão em
-`docs/validacao/instrumento_validacao_v2_para_v3.md`, `docs/validacao/respostas/v2-p1-para-v3.md`
-e `docs/validacao/feedback-v2-v3.md`. São três momentos sucessivos da mesma pessoa, sem nova
-amostra independente. P1 avaliou a V2; a V3 decorrente ainda não foi avaliada pela participante.
+Para Meta Ads, P1 pediu dados sobre “quantos resultados alcançamo (pessoas alcançadas)” e “quanto
+investimos nesse mês comparado aos leads gerados pela plataforma”. O grupo
+registrou FB-V2-P1-005 e separou na V3 alcance, investimento e leads simulados, sem tratar alcance
+ou lead como resultado de matrícula. Para Estratégia, solicitou “preciso aqui em gráfico temporal
+quantos estamos investindo por mês, uma linha google, uma meta [...]”. A decisão FB-V2-P1-006
+resultou em comparação temporal entre investimentos Google/Meta, leads simulados e matrículas
+sintéticas; cenários independentes não autorizam inferência causal entre Ads e Matrículas.
+
+Sobre o CPR, o comentário espontâneo foi: “Achei que esta variando muito a previsão, da p entender
+mas n parece proximo do real”. A participante compreendeu a apresentação, mas relatou baixa
+confiança na proximidade da previsão com sua expectativa prática. Em FB-V2-P1-007, o grupo decidiu
+melhorar a comunicação: a V3 distingue histórico e previsão e explicita o desempenho limitado.
+Essa decisão não alterou algoritmo, valores ou métricas do experimento.
+
+**Efeito no desenvolvimento:** os sete feedbacks da terceira avaliação foram analisados pelo
+grupo e incorporados à V3. A implementação passou por verificação técnica, descrita em 3.3;
+P1 ainda não reavaliou essa versão. As falas citadas constam dos registros primários
+`docs/validacao/respostas/v1-p1.md`, `docs/validacao/respostas/v2-p1-reavaliacao.md` e
+`docs/validacao/respostas/v2-p1-para-v3.md`; o instrumento e a análise dos feedbacks estão
+identificados na seção 2.5.12.
 
 ### 3.2.3 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
 
@@ -1286,14 +1320,14 @@ Tabela 14 – Rastreabilidade das avaliações, decisões e alterações impleme
 
 | Origem | Feedback | Análise e decisão do grupo | Alteração implementada | Versão | Verificação técnica |
 |---|---|---|---|---|---|
-| P1/V1 | FB-V1-P1-001: gráficos temporais dispersos | Consolidação aprovada, preservando as séries do mesmo funil | Gráfico multissérie selecionável de Contatos, Visitas e Matrículas | V2 | Testes de V2 e preservação dos 17 hashes da V1; P1 reavaliou a apresentação |
-| P1/V2 ampliada | FB-V2-P1-001: efetivação visita–matrícula | Aceito para o mesmo funil, com denominador definido | Taxa mensal e indisponibilidade quando visitas são zero ou ausentes | V3 | `test:v3-feedback` e `test:interface:http` |
-| P1/V2 ampliada | FB-V2-P1-002: matrículas e rematrículas por série | Aceito apenas para séries existentes no dado sintético | Comparação por série; safra sem classificação excluída | V3 | `test:v3-feedback` e `test:interface:http` |
-| P1/V2 ampliada | FB-V2-P1-003: resumo mensal de Ads | Aceito; detalhes permanecem nos painéis específicos | Seletor mensal, indicadores e tabela por canal na Visão Geral | V3 | `test:interface:http` e captura local |
-| P1/V2 ampliada | FB-V2-P1-004: evolução de leads no Google | Aceito com rótulo de simulação e distinção de conversões | Investimento e leads simulados por mês | V3 | `test:v3-feedback` e `test:interface:http` |
-| P1/V2 ampliada | FB-V2-P1-005: alcance, investimento e leads Meta | Aceito mantendo alcance, lead e resultado distintos | Métricas e gráficos separados no Meta Ads | V3 | `test:v3-feedback` e `test:interface:http` |
-| P1/V2 ampliada | FB-V2-P1-006: comparação temporal em Estratégia | Aceito sem inferir atribuição causal entre cenários | Investimento por canal e contagens de leads/matrículas no mesmo eixo temporal | V3 | `test:v3-feedback` e `test:interface:http` |
-| P1/V2 ampliada | FB-V2-P1-007: previsão percebida como variável | Aceito como melhoria de comunicação, sem alterar algoritmo ou valores | Explicação simples, aviso de desempenho limitado e gráfico histórico/previsão | V3 | `test:google-cpr:sazonal` e reprodução do artefato |
+| P1 — 1ª avaliação da V1 | FB-V1-P1-001: gráficos temporais dispersos | Consolidação aprovada, preservando as séries do mesmo funil | Gráfico multissérie selecionável de Contatos, Visitas e Matrículas | V2 | Testes de V2 e preservação dos 17 hashes da V1; P1 reavaliou a apresentação |
+| P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-001: efetivação visita–matrícula | Aceito para o mesmo funil, com denominador definido | Taxa mensal e indisponibilidade quando visitas são zero ou ausentes | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-002: matrículas e rematrículas por série | Aceito apenas para séries existentes no dado sintético | Comparação por série; safra sem classificação excluída | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-003: resumo mensal de Ads | Aceito; detalhes permanecem nos painéis específicos | Seletor mensal, indicadores e tabela por canal na Visão Geral | V3 | `test:interface:http` e captura local |
+| P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-004: evolução de leads no Google | Aceito com rótulo de simulação e distinção de conversões | Investimento e leads simulados por mês | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-005: alcance, investimento e leads Meta | Aceito mantendo alcance, lead e resultado distintos | Métricas e gráficos separados no Meta Ads | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-006: comparação temporal em Estratégia | Aceito sem inferir atribuição causal entre cenários | Investimento por canal e contagens de leads/matrículas no mesmo eixo temporal | V3 | `test:v3-feedback` e `test:interface:http` |
+| P1 — 3ª avaliação ampliada da V2 | FB-V2-P1-007: previsão percebida como variável | Aceito como melhoria de comunicação, sem alterar algoritmo ou valores | Explicação simples, aviso de desempenho limitado e gráfico histórico/previsão | V3 | `test:google-cpr:sazonal` e reprodução do artefato |
 
 Fonte: Elaborado pelo grupo (2026).
 
@@ -1302,6 +1336,13 @@ de FB-V1-P1-001. Os arquivos e testes de cada alteração constam de
 `docs/validacao/feedback-v2-v3.md`. A V3 reúne cenários sintéticos independentes, sem atribuição
 causal, e não foi reavaliada por P1. Suas capturas provisórias servem à revisão visual humana,
 sem substituir as figuras históricas do relatório.
+
+Em síntese, a V1 oferecia Captação e Matrículas; a primeira avaliação apontou a dispersão dos
+gráficos e originou o ajuste incorporado à V2. Essa versão reuniu o gráfico selecionável e ganhou
+Ads/CPR por evolução técnica independente. A segunda avaliação confirmou, na percepção de P1, a
+utilidade do ajuste, sem gerar outra versão. Na terceira avaliação, agora ampliada à V2, P1 indicou
+sete necessidades que o grupo incorporou à V3. A V3 foi verificada tecnicamente e ainda aguarda
+reavaliação por P1.
 
 ## 3.3 Verificação técnica da solução e limitações
 
@@ -1375,14 +1416,16 @@ A V1 apresentou Captação e Matrículas com cálculos determinísticos. P1, ger
 avaliou-a presencialmente em 07/10/2026, com TCLE obtido, e apontou a dispersão dos gráficos
 temporais. O grupo aprovou FB-V1-P1-001 e reuniu as séries na V2. Na reavaliação presencial da
 mesma data, ela relatou comparação facilitada, sem nova dificuldade ou pedido de alteração naquele
-momento. A V2 também acrescentou Visão Geral de Ads, Google Ads, Meta Ads, Estratégia e a
-apresentação acadêmica do CPR por evolução técnica independente desse feedback.
+momento. Esse retorno encerrou o primeiro ciclo com P1 e manteve a V2. A versão também acrescentou
+Visão Geral de Ads, Google Ads, Meta Ads, Estratégia e a apresentação acadêmica do CPR por
+evolução técnica independente desse feedback.
 
 Na terceira aplicação, P1 avaliou a V2 de forma ampliada, solicitou sete grupos de ajustes e
 classificou a versão como necessitando alterações importantes. O grupo analisou os feedbacks,
 decidiu incorporá-los e implementou a V3: apresentação mensal, composição de matrículas por
 série, efetivação de visitas, comparações temporais e comunicação mais clara dos limites da
-previsão. **P1 não avaliou a V3.** Suas respostas documentam compreensão e utilidade percebida,
+previsão. A V3 passou por verificação técnica e ainda aguarda reavaliação comunitária; P1 não a
+avaliou. Suas respostas documentam compreensão e utilidade percebida,
 sem medir precisão do modelo ou eficácia de decisões reais. A comparação entre canais usa apenas
 investimentos em períodos compatíveis, sem equiparar resultados com denominadores diferentes.
 
