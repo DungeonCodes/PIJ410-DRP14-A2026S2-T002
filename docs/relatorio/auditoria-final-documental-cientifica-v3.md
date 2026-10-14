@@ -74,8 +74,9 @@ P1, Gerente de Marketing, anonimizada; levantamento inicial como antecedente; tr
 sucessivas (V1; reavaliação focal V2; avaliação ampliada V2 com 16 questões). O relatório não
 trata as aplicações como amostras independentes. Q15 = C conferido na resposta primária.
 “Qualidade dos leads” e “Matrículas como desfecho” aparecem como percepção individual (3.5,
-`feedback-v2-v3.md`). Data, modalidade e TCLE específicos da terceira aplicação seguem marcados
-como a confirmar em todos os documentos, sem inferência; o tratamento dos TCLEs segue H11.
+`feedback-v2-v3.md`). Atualização pós-crash: o TCLE da terceira aplicação foi obtido e assinado,
+com documento protegido fora do Git. Data e modalidade seguem sem confirmação documental;
+o marcador de TCLE no registro primário foi preservado com as respostas originais de P1.
 
 ## V3
 

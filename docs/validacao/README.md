@@ -32,6 +32,7 @@ Matrículas e no gráfico consolidado (`respostas/v2-p1-reavaliacao.md`). Essas 
 ocorreram presencialmente em 07/10/2026, com TCLE obtido. Em terceiro momento sucessivo,
 P1 respondeu ao questionário ampliado de 16 questões sobre a V2, incluindo Ads e a apresentação
 do ML. Os sete feedbacks dessa aplicação foram aceitos e incorporados à V3, ainda sem nova
-avaliação por P1. Data, modalidade e TCLE específicos da terceira aplicação permanecem
-indicados apenas no registro primário até confirmação. As três aplicações são da mesma pessoa,
-sem constituir amostras independentes. Nenhum instrumento contém respostas fictícias.
+avaliação por P1. O TCLE da terceira aplicação foi obtido e assinado; o documento protegido
+permanece fora do Git. Data e modalidade não constam do registro primário consultado. As três
+aplicações são da mesma pessoa, sem constituir amostras independentes. Nenhum instrumento contém
+respostas fictícias.

@@ -36,4 +36,4 @@ O registro contém Q1–Q16. As notas são Q1=4, Q2=5, Q3=4, Q4=5, Q5=4, Q7=3, Q
 | `docs/validacao/versoes-interface.md` | Corrigida | A referência a dois momentos foi limitada às duas primeiras aplicações. |
 | `docs/relatorio/final.md`, introdução, 2.5.4, 3.2 e Apêndice B.3 | Corrigida | A terceira avaliação, a disponibilidade da Fase 2 em V3 e as 16 questões foram explicitadas. |
 
-Data, modalidade e TCLE específicos da terceira aplicação seguem sem confirmação no registro primário. Essa pendência de metadados não foi preenchida por inferência e não altera a rastreabilidade das respostas, decisões ou implementação técnica.
+O TCLE da terceira aplicação foi obtido e assinado; o documento protegido permanece fora do Git. Data e modalidade seguem sem registro documental confirmado e não foram preenchidas por inferência. Isso não altera a rastreabilidade das respostas, decisões ou implementação técnica.

@@ -96,10 +96,12 @@ participante em ambos os momentos.
 A mesma P1 participou depois de uma avaliação ampliada da V2 para orientar a V3, documentada em
 `instrumento_validacao_v2_para_v3.md`, `respostas/v2-p1-para-v3.md` e `feedback-v2-v3.md`.
 Esse é o terceiro momento sucessivo da mesma participante, sem constituir nova amostra
-independente. Data, modalidade e TCLE específicos desta nova aplicação ainda dependem de
-confirmação no registro de respostas. P1 classificou a V2 na opção C, como necessitando
-alterações importantes antes da versão final. Os feedbacks FB-V2-P1-001 a FB-V2-P1-007
-foram aceitos pelo responsável e implementados na V3. Essa implementação não é validação por P1.
+independente. O TCLE desta aplicação foi obtido e assinado; o documento protegido fica fora do
+Git. Data e modalidade não constam do registro de respostas consultado. P1 classificou a V2 na
+opção C, como necessitando alterações importantes antes da versão final. Os feedbacks
+FB-V2-P1-001 a FB-V2-P1-007
+foram aceitos por decisão do grupo, sob instrução expressa do responsável pelo projeto, e
+implementados na V3. Essa implementação não é validação por P1.
 
 A versão apresentada deve ser registrada em cada momento. As notas pertencem à mesma pessoa,
 mas a versões e itens diferentes; não constituem comparação quantitativa controlada.

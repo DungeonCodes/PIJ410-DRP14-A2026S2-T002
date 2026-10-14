@@ -103,7 +103,7 @@ Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêm
 - Tabela 11 – Evolução da visualização temporal da V1 à V2
 - Tabela 12 – Rastreabilidade entre necessidade, solução e validação
 - Tabela 13 – Rastreabilidade do ajuste FB-V1-P1-001
-- Tabela 14 – Feedback e ajuste decorrente da validação
+- Tabela 14 – Rastreabilidade das avaliações, decisões e alterações implementadas
 
 ## Sumário
 
@@ -128,30 +128,33 @@ Este relatório apresenta o desenvolvimento de uma plataforma analítica acadêm
     - 2.5.1 Delineamento aplicado e Design Thinking
     - 2.5.2 Ouvir e interpretar o contexto
     - 2.5.3 Definir o problema e os requisitos
-    - 2.5.4 Criar e prototipar
-    - 2.5.5 Implementar, testar, validar e ajustar
+    - 2.5.4 Fontes de dados, recortes temporais e confidencialidade
+    - 2.5.5 Preparação, governança e rastreabilidade dos dados
     - 2.5.6 Níveis de interpretação analítica
-    - 2.5.7 Fontes de dados, recortes temporais e confidencialidade
-    - 2.5.8 Preparação, governança e rastreabilidade dos dados
-    - 2.5.9 Indicadores, regras de negócio e cenários determinísticos
-    - 2.5.10 Auditoria, reprodutibilidade e limites de atribuição
-    - 2.5.11 Protocolo experimental de aprendizagem de máquina
-    - 2.5.12 Uso assistivo de IA agêntica e verificação humana
+    - 2.5.7 Indicadores, regras de negócio e cenários determinísticos
+    - 2.5.8 Auditoria, reprodutibilidade e limites de atribuição
+    - 2.5.9 Criar e prototipar
+    - 2.5.10 Protocolo experimental de aprendizagem de máquina
+    - 2.5.11 Uso assistivo de IA agêntica e verificação humana
+    - 2.5.12 Implementar, testar, validar e ajustar
 - 3 Resultados: solução final
-  - 3.1 Contato inicial e necessidades identificadas
-  - 3.2 Estado real das fases do protótipo
-  - 3.3 Estratégia incremental e arquitetura da solução
-  - 3.4 Resultados técnicos
-    - 3.4.1 Módulo de Captação
-    - 3.4.2 Módulo de Matrículas
-    - 3.4.3 Módulos de Ads e componentes ainda planejados
-    - 3.4.4 Experimento de aprendizagem de máquina para CPR
-    - 3.4.5 Testes técnicos
-  - 3.5 Validação da solução com a comunidade
-  - 3.6 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
-  - 3.7 Rastreabilidade entre necessidade, solução e validação
-  - 3.8 Feedback e ajustes decorrentes
-  - 3.9 Limitações
+  - 3.1 Desenvolvimento e resultados técnicos
+    - 3.1.1 Estado real das fases do protótipo
+    - 3.1.2 Estratégia incremental e arquitetura da solução
+    - 3.1.3 Módulo de Captação
+    - 3.1.4 Módulo de Matrículas
+    - 3.1.5 Módulos de Ads e componentes ainda planejados
+    - 3.1.6 Experimento de aprendizagem de máquina para CPR
+    - 3.1.7 Uso assistivo de IA agêntica
+  - 3.2 Avaliação com a comunidade e alterações decorrentes
+    - 3.2.1 Contato inicial e necessidades identificadas
+    - 3.2.2 Avaliação da solução pela participante
+    - 3.2.3 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
+    - 3.2.4 Rastreabilidade entre necessidade, solução e avaliação externa
+    - 3.2.5 Feedback, decisões e alterações implementadas
+  - 3.3 Verificação técnica da solução e limitações
+    - 3.3.1 Testes e verificação técnica
+    - 3.3.2 Limitações
 - 4 Considerações finais
 - Referências
 - Apêndices
@@ -535,13 +538,9 @@ seção 2.5, sem ser acrescentado como disciplina autônoma.
 
 ## 2.5 Metodologia
 
-O percurso metodológico combina uma etapa quantitativa, voltada à preparação e à análise dos
-registros, com uma etapa qualitativa, destinada a compreender as necessidades dos profissionais e
-avaliar a utilidade e a compreensão do protótipo. As duas etapas permanecem articuladas: os dados
-delimitam o que pode ser calculado ou estimado, enquanto a participação da comunidade indica quais
-perguntas de gestão e formas de apresentação são relevantes. A descrição distingue a primeira
-versão técnica construída dos procedimentos ainda planejados; atividades não realizadas não são
-apresentadas como resultados.
+O percurso metodológico combina preparação e análise quantitativa dos registros com escuta e
+avaliação qualitativa do protótipo. Os dados delimitam os cálculos e as estimativas; a participação
+da comunidade orienta as perguntas de gestão e a apresentação dos indicadores.
 
 O desenvolvimento funcional foi organizado em quatro fases. Elas indicam o escopo dos módulos,
 enquanto V1, V2 e V3 identificam versões sucessivas da interface; uma versão não corresponde a
@@ -555,9 +554,10 @@ e as Fases 3 e 4 permanecem bloqueadas.
 | Fase 3 | Conteúdo orgânico | Bloqueada |
 | Fase 4 | Gestão e Arquitetura | Bloqueada |
 
-O método parte da escuta e dos requisitos, passa pela organização dos dados e pelo cálculo dos
-indicadores, constrói a interface, examina separadamente o CPR experimental e o apoio de IA
-agêntica e termina com avaliação externa, decisão do grupo, implementação e verificação técnica.
+Após a escuta e a definição dos requisitos, o método segue os seis objetivos: organizar dados,
+construir indicadores, desenvolver a interface, examinar o CPR experimental, aplicar IA agêntica
+como apoio e avaliar a solução. O último passo inclui análise do feedback, decisão do grupo,
+implementação e verificação técnica.
 Os procedimentos específicos e seus limites são descritos nas subseções seguintes.
 
 ### 2.5.1 Delineamento aplicado e Design Thinking
@@ -873,8 +873,9 @@ Para tornar rastreáveis as avaliações, cada sessão registrou a versão da in
 P1 utilizou inicialmente a V1, sem Ads ou CPR. Após a sugestão FB-V1-P1-001 e a aprovação do
 grupo, a V2 recebeu a visualização temporal consolidada; a mesma P1 reavaliou essa versão.
 Os módulos comuns às duas versões utilizam os mesmos dados sintéticos, métricas e fórmulas.
-Em terceira aplicação sucessiva, P1 avaliou a V2 de forma ampliada. O responsável aceitou os
-sete feedbacks registrados, incorporados na V3. Nenhum dos três momentos constitui amostra
+Em terceira aplicação sucessiva, P1 avaliou a V2 de forma ampliada. Por decisão registrada do
+grupo, sob instrução expressa do responsável pelo projeto, os sete feedbacks foram aceitos e
+incorporados à V3. Nenhum dos três momentos constitui amostra
 independente ou comparação experimental controlada. A V3 ainda não foi avaliada por P1.
 
 A participante avaliou as versões indicadas em seus registros anonimizados. As respostas
@@ -883,10 +884,9 @@ Técnicas de pesquisa de experiência do usuário
 apoiam a identificação de necessidades e a avaliação de serviços de informação (Pinheiro; Dias,
 2023).
 
-P1, gerente de Marketing, participou presencialmente em 07/10/2026 dos dois primeiros momentos;
-TCLE obtido: SIM nessas aplicações. O documento assinado permanece fora do repositório. Data,
-modalidade e TCLE específicos da terceira aplicação aguardam confirmação; não são inferidos dos
-registros anteriores.
+P1, gerente de Marketing, participou presencialmente em 07/10/2026 dos dois primeiros momentos.
+O TCLE das três aplicações foi obtido e assinado; os documentos protegidos permanecem fora do
+repositório. Data e modalidade da terceira aplicação não constam do registro primário consultado.
 
 # 3 RESULTADOS: SOLUÇÃO FINAL
 
@@ -896,10 +896,9 @@ planejadas e bloqueadas. A Fase 2 utiliza Google Ads e Meta Ads integralmente si
 sem integração real. O experimento de CPR descrito em 3.1.6 continua executado pela CLI;
 a interface apenas apresenta seus resultados reproduzíveis, sem treinamento no navegador.
 A ativação técnica não constitui validação comunitária nem novo deploy.
-Não houve consolidação de fontes institucionais reais. As práticas de IA agêntica foram aplicadas
-como apoio à construção, análise e verificação da solução, sob supervisão humana; o objetivo 5
-foi atendido nesse escopo assistivo. Não houve experimento independente de eficácia da IA
-agêntica nem execução documentada de simulação agêntica específica via linha de comando.
+Não houve consolidação de fontes institucionais reais. A seção 3.1 apresenta, na ordem dos
+objetivos, dados, indicadores, interface, CPR e uso assistivo de IA agêntica. A seção 3.2 acompanha
+a avaliação de P1 e as alterações decorrentes; 3.3 reúne a verificação técnica e os limites.
 
 ## 3.1 Desenvolvimento e resultados técnicos
 
@@ -1111,6 +1110,14 @@ Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
+### 3.1.7 Uso assistivo de IA agêntica
+
+O grupo utilizou agentes como apoio à programação, auditoria do repositório, revisão documental,
+análise de consistência e verificação de testes e artefatos de CPR. O procedimento e os registros
+de execução estão em 2.5.11 e `docs/run_log.md`. As saídas passaram por inspeção e decisão
+humana; não houve avaliação independente da eficácia dos agentes nem simulação agêntica
+específica documentada na solução analítica.
+
 ## 3.2 Avaliação com a comunidade e alterações decorrentes
 
 ### 3.2.1 Contato inicial e necessidades identificadas
@@ -1127,9 +1134,9 @@ repositório, distinto dos instrumentos posteriores de validação da V1/V2.
 
 ### 3.2.2 Avaliação da solução pela participante
 
-A sequência documentada foi V1 → primeira avaliação por P1 → sugestão de consolidar gráficos
-temporais → decisão e implementação pelo grupo → V2 → reavaliação focal e, depois, avaliação
-ampliada da V2 → sete feedbacks aceitos → V3 implementada. A participante não avaliou a V3.
+A sequência documentada foi V1 → avaliação de P1 → FB-V1-P1-001 → análise, decisão e alteração
+pelo grupo → V2 → reavaliação focal e avaliação ampliada por P1 → sete feedbacks → análise e
+decisão do grupo → V3 → verificação técnica. P1 não avaliou a V3.
 
 ### Primeira interação de P1 — V1
 
@@ -1169,8 +1176,9 @@ As respostas primárias dos dois momentos estão preservadas em
 ### Avaliação ampliada da V2 pela mesma P1 — terceiro momento
 
 Em aplicação posterior, a mesma P1 respondeu a 16 questões sobre navegação, Captação,
-Matrículas, Ads, Estratégia e a apresentação da previsão experimental. Data, modalidade e TCLE
-desta etapa ainda aguardam confirmação específica no registro de validação. A participante
+Matrículas, Ads, Estratégia e a apresentação da previsão experimental. O TCLE desta aplicação
+foi obtido e assinado; data e modalidade não constam do registro primário consultado. A
+participante
 atribuiu 4, 5 e 4 às questões 1–3; 5 e 4 às questões 4–5; 3 às quatro questões 7–10; e 4, 5 e
 5 às questões 11–13. Classificou a V2 na opção C, como necessitando alterações importantes antes
 da versão final. Solicitou maior orientação mensal e temporal em Ads, análise de efetivação de
@@ -1266,10 +1274,9 @@ de cada item; as respostas literais permanecem em `docs/validacao/feedback-v2-v3
 
 ### 3.2.5 Feedback, decisões e alterações implementadas
 
-O primeiro ajuste comunitário documentado foi a consolidação temporal de Captação. A observação
-de P1 foi a dispersão das visualizações; o resultado posterior foi sua própria percepção na V2,
-sem demonstração de solução definitiva ou eficácia geral. A terceira aplicação produziu sete
-feedbacks adicionais, aceitos pelo responsável e implementados na V3.
+A Tabela 14 reúne o ajuste da V1 para a V2 e os sete feedbacks da avaliação ampliada da V2,
+aceitos por decisão registrada do grupo sob instrução expressa do responsável pelo projeto e
+implementados na V3.
 
 Tabela 14 – Rastreabilidade das avaliações, decisões e alterações implementadas
 
@@ -1287,14 +1294,10 @@ Tabela 14 – Rastreabilidade das avaliações, decisões e alterações impleme
 Fonte: Elaborado pelo grupo (2026).
 
 Ads e o experimento inicial de CPR entraram na V2 por evolução técnica e acadêmica independente
-do feedback FB-V1-P1-001. A tabela registra implementação e verificação da V3; P1 avaliou a
-V2 e não reavaliou a V3.
-
-Os arquivos e testes de cada alteração estão documentados em
-`docs/validacao/feedback-v2-v3.md`. A comparação temporal da V3 reúne cenários sintéticos
-independentes, sem atribuição causal. As alterações foram verificadas tecnicamente, mas P1 não
-avaliou a V3. As capturas provisórias dessa versão servem apenas à revisão visual humana e não
-substituem as figuras históricas do relatório.
+de FB-V1-P1-001. Os arquivos e testes de cada alteração constam de
+`docs/validacao/feedback-v2-v3.md`. A V3 reúne cenários sintéticos independentes, sem atribuição
+causal, e não foi reavaliada por P1. Suas capturas provisórias servem à revisão visual humana,
+sem substituir as figuras históricas do relatório.
 
 ## 3.3 Verificação técnica da solução e limitações
 
@@ -1312,10 +1315,8 @@ Fases 3 e 4. Capturas locais da V3 foram geradas para revisão visual humana, se
 figuras históricas. Esses verificadores comprovam execução técnica, não validação de uso da V3
 por P1.
 
-Esses testes também examinam a integridade e o determinismo dos dados sintéticos, o cálculo dos
-indicadores e a separação entre alcance, lead e conversão. A comparação temporal entre Ads e
-Matrículas permanece descritiva, sem atribuição causal. As aplicações com P1 examinaram
-compreensão e utilidade percebida, mas não mediram impacto institucional.
+Os testes também examinam integridade e determinismo dos dados sintéticos, cálculo dos
+indicadores e separação entre alcance, lead e conversão.
 
 ### 3.3.2 Limitações
 
@@ -1325,9 +1326,9 @@ demonstra organização, cálculo e visualização, mas não comprova desempenho
 impacto institucional.
 
 As fontes disponíveis não permitem atribuir individualmente uma matrícula a uma ação de mídia
-nem estabelecer inferência causal.
-Na V3, Ads e Matrículas compartilham meses fictícios de 2022, mas provêm de cenários sintéticos
-independentes, sem chave de ligação. Leads e alcance dos painéis Ads são derivações determinísticas
+nem estabelecer inferência causal. Na V3, Ads e Matrículas compartilham meses fictícios de 2022,
+mas provêm de cenários sintéticos independentes, sem chave de ligação. Leads e alcance dos painéis
+Ads são derivações determinísticas
 criadas para demonstração e não medições de plataforma ou pessoas. O total de leads simulados não
 representa pessoas únicas deduplicadas. A taxa visita–matrícula usa somente as contagens do funil
 de Captação; não deve ser confundida com a base histórica do módulo Matrículas. A classificação
@@ -1344,15 +1345,13 @@ recursiva pode amplificar valores extremos. Esses resultados não demonstram dis
 histórica de métricas reais ou utilidade operacional. A interpretação assistida por IA não
 substitui evidência, cálculo ou decisão humana.
 
-A validação comunitária contou com uma participante, gerente de Marketing, que, em 7 de outubro
-de 2026, avaliou presencialmente a V1 e, após o ajuste decorrente de seu feedback, reavaliou a
-V2. Em terceiro momento, avaliou a V2 de forma ampliada; os metadados específicos dessa aplicação
-ainda aguardam confirmação. Essas avaliações sucessivas não equivalem à validação por amostra
-independente nem a uma comparação quantitativa controlada. A V3 ainda não foi avaliada por P1.
-A evidência é exploratória e predominantemente qualitativa; sua generalização é limitada pela
-participação de uma única pessoa. Os gráficos reúnem séries sintéticas agregadas,
-sem rastreamento de indivíduos,
-medição objetiva da qualidade de cada lead ou atribuição causal entre etapas do funil.
+A validação comunitária contou com uma participante, gerente de Marketing. Ela avaliou
+presencialmente a V1 e reavaliou a V2 em 07/10/2026; depois, avaliou a V2 de forma ampliada.
+O TCLE das três aplicações foi obtido e assinado. Data e modalidade do terceiro momento não
+constam do registro primário consultado. A V3 não foi avaliada por P1. As avaliações sucessivas
+constituem evidência exploratória de uma pessoa, sem amostra independente ou comparação
+quantitativa controlada. As séries sintéticas agregadas não medem a qualidade individual dos leads
+nem sustentam rastreamento de pessoas ou atribuição causal entre etapas do funil.
 
 # 4 CONSIDERAÇÕES FINAIS
 
@@ -1388,7 +1387,8 @@ FB-V1-P1-001 e reuniu as séries na V2. Na reavaliação, ela relatou comparaç�
 nova dificuldade ou pedido de alteração naquele momento. Ads, Estratégia e CPR haviam entrado
 na V2 por evolução técnica, não por esse feedback. Na terceira aplicação, a mesma P1 avaliou a
 V2 de forma ampliada, solicitou sete grupos de ajustes e classificou a versão como necessitando
-alterações importantes. O responsável aceitou os feedbacks e o grupo implementou a V3. **P1 não
+alterações importantes. O grupo aceitou os feedbacks por instrução expressa do responsável pelo
+projeto e implementou a V3. **P1 não
 avaliou a V3.** Suas respostas documentam compreensão e utilidade percebida da interface, não
 precisão do modelo nem eficácia da solução em decisões reais.
 
@@ -1660,9 +1660,9 @@ As respostas originais e a distinção entre transcrição e versão normalizada
 O instrumento aplicado neste terceiro momento contém 16 questões e escala de cinco pontos.
 Está preservado em `docs/validacao/instrumento_validacao_v2_para_v3.md`, com as respostas
 literais em `docs/validacao/respostas/v2-p1-para-v3.md`. A separação entre falas, interpretação,
-decisão e implementação está em `docs/validacao/feedback-v2-v3.md`. Data, modalidade e TCLE
-específicos desta aplicação aguardam confirmação no registro primário. P1 avaliou a V2; a V3
-subsequente ainda não foi avaliada por ela.
+decisão e implementação está em `docs/validacao/feedback-v2-v3.md`. O TCLE da terceira aplicação
+foi obtido e assinado; data e modalidade não constam do registro primário consultado. P1 avaliou
+a V2; a V3 subsequente ainda não foi avaliada por ela.
 
 Escala das questões fechadas: 1 — Muito ruim / Discordo totalmente; 2 — Ruim / Discordo;
 3 — Regular / Neutro; 4 — Bom / Concordo; 5 — Muito bom / Concordo totalmente.
