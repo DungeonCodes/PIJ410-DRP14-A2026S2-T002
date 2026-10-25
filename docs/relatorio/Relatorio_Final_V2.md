@@ -5,43 +5,43 @@
 <!-- RASTREABILIDADE-VISUAL:INICIO MAPA -->
 ## Mapa de alterações V1 → V2
 
-> Camada editorial para leitura no GitHub (ALT-029). V2 permanece candidata à revisão humana, sem promoção a baseline.
+> Versão anotada para revisão no GitHub. Camada editorial atual: ALT-030. O corpo científico da V2 permanece preservado fora dos blocos; V2 continua candidata à revisão humana.
 
 | Seção V2 | Título | IDs relacionados | Tipo da alteração |
 |---|---|---|---|
-| — (pré-textual) | Resumo | [ALT-001](CONTROLE_ALTERACOES_RELATORIO.md#alt-001) | resumo; redação |
-| — (pré-textual) | Lista de ilustrações | [ALT-002](CONTROLE_ALTERACOES_RELATORIO.md#alt-002) | estrutura; lista |
-| — (pré-textual) | Sumário | [ALT-003](CONTROLE_ALTERACOES_RELATORIO.md#alt-003) | estrutura; sumário |
-| 2.3 | Fundamentação teórica | [ALT-004](CONTROLE_ALTERACOES_RELATORIO.md#alt-004) | referência interna |
-| 2.5.5 | Preparação, governança e rastreabilidade dos dados | [ALT-005](CONTROLE_ALTERACOES_RELATORIO.md#alt-005) | metodologia; deslocamento |
-| 2.5.6 | Níveis de interpretação analítica | [ALT-006](CONTROLE_ALTERACOES_RELATORIO.md#alt-006) | referência interna |
-| 2.5.8 | Criar e prototipar | [ALT-007](CONTROLE_ALTERACOES_RELATORIO.md#alt-007) | metodologia; estrutura |
-| 2.5.9 | Protocolo experimental de aprendizagem de máquina | [ALT-008](CONTROLE_ALTERACOES_RELATORIO.md#alt-008) | metodologia; numeração |
-| 2.5.10 | Uso assistivo de IA agêntica e verificação humana | [ALT-009](CONTROLE_ALTERACOES_RELATORIO.md#alt-009), [ALT-010](CONTROLE_ALTERACOES_RELATORIO.md#alt-010) | metodologia; numeração; metodologia; referência interna e numeração |
-| 2.5.11 | Implementar, testar, validar e ajustar | [ALT-010](CONTROLE_ALTERACOES_RELATORIO.md#alt-010) | metodologia; numeração |
-| 3.1.2 | Estratégia incremental e arquitetura da solução | [ALT-011](CONTROLE_ALTERACOES_RELATORIO.md#alt-011), [ALT-027](CONTROLE_ALTERACOES_RELATORIO.md#alt-027) | estrutura; fluxograma; arquivo do fluxograma |
-| 3.1.3 | Módulo de Captação | [ALT-012](CONTROLE_ALTERACOES_RELATORIO.md#alt-012), [ALT-013](CONTROLE_ALTERACOES_RELATORIO.md#alt-013) | figura; nota; estrutura; nota |
-| 3.1.5 | Módulos de Ads | [ALT-014](CONTROLE_ALTERACOES_RELATORIO.md#alt-014) | notação de fórmula |
-| 3.1.6 | Experimento de aprendizagem de máquina para CPR | [ALT-015](CONTROLE_ALTERACOES_RELATORIO.md#alt-015) | resultados; redação |
-| 3.1.6.1 | Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4 | [ALT-016](CONTROLE_ALTERACOES_RELATORIO.md#alt-016), [ALT-017](CONTROLE_ALTERACOES_RELATORIO.md#alt-017) | estrutura; numeração e redação; resultados; redação |
-| 3.1.7 | Uso assistivo de IA agêntica | [ALT-018](CONTROLE_ALTERACOES_RELATORIO.md#alt-018) | referência interna |
-| 3.1.8 | V4 e conclusão do escopo especificado das quatro fases | [ALT-019](CONTROLE_ALTERACOES_RELATORIO.md#alt-019) | resultados; deslocamento |
-| 3.2.2 | Avaliação da solução pela participante — terceiro momento | [ALT-020](CONTROLE_ALTERACOES_RELATORIO.md#alt-020) | referência interna |
-| 3.2.6 | Evidências da evolução técnica da V4 | [ALT-021](CONTROLE_ALTERACOES_RELATORIO.md#alt-021), [ALT-022](CONTROLE_ALTERACOES_RELATORIO.md#alt-022), [ALT-023](CONTROLE_ALTERACOES_RELATORIO.md#alt-023), [ALT-024](CONTROLE_ALTERACOES_RELATORIO.md#alt-024), [ALT-025](CONTROLE_ALTERACOES_RELATORIO.md#alt-025) | resultados; estrutura e deslocamento; resultados; deslocamento; resultados; deslocamento e notação; resultados; deslocamento e redação |
-| 4 | CONSIDERAÇÕES FINAIS | [ALT-026](CONTROLE_ALTERACOES_RELATORIO.md#alt-026) | conclusão; redação |
+| — (pré-textual) | Resumo | [ALT-001](#comparacao-alt-001) | resumo; redação |
+| — (pré-textual) | Lista de ilustrações | [ALT-002](#comparacao-alt-002) | estrutura; lista |
+| — (pré-textual) | Sumário | [ALT-003](#comparacao-alt-003) | estrutura; sumário |
+| 2.3 | Fundamentação teórica | [ALT-004](#comparacao-alt-004) | referência interna |
+| 2.5.5 | Preparação, governança e rastreabilidade dos dados | [ALT-005](#comparacao-alt-005) | metodologia; deslocamento |
+| 2.5.6 | Níveis de interpretação analítica | [ALT-006](#comparacao-alt-006) | referência interna |
+| 2.5.8 | Criar e prototipar | [ALT-007](#comparacao-alt-007) | metodologia; estrutura |
+| 2.5.9 | Protocolo experimental de aprendizagem de máquina | [ALT-008](#comparacao-alt-008) | metodologia; numeração |
+| 2.5.10 | Uso assistivo de IA agêntica e verificação humana | [ALT-009](#comparacao-alt-009), [ALT-010](#comparacao-alt-010) | metodologia; numeração; metodologia; referência interna e numeração |
+| 2.5.11 | Implementar, testar, validar e ajustar | [ALT-010](#comparacao-alt-010) | metodologia; numeração |
+| 3.1.2 | Estratégia incremental e arquitetura da solução | [ALT-011](#comparacao-alt-011), [ALT-027](#registro-alt-027) | estrutura; fluxograma; arquivo do fluxograma |
+| 3.1.3 | Módulo de Captação | [ALT-012](#comparacao-alt-012), [ALT-013](#comparacao-alt-013) | figura; nota; estrutura; nota |
+| 3.1.5 | Módulos de Ads | [ALT-014](#comparacao-alt-014) | notação de fórmula |
+| 3.1.6 | Experimento de aprendizagem de máquina para CPR | [ALT-015](#comparacao-alt-015) | resultados; redação |
+| 3.1.6.1 | Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4 | [ALT-016](#comparacao-alt-016), [ALT-017](#comparacao-alt-017) | estrutura; numeração e redação; resultados; redação |
+| 3.1.7 | Uso assistivo de IA agêntica | [ALT-018](#comparacao-alt-018) | referência interna |
+| 3.1.8 | V4 e conclusão do escopo especificado das quatro fases | [ALT-019](#comparacao-alt-019) | resultados; deslocamento |
+| 3.2.2 | Avaliação da solução pela participante — terceiro momento | [ALT-020](#comparacao-alt-020) | referência interna |
+| 3.2.6 | Evidências da evolução técnica da V4 | [ALT-021](#comparacao-alt-021), [ALT-022](#comparacao-alt-022), [ALT-023](#comparacao-alt-023), [ALT-024](#comparacao-alt-024), [ALT-025](#comparacao-alt-025) | resultados; estrutura e deslocamento; resultados; deslocamento; resultados; deslocamento e notação; resultados; deslocamento e redação |
+| 4 | CONSIDERAÇÕES FINAIS | [ALT-026](#comparacao-alt-026) | conclusão; redação |
 
-A antiga 2.5.8 foi integrada em 2.5.5 (ALT-005/ALT-007); 2.5.9–2.5.12 passaram a 2.5.8–2.5.11. Os detalhes da V4 saíram de 3.1.8 e entraram em 3.2.6 (ALT-019/ALT-021–ALT-025). ALT-028 registra a execução fora do relatório.
+**Legenda visual:** `- ` em bloco `diff` = **SAI** (vermelho); `+ ` = **ENTRA** (verde), conforme a renderização e o tema do GitHub. As comparações ficam abertas e reproduzem os textos completos, com as quebras de linha originais. Acréscimos contêm somente linhas `+ `; não se inserem marcadores fictícios de ausência.
 
-**Legenda visual — SAI / ENTRA**
+A antiga 2.5.8 foi integrada em 2.5.5 (ALT-005/ALT-007); 2.5.9–2.5.12 passaram a 2.5.8–2.5.11. Os detalhes da V4 saíram de 3.1.8 e entraram em 3.2.6 (ALT-019/ALT-021–ALT-025). Nenhuma tabela científica foi substituída ou teve células alteradas nesses registros.
 
-```diff
-- SAI: texto anterior removido ou substituído
-+ ENTRA: texto inserido na V2
-```
+**Cobertura dos registros ALT-001–ALT-029**
 
-Abra os blocos **SAI / ENTRA** junto aos trechos alterados. Os recortes são literais e podem começar ou terminar no meio de uma frase; os links levam aos pares integrais. ∅ indica ausência no local; em deslocamentos, consulte também o ID da origem. Os sinais identificam a mudança independentemente da cor do tema. Tabelas científicas não tiveram alteração registrada.
+- ALT-001–ALT-026: alterações textuais e estruturais, com 26 comparações integrais distribuídas junto aos trechos correspondentes.
+- [ALT-027](#registro-alt-027): novos arquivos SVG/PNG do fluxograma, documentados junto a ALT-011; não corresponde a substituição de texto binário.
+- <a id="registro-alt-028"></a> **ALT-028:** registro da execução em `docs/run_log.md`; não corresponde a substituição científica na V2.
+- <a id="registro-alt-029"></a> **ALT-029:** camada editorial anterior, com 26 blocos recolhíveis e recortes; substituída por ALT-030. Os registros históricos permanecem intactos.
 
-[Revisão completa](REVISAO_V1_PARA_V2.md) · [Controle SAI/ENTRA](CONTROLE_ALTERACOES_RELATORIO.md)
+**Composição acadêmica futura:** remover exclusivamente os segmentos entre `RASTREABILIDADE-VISUAL:INICIO` e `RASTREABILIDADE-VISUAL:FIM`, incluindo o mapa. Preservar integralmente todo o texto científico fora desses segmentos; o ENTRA dos diffs é uma cópia de revisão.
 
 <!-- RASTREABILIDADE-VISUAL:FIM MAPA -->
 
@@ -115,17 +115,17 @@ Letícia Vieira Santos. Polos: Aricanduva, São Rafael, Rosa da China e Jaçanã
 ## Resumo
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-001 -->
-<details>
-<summary>ALT-001 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-001"></a>
+
+**ALT-001 — Resumo**
 
 ```diff
-- Este relatório apresenta uma plataforma acadêmica para organizar informações sobre investimentos em mídia digital e apoiar de
-+ A dispersão de registros de mídia digital dificulta sua comparação no contexto educacional. O objetivo foi desenvolver uma so
+- Este relatório apresenta uma plataforma acadêmica para organizar informações sobre investimentos em mídia digital e apoiar decisões de marketing em uma instituição de ensino. A necessidade de reunir registros dispersos foi identificada em conversas com profissionais da instituição. O grupo desenvolveu uma aplicação web com indicadores, filtros e gráficos, usando dados sintéticos, sem integrar registros operacionais. A V1 reuniu Captação e Matrículas. Após a primeira avaliação de uma gerente de Marketing, identificada como P1, a V2 incorporou um gráfico temporal consolidado; uma segunda aplicação confirmou sua utilidade percebida. Na terceira aplicação, ampliada à V2, P1 apresentou contribuições, das quais sete feedbacks foram aceitos e incorporados à V3. Sem nova avaliação comunitária entre versões, o grupo desenvolveu a V4 por evolução técnica e acadêmica: ela reúne o escopo especificado das quatro fases, incluindo Conteúdo Orgânico, Gestão e Arquitetura & Algoritmos, além de rankings sintéticos em Ads e séries temporais de custo por resultado (CPR). Depois da implementação, P1 avaliou a V4 online, em 14/10/2026. Atribuiu 5/5 às oito questões fechadas, escolheu a opção A e não solicitou alteração relevante; a V4 foi mantida. Em experimento separado, a aprendizagem de máquina estimou o CPR Google, definido como investimento dividido pelas conversões registradas. O modelo sazonal apresentou desempenho preditivo limitado, insuficiente para orientar investimentos reais. Testes e registros versionados sustentam a execução técnica. Dados fictícios, ausência de integração operacional e avaliação por uma única participante impedem generalização ou comprovação de impacto institucional.
+
++ A dispersão de registros de mídia digital dificulta sua comparação no contexto educacional. O objetivo foi desenvolver uma solução analítica para organizar esses dados e apoiar a discussão da distribuição do orçamento de marketing em uma instituição de ensino. A metodologia combinou escuta de profissionais, prototipação incremental com dados sintéticos, cálculos determinísticos, testes e quatro avaliações sucessivas com uma gerente de Marketing, identificada como P1. Em experimento separado e reproduzível, regressões lineares estimaram o custo por resultado (CPR) Google, definido como investimento dividido pelas conversões registradas. Como resultados, a V1 apresentou Captação e Matrículas; a primeira avaliação motivou o gráfico consolidado da V2, confirmado na segunda, e sete feedbacks da terceira aplicação ampliada à V2 foram incorporados à V3. A V4 resultou de evolução técnica e acadêmica sem questionário intermediário, reunindo o escopo especificado das quatro fases, rankings sintéticos e séries de CPR; em avaliação posterior online, em 14/10/2026, P1 atribuiu oito notas 5/5, escolheu a classificação A e não solicitou alteração relevante, mantendo-se a V4. Os testes sustentam a execução técnica, mas o experimento sazonal apresentou desempenho preditivo limitado, insuficiente para orientar investimentos reais. A contribuição demonstrada consiste na organização rastreável dos indicadores e na apresentação ajustada à participante; dados sintéticos, ausência de integração operacional e uma única avaliadora impedem generalização e comprovação de impacto institucional.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-001).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-001 -->
 
 A dispersão de registros de mídia digital dificulta sua comparação no contexto educacional. O objetivo foi desenvolver uma solução analítica para organizar esses dados e apoiar a discussão da distribuição do orçamento de marketing em uma instituição de ensino. A metodologia combinou escuta de profissionais, prototipação incremental com dados sintéticos, cálculos determinísticos, testes e quatro avaliações sucessivas com uma gerente de Marketing, identificada como P1. Em experimento separado e reproduzível, regressões lineares estimaram o custo por resultado (CPR) Google, definido como investimento dividido pelas conversões registradas. Como resultados, a V1 apresentou Captação e Matrículas; a primeira avaliação motivou o gráfico consolidado da V2, confirmado na segunda, e sete feedbacks da terceira aplicação ampliada à V2 foram incorporados à V3. A V4 resultou de evolução técnica e acadêmica sem questionário intermediário, reunindo o escopo especificado das quatro fases, rankings sintéticos e séries de CPR; em avaliação posterior online, em 14/10/2026, P1 atribuiu oito notas 5/5, escolheu a classificação A e não solicitou alteração relevante, mantendo-se a V4. Os testes sustentam a execução técnica, mas o experimento sazonal apresentou desempenho preditivo limitado, insuficiente para orientar investimentos reais. A contribuição demonstrada consiste na organização rastreável dos indicadores e na apresentação ajustada à participante; dados sintéticos, ausência de integração operacional e uma única avaliadora impedem generalização e comprovação de impacto institucional.
@@ -137,17 +137,52 @@ A dispersão de registros de mídia digital dificulta sua comparação no contex
 <!-- Paginação e numeração definitivas das figuras serão conferidas na composição do DOCX/PDF. -->
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-002 -->
-<details>
-<summary>ALT-002 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-002"></a>
+
+**ALT-002 — Lista de ilustrações**
 
 ```diff
-- – V4: séries temporais separadas de CPR em Estratégia
-+ – V4: séries temporais separadas de CPR em Estratégia - Fluxograma 1 – Arquitetura analítica do protótipo acadêmico
+- - Figura 1 – Indicadores e filtros da Captação na V1
+- - Figura 2 – Indicadores e composição por safra em Matrículas na V1
+- - Figura 3 – Visão geral acadêmica de Ads na V2
+- - Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
+- - Figura 5 – Gráficos temporais separados de Captação na V1
+- - Figura 6 – Evolução temporal consolidada de Captação na V2
+- - Figura 7 – V3: efetivação visita–matrícula em Captação
+- - Figura 8 – V3: matrículas e rematrículas por série
+- - Figura 9 – V3: resumo mensal da Visão Geral de Ads
+- - Figura 10 – V3: investimento e leads simulados no Google Ads
+- - Figura 11 – V3: alcance, investimento e resultados no Meta Ads
+- - Figura 12 – V3: comparação temporal no módulo Estratégia
+- - Figura 13 – V3: comunicação dos limites da previsão experimental de CPR
+- - Figura 14 – V4: ranking sintético de Reels orgânicos
+- - Figura 15 – V4: plano fictício de vagas e ocupação em Gestão
+- - Figura 16 – V4: ranking sintético de anúncios no Meta Ads
+- - Figura 17 – V4: ranking sintético de palavras-chave no Google Ads
+- - Figura 18 – V4: séries temporais separadas de CPR em Estratégia
+
++ - Figura 1 – Indicadores e filtros da Captação na V1
++ - Figura 2 – Indicadores e composição por safra em Matrículas na V1
++ - Figura 3 – Visão geral acadêmica de Ads na V2
++ - Figura 4 – Histórico sintético e previsão sazonal experimental de CPR na V2
++ - Figura 5 – Gráficos temporais separados de Captação na V1
++ - Figura 6 – Evolução temporal consolidada de Captação na V2
++ - Figura 7 – V3: efetivação visita–matrícula em Captação
++ - Figura 8 – V3: matrículas e rematrículas por série
++ - Figura 9 – V3: resumo mensal da Visão Geral de Ads
++ - Figura 10 – V3: investimento e leads simulados no Google Ads
++ - Figura 11 – V3: alcance, investimento e resultados no Meta Ads
++ - Figura 12 – V3: comparação temporal no módulo Estratégia
++ - Figura 13 – V3: comunicação dos limites da previsão experimental de CPR
++ - Figura 14 – V4: ranking sintético de Reels orgânicos
++ - Figura 15 – V4: plano fictício de vagas e ocupação em Gestão
++ - Figura 16 – V4: ranking sintético de anúncios no Meta Ads
++ - Figura 17 – V4: ranking sintético de palavras-chave no Google Ads
++ - Figura 18 – V4: séries temporais separadas de CPR em Estratégia
++ - Fluxograma 1 – Arquitetura analítica do protótipo acadêmico
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-002).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-002 -->
 
 - Figura 1 – Indicadores e filtros da Captação na V1
@@ -194,17 +229,120 @@ Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CO
 <!-- Paginação do sumário a atualizar na composição do DOCX/PDF. -->
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-003 -->
-<details>
-<summary>ALT-003 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-003"></a>
+
+**ALT-003 — Sumário**
 
 ```diff
-- gras de negócio e cenários determinísticos     - 2.5.8 Auditoria, reprodutibilidade e limites de atribuição     - 2.5.9 Criar e prototipar     - 2.5.10 Protocolo experimental de ap
-+ gras de negócio e cenários determinísticos     - 2.5.8 Criar e prototipar     - 2.5.9 Protocolo experimental de aprendizagem de máquina     - 2.5.10 Uso assistivo de IA agêntica e
+- - 1 Introdução
+- - 2 Desenvolvimento
+-   - 2.1 Objetivos
+-     - 2.1.1 Objetivo geral
+-     - 2.1.2 Objetivos específicos
+-   - 2.2 Justificativa e delimitação do problema
+-   - 2.3 Fundamentação teórica
+-     - 2.3.1 Marketing digital e decisão orientada por dados
+-     - 2.3.2 Tráfego pago e campanhas de anúncios
+-     - 2.3.3 Indicadores e tomada de decisão
+-     - 2.3.4 Análise de dados em escala e apoio à tomada de decisão
+-     - 2.3.5 Aprendizagem de máquina aplicada ao marketing digital
+-     - 2.3.6 Visualização de dados e dashboards para apoio à gestão educacional
+-     - 2.3.7 Uso controlado de IA agêntica e supervisão humana
+-   - 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
+-   - 2.5 Metodologia
+-     - 2.5.1 Delineamento aplicado e Design Thinking
+-     - 2.5.2 Ouvir e interpretar o contexto
+-     - 2.5.3 Definir o problema e os requisitos
+-     - 2.5.4 Fontes de dados, recortes temporais e confidencialidade
+-     - 2.5.5 Preparação, governança e rastreabilidade dos dados
+-     - 2.5.6 Níveis de interpretação analítica
+-     - 2.5.7 Indicadores, regras de negócio e cenários determinísticos
+-     - 2.5.8 Auditoria, reprodutibilidade e limites de atribuição
+-     - 2.5.9 Criar e prototipar
+-     - 2.5.10 Protocolo experimental de aprendizagem de máquina
+-     - 2.5.11 Uso assistivo de IA agêntica e verificação humana
+-     - 2.5.12 Implementar, testar, validar e ajustar
+- - 3 Resultados: solução final
+-   - 3.1 Desenvolvimento e resultados técnicos
+-     - 3.1.1 Estado real das fases do protótipo
+-     - 3.1.2 Estratégia incremental e arquitetura da solução
+-     - 3.1.3 Módulo de Captação
+-     - 3.1.4 Módulo de Matrículas
+-     - 3.1.5 Módulos de Ads
+-     - 3.1.6 Experimento de aprendizagem de máquina para CPR
+-     - 3.1.7 Uso assistivo de IA agêntica
+-     - 3.1.8 V4 e conclusão do escopo especificado das quatro fases
+-   - 3.2 Avaliação com a comunidade e alterações decorrentes
+-     - 3.2.1 Contato inicial e necessidades identificadas
+-     - 3.2.2 Avaliação da solução pela participante
+-     - 3.2.3 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
+-     - 3.2.4 Rastreabilidade entre necessidade, solução e avaliação externa
+-     - 3.2.5 Feedback, decisões e alterações implementadas
+-   - 3.3 Verificação técnica da solução e limitações
+-     - 3.3.1 Testes e verificação técnica
+-     - 3.3.2 Limitações
+- - 4 Considerações finais
+- - Referências
+- - Apêndices
+-   - Apêndice A – Instrumento de levantamento inicial
+-   - Apêndice B – Instrumentos de validação aplicados à V1, à V2 e à V4
+
++ - 1 Introdução
++ - 2 Desenvolvimento
++   - 2.1 Objetivos
++     - 2.1.1 Objetivo geral
++     - 2.1.2 Objetivos específicos
++   - 2.2 Justificativa e delimitação do problema
++   - 2.3 Fundamentação teórica
++     - 2.3.1 Marketing digital e decisão orientada por dados
++     - 2.3.2 Tráfego pago e campanhas de anúncios
++     - 2.3.3 Indicadores e tomada de decisão
++     - 2.3.4 Análise de dados em escala e apoio à tomada de decisão
++     - 2.3.5 Aprendizagem de máquina aplicada ao marketing digital
++     - 2.3.6 Visualização de dados e dashboards para apoio à gestão educacional
++     - 2.3.7 Uso controlado de IA agêntica e supervisão humana
++   - 2.4 Aplicação das disciplinas estudadas no Projeto Integrador
++   - 2.5 Metodologia
++     - 2.5.1 Delineamento aplicado e Design Thinking
++     - 2.5.2 Ouvir e interpretar o contexto
++     - 2.5.3 Definir o problema e os requisitos
++     - 2.5.4 Fontes de dados, recortes temporais e confidencialidade
++     - 2.5.5 Preparação, governança e rastreabilidade dos dados
++     - 2.5.6 Níveis de interpretação analítica
++     - 2.5.7 Indicadores, regras de negócio e cenários determinísticos
++     - 2.5.8 Criar e prototipar
++     - 2.5.9 Protocolo experimental de aprendizagem de máquina
++     - 2.5.10 Uso assistivo de IA agêntica e verificação humana
++     - 2.5.11 Implementar, testar, validar e ajustar
++ - 3 Resultados: solução final
++   - 3.1 Desenvolvimento e resultados técnicos
++     - 3.1.1 Estado real das fases do protótipo
++     - 3.1.2 Estratégia incremental e arquitetura da solução
++     - 3.1.3 Módulo de Captação
++     - 3.1.4 Módulo de Matrículas
++     - 3.1.5 Módulos de Ads
++     - 3.1.6 Experimento de aprendizagem de máquina para CPR
++       - 3.1.6.1 Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4
++     - 3.1.7 Uso assistivo de IA agêntica
++     - 3.1.8 V4 e conclusão do escopo especificado das quatro fases
++   - 3.2 Avaliação com a comunidade e alterações decorrentes
++     - 3.2.1 Contato inicial e necessidades identificadas
++     - 3.2.2 Avaliação da solução pela participante
++     - 3.2.3 Comparação entre necessidades iniciais e avaliação do ciclo V1–V2
++     - 3.2.4 Rastreabilidade entre necessidade, solução e avaliação externa
++     - 3.2.5 Feedback, decisões e alterações implementadas
++     - 3.2.6 Evidências da evolução técnica da V4
++   - 3.3 Verificação técnica da solução e limitações
++     - 3.3.1 Testes e verificação técnica
++     - 3.3.2 Limitações
++ - 4 Considerações finais
++ - Referências
++ - Apêndices
++   - Apêndice A – Instrumento de levantamento inicial
++   - Apêndice B – Instrumentos de validação aplicados à V1, à V2 e à V4
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-003).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-003 -->
 
 - 1 Introdução
@@ -393,17 +531,29 @@ Esse apoio ao desenvolvimento, à organização e à interpretação não é o m
 os dados.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-004 -->
-<details>
-<summary>ALT-004 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-004"></a>
+
+**ALT-004 — 2.3 Fundamentação teórica**
 
 ```diff
-- perimento executado são documentados nas subseções 2.5.10 e 3.1.6.
-+ perimento executado são documentados nas subseções 2.5.9 e 3.1.6.
+- Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
+- Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
+- marketing ligadas a apoio à decisão e impacto financeiro. Assim, a contribuição técnica prevista
+- não é apenas uma interface nem uma explicação gerada por IA. O recorte de aprendizagem de máquina
+- adotado é uma regressão supervisionada para CPR no Google Ads, com dados sintéticos. O modelo,
+- a variável-alvo, as entradas, o particionamento e as métricas do experimento executado são
+- documentados nas subseções 2.5.10 e 3.1.6.
+
++ Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
++ Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
++ marketing ligadas a apoio à decisão e impacto financeiro. Assim, a contribuição técnica prevista
++ não é apenas uma interface nem uma explicação gerada por IA. O recorte de aprendizagem de máquina
++ adotado é uma regressão supervisionada para CPR no Google Ads, com dados sintéticos. O modelo,
++ a variável-alvo, as entradas, o particionamento e as métricas do experimento executado são
++ documentados nas subseções 2.5.9 e 3.1.6.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-004).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-004 -->
 
 Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
@@ -756,17 +906,24 @@ convertidos silenciosamente em zero nem em estimativas. Essa regra distingue um 
 um dado indisponível e possibilita auditoria posterior.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-005 -->
-<details>
-<summary>ALT-005 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-005"></a>
+
+**ALT-005 — 2.5.5 Preparação, governança e rastreabilidade dos dados**
+
+Deslocamento: os dois parágrafos de 2.5.8 da V1 entram em 2.5.5 da V2; a retirada da origem está em ALT-007.
 
 ```diff
-- ∅
-+ Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite conferir resultados computacionais e suas co
++ Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de
++ transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite
++ conferir resultados computacionais e suas condições de produção (Peng, 2011).
+
++ Impressão, clique, conversão de plataforma, conversa, contato, visita e matrícula não são tratados
++ como sinônimos. Quando houver apenas dados agregados, a análise poderá descrever associação entre
++ etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal específico (Li *et al.*,
++ 2016).
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-005).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-005 -->
 
 Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de
@@ -788,17 +945,27 @@ os casos em que as fontes disponíveis não permitem ligar uma ação de mídia,
 matrícula específica.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-006 -->
-<details>
-<summary>ALT-006 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-006"></a>
+
+**ALT-006 — 2.5.6 Níveis de interpretação analítica**
 
 ```diff
-- io de IA são procedimentos separados, descritos em 2.5.10 e 2.5.11. Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma correlação agregada
-+ io de IA são procedimentos separados, descritos em 2.5.9 e 2.5.10. Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma correlação agregada
+- Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem de máquina e o
+- apoio de IA são procedimentos separados, descritos em 2.5.10 e 2.5.11. Essa separação impede que um
+- resultado de regra seja apresentado como causalidade ou que uma correlação agregada seja tratada
+- como atribuição por canal. Quando uma informação necessária não
+- estiver disponível, o resultado será sinalizado como não verificável (Saura, 2021; Li *et al.*,
+- 2016).
+
++ Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem de máquina e o
++ apoio de IA são procedimentos separados, descritos em 2.5.9 e 2.5.10. Essa separação impede que um
++ resultado de regra seja apresentado como causalidade ou que uma correlação agregada seja tratada
++ como atribuição por canal. Quando uma informação necessária não
++ estiver disponível, o resultado será sinalizado como não verificável (Saura, 2021; Li *et al.*,
++ 2016).
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-006).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-006 -->
 
 Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem de máquina e o
@@ -841,17 +1008,30 @@ dos dados (Saura; Palos-Sánchez; Cerdá Suárez, 2017; Martins, 2019).
 ### 2.5.8 Criar e prototipar
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-007 -->
-<details>
-<summary>ALT-007 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-007"></a>
+
+**ALT-007 — 2.5.8 Auditoria, reprodutibilidade e limites de atribuição**
+
+Deslocamento: o conteúdo da antiga 2.5.8 foi recebido em 2.5.5 (ALT-005); Criar e prototipar passou de 2.5.9 para 2.5.8.
 
 ```diff
-- ### 2.5.8 Auditoria, reprodutibilidade e limites de atribuição  Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de transformação e fórmula. A reprodutibilidade é parte do procedimento anal
+- ### 2.5.8 Auditoria, reprodutibilidade e limites de atribuição
+
+- Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de
+- transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite
+- conferir resultados computacionais e suas condições de produção (Peng, 2011).
+
+- Impressão, clique, conversão de plataforma, conversa, contato, visita e matrícula não são tratados
+- como sinônimos. Quando houver apenas dados agregados, a análise poderá descrever associação entre
+- etapas do funil, mas não atribuir uma matrícula a uma campanha ou canal específico (Li *et al.*,
+- 2016).
+
+- ### 2.5.9 Criar e prototipar
+
 + ### 2.5.8 Criar e prototipar
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-007).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-007 -->
 
 Na etapa de criar e prototipar, o grupo relacionou as necessidades aos campos disponíveis, às
@@ -909,17 +1089,17 @@ versionado do protótipo (2026).
 ### 2.5.9 Protocolo experimental de aprendizagem de máquina
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-008 -->
-<details>
-<summary>ALT-008 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-008"></a>
+
+**ALT-008 — 2.5.10 Protocolo experimental de aprendizagem de máquina**
 
 ```diff
 - ### 2.5.10 Protocolo experimental de aprendizagem de máquina
+
 + ### 2.5.9 Protocolo experimental de aprendizagem de máquina
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-008).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-008 -->
 
 O experimento perguntou se informações já disponíveis no passado permitiriam prever o CPR de um
@@ -1020,17 +1200,17 @@ conferem os resultados com os arquivos versionados sem gravá-los.
 ### 2.5.10 Uso assistivo de IA agêntica e verificação humana
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-009 -->
-<details>
-<summary>ALT-009 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-009"></a>
+
+**ALT-009 — 2.5.11 Uso assistivo de IA agêntica e verificação humana**
 
 ```diff
 - ### 2.5.11 Uso assistivo de IA agêntica e verificação humana
+
 + ### 2.5.10 Uso assistivo de IA agêntica e verificação humana
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-009).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-009 -->
 
 Durante o desenvolvimento, o grupo registrou o uso de agentes de inteligência artificial para
@@ -1062,17 +1242,33 @@ registros originais das quatro aplicações com P1 foram preservados.
 ### 2.5.11 Implementar, testar, validar e ajustar
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-010 -->
-<details>
-<summary>ALT-010 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-010"></a>
+
+**ALT-010 — 2.5.11 Uso assistivo de IA agêntica e verificação humana**
 
 ```diff
-- a regressão linear e dos baselines documentados em 2.5.10. Não há registro de experimento específico de simulação agêntica na solução analítica. As ferramentas não geraram resposta
-+ a regressão linear e dos baselines documentados em 2.5.9. Não há registro de experimento específico de simulação agêntica na solução analítica. As ferramentas não geraram respostas
+- Arquitetura, metodologia, escolha dos modelos, interpretação dos resultados, aprovação das
+- alterações, decisões sobre feedbacks, validação comunitária e conclusões permaneceram sob
+- responsabilidade humana. Os agentes não produziram as estimativas de CPR nem validaram
+- matematicamente o experimento: as estimativas resultaram da regressão linear e dos baselines
+- documentados em 2.5.10. Não há registro de experimento específico de simulação agêntica na
+- solução analítica. As ferramentas não geraram respostas de P1 nem substituíram entrevistas; os
+- registros originais das quatro aplicações com P1 foram preservados.
+
+- ### 2.5.12 Implementar, testar, validar e ajustar
+
++ Arquitetura, metodologia, escolha dos modelos, interpretação dos resultados, aprovação das
++ alterações, decisões sobre feedbacks, validação comunitária e conclusões permaneceram sob
++ responsabilidade humana. Os agentes não produziram as estimativas de CPR nem validaram
++ matematicamente o experimento: as estimativas resultaram da regressão linear e dos baselines
++ documentados em 2.5.9. Não há registro de experimento específico de simulação agêntica na
++ solução analítica. As ferramentas não geraram respostas de P1 nem substituíram entrevistas; os
++ registros originais das quatro aplicações com P1 foram preservados.
+
++ ### 2.5.11 Implementar, testar, validar e ajustar
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-010).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-010 -->
 
 O tratamento de cada contribuição seguiu a cadeia observação ou feedback, análise de viabilidade
@@ -1149,17 +1345,47 @@ liberação local.
 ### 3.1.2 Estratégia incremental e arquitetura da solução
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-011 -->
-<details>
-<summary>ALT-011 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-011"></a>
+
+**ALT-011 — 3.1.2 Estratégia incremental e arquitetura da solução**
 
 ```diff
-- O projeto implementa uma aplicação web acadêmica independente do ambiente operacional. A aplicação lê dados sintéticos armazenados
-+ O protótipo implementado lê arquivos sintéticos locais e apresenta indicadores determinísticos em uma interface Next.js/TypeScript
+- O projeto implementa uma aplicação web acadêmica independente do ambiente operacional. A
+- aplicação lê dados sintéticos armazenados em arquivos, verifica sua estrutura e calcula os
+- indicadores por regras fixas. A interface foi construída com Next.js/TypeScript. Um controle
+- central de acesso aos módulos (*feature gate*) mantém V1 restrita à Fase 1 e libera as Fases 1 e
+- 2 em V2/V3. Os experimentos de CPR são executados separadamente pela CLI; seus arquivos de
+- resultados são apresentados em Google Ads na V2 e na V3, sem treinamento no navegador. Não há
+- integração operacional com contas de anúncios, CRM, sistema acadêmico ou base real da instituição.
+
+- ```text
+- dados fictícios controlados, armazenados em arquivos
+-         ↓
+- verificação da estrutura e cálculo dos indicadores
+-         ↓
+- controle de acesso aos módulos (feature gate)
+-         ↓
+- interface: V1 (Fase 1) | V2 (Fases 1 e 2) | V3 (Fases 1 e 2, com feedbacks)
+
+- experimento separado de CPR → arquivo de resultados reproduzível
+-                                  ↓
+-                   apresentação em Google Ads na V2 e V3
+- ```
+
++ O protótipo implementado lê arquivos sintéticos locais e apresenta indicadores determinísticos em uma interface Next.js/TypeScript. Os controles de habilitação (*feature gates*) restringem a V1 à Fase 1 e V2/V3 às Fases 1 e 2; a V4 reúne as quatro fases especificadas. Os artefatos reproduzíveis de CPR, produzidos separadamente pela CLI, são apresentados em Google Ads nas composições V2–V4, sem treinamento no navegador. O Fluxograma 1 distingue esse experimento do fluxo comum de indicadores. A solução não se conecta a contas reais de anúncios, CRM, sistema acadêmico ou base operacional da instituição.
+
++ Fluxograma 1 – Arquitetura analítica do protótipo acadêmico
+
++ ![Fluxo determinístico com dados sintéticos locais, verificação, indicadores, gates e interfaces V1–V4; experimento separado de CPR pela CLI, com artefatos apresentados em Google Ads V2–V4.](figuras/fluxograma-arquitetura-v2.svg)
+
++ Fonte: Elaborado pelo grupo (2026), com base nos contratos locais de dados, nas rotinas de indicadores, nos controles de habilitação por versão e nos artefatos dos experimentos de CPR.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-011).
+<a id="registro-alt-027"></a>
 
-</details>
+**ALT-027 — Novos arquivos do fluxograma.** Criados `docs/relatorio/figuras/fluxograma-arquitetura-v2.svg` e `docs/relatorio/figuras/fluxograma-arquitetura-v2.png`. A referência Markdown e a legenda novas estão integralmente no diff de ALT-011; o diagrama ASCII anterior também. Não havia caminho de imagem anterior para esse diagrama. Nenhum conteúdo binário é transcrito.
+
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-011 -->
 
 O protótipo implementado lê arquivos sintéticos locais e apresenta indicadores determinísticos em uma interface Next.js/TypeScript. Os controles de habilitação (*feature gates*) restringem a V1 à Fase 1 e V2/V3 às Fases 1 e 2; a V4 reúne as quatro fases especificadas. Os artefatos reproduzíveis de CPR, produzidos separadamente pela CLI, são apresentados em Google Ads nas composições V2–V4, sem treinamento no navegador. O Fluxograma 1 distingue esse experimento do fluxo comum de indicadores. A solução não se conecta a contas reais de anúncios, CRM, sistema acadêmico ou base operacional da instituição.
@@ -1185,17 +1411,21 @@ As demais visualizações de funil, situação e origem permanecem distintas. A 
 não prova atribuição a anúncios ou causalidade.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-012 -->
-<details>
-<summary>ALT-012 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-012"></a>
+
+**ALT-012 — 3.1.3 Módulo de Captação**
 
 ```diff
 - Figura 1 – Indicadores e filtros da Captação na V1
+
+- ![Interface de Captação da V1 com filtros, indicadores e funil sintético.](figuras/fig-v1-captacao.png)
+
 + Figura 1 – Indicadores e filtros da Captação na V1[^nota-v1]
+
++ ![Interface de Captação da V1 com filtros, indicadores e funil sintético.](figuras/fig-v1-captacao.png)
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-012).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-012 -->
 
 Figura 1 – Indicadores e filtros da Captação na V1[^nota-v1]
@@ -1205,17 +1435,19 @@ Figura 1 – Indicadores e filtros da Captação na V1[^nota-v1]
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-013 -->
-<details>
-<summary>ALT-013 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-013"></a>
+
+**ALT-013 — 3.1.3 Módulo de Captação**
 
 ```diff
-- Nota: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto Integ
-+ [^nota-v1]: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto
+- Nota: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo
+- legado “PIJ410 — Projeto Integrador em Computação III”. O componente correto deste trabalho é
+- PJI410 — Projeto Integrador em Computação IV.
+
++ [^nota-v1]: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto Integrador em Computação III”. O componente correto deste trabalho é PJI410 — Projeto Integrador em Computação IV.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-013).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-013 -->
 
 [^nota-v1]: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto Integrador em Computação III”. O componente correto deste trabalho é PJI410 — Projeto Integrador em Computação IV.
@@ -1241,17 +1473,26 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 ### 3.1.5 Módulos de Ads
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-014 -->
-<details>
-<summary>ALT-014 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-014"></a>
+
+**ALT-014 — 3.1.5 Módulos de Ads**
 
 ```diff
-- -calendário fictício e campanha e série mensal de CPR. CPR = investimento / conversões registradas; não significa custo por matrícula ou lead único e não demonstra atribuição causa
-+ -calendário fictício e campanha e série mensal de CPR. $\mathit{CPR} = \frac{\text{investimento}}{\text{conversões registradas}}$; não significa custo por matrícula ou lead único e
+- A V2 disponibiliza localmente Visão Geral Ads, Google Ads, Meta Ads e Estratégia, todos com dados
+- sintéticos. Não há integração com Google Ads API, Meta API ou CRM. Google Ads apresenta
+- investimento, impressões, cliques, conversões registradas, CTR, CPC, CPM e CPR, com filtros de
+- ano-calendário fictício e campanha e série mensal de CPR. CPR = investimento / conversões
+- registradas; não significa custo por matrícula ou lead único e não demonstra atribuição causal.
+- A granularidade é mensal, sem filtros diários artificiais.
+
++ A V2 disponibiliza localmente Visão Geral Ads, Google Ads, Meta Ads e Estratégia, todos com dados
++ sintéticos. Não há integração com Google Ads API, Meta API ou CRM. Google Ads apresenta
++ investimento, impressões, cliques, conversões registradas, CTR, CPC, CPM e CPR, com filtros de
++ ano-calendário fictício e campanha e série mensal de CPR. $\mathit{CPR} = \frac{\text{investimento}}{\text{conversões registradas}}$; não significa custo por matrícula ou lead único e não demonstra atribuição causal.
++ A granularidade é mensal, sem filtros diários artificiais.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-014).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-014 -->
 
 A V2 disponibiliza localmente Visão Geral Ads, Google Ads, Meta Ads e Estratégia, todos com dados
@@ -1277,17 +1518,30 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 ### 3.1.6 Experimento de aprendizagem de máquina para CPR
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-015 -->
-<details>
-<summary>ALT-015 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-015"></a>
+
+**ALT-015 — 3.1.6 Experimento de aprendizagem de máquina para CPR**
 
 ```diff
-- Os dois experimentos de CPR descritos em 2.5.10 foram executados e seus resultados puderam ser reproduzidos. No experimento inicial, a regressão teve erros menores que a
-+ Os dois experimentos de CPR descritos em 2.5.9 foram executados e seus resultados puderam ser reproduzidos. No experimento inicial, a regressão teve erros menores que a r
+- Os dois experimentos de CPR descritos em 2.5.10 foram executados e seus resultados puderam ser
+- reproduzidos. No experimento inicial, a regressão teve erros menores que a regra simples. No
+- teste principal da extensão sazonal, porém, não superou a melhor regra de referência. Assim, o
+- conjunto dos resultados não sustenta o uso do modelo para orientar investimentos reais.
+
+- O treinamento ocorre por linha de comando, separado da interface. Google Ads apresenta os
+- arquivos de resultados, independentemente dos filtros de consulta. A variável prevista é
+- CPR = investimento / conversões registradas, não custo por matrícula ou lead único. A aplicação
+- não treina o modelo no navegador nem utiliza dados operacionais ou APIs reais.
+
++ Os dois experimentos de CPR descritos em 2.5.9 foram executados e seus resultados puderam ser
++ reproduzidos. No experimento inicial, a regressão teve erros menores que a regra simples. No
++ teste principal da extensão sazonal, porém, não superou a melhor regra de referência. Assim, o
++ conjunto dos resultados não sustenta o uso do modelo para orientar investimentos reais.
+
++ Os artefatos do experimento estão disponíveis na interface Google Ads, independentemente dos filtros de consulta. O resultado previsto é o CPR, definido em 3.1.5; seu significado permanece distinto de custo por matrícula ou lead único. O protocolo de execução separado da interface está em 2.5.9.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-015).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-015 -->
 
 Os dois experimentos de CPR descritos em 2.5.9 foram executados e seus resultados puderam ser
@@ -1313,17 +1567,26 @@ sintético, inclusive para sua hipótese de maturação de 14 dias.
 #### 3.1.6.1 Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-016 -->
-<details>
-<summary>ALT-016 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-016"></a>
+
+**ALT-016 — Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3**
 
 ```diff
-- #### Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3  O experimento sazonal separado foi executado e
-+ #### 3.1.6.1 Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4  A execução sazonal reproduziu
+- #### Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3
+
+- O experimento sazonal separado foi executado e reproduzido sobre o conjunto de dados sintéticos
+- de janeiro/2017 a janeiro/2023. O CPR mensal é calculado como soma
+- do investimento dividida pela soma das conversões registradas, quando a cobertura mensal é válida;
+- 71 dos 73 meses do calendário têm CPR consolidado válido. O modelo OLS usa seno e cosseno do mês,
+- índice temporal e CPR de t−2 e t−12 como entradas. Pela hipótese sintética de maturação de 14
+- dias, t−1 não estava disponível. O teste principal reservou os 12 meses de 2022 e produziu:
+
++ #### 3.1.6.1 Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4
+
++ A execução sazonal reproduziu os resultados do cenário de janeiro/2017 a janeiro/2023: 71 dos 73 meses têm CPR consolidado válido. No teste principal, reservado aos 12 meses de 2022 segundo o protocolo de 2.5.9, foram obtidos os seguintes resultados:
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-016).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-016 -->
 
 A execução sazonal reproduziu os resultados do cenário de janeiro/2017 a janeiro/2023: 71 dos 73 meses têm CPR consolidado válido. No teste principal, reservado aos 12 meses de 2022 segundo o protocolo de 2.5.9, foram obtidos os seguintes resultados:
@@ -1360,17 +1623,31 @@ também ficou acima da média (1,131) e junho abaixo (0,893). O índice compara 
 mensais com a média global; não é ML nem demonstra sazonalidade estável.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-017 -->
-<details>
-<summary>ALT-017 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-017"></a>
+
+**ALT-017 — Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3**
 
 ```diff
-- o, acrescido da explicitação dos limites (FB-V2-P1-007). As maiores projeções são para dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativa
-+ o, acrescido da explicitação dos limites (FB-V2-P1-007); a V4 reutiliza essa apresentação. As maiores projeções são para dezembro/2023 e fevereiro/2023; as menores, para maio e jul
+- A V2 apresenta histórico sintético e projeção experimental recursiva de fevereiro/2023 a
+- janeiro/2024, além do índice sazonal e da comparação dos métodos. A V3 exibe o mesmo artefato,
+- sem alterar valores ou algoritmo, acrescido da explicitação dos limites (FB-V2-P1-007). As maiores
+- projeções são para
+- dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativas do
+- cenário, não resultados futuros observados. Valores extremos e lags previstos podem se propagar
+- pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
+- FB-V1-P1-001 refere-se somente ao gráfico consolidado de Captação.
+
++ A V2 apresenta histórico sintético e projeção experimental recursiva de fevereiro/2023 a
++ janeiro/2024, além do índice sazonal e da comparação dos métodos. A V3 exibe o mesmo artefato,
++ sem alterar valores ou algoritmo, acrescido da explicitação dos limites (FB-V2-P1-007); a V4 reutiliza essa apresentação. As maiores
++ projeções são para
++ dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativas do
++ cenário, não resultados futuros observados. Valores extremos e lags previstos podem se propagar
++ pela recursão. Essa extensão teve origem técnica/acadêmica, não comunitária; a alteração comunitária
++ FB-V1-P1-001 refere-se somente ao gráfico consolidado de Captação.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-017).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-017 -->
 
 A V2 apresenta histórico sintético e projeção experimental recursiva de fevereiro/2023 a
@@ -1407,17 +1684,27 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 ### 3.1.7 Uso assistivo de IA agêntica
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-018 -->
-<details>
-<summary>ALT-018 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-018"></a>
+
+**ALT-018 — 3.1.7 Uso assistivo de IA agêntica**
 
 ```diff
-- procedimento e os registros de execução estão em 2.5.11 e `docs/run_log.md`. As saídas passaram por inspeção e decisão humana; não houve avaliação independente da eficácia dos age
-+ procedimento e os registros de execução estão em 2.5.10 e `docs/run_log.md`. As saídas passaram por inspeção e decisão humana; não houve avaliação independente da eficácia dos age
+- Em paralelo ao desenvolvimento da interface e aos experimentos de CPR, o grupo utilizou agentes
+- como apoio à programação, auditoria do repositório, revisão documental,
+- análise de consistência e verificação de testes e artefatos de CPR. O procedimento e os registros
+- de execução estão em 2.5.11 e `docs/run_log.md`. As saídas passaram por inspeção e decisão
+- humana; não houve avaliação independente da eficácia dos agentes nem simulação agêntica
+- específica documentada na solução analítica.
+
++ Em paralelo ao desenvolvimento da interface e aos experimentos de CPR, o grupo utilizou agentes
++ como apoio à programação, auditoria do repositório, revisão documental,
++ análise de consistência e verificação de testes e artefatos de CPR. O procedimento e os registros
++ de execução estão em 2.5.10 e `docs/run_log.md`. As saídas passaram por inspeção e decisão
++ humana; não houve avaliação independente da eficácia dos agentes nem simulação agêntica
++ específica documentada na solução analítica.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-018).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-018 -->
 
 Em paralelo ao desenvolvimento da interface e aos experimentos de CPR, o grupo utilizou agentes
@@ -1436,17 +1723,51 @@ depois da implementação e é apresentada em 3.2.2. A V4 preserva os indicadore
 V1–V3 e acrescenta módulos e análises identificados como sintéticos.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-019 -->
-<details>
-<summary>ALT-019 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-019"></a>
+
+**ALT-019 — 3.1.8 V4 e conclusão do escopo especificado das quatro fases**
+
+Deslocamento: os cinco parágrafos detalhados saem de 3.1.8 e são recebidos em 3.2.6 (ALT-021–ALT-025), junto às Figuras 14–18.
 
 ```diff
-- Em Conteúdo Orgânico, doze Reels fictícios têm mês, alcance e interações. A taxa de interação divide interações por alcance.
-+ As entregas incluem Reels orgânicos, plano fictício de vagas, documentação da arquitetura, rankings de anúncios e palavras-ch
+- Em Conteúdo Orgânico, doze Reels fictícios têm mês, alcance e interações. A taxa de interação
+- divide interações por alcance. O score demonstrativo combina 70% da taxa normalizada e 30% do
+- alcance normalizado, segundo referências acadêmicas declaradas, e produz ranking com desempate
+- determinístico. Ausência de medição impede a classificação, enquanto zero interações observado
+- permanece um valor válido. A Figura 14 mostra a apresentação desse cenário; seu score não é
+- utilizado para ordenar anúncios pagos.
+
+- Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e
+- taxas alvo por turma. Ele demonstra uma premissa de ocupação e não representa matrícula
+- observada, previsão institucional ou plano aprovado pela parceira (Figura 15). A página
+- Arquitetura & Algoritmos documenta na interface as fontes locais, as regras de cálculo,
+- as verificações e os limites de interpretação da solução.
+
+- Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios
+- do mês associados ao indicador **conversa**, ordenados pelo menor CPR válido. Para cada
+- anúncio, CPR Meta = investimento ÷ conversas; sem conversas, o valor fica indisponível.
+- Interações são outro indicador e não entram nesse denominador. O ranking de anúncios pagos
+- da Figura 16 não utiliza o score de Reels orgânicos.
+
+- No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques,
+- conversões registradas e CPR (Figura 17). CPR Google = custo ÷ conversões registradas no
+- Google Ads; conversão zero ou ausente torna o CPR indisponível. Essas conversões não equivalem
+- a matrículas, leads únicos ou pessoas identificadas. Os registros granulares de ambos os
+- rankings são partições determinísticas das linhas mensais fechadas da base sintética;
+- preservam os totais de origem quando aplicável, sem acesso a APIs ou dados operacionais.
+
+- Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google
+- por conversão registrada e CPR Meta por conversa (Figura 18). Os denominadores têm sentidos
+- diferentes: não há CPR agregado Google+Meta, atribuição causal de matrículas aos canais nem
+- mistura com a previsão experimental de CPR Google. O protótipo não contém dados pessoais,
+- integração com plataformas reais ou dados institucionais operacionais. As Figuras 14 a 18,
+- apresentadas após a rastreabilidade da seção 3.2, documentam essas funcionalidades técnicas;
+- não representam resultados produzidos pela avaliação de P1.
+
++ As entregas incluem Reels orgânicos, plano fictício de vagas, documentação da arquitetura, rankings de anúncios e palavras-chave e séries descritivas de CPR por canal. A seção 3.2.6 reúne a descrição e as capturas dessas funcionalidades após as evidências históricas V1–V3, preservando sua origem técnica e distinguindo-as dos ajustes solicitados por P1.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-019).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-019 -->
 
 As entregas incluem Reels orgânicos, plano fictício de vagas, documentação da arquitetura, rankings de anúncios e palavras-chave e séries descritivas de CPR por canal. A seção 3.2.6 reúne a descrição e as capturas dessas funcionalidades após as evidências históricas V1–V3, preservando sua origem técnica e distinguindo-as dos ajustes solicitados por P1.
@@ -1608,17 +1929,29 @@ As Figuras 7 a 13 documentam a implementação visual das alterações. Não con
 V3 por P1 nem prova de impacto institucional ou de qualidade preditiva do modelo.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-020 -->
-<details>
-<summary>ALT-020 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-020"></a>
+
+**ALT-020 — Terceiro momento — avaliação ampliada da V2**
 
 ```diff
-- nálise dos feedbacks estão identificados na seção 2.5.12.
-+ nálise dos feedbacks estão identificados na seção 2.5.11.
+- **Efeito no desenvolvimento:** os sete feedbacks da terceira avaliação foram analisados pelo
+- grupo e incorporados à V3. A implementação passou por verificação técnica, descrita em 3.3;
+- P1 não avaliou a V3. A aplicação seguinte ocorreu depois da evolução técnica que produziu a
+- V4. As falas anteriores citadas constam dos registros primários
+- `docs/validacao/respostas/v1-p1.md`, `docs/validacao/respostas/v2-p1-reavaliacao.md` e
+- `docs/validacao/respostas/v2-p1-para-v3.md`; o instrumento e a análise dos feedbacks estão
+- identificados na seção 2.5.12.
+
++ **Efeito no desenvolvimento:** os sete feedbacks da terceira avaliação foram analisados pelo
++ grupo e incorporados à V3. A implementação passou por verificação técnica, descrita em 3.3;
++ P1 não avaliou a V3. A aplicação seguinte ocorreu depois da evolução técnica que produziu a
++ V4. As falas anteriores citadas constam dos registros primários
++ `docs/validacao/respostas/v1-p1.md`, `docs/validacao/respostas/v2-p1-reavaliacao.md` e
++ `docs/validacao/respostas/v2-p1-para-v3.md`; o instrumento e a análise dos feedbacks estão
++ identificados na seção 2.5.11.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-020).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-020 -->
 
 **Efeito no desenvolvimento:** os sete feedbacks da terceira avaliação foram analisados pelo
@@ -1767,17 +2100,30 @@ grupo manteve a V4, sem abrir V5.
 ### 3.2.6 Evidências da evolução técnica da V4
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-021 -->
-<details>
-<summary>ALT-021 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-021"></a>
+
+**ALT-021 — 3.2.6 Evidências da evolução técnica da V4 (origem: 3.1.8)**
+
+Deslocamento: conteúdo recebido em 3.2.6, proveniente de 3.1.8 da V1 (retirada integral em ALT-019).
 
 ```diff
-- As cinco capturas seguintes registram a interface técnica da V4 já implementada. Sua posição após a tabela mantém a sequência
-+ ### 3.2.6 Evidências da evolução técnica da V4  As funcionalidades a seguir resultaram da evolução técnica e acadêmica do gru
+- As cinco capturas seguintes registram a interface técnica da V4 já implementada. Sua posição
+- após a tabela mantém a sequência das figuras históricas; as imagens não são evidência de
+- desempenho institucional nem resultado produzido pela avaliação de P1.
+
++ ### 3.2.6 Evidências da evolução técnica da V4
+
++ As funcionalidades a seguir resultaram da evolução técnica e acadêmica do grupo, sem questionário entre V3 e V4. As capturas registram a V4 já implementada; não são resultados produzidos pela quarta avaliação nem evidência de desempenho institucional.
+
++ Em Conteúdo Orgânico, doze Reels fictícios têm mês, alcance e interações. A taxa de interação
++ divide interações por alcance. O score demonstrativo combina 70% da taxa normalizada e 30% do
++ alcance normalizado, segundo referências acadêmicas declaradas, e produz ranking com desempate
++ determinístico. Ausência de medição impede a classificação, enquanto zero interações observado
++ permanece um valor válido. A Figura 14 mostra a apresentação desse cenário; seu score não é
++ utilizado para ordenar anúncios pagos.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-021).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-021 -->
 
 As funcionalidades a seguir resultaram da evolução técnica e acadêmica do grupo, sem questionário entre V3 e V4. As capturas registram a V4 já implementada; não são resultados produzidos pela quarta avaliação nem evidência de desempenho institucional.
@@ -1796,17 +2142,21 @@ Figura 14 – V4: ranking sintético de Reels orgânicos
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-022 -->
-<details>
-<summary>ALT-022 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-022"></a>
+
+**ALT-022 — 3.2.6 Evidências da evolução técnica da V4 (origem: 3.1.8)**
+
+Deslocamento: conteúdo recebido em 3.2.6, proveniente de 3.1.8 da V1 (retirada integral em ALT-019).
 
 ```diff
-- ∅
-+ Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e taxas alvo por turma. Ele demonstra uma premissa de ocupação e não representa matrícula observada, previsão institucional ou plano aprovado
++ Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e
++ taxas alvo por turma. Ele demonstra uma premissa de ocupação e não representa matrícula
++ observada, previsão institucional ou plano aprovado pela parceira (Figura 15). A página
++ Arquitetura & Algoritmos documenta na interface as fontes locais, as regras de cálculo,
++ as verificações e os limites de interpretação da solução.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-022).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-022 -->
 
 Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e
@@ -1822,17 +2172,21 @@ Figura 15 – V4: plano fictício de vagas e ocupação em Gestão
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-023 -->
-<details>
-<summary>ALT-023 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-023"></a>
+
+**ALT-023 — 3.2.6 Evidências da evolução técnica da V4 (origem: 3.1.8)**
+
+Deslocamento: conteúdo recebido em 3.2.6, proveniente de 3.1.8 da V1 (retirada integral em ALT-019).
 
 ```diff
-- ∅
-+ Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios do mês associados ao indicador **conversa**, ordenados pelo menor CPR válido. Para cada anúncio, $\mathit{CPR}_{\mathrm{Meta}} = \frac{\te
++ Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios
++ do mês associados ao indicador **conversa**, ordenados pelo menor CPR válido. Para cada
++ anúncio, $\mathit{CPR}_{\mathrm{Meta}} = \frac{\text{investimento}}{\text{conversas}}$; sem conversas, o valor fica indisponível.
++ Interações são outro indicador e não entram nesse denominador. O ranking de anúncios pagos
++ da Figura 16 não utiliza o score de Reels orgânicos.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-023).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-023 -->
 
 Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios
@@ -1848,17 +2202,21 @@ Figura 16 – V4: ranking sintético de anúncios no Meta Ads
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-024 -->
-<details>
-<summary>ALT-024 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-024"></a>
+
+**ALT-024 — 3.2.6 Evidências da evolução técnica da V4 (origem: 3.1.8)**
+
+Deslocamento: conteúdo recebido em 3.2.6, proveniente de 3.1.8 da V1 (retirada integral em ALT-019).
 
 ```diff
-- ∅
-+ No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques, conversões registradas e CPR (Figura 17). $\mathit{CPR}_{\mathrm{Google}} = \frac{\text{custo}}{\text{conversões registradas no Google Ads}}$; co
++ No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques,
++ conversões registradas e CPR (Figura 17). $\mathit{CPR}_{\mathrm{Google}} = \frac{\text{custo}}{\text{conversões registradas no Google Ads}}$; conversão zero ou ausente torna o CPR indisponível. Essas conversões não equivalem
++ a matrículas, leads únicos ou pessoas identificadas. Os registros granulares de ambos os
++ rankings são partições determinísticas das linhas mensais fechadas da base sintética;
++ preservam os totais de origem quando aplicável, sem acesso a APIs ou dados operacionais.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-024).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-024 -->
 
 No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques,
@@ -1874,17 +2232,22 @@ Figura 17 – V4: ranking sintético de palavras-chave no Google Ads
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-025 -->
-<details>
-<summary>ALT-025 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-025"></a>
+
+**ALT-025 — 3.2.6 Evidências da evolução técnica da V4 (origem: 3.1.8)**
+
+Deslocamento: conteúdo recebido em 3.2.6, proveniente de 3.1.8 da V1 (retirada integral em ALT-019).
 
 ```diff
-- ∅
-+ Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google por conversão registrada e CPR Meta por conversa (Figura 18). Os denominadores têm sentidos diferentes: não há CPR agregado Google+Meta,
++ Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google
++ por conversão registrada e CPR Meta por conversa (Figura 18). Os denominadores têm sentidos
++ diferentes: não há CPR agregado Google+Meta, atribuição causal de matrículas aos canais nem
++ mistura com a previsão experimental de CPR Google. O protótipo não contém dados pessoais,
++ integração com plataformas reais ou dados institucionais operacionais. As Figuras 14 a 18 documentam essas funcionalidades técnicas;
++ não representam resultados produzidos pela avaliação de P1.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-025).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-025 -->
 
 Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google
@@ -1980,17 +2343,80 @@ do funil.
 # 4 CONSIDERAÇÕES FINAIS
 
 <!-- RASTREABILIDADE-VISUAL:INICIO ALT-026 -->
-<details>
-<summary>ALT-026 — SAI / ENTRA (recortes literais)</summary>
+<a id="comparacao-alt-026"></a>
+
+**ALT-026 — 4 CONSIDERAÇÕES FINAIS**
 
 ```diff
-- O projeto demonstrou, no protótipo acadêmico, que é possível organizar os conjuntos de dados definidos para o estudo, calcular indicado
-+ O projeto alcançou a solução acadêmica pretendida para organizar e apresentar informações de mídia digital: a V4 reúne o escopo especif
+- O projeto demonstrou, no protótipo acadêmico, que é possível organizar os conjuntos de dados
+- definidos para o estudo, calcular indicadores rastreáveis e apresentar recortes temporais e
+- comparações para apoiar a interpretação de investimentos em mídia digital. Isso responde à
+- pergunta central quanto à organização e à apresentação das informações. Os indicadores oferecem
+- elementos para análise, sem substituir a decisão dos responsáveis.
+
+- A V1 apresentou Captação e Matrículas com cálculos determinísticos. P1, gerente de Marketing,
+- avaliou-a presencialmente em 07/10/2026, com TCLE obtido, e apontou a dispersão dos gráficos
+- temporais. O grupo aprovou FB-V1-P1-001 e reuniu as séries na V2. Na reavaliação presencial da
+- mesma data, ela relatou comparação facilitada, sem nova dificuldade ou pedido de alteração naquele
+- momento. Esse retorno encerrou o primeiro ciclo com P1 e manteve a V2. A versão também acrescentou
+- Visão Geral de Ads, Google Ads, Meta Ads, Estratégia e a apresentação acadêmica do CPR por
+- evolução técnica independente desse feedback.
+
+- Na terceira aplicação, P1 avaliou a V2 de forma ampliada, solicitou sete grupos de ajustes e
+- classificou a versão como necessitando alterações importantes. O grupo analisou os feedbacks,
+- decidiu incorporá-los e implementou a V3: apresentação mensal, composição de matrículas por
+- série, efetivação de visitas, comparações temporais e comunicação mais clara dos limites da
+- previsão. P1 não avaliou a V3. Em seguida, por evolução técnica/acadêmica **sem nova aplicação
+- comunitária entre as versões**, o grupo implementou a V4 com o escopo especificado das quatro
+- fases, rankings sintéticos de Ads e CPR temporal por canal. A quarta avaliação ocorreu depois
+- dessa implementação: P1 atribuiu 5/5 às oito questões fechadas, escolheu A e não solicitou
+- alteração relevante. A V4 foi mantida, sem abertura de V5. Os quatro momentos atendem ao
+- objetivo de avaliar o protótipo com uma profissional e incorporar contribuições viáveis, dentro
+- do limite de uma única participante; não equivalem a validação externa ampla.
+
+- Os experimentos de CPR delimitam o alcance da solução. No experimento inicial, a
+- regressão apresentou erros menores que a persistência t−2. No período de teste principal do
+- experimento sazonal, superou a referência t−12, mas não a persistência t−2, e obteve R²
+- negativo. Esse resultado é um achado válido: o experimento foi executado e reproduzido com
+- controle da informação disponível no momento da previsão, mas não demonstrou desempenho
+- preditivo suficiente para uso operacional ou recomendação automática de investimento. Testes
+- automatizados, verificações de não vazamento e reprodução dos arquivos de resultados sustentam
+- o funcionamento técnico descrito. As práticas de IA agêntica apoiaram construção, análise e
+- verificação sob revisão humana; não houve avaliação de sua eficácia nem simulação agêntica
+- específica via linha de comando.
+
+- A contribuição do estudo inclui a distinção entre ausência de dado e valor zero, a separação
+- entre indicadores calculados e previsões experimentais e a rastreabilidade das alterações.
+- Dados sintéticos independentes, uma única participante, séries agregadas sem rastreamento
+- individual ou inferência causal, ausência de integrações operacionais e desempenho preditivo
+- limitado impedem generalizar as percepções de P1 ou afirmar melhoria real de decisões de
+- orçamento, redução de custos, aumento de matrículas ou impacto institucional. A fala de Q12
+- sobre comparação anual permanece relato da participante, sem verificação institucional ou
+- inferência causal. As quatro fases foram implementadas na V4 dentro do escopo documental;
+- nenhum uso operacional real foi demonstrado.
+
+- Avaliações futuras com outros profissionais poderão ampliar a compreensão de uso da V4, sem
+- pressupor uma nova versão. O exame de dados reais dependerá de autorização e anonimização;
+- integrações operacionais exigirão requisitos próprios de segurança. Séries mais amplas e
+- outros modelos dependerão de dados suficientes e de qualidade. O CPR experimental permanece
+- limitado e separado dos indicadores descritivos da V4.
+
++ O projeto alcançou a solução acadêmica pretendida para organizar e apresentar informações de mídia digital: a V4 reúne o escopo especificado das quatro fases, com indicadores rastreáveis, filtros e comparações temporais. A expectativa de apoiar a interpretação foi atendida no protótipo e na percepção de P1; a expectativa de subsidiar a distribuição real do orçamento permanece apenas parcialmente atendida, pois não houve integração operacional nem demonstração de decisões reais de investimento.
+
++ Os três primeiros objetivos específicos foram concretizados pela organização de dados sintéticos de Captação, Matrículas e Ads, pelos indicadores comparáveis nos recortes compatíveis e pela interface web V1–V4. Isso demonstra a estrutura analítica e sua apresentação, sem equivaler à consolidação dos registros institucionais dispersos. A contribuição acadêmica inclui distinguir ausência de dado de valor zero, preservar fórmulas e denominadores e separar indicadores descritivos de previsões experimentais.
+
++ O quarto objetivo foi atendido pela execução e reprodução dos experimentos de CPR, mesmo com desempenho limitado. A regressão inicial teve erros menores que a persistência t−2; no teste principal sazonal, superou t−12, mas não t−2, e apresentou R² negativo. O resultado não sustenta recomendação de investimento. Testes automatizados, verificações de não vazamento e reprodução dos artefatos sustentam a execução técnica. Quanto ao quinto objetivo, as práticas de IA agêntica apoiaram construção, análise e verificação sob supervisão humana; não houve avaliação independente de sua eficácia nem simulação agêntica específica via linha de comando.
+
++ O sexto objetivo foi atendido pelas quatro aplicações com a mesma profissional e pela incorporação de contribuições viáveis. A primeira avaliação da V1 motivou a consolidação temporal na V2, cuja utilidade percebida foi confirmada na segunda; Ads e CPR entraram por evolução técnica independente. A terceira aplicação ampliada à V2 indicou necessidade de alterações importantes e originou sete feedbacks incorporados à V3. P1 não avaliou a V3. A evolução técnica/acadêmica seguinte produziu a V4 sem questionário intermediário; somente depois P1 atribuiu oito notas 5/5, escolheu A e não solicitou alteração relevante, mantendo-se a V4 sem abertura de V5.
+
++ As avaliações trouxeram uma perspectiva concreta de uso: reunir séries relacionadas, apresentar resumos mensais e explicitar os limites da previsão foi mais relevante para P1 do que apenas ampliar indicadores. A contribuição da interface para essa usuária está na comparação facilitada relatada após o ajuste temporal e na utilidade percebida na quarta aplicação. Para a comunidade participante, o trabalho ofereceu um protótipo discutido a partir de suas necessidades e permitiu que sugestões orientassem mudanças rastreáveis; não demonstrou benefício institucional mensurável.
+
++ A aplicabilidade demonstrada ficou restrita à exploração acadêmica com dados fictícios. A ausência de integração e de registros operacionais no escopo impediu verificar redução de custos, aumento de matrículas ou melhoria de decisões reais. Uma participante não permite generalização estatística; as quatro aplicações não são amostras independentes nem comparação controlada. Séries sintéticas agregadas não rastreiam pessoas nem estabelecem atribuição causal, e o desempenho limitado do CPR impede tratá-lo como previsão operacional. A fala de P1 sobre melhora comparativa anual permanece relato profissional, sem verificação ou atribuição à plataforma.
+
++ O aprendizado central foi que organização, clareza e limites explícitos precisam acompanhar a expansão funcional. Avaliações futuras com outros profissionais poderão examinar a V4 sem pressupor nova versão. O uso de dados reais dependerá de autorização e anonimização; integrações exigirão requisitos próprios de segurança, e novos modelos dependerão de séries suficientes e de qualidade. O CPR experimental permanece separado dos indicadores descritivos.
+
 ```
 
-Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-026).
-
-</details>
 <!-- RASTREABILIDADE-VISUAL:FIM ALT-026 -->
 
 O projeto alcançou a solução acadêmica pretendida para organizar e apresentar informações de mídia digital: a V4 reúne o escopo especificado das quatro fases, com indicadores rastreáveis, filtros e comparações temporais. A expectativa de apoiar a interpretação foi atendida no protótipo e na percepção de P1; a expectativa de subsidiar a distribuição real do orçamento permanece apenas parcialmente atendida, pois não houve integração operacional nem demonstração de decisões reais de investimento.

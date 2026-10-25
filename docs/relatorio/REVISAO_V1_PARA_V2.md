@@ -1352,3 +1352,10 @@ Por solicitação explícita do responsável, criada `docs/relatorio/Relatorio_F
 ## Rastreabilidade visual no GitHub — 25/10/2026
 
 ALT-029 acrescenta à V2 um mapa e blocos recolhíveis com recortes literais SAI/ENTRA de ALT-001–ALT-026. ALT-027 está associado ao fluxograma em 3.1.2; ALT-028 permanece como registro de execução. Os pares integrais históricos foram preservados. As linhas da tabela de figuras na seção 5 são localizadores históricos anteriores à camada visual; para navegação atual, use os títulos e IDs. Remover exclusivamente os blocos delimitados RASTREABILIDADE-VISUAL restitui integralmente o texto anterior da V2.
+
+
+## Comparações integrais e abertas — ALT-030 — 25/10/2026
+
+Substituída a camada ALT-029: 26 blocos recolhíveis removidos e 26 comparações diff integrais visíveis, junto aos trechos correspondentes. Mapa mantido com 20 seções e destinos internos explícitos. ALT-001–ALT-026 conferidos literalmente com V1 e V2 limpa; ALT-012 inclui também o caminho real da Figura 1, sem mudança desse caminho. ALT-027 é criação de arquivos; ALT-028 é execução; ALT-029 é a camada editorial anterior. Não foram criadas substituições científicas fictícias para esses registros.
+
+Verificação automatizada: retirar somente a camada visual antes e depois produz texto científico idêntico, inclusive quebras de linha. Cada lado de cada diff foi reconstituído e comparado integralmente com sua fonte. Hash SHA-256 da V1 antes e depois: `3af4147e3deb97ad00d55d44b79ab53fcfa4e0fe0b837fb01f2a820213f1276c`. Links internos e cercas Markdown conferidos; cores não inspecionadas em Preview renderizado. Para Word/Google Docs, remover somente os segmentos editoriais delimitados, incluindo o mapa, preservando todo o corpo científico externo aos marcadores.
