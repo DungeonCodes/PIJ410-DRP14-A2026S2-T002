@@ -1259,3 +1259,609 @@ Status: APLICADA
 Por solicitação explícita do responsável, criada `docs/relatorio/Relatorio_Final_V2.md` como candidata, sem promoção a baseline. Consulta autenticada aos comentários do documento `Relatorio_Final`: 14 tópicos de Letícia, respostas e três tópicos de outro integrante, sem token de continuação. Fonte científica exclusiva: V1 congelada (ADR-012). Registros literais ALT-001–ALT-028 no controle e em `REVISAO_V1_PARA_V2.md`; checklist de composição separado. Resumo 239 → 217 palavras; conteúdo de 2.5.8 integrado em 2.5.5; renumeração e referências sincronizadas; Fluxograma 1 em SVG/PNG; explicações V4 junto às Figuras 14–18 em 3.2.6; conclusão vinculada aos seis objetivos. Verificadores dos dois experimentos CPR reproduziram os artefatos sem gravação; 38 verificações de não vazamento aprovadas. V1 e `final.md` preservados com SHA-256 `3af4147e3deb97ad00d55d44b79ab53fcfa4e0fe0b837fb01f2a820213f1276c`; 18 capturas históricas, 14 tabelas numeradas, quadro metodológico não numerado, 28 referências, dados, respostas e código preservados. Sem edição do Google Docs, commit, push ou deploy. Revisão humana e composição institucional permanecem necessárias; ver pendências documentadas na revisão.
 ")
 ````
+
+
+### ALT-029
+
+Data: 25/10/2026
+
+Seção: Camada editorial de rastreabilidade da V2 e registros associados.
+
+Motivo: Visualizar no GitHub as alterações existentes sem modificar o conteúdo científico.
+
+Origem: AJUSTE EDITORIAL — ordem explícita do responsável para aplicação direta.
+
+Status: APLICADA
+
+Pares de adição literais abaixo; localizadores relativos ao texto anterior à camada visual.
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 163 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO MAPA -->
+## Mapa de alterações V1 → V2
+
+> Camada editorial para leitura no GitHub (ALT-029). V2 permanece candidata à revisão humana, sem promoção a baseline.
+
+| Seção V2 | Título | IDs relacionados | Tipo da alteração |
+|---|---|---|---|
+| — (pré-textual) | Resumo | [ALT-001](CONTROLE_ALTERACOES_RELATORIO.md#alt-001) | resumo; redação |
+| — (pré-textual) | Lista de ilustrações | [ALT-002](CONTROLE_ALTERACOES_RELATORIO.md#alt-002) | estrutura; lista |
+| — (pré-textual) | Sumário | [ALT-003](CONTROLE_ALTERACOES_RELATORIO.md#alt-003) | estrutura; sumário |
+| 2.3 | Fundamentação teórica | [ALT-004](CONTROLE_ALTERACOES_RELATORIO.md#alt-004) | referência interna |
+| 2.5.5 | Preparação, governança e rastreabilidade dos dados | [ALT-005](CONTROLE_ALTERACOES_RELATORIO.md#alt-005) | metodologia; deslocamento |
+| 2.5.6 | Níveis de interpretação analítica | [ALT-006](CONTROLE_ALTERACOES_RELATORIO.md#alt-006) | referência interna |
+| 2.5.8 | Criar e prototipar | [ALT-007](CONTROLE_ALTERACOES_RELATORIO.md#alt-007) | metodologia; estrutura |
+| 2.5.9 | Protocolo experimental de aprendizagem de máquina | [ALT-008](CONTROLE_ALTERACOES_RELATORIO.md#alt-008) | metodologia; numeração |
+| 2.5.10 | Uso assistivo de IA agêntica e verificação humana | [ALT-009](CONTROLE_ALTERACOES_RELATORIO.md#alt-009), [ALT-010](CONTROLE_ALTERACOES_RELATORIO.md#alt-010) | metodologia; numeração; metodologia; referência interna e numeração |
+| 2.5.11 | Implementar, testar, validar e ajustar | [ALT-010](CONTROLE_ALTERACOES_RELATORIO.md#alt-010) | metodologia; numeração |
+| 3.1.2 | Estratégia incremental e arquitetura da solução | [ALT-011](CONTROLE_ALTERACOES_RELATORIO.md#alt-011), [ALT-027](CONTROLE_ALTERACOES_RELATORIO.md#alt-027) | estrutura; fluxograma; arquivo do fluxograma |
+| 3.1.3 | Módulo de Captação | [ALT-012](CONTROLE_ALTERACOES_RELATORIO.md#alt-012), [ALT-013](CONTROLE_ALTERACOES_RELATORIO.md#alt-013) | figura; nota; estrutura; nota |
+| 3.1.5 | Módulos de Ads | [ALT-014](CONTROLE_ALTERACOES_RELATORIO.md#alt-014) | notação de fórmula |
+| 3.1.6 | Experimento de aprendizagem de máquina para CPR | [ALT-015](CONTROLE_ALTERACOES_RELATORIO.md#alt-015) | resultados; redação |
+| 3.1.6.1 | Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4 | [ALT-016](CONTROLE_ALTERACOES_RELATORIO.md#alt-016), [ALT-017](CONTROLE_ALTERACOES_RELATORIO.md#alt-017) | estrutura; numeração e redação; resultados; redação |
+| 3.1.7 | Uso assistivo de IA agêntica | [ALT-018](CONTROLE_ALTERACOES_RELATORIO.md#alt-018) | referência interna |
+| 3.1.8 | V4 e conclusão do escopo especificado das quatro fases | [ALT-019](CONTROLE_ALTERACOES_RELATORIO.md#alt-019) | resultados; deslocamento |
+| 3.2.2 | Avaliação da solução pela participante — terceiro momento | [ALT-020](CONTROLE_ALTERACOES_RELATORIO.md#alt-020) | referência interna |
+| 3.2.6 | Evidências da evolução técnica da V4 | [ALT-021](CONTROLE_ALTERACOES_RELATORIO.md#alt-021), [ALT-022](CONTROLE_ALTERACOES_RELATORIO.md#alt-022), [ALT-023](CONTROLE_ALTERACOES_RELATORIO.md#alt-023), [ALT-024](CONTROLE_ALTERACOES_RELATORIO.md#alt-024), [ALT-025](CONTROLE_ALTERACOES_RELATORIO.md#alt-025) | resultados; estrutura e deslocamento; resultados; deslocamento; resultados; deslocamento e notação; resultados; deslocamento e redação |
+| 4 | CONSIDERAÇÕES FINAIS | [ALT-026](CONTROLE_ALTERACOES_RELATORIO.md#alt-026) | conclusão; redação |
+
+A antiga 2.5.8 foi integrada em 2.5.5 (ALT-005/ALT-007); 2.5.9–2.5.12 passaram a 2.5.8–2.5.11. Os detalhes da V4 saíram de 3.1.8 e entraram em 3.2.6 (ALT-019/ALT-021–ALT-025). ALT-028 registra a execução fora do relatório.
+
+**Legenda visual — SAI / ENTRA**
+
+```diff
+- SAI: texto anterior removido ou substituído
++ ENTRA: texto inserido na V2
+```
+
+Abra os blocos **SAI / ENTRA** junto aos trechos alterados. Os recortes são literais e podem começar ou terminar no meio de uma frase; os links levam aos pares integrais. ∅ indica ausência no local; em deslocamentos, consulte também o ID da origem. Os sinais identificam a mudança independentemente da cor do tema. Tabelas científicas não tiveram alteração registrada.
+
+[Revisão completa](REVISAO_V1_PARA_V2.md) · [Controle SAI/ENTRA](CONTROLE_ALTERACOES_RELATORIO.md)
+
+<!-- RASTREABILIDADE-VISUAL:FIM MAPA -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 2379 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-001 -->
+<details>
+<summary>ALT-001 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Este relatório apresenta uma plataforma acadêmica para organizar informações sobre investimentos em mídia digital e apoiar de
++ A dispersão de registros de mídia digital dificulta sua comparação no contexto educacional. O objetivo foi desenvolver uma so
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-001).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-001 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 4227 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-002 -->
+<details>
+<summary>ALT-002 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- – V4: séries temporais separadas de CPR em Estratégia
++ – V4: séries temporais separadas de CPR em Estratégia - Fluxograma 1 – Arquitetura analítica do protótipo acadêmico
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-002).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-002 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 6450 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-003 -->
+<details>
+<summary>ALT-003 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- gras de negócio e cenários determinísticos     - 2.5.8 Auditoria, reprodutibilidade e limites de atribuição     - 2.5.9 Criar e prototipar     - 2.5.10 Protocolo experimental de ap
++ gras de negócio e cenários determinísticos     - 2.5.8 Criar e prototipar     - 2.5.9 Protocolo experimental de aprendizagem de máquina     - 2.5.10 Uso assistivo de IA agêntica e
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-003).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-003 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 18357 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-004 -->
+<details>
+<summary>ALT-004 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- perimento executado são documentados nas subseções 2.5.10 e 3.1.6.
++ perimento executado são documentados nas subseções 2.5.9 e 3.1.6.
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-004).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-004 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 44025 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-005 -->
+<details>
+<summary>ALT-005 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite conferir resultados computacionais e suas co
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-005).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-005 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 45146 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-006 -->
+<details>
+<summary>ALT-006 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- io de IA são procedimentos separados, descritos em 2.5.10 e 2.5.11. Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma correlação agregada
++ io de IA são procedimentos separados, descritos em 2.5.9 e 2.5.10. Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma correlação agregada
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-006).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-006 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 47852 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-007 -->
+<details>
+<summary>ALT-007 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ### 2.5.8 Auditoria, reprodutibilidade e limites de atribuição  Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de transformação e fórmula. A reprodutibilidade é parte do procedimento anal
++ ### 2.5.8 Criar e prototipar
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-007).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-007 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 51888 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-008 -->
+<details>
+<summary>ALT-008 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ### 2.5.10 Protocolo experimental de aprendizagem de máquina
++ ### 2.5.9 Protocolo experimental de aprendizagem de máquina
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-008).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-008 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 58822 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-009 -->
+<details>
+<summary>ALT-009 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ### 2.5.11 Uso assistivo de IA agêntica e verificação humana
++ ### 2.5.10 Uso assistivo de IA agêntica e verificação humana
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-009).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-009 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 60810 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-010 -->
+<details>
+<summary>ALT-010 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- a regressão linear e dos baselines documentados em 2.5.10. Não há registro de experimento específico de simulação agêntica na solução analítica. As ferramentas não geraram resposta
++ a regressão linear e dos baselines documentados em 2.5.9. Não há registro de experimento específico de simulação agêntica na solução analítica. As ferramentas não geraram respostas
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-010).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-010 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 65655 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-011 -->
+<details>
+<summary>ALT-011 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- O projeto implementa uma aplicação web acadêmica independente do ambiente operacional. A aplicação lê dados sintéticos armazenados
++ O protótipo implementado lê arquivos sintéticos locais e apresenta indicadores determinísticos em uma interface Next.js/TypeScript
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-011).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-011 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 67629 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-012 -->
+<details>
+<summary>ALT-012 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Figura 1 – Indicadores e filtros da Captação na V1
++ Figura 1 – Indicadores e filtros da Captação na V1[^nota-v1]
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-012).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-012 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 67892 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-013 -->
+<details>
+<summary>ALT-013 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Nota: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto Integ
++ [^nota-v1]: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-013).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-013 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 69189 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-014 -->
+<details>
+<summary>ALT-014 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- -calendário fictício e campanha e série mensal de CPR. CPR = investimento / conversões registradas; não significa custo por matrícula ou lead único e não demonstra atribuição causa
++ -calendário fictício e campanha e série mensal de CPR. $\mathit{CPR} = \frac{\text{investimento}}{\text{conversões registradas}}$; não significa custo por matrícula ou lead único e
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-014).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-014 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 70722 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-015 -->
+<details>
+<summary>ALT-015 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Os dois experimentos de CPR descritos em 2.5.10 foram executados e seus resultados puderam ser reproduzidos. No experimento inicial, a regressão teve erros menores que a
++ Os dois experimentos de CPR descritos em 2.5.9 foram executados e seus resultados puderam ser reproduzidos. No experimento inicial, a regressão teve erros menores que a r
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-015).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-015 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 72070 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-016 -->
+<details>
+<summary>ALT-016 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- #### Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3  O experimento sazonal separado foi executado e
++ #### 3.1.6.1 Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4  A execução sazonal reproduziu
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-016).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-016 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 73748 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-017 -->
+<details>
+<summary>ALT-017 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- o, acrescido da explicitação dos limites (FB-V2-P1-007). As maiores projeções são para dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativa
++ o, acrescido da explicitação dos limites (FB-V2-P1-007); a V4 reutiliza essa apresentação. As maiores projeções são para dezembro/2023 e fevereiro/2023; as menores, para maio e jul
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-017).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-017 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 75439 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-018 -->
+<details>
+<summary>ALT-018 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- procedimento e os registros de execução estão em 2.5.11 e `docs/run_log.md`. As saídas passaram por inspeção e decisão humana; não houve avaliação independente da eficácia dos age
++ procedimento e os registros de execução estão em 2.5.10 e `docs/run_log.md`. As saídas passaram por inspeção e decisão humana; não houve avaliação independente da eficácia dos age
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-018).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-018 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 76438 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-019 -->
+<details>
+<summary>ALT-019 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Em Conteúdo Orgânico, doze Reels fictícios têm mês, alcance e interações. A taxa de interação divide interações por alcance.
++ As entregas incluem Reels orgânicos, plano fictício de vagas, documentação da arquitetura, rankings de anúncios e palavras-ch
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-019).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-019 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 86853 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-020 -->
+<details>
+<summary>ALT-020 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- nálise dos feedbacks estão identificados na seção 2.5.12.
++ nálise dos feedbacks estão identificados na seção 2.5.11.
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-020).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-020 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 99501 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-021 -->
+<details>
+<summary>ALT-021 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- As cinco capturas seguintes registram a interface técnica da V4 já implementada. Sua posição após a tabela mantém a sequência
++ ### 3.2.6 Evidências da evolução técnica da V4  As funcionalidades a seguir resultaram da evolução técnica e acadêmica do gru
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-021).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-021 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 100546 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-022 -->
+<details>
+<summary>ALT-022 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e taxas alvo por turma. Ele demonstra uma premissa de ocupação e não representa matrícula observada, previsão institucional ou plano aprovado
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-022).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-022 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 101250 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-023 -->
+<details>
+<summary>ALT-023 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios do mês associados ao indicador **conversa**, ordenados pelo menor CPR válido. Para cada anúncio, $\mathit{CPR}_{\mathrm{Meta}} = \frac{\te
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-023).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-023 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 102002 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-024 -->
+<details>
+<summary>ALT-024 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques, conversões registradas e CPR (Figura 17). $\mathit{CPR}_{\mathrm{Google}} = \frac{\text{custo}}{\text{conversões registradas no Google Ads}}$; co
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-024).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-024 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 102887 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-025 -->
+<details>
+<summary>ALT-025 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google por conversão registrada e CPR Meta por conversa (Figura 18). Os denominadores têm sentidos diferentes: não há CPR agregado Google+Meta,
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-025).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-025 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/Relatorio_Final_V2.md`; antes do caractere 109241 (índice iniciado em zero).
+
+````text
+(SAI: ∅ | ENTRA: "<!-- RASTREABILIDADE-VISUAL:INICIO ALT-026 -->
+<details>
+<summary>ALT-026 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- O projeto demonstrou, no protótipo acadêmico, que é possível organizar os conjuntos de dados definidos para o estudo, calcular indicado
++ O projeto alcançou a solução acadêmica pretendida para organizar e apresentar informações de mídia digital: a V4 reúne o escopo especif
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-026).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-026 -->
+
+")
+````
+
+Arquivo: `docs/relatorio/REVISAO_V1_PARA_V2.md`; adição ao final.
+
+````text
+(SAI: ∅ | ENTRA: "
+
+## Rastreabilidade visual no GitHub — 25/10/2026
+
+ALT-029 acrescenta à V2 um mapa e blocos recolhíveis com recortes literais SAI/ENTRA de ALT-001–ALT-026. ALT-027 está associado ao fluxograma em 3.1.2; ALT-028 permanece como registro de execução. Os pares integrais históricos foram preservados. As linhas da tabela de figuras na seção 5 são localizadores históricos anteriores à camada visual; para navegação atual, use os títulos e IDs. Remover exclusivamente os blocos delimitados RASTREABILIDADE-VISUAL restitui integralmente o texto anterior da V2.
+")
+````
+
+Arquivo: `docs/run_log.md`; adição ao final.
+
+````text
+(SAI: ∅ | ENTRA: "
+
+## 2026-10-25 — Rastreabilidade visual da V2 no GitHub
+
+Adicionados mapa de seções alteradas, legenda diff e 26 blocos recolhíveis SAI/ENTRA com recortes literais vinculados aos pares integrais. Aplicação direta autorizada pelo responsável, registrada em ALT-029. Atualizados somente Relatorio_Final_V2.md, REVISAO_V1_PARA_V2.md, CONTROLE_ALTERACOES_RELATORIO.md e este log. Verificação por remoção dos blocos editoriais: texto anterior da V2 recuperado integralmente; pares ALT-001–ALT-028 preservados. V2 permanece candidata à revisão humana.
+")
+````

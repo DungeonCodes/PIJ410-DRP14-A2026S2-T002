@@ -2,6 +2,49 @@
 
 <!-- Fonte editorial do Relatório Final (ADR-001). A paginação será inserida na composição. -->
 
+<!-- RASTREABILIDADE-VISUAL:INICIO MAPA -->
+## Mapa de alterações V1 → V2
+
+> Camada editorial para leitura no GitHub (ALT-029). V2 permanece candidata à revisão humana, sem promoção a baseline.
+
+| Seção V2 | Título | IDs relacionados | Tipo da alteração |
+|---|---|---|---|
+| — (pré-textual) | Resumo | [ALT-001](CONTROLE_ALTERACOES_RELATORIO.md#alt-001) | resumo; redação |
+| — (pré-textual) | Lista de ilustrações | [ALT-002](CONTROLE_ALTERACOES_RELATORIO.md#alt-002) | estrutura; lista |
+| — (pré-textual) | Sumário | [ALT-003](CONTROLE_ALTERACOES_RELATORIO.md#alt-003) | estrutura; sumário |
+| 2.3 | Fundamentação teórica | [ALT-004](CONTROLE_ALTERACOES_RELATORIO.md#alt-004) | referência interna |
+| 2.5.5 | Preparação, governança e rastreabilidade dos dados | [ALT-005](CONTROLE_ALTERACOES_RELATORIO.md#alt-005) | metodologia; deslocamento |
+| 2.5.6 | Níveis de interpretação analítica | [ALT-006](CONTROLE_ALTERACOES_RELATORIO.md#alt-006) | referência interna |
+| 2.5.8 | Criar e prototipar | [ALT-007](CONTROLE_ALTERACOES_RELATORIO.md#alt-007) | metodologia; estrutura |
+| 2.5.9 | Protocolo experimental de aprendizagem de máquina | [ALT-008](CONTROLE_ALTERACOES_RELATORIO.md#alt-008) | metodologia; numeração |
+| 2.5.10 | Uso assistivo de IA agêntica e verificação humana | [ALT-009](CONTROLE_ALTERACOES_RELATORIO.md#alt-009), [ALT-010](CONTROLE_ALTERACOES_RELATORIO.md#alt-010) | metodologia; numeração; metodologia; referência interna e numeração |
+| 2.5.11 | Implementar, testar, validar e ajustar | [ALT-010](CONTROLE_ALTERACOES_RELATORIO.md#alt-010) | metodologia; numeração |
+| 3.1.2 | Estratégia incremental e arquitetura da solução | [ALT-011](CONTROLE_ALTERACOES_RELATORIO.md#alt-011), [ALT-027](CONTROLE_ALTERACOES_RELATORIO.md#alt-027) | estrutura; fluxograma; arquivo do fluxograma |
+| 3.1.3 | Módulo de Captação | [ALT-012](CONTROLE_ALTERACOES_RELATORIO.md#alt-012), [ALT-013](CONTROLE_ALTERACOES_RELATORIO.md#alt-013) | figura; nota; estrutura; nota |
+| 3.1.5 | Módulos de Ads | [ALT-014](CONTROLE_ALTERACOES_RELATORIO.md#alt-014) | notação de fórmula |
+| 3.1.6 | Experimento de aprendizagem de máquina para CPR | [ALT-015](CONTROLE_ALTERACOES_RELATORIO.md#alt-015) | resultados; redação |
+| 3.1.6.1 | Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4 | [ALT-016](CONTROLE_ALTERACOES_RELATORIO.md#alt-016), [ALT-017](CONTROLE_ALTERACOES_RELATORIO.md#alt-017) | estrutura; numeração e redação; resultados; redação |
+| 3.1.7 | Uso assistivo de IA agêntica | [ALT-018](CONTROLE_ALTERACOES_RELATORIO.md#alt-018) | referência interna |
+| 3.1.8 | V4 e conclusão do escopo especificado das quatro fases | [ALT-019](CONTROLE_ALTERACOES_RELATORIO.md#alt-019) | resultados; deslocamento |
+| 3.2.2 | Avaliação da solução pela participante — terceiro momento | [ALT-020](CONTROLE_ALTERACOES_RELATORIO.md#alt-020) | referência interna |
+| 3.2.6 | Evidências da evolução técnica da V4 | [ALT-021](CONTROLE_ALTERACOES_RELATORIO.md#alt-021), [ALT-022](CONTROLE_ALTERACOES_RELATORIO.md#alt-022), [ALT-023](CONTROLE_ALTERACOES_RELATORIO.md#alt-023), [ALT-024](CONTROLE_ALTERACOES_RELATORIO.md#alt-024), [ALT-025](CONTROLE_ALTERACOES_RELATORIO.md#alt-025) | resultados; estrutura e deslocamento; resultados; deslocamento; resultados; deslocamento e notação; resultados; deslocamento e redação |
+| 4 | CONSIDERAÇÕES FINAIS | [ALT-026](CONTROLE_ALTERACOES_RELATORIO.md#alt-026) | conclusão; redação |
+
+A antiga 2.5.8 foi integrada em 2.5.5 (ALT-005/ALT-007); 2.5.9–2.5.12 passaram a 2.5.8–2.5.11. Os detalhes da V4 saíram de 3.1.8 e entraram em 3.2.6 (ALT-019/ALT-021–ALT-025). ALT-028 registra a execução fora do relatório.
+
+**Legenda visual — SAI / ENTRA**
+
+```diff
+- SAI: texto anterior removido ou substituído
++ ENTRA: texto inserido na V2
+```
+
+Abra os blocos **SAI / ENTRA** junto aos trechos alterados. Os recortes são literais e podem começar ou terminar no meio de uma frase; os links levam aos pares integrais. ∅ indica ausência no local; em deslocamentos, consulte também o ID da origem. Os sinais identificam a mudança independentemente da cor do tema. Tabelas científicas não tiveram alteração registrada.
+
+[Revisão completa](REVISAO_V1_PARA_V2.md) · [Controle SAI/ENTRA](CONTROLE_ALTERACOES_RELATORIO.md)
+
+<!-- RASTREABILIDADE-VISUAL:FIM MAPA -->
+
 # ELEMENTOS PRÉ-TEXTUAIS
 
 ## Capa
@@ -71,6 +114,20 @@ Letícia Vieira Santos. Polos: Aricanduva, São Rafael, Rosa da China e Jaçanã
 
 ## Resumo
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-001 -->
+<details>
+<summary>ALT-001 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Este relatório apresenta uma plataforma acadêmica para organizar informações sobre investimentos em mídia digital e apoiar de
++ A dispersão de registros de mídia digital dificulta sua comparação no contexto educacional. O objetivo foi desenvolver uma so
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-001).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-001 -->
+
 A dispersão de registros de mídia digital dificulta sua comparação no contexto educacional. O objetivo foi desenvolver uma solução analítica para organizar esses dados e apoiar a discussão da distribuição do orçamento de marketing em uma instituição de ensino. A metodologia combinou escuta de profissionais, prototipação incremental com dados sintéticos, cálculos determinísticos, testes e quatro avaliações sucessivas com uma gerente de Marketing, identificada como P1. Em experimento separado e reproduzível, regressões lineares estimaram o custo por resultado (CPR) Google, definido como investimento dividido pelas conversões registradas. Como resultados, a V1 apresentou Captação e Matrículas; a primeira avaliação motivou o gráfico consolidado da V2, confirmado na segunda, e sete feedbacks da terceira aplicação ampliada à V2 foram incorporados à V3. A V4 resultou de evolução técnica e acadêmica sem questionário intermediário, reunindo o escopo especificado das quatro fases, rankings sintéticos e séries de CPR; em avaliação posterior online, em 14/10/2026, P1 atribuiu oito notas 5/5, escolheu a classificação A e não solicitou alteração relevante, mantendo-se a V4. Os testes sustentam a execução técnica, mas o experimento sazonal apresentou desempenho preditivo limitado, insuficiente para orientar investimentos reais. A contribuição demonstrada consiste na organização rastreável dos indicadores e na apresentação ajustada à participante; dados sintéticos, ausência de integração operacional e uma única avaliadora impedem generalização e comprovação de impacto institucional.
 
 **Palavras-chave:** Inteligência de negócios; Mídia digital; Visualização de dados; Aprendizado de máquina; Tomada de decisão.
@@ -78,6 +135,20 @@ A dispersão de registros de mídia digital dificulta sua comparação no contex
 ## Lista de ilustrações
 
 <!-- Paginação e numeração definitivas das figuras serão conferidas na composição do DOCX/PDF. -->
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-002 -->
+<details>
+<summary>ALT-002 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- – V4: séries temporais separadas de CPR em Estratégia
++ – V4: séries temporais separadas de CPR em Estratégia - Fluxograma 1 – Arquitetura analítica do protótipo acadêmico
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-002).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-002 -->
 
 - Figura 1 – Indicadores e filtros da Captação na V1
 - Figura 2 – Indicadores e composição por safra em Matrículas na V1
@@ -121,6 +192,20 @@ A dispersão de registros de mídia digital dificulta sua comparação no contex
 ## Sumário
 
 <!-- Paginação do sumário a atualizar na composição do DOCX/PDF. -->
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-003 -->
+<details>
+<summary>ALT-003 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- gras de negócio e cenários determinísticos     - 2.5.8 Auditoria, reprodutibilidade e limites de atribuição     - 2.5.9 Criar e prototipar     - 2.5.10 Protocolo experimental de ap
++ gras de negócio e cenários determinísticos     - 2.5.8 Criar e prototipar     - 2.5.9 Protocolo experimental de aprendizagem de máquina     - 2.5.10 Uso assistivo de IA agêntica e
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-003).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-003 -->
 
 - 1 Introdução
 - 2 Desenvolvimento
@@ -306,6 +391,20 @@ históricos e produzem estimativas para novas observações (Jordan; Mitchell, 2
 o uso assistivo de agentes de IA (IA agêntica), com tarefas e resultados sob supervisão humana.
 Esse apoio ao desenvolvimento, à organização e à interpretação não é o método que aprende com
 os dados.
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-004 -->
+<details>
+<summary>ALT-004 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- perimento executado são documentados nas subseções 2.5.10 e 3.1.6.
++ perimento executado são documentados nas subseções 2.5.9 e 3.1.6.
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-004).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-004 -->
 
 Essa distinção é particularmente necessária no marketing digital: a revisão de De Mauro, Sestino e
 Bacconi (2022) posiciona a aprendizagem de máquina como subárea da IA e identifica aplicações em
@@ -656,6 +755,20 @@ Valores ausentes, incompatibilidades de período e falhas estruturais são sinal
 convertidos silenciosamente em zero nem em estimativas. Essa regra distingue um indicador medido de
 um dado indisponível e possibilita auditoria posterior.
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-005 -->
+<details>
+<summary>ALT-005 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite conferir resultados computacionais e suas co
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-005).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-005 -->
+
 Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de
 transformação e fórmula. A reprodutibilidade é parte do procedimento analítico, pois permite
 conferir resultados computacionais e suas condições de produção (Peng, 2011).
@@ -673,6 +786,20 @@ O segundo realiza leituras agregadas do funil de captação e das matrículas, q
 campos permitem esse cruzamento. O terceiro registra os limites de atribuição individual, isto é,
 os casos em que as fontes disponíveis não permitem ligar uma ação de mídia, um contato e uma
 matrícula específica.
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-006 -->
+<details>
+<summary>ALT-006 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- io de IA são procedimentos separados, descritos em 2.5.10 e 2.5.11. Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma correlação agregada
++ io de IA são procedimentos separados, descritos em 2.5.9 e 2.5.10. Essa separação impede que um resultado de regra seja apresentado como causalidade ou que uma correlação agregada
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-006).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-006 -->
 
 Esses níveis descrevem a leitura dos indicadores; o experimento de aprendizagem de máquina e o
 apoio de IA são procedimentos separados, descritos em 2.5.9 e 2.5.10. Essa separação impede que um
@@ -712,6 +839,20 @@ projetarão matrícula, não garantirão retorno e não ocultarão conflitos ent
 dos dados (Saura; Palos-Sánchez; Cerdá Suárez, 2017; Martins, 2019).
 
 ### 2.5.8 Criar e prototipar
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-007 -->
+<details>
+<summary>ALT-007 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ### 2.5.8 Auditoria, reprodutibilidade e limites de atribuição  Cada resultado exibido deve poder ser reconstituído a partir de sua fonte, período, regra de transformação e fórmula. A reprodutibilidade é parte do procedimento anal
++ ### 2.5.8 Criar e prototipar
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-007).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-007 -->
 
 Na etapa de criar e prototipar, o grupo relacionou as necessidades aos campos disponíveis, às
 regras de cálculo e às alternativas de visualização. O plano funcional foi dividido em quatro
@@ -766,6 +907,20 @@ Fonte: Elaborado pelo grupo com base no plano de fases, nos registros das versõ
 versionado do protótipo (2026).
 
 ### 2.5.9 Protocolo experimental de aprendizagem de máquina
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-008 -->
+<details>
+<summary>ALT-008 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ### 2.5.10 Protocolo experimental de aprendizagem de máquina
++ ### 2.5.9 Protocolo experimental de aprendizagem de máquina
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-008).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-008 -->
 
 O experimento perguntou se informações já disponíveis no passado permitiriam prever o CPR de um
 mês melhor do que regras simples. Essas regras servem de referência para medir a contribuição do
@@ -864,6 +1019,20 @@ conferem os resultados com os arquivos versionados sem gravá-los.
 
 ### 2.5.10 Uso assistivo de IA agêntica e verificação humana
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-009 -->
+<details>
+<summary>ALT-009 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ### 2.5.11 Uso assistivo de IA agêntica e verificação humana
++ ### 2.5.10 Uso assistivo de IA agêntica e verificação humana
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-009).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-009 -->
+
 Durante o desenvolvimento, o grupo registrou o uso de agentes de inteligência artificial para
 ler e auditar o repositório, programar, revisar código e textos, organizar documentos, elaborar
 e verificar testes, conferir algoritmos e arquivos de resultados dos experimentos de CPR e
@@ -891,6 +1060,20 @@ solução analítica. As ferramentas não geraram respostas de P1 nem substituí
 registros originais das quatro aplicações com P1 foram preservados.
 
 ### 2.5.11 Implementar, testar, validar e ajustar
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-010 -->
+<details>
+<summary>ALT-010 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- a regressão linear e dos baselines documentados em 2.5.10. Não há registro de experimento específico de simulação agêntica na solução analítica. As ferramentas não geraram resposta
++ a regressão linear e dos baselines documentados em 2.5.9. Não há registro de experimento específico de simulação agêntica na solução analítica. As ferramentas não geraram respostas
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-010).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-010 -->
 
 O tratamento de cada contribuição seguiu a cadeia observação ou feedback, análise de viabilidade
 e compatibilidade dos dados pelo grupo, decisão registrada, alteração implementada e verificação
@@ -965,6 +1148,20 @@ liberação local.
 
 ### 3.1.2 Estratégia incremental e arquitetura da solução
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-011 -->
+<details>
+<summary>ALT-011 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- O projeto implementa uma aplicação web acadêmica independente do ambiente operacional. A aplicação lê dados sintéticos armazenados
++ O protótipo implementado lê arquivos sintéticos locais e apresenta indicadores determinísticos em uma interface Next.js/TypeScript
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-011).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-011 -->
+
 O protótipo implementado lê arquivos sintéticos locais e apresenta indicadores determinísticos em uma interface Next.js/TypeScript. Os controles de habilitação (*feature gates*) restringem a V1 à Fase 1 e V2/V3 às Fases 1 e 2; a V4 reúne as quatro fases especificadas. Os artefatos reproduzíveis de CPR, produzidos separadamente pela CLI, são apresentados em Google Ads nas composições V2–V4, sem treinamento no navegador. O Fluxograma 1 distingue esse experimento do fluxo comum de indicadores. A solução não se conecta a contas reais de anúncios, CRM, sistema acadêmico ou base operacional da instituição.
 
 Fluxograma 1 – Arquitetura analítica do protótipo acadêmico
@@ -987,11 +1184,39 @@ consolidada, com seleção independente das três séries, em resposta ao feedba
 As demais visualizações de funil, situação e origem permanecem distintas. A origem declarada
 não prova atribuição a anúncios ou causalidade.
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-012 -->
+<details>
+<summary>ALT-012 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Figura 1 – Indicadores e filtros da Captação na V1
++ Figura 1 – Indicadores e filtros da Captação na V1[^nota-v1]
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-012).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-012 -->
+
 Figura 1 – Indicadores e filtros da Captação na V1[^nota-v1]
 
 ![Interface de Captação da V1 com filtros, indicadores e funil sintético.](figuras/fig-v1-captacao.png)
 
 Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com dados sintéticos.
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-013 -->
+<details>
+<summary>ALT-013 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Nota: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto Integ
++ [^nota-v1]: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-013).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-013 -->
 
 [^nota-v1]: as figuras da V1 preservam as capturas da interface apresentada a P1, inclusive o rótulo legado “PIJ410 — Projeto Integrador em Computação III”. O componente correto deste trabalho é PJI410 — Projeto Integrador em Computação IV.
 
@@ -1015,6 +1240,20 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 
 ### 3.1.5 Módulos de Ads
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-014 -->
+<details>
+<summary>ALT-014 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- -calendário fictício e campanha e série mensal de CPR. CPR = investimento / conversões registradas; não significa custo por matrícula ou lead único e não demonstra atribuição causa
++ -calendário fictício e campanha e série mensal de CPR. $\mathit{CPR} = \frac{\text{investimento}}{\text{conversões registradas}}$; não significa custo por matrícula ou lead único e
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-014).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-014 -->
+
 A V2 disponibiliza localmente Visão Geral Ads, Google Ads, Meta Ads e Estratégia, todos com dados
 sintéticos. Não há integração com Google Ads API, Meta API ou CRM. Google Ads apresenta
 investimento, impressões, cliques, conversões registradas, CTR, CPC, CPM e CPR, com filtros de
@@ -1037,6 +1276,20 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 
 ### 3.1.6 Experimento de aprendizagem de máquina para CPR
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-015 -->
+<details>
+<summary>ALT-015 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Os dois experimentos de CPR descritos em 2.5.10 foram executados e seus resultados puderam ser reproduzidos. No experimento inicial, a regressão teve erros menores que a
++ Os dois experimentos de CPR descritos em 2.5.9 foram executados e seus resultados puderam ser reproduzidos. No experimento inicial, a regressão teve erros menores que a r
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-015).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-015 -->
+
 Os dois experimentos de CPR descritos em 2.5.9 foram executados e seus resultados puderam ser
 reproduzidos. No experimento inicial, a regressão teve erros menores que a regra simples. No
 teste principal da extensão sazonal, porém, não superou a melhor regra de referência. Assim, o
@@ -1058,6 +1311,20 @@ ganho foi modesto e o poder explicativo permaneceu baixo. Essa comparação vale
 sintético, inclusive para sua hipótese de maturação de 14 dias.
 
 #### 3.1.6.1 Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-016 -->
+<details>
+<summary>ALT-016 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- #### Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3  O experimento sazonal separado foi executado e
++ #### 3.1.6.1 Previsão sazonal mensal — extensão técnica introduzida na V2 e mantida na V3 e na V4  A execução sazonal reproduziu
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-016).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-016 -->
 
 A execução sazonal reproduziu os resultados do cenário de janeiro/2017 a janeiro/2023: 71 dos 73 meses têm CPR consolidado válido. No teste principal, reservado aos 12 meses de 2022 segundo o protocolo de 2.5.9, foram obtidos os seguintes resultados:
 
@@ -1092,6 +1359,20 @@ Na análise descritiva retrospectiva, dezembro apresentou o maior índice sazona
 também ficou acima da média (1,131) e junho abaixo (0,893). O índice compara médias históricas
 mensais com a média global; não é ML nem demonstra sazonalidade estável.
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-017 -->
+<details>
+<summary>ALT-017 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- o, acrescido da explicitação dos limites (FB-V2-P1-007). As maiores projeções são para dezembro/2023 e fevereiro/2023; as menores, para maio e julho/2023. Os valores são estimativa
++ o, acrescido da explicitação dos limites (FB-V2-P1-007); a V4 reutiliza essa apresentação. As maiores projeções são para dezembro/2023 e fevereiro/2023; as menores, para maio e jul
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-017).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-017 -->
+
 A V2 apresenta histórico sintético e projeção experimental recursiva de fevereiro/2023 a
 janeiro/2024, além do índice sazonal e da comparação dos métodos. A V3 exibe o mesmo artefato,
 sem alterar valores ou algoritmo, acrescido da explicitação dos limites (FB-V2-P1-007); a V4 reutiliza essa apresentação. As maiores
@@ -1125,6 +1406,20 @@ Fonte: Elaborado pelo grupo (2026), captura da aplicação acadêmica local com 
 
 ### 3.1.7 Uso assistivo de IA agêntica
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-018 -->
+<details>
+<summary>ALT-018 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- procedimento e os registros de execução estão em 2.5.11 e `docs/run_log.md`. As saídas passaram por inspeção e decisão humana; não houve avaliação independente da eficácia dos age
++ procedimento e os registros de execução estão em 2.5.10 e `docs/run_log.md`. As saídas passaram por inspeção e decisão humana; não houve avaliação independente da eficácia dos age
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-018).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-018 -->
+
 Em paralelo ao desenvolvimento da interface e aos experimentos de CPR, o grupo utilizou agentes
 como apoio à programação, auditoria do repositório, revisão documental,
 análise de consistência e verificação de testes e artefatos de CPR. O procedimento e os registros
@@ -1139,6 +1434,20 @@ especificado das quatro fases. Sua origem é **evolução técnica/acadêmica do
 questionário ou avaliação comunitária entre V3 e V4. A quarta aplicação com P1 ocorreu somente
 depois da implementação e é apresentada em 3.2.2. A V4 preserva os indicadores históricos de
 V1–V3 e acrescenta módulos e análises identificados como sintéticos.
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-019 -->
+<details>
+<summary>ALT-019 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- Em Conteúdo Orgânico, doze Reels fictícios têm mês, alcance e interações. A taxa de interação divide interações por alcance.
++ As entregas incluem Reels orgânicos, plano fictício de vagas, documentação da arquitetura, rankings de anúncios e palavras-ch
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-019).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-019 -->
 
 As entregas incluem Reels orgânicos, plano fictício de vagas, documentação da arquitetura, rankings de anúncios e palavras-chave e séries descritivas de CPR por canal. A seção 3.2.6 reúne a descrição e as capturas dessas funcionalidades após as evidências históricas V1–V3, preservando sua origem técnica e distinguindo-as dos ajustes solicitados por P1.
 
@@ -1298,6 +1607,20 @@ Fonte: Elaborado pelo grupo (2026), captura da V3 da aplicação acadêmica loca
 As Figuras 7 a 13 documentam a implementação visual das alterações. Não constituem avaliação da
 V3 por P1 nem prova de impacto institucional ou de qualidade preditiva do modelo.
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-020 -->
+<details>
+<summary>ALT-020 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- nálise dos feedbacks estão identificados na seção 2.5.12.
++ nálise dos feedbacks estão identificados na seção 2.5.11.
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-020).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-020 -->
+
 **Efeito no desenvolvimento:** os sete feedbacks da terceira avaliação foram analisados pelo
 grupo e incorporados à V3. A implementação passou por verificação técnica, descrita em 3.3;
 P1 não avaliou a V3. A aplicação seguinte ocorreu depois da evolução técnica que produziu a
@@ -1443,6 +1766,20 @@ grupo manteve a V4, sem abrir V5.
 
 ### 3.2.6 Evidências da evolução técnica da V4
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-021 -->
+<details>
+<summary>ALT-021 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- As cinco capturas seguintes registram a interface técnica da V4 já implementada. Sua posição após a tabela mantém a sequência
++ ### 3.2.6 Evidências da evolução técnica da V4  As funcionalidades a seguir resultaram da evolução técnica e acadêmica do gru
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-021).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-021 -->
+
 As funcionalidades a seguir resultaram da evolução técnica e acadêmica do grupo, sem questionário entre V3 e V4. As capturas registram a V4 já implementada; não são resultados produzidos pela quarta avaliação nem evidência de desempenho institucional.
 
 Em Conteúdo Orgânico, doze Reels fictícios têm mês, alcance e interações. A taxa de interação
@@ -1458,6 +1795,20 @@ Figura 14 – V4: ranking sintético de Reels orgânicos
 
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-022 -->
+<details>
+<summary>ALT-022 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e taxas alvo por turma. Ele demonstra uma premissa de ocupação e não representa matrícula observada, previsão institucional ou plano aprovado
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-022).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-022 -->
+
 Em Objetivo da Gestão, o plano fictício calcula vagas alvo a partir de vagas hipotéticas e
 taxas alvo por turma. Ele demonstra uma premissa de ocupação e não representa matrícula
 observada, previsão institucional ou plano aprovado pela parceira (Figura 15). A página
@@ -1469,6 +1820,20 @@ Figura 15 – V4: plano fictício de vagas e ocupação em Gestão
 ![Plano fictício de ocupação da V4 com vagas hipotéticas, taxas e vagas alvo por etapa.](figuras/fig-v4-gestao-ocupacao.png)
 
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-023 -->
+<details>
+<summary>ALT-023 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios do mês associados ao indicador **conversa**, ordenados pelo menor CPR válido. Para cada anúncio, $\mathit{CPR}_{\mathrm{Meta}} = \frac{\te
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-023).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-023 -->
 
 Na segunda iteração técnica da V4, o Meta Ads passou a mostrar os cinco criativos fictícios
 do mês associados ao indicador **conversa**, ordenados pelo menor CPR válido. Para cada
@@ -1482,6 +1847,20 @@ Figura 16 – V4: ranking sintético de anúncios no Meta Ads
 
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
 
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-024 -->
+<details>
+<summary>ALT-024 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques, conversões registradas e CPR (Figura 17). $\mathit{CPR}_{\mathrm{Google}} = \frac{\text{custo}}{\text{conversões registradas no Google Ads}}$; co
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-024).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-024 -->
+
 No Google Ads, o ranking mensal compara palavras-chave fictícias por custo, cliques,
 conversões registradas e CPR (Figura 17). $\mathit{CPR}_{\mathrm{Google}} = \frac{\text{custo}}{\text{conversões registradas no Google Ads}}$; conversão zero ou ausente torna o CPR indisponível. Essas conversões não equivalem
 a matrículas, leads únicos ou pessoas identificadas. Os registros granulares de ambos os
@@ -1493,6 +1872,20 @@ Figura 17 – V4: ranking sintético de palavras-chave no Google Ads
 ![Ranking mensal de palavras-chave fictícias da V4 com cliques, conversões, custo e CPR Google.](figuras/fig-v4-google-palavras-chave.png)
 
 Fonte: Elaborado pelo grupo (2026), captura da V4 da aplicação acadêmica local com dados sintéticos.
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-025 -->
+<details>
+<summary>ALT-025 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- ∅
++ Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google por conversão registrada e CPR Meta por conversa (Figura 18). Os denominadores têm sentidos diferentes: não há CPR agregado Google+Meta,
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-025).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-025 -->
 
 Em Estratégia, um gráfico complementar apresenta as séries mensais descritivas de CPR Google
 por conversão registrada e CPR Meta por conversa (Figura 18). Os denominadores têm sentidos
@@ -1585,6 +1978,20 @@ individual dos leads nem sustentam rastreamento de pessoas ou atribuição causa
 do funil.
 
 # 4 CONSIDERAÇÕES FINAIS
+
+<!-- RASTREABILIDADE-VISUAL:INICIO ALT-026 -->
+<details>
+<summary>ALT-026 — SAI / ENTRA (recortes literais)</summary>
+
+```diff
+- O projeto demonstrou, no protótipo acadêmico, que é possível organizar os conjuntos de dados definidos para o estudo, calcular indicado
++ O projeto alcançou a solução acadêmica pretendida para organizar e apresentar informações de mídia digital: a V4 reúne o escopo especif
+```
+
+Recortes de contexto; ∅ indica ausência no local. [Par SAI/ENTRA integral](CONTROLE_ALTERACOES_RELATORIO.md#alt-026).
+
+</details>
+<!-- RASTREABILIDADE-VISUAL:FIM ALT-026 -->
 
 O projeto alcançou a solução acadêmica pretendida para organizar e apresentar informações de mídia digital: a V4 reúne o escopo especificado das quatro fases, com indicadores rastreáveis, filtros e comparações temporais. A expectativa de apoiar a interpretação foi atendida no protótipo e na percepção de P1; a expectativa de subsidiar a distribuição real do orçamento permanece apenas parcialmente atendida, pois não houve integração operacional nem demonstração de decisões reais de investimento.
 
