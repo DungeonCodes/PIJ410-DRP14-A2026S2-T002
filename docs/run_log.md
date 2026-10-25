@@ -1245,3 +1245,18 @@ Arquivos: criados `docs/relatorio/Relatorio_Final_V1.md` (cópia byte a byte de 
 Hashes: `final.md` e `Relatorio_Final_V1.md` com 142914 bytes, 1997 linhas e SHA-256 `3af4147e3deb97ad00d55d44b79ab53fcfa4e0fe0b837fb01f2a820213f1276c`; `cmp` confirma identidade byte a byte.
 Verificação: 18 figuras referenciadas (arquivos existentes), 14 tabelas, 28 referências, Resumo com 239 palavras, cinco palavras-chave; nenhuma V5 nem `Relatorio_Final_V2.md` criados; `git diff --check` aprovado.
 Nenhuma alteração científica realizada: `final.md`, código, datasets, ML, respostas de P1 e figuras intactos. Sem commit ou push.
+
+
+## 2026-10-25 — Revisão editorial controlada V1 → V2 do Relatório Final
+
+Por solicitação explícita do responsável, criada `docs/relatorio/Relatorio_Final_V2.md` como candidata, sem promoção a baseline. Consulta autenticada aos comentários do documento `Relatorio_Final`: 14 tópicos de Letícia, respostas e três tópicos de outro integrante, sem token de continuação. Fonte científica exclusiva: V1 congelada (ADR-012). Registros literais ALT-001–ALT-028 no controle e em `REVISAO_V1_PARA_V2.md`; checklist de composição separado. Resumo 239 → 217 palavras; conteúdo de 2.5.8 integrado em 2.5.5; renumeração e referências sincronizadas; Fluxograma 1 em SVG/PNG; explicações V4 junto às Figuras 14–18 em 3.2.6; conclusão vinculada aos seis objetivos. Verificadores dos dois experimentos CPR reproduziram os artefatos sem gravação; 38 verificações de não vazamento aprovadas. V1 e `final.md` preservados com SHA-256 `3af4147e3deb97ad00d55d44b79ab53fcfa4e0fe0b837fb01f2a820213f1276c`; 18 capturas históricas, 14 tabelas numeradas, quadro metodológico não numerado, 28 referências, dados, respostas e código preservados. Sem edição do Google Docs, commit, push ou deploy. Revisão humana e composição institucional permanecem necessárias; ver pendências documentadas na revisão.
+
+
+## 2026-10-25 — Rastreabilidade visual da V2 no GitHub
+
+Adicionados mapa de seções alteradas, legenda diff e 26 blocos recolhíveis SAI/ENTRA com recortes literais vinculados aos pares integrais. Aplicação direta autorizada pelo responsável, registrada em ALT-029. Atualizados somente Relatorio_Final_V2.md, REVISAO_V1_PARA_V2.md, CONTROLE_ALTERACOES_RELATORIO.md e este log. Verificação por remoção dos blocos editoriais: texto anterior da V2 recuperado integralmente; pares ALT-001–ALT-028 preservados. V2 permanece candidata à revisão humana.
+
+
+## 2026-10-25 — ALT-030: comparações integrais da V2
+
+Por ordem explícita do responsável, substituída a camada visual ALT-029 por 26 comparações diff abertas com textos integrais SAI/ENTRA, preservando 20 seções no mapa e removendo 26 blocos recolhíveis. Conferidos ALT-001–ALT-029; registros históricos preservados. Verificação automatizada confirmou identidade exata do conteúdo científico antes/depois da remoção exclusiva da camada visual, pares integrais contra as fontes, destinos internos existentes e V1 com SHA-256 `3af4147e3deb97ad00d55d44b79ab53fcfa4e0fe0b837fb01f2a820213f1276c` antes/depois. Sintaxe diff verificada; cores não inspecionadas em Preview renderizado. Somente os quatro arquivos documentais autorizados foram atualizados. Sem commit ou push.
